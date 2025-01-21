@@ -3,6 +3,7 @@ repo_url: https://github.com/burespe1/FRAME-online
 site_url: https://burespe1.github.io/FRAME-online
 repo_name: FRAME-online
 theme:
+  logo: assets/frame-logo.png
   name: material
   palette: 
     # Palette toggle for light mode
