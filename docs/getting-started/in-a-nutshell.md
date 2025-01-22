@@ -1,4 +1,4 @@
-# In a Nutshell
+# What is the ITS Architecture?
 
 ## Definitions
 
