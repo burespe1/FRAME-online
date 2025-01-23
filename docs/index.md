@@ -42,7 +42,7 @@ The development methodology, supported by computer-based tools, assists in creat
 </div>
 
 
-!!! note "Acknowledgment"
+??? quote "Acknowledgment"
 
 	<img src="assets/img/cofinanced-eu-logo.png" alt="Co-financed by European Union" width="50%" height="auto" align="right">
 
