@@ -65,7 +65,8 @@ The FRAME System in the figure above is divided into 9 Areas (see below). Each A
 
 The name “Terminator” derives from the fact that the data for, and produced by, the System starts/stops there. The FRAME Architecture sub-divides some of its Terminators into a number of Actors. Not only does this make the total architecture more manageable, especially the construction of the diagrams, but it is also useful for situations when some data goes to/from all Actors in the Terminator, e.g. all Drivers, and on other occasions data goes to/from a specific Actor, e.g. Public Transport Driver.
 
-The 9 Areas of the FRAME Architecture
+## The 9 Areas of the FRAME Architecture
+
 The FRAME Architecture models road based ITS applications and services, and is divided into the following nine broad Areas:
 
  - Provide Electronic Payment Facilities

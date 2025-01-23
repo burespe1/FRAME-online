@@ -4,7 +4,7 @@ repository_url: ../uml_models/frame_repository/index.htm
 metamodel_url: ../uml_models/frame_metamodel/index.htm
 ---
 
-# FRAME Architecture v5
+# FRAME Architecture version 5
 
 !!! info "important"
 
