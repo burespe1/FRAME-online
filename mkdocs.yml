@@ -3,8 +3,10 @@ repo_url: https://github.com/burespe1/FRAME-online
 site_url: https://burespe1.github.io/FRAME-online
 repo_name: FRAME-online
 theme:
-  logo: assets/frame-logo.png
+  logo: assets/img/frame-logo.png
   name: material
+  icon:
+    annotation: material/arrow-right-circle
   palette: 
     # Palette toggle for light mode
     - primary: teal
@@ -23,29 +25,30 @@ theme:
     - navigation.tabs.sticky
   
 nav:
-  - Home: 
-      - Introduction: index.md
-      - ITS Directives: reference-architectures/its-directives.md
+  - Home: index.md
   - "Getting Started":
       - "What is Architecture": getting-started/in-a-nutshell.md
       - "FRAME Architecture": getting-started/frame-architecture.md
       - FRAME Tool: getting-started/tool.md
       - User Guide: getting-started/user-guide.md
   - FRAME Models:
-      - FRAME Repository: uml/frame_repository.md
-      - FRAME Meta Model: uml/frame_metamodel.md
+      - FRAME Architecture v5: model/frame-architecture-5.md
+      - FRAME Architecture v4: model/frame-architecture-4.md
+      - Reference Architectures: model/reference-architectures.md
   - Downloads:
-      - FRAME Architecture 5.1: downloads/frame-architecture-5.md
-      - FRAME Architecture 4.1: downloads/frame-architecture-4.md
+      - Documents & Methodologies: downloads/documents-and-methodologies.md
       - Articles & Reports: downloads/articles-related-reports.md
-  - Forum:
-      - Objectives: forum/objectives.md
-      - Services: forum/services.md 
+  - Projects:
+      - FRAME-NEXT: projects/frame-next.md 
   - About: 
       - Impressum: about.md
       - FAQs: faq.md
-      - Projects:
-         - Frame-NEXT: projects/frame-next.md
+  - Parked:
+      - ITS Directives: unused/its-directives.md
+      - Old index: unused/old-index.md
+      - Objectives: unused/objectives.md
+      - Services: unused/services.md 
+      
 
 markdown_extensions:
   - def_list

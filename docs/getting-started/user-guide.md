@@ -2,7 +2,7 @@
 
 The methodology for creating an ITS Architecture from the FRAME Architecture is illustrated in the figure below. The use of particular technologies or supplier products is not included in the FRAME Architecture. This is important for two reasons. Firstly the ITS Architectures created using the methodology will not become obsolete through advances in technology, or product development, and secondly it opens up the possibility for the development of new technologies to enable particular functionality to be provided.
 
-![FRAME Methodology](https://frame-online.eu/wp-content/uploads/2023/01/FRAME-Methodology-583x583-1.png)
+![FRAME Methodology](../assets/img/FRAME-Methodology-583x583-1.png)
 
 ## Stakeholder Aspirations
 
@@ -27,7 +27,7 @@ A Functional View (sometimes called a Logical View) shows the functionality that
 
 Another important part of the Functional View is the Context Diagram. This shows the ITS as a single item and the links needed by the functionality contained within it to communicate with the entities outside it. It is useful for two reasons. Firstly it enables the system boundary to be defined showing what is inside the ITS and what is not, and thus what is the responsibility of the ITS Engineers (and hence what its not!). Secondly it enables definitions to be produced of the way in which the functionality inside the ITS expects the outside entities to behave. These outside entities are called Terminators, and either obtain data for the ITS or provide outputs to end users. The same Context Diagram is also part of the Physical View.
 
-![Physical View](https://frame-online.eu/wp-content/uploads/2023/01/FRAME-Physical-View-672x536-1.png)
+![Physical View](../assets/img/FRAME-Physical-View-672x536-1.png)
 
 ## Physical View
 Once the Functional View is complete, the architecture team allocates each item of functionality to a location, either within a sub-system (see diagram below), or within a module that is part of a sub-system. Once this has been completed the component (sub-system or module) specifications can be created from the definitions of the functions and data stores contained within them.

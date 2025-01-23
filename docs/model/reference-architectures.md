@@ -1,0 +1,1 @@
+FRAME is extended with the activities of the different member states in Europe, within the priority areas of the ITS directive (Directive 2010/40/EU) and with the methodologies and tools that make a modern ITS architecture attractive and appealing for its users. 

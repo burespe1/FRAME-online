@@ -4,24 +4,27 @@ The FRAME Architecture (originally called the European ITS Framework Architectur
 
 A distinctive feature of the FRAME Architecture is that it is designed to have sub-sets created from it, and is thus unlikely to be used in its entirety. Indeed, on occasions, it contains more than one way of performing a service and the user can select the most appropriate set of functionality to deliver it in that environment. Thus the FRAME Architecture is not so much a model of integrated ITS, as a framework from which specific models of integrated ITS can be created in a systematic and common manner.
 
-The FRAME Architecture now covers the following areas of ITS:
+!!! info "Areas covered by FRAME Architecture"
 
- - Electronic Fee Collection
- - Emergency Notification and Response – Roadside and In-Vehicle Notification
- - Traffic Management – Urban, Inter-Urban, Parking, Tunnels and Bridges, Maintenance and Simulation, together with the Management of Incidents, Road Vehicle Based Pollution and the Demand for Road Use
- - Public Transport Management – Schedules, Fares, On-Demand Services, Fleet and Driver Management
- - In-Vehicle Systems – includes some Cooperative Systems
- - Traveller Assistance – Pre-Journey and On-Trip Planning, Travel Information
- - Support for Law Enforcement
- - Freight and Fleet Management
- - Provide Support for Cooperative Systems – specific services not included elsewhere, e.g. bus lane use, freight vehicle parking
- - Multi-modal interfaces – links to other modes when required, e.g. travel information, multi-modal crossing management
+	The FRAME Architecture now covers the following areas of ITS:
+
+	 - Electronic Fee Collection
+	 - Emergency Notification and Response – Roadside and In-Vehicle Notification
+	 - Traffic Management – Urban, Inter-Urban, Parking, Tunnels and Bridges, Maintenance and Simulation, together with the Management of Incidents, Road Vehicle Based Pollution and the Demand for Road Use
+	 - Public Transport Management – Schedules, Fares, On-Demand Services, Fleet and Driver Management
+	 - In-Vehicle Systems – includes some Cooperative Systems
+	 - Traveller Assistance – Pre-Journey and On-Trip Planning, Travel Information
+	 - Support for Law Enforcement
+	 - Freight and Fleet Management
+	 - Provide Support for Cooperative Systems – specific services not included elsewhere, e.g. bus lane use, freight vehicle parking
+	 - Multi-modal interfaces – links to other modes when required, e.g. travel information, multi-modal crossing management
 
 Because the FRAME Architecture is intended for use within the European Union it conforms to the precepts of subsidiarity, and thus does not mandate any physical or organisational structure on a Member State. It comprises only a set of User Needs which describe what ITS can provide, and a Functional View showing how it can be done. The Methodology, which is supported by computer-based tools, assists the creation of logically consistent sub-sets of the FRAME Architecture Functional View, and the creation of subsequent Physical Views.
 
 ## Use of FRAME in Europe
 
-![Use of FRAME in Europe](https://frame-online.eu/wp-content/uploads/2023/01/Rys.-12-01-1024x625-1.png)![FRAME Use World Wide](https://frame-online.eu/wp-content/uploads/2023/01/mapa-world-new-1024x605-1.png)
+![Use of FRAME in Europe](../assets/img/Rys.-12-01-1024x625-1.png)
+![FRAME Use World Wide](../assets/img/mapa-world-new-1024x605-1.png)
 
 ## Framework Principle
 
@@ -39,7 +42,8 @@ The FRAME Architecture is intended to be used within a top down approach to the 
 
 The overall concept and the system structure should be described in a technology independent way so that, as technology evolves, all the higher level requirements remain unchanged.  The information contained within the system structure enables the ITS industry to produce the equipment and systems that will provide the services wanted by the stakeholders, each with their own distinctive features, but conforming to the purposes expressed in the overall concept and system structure.  Thus integrated and/or inter-operable ITS services can be provided across the EU.
 
-![image](https://frame-online.eu/wp-content/uploads/2023/01/Architecture-Layers-Stds-n-800x486-1.png)![image](https://frame-online.eu/wp-content/uploads/2023/01/Example-Physical-Viewpoint-n-800x491-1.png)
+![image](../assets/img/Architecture-Layers-Stds-n-800x486-1.png)
+![image](../assets/img/Example-Physical-Viewpoint-n-800x491-1.png)
 
 The system structure contains a number of views.  The functionality needed to implement ITS Services is provided by the Functional View; which does not impose any specific technical solutions on its users. Each specific implementation requires choices to be made by the stakeholders, in particular which components will be used for the ITS implementation and the links between them (the Physical View).
 
@@ -55,7 +59,7 @@ The content of the Physical Viewpoint and the Communications Viewpoint can be in
 
 The FRAME model used for the Functional View is based on hierarchical Data Flow Diagrams. At the highest level is the Context Diagram (see figure below) which shows all the functionality supported by the FRAME Architecture inside a box labelled “System” surrounded by a set of “Terminators”, which are outside the boundary of the system. Each Terminator represents some thing, or person, to which the system will send data and/or from which it will receive data. As there is a large amount of functionality in the FRAME Architecture (2-3000 elements in total), its size is managed using hierarchies of functions and terminators.
 
-![FRAME Context Diagram](https://frame-online.eu/wp-content/uploads/2023/01/FRAME-Context-Diagram-n-1024x732.png)
+![FRAME Context Diagram](../assets/img/FRAME-Context-Diagram-n-1024x732.png)
 
 The FRAME System in the figure above is divided into 9 Areas (see below). Each Area then has a number of hierarchical levels of functions as required, with each High-Level Function being decomposed into a number of lower-level Functions until the final Low-Level Functions are reached. Initially it was thought that the High-Level Functions would be used during the sub-set creation process, but it was quickly found that, whilst many of the corresponding Low-Level Functions were required in a given situation, not all them were. That, and the difficulty of following data flows through the hierarchy of functions, has resulted in the High-Level Functions being used solely for convenience when creating or looking at the entire FRAME Architecture. Thus the FRAME Architecture Functional View is now defined with its Low-Level Functions, and the creation of sub-sets is performed using only them.
 
