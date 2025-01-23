@@ -1,6 +1,6 @@
 ---
 version: 5.1.1
-model_url: model/frame-architecture-5
+model_url: model/frame-architecture-5.md
 ---
 
 # European Intelligent Transport Systems (ITS) Framework Architecture
@@ -25,19 +25,19 @@ The development methodology, supported by computer-based tools, assists in creat
 
     ---
 
-    Read what is architecture, how does FRAME fit in and how to create one yourself. [:octicons-arrow-right-24:](getting-started/frame-architecture)
+    Read what is architecture, how does FRAME fit in and how to create one yourself. [:octicons-arrow-right-24:](getting-started/frame-architecture.md)
 
 -   :material-clock-fast:{ .lg .middle } __Documents & More__
 
     ---
 
-    Explore documents and methodologies for using and creating FRAME architecture as well as papers and articles we wrote about it [:octicons-arrow-right-24:](downloads/documents-and-methodologies)
+    Explore documents and methodologies for using and creating FRAME architecture as well as papers and articles we wrote about it [:octicons-arrow-right-24:](downloads/documents-and-methodologies.md)
 
 -   :material-scale-balance:{ .lg .middle } __History__
 
     ---
 
-    Find out about the projects that funded development of FRAME Architecture and their main goals [:octicons-arrow-right-24:](projects/frame-next)
+    Find out about the projects that funded development of FRAME Architecture and their main goals [:octicons-arrow-right-24:](projects/frame-next.md)
 
 </div>
 

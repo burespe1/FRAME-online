@@ -36,8 +36,8 @@ nav:
       - FRAME Architecture v4: model/frame-architecture-4.md
       - Reference Architectures: model/reference-architectures.md
   - Downloads:
-      - Documents & Methodologies: downloads/documents-and-methodologies.md
-      - Articles & Reports: downloads/articles-related-reports.md
+      - "Documents & Methodologies": downloads/documents-and-methodologies.md
+      - "Articles & Reports": downloads/articles-related-reports.md
   - Projects:
       - FRAME-NEXT: projects/frame-next.md 
   - About: 
