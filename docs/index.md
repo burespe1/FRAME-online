@@ -31,7 +31,7 @@ The development methodology, supported by computer-based tools, assists in creat
 
     ---
 
-    Explore documents and methodologies for using and creating FRAME architecture as well as papers and articles we wrote about it [:octicons-arrow-right-24: Explore](downloads/documents-and-methodologies)
+    Explore documents and methodologies for using and creating FRAME architecture as well as papers and articles we wrote about it [:octicons-arrow-right-24:](downloads/documents-and-methodologies)
 
 -   :material-scale-balance:{ .lg .middle } __History__
 
@@ -42,11 +42,11 @@ The development methodology, supported by computer-based tools, assists in creat
 </div>
 
 
-## Acknowledgment
+!!! note "Acknowledgment"
 
-<img src="assets/img/cofinanced-eu-logo.png" alt="Co-financed by European Union" width="50%" height="auto" align="right">
+	<img src="assets/img/cofinanced-eu-logo.png" alt="Co-financed by European Union" width="50%" height="auto" align="right">
 
-The FRAME has received funding from the European Union's Connecting Europe Facility (CEF) programme under grant agreement No [MOVE/C3/SUB/2016-405/CEF/PSA/SI2.759934]. For more information go to Projects section.
+	The FRAME has received funding from the European Union's Connecting Europe Facility (CEF) programme under grant agreement No [MOVE/C3/SUB/2016-405/CEF/PSA/SI2.759934]. For more information go to Projects section.
 
-The content of this document reflects only the authors' views, and the European Union is not responsible for any use that may be made of the information it contains.
+	The content of this document reflects only the authors' views, and the European Union is not responsible for any use that may be made of the information it contains.
 
