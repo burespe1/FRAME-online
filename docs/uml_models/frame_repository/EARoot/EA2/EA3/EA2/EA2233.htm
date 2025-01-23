@@ -89,7 +89,7 @@
 					</td>
 					<td class="contentcell"><div class="pageHeader"></div>
 <div class="PageBody">
-	<span class="ObjectTitle">fnap.cc-support_request fnap.cc-support request : Public abstract &lt;&lt;FRAME_Low_Level_Data_Flow&gt;&gt; FRAME_Low_Level_Data_Flow</span>
+	<span class="ObjectTitle">fnap.cc-support_request  : Public abstract &lt;&lt;FRAME_Low_Level_Data_Flow&gt;&gt; FRAME_Low_Level_Data_Flow</span>
 	<table border="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
@@ -97,7 +97,7 @@
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">04.01.2024 10:33:46</td>
+			<td class="ObjectDetailsValue">13.09.2021 11:08:25</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -146,10 +146,10 @@
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../../EA1/EA3/EA1073.htm">DFD F3. Manage Traffic</a>, <a href="../../EA1/EA3/EA1121.htm">DFD F3.6 Operate National Access Point</a></td>
+			<td class="ObjectDetailsValue">Content Consumer View, 02 NAP Functional View, 02 NAP Functional View with data exchange, 04 NAP Physical View, <a href="../../EA1/EA3/EA1073.htm">DFD F3. Manage Traffic</a>, <a href="../../EA1/EA3/EA1121.htm">DFD F3.6 Operate National Access Point</a>, 04 NAP Physical View with data exchange, 05 NAP Communication View  with data exchange, 05 NAP Communication View</td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">It consists of inputs from the NAP Content Consumer containing data objects that provide a request for support describing an issue the NAP User have and to which the NAP Operator shall respond. The data objects are used by functionality in the Manage Traffic Functional Area.&lt;br/&gt;&lt;br/&gt;===========&lt;br/&gt;&lt;b&gt;CHANGELOG:&lt;/b&gt;&lt;br/&gt;- described what the support action means&lt;br/&gt;&lt;b&gt;TODO:&lt;/b&gt;&lt;br/&gt;- NAP User and NAP Operator are not mentioned anywhere, they shall be created as new terminators in NAP Actors &lt;br/&gt;&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">It consists of inputs from the NAP Content Consumer containing data objects that provide a request for support action and are for use by functionality in the Manage Traffic Functional Area.&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
@@ -167,29 +167,6 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA1/EA3/EA1216.htm">«FRAME_Low_Level_Function» F3.6.5 Provide NAP User Support</a><br />
-						FRAME_Low_Level_Function «IN» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink16874" /></button>Details:
-							<div id="detailsDIVLink16874" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
 						<a href="../../EA1/EA3/EA1241.htm">«FRAME_High_Level_Function» F3.6 Operate National Access Point</a><br />
 						FRAME_High_Level_Function «IN» 
 					</td>
@@ -204,8 +181,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink16875" /></button>Details:
-							<div id="detailsDIVLink16875" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink16900" /></button>Details:
+							<div id="detailsDIVLink16900" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -213,7 +190,30 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						«FRAME_Physical_Data_Flow» PDF Support of Content Consumer<br />
+						«FRAME_High_Level_Data_Flow» fSSPS-tNAP<br />
+						Interface «componentof» 
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink16901" /></button>Details:
+							<div id="detailsDIVLink16901" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						«FRAME_Physical_Data_Flow» Physical DF NAP Content Consumer Support Component<br />
 						Interface «served by» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -227,8 +227,31 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink16876" /></button>Details:
-							<div id="detailsDIVLink16876" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink16902" /></button>Details:
+							<div id="detailsDIVLink16902" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../EA1/EA3/EA1216.htm">«FRAME_Low_Level_Function» F3.6.5 Provide NAP User Support</a><br />
+						FRAME_Low_Level_Function «IN» 
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink16903" /></button>Details:
+							<div id="detailsDIVLink16903" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -246,7 +269,30 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA4/EA2/EA4283.htm">«FRAME_Terminator» NAP Content Consumer</a><br />
+						Services to Content Consumer<br />
+						InformationItem &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink16904" /></button>Details:
+							<div id="detailsDIVLink16904" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../EA4/EA2/EA4262.htm">«FRAME_Terminator» NAP Content Consumer</a><br />
 						FRAME_Terminator «IN» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -260,8 +306,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink16877" /></button>Details:
-							<div id="detailsDIVLink16877" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink16905" /></button>Details:
+							<div id="detailsDIVLink16905" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -283,8 +329,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink16878" /></button>Details:
-							<div id="detailsDIVLink16878" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink16906" /></button>Details:
+							<div id="detailsDIVLink16906" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -306,8 +352,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink16879" /></button>Details:
-							<div id="detailsDIVLink16879" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink16907" /></button>Details:
+							<div id="detailsDIVLink16907" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>

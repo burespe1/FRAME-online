@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Low Level Data Flows::mt_NAP_metadata_mod_authorisation_result</title>
+<title>Low Level Data Flows::mt_checking_result</title>
 <link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script language="JavaScript" src="../../../../js/displayToc.js" type="text/javascript"></script>
 <script>
@@ -64,12 +64,12 @@
 <div class="section group" >
 
 		<div class="col span_2_of_2 header_frame">
-			<h1> Low Level Data Flows::mt_NAP_metadata_mod_authorisation_result </h1>
+			<h1> Low Level Data Flows::mt_checking_result </h1>
 			<!-- <img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
 			<img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />
 		</div>
 		<div class="col span_2_of_2 breadcrumb_frame">
-			<p><a href="../../../EA3.htm">Frame Repository</a> / <a href="../../EA976.htm">Frame Functional View</a> / <a href="../EA1566.htm">Data Flows</a> / <a href="EA2042.htm">Low Level Data Flows</a> / <a href="EA2906.htm">mt_NAP_metadata_mod_authorisation_result</a></p>
+			<p><a href="../../../EA3.htm">Frame Repository</a> / <a href="../../EA976.htm">Frame Functional View</a> / <a href="../EA1566.htm">Data Flows</a> / <a href="EA2042.htm">Low Level Data Flows</a> / <a href="EA2906.htm">mt_checking_result</a></p>
 		</div>
 			
 		<table class="contentmaintable">
@@ -89,7 +89,7 @@
 					</td>
 					<td class="contentcell"><div class="pageHeader"></div>
 <div class="PageBody">
-	<span class="ObjectTitle">mt_NAP_metadata_mod_authorisation_result mt_NAP metadata mod authorisation result : Public abstract &lt;&lt;FRAME_Low_Level_Data_Flow&gt;&gt; FRAME_Low_Level_Data_Flow</span>
+	<span class="ObjectTitle">mt_checking_result  : Public abstract &lt;&lt;FRAME_Low_Level_Data_Flow&gt;&gt; FRAME_Low_Level_Data_Flow</span>
 	<table border="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
@@ -97,7 +97,7 @@
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">04.01.2024 10:45:12</td>
+			<td class="ObjectDetailsValue">13.09.2021 11:09:11</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -106,7 +106,7 @@
 		</tr>
 		<tr id="proj00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
-			<td class="ObjectDetailsValue">bures</td>
+			<td class="ObjectDetailsValue">Update after transfer</td>
 		</tr>
 		<tr id="proj01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
@@ -146,10 +146,10 @@
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../../EA1/EA3/EA1121.htm">DFD F3.6 Operate National Access Point</a></td>
+			<td class="ObjectDetailsValue">02 NAP Functional View, 02 NAP Functional View with data exchange, 04 NAP Physical View, <a href="../../EA1/EA3/EA1121.htm">DFD F3.6 Operate National Access Point</a>, 04 NAP Physical View with data exchange, 05 NAP Communication View  with data exchange, 05 NAP Communication View</td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">It contains data objects that provide information about the validity of the authorisation credentials of a NAP Content Provider that authorize the claimant to modify metadata records in the store of NAP Metadata.&lt;br/&gt;&lt;br/&gt;===========&lt;br/&gt;&lt;b&gt;CHANGELOG:&lt;/b&gt;&lt;br/&gt;- clarified information about the credentials and authorisation to be received&lt;br/&gt;- corrected name of the DF from &#8220;mt_checking_result&#8221; to &#8220;mt_NAP_metadata_mod_authorisation_result&#8221; &lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">It contains data objects that provide information about the validity of the authorisation credentials of a provider of meta-data to the store of NAP Meta-Data.&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
@@ -163,52 +163,6 @@
 					<td width="40%" class="TableHeading">Element</td>
 					<td width="30%" class="TableHeading">Source Role</td>
 					<td width="30%" class="TableHeading">Target Role</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA1/EA3/EA1214.htm">«FRAME_Low_Level_Function» F3.6.3 Provide Interface for Content Providers</a><br />
-						FRAME_Low_Level_Function «OUT» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink19415" /></button>Details:
-							<div id="detailsDIVLink19415" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						«FRAME_Physical_Data_Flow» Content Consumer Authorization and Registration<br />
-						Interface «served by» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink19416" /></button>Details:
-							<div id="detailsDIVLink19416" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
@@ -226,8 +180,54 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink19417" /></button>Details:
-							<div id="detailsDIVLink19417" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink19457" /></button>Details:
+							<div id="detailsDIVLink19457" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						«FRAME_Physical_Data_Flow» FRAME_User_Authorization_Physical_data_flow<br />
+						Interface «served by» 
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink19458" /></button>Details:
+							<div id="detailsDIVLink19458" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../EA1/EA3/EA1214.htm">«FRAME_Low_Level_Function» F3.6.3 Provide Interface for Content Providers</a><br />
+						FRAME_Low_Level_Function «OUT» 
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink19459" /></button>Details:
+							<div id="detailsDIVLink19459" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -245,8 +245,8 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA1/EA3/EA1213.htm">«FRAME_Low_Level_Function» F3.6.2 Manage NAP User Registrations</a><br />
-						FRAME_Low_Level_Function «OUT» 
+						<a href="../../EA5/EA4303.htm">«FRAME_Datastore» D3.17 NAP Data Providers</a><br />
+						FRAME_Datastore «OUT» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
 						<strong>Name:</strong> &nbsp;<br />
@@ -259,8 +259,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink19418" /></button>Details:
-							<div id="detailsDIVLink19418" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink19460" /></button>Details:
+							<div id="detailsDIVLink19460" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>

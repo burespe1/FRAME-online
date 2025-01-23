@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>On-Demand Service Vehicle</title>
+<title>NAP Content Consumer</title>
 <link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script language="JavaScript" src="../../../../js/displayToc.js" type="text/javascript"></script>
 <script>
@@ -64,12 +64,12 @@
 <div class="section group" >
 
 		<div class="col span_2_of_2 header_frame">
-			<h1> On-Demand Service Vehicle </h1>
+			<h1> NAP Content Consumer </h1>
 			<!-- <img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
 			<img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />
 		</div>
 		<div class="col span_2_of_2 breadcrumb_frame">
-			<p><a href="../../../EA3.htm">Frame Repository</a> / <a href="../../EA976.htm">Frame Functional View</a> / <a href="../EA4167.htm">Terminators & Terminator Diagrams</a> / <a href="EA4195.htm">Terminators</a> / <a href="EA4215.htm">Vehicle</a> / <a href="EA4262.htm">On-Demand Service Vehicle</a></p>
+			<p><a href="../../../EA3.htm">Frame Repository</a> / <a href="../../EA976.htm">Frame Functional View</a> / <a href="../EA4167.htm">Terminators & Terminator Diagrams</a> / <a href="EA4195.htm">Terminators</a> / <a href="EA4207.htm">NAP Actors</a> / <a href="EA4262.htm">NAP Content Consumer</a></p>
 		</div>
 			
 		<table class="contentmaintable">
@@ -84,20 +84,20 @@
 					<td class="indexcell">
 						<div class="projectBrowserTitle">Project: </div>
 						<ul>
-<a href="EA4215.htm">Vehicle</a></ul>
+<a href="EA4207.htm">NAP Actors</a></ul>
 
 					</td>
 					<td class="contentcell"><div class="pageHeader"></div>
 <div class="PageBody">
-	<span class="ObjectTitle">On-Demand Service Vehicle  : Public  &lt;&lt;FRAME_Terminator&gt;&gt; FRAME_Terminator</span>
+	<span class="ObjectTitle">NAP Content Consumer  : Public  &lt;&lt;FRAME_Terminator&gt;&gt; FRAME_Terminator</span>
 	<table border="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">02.08.2021 11:51:32</td>
+			<td width="85%" class="ObjectDetailsValue">30.07.2021 20:12:04</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">08.09.2021 15:03:49</td>
+			<td class="ObjectDetailsValue">08.09.2021 15:03:46</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -142,19 +142,21 @@
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{EF0D592A-F90F-4a3b-A9C0-AE3EFB16DDC6}</td>
+			<td class="ObjectDetailsValue">{A8478CF0-37A0-4638-BECC-CBB89B7519C6}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../EA1/EA4190.htm">Vehicle</a></td>
+			<td class="ObjectDetailsValue">Content Consumer View, 02 NAP Functional View, 02 NAP Functional View with data exchange, 04 NAP Physical View, 04 SSTPIS Physical View, <a href="../EA1/EA4182.htm">NAP Actors</a>, 04 NAP Physical View with data exchange, 05 NAP Communication View  with data exchange, 05 NAP Communication View</td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">This Terminator is part of the Vehicle Terminator and shall represent a Vehicle that delivers personal transport services on-demand.&#160;&#160;Usually the Vehicle shall be licensed to carry a small number of passengers as this type of service is not expected to attract a large number of passengers due to its non-scheduled operation and, possibly, variable routes.&#160;&#160;It is expected that this Terminator shall provide data objects to the functionality in the system either directly through an interface or through sensors, and these shall be used to assist the provision of On-Demand PT services.&#160;&#160;The functionality in the system must also be able to communicate with more than one On-Demand Service Vehicle, each of which may belong to the same organisation, or to different organisations.&lt;br/&gt;&lt;br/&gt;Mnemonic: v.odsv&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">This Generic Terminator Role Content Consumer shall represent any interested entity in traffic and transport data. The Content Consumer can find available data via the NAP. Therefore Function F3.6.4 Provide Access for NAP Meta-Data Retrieval offers an interface (typically a graphical user interface freely accessible via the Internet) to search the meta-data in D3.15 NAP Meta-Data&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Key issue&lt;/b&gt;: Request high quality services; provide feedback about relevant content&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Area of responsibility&lt;/b&gt;: Be compliant to the agreement with content provider&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Tasks&lt;/b&gt;: Receive content &lt;br/&gt;&lt;br/&gt;Mnemonic: nap.cc&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
 			<li onClick="parent != null ? parent.toggleItem('AssociationsTo') : toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+			<li onClick="parent != null ? parent.toggleItem('AssociationsFrom') : toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
 			<li onClick="parent != null ? parent.toggleItem('CustomProperties') : toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
+			<li onClick="parent != null ? parent.toggleItem('Links') : toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
 		<div class="ItemBody" id="AssociationsToTable">
 			<table class="Table ea_table">
@@ -165,8 +167,8 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA1/EA1739.htm">«FRAME_High_Level_Data_Flow» fv.odsv-vehicle_inputs </a><br />
-						FRAME_High_Level_Data_Flow «IN» 
+						«FRAME_Low_Level_Data_Flow» Data_response<br />
+						Interface «OUT» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
 						<strong>Name:</strong> &nbsp;<br />
@@ -179,8 +181,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24729" /></button>Details:
-							<div id="detailsDIVLink24729" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24610" /></button>Details:
+							<div id="detailsDIVLink24610" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -188,7 +190,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA2/EA2446.htm">«FRAME_Low_Level_Data_Flow» fv.odsv-status </a><br />
+						<a href="../../EA3/EA2/EA2233.htm">«FRAME_Low_Level_Data_Flow» fnap.cc-support_request</a><br />
 						FRAME_Low_Level_Data_Flow «IN» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -202,8 +204,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24730" /></button>Details:
-							<div id="detailsDIVLink24730" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24611" /></button>Details:
+							<div id="detailsDIVLink24611" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -211,7 +213,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA4215.htm">«FRAME_Terminator» Vehicle</a><br />
+						<a href="EA4207.htm">«FRAME_Terminator» NAP Actors</a><br />
 						FRAME_Terminator «component of» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -225,8 +227,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24731" /></button>Details:
-							<div id="detailsDIVLink24731" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24612" /></button>Details:
+							<div id="detailsDIVLink24612" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -234,7 +236,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA2/EA2445.htm">«FRAME_Low_Level_Data_Flow» fv.odsv-passenger_numbers </a><br />
+						<a href="../../EA3/EA2/EA2232.htm">«FRAME_Low_Level_Data_Flow» fnap.cc-search_request</a><br />
 						FRAME_Low_Level_Data_Flow «IN» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -248,8 +250,87 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24732" /></button>Details:
-							<div id="detailsDIVLink24732" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24613" /></button>Details:
+							<div id="detailsDIVLink24613" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="AssociationsFromTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../EA3/EA2/EA3991.htm">«FRAME_Low_Level_Data_Flow» tnap.cc-support_response</a><br />
+						FRAME_Low_Level_Data_Flow «OUT» 
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24614" /></button>Details:
+							<div id="detailsDIVLink24614" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../EA3/EA2/EA3990.htm">«FRAME_Low_Level_Data_Flow» tnap.cc-meta-data_search_result</a><br />
+						FRAME_Low_Level_Data_Flow «OUT» 
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24615" /></button>Details:
+							<div id="detailsDIVLink24615" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						«FRAME_Low_Level_Data_Flow» Data_request<br />
+						Interface «IN» 
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24616" /></button>Details:
+							<div id="detailsDIVLink24616" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -281,7 +362,68 @@
 
 
 			</table>
-		</div>	</div>
+		</div>		<div class="ItemBody" id="LinksTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top">NAP Content Consumer</td>
+					<td width="10%" class="TableRow" valign="top">Actor</td>
+					<td width="10%" class="TableRow" valign="top">Abstraction</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top">Privacy agreement (CC-Support)</td>
+					<td width="10%" class="TableRow" valign="top">Collaborate</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top">Data</td>
+					<td width="10%" class="TableRow" valign="top">Interface</td>
+					<td width="10%" class="TableRow" valign="top">Information Flow</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top">Content consumer applications</td>
+					<td width="10%" class="TableRow" valign="top">Object</td>
+					<td width="10%" class="TableRow" valign="top">Usage</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top">Privacy agreement (CC-NAP) and general terms and conditions</td>
+					<td width="10%" class="TableRow" valign="top">Collaborate</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top">Service Provider NAP Application</td>
+					<td width="10%" class="TableRow" valign="top">Object</td>
+					<td width="10%" class="TableRow" valign="top">Usage</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top">data_request</td>
+					<td width="10%" class="TableRow" valign="top">Interface</td>
+					<td width="10%" class="TableRow" valign="top">Information Flow</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
  </div>
  </td>
 				</tr>

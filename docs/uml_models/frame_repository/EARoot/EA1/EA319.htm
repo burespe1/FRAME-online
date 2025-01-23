@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>8.5.1.2</title>
+<title>8.5.4 Accident Data Recording</title>
 <link href="../../css/ea.css" rel="stylesheet" type="text/css" />
 <script language="JavaScript" src="../../js/displayToc.js" type="text/javascript"></script>
 <script>
@@ -64,12 +64,12 @@
 <div class="section group" >
 
 		<div class="col span_2_of_2 header_frame">
-			<h1> 8.5.1.2 </h1>
+			<h1> 8.5.4 Accident Data Recording </h1>
 			<!-- <img class="header_image" src="../../images/ea-banner.png" align="right" alt="Header Image" />-->
 			<img class="header_image" src="../../images/ea-banner.png" align="right" alt="Header Image" />
 		</div>
 		<div class="col span_2_of_2 breadcrumb_frame">
-			<p><a href="../EA3.htm">Frame Repository</a> / <a href="EA58.htm">FRAME User Needs</a> / <a href="EA66.htm">8 Intelligent Vehicle Systems</a> / <a href="EA331.htm">8.5 Safety Readiness</a> / <a href="EA248.htm">8.5.1 eCall  </a> / <a href="EA319.htm">8.5.1.2</a></p>
+			<p><a href="../EA3.htm">Frame Repository</a> / <a href="EA58.htm">FRAME User Needs</a> / <a href="EA66.htm">8 Intelligent Vehicle Systems</a> / <a href="EA387.htm">8.5 Safety Readiness</a> / <a href="EA319.htm">8.5.4 Accident Data Recording</a></p>
 		</div>
 			
 		<table class="contentmaintable">
@@ -84,12 +84,14 @@
 					<td class="indexcell">
 						<div class="projectBrowserTitle">Project: </div>
 						<ul>
-<a href="EA248.htm">8.5.1 eCall  </a></ul>
+<li><img src="../../images/19.png" alt="Requirement"/> <a href="EA382.htm">8.5.4.2</a></li>
+<li><img src="../../images/19.png" alt="Requirement"/> <a href="EA381.htm">8.5.4.1</a></li>
+</ul>
 
 					</td>
 					<td class="contentcell"><div class="pageHeader"></div>
 <div class="PageBody">
-	<span class="ObjectTitle">8.5.1.2  : Public  &lt;&lt;FRAME_User_Need&gt;&gt; FRAME_User_Need</span>
+	<span class="ObjectTitle">8.5.4 Accident Data Recording 8.5.4 : Public  &lt;&lt;FRAME_User_Need_Topic&gt;&gt; FRAME_User_Need_Topic</span>
 	<table border="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
@@ -97,7 +99,7 @@
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">08.09.2021 10:56:00</td>
+			<td class="ObjectDetailsValue">08.09.2021 10:53:59</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -110,7 +112,7 @@
 		</tr>
 		<tr id="proj01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
-			<td class="ObjectDetailsValue">Unknow</td>
+			<td class="ObjectDetailsValue">6.0</td>
 		</tr>
 		<tr id="proj02" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
@@ -142,18 +144,18 @@
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{AA05B0B5-8407-4a45-A888-24011D6BD210}</td>
+			<td class="ObjectDetailsValue">{5A3D68DD-D510-4b0b-B887-8BB1A5E82786}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
 			<td class="ObjectDetailsValue"><a href="EA46.htm">User Need Group 8 Intelligent Vehicle Systems - 8.4 + 8.5 + 8.6</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes"> The system shall be able to detect that the vehicle has been involved in an accident, identify its location, and initiate an &#39;eCall&#39; automatically.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;</div>
-
+	
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
 			<li onClick="parent != null ? parent.toggleItem('AssociationsTo') : toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+			<li onClick="parent != null ? parent.toggleItem('AssociationsFrom') : toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
 			<li onClick="parent != null ? parent.toggleItem('CustomProperties') : toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
 		</ul>
 		<div class="ItemBody" id="AssociationsToTable">
@@ -165,8 +167,8 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../EA2/EA1/EA5/EA1378.htm">«FRAME_Low_Level_Function» F5.12.7 Communicate with In-vehicle Systems</a><br />
-						FRAME_Low_Level_Function «Servedby» 
+						<a href="EA387.htm">«FRAME_User_Need_Service» 8.5 Safety Readiness</a><br />
+						FRAME_User_Need_Service «belongsto» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
 						<strong>Name:</strong> &nbsp;<br />
@@ -179,8 +181,41 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink997" /></button>Details:
-							<div id="detailsDIVLink997" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink716" /></button>Details:
+							<div id="detailsDIVLink716" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="AssociationsFromTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA382.htm">«FRAME_User_Need» 8.5.4.2</a><br />
+						FRAME_User_Need «belongsto» 
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink717" /></button>Details:
+							<div id="detailsDIVLink717" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -188,8 +223,8 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../EA2/EA1/EA5/EA1350.htm">«FRAME_Low_Level_Function» F5.11.7 Provide In-vehicle eCall Facilities</a><br />
-						FRAME_Low_Level_Function «Servedby» 
+						<a href="EA381.htm">«FRAME_User_Need» 8.5.4.1</a><br />
+						FRAME_User_Need «belongsto» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
 						<strong>Name:</strong> &nbsp;<br />
@@ -202,31 +237,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink998" /></button>Details:
-							<div id="detailsDIVLink998" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA248.htm">«FRAME_User_Need_Topic» 8.5.1 eCall  </a><br />
-						FRAME_User_Need_Topic «belongsto» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink999" /></button>Details:
-							<div id="detailsDIVLink999" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink718" /></button>Details:
+							<div id="detailsDIVLink718" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>

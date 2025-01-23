@@ -146,7 +146,7 @@
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA1334.htm">DFD F5.14 Provide In-vehicle Trip Planning & Implementation</a>, <a href="EA1322.htm">Functional Tree of Area F5 Provide Support for Host Vehicle Services</a></td>
+			<td class="ObjectDetailsValue">SSTP Function Allocation, High Level Function Information Service, <a href="EA1334.htm">DFD F5.14 Provide In-vehicle Trip Planning & Implementation</a>, <a href="EA1322.htm">Functional Tree of Area F5 Provide Support for Host Vehicle Services</a></td>
 		</tr>
 	</table>
 	<div class="ObjectDetailsNotes">This Function shall be capable of providing the following facilities:&lt;br/&gt;&lt;br/&gt;(1) The ability to monitor the progress that the Driver is making with the Vehicle Trip Plan that is currently being implemented.&lt;br/&gt;(2) The ability to use the current location of the Vehicle to check its progress with the Trip Plan implementation.&lt;br/&gt;(3) If the Vehicle Trip Plan is for a Freight Vehicle, the ability to update the Estimated Time of Arrival (ETA) so that any rest area or un/loading zone bookings can be re-validated.&lt;br/&gt;(4) When the Freight Vehicle leaves a rest area or un/loading zone, the ability to provide data showing that the parking space it has used can be booked by another Freight Vehicle.&lt;br/&gt;(5) If the Vehicle departs from the route in the Trip Plan, the ability to send a warning for output to the Driver and to request that a new route is created starting from the current location of the Vehicle.&lt;br/&gt;(6) The ability to continuously evaluate the data it receives about the road traffic conditions such as current and predicted traffic flows, road works, weather and incidents, plus the current Vehicle location and part of the Trip Plan that remains to be implemented, and to determine if there is any benefit in changing the current Vehicle Trip Plan.&lt;br/&gt;(7) If the results of the evaluation show that there is some benefit to the Driver in changing the current Vehicle Trip Plan, the ability to request that this is done, send a warning message with the reason for the change for output to the Driver and continue monitoring the use of the current Trip Plan until it is replaced.&lt;br/&gt;(8) As implementation of the Vehicle Trip Plan progresses, the ability to collect O-D and journey time data for the road network segments that are used in the trip and send them to the Inter-urban and Urban Traffic Data Collection functionality. &lt;br/&gt;(9) The ability to send data about way points in the Trip Plan to other in-vehicle functionality for inclusion in eXtended Floating Car Data (XFCD).&lt;br/&gt;</div>
@@ -157,6 +157,7 @@
 			<li onClick="parent != null ? parent.toggleItem('AssociationsFrom') : toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
 			<li onClick="parent != null ? parent.toggleItem('Requirements') : toggleItem('Requirements');" id="RequirementsTitle">Requirements</li>
 			<li onClick="parent != null ? parent.toggleItem('CustomProperties') : toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
+			<li onClick="parent != null ? parent.toggleItem('Links') : toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
 		<div class="ItemBody" id="AssociationsToTable">
 			<table class="Table ea_table">
@@ -167,260 +168,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA1387.htm">«FRAME_High_Level_Function» F5.14 Provide In-vehicle Trip Planning & Implementation</a><br />
-						FRAME_High_Level_Function «componentof» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink9162" /></button>Details:
-							<div id="detailsDIVLink9162" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA2/EA3495.htm">«FRAME_Low_Level_Data_Flow» pshvs.pscs_freight_vehicle_left_un/loading_zone </a><br />
-						FRAME_Low_Level_Data_Flow «IN» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink9163" /></button>Details:
-							<div id="detailsDIVLink9163" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA2/EA3491.htm">«FRAME_Low_Level_Data_Flow» pshvs.mt_vehicle_trip_plan_route_for_urban </a><br />
-						FRAME_Low_Level_Data_Flow «IN» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink9164" /></button>Details:
-							<div id="detailsDIVLink9164" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA2/EA3480.htm">«FRAME_Low_Level_Data_Flow» pshvs.mt_urban_road_use_data_from_trip </a><br />
-						FRAME_Low_Level_Data_Flow «IN» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink9165" /></button>Details:
-							<div id="detailsDIVLink9165" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA2/EA3507.htm">«FRAME_Low_Level_Data_Flow» pshvs.ptja_vehicle_trip_plan_criteria_changes </a><br />
-						FRAME_Low_Level_Data_Flow «IN» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink9166" /></button>Details:
-							<div id="detailsDIVLink9166" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA2/EA3630.htm">«FRAME_Low_Level_Data_Flow» pshvs_vehicle_eta_for_driver</a><br />
-						FRAME_Low_Level_Data_Flow «IN» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink9167" /></button>Details:
-							<div id="detailsDIVLink9167" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA2/EA3646.htm">«FRAME_Low_Level_Data_Flow» pshvs_vehicle_trip_plan_change_data_for_driver</a><br />
-						FRAME_Low_Level_Data_Flow «IN» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink9168" /></button>Details:
-							<div id="detailsDIVLink9168" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
 						<a href="../../EA3/EA2/EA3585.htm">«FRAME_Low_Level_Data_Flow» pshvs_revise_vehicle_trip_plan_request</a><br />
-						FRAME_Low_Level_Data_Flow «IN» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink9169" /></button>Details:
-							<div id="detailsDIVLink9169" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA2/EA3497.htm">«FRAME_Low_Level_Data_Flow» pshvs.pscs_holding_zone_eta </a><br />
-						FRAME_Low_Level_Data_Flow «IN» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink9170" /></button>Details:
-							<div id="detailsDIVLink9170" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA2/EA3628.htm">«FRAME_Low_Level_Data_Flow» pshvs_vehicle_departed_from_route</a><br />
-						FRAME_Low_Level_Data_Flow «IN» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink9171" /></button>Details:
-							<div id="detailsDIVLink9171" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA2/EA3489.htm">«FRAME_Low_Level_Data_Flow» pshvs.mt_vehicle_trip_plan_o-d_data </a><br />
-						FRAME_Low_Level_Data_Flow «IN» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink9172" /></button>Details:
-							<div id="detailsDIVLink9172" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA2/EA3470.htm">«FRAME_Low_Level_Data_Flow» pshvs.mt_rest_area_eta</a><br />
 						FRAME_Low_Level_Data_Flow «IN» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -443,7 +191,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA2/EA3458.htm">«FRAME_Low_Level_Data_Flow» pshvs.mt_inter-urban_road_use_data_from_trip </a><br />
+						<a href="../../EA3/EA2/EA3628.htm">«FRAME_Low_Level_Data_Flow» pshvs_vehicle_departed_from_route</a><br />
 						FRAME_Low_Level_Data_Flow «IN» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -466,7 +214,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA2/EA3452.htm">«FRAME_Low_Level_Data_Flow» pshvs.mt_freight_vehicle_left_rest_area </a><br />
+						<a href="../../EA3/EA2/EA3507.htm">«FRAME_Low_Level_Data_Flow» pshvs.ptja_vehicle_trip_plan_criteria_changes </a><br />
 						FRAME_Low_Level_Data_Flow «IN» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -489,7 +237,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA2/EA3498.htm">«FRAME_Low_Level_Data_Flow» pshvs.pscs_un/loading_zone_eta </a><br />
+						<a href="../../EA3/EA2/EA3630.htm">«FRAME_Low_Level_Data_Flow» pshvs_vehicle_eta_for_driver</a><br />
 						FRAME_Low_Level_Data_Flow «IN» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -512,7 +260,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA2/EA3592.htm">«FRAME_Low_Level_Data_Flow» pshvs_route_information_for_xfcd</a><br />
+						<a href="../../EA3/EA2/EA3489.htm">«FRAME_Low_Level_Data_Flow» pshvs.mt_vehicle_trip_plan_o-d_data </a><br />
 						FRAME_Low_Level_Data_Flow «IN» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -535,7 +283,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA2/EA3490.htm">«FRAME_Low_Level_Data_Flow» pshvs.mt_vehicle_trip_plan_route_for_inter-urban </a><br />
+						<a href="../../EA3/EA2/EA3458.htm">«FRAME_Low_Level_Data_Flow» pshvs.mt_inter-urban_road_use_data_from_trip </a><br />
 						FRAME_Low_Level_Data_Flow «IN» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -556,20 +304,10 @@
 						</div>
 					</td>
 				</tr>
-
-			</table>
-		</div>
-		<div class="ItemBody" id="AssociationsFromTable">
-			<table class="Table ea_table">
-				<tr>
-					<td width="40%" class="TableHeading">Element</td>
-					<td width="30%" class="TableHeading">Source Role</td>
-					<td width="30%" class="TableHeading">Target Role</td>
-				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../../EA1/EA342.htm">«FRAME_User_Need» 7.5.1.18</a><br />
-						FRAME_User_Need «Servedby» 
+						<a href="../../EA3/EA2/EA3490.htm">«FRAME_Low_Level_Data_Flow» pshvs.mt_vehicle_trip_plan_route_for_inter-urban </a><br />
+						FRAME_Low_Level_Data_Flow «IN» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
 						<strong>Name:</strong> &nbsp;<br />
@@ -591,8 +329,8 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA2/EA2807.htm">«FRAME_Low_Level_Data_Flow» mt.pshvs_de-icing_data_for_vehicle_trip_monitoring </a><br />
-						FRAME_Low_Level_Data_Flow «OUT» 
+						<a href="../../EA3/EA2/EA3480.htm">«FRAME_Low_Level_Data_Flow» pshvs.mt_urban_road_use_data_from_trip </a><br />
+						FRAME_Low_Level_Data_Flow «IN» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
 						<strong>Name:</strong> &nbsp;<br />
@@ -614,8 +352,8 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../../EA1/EA941.htm">«FRAME_User_Need» 6.4.1.5</a><br />
-						FRAME_User_Need «Servedby» 
+						<a href="../../EA3/EA2/EA3646.htm">«FRAME_Low_Level_Data_Flow» pshvs_vehicle_trip_plan_change_data_for_driver</a><br />
+						FRAME_Low_Level_Data_Flow «IN» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
 						<strong>Name:</strong> &nbsp;<br />
@@ -637,8 +375,8 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../../EA1/EA509.htm">«FRAME_User_Need» 6.4.0.5</a><br />
-						FRAME_User_Need «Servedby» 
+						<a href="../../EA3/EA2/EA3498.htm">«FRAME_Low_Level_Data_Flow» pshvs.pscs_un/loading_zone_eta </a><br />
+						FRAME_Low_Level_Data_Flow «IN» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
 						<strong>Name:</strong> &nbsp;<br />
@@ -660,8 +398,8 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA2/EA2808.htm">«FRAME_Low_Level_Data_Flow» mt.pshvs_forecast_traffic_to_monitor_vehicle_trip </a><br />
-						FRAME_Low_Level_Data_Flow «OUT» 
+						<a href="../../EA3/EA2/EA3491.htm">«FRAME_Low_Level_Data_Flow» pshvs.mt_vehicle_trip_plan_route_for_urban </a><br />
+						FRAME_Low_Level_Data_Flow «IN» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
 						<strong>Name:</strong> &nbsp;<br />
@@ -683,8 +421,8 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA2/EA3637.htm">«FRAME_Low_Level_Data_Flow» pshvs_vehicle_location_for_trip_plan_monitoring</a><br />
-						FRAME_Low_Level_Data_Flow «OUT» 
+						<a href="EA1387.htm">«FRAME_High_Level_Function» F5.14 Provide In-vehicle Trip Planning & Implementation</a><br />
+						FRAME_High_Level_Function «componentof» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
 						<strong>Name:</strong> &nbsp;<br />
@@ -706,8 +444,8 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../../EA1/EA348.htm">«FRAME_User_Need» 7.5.1.23</a><br />
-						FRAME_User_Need «Servedby» 
+						<a href="../../EA3/EA2/EA3497.htm">«FRAME_Low_Level_Data_Flow» pshvs.pscs_holding_zone_eta </a><br />
+						FRAME_Low_Level_Data_Flow «IN» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
 						<strong>Name:</strong> &nbsp;<br />
@@ -729,8 +467,8 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA2/EA3651.htm">«FRAME_Low_Level_Data_Flow» pshvs_vehicle_trip_plan_for_monitoring</a><br />
-						FRAME_Low_Level_Data_Flow «OUT» 
+						<a href="../../EA3/EA2/EA3495.htm">«FRAME_Low_Level_Data_Flow» pshvs.pscs_freight_vehicle_left_un/loading_zone </a><br />
+						FRAME_Low_Level_Data_Flow «IN» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
 						<strong>Name:</strong> &nbsp;<br />
@@ -752,8 +490,8 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../../EA1/EA341.htm">«FRAME_User_Need» 7.5.1.17</a><br />
-						FRAME_User_Need «Servedby» 
+						<a href="../../EA3/EA2/EA3592.htm">«FRAME_Low_Level_Data_Flow» pshvs_route_information_for_xfcd</a><br />
+						FRAME_Low_Level_Data_Flow «IN» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
 						<strong>Name:</strong> &nbsp;<br />
@@ -775,8 +513,8 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../../EA1/EA937.htm">«FRAME_User_Need» 6.4.1.1</a><br />
-						FRAME_User_Need «Servedby» 
+						<a href="../../EA3/EA2/EA3452.htm">«FRAME_Low_Level_Data_Flow» pshvs.mt_freight_vehicle_left_rest_area </a><br />
+						FRAME_Low_Level_Data_Flow «IN» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
 						<strong>Name:</strong> &nbsp;<br />
@@ -798,8 +536,8 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../../EA1/EA846.htm">«FRAME_User_Need» 9.5.7.10</a><br />
-						FRAME_User_Need «Servedby» 
+						<a href="../../EA3/EA2/EA3470.htm">«FRAME_Low_Level_Data_Flow» pshvs.mt_rest_area_eta</a><br />
+						FRAME_Low_Level_Data_Flow «IN» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
 						<strong>Name:</strong> &nbsp;<br />
@@ -818,6 +556,16 @@
 							</div>
 						</div>
 					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="AssociationsFromTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
@@ -844,8 +592,8 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../../EA1/EA346.htm">«FRAME_User_Need» 7.5.1.21</a><br />
-						FRAME_User_Need «Servedby» 
+						<a href="../../EA3/EA2/EA2808.htm">«FRAME_Low_Level_Data_Flow» mt.pshvs_forecast_traffic_to_monitor_vehicle_trip </a><br />
+						FRAME_Low_Level_Data_Flow «OUT» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
 						<strong>Name:</strong> &nbsp;<br />
@@ -867,8 +615,8 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA2/EA2830.htm">«FRAME_Low_Level_Data_Flow» mt.pshvs_roadworks_data_to_monitor_vehicle_trips </a><br />
-						FRAME_Low_Level_Data_Flow «OUT» 
+						<a href="../../../EA1/EA922.htm">«FRAME_User_Need» 9.5.8.8</a><br />
+						FRAME_User_Need «Servedby» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
 						<strong>Name:</strong> &nbsp;<br />
@@ -890,7 +638,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../../EA1/EA936.htm">«FRAME_User_Need» 9.5.8.8</a><br />
+						<a href="../../../EA1/EA889.htm">«FRAME_User_Need» 7.6.2.9</a><br />
 						FRAME_User_Need «Servedby» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -913,7 +661,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA2/EA2846.htm">«FRAME_Low_Level_Data_Flow» mt.pshvs_weather_data_for_vehicle_trip_monitoring </a><br />
+						<a href="../../EA3/EA2/EA2807.htm">«FRAME_Low_Level_Data_Flow» mt.pshvs_de-icing_data_for_vehicle_trip_monitoring </a><br />
 						FRAME_Low_Level_Data_Flow «OUT» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -936,8 +684,8 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../../EA1/EA852.htm">«FRAME_User_Need» 9.5.7.7</a><br />
-						FRAME_User_Need «Servedby» 
+						<a href="../../EA3/EA2/EA2825.htm">«FRAME_Low_Level_Data_Flow» mt.pshvs_rest_area_booking_confirmed_&_information</a><br />
+						FRAME_Low_Level_Data_Flow «OUT» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
 						<strong>Name:</strong> &nbsp;<br />
@@ -959,7 +707,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA2/EA2825.htm">«FRAME_Low_Level_Data_Flow» mt.pshvs_rest_area_booking_confirmed_&_information</a><br />
+						<a href="../../EA3/EA2/EA2846.htm">«FRAME_Low_Level_Data_Flow» mt.pshvs_weather_data_for_vehicle_trip_monitoring </a><br />
 						FRAME_Low_Level_Data_Flow «OUT» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -982,8 +730,8 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA2/EA2840.htm">«FRAME_Low_Level_Data_Flow» mt.pshvs_urban_network_perturbations </a><br />
-						FRAME_Low_Level_Data_Flow «OUT» 
+						<a href="../../../EA1/EA556.htm">«FRAME_User_Need» 6.4.0.5</a><br />
+						FRAME_User_Need «Servedby» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
 						<strong>Name:</strong> &nbsp;<br />
@@ -1005,8 +753,8 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../../EA1/EA853.htm">«FRAME_User_Need» 9.5.7.8</a><br />
-						FRAME_User_Need «Servedby» 
+						<a href="../../EA3/EA2/EA2816.htm">«FRAME_Low_Level_Data_Flow» mt.pshvs_inter-urban_network_perturbations </a><br />
+						FRAME_Low_Level_Data_Flow «OUT» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
 						<strong>Name:</strong> &nbsp;<br />
@@ -1028,8 +776,8 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../../EA1/EA898.htm">«FRAME_User_Need» 7.6.2.9</a><br />
-						FRAME_User_Need «Servedby» 
+						<a href="../../EA3/EA2/EA2840.htm">«FRAME_Low_Level_Data_Flow» mt.pshvs_urban_network_perturbations </a><br />
+						FRAME_Low_Level_Data_Flow «OUT» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
 						<strong>Name:</strong> &nbsp;<br />
@@ -1051,8 +799,8 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA2/EA2816.htm">«FRAME_Low_Level_Data_Flow» mt.pshvs_inter-urban_network_perturbations </a><br />
-						FRAME_Low_Level_Data_Flow «OUT» 
+						<a href="../../../EA1/EA851.htm">«FRAME_User_Need» 9.5.7.7</a><br />
+						FRAME_User_Need «Servedby» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
 						<strong>Name:</strong> &nbsp;<br />
@@ -1067,6 +815,259 @@
 					<td class="TableRowBottomDashed"  colspan="3">
 						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink9200" /></button>Details:
 							<div id="detailsDIVLink9200" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../../EA1/EA927.htm">«FRAME_User_Need» 6.4.1.5</a><br />
+						FRAME_User_Need «Servedby» 
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink9201" /></button>Details:
+							<div id="detailsDIVLink9201" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../../EA1/EA398.htm">«FRAME_User_Need» 7.5.1.18</a><br />
+						FRAME_User_Need «Servedby» 
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink9202" /></button>Details:
+							<div id="detailsDIVLink9202" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../../EA1/EA923.htm">«FRAME_User_Need» 6.4.1.1</a><br />
+						FRAME_User_Need «Servedby» 
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink9203" /></button>Details:
+							<div id="detailsDIVLink9203" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../../EA1/EA404.htm">«FRAME_User_Need» 7.5.1.23</a><br />
+						FRAME_User_Need «Servedby» 
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink9204" /></button>Details:
+							<div id="detailsDIVLink9204" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../../EA1/EA397.htm">«FRAME_User_Need» 7.5.1.17</a><br />
+						FRAME_User_Need «Servedby» 
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink9205" /></button>Details:
+							<div id="detailsDIVLink9205" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../EA3/EA2/EA2830.htm">«FRAME_Low_Level_Data_Flow» mt.pshvs_roadworks_data_to_monitor_vehicle_trips </a><br />
+						FRAME_Low_Level_Data_Flow «OUT» 
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink9206" /></button>Details:
+							<div id="detailsDIVLink9206" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../EA3/EA2/EA3637.htm">«FRAME_Low_Level_Data_Flow» pshvs_vehicle_location_for_trip_plan_monitoring</a><br />
+						FRAME_Low_Level_Data_Flow «OUT» 
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink9207" /></button>Details:
+							<div id="detailsDIVLink9207" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../../EA1/EA852.htm">«FRAME_User_Need» 9.5.7.8</a><br />
+						FRAME_User_Need «Servedby» 
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink9208" /></button>Details:
+							<div id="detailsDIVLink9208" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../../EA1/EA845.htm">«FRAME_User_Need» 9.5.7.10</a><br />
+						FRAME_User_Need «Servedby» 
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink9209" /></button>Details:
+							<div id="detailsDIVLink9209" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../../EA1/EA402.htm">«FRAME_User_Need» 7.5.1.21</a><br />
+						FRAME_User_Need «Servedby» 
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink9210" /></button>Details:
+							<div id="detailsDIVLink9210" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../EA3/EA2/EA3651.htm">«FRAME_Low_Level_Data_Flow» pshvs_vehicle_trip_plan_for_monitoring</a><br />
+						FRAME_Low_Level_Data_Flow «OUT» 
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink9211" /></button>Details:
+							<div id="detailsDIVLink9211" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -1095,8 +1096,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="6">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageRequirement9201" /></button>Details:
-							<div id="detailsDIVRequirement9201" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageRequirement9212" /></button>Details:
+							<div id="detailsDIVRequirement9212" class="DetailsDiv" >
 							<div class="ObjectDetailsNotes">(a) continuously monitor for receipt of the data flows containing updates to the road traffic conditions and incidents;&lt;br/&gt;(b) when any of the data flows are received in (a) update an internal store with the data that they contain;&lt;br/&gt;(c) continuously monitor for receipt of the vehicle trip plan for monitoring data flow;&lt;br/&gt;(d) when the data flow in (c) is received, extract the vehicle trip plan description and await the receipt of the vehicle location for trip plan monitoring data flow, but send data about way points in the trip plan to the Prepare Extended Floating Car Data function in the route information for xfcd data flow;&lt;br/&gt;(e) when the data flow in (d) is received use the vehicle trip plan data to determine how far the vehicle has progressed through the trip plan and calculate the Estimated Time of Arrival (ETA) at the way points and the trip destination, using the data collected in (b) above;&lt;br/&gt;(f) send the ETA data to the Provide Driver Trip Interface in the vehicle eta for driver data flow;&lt;br/&gt;(g) use the data in (e) to determine the ETA for the next booked rest area (if any) and send the result to the Manage Rest Area Booking function in the rest area eta data flow;&lt;br/&gt;(h) if the data flow in (g) has been sent then when the response is received in the rest area booking confirmed &amp; information data flow send the new eta to the Provide Driver Trip Interface function in the vehicle eta for driver data flow;&lt;br/&gt;(i) again use the data in (e) to determine the ETA for the next loading or unloading zone, or holding zone and send the result to the Manage Use of Un/Loading Zones function in un/loading zone eta or holding zone eta data flows respectively;&lt;br/&gt;(j) when the data in (e) shows that the vehicle is leaving a rest zone, send this information to the Manage Rest Area Booking function in the freight vehicle departing rest area data flow;&lt;br/&gt;(k) also use the data in (e) to determine if the vehicle is departing from the route in the trip plan and if so, end the revise vehicle trip plan request data flow to the Prepare and Revise Trip Plans function so that a new vehicle trip plan can be created, starting from the current location of the vehicle, and send a warning message in the vehicle departed from route data flow to the Provide Driver Trip Interface function;&lt;br/&gt;(l) again use the data in (e) to assess the progress that is being made with implementing the trip and check to see if the ETA is remaining constant or increasing, i.e. the trip will take longer than expected;&lt;br/&gt;(m) if the trip will take longer than expected, send the revise vehicle trip plan request data flow to the Prepare and Revise Trip Plans function so that a new vehicle trip plan can be created, starting from the current location of the vehicle;&lt;br/&gt;(n) periodically send details of the route from the vehicle trip plan to the inter-urban and urban functionality in the vehicle trip plan route for inter-urban and vehicle trip plan route for urban data flows;&lt;br/&gt;(o) as a result of (l) put the reason for the need to change the trip plan in the vehicle trip plan change reason for driver data flow and send it to the Provide Driver Trip Interface function;&lt;br/&gt;(p) using the data from (e) to calculate the journey time for each segment of the road network that the vehicle uses and send it to the Manage Traffic functionality in which ever is appropriate of the inter-urban road use data from trip and urban road use data from trip data flows;&lt;br/&gt;(q) continuously monitor for receipt of the vehicle location for trip plan monitoring data flow and when it is received, repeat (e) to (l) above, but once the data flow has been sent in (m) do not repeat until a new trip plan has been received in (c);&lt;br/&gt;(r) at the end of the trip, determine the original - destination (O-D) points and total journey time for the trip, taking account of any changes to the trip plan and send it to the Process Road Traffic Data function in the data flow containing vehicle trip plan o-d data.&lt;br/&gt;</div>
 
 							</div>
@@ -1124,7 +1125,26 @@
 
 
 			</table>
-		</div>	</div>
+		</div>		<div class="ItemBody" id="LinksTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top">Service Provider Main Application</td>
+					<td width="10%" class="TableRow" valign="top">Object</td>
+					<td width="10%" class="TableRow" valign="top">Usage</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
  </div>
  </td>
 				</tr>

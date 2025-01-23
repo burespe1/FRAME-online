@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Stationary Object</title>
+<title>Hazardous Goods Vehicle Driver</title>
 <link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script language="JavaScript" src="../../../../js/displayToc.js" type="text/javascript"></script>
 <script>
@@ -64,12 +64,12 @@
 <div class="section group" >
 
 		<div class="col span_2_of_2 header_frame">
-			<h1> Stationary Object </h1>
+			<h1> Hazardous Goods Vehicle Driver </h1>
 			<!-- <img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
 			<img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />
 		</div>
 		<div class="col span_2_of_2 breadcrumb_frame">
-			<p><a href="../../../EA3.htm">Frame Repository</a> / <a href="../../EA976.htm">Frame Functional View</a> / <a href="../EA4167.htm">Terminators & Terminator Diagrams</a> / <a href="EA4195.htm">Terminators</a> / <a href="EA4216.htm">Vehicle Environment</a> / <a href="EA4269.htm">Stationary Object</a></p>
+			<p><a href="../../../EA3.htm">Frame Repository</a> / <a href="../../EA976.htm">Frame Functional View</a> / <a href="../EA4167.htm">Terminators & Terminator Diagrams</a> / <a href="EA4195.htm">Terminators</a> / <a href="EA4199.htm">Driver</a> / <a href="EA4269.htm">Hazardous Goods Vehicle Driver</a></p>
 		</div>
 			
 		<table class="contentmaintable">
@@ -84,20 +84,20 @@
 					<td class="indexcell">
 						<div class="projectBrowserTitle">Project: </div>
 						<ul>
-<a href="EA4216.htm">Vehicle Environment</a></ul>
+<a href="EA4199.htm">Driver</a></ul>
 
 					</td>
 					<td class="contentcell"><div class="pageHeader"></div>
 <div class="PageBody">
-	<span class="ObjectTitle">Stationary Object  : Public  &lt;&lt;FRAME_Terminator&gt;&gt; FRAME_Terminator</span>
+	<span class="ObjectTitle">Hazardous Goods Vehicle Driver  : Public  &lt;&lt;FRAME_Terminator&gt;&gt; FRAME_Terminator</span>
 	<table border="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">02.08.2021 12:17:57</td>
+			<td width="85%" class="ObjectDetailsValue">29.07.2021 13:02:24</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">08.09.2021 15:03:49</td>
+			<td class="ObjectDetailsValue">08.09.2021 15:03:45</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -142,18 +142,19 @@
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{E3535D12-4EB0-4d16-9F2E-1B2712CF3DDD}</td>
+			<td class="ObjectDetailsValue">{66444DF9-66BA-45a2-B244-CFE4848E2FBA}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../EA1/EA4192.htm">Vehicle Environment</a></td>
+			<td class="ObjectDetailsValue"><a href="../EA1/EA4172.htm">Driver</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">This Terminator is part of the Vehicle Environment Terminator and shall represent the manifestation of stationary objects.&#160;&#160;These objects may be anything such as solid objects, e.g. debris, that are in or near the roadway of the immediate geographic area that surrounds the Vehicle.&#160;&#160;It is expected that this Terminator shall provide manifestations of stationary objects in such a way that they can be detected by sensors which shall create data objects for use by the functionality in the system to enable the Vehicle navigate through the road network.&lt;br/&gt;&lt;br/&gt;Mnemonic: ve.so&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">This Terminator is part of the Driver Terminator and shall represent a human entity that drives a vehicle that is carrying hazardous goods, i.e. a Hazardous Goods Vehicle.&#160;&#160;It shall be expected that the Terminator shall provide inputs from which data objects can be created by system functionality to represent requests and data for use in the system and be capable of translating into human readable form data objects output from the functionality in the system.&#160;&#160;The vehicle type for this Driver is defined in the description of the Hazardous Goods Vehicle Terminator.&#160;&#160;The functionality in the system must also be able to communicate with more than one human entity that drives vehicles carrying hazardous goods, each of which may belong to the same organisation, or to different organisations.&lt;br/&gt;&lt;br/&gt;Mnemonic: d.hgvd&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
 			<li onClick="parent != null ? parent.toggleItem('AssociationsTo') : toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+			<li onClick="parent != null ? parent.toggleItem('AssociationsFrom') : toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
 			<li onClick="parent != null ? parent.toggleItem('CustomProperties') : toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
 		</ul>
 		<div class="ItemBody" id="AssociationsToTable">
@@ -165,7 +166,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA2/EA2487.htm">«FRAME_Low_Level_Data_Flow» fve.so-object_presence_indication </a><br />
+						<a href="../../EA3/EA2/EA2079.htm">«FRAME_Low_Level_Data_Flow» fd.hgvd-redetermine_route_request </a><br />
 						FRAME_Low_Level_Data_Flow «IN» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -179,8 +180,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24804" /></button>Details:
-							<div id="detailsDIVLink24804" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24686" /></button>Details:
+							<div id="detailsDIVLink24686" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -188,7 +189,30 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA4216.htm">«FRAME_Terminator» Vehicle Environment</a><br />
+						<a href="../../EA3/EA2/EA2080.htm">«FRAME_Low_Level_Data_Flow» fd.hgvd-route_request_details </a><br />
+						FRAME_Low_Level_Data_Flow «IN» 
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24687" /></button>Details:
+							<div id="detailsDIVLink24687" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA4199.htm">«FRAME_Terminator» Driver</a><br />
 						FRAME_Terminator «component of» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -202,8 +226,156 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24805" /></button>Details:
-							<div id="detailsDIVLink24805" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24688" /></button>Details:
+							<div id="detailsDIVLink24688" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../EA3/EA2/EA2078.htm">«FRAME_Low_Level_Data_Flow» fd.hgvd-implement_route</a><br />
+						FRAME_Low_Level_Data_Flow «IN» 
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24689" /></button>Details:
+							<div id="detailsDIVLink24689" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../EA3/EA1/EA1589.htm">«FRAME_High_Level_Data_Flow» fd.hgvd-vehicle_route_inputs </a><br />
+						FRAME_High_Level_Data_Flow «IN» 
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24690" /></button>Details:
+							<div id="detailsDIVLink24690" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="AssociationsFromTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../EA3/EA1/EA1930.htm">«FRAME_High_Level_Data_Flow» td.hgvd-route_outputs </a><br />
+						FRAME_High_Level_Data_Flow «OUT» 
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24691" /></button>Details:
+							<div id="detailsDIVLink24691" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../EA3/EA2/EA3887.htm">«FRAME_Low_Level_Data_Flow» td.hgvd-vehicle_deviating_from_route </a><br />
+						FRAME_Low_Level_Data_Flow «OUT» 
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24692" /></button>Details:
+							<div id="detailsDIVLink24692" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../EA3/EA2/EA3885.htm">«FRAME_Low_Level_Data_Flow» td.hgvd-route_guidance </a><br />
+						FRAME_Low_Level_Data_Flow «OUT» 
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24693" /></button>Details:
+							<div id="detailsDIVLink24693" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../EA3/EA2/EA3886.htm">«FRAME_Low_Level_Data_Flow» td.hgvd-route_request_response</a><br />
+						FRAME_Low_Level_Data_Flow «OUT» 
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24694" /></button>Details:
+							<div id="detailsDIVLink24694" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>

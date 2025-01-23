@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Low Level Data Flows::mt_load_NAP_user_data</title>
+<title>Low Level Data Flows::mt_load_NAP_provider_data</title>
 <link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script language="JavaScript" src="../../../../js/displayToc.js" type="text/javascript"></script>
 <script>
@@ -64,12 +64,12 @@
 <div class="section group" >
 
 		<div class="col span_2_of_2 header_frame">
-			<h1> Low Level Data Flows::mt_load_NAP_user_data </h1>
+			<h1> Low Level Data Flows::mt_load_NAP_provider_data </h1>
 			<!-- <img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
 			<img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />
 		</div>
 		<div class="col span_2_of_2 breadcrumb_frame">
-			<p><a href="../../../EA3.htm">Frame Repository</a> / <a href="../../EA976.htm">Frame Functional View</a> / <a href="../EA1566.htm">Data Flows</a> / <a href="EA2042.htm">Low Level Data Flows</a> / <a href="EA3048.htm">mt_load_NAP_user_data</a></p>
+			<p><a href="../../../EA3.htm">Frame Repository</a> / <a href="../../EA976.htm">Frame Functional View</a> / <a href="../EA1566.htm">Data Flows</a> / <a href="EA2042.htm">Low Level Data Flows</a> / <a href="EA3048.htm">mt_load_NAP_provider_data</a></p>
 		</div>
 			
 		<table class="contentmaintable">
@@ -89,7 +89,7 @@
 					</td>
 					<td class="contentcell"><div class="pageHeader"></div>
 <div class="PageBody">
-	<span class="ObjectTitle">mt_load_NAP_user_data mt_load NAP user data : Public abstract &lt;&lt;FRAME_Low_Level_Data_Flow&gt;&gt; FRAME_Low_Level_Data_Flow</span>
+	<span class="ObjectTitle">mt_load_NAP_provider_data  : Public abstract &lt;&lt;FRAME_Low_Level_Data_Flow&gt;&gt; FRAME_Low_Level_Data_Flow</span>
 	<table border="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
@@ -97,7 +97,7 @@
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">04.01.2024 10:56:26</td>
+			<td class="ObjectDetailsValue">13.09.2021 11:09:19</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -106,7 +106,7 @@
 		</tr>
 		<tr id="proj00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
-			<td class="ObjectDetailsValue">bures</td>
+			<td class="ObjectDetailsValue">Update after transfer</td>
 		</tr>
 		<tr id="proj01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
@@ -146,10 +146,10 @@
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../../EA1/EA3/EA1121.htm">DFD F3.6 Operate National Access Point</a></td>
+			<td class="ObjectDetailsValue">02 NAP Functional View, 02 NAP Functional View with data exchange, 04 NAP Physical View, <a href="../../EA1/EA3/EA1121.htm">DFD F3.6 Operate National Access Point</a>, 04 NAP Physical View with data exchange, 05 NAP Communication View  with data exchange, 05 NAP Communication View</td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">It contains data objects that provide either new data to be loaded into the store of NAP Users, or a request for data objects to be retrieved.&#160;&#160;The data objects that are to be loaded into the store will include information about a previously unregistered NAP User or modifying, extending, deleting previously registered NAP User.&lt;br/&gt;&lt;br/&gt;===========&lt;br/&gt;&lt;b&gt;CHANGELOG:&lt;/b&gt;&lt;br/&gt;- changed name from &#8220;mt_load_NAP_provider_data&#8221; to &#8220;mt_load_NAP_user_data&#8221;&lt;br/&gt;- changed name of the data store to current &lt;br/&gt;- changed that it could modify, extend, or delete stored records&lt;br/&gt;&lt;b&gt;TODO:&lt;/b&gt;: &lt;br/&gt;- decide where the credential is passed&lt;br/&gt;- NAP User has to be specified&lt;br/&gt;&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">It contains data objects that provide either new data to be loaded into the store of NAP Content Providers Data, or a request for particular data objects to be retrieved.&#160;&#160;The data objects that are to be loaded into the store will include information about a previously unregistered NAP content provider.&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
@@ -166,7 +166,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA5/EA4303.htm">«FRAME_Datastore» D3.17 NAP Users</a><br />
+						<a href="../../EA5/EA4303.htm">«FRAME_Datastore» D3.17 NAP Data Providers</a><br />
 						FRAME_Datastore «IN» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -180,8 +180,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink19838" /></button>Details:
-							<div id="detailsDIVLink19838" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink19880" /></button>Details:
+							<div id="detailsDIVLink19880" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -199,7 +199,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA1/EA3/EA1213.htm">«FRAME_Low_Level_Function» F3.6.2 Manage NAP User Registrations</a><br />
+						<a href="../../EA1/EA3/EA1213.htm">«FRAME_Low_Level_Function» F3.6.2 Manage Content Provider Registrations</a><br />
 						FRAME_Low_Level_Function «IN» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -213,8 +213,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink19839" /></button>Details:
-							<div id="detailsDIVLink19839" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink19881" /></button>Details:
+							<div id="detailsDIVLink19881" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>

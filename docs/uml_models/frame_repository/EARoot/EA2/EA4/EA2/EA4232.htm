@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Parking Operator</title>
+<title>Driver and Vehicle Information Provider</title>
 <link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script language="JavaScript" src="../../../../js/displayToc.js" type="text/javascript"></script>
 <script>
@@ -64,12 +64,12 @@
 <div class="section group" >
 
 		<div class="col span_2_of_2 header_frame">
-			<h1> Parking Operator </h1>
+			<h1> Driver and Vehicle Information Provider </h1>
 			<!-- <img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
 			<img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />
 		</div>
 		<div class="col span_2_of_2 breadcrumb_frame">
-			<p><a href="../../../EA3.htm">Frame Repository</a> / <a href="../../EA976.htm">Frame Functional View</a> / <a href="../EA4167.htm">Terminators & Terminator Diagrams</a> / <a href="EA4195.htm">Terminators</a> / <a href="EA4208.htm">Operator</a> / <a href="EA4232.htm">Parking Operator</a></p>
+			<p><a href="../../../EA3.htm">Frame Repository</a> / <a href="../../EA976.htm">Frame Functional View</a> / <a href="../EA4167.htm">Terminators & Terminator Diagrams</a> / <a href="EA4195.htm">Terminators</a> / <a href="EA4201.htm">External Service Provider</a> / <a href="EA4232.htm">Driver and Vehicle Information Provider</a></p>
 		</div>
 			
 		<table class="contentmaintable">
@@ -84,20 +84,20 @@
 					<td class="indexcell">
 						<div class="projectBrowserTitle">Project: </div>
 						<ul>
-<a href="EA4208.htm">Operator</a></ul>
+<a href="EA4201.htm">External Service Provider</a></ul>
 
 					</td>
 					<td class="contentcell"><div class="pageHeader"></div>
 <div class="PageBody">
-	<span class="ObjectTitle">Parking Operator  : Public  &lt;&lt;FRAME_Terminator&gt;&gt; FRAME_Terminator</span>
+	<span class="ObjectTitle">Driver and Vehicle Information Provider  : Public  &lt;&lt;FRAME_Terminator&gt;&gt; FRAME_Terminator</span>
 	<table border="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">31.07.2021 20:42:43</td>
+			<td width="85%" class="ObjectDetailsValue">29.07.2021 20:32:19</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">08.09.2021 15:03:47</td>
+			<td class="ObjectDetailsValue">08.09.2021 15:03:45</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -142,21 +142,20 @@
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{1839AD47-F336-4a43-AF40-5A0A45E882C1}</td>
+			<td class="ObjectDetailsValue">{AA6E7062-3E5F-4b53-BD48-A6831CEEF612}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../EA1/EA4186.htm">Operator</a></td>
+			<td class="ObjectDetailsValue"><a href="../EA1/EA4174.htm">External Service Provider</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">This Terminator is part of the Operator Terminator and shall represent a human entity that uses the functionality in the system to manage the operation and use of car parks for the organisation that owns and/or operates car park(s).&#160;&#160;It is expected that the Terminator shall provide inputs from which data objects can be created by system functionality to represent commands, data and requests for use in the system and be capable of translating into human readable form data objects output from the functionality in the system.&#160;&#160;The functionality in the system must be able to communicate with more than one human entity that is a Parking Operator, each of which may belong to the same car park owning/operating organisation, or to different organisations.&lt;br/&gt;&lt;br/&gt;Mnemonic: o.po&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">This Terminator is part of the External Service Provider Terminator and shall represent an organisation that manages information about Drivers and Vehicles.&#160;&#160;It shall provide data objects containing Vehicle identification to assist the functionality that checks raw Floating Card Data (FCD).&#160;&#160;The Terminator shall also provide data objects containing Driver and Vehicle identification to assist the functionality that provides incident responses in response to a request from that functionality.&#160;&#160;All data objects provided by this Terminator must comply with the requirements of the General Data Protection Regulation (GDPR - EU2016/679 and any subsequent amendments).&lt;br/&gt;&lt;br/&gt;Mnemonic: esp.dvip&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
 			<li onClick="parent != null ? parent.toggleItem('AssociationsTo') : toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
 			<li onClick="parent != null ? parent.toggleItem('AssociationsFrom') : toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
 			<li onClick="parent != null ? parent.toggleItem('CustomProperties') : toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
-			<li onClick="parent != null ? parent.toggleItem('Links') : toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
 		<div class="ItemBody" id="AssociationsToTable">
 			<table class="Table ea_table">
@@ -167,7 +166,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA2/EA2262.htm">«FRAME_Low_Level_Data_Flow» fo.po-service_area_static_data_inputs </a><br />
+						<a href="../../EA3/EA2/EA2105.htm">«FRAME_Low_Level_Data_Flow» fesp.dvip-identification_response </a><br />
 						FRAME_Low_Level_Data_Flow «IN» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -181,8 +180,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24382" /></button>Details:
-							<div id="detailsDIVLink24382" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24409" /></button>Details:
+							<div id="detailsDIVLink24409" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -190,99 +189,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA2/EA2256.htm">«FRAME_Low_Level_Data_Flow» fo.po-carpark_static_data_inputs </a><br />
-						FRAME_Low_Level_Data_Flow «IN» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24383" /></button>Details:
-							<div id="detailsDIVLink24383" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA2/EA2253.htm">«FRAME_Low_Level_Data_Flow» fo.po-carpark_current_data_request </a><br />
-						FRAME_Low_Level_Data_Flow «IN» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24384" /></button>Details:
-							<div id="detailsDIVLink24384" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA1/EA1650.htm">«FRAME_High_Level_Data_Flow» fo.po-inter-urban_inputs </a><br />
-						FRAME_High_Level_Data_Flow «IN» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24385" /></button>Details:
-							<div id="detailsDIVLink24385" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA2/EA2254.htm">«FRAME_Low_Level_Data_Flow» fo.po-carpark_output_settings </a><br />
-						FRAME_Low_Level_Data_Flow «IN» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24386" /></button>Details:
-							<div id="detailsDIVLink24386" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA4208.htm">«FRAME_Terminator» Operator</a><br />
+						<a href="EA4201.htm">«FRAME_Terminator» External Service Provider</a><br />
 						FRAME_Terminator «component of» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -296,8 +203,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24387" /></button>Details:
-							<div id="detailsDIVLink24387" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24410" /></button>Details:
+							<div id="detailsDIVLink24410" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -305,7 +212,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA2/EA2261.htm">«FRAME_Low_Level_Data_Flow» fo.po-service_area_driver_output_settings </a><br />
+						<a href="../../EA3/EA2/EA2106.htm">«FRAME_Low_Level_Data_Flow» fesp.dvip-vehicle_data_for_inter-urban_fcd_check </a><br />
 						FRAME_Low_Level_Data_Flow «IN» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -319,8 +226,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24388" /></button>Details:
-							<div id="detailsDIVLink24388" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24411" /></button>Details:
+							<div id="detailsDIVLink24411" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -328,7 +235,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA2/EA2260.htm">«FRAME_Low_Level_Data_Flow» fo.po-service_area_current_data_request </a><br />
+						<a href="../../EA3/EA2/EA2107.htm">«FRAME_Low_Level_Data_Flow» fesp.dvip-vehicle_data_for_urban_fcd_check </a><br />
 						FRAME_Low_Level_Data_Flow «IN» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -342,169 +249,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24389" /></button>Details:
-							<div id="detailsDIVLink24389" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA2/EA2255.htm">«FRAME_Low_Level_Data_Flow» fo.po-carpark_payment_record_request </a><br />
-						FRAME_Low_Level_Data_Flow «IN» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24390" /></button>Details:
-							<div id="detailsDIVLink24390" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA2/EA2264.htm">«FRAME_Low_Level_Data_Flow» fo.po-service_area_status_override </a><br />
-						FRAME_Low_Level_Data_Flow «IN» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24391" /></button>Details:
-							<div id="detailsDIVLink24391" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA2/EA2257.htm">«FRAME_Low_Level_Data_Flow» fo.po-carpark_static_data_request </a><br />
-						FRAME_Low_Level_Data_Flow «IN» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24392" /></button>Details:
-							<div id="detailsDIVLink24392" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA2/EA2263.htm">«FRAME_Low_Level_Data_Flow» fo.po-service_area_static_data_request </a><br />
-						FRAME_Low_Level_Data_Flow «IN» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24393" /></button>Details:
-							<div id="detailsDIVLink24393" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA1/EA1651.htm">«FRAME_High_Level_Data_Flow» fo.po-urban_inputs </a><br />
-						FRAME_High_Level_Data_Flow «IN» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24394" /></button>Details:
-							<div id="detailsDIVLink24394" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA2/EA2259.htm">«FRAME_Low_Level_Data_Flow» fo.po-rest_area_booking_response </a><br />
-						FRAME_Low_Level_Data_Flow «IN» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24395" /></button>Details:
-							<div id="detailsDIVLink24395" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA2/EA2258.htm">«FRAME_Low_Level_Data_Flow» fo.po-carpark_status_override </a><br />
-						FRAME_Low_Level_Data_Flow «IN» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24396" /></button>Details:
-							<div id="detailsDIVLink24396" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24412" /></button>Details:
+							<div id="detailsDIVLink24412" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -522,7 +268,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA2/EA4013.htm">«FRAME_Low_Level_Data_Flow» to.po-service_area_current_data </a><br />
+						<a href="../../EA3/EA2/EA3911.htm">«FRAME_Low_Level_Data_Flow» tesp.dvip-request_for_identification </a><br />
 						FRAME_Low_Level_Data_Flow «OUT» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -536,215 +282,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24397" /></button>Details:
-							<div id="detailsDIVLink24397" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA2/EA4010.htm">«FRAME_Low_Level_Data_Flow» to.po-carpark_static_data </a><br />
-						FRAME_Low_Level_Data_Flow «OUT» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24398" /></button>Details:
-							<div id="detailsDIVLink24398" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA2/EA4009.htm">«FRAME_Low_Level_Data_Flow» to.po-carpark_payment_records </a><br />
-						FRAME_Low_Level_Data_Flow «OUT» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24399" /></button>Details:
-							<div id="detailsDIVLink24399" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA1/EA1991.htm">«FRAME_High_Level_Data_Flow» to.po-inter-urban_outputs </a><br />
-						FRAME_High_Level_Data_Flow «OUT» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24400" /></button>Details:
-							<div id="detailsDIVLink24400" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA2/EA4008.htm">«FRAME_Low_Level_Data_Flow» to.po-carpark_current_data </a><br />
-						FRAME_Low_Level_Data_Flow «OUT» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24401" /></button>Details:
-							<div id="detailsDIVLink24401" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA1/EA1992.htm">«FRAME_High_Level_Data_Flow» to.po-urban_outputs </a><br />
-						FRAME_High_Level_Data_Flow «OUT» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24402" /></button>Details:
-							<div id="detailsDIVLink24402" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA2/EA4012.htm">«FRAME_Low_Level_Data_Flow» to.po-confirm_rest_area_booking </a><br />
-						FRAME_Low_Level_Data_Flow «OUT» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24403" /></button>Details:
-							<div id="detailsDIVLink24403" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA2/EA4014.htm">«FRAME_Low_Level_Data_Flow» to.po-service_area_static_data </a><br />
-						FRAME_Low_Level_Data_Flow «OUT» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24404" /></button>Details:
-							<div id="detailsDIVLink24404" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA2/EA4011.htm">«FRAME_Low_Level_Data_Flow» to.po-carpark_status_overrride_response </a><br />
-						FRAME_Low_Level_Data_Flow «OUT» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24405" /></button>Details:
-							<div id="detailsDIVLink24405" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA2/EA4015.htm">«FRAME_Low_Level_Data_Flow» to.po-service_area_status_overrride_response </a><br />
-						FRAME_Low_Level_Data_Flow «OUT» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24406" /></button>Details:
-							<div id="detailsDIVLink24406" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24413" /></button>Details:
+							<div id="detailsDIVLink24413" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -776,26 +315,7 @@
 
 
 			</table>
-		</div>		<div class="ItemBody" id="LinksTable">
-			<table class="Table ea_table">
-				<tr>
-					<td width="30%" class="TableHeading">Object</td>
-					<td width="10%" class="TableHeading">Type</td>
-					<td width="10%" class="TableHeading">Connection</td>
-					<td width="10%" class="TableHeading">Direction</td>
-					<td width="40%" class="TableHeading">Notes</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA4284.htm">«FRAME_Terminator» NAP Content Provider</a></td>
-					<td width="10%" class="TableRow" valign="top">FRAME_Terminator</td>
-					<td width="10%" class="TableRow" valign="top">Usage</td>
-					<td width="10%" class="TableRow" valign="top">To</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-
-			</table>
-		</div>
-	</div>
+		</div>	</div>
  </div>
  </td>
 				</tr>

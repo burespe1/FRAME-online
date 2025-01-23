@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Public Transport Management System</title>
+<title>Emergency Operator</title>
 <link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script language="JavaScript" src="../../../../js/displayToc.js" type="text/javascript"></script>
 <script>
@@ -64,12 +64,12 @@
 <div class="section group" >
 
 		<div class="col span_2_of_2 header_frame">
-			<h1> Public Transport Management System </h1>
+			<h1> Emergency Operator </h1>
 			<!-- <img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
 			<img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />
 		</div>
 		<div class="col span_2_of_2 breadcrumb_frame">
-			<p><a href="../../../EA3.htm">Frame Repository</a> / <a href="../../EA976.htm">Frame Functional View</a> / <a href="../EA4167.htm">Terminators & Terminator Diagrams</a> / <a href="EA4195.htm">Terminators</a> / <a href="EA4209.htm">Other Related System</a> / <a href="EA4276.htm">Public Transport Management System</a></p>
+			<p><a href="../../../EA3.htm">Frame Repository</a> / <a href="../../EA976.htm">Frame Functional View</a> / <a href="../EA4167.htm">Terminators & Terminator Diagrams</a> / <a href="EA4195.htm">Terminators</a> / <a href="EA4208.htm">Operator</a> / <a href="EA4276.htm">Emergency Operator</a></p>
 		</div>
 			
 		<table class="contentmaintable">
@@ -84,20 +84,20 @@
 					<td class="indexcell">
 						<div class="projectBrowserTitle">Project: </div>
 						<ul>
-<a href="EA4209.htm">Other Related System</a></ul>
+<a href="EA4208.htm">Operator</a></ul>
 
 					</td>
 					<td class="contentcell"><div class="pageHeader"></div>
 <div class="PageBody">
-	<span class="ObjectTitle">Public Transport Management System  : Public  &lt;&lt;FRAME_Terminator&gt;&gt; FRAME_Terminator</span>
+	<span class="ObjectTitle">Emergency Operator  : Public  &lt;&lt;FRAME_Terminator&gt;&gt; FRAME_Terminator</span>
 	<table border="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">31.07.2021 12:24:49</td>
+			<td width="85%" class="ObjectDetailsValue">31.07.2021 20:14:50</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">08.09.2021 15:03:48</td>
+			<td class="ObjectDetailsValue">08.09.2021 15:03:47</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -142,20 +142,21 @@
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{749DF1B3-1602-4c00-83E3-1F18E9539D04}</td>
+			<td class="ObjectDetailsValue">{EE00C1D0-4A96-4dc3-BF48-285261D9BB4D}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../EA1/EA4184.htm">Other Related System</a></td>
+			<td class="ObjectDetailsValue">02 eCall Functional View, 05 eCall Communication View, eCall Terminator, <a href="../EA1/EA4186.htm">Operator</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">This Terminator is part of the Other Related System Terminator and shall represent another instance of the functionality in the system that manages the operation of Public Transport (PT) Services.&#160;&#160;It shall enable the same data objects to be sent to and received from other instances of the PT management functionality.&#160;&#160;These other instances may belong to another PT management organisation operating in the same geographic area, or to a PT management organisation operating in a different geographic area.&#160;&#160;It shall be possible for the data objects to be sent and received on request, at regular intervals, or because the sending functionality has made changes.&lt;br/&gt;&lt;br/&gt;Mnemonic: ors.ptms&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">This Terminator is part of the Operator Terminator and shall represent a human entity that uses the facilities of the system to manage the way that the functionality in the system helps the Emergency Services to respond to incidents.&#160;&#160;It is expected that the Terminator shall provide inputs from which data objects can be created by system functionality to represent commands, data and requests for use in the system and be capable of translating into human readable form data objects output from the functionality in the system.&#160;&#160;The functionality in the system must also be able to communicate with more than one human entity that is an Emergency Operator, each of which may belong to the same Emergency Service, or to different Emergency Services.&lt;br/&gt;&lt;br/&gt;Mnemonic: o.eo&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
 			<li onClick="parent != null ? parent.toggleItem('AssociationsTo') : toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
 			<li onClick="parent != null ? parent.toggleItem('AssociationsFrom') : toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
 			<li onClick="parent != null ? parent.toggleItem('CustomProperties') : toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
+			<li onClick="parent != null ? parent.toggleItem('Links') : toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
 		<div class="ItemBody" id="AssociationsToTable">
 			<table class="Table ea_table">
@@ -166,30 +167,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA2/EA2338.htm">«FRAME_Low_Level_Data_Flow» fors.ptms-pt_planning </a><br />
-						FRAME_Low_Level_Data_Flow «IN» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24828" /></button>Details:
-							<div id="detailsDIVLink24828" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA4209.htm">«FRAME_Terminator» Other Related System</a><br />
+						<a href="EA4208.htm">«FRAME_Terminator» Operator</a><br />
 						FRAME_Terminator «component of» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -203,8 +181,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24829" /></button>Details:
-							<div id="detailsDIVLink24829" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24755" /></button>Details:
+							<div id="detailsDIVLink24755" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -212,7 +190,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA2/EA2337.htm">«FRAME_Low_Level_Data_Flow» fors.ptms-plans </a><br />
+						<a href="../../EA3/EA2/EA2240.htm">«FRAME_Low_Level_Data_Flow» fo.eo-commands </a><br />
 						FRAME_Low_Level_Data_Flow «IN» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -226,8 +204,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24830" /></button>Details:
-							<div id="detailsDIVLink24830" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24756" /></button>Details:
+							<div id="detailsDIVLink24756" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -235,7 +213,30 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA2/EA2336.htm">«FRAME_Low_Level_Data_Flow» fors.ptms-control_parameters </a><br />
+						«Component» PSAP eCall Modem Server<br />
+						Component &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24757" /></button>Details:
+							<div id="detailsDIVLink24757" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../EA3/EA2/EA2242.htm">«FRAME_Low_Level_Data_Flow» fo.eo-stop_stolen_vehicle </a><br />
 						FRAME_Low_Level_Data_Flow «IN» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -249,8 +250,31 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24831" /></button>Details:
-							<div id="detailsDIVLink24831" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24758" /></button>Details:
+							<div id="detailsDIVLink24758" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../EA3/EA2/EA2241.htm">«FRAME_Low_Level_Data_Flow» fo.eo-request_statistical_report </a><br />
+						FRAME_Low_Level_Data_Flow «IN» 
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24759" /></button>Details:
+							<div id="detailsDIVLink24759" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -268,7 +292,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA2/EA4079.htm">«FRAME_Low_Level_Data_Flow» tors.ptms-plans </a><br />
+						<a href="../../EA3/EA2/EA4001.htm">«FRAME_Low_Level_Data_Flow» to.eo-stolen_vehicles_information </a><br />
 						FRAME_Low_Level_Data_Flow «OUT» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -282,8 +306,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24832" /></button>Details:
-							<div id="detailsDIVLink24832" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24760" /></button>Details:
+							<div id="detailsDIVLink24760" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -291,7 +315,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA2/EA4078.htm">«FRAME_Low_Level_Data_Flow» tors.ptms-control_parameters </a><br />
+						<a href="../../EA3/EA2/EA3999.htm">«FRAME_Low_Level_Data_Flow» to.eo-response </a><br />
 						FRAME_Low_Level_Data_Flow «OUT» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -305,8 +329,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24833" /></button>Details:
-							<div id="detailsDIVLink24833" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24761" /></button>Details:
+							<div id="detailsDIVLink24761" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -314,7 +338,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA2/EA4080.htm">«FRAME_Low_Level_Data_Flow» tors.ptms-pt_planning </a><br />
+						<a href="../../EA3/EA2/EA4000.htm">«FRAME_Low_Level_Data_Flow» to.eo-statistical_report_response </a><br />
 						FRAME_Low_Level_Data_Flow «OUT» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -328,8 +352,31 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24834" /></button>Details:
-							<div id="detailsDIVLink24834" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24762" /></button>Details:
+							<div id="detailsDIVLink24762" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../EA3/EA2/EA3998.htm">«FRAME_Low_Level_Data_Flow» to.eo-alarms </a><br />
+						FRAME_Low_Level_Data_Flow «OUT» 
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink24763" /></button>Details:
+							<div id="detailsDIVLink24763" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -361,7 +408,26 @@
 
 
 			</table>
-		</div>	</div>
+		</div>		<div class="ItemBody" id="LinksTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top">eCall PSAP Operator</td>
+					<td width="10%" class="TableRow" valign="top">Actor</td>
+					<td width="10%" class="TableRow" valign="top">Abstraction</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
  </div>
  </td>
 				</tr>

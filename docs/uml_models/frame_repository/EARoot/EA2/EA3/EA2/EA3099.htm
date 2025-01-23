@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Low Level Data Flows::mt_read_NAP_metadata </title>
+<title>Low Level Data Flows::mt_read_NAP_meta-data </title>
 <link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script language="JavaScript" src="../../../../js/displayToc.js" type="text/javascript"></script>
 <script>
@@ -64,12 +64,12 @@
 <div class="section group" >
 
 		<div class="col span_2_of_2 header_frame">
-			<h1> Low Level Data Flows::mt_read_NAP_metadata  </h1>
+			<h1> Low Level Data Flows::mt_read_NAP_meta-data  </h1>
 			<!-- <img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
 			<img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />
 		</div>
 		<div class="col span_2_of_2 breadcrumb_frame">
-			<p><a href="../../../EA3.htm">Frame Repository</a> / <a href="../../EA976.htm">Frame Functional View</a> / <a href="../EA1566.htm">Data Flows</a> / <a href="EA2042.htm">Low Level Data Flows</a> / <a href="EA3099.htm">mt_read_NAP_metadata </a></p>
+			<p><a href="../../../EA3.htm">Frame Repository</a> / <a href="../../EA976.htm">Frame Functional View</a> / <a href="../EA1566.htm">Data Flows</a> / <a href="EA2042.htm">Low Level Data Flows</a> / <a href="EA3099.htm">mt_read_NAP_meta-data </a></p>
 		</div>
 			
 		<table class="contentmaintable">
@@ -89,7 +89,7 @@
 					</td>
 					<td class="contentcell"><div class="pageHeader"></div>
 <div class="PageBody">
-	<span class="ObjectTitle">mt_read_NAP_metadata  mt_read NAP metadata  : Public abstract &lt;&lt;FRAME_Low_Level_Data_Flow&gt;&gt; FRAME_Low_Level_Data_Flow</span>
+	<span class="ObjectTitle">mt_read_NAP_meta-data   : Public abstract &lt;&lt;FRAME_Low_Level_Data_Flow&gt;&gt; FRAME_Low_Level_Data_Flow</span>
 	<table border="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
@@ -97,7 +97,7 @@
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">04.01.2024 10:40:11</td>
+			<td class="ObjectDetailsValue">13.09.2021 11:09:21</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -146,10 +146,10 @@
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../../EA1/EA3/EA1121.htm">DFD F3.6 Operate National Access Point</a></td>
+			<td class="ObjectDetailsValue">02 NAP Functional View, 02 NAP Functional View with data exchange, 04 NAP Physical View, <a href="../../EA1/EA3/EA1121.htm">DFD F3.6 Operate National Access Point</a>, 04 NAP Physical View with data exchange, 05 NAP Communication View  with data exchange, 05 NAP Communication View</td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">It contains data objects that provide metadata that has been retrieved from the store of NAP Metadata following a request.&#160;&#160;The metadata that has been read from the store gives information about the contents which are made accessible by the NAP Content Provider. The required and optional elements of metadata can be found in a metadata catalogue: https://mobilitydcat-ap.github.io/mobilityDCAT-AP/releases/index.html&lt;br/&gt;Apart from data specified by the above said catalogue other data are managed by the read function these are data quality records and NAP User event log.&lt;br/&gt;&lt;br/&gt;===========&lt;br/&gt;&lt;b&gt;CHANGELOG:&lt;/b&gt;&lt;br/&gt;- changed meta-data to metadata&lt;br/&gt;- deleted mention of specific metadata&lt;br/&gt;- updated reference to new metadata catalogue&lt;br/&gt;- added new data elements for the read function to manage (last paragraph)&lt;br/&gt;&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">It contains data objects that provide meta-data that has been retrieved from the store of NAP Meta-Data following a request.&#160;&#160;The meta-data that has been read from the store gives information about the contents which are made accessible by the Content Provider, about the Internet Location where these contents are made accessible and about the terms and conditions of accessing and using these contents. The required and optional elements of meta-data can be found in a meta-data catalogue: https://eip.its-platform.eu/highlights/harmonised-metadata-national-access-points&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
@@ -166,7 +166,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA1/EA3/EA1212.htm">«FRAME_Low_Level_Function» F3.6.1 Manage NAP Metadata Repository</a><br />
+						<a href="../../EA1/EA3/EA1212.htm">«FRAME_Low_Level_Function» F3.6.1 Manage NAP Meta-Data Repository</a><br />
 						FRAME_Low_Level_Function «OUT» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -180,8 +180,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink19963" /></button>Details:
-							<div id="detailsDIVLink19963" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink20005" /></button>Details:
+							<div id="detailsDIVLink20005" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -199,7 +199,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA5/EA4302.htm">«FRAME_Datastore» D3.15 NAP Metadata</a><br />
+						<a href="../../EA5/EA4302.htm">«FRAME_Datastore» D3.15 NAP Meta-Data</a><br />
 						FRAME_Datastore «IN» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -213,8 +213,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink19964" /></button>Details:
-							<div id="detailsDIVLink19964" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink20006" /></button>Details:
+							<div id="detailsDIVLink20006" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>

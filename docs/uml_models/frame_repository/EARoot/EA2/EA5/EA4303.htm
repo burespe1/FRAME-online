@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>D3.17 NAP Users</title>
+<title>D3.17 NAP Data Providers</title>
 <link href="../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script language="JavaScript" src="../../../js/displayToc.js" type="text/javascript"></script>
 <script>
@@ -64,12 +64,12 @@
 <div class="section group" >
 
 		<div class="col span_2_of_2 header_frame">
-			<h1> D3.17 NAP Users </h1>
+			<h1> D3.17 NAP Data Providers </h1>
 			<!-- <img class="header_image" src="../../../images/ea-banner.png" align="right" alt="Header Image" />-->
 			<img class="header_image" src="../../../images/ea-banner.png" align="right" alt="Header Image" />
 		</div>
 		<div class="col span_2_of_2 breadcrumb_frame">
-			<p><a href="../../EA3.htm">Frame Repository</a> / <a href="../EA976.htm">Frame Functional View</a> / <a href="EA4285.htm">Data Store</a> / <a href="EA4303.htm">D3.17 NAP Users</a></p>
+			<p><a href="../../EA3.htm">Frame Repository</a> / <a href="../EA976.htm">Frame Functional View</a> / <a href="EA4285.htm">Data Store</a> / <a href="EA4303.htm">D3.17 NAP Data Providers</a></p>
 		</div>
 			
 		<table class="contentmaintable">
@@ -89,7 +89,7 @@
 					</td>
 					<td class="contentcell"><div class="pageHeader"></div>
 <div class="PageBody">
-	<span class="ObjectTitle">D3.17 NAP Users  : Public  &lt;&lt;FRAME_Datastore&gt;&gt; FRAME_Datastore</span>
+	<span class="ObjectTitle">D3.17 NAP Data Providers  : Public  &lt;&lt;FRAME_Datastore&gt;&gt; FRAME_Datastore</span>
 	<table border="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
@@ -97,7 +97,7 @@
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">03.01.2024 18:12:37</td>
+			<td class="ObjectDetailsValue">10.09.2021 10:38:53</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -146,10 +146,10 @@
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../EA1/EA3/EA1121.htm">DFD F3.6 Operate National Access Point</a></td>
+			<td class="ObjectDetailsValue">SSTP Function Allocation, 02 NAP Functional View, 02 NAP Functional View with data exchange, 04 NAP Physical View, <a href="../EA1/EA3/EA1121.htm">DFD F3.6 Operate National Access Point</a>, 04 NAP Physical View with data exchange, 05 NAP Communication View  with data exchange, 05 NAP Communication View</td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">This Data Store shall be used within the Manage Traffic Functional Area.&#160;&#160;It shall contain information objects that provide details of NAP Users, i.e. NAP Content Providers and NAP Content Consumers (for Data Platform NAP type) .&#160;&#160;The Data Store contains private information used by NAP Users to access the NAP, to provide agreement on terms and conditions. Public metadata about traffic and travel information and other related information are stored in NAP Metadata store (D3.15).&lt;br/&gt;For Content Providers the data store contains following data objects:&lt;br/&gt;(1) organization with name (1.1), postal address (1.2), website (1.3), agreement on licence terms (1.4), unique identifier assigned to organization (1.5), name and contact details of a responsible person to act as a contact (1.6).&lt;br/&gt;(2) user account(s) with name (2.1), email (2.2), credentials (2.3), user type (2.4).&lt;br/&gt;*(3) machine account with url (3.1), connection type (3.2), credentials (3.3).&lt;br/&gt;For Content Consumers the data store contains following data objects:&lt;br/&gt;*(1) organization with name (1.1), postal address (1.2), website (1.3), agreement on licence terms (1.4), unique identifier assigned to organization (1.5), name and contact details of a responsible person to act as a contact (1.6).&lt;br/&gt;*(2) user account(s) with name (2.1), email (2.2), credentials (2.3), user type (2.4).&lt;br/&gt;*(3) machine account with url (3.1), connection type (3.2), credentials (3.3).&lt;br/&gt;* Optional data object for Data Platform NAP type and even there it is optional provided the data is not openly accessible. &lt;br/&gt;Additionally, for both:&lt;br/&gt;(4) Event information (log in, log out, change of data)&lt;br/&gt;&lt;br/&gt;==========&lt;br/&gt;&lt;b&gt;CHANGELOG:&lt;/b&gt;&lt;br/&gt;- deleted specific information about some metadata components&lt;br/&gt;- added / updated information about data stored in the data store per NAP User and additional data stored within the data store&lt;br/&gt;&lt;b&gt;TODO:&lt;/b&gt;&lt;br/&gt;- check what is in data flows and if it is covered by the DS&lt;br/&gt;- IMPORTANT: decide how to deal with optional nap.cc logging in.&lt;br/&gt;&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">This Data Store shall be used within the Manage Traffic Functional Area.&#160;&#160;It shall contain information objects that provide details of providers that have been approved to provide road related NAP meta-data including pointers to Internet locations from which traffic and travel data can be obtained.&#160;&#160;The meta-data shall refer to the items of data listed in the descriptions of the NAP Meta-Data data store (D3.15) shown above.&lt;br/&gt;&lt;br/&gt;Each information object in the Store for a NAP content provider details shall contain the following data objects:&lt;br/&gt;(1) Name;&lt;br/&gt;(2) Postal address;&lt;br/&gt;(3) Visiting address;&lt;br/&gt;(4) Website address;&lt;br/&gt;(5) Name and contact details of a responsible person to act as a contact;&lt;br/&gt;(6) Geographic area for which meta-data is being provided&lt;br/&gt;(7) The type of data (i.e. static or dynamic) that is being made available.&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
@@ -168,7 +168,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../EA3/EA2/EA3128.htm">«FRAME_Low_Level_Data_Flow» mt_read_NAP_user_data </a><br />
+						<a href="../EA3/EA2/EA3128.htm">«FRAME_Low_Level_Data_Flow» mt_requested_NAP_provider_data </a><br />
 						FRAME_Low_Level_Data_Flow «OUT» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -182,8 +182,31 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink25084" /></button>Details:
-							<div id="detailsDIVLink25084" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink25166" /></button>Details:
+							<div id="detailsDIVLink25166" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../EA3/EA2/EA2906.htm">«FRAME_Low_Level_Data_Flow» mt_checking_result</a><br />
+						FRAME_Low_Level_Data_Flow «OUT» 
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink25167" /></button>Details:
+							<div id="detailsDIVLink25167" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -201,7 +224,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../EA3/EA2/EA3048.htm">«FRAME_Low_Level_Data_Flow» mt_load_NAP_user_data</a><br />
+						<a href="../EA3/EA2/EA3048.htm">«FRAME_Low_Level_Data_Flow» mt_load_NAP_provider_data</a><br />
 						FRAME_Low_Level_Data_Flow «IN» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -215,8 +238,31 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink25085" /></button>Details:
-							<div id="detailsDIVLink25085" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink25168" /></button>Details:
+							<div id="detailsDIVLink25168" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../EA3/EA2/EA2905.htm">«FRAME_Low_Level_Data_Flow» mt_check_authorisation_credentials</a><br />
+						FRAME_Low_Level_Data_Flow «IN» 
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink25169" /></button>Details:
+							<div id="detailsDIVLink25169" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -351,7 +397,14 @@
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top">User Management Module</td>
+					<td width="30%" class="TableRow" valign="top">User Management application</td>
+					<td width="10%" class="TableRow" valign="top">Object</td>
+					<td width="10%" class="TableRow" valign="top">Usage</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top">EU NAP Central Application</td>
 					<td width="10%" class="TableRow" valign="top">Object</td>
 					<td width="10%" class="TableRow" valign="top">Usage</td>
 					<td width="10%" class="TableRow" valign="top">From</td>

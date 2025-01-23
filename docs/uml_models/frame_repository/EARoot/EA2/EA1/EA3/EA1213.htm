@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>F3.6.2 Manage NAP User Registrations</title>
+<title>F3.6.2 Manage Content Provider Registrations</title>
 <link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script language="JavaScript" src="../../../../js/displayToc.js" type="text/javascript"></script>
 <script>
@@ -64,12 +64,12 @@
 <div class="section group" >
 
 		<div class="col span_2_of_2 header_frame">
-			<h1> F3.6.2 Manage NAP User Registrations </h1>
+			<h1> F3.6.2 Manage Content Provider Registrations </h1>
 			<!-- <img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />-->
 			<img class="header_image" src="../../../../images/ea-banner.png" align="right" alt="Header Image" />
 		</div>
 		<div class="col span_2_of_2 breadcrumb_frame">
-			<p><a href="../../../EA3.htm">Frame Repository</a> / <a href="../../EA976.htm">Frame Functional View</a> / <a href="../EA985.htm">Functionality</a> / <a href="EA1125.htm">Functional Area F3 - Manage Traffic</a> / <a href="EA1126.htm">F3. Manage Traffic</a> / <a href="EA1241.htm">F3.6 Operate National Access Point</a> / <a href="EA1213.htm">F3.6.2 Manage NAP User Registrations</a></p>
+			<p><a href="../../../EA3.htm">Frame Repository</a> / <a href="../../EA976.htm">Frame Functional View</a> / <a href="../EA985.htm">Functionality</a> / <a href="EA1125.htm">Functional Area F3 - Manage Traffic</a> / <a href="EA1126.htm">F3. Manage Traffic</a> / <a href="EA1241.htm">F3.6 Operate National Access Point</a> / <a href="EA1213.htm">F3.6.2 Manage Content Provider Registrations</a></p>
 		</div>
 			
 		<table class="contentmaintable">
@@ -89,7 +89,7 @@
 					</td>
 					<td class="contentcell"><div class="pageHeader"></div>
 <div class="PageBody">
-	<span class="ObjectTitle">F3.6.2 Manage NAP User Registrations  : Public  &lt;&lt;FRAME_Low_Level_Function&gt;&gt; FRAME_Low_Level_Function</span>
+	<span class="ObjectTitle">F3.6.2 Manage Content Provider Registrations  : Public  &lt;&lt;FRAME_Low_Level_Function&gt;&gt; FRAME_Low_Level_Function</span>
 	<table border="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
@@ -97,7 +97,7 @@
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">03.01.2024 17:46:59</td>
+			<td class="ObjectDetailsValue">08.09.2021 11:24:33</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -146,10 +146,10 @@
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA1123.htm">Functional Tree of F3.6 Operate National Access Point</a>, <a href="EA1121.htm">DFD F3.6 Operate National Access Point</a></td>
+			<td class="ObjectDetailsValue">SSTP Function Allocation, Content Provider View, 02 NAP Functional View, 02 NAP Functional View with data exchange, 03 NAP Organisational View, 04 NAP Physical View, <a href="EA1123.htm">Functional Tree of F3.6 Operate National Access Point</a>, <a href="EA1121.htm">DFD F3.6 Operate National Access Point</a>, 04 NAP Physical View with data exchange, 05 NAP Communication View  with data exchange, 05 NAP Communication View</td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">This Function shall be capable of providing the following facilities:&lt;br/&gt;&lt;br/&gt;(1) The ability to receive and process a request from an entity that wants to become new NAP User.&lt;br/&gt;(2) The ability to check the new NAP User in (1) above to include electronic identification, verification that the requesting entity exists based on information included in the request and agree with terms of the NAP User (different for NAP Content Provider and NAP Content Consumer)&lt;br/&gt;(3) The ability to load information about the entity submitting the request in (1) above into the NAP Users data store, if the identification, verification, and acceptance in (2) above is successful.&lt;br/&gt;(4) The ability to provide authorisation credentials to the requesting entity.&lt;br/&gt;(5) The ability to send a rejection notice (including the reason for rejection) to the entity that submitted the request in (1) above if the identification, verification, and acceptance in (2) and (3) above was not successful.&lt;br/&gt;(6) The ability to check the authorisation of an entity which sends its credentials to the NAP functions and to response to those functions if the authorisation check has been successful.&lt;br/&gt;(7) The ability to process the information provided in an unsuccessful request for the update of NAP User data so that a suitable response can be sent to the entity that made the request and future unsuccessful update requests monitored.&lt;br/&gt;(8) The ability to register multiple user accounts within a NAP User account, i.e. users&#39; organization.&lt;br/&gt;(9) The ability to register multiple machine accounts within a NAP User account, i.e. users&#39; organization, for consuming or providing content from / to the NAP. The machine accounts stand for Data Requesting Systems and Data Supplying System.&lt;br/&gt;(10) The ability to organize user and machine account registered under one NAP User into organization, where user accounts have different rights to access the NAP Users data store, i.e. view, modify, add, and delete records.&lt;br/&gt;(11) The ability to remove electronic identity of the NAP User from the NAP Users data store based on reception of a request from a NAP User.&lt;br/&gt;(12) The ability to register the as one or both NAP Content Provider and NAP Content Consumer with different rights / responsibilities to perform tasks assigned to provider or consumer in the NAP via Functions Provide Interface for Content Providers and Provide Access for NAP Metadata Retrieval.&lt;br/&gt;(13) Ability to provide registered NAP Content Provider data upon a successful authorization &lt;br/&gt;NOTE: one physical user can be part of more NAP Users but under the different electronic identity.&lt;br/&gt;&lt;br/&gt;=========&lt;br/&gt;CHANGELOG &lt;br/&gt;- Changed NAP data provider to NAP User,&#160;&#160;&lt;br/&gt;- Added possibility to register NAP Content Consumers,&#160;&#160;&lt;br/&gt;- Added possibility to change and delete NAP User records &lt;br/&gt;- Added possibility to organise registrations to include multiple user and machine accounts &lt;br/&gt;- Added functionality to provide CP data that are stored within the system. &lt;br/&gt; &lt;br/&gt;TODO: &lt;br/&gt;- Check if the overall functionality holds up. Especially if the functionality (4) and (6) should not be as a separate function. &lt;br/&gt;- Change name to Manage NAP User Datastore and add functionality to log in events connected with NAP User Activity to the NAP User data store &lt;br/&gt;- Check if NOTE is OK with everybody. &lt;br/&gt;- IMPORTANT: the function shall also return data objects based on the provided NAP User credentials for loading data to CP system or shall manage the registration data within&lt;br/&gt;&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">This Function shall be capable of providing the following facilities:&lt;br/&gt;&lt;br/&gt;(1) The ability to receive and process a request from an entity that wants to become new NAP data provider.&lt;br/&gt;(2) The ability to check the new NAP data provider in (1) above to include identification, verification that the requesting entity exists and is believed to be capable of providing road related static and/or dynamic data based on information included in the request.&lt;br/&gt;(3) The ability to load information about the entity submitting the request in (1) above into the NAP Data Providers data store, if the identification, verification and acceptance in (2) above is successful.&lt;br/&gt;(4) The ability to provide authorisation credentials to the requesting entity.&lt;br/&gt;(5) The ability to send a rejection notice (including the reason for rejection) to the entity that submitted the request in (1) above if the identification, verification and acceptance in (2) and (3) above was not successful.&lt;br/&gt;(6) The ability to check the authorisation of a data provider which sends its credentials to the Function Provide Interface for Data Providers and to response to this Function if the authorisation check has been successful.&lt;br/&gt;(7) The ability to process the information provided in an unsuccessful request for the automatic update of NAP data so that a suitable response can be sent to the entity that made the request and future unsuccessful update requests monitored.&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
@@ -168,53 +168,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						«FRAME_Low_Level_Data_Flow» mt_NAP_data_mod_authorisation_response<br />
-						Interface «IN» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink6558" /></button>Details:
-							<div id="detailsDIVLink6558" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA2/EA3048.htm">«FRAME_Low_Level_Data_Flow» mt_load_NAP_user_data</a><br />
-						FRAME_Low_Level_Data_Flow «IN» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink6559" /></button>Details:
-							<div id="detailsDIVLink6559" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA2/EA3992.htm">«FRAME_Low_Level_Data_Flow» tnap.cp-registration_response</a><br />
+						<a href="../../EA3/EA2/EA3992.htm">«FRAME_Low_Level_Data_Flow» tnap.cp-authorisation_credentials</a><br />
 						FRAME_Low_Level_Data_Flow «OUT» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -228,8 +182,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink6560" /></button>Details:
-							<div id="detailsDIVLink6560" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink6579" /></button>Details:
+							<div id="detailsDIVLink6579" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -251,8 +205,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink6561" /></button>Details:
-							<div id="detailsDIVLink6561" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink6580" /></button>Details:
+							<div id="detailsDIVLink6580" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -260,8 +214,8 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						«FRAME_Low_Level_Data_Flow» tnap.cc-registration_response<br />
-						Interface «IN» 
+						<a href="../../EA3/EA2/EA3048.htm">«FRAME_Low_Level_Data_Flow» mt_load_NAP_provider_data</a><br />
+						FRAME_Low_Level_Data_Flow «IN» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
 						<strong>Name:</strong> &nbsp;<br />
@@ -274,54 +228,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink6562" /></button>Details:
-							<div id="detailsDIVLink6562" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						«FRAME_Low_Level_Data_Flow» mt_NAP_data_read_authorisation_response<br />
-						Interface «IN» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink6563" /></button>Details:
-							<div id="detailsDIVLink6563" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA2/EA2906.htm">«FRAME_Low_Level_Data_Flow» mt_NAP_metadata_mod_authorisation_result</a><br />
-						FRAME_Low_Level_Data_Flow «OUT» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink6564" /></button>Details:
-							<div id="detailsDIVLink6564" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink6581" /></button>Details:
+							<div id="detailsDIVLink6581" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -339,7 +247,30 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA2/EA3128.htm">«FRAME_Low_Level_Data_Flow» mt_read_NAP_user_data </a><br />
+						<a href="../../../EA1/EA310.htm">«FRAME_User_Need» 6.5.1.4</a><br />
+						FRAME_User_Need «Servedby» 
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink6582" /></button>Details:
+							<div id="detailsDIVLink6582" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../../EA3/EA2/EA3128.htm">«FRAME_Low_Level_Data_Flow» mt_requested_NAP_provider_data </a><br />
 						FRAME_Low_Level_Data_Flow «OUT» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -353,8 +284,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink6565" /></button>Details:
-							<div id="detailsDIVLink6565" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink6583" /></button>Details:
+							<div id="detailsDIVLink6583" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -362,30 +293,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						«FRAME_Low_Level_Data_Flow» fnap.cc-registration_request<br />
-						Interface «OUT» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink6566" /></button>Details:
-							<div id="detailsDIVLink6566" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../../../EA1/EA242.htm">«FRAME_User_Need» 6.5.1.4</a><br />
+						<a href="../../../EA1/EA313.htm">«FRAME_User_Need» 6.5.1.7</a><br />
 						FRAME_User_Need «Servedby» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -399,8 +307,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink6567" /></button>Details:
-							<div id="detailsDIVLink6567" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink6584" /></button>Details:
+							<div id="detailsDIVLink6584" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -408,53 +316,7 @@
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						«FRAME_Low_Level_Data_Flow» mt_NAP_data_read_authorisation_request<br />
-						Interface «OUT» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink6568" /></button>Details:
-							<div id="detailsDIVLink6568" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						«FRAME_Low_Level_Data_Flow» mt_NAP_data_mod_authorisation_request<br />
-						Interface «OUT» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink6569" /></button>Details:
-							<div id="detailsDIVLink6569" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA2/EA2235.htm">«FRAME_Low_Level_Data_Flow» fnap.cp-registration_request</a><br />
+						<a href="../../EA3/EA2/EA2235.htm">«FRAME_Low_Level_Data_Flow» fnap.cp-registrationt_request</a><br />
 						FRAME_Low_Level_Data_Flow «IN» 
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -468,54 +330,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink6570" /></button>Details:
-							<div id="detailsDIVLink6570" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../../../EA1/EA245.htm">«FRAME_User_Need» 6.5.1.7</a><br />
-						FRAME_User_Need «Servedby» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink6571" /></button>Details:
-							<div id="detailsDIVLink6571" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../../EA3/EA2/EA2905.htm">«FRAME_Low_Level_Data_Flow» mt_NAP_metadata_mod_authorisation_request</a><br />
-						FRAME_Low_Level_Data_Flow «IN» 
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink6572" /></button>Details:
-							<div id="detailsDIVLink6572" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink6585" /></button>Details:
+							<div id="detailsDIVLink6585" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -544,8 +360,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="6">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageRequirement6573" /></button>Details:
-							<div id="detailsDIVRequirement6573" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../../images/minus03.gif" align="absmiddle" id="DetailsImageRequirement6586" /></button>Details:
+							<div id="detailsDIVRequirement6586" class="DetailsDiv" >
 							<div class="ObjectDetailsNotes">(a) continuously monitor for the receipt of the first three logical input data flows;&lt;br/&gt;(b) if the first logical input data flow is received in (a), process the request and separate the data from the information about the data provider;&lt;br/&gt;(c) carry out any necessary checks to establish the existence, legitimacy and any other checks for the data provider to be able to submit data to either of the NAP data stores;&lt;br/&gt;(d) load the data found in (b) into the second output logical data flow and send it;&lt;br/&gt;(e) load the information about the data provider found in (b) into the first logical output data flow and send it;&lt;br/&gt;(f) if the second logical input data flow is received in (a), load the request into the second output logical data flow and send it;&lt;br/&gt;(g) if the third logical input data flow is received in (a), process the data it contains and check to see if this data provider has previously tried to load data into either of the NAP data stores and then carry out the checks in (c) above before updating internal records with the result;&lt;br/&gt;(h) when (f) is complete load the third logical output data flow with a &quot;rejection&quot; and if the checks in (g) were successful a &quot;reminder to register&quot; texts and send it to the destination obtained from the processing in (f).&lt;br/&gt;</div>
 
 							</div>
@@ -583,7 +399,21 @@
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top">User Management Module</td>
+					<td width="30%" class="TableRow" valign="top">EU NAP Central Application</td>
+					<td width="10%" class="TableRow" valign="top">Object</td>
+					<td width="10%" class="TableRow" valign="top">Usage</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top">NAP Content Provider Application</td>
+					<td width="10%" class="TableRow" valign="top">Object</td>
+					<td width="10%" class="TableRow" valign="top">Usage</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top">User Management application</td>
 					<td width="10%" class="TableRow" valign="top">Object</td>
 					<td width="10%" class="TableRow" valign="top">Usage</td>
 					<td width="10%" class="TableRow" valign="top">From</td>

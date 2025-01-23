@@ -146,7 +146,7 @@
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../EA1/EA3/EA1097.htm">DFD F3.1.5 Provide Management of Service Areas</a></td>
+			<td class="ObjectDetailsValue">SSTP Function Allocation, High Level Function Parking Area Management , <a href="../EA1/EA3/EA1097.htm">DFD F3.1.5 Provide Management of Service Areas</a></td>
 		</tr>
 	</table>
 	<div class="ObjectDetailsNotes">This Data Store shall be used within the Manage Traffic Functional Area. It shall contain information objects that provide the static data for the service areas that are accessed from the inter-urban traffic road network managed by the System. &lt;br/&gt;&lt;br/&gt;Each information object in the Store shall contain the following data objects:&lt;br/&gt;(1) Service area location (characters, e.g. nation, region, city, state, area names(s), but may also include characters and/or numbers, e.g. GPS/Galileo data)&lt;br/&gt;(2) Inter-urban road identity if known (characters and number)&lt;br/&gt;(3) Number of entrances (number)&lt;br/&gt;(4) Number of exits (number)&lt;br/&gt;(5) Total number of spaces (number)&lt;br/&gt;(6) Float to take account of vehicles searching for spaces (numbers)&lt;br/&gt;(7) Owner/operator ID (number) &lt;br/&gt;(8) Owner/operator contact information (characters and/or numbers)&lt;br/&gt;(9) Charges (numbers - in currency)&lt;br/&gt;(10) Periods when they operate (time and date string)&lt;br/&gt;(11) Method of service area fee collection (characters)&lt;br/&gt;(12) Hours when operator present (time and date string)&lt;br/&gt;(13) Separate motorcycle spaces (number)&lt;br/&gt;(14) Number of disabled spaces (number)&lt;br/&gt;(15) Number of spaces for coach operators (number)&lt;br/&gt;(16) Number of spaces for HGV&#39;s (number)&lt;br/&gt;(17) Re-fuelling facility available (character indicating YES or NO)&lt;br/&gt;(18) Includes hotel(s) with number (character indicating YES or NO plus number)&lt;br/&gt;(19) Includes restaurant(s with number (character indicating YES or NO plus number)&lt;br/&gt;(20) Includes shop(s) with number (character indicating YES or NO plus number)&lt;br/&gt;(21) Display information in urban area (character indicating YES or NO)&lt;br/&gt;(22) List of devices on which service area information is displayed with details about whether &quot;state&quot; or &quot;spaces&quot; is to be displayed (characters and/or numbers)&lt;br/&gt;(23) Thresholds for service area status change, e.g. number of occupied spaces for &quot;almost full&quot; status to be achieved (characters + numbers)&lt;br/&gt;&lt;br/&gt;It shall be possible for the service area state calculation Function to calculate the current state of the service area using the following &quot;live&quot; data:&lt;br/&gt;&lt;br/&gt;(24) Number of vehicles entered service area (number)&lt;br/&gt;(25) Number of vehicles that have left the service area (number)&lt;br/&gt;(26) Service area status, e.g. &quot;almost full&quot;, &quot;full&quot;, &quot;spaces&quot; and &quot;closed&quot; (characters)&lt;br/&gt;&lt;br/&gt;It shall be possible for this data to be replicated depending on the number of entrances and exits that a service area has and how the data that they collect is to be used.&#160;&#160;For example it shall be possible for the service area to have separate parking areas for different types of vehicle such as car, coaches and HGV&#39;s.&lt;br/&gt;</div>
@@ -157,6 +157,7 @@
 			<li onClick="parent != null ? parent.toggleItem('AssociationsFrom') : toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
 			<li onClick="parent != null ? parent.toggleItem('TaggedVal') : toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
 			<li onClick="parent != null ? parent.toggleItem('CustomProperties') : toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
+			<li onClick="parent != null ? parent.toggleItem('Links') : toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
 		<div class="ItemBody" id="AssociationsToTable">
 			<table class="Table ea_table">
@@ -181,8 +182,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink25017" /></button>Details:
-							<div id="detailsDIVLink25017" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink25096" /></button>Details:
+							<div id="detailsDIVLink25096" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -214,8 +215,8 @@
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink25018" /></button>Details:
-							<div id="detailsDIVLink25018" class="DetailsDiv" >
+						<div class="DetailsDivParent"><button onclick="switchProjectProperties()"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink25097" /></button>Details:
+							<div id="detailsDIVLink25097" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -340,7 +341,26 @@
 
 
 			</table>
-		</div>	</div>
+		</div>		<div class="ItemBody" id="LinksTable">
+			<table class="Table ea_table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top">Park Area Monitoring Application</td>
+					<td width="10%" class="TableRow" valign="top">Object</td>
+					<td width="10%" class="TableRow" valign="top">Usage</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
  </div>
  </td>
 				</tr>
