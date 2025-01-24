@@ -31,7 +31,7 @@ The development methodology, supported by computer-based tools, assists in creat
 
     ---
 
-    Explore documents and methodologies for using and creating FRAME architecture as well as papers and articles we wrote about it [:octicons-arrow-right-24:](downloads/documents-and-methodologies.md)
+    Explore documents and methodologies for using and creating FRAME architecture as well as papers and articles we wrote about it [:octicons-arrow-right-24:](docs/documents-and-methodologies.md)
 
 -   :material-scale-balance:{ .lg .middle } __History__
 
