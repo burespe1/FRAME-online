@@ -22,9 +22,9 @@ Following section contain versions of the FRAME Tool for download. The Tool is a
 	
 	Changes to V4.1 are: addition of C-ITS Functionality.
 
-#### Full Architecture downloads
+#### FRAME Browsing tool v4.1 download
 
- - download [**full FRAME selection tool**](../assets/models/)
+ - download [**full FRAME selection tool**](../assets/models/Browsing_Tool-30082011.zip)
  
 <div class="grid cards" markdown>
 
