@@ -32,6 +32,7 @@ nav:
       - FRAME Tool: getting-started/tool.md
       - User Guide: getting-started/user-guide.md
   - FRAME Models:
+      - FRAME Models: model/frame-models.md
       - FRAME Architecture v5: model/frame-architecture-5.md
       - FRAME Architecture v4: model/frame-architecture-4.md
       - Reference Architectures: model/reference-architectures.md
