@@ -1,12 +1,32 @@
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MEGA_Process_600_Information</title>
-    <LINK REL="STYLESHEET" TYPE="text/css" HREF="ws_intranet.css">
-  </head>
-  <FRAMESET id="InformationFrame" COLS="240, *">
-    <FRAME SRC="ws_frame_treeframe_us.htm" NAME="TreeFrame" id="TreeFrame" borderColor="#2256a4" FRAMEBORDER="1" NORESIZE="true">
-    </FRAME>
-    <FRAME SRC="welcomebis.htm" NAME="Content" id="Content" FRAMEBORDER="0" NORESIZE="true">
-    </FRAME>
-  </FRAMESET>
+    <link rel="stylesheet" type="text/css" href="ws_intranet.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        #treeFrame {
+            width: 240px;
+            height: 100%;
+            border: 1px solid #2256a4;
+            float: left;
+        }
+        #content {
+            margin-left: 240px;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <iframe id="treeFrame" name="TreeFrame" src="ws_frame_treeframe_us.htm" frameborder="1" noresize="true"></iframe>
+    <iframe id="content" name="Content" src="welcomebis.htm" frameborder="0" noresize="true"></iframe>
+</body>
 </html>
