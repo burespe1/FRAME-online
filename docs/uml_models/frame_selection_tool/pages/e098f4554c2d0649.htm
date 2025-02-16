@@ -1,0 +1,286 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 5.15.3 Determine Host Vehicle Situation
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <div id="ObjectTitle">
+<Table id="ObjectTitleTable" class="ObjectTitleTable" cellpadding="0" cellspacing="0"  width = "100%">
+<TR>
+<TD width="5%" height ="35" align = "left">
+<img src="../standard/busf.gif"/>
+</TD>
+<TD width="20%" height ="35" align = "left">
+<span class="ObjectTitle_Type">
+High Level Function</span>
+</TD>
+<TD width="75%" height ="35" align = "left">
+<span class="ObjectTitle_Name">5.15.3 Determine Host Vehicle Situation</span>
+</TD>
+</TR>
+ </Table>
+</div>
+<table border="0" cellpadding="0" cellspacing="0"  class="InvisibleTable">
+<tr>
+    	 
+<td id="Tab" class="Tab">	&nbsp;Diagram&nbsp;</td>
+ <td id="Tab" class="Tab">&nbsp;Definition&nbsp;</td>
+ <td class="TabFiller" width="100%">&nbsp;</td>
+<td align="center" onclick="OnFitWidthClick();"  id="ZoomButton" class="ZoomButton" title="Fit to width">
+<img src="../standard/ws_fitwidth.gif"></img></td>
+<td align="center" onclick="OnRegularClick();" id="ZoomButton" class="ZoomButton" title="Actual size">
+<img src="../standard/ws_actual.gif"></img></td>
+<td align="center" onmousedown="OnIncrStart();" onmouseup="OnIncrStop();" id="ZoomButton" class="ZoomButton" title="Zoom in">
+<img src="../standard/ws_zoomin.gif"></img></td>
+<td align="center" onmousedown="OnDecrStart();" onmouseup="OnDecrStop();" id="ZoomButton" class="ZoomButton" title="Zoom out">
+<img src="../standard/ws_zoomout.gif"></img></td>
+<td style="display:none" id="TabMemoryName">TabMemoryProcess</td>	</tr>
+</table>
+
+<div id="ContentTab" class="ContentTab">
+	<table id="TabDiagList" class="TabDiagList" border="0" cellpadding="0" cellspacing="0" width="450">
+	          <tr>
+          <td width="16">
+                    <img src="../standard/diag.gif"/></td>
+<td id="TabDiag"class="TabDiag">
+DFD 5.15.3 Determine Host Vehicle Situation</td>
+</tr>
+              </Table>
+<div id="ContentTabDiag" class="ContentTabDiag">
+      <p>
+<p class="DiagName">DFD 5.15.3 Determine Host Vehicle Situation</p><p>
+<center>
+<h5>This is a DFD diagram which provides a description of the function in the ITS environment</h5>
+  <MAP CLASS="Content" NAME="E098F4714C2D065E"> 
+    <AREA href="2f52490c4c34051b.htm" shape="rect" coords="285, 393, 565, 408"   target="_self"  title="It contains data about an overtaking manoeuvre that is about to be made by the Host Vehicle but which will take it into the predicted forward trajectory of the Other Vehicle."> 
+    </AREA> 
+    <AREA href="2f5244ea4c3404c9.htm" shape="rect" coords="285, 370, 535, 384"   target="_self"  title="It contains data from which a warning message about a dangerous overtaking manoeuvre can be generated for output to the Driver of the Host Vehicle."> 
+    </AREA> 
+    <AREA href="2f5241d54c340489.htm" shape="rect" coords="0, 188, 160, 221"   target="_self"  title="It contains the predicted trajectories for Other Vehicles for use in determining if the Host Vehicle is about to move into their paths."> 
+    </AREA> 
+    <AREA href="2f5231fb4c34035e.htm" shape="rect" coords="160, 458, 291, 486"   target="_self"  title="It contains details of the predicted forward trajectory of the Host Vehicle together with its location within the carriageway and the road network for use in classifying the behaviour of its Driver."> 
+    </AREA> 
+    <AREA href="2f522ff14c34030f.htm" shape="rect" coords="185, 518, 269, 587"   target="_self"  title="This Function shall be capable of providing the following facilities:"> 
+    </AREA> 
+    <AREA href="21c45a3e4c3311b8.htm" shape="rect" coords="287, 277, 519, 293"   target="_self"  title="It contains data that is to be used to output a warning message and give advice to the Driver of the Host Vehicle that the Vehicle is being driver the wrong way along the carriageway that it is occupying, i.e. it is a &quot;ghost driver&quot;."> 
+    </AREA> 
+    <AREA href="bdf9c31f4c31036f.htm" shape="rect" coords="288, 185, 473, 199"   target="_self"  title="It contains data from which a warning for the Driver of the Host Vehicle can be generated containing advice on the action(s), e.g. changes to Vehicle speed and/or trajectory, which need to be taken to ensure that the Vehicle travels safely through the curve in the road network that is ahead of the Vehicle in its current trajectory."> 
+    </AREA> 
+    <AREA href="c263db064c290ad9.htm" shape="rect" coords="15, 233, 155, 261"   target="_self"  title="It contains the location of the Host Vehicle within the carriageway and the road network, expressed in the form of digital map data, including data for the surrounding geographic area, and is for use in a variety of processes that are connected with the trajectory of the Host Vehicle."> 
+    </AREA> 
+    <AREA href="c263dd054c290b1d.htm" shape="rect" coords="11, 324, 156, 367"   target="_self"  title="It contains in indication of the current status of the traffic signals and the predicted time when the next change (either &quot;go&quot; to &quot;stop&quot; or &quot;stop&quot; to &quot;go&quot;) will take place."> 
+    </AREA> 
+    <AREA href="bb04bea04c2404af.htm" shape="rect" coords="32, 279, 155, 307"   target="_self"  title="It contains data provided by In-vehicle Systems of the Host Vehicle that is used to calculate the forward trajectory of the Vehicle.&nbsp;&nbsp;It therefore includes such items as the status of the power unit, driver train, front wheels, steering wheel, turn indicator and brakes, plus the Host Vehicle identity."> 
+    </AREA> 
+    <AREA href="bb04c3064c24069f.htm" shape="rect" coords="27, 538, 156, 567"   target="_self"  title="It contains details of the status of the Driver of the Host Vehicle deduced from inputs that will be used to classify the behaviour of the Vehicle into categories such as safe or un-safe."> 
+    </AREA> 
+    <AREA href="474853e54c2c06f7.htm" shape="rect" coords="285, 325, 522, 339"   target="_self"  title="It contains a warning that the Host Vehicle is about to depart from the lane in the road carriageway that it is currently occupying."> 
+    </AREA> 
+    <AREA href="5c6b60664c2b065c.htm" shape="rect" coords="288, 209, 496, 224"   target="_self"  title="It contains information for the Driver of the Host Vehicle about which lane to use and the Vehicle speed to enable the next set of traffic lights to be passed through without stopping, i.e. with a green signal being seen by the Driver."> 
+    </AREA> 
+    <AREA href="a785bba24c2805c2.htm" shape="rect" coords="292, 545, 475, 560"   target="_self"  title="It contains a warning that the predicted behaviour of the Host Vehicle will be unsafe in a particular described way."> 
+    </AREA> 
+    <AREA href="c26314dc4c2a1c2e.htm" shape="rect" coords="288, 229, 490, 250"   target="_self"  title="It contains an indication that the Host Vehicle is about to run a red light that is to be sent to the Other Vehicle."> 
+    </AREA> 
+    <AREA href="5c6b735e4c2b0f3d.htm" shape="rect" coords="285, 348, 492, 362"   target="_self"  title="It contains a warning that the Host Vehicle is about to depart from the lane in the road carriageway that it is currently occupying."> 
+    </AREA> 
+    <AREA href="c26309694c2a1881.htm" shape="rect" coords="288, 257, 467, 271"   target="_self"  title="It contains a warning for output to the Driver that the Vehicle it is about to run through a red light."> 
+    </AREA> 
+    <AREA href="474849f14c2c04b1.htm" shape="rect" coords="286, 302, 555, 316"   target="_self"  title="It contains data from which a warning can be produced for Drivers that a Vehicle, whose identity is included in the data, is about to depart from the lane in the road carriageway that it is currently occupying."> 
+    </AREA> 
+    <AREA href="b2b4b76b4c2d0234.htm" shape="rect" coords="576, 3, 716, 46"   target="_self"  title="It contains data from which a message can be produced advising Drivers that there are possible conflicts with Other Vehicles, Other Road Users, Pedestrians, and Vulnerable Road Users in the forward trajectory of the Host Vehicle, the identity of which is included in the data."> 
+    </AREA> 
+    <AREA href="a785b78a4c280541.htm" shape="rect" coords="309, 20, 437, 48"   target="_self"  title="It contains details of the locations of Other Vehicles that are nearby the Host Vehicle and includes the digital map data that shows the type of road on which the Host Vehicle is travelling."> 
+    </AREA> 
+    <AREA href="5c6b6e484c2b0a39.htm" shape="rect" coords="576, 55, 723, 83"   target="_self"  title="It contains information about Other Vehicles and/or Other Road Users that are nearby the Host Vehicle, including those approaching the same set of traffic signals being approached by the Host Vehicle and those approaching the front or rear of the Host Vehicle that are partially in the lane occupied by the Host Vehicle."> 
+    </AREA> 
+    <AREA href="a785bc0e4c2805e3.htm" shape="rect" coords="576, 96, 699, 124"   target="_self"  title="It contains a warning that the Host Vehicle is about to collide with another Vehicle unless the trajectory of the Host Vehicle is changed."> 
+    </AREA> 
+    <AREA href="a785b8504c280572.htm" shape="rect" coords="326, 81, 442, 110"   target="_self"  title="It contains the predicted forward trajectory of the Host Vehicle regardless of whether it is safe or not."> 
+    </AREA> 
+    <AREA href="bb04c0cc4c240670.htm" shape="rect" coords="178, 180, 262, 419"   target="_self"  title="This Function shall be capable of providing the following facilities:"> 
+    </AREA> 
+    <AREA href="a785b5dc4c280514.htm" shape="rect" coords="470, 0, 550, 132"   target="_self"  title="This Function shall be capable of providing the following facilities:"> 
+    </AREA> 
+  </MAP> 
+  <IMG CLASS="Content" SRC="../images/e098f4554c2d0649_i.png" USEMAP="#E098F4714C2D065E" BORDER=0> 
+  </IMG> </center>
+</div> 
+      </div>
+
+ <div id="ContentTab" class="ContentTab">
+
+<h3>Overview</H3>
+<H5>This High-level Function shall be responsible for processing the data about the location of the Host Vehicle and its trajectory to determine if&nbsp;&nbsp;it is being driven safely and/or it will be in conflict with any other Vehicles or Other Road Users.&nbsp;&nbsp;If the Driver needs to take any corrective action to driver more safely and/or avoid the prospective conflict with another Vehicle or Road User, it shall be determined by the Function and sent to the Provide Vehicle Trajectory Information to Driver Function for output to the Driver.</H5>
+<h3>Diagrams</H3> 
+<table border="1" width="100%">
+<tr>
+<td><h5>
+The Diagram(s) is(are) the Diagram(s) where you can find the function
+</td>
+</tr>
+<tr>
+<td width="50%">
+<ul>
+<li>The first diagram, if exists, is a DFD diagram which provides the context of the function</li>
+<li>The second Diagram, if exists, is a Functional Tree which provides a hierarchical description of the function into subfunctions</li>
+</ul>
+</h5>
+</td>
+<td width="100%">
+<h5>
+
+
+
+<li>DFD 5.15 Provide In-vehicle Detection</li></a>
+<h5>
+
+<a href="F897F8D63981002B.HTM?DiagTab=1" Target="_self">
+
+
+<li>Functional Tree of Area 5</li></a></h5>
+</td>
+</tr>
+</table>
+<h3>Parent</H3>
+<ul><h5><li>
+  <A CLASS="Content" HREF="16da17594c0d0194.htm" target="_self"> 5. Provide Support for Host Vehicle Services::5.15 Provide In-vehicle Detection and Analysis</A> </ul>
+<ul></h5></ul>
+<h3>Component lower level functions</H3>
+<ul><h5><li>
+  <A CLASS="Content" HREF="bb04c0cc4c240670.htm" target="_self"> 5.15.3.1 Predict Host Vehicle Trajectory</A> <li>
+  <A CLASS="Content" HREF="a785b5dc4c280514.htm" target="_self"> 5.15.3.2 Analyse Road Situation around Host Vehicle</A> <li>
+  <A CLASS="Content" HREF="2f522ff14c34030f.htm" target="_self"> 5.15.3.3 Classify Host Vehicle Driver Behaviour</A> </h5></ul>
+<H5></H5>
+<h3>Input logical dataflows</H3>
+<ul><h5>
+
+<li>
+  <A CLASS="Content" HREF="c263dd054c290b1d.htm" target="_self"> mt.pshvs_s&amp;g_sequence_data_for_host_vehicle </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="bb04c3064c24069f.htm" target="_self"> pshvs_driver_status_for_behaviour_classification </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="a785b78a4c280541.htm" target="_self"> pshvs_location_of_other_vehicles_nearby </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="2f5241d54c340489.htm" target="_self"> pshvs_other_vehicle_trajectory_for_host_vehicle </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="bb04bea04c2404af.htm" target="_self"> pshvs_vehicle_data_for_trajectory </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="c263db064c290ad9.htm" target="_self"> pshvs_vehicle_location_for_trajectory </A> 
+
+</h5></ul>
+<h3>Output logical dataflows</H3>
+<ul><h5>
+
+<li>
+  <A CLASS="Content" HREF="b2b4b76b4c2d0234.htm" target="_self"> pshvs.mt_possible_conflicts_with_vehicle_movement </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="474849f14c2c04b1.htm" target="_self"> pshvs.mt_roadside_vehicle_lane_departure_warning </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="21c45a3e4c3311b8.htm" target="_self"> pshvs_host_vehicle_ghost_driving_warning </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="474853e54c2c06f7.htm" target="_self"> pshvs_host_vehicle_lane_departure_warning </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="c26314dc4c2a1c2e.htm" target="_self"> pshvs_host_vehicle_red_light_running </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="5c6b6e484c2b0a39.htm" target="_self"> pshvs_nearby_vehicles_and_road_user_information </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="c26309694c2a1881.htm" target="_self"> pshvs_red_light_running_warnng </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="bdf9c31f4c31036f.htm" target="_self"> pshvs_road_curve_ahead_warning </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="5c6b60664c2b065c.htm" target="_self"> pshvs_traffic_signal_advisory_message </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="2f5244ea4c3404c9.htm" target="_self"> pshvs_un-safe_overtaking_manoeuvre_warning </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="2f52490c4c34051b.htm" target="_self"> pshvs_un-safe_overtaking_warning_for_other_vehicle </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="a785bba24c2805c2.htm" target="_self"> pshvs_vehicle_behaviour_warning </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="a785bc0e4c2805e3.htm" target="_self"> pshvs_vehicle_collision_warning </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="5c6b735e4c2b0f3d.htm" target="_self"> pshvs_vehicle_lane_departure_warning </A> 
+
+</h5></ul> 
+
+<ul><h5></h5></ul>
+
+<ul><h5></h5></ul>
+<h3>User needs</H3>
+<div align="right">
+<table border="1" width="100%">
+<tr>
+<td width="10%"><center><h4>Number</h4></center></td>
+<td width="90%"><h4>Description</h4></td>
+</tr>
+
+</table>
+</div>
+
+</div><script language="javascript" src="../standard/ws_tabtemplate.js"></script>
+<script language="javascript" src="../standard/ws_zoomtemplate.js"></script>
+<script language="javascript" src="../standard/ws_buttontemplate.js"></script>
+<script language="javascript" src="../standard/ws_keyshortcuttemplate.js"></script>
+            <!--<img src="../standard/busf.gif"/>-->
+
+</BODY> </HTML>

@@ -1,0 +1,22 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 8.2.2.3.1 Manage and Schedule Maintenance Activities
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>8.2.2.3.1 Manage and Schedule Maintenance Activities</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to take charge of organising Freight Vehicle maintenance, which it shall do on a regular basis, such as daily, weekly, monthly, etc.<br>(2) The ability to use data such as Freight Vehicle status and maintenance rules from the store of Resource Data.<br>(3) When assessing the need for maintenance, the ability to take into account data such as Freight Vehicle status as well as constraints such as freight transport planning.<br>(4) The ability to find an acceptable solution when notice of a resource conflict is received, e.g. a Freight Vehicle that is scheduled for maintenance is also wanted for a particular freight transport operation.<br></div></H5><h3>Functional Requirements</H3><h5>(a) On a regular time basis:<br/>     (a1) get from database the store of Resources Data vehicle current status for each vehicle or equipment,<br/>     (a2) get from database the store of Resources Data maintenance rules,<br/>     (a3) identify which vehicle or equipment need to go to maintenance and for each of them schedule for next time period  maintenance activities<br/>(b) on reception of a resource conflict (need for a resource that is scheduled to be in maintenance), try to find a solution and send answer back.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FF823981052B.HTM?DiagTab=1" Target="_self">DFD 8.2.2.3 Manage Fleet Resources</a><h5><li> <a href="F897FF823981050D.HTM?DiagTab=1" Target="_self">Functional tree 8.2</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897ff823981052b.htm" target="_self"> 8.2.2.3 Manage Fleet Resources</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="2ff432cd406c00ef.htm" target="_self"> fo.flo-input_data_11 </A> <li>
+  <A CLASS="Content" HREF="737ac3fd3f33287a.htm" target="_self"> mffo_read_resources_maintenance_data </A> <li>
+  <A CLASS="Content" HREF="f8971c573982419d.htm" target="_self"> mffo_vehicle_equipment_conflict </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f8971c57398241a3.htm" target="_self"> mffo_vehicle_equipment_conflict_solution </A> <li>
+  <A CLASS="Content" HREF="d4d2297f406c4e88.htm" target="_self"> to.flo-output_data_11 </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442c139be9010.htm" target="_self"> 9.5.2.15</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to schedule the maintenance of vehicles, equipment and cargo units.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="cf07d3cb417c0024.htm" target="_self"> 9.5.3.26</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to record supplementary information about events recorded by the tachograph, e.g. reason for waiting time.</h5></td></tr></table></div>
+</BODY> </HTML>

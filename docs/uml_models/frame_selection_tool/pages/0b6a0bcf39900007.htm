@@ -1,0 +1,613 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > Business Process System
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <div id="ObjectTitle">
+<Table id="ObjectTitleTable" class="ObjectTitleTable" cellpadding="0" cellspacing="0"  width = "100%">
+<TR>
+<TD width="5%" height ="35" align = "left">
+<img src="../standard/busp.gif"/>
+</TD>
+<TD width="20%" height ="35" align = "left">
+<span class="ObjectTitle_Type">
+Functional Area</span>
+</TD>
+<TD width="75%" height ="35" align = "left">
+<span class="ObjectTitle_Name">System</span>
+</TD>
+</TR>
+ </Table>
+</div>
+<table border="0" cellpadding="0" cellspacing="0"  class="InvisibleTable">
+<tr>
+     
+<td id="Tab" class="Tab">	&nbsp;Diagrams&nbsp;</td>
+ <td id="Tab" class="Tab">&nbsp;Definition&nbsp;</td>
+ <td class="TabFiller" width="100%">&nbsp;</td>
+<td align="center" onclick="OnFitWidthClick();"  id="ZoomButton" class="ZoomButton" title="Fit to width">
+<img src="../standard/ws_fitwidth.gif"></img></td>
+<td align="center" onclick="OnRegularClick();" id="ZoomButton" class="ZoomButton" title="Actual size">
+<img src="../standard/ws_actual.gif"></img></td>
+<td align="center" onmousedown="OnIncrStart();" onmouseup="OnIncrStop();" id="ZoomButton" class="ZoomButton" title="Zoom in">
+<img src="../standard/ws_zoomin.gif"></img></td>
+<td align="center" onmousedown="OnDecrStart();" onmouseup="OnDecrStop();" id="ZoomButton" class="ZoomButton" title="Zoom out">
+<img src="../standard/ws_zoomout.gif"></img></td>
+<td style="display:none" id="TabMemoryName">TabMemoryBusinessProcess</td>	</tr>
+</table>
+
+
+ <div id="ContentTab" class="ContentTab">	    
+<table id="TabDiagList" class="TabDiagList" border="0" cellpadding="0" cellspacing="0" width="450">          
+<tr>          
+<td width="16">                    <img src="../standard/diag.gif"/>                                            </td>
+<td id="TabDiag"class="TabDiag">Context Diagram</td>
+</tr>
+<tr>          
+<td width="16">                    <img src="../standard/diag.gif"/>                                            </td>
+<td id="TabDiag"class="TabDiag">Functional Area Diagram (DFD0)</td>
+</tr>              
+</Table>
+<div id="ContentTabDiag" class="ContentTabDiag">      
+
+<p><p class="DiagName"><ul><h5><li><i><b>The 1st Diagram is a DFD diagram which provides a description of the Functional Area in the ITS Environment</b></i></li><li><i><b>The 2nd Diagram is a Functional Tree which provides a hierarchical description of the Functional Area into Subfunctions&nbsp;</b></i></li></h5></ul>Context Diagram</p><p></p></p>
+<center>
+  <MAP CLASS="Content" NAME="0B6A0BD03990000D"> 
+    <AREA href="44897e154c4412ca.htm" shape="rect" coords="366, 92, 455, 120"   target="_self"  title="It contains data that is being sent to entities that are responsible for the management of the operation of equipment that is dedicated to the managaement of bridges and tunnels."> 
+    </AREA> 
+    <AREA href="5c12607e4c0d03e3.htm" shape="rect" coords="303, 601, 367, 644"   target="_self"  title="It contains data that is being sent from functionality that will be specifically located at the roadside."> 
+    </AREA> 
+    <AREA href="5eae6d7039840b89.htm" shape="rect" coords="202, 476, 291, 505"   target="_self"  title="The data flow contains analogue data about the condition of the pavement, plus guidance or location information that can be derived from the pavement itself."> 
+    </AREA> 
+    <AREA href="5eae6ec0398410fe.htm" shape="rect" coords="49, 478, 140, 523"   target="_self"  title="This Terminator shall represent the material that makes up the surface of the road.&nbsp;&nbsp;The data that is collected shall enable the System to decide what maintenance operations are necessary to ensure that the surface causes no hazard to vehicles, pedestrians, as well as those in wheelchairs, or have imperfect sight.&nbsp;&nbsp;The different status of the road surfacing that can be measured shall include but not be limited to conditions such as ice, flood water, landslides, etc."> 
+    </AREA> 
+    <AREA href="fed73c734b8d1535.htm" shape="rect" coords="161, 610, 250, 653"   target="_self"  title="This Terminator shall represent entities that are outside vehicles that are capable of providing information directly to their drivers.&nbsp;&nbsp;It shall be possible for the information to comprise regulations, commands for all or particular types of Vehicle to use or not use specific lanes in particular segments of the road network, commands providing the maximum vehicle speed, warnings about anything that might affect the flow of traffic, and general information."> 
+    </AREA> 
+    <AREA href="2af82b964c0d0008.htm" shape="rect" coords="468, 1, 565, 44"   target="_self"  title="This Terminator shall represent the status of the environment in the geographic area that surrounds the Host Vehicle at any time.&nbsp;&nbsp;It shall consist of the following Actors, each of which represents a different type of object:"> 
+    </AREA> 
+    <AREA href="fed73f204b8d1552.htm" shape="rect" coords="494, 103, 556, 160"   target="_self"  title="It contains data that is coming from objects in the geographic area surrounding the Vehicle."> 
+    </AREA> 
+    <AREA href="5eae6d7139840c07.htm" shape="rect" coords="281, 165, 349, 192"   target="_self"  title=" It contains weather information that has been gathered by vehicles.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="5eae6d7139840bfb.htm" shape="rect" coords="116, 260, 180, 274"   target="_self"  title="The Traveller may be one of the types defined in the terminator description.  These types will be identified by the names of the individual data flows from each Area.  The data flow contains output to the Traveller that may include instructions to take actions, or responses to previous inputs from the Traveller.  This output may be provided through an audio device, a visual device, a mechanical device, or any combination of these  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="5eae6d7039840ba1.htm" shape="rect" coords="215, 311, 294, 324"   target="_self"  title="The Traveller may be one of the types defined in the terminator description.  These types will be identified by the names of the individual data flows to each Area.  The data flow contains input from the Traveller requesting access to the services provided by the System.  This input may be provided through a computer based device, an electro-mechanical device, or audio converter.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="5eae6d7139840bf5.htm" shape="rect" coords="128, 321, 200, 347"   target="_self"  title="This data flow appears on both the Context Diagram and DFD 0.  The data flow contains either the responses to requests for information about the operation of the road network."> 
+    </AREA> 
+    <AREA href="5eae6d7039840b9b.htm" shape="rect" coords="211, 356, 303, 383"   target="_self"  title="This data flow  appears on both the Context Diagram and DFD 0.  The data flow contains either requests for information about the operation of the road network, or updates to data that defines how the road network is structured."> 
+    </AREA> 
+    <AREA href="5eae6d7139840bc5.htm" shape="rect" coords="144, 391, 225, 421"   target="_self"  title="This data flow appears on both the Context Diagram and DFD 0.  The data flow contains instructions or requests for action to be taken by the Emergency Systems.  It consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="5eae6d7139840c2b.htm" shape="rect" coords="214, 421, 306, 447"   target="_self"  title="This data flow appears on both the Context Diagram and DFD 0.  The data flow contains data about the response of the Emergency Systems to instructions or requests that were sent previously.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="5eae6d7139840bdd.htm" shape="rect" coords="227, 511, 314, 541"   target="_self"  title="It contains information about road repairs, or an indication that a previously reported fault has been cleared. The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="5eae6d7039840b77.htm" shape="rect" coords="259, 552, 353, 578"   target="_self"  title="It contains information about road repairs, or an indication that a previously reported fault has been cleared. The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="5eae6d7139840bef.htm" shape="rect" coords="377, 616, 458, 642"   target="_self"  title="The data flow contains information that is being sent from an Area to functionality in a similar Area of another System.  It consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="5eae6d7039840b8f.htm" shape="rect" coords="456, 574, 540, 600"   target="_self"  title="The data flow contains information that has been sent from functionality in an Area of another System to that in a similar Area of this System.  It consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="5eae6d7039840bb3.htm" shape="rect" coords="532, 615, 593, 645"   target="_self"  title="This data flow appears on both the Context Diagram and DFD 0.  It contains data that is being sent to a device (e.g. a container) that is being used to transport goods.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="5eae6d7139840c19.htm" shape="rect" coords="572, 580, 652, 606"   target="_self"  title="This data flow  appears on both the Context Diagram and DFD 0.  It contains data from a device (e.g. a container) that is being used to transport goods.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="5eae6d7139840be9.htm" shape="rect" coords="655, 619, 732, 634"   target="_self"  title="The Operator may be one of the types defined in the terminator description.  These types will be identified by the names of the individual data flows from each Area.  The data flow contains data that is being output to an Operator.  This output may be provided through an audio device, a visual device, a mechanical device, or any combination of these.  The data flow comprises the following items, each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="5eae6d7039840b83.htm" shape="rect" coords="685, 590, 768, 606"   target="_self"  title="The Operator may be one of the types defined in the terminator description.  These types will be identified by the names of the individual data flows to each Area.  The data flow contains data that has been input by an Operator.  This input may be provided through a keyboard, some form of &quot;point and click&quot; based data collection, an electro-mechanical device, or audio converter.  The data flow comprises the following items, each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="5eae6d7139840be3.htm" shape="rect" coords="709, 549, 792, 576"   target="_self"  title="The Multi-Modal System may be one of the types defined in the terminator description.  These types will be identified by the names of the individual data flows from each Area.  The data flow contains requests information for services that cannot provided by functionality within the System.  This data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="5eae6d7039840b7d.htm" shape="rect" coords="711, 494, 782, 520"   target="_self"  title=" The Multi-Modal System may be one of the types defined in the terminator description.  These types will be identified by the names of the individual data flows to each Area.  The data flow contains information that cannot provided by functionality within the System.  This data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="5eae6d7139840bd7.htm" shape="rect" coords="802, 476, 882, 515"   target="_self"  title="The data flow contains the data or information about fraud that has been detected by functionality within the System.  It consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="5eae6d7039840b6b.htm" shape="rect" coords="742, 420, 822, 459"   target="_self"  title="The data flow contains the response to data or information that has been sent to the terminator.  It consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="5eae6d7139840c01.htm" shape="rect" coords="805, 317, 862, 332"   target="_self"  title="The Vehicle may be one of the types defined in the terminator description.  These types will be identified by the names of the individual data flows from each Area.  The data flow contains data that is for use by occupants of the vehicle, or that in some way affects vehicle operation.  It consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="5eae6d7039840ba7.htm" shape="rect" coords="713, 356, 784, 369"   target="_self"  title=" The Vehicle may be one of the types defined in the terminator description.  These types will be identified by the names of the individual data flows to each Area.  The data flow contains data from the vehicle that provides identification or an indication of its presence at a particular point in the road network.  It consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="5eae6d7139840bcb.htm" shape="rect" coords="795, 228, 881, 254"   target="_self"  title="The External Service Provider may be one of the types defined in the terminator description.  These types will be identified by the names of the individual data flows from each Area.  The data flow contains requests for information about services that are not provided by functionality within the System.  This data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="5eae6d7139840c31.htm" shape="rect" coords="694, 295, 783, 322"   target="_self"  title="The External Service Provider may be one of the types defined in the terminator description.  These types will be identified by the names of the individual data flows to each Area.  The data flow contains information about services that are not provided by functionality within the System.  This data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="5eae6d7139840bd1.htm" shape="rect" coords="752, 148, 835, 174"   target="_self"  title="This data flow appears on both the Context Diagram and DFD 0.  It contains requests for payment transactions to be completed.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="5eae6d7139840c37.htm" shape="rect" coords="690, 228, 778, 258"   target="_self"  title="This data flow appears on both the Context Diagram and DFD 0.  It contains data that shows the results of previous requests for payment transactions to be completed.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="5eae6d7039840bbf.htm" shape="rect" coords="685, 93, 746, 106"   target="_self"  title=" The Driver may be one of the types defined in the terminator description.  These types will be identified by the names of the individual data flows from each Area.  The data flow contains instructions for the Driver to take actions or responses to inputs from the Driver.  These inputs will be requests for information, or actions for the Driver to take that will help to manage road traffic in an efficient manner.  This data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="5eae6d7139840c25.htm" shape="rect" coords="663, 167, 735, 180"   target="_self"  title="The Driver may be one of the types defined in the terminator description.  These types will be identified by the names of the individual data flows to each Area.  The data flow consists of data that has been provided by the Driver, either in response to requests or as unsolicited input.  The data flow consists of the following data items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="5eae6d7039840bb9.htm" shape="rect" coords="582, 34, 638, 74"   target="_self"  title="This data flow  appears on both the Context Diagram and DFD 0.  It contains responses to requests for freight to be shipped from one place to another.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="5eae6d7139840c1f.htm" shape="rect" coords="597, 119, 655, 158"   target="_self"  title="This data flow appears on both the Context Diagram and DFD 0. It contains information about freight that is to be shipped from one place to another.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="5eae6d7139840c13.htm" shape="rect" coords="308, 130, 411, 160"   target="_self"  title="This data flow appears on both the Context Diagram and DFD 0.  The data flow contains data about the operation of services in bridges and tunnels.  This data is used to determine whether or not the bridge to be restricted to some or all vehicles, as well as the need for maintenance.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="5eae6d7139840c0d.htm" shape="rect" coords="422, 55, 494, 81"   target="_self"  title="This data flow appears on both the Context Diagram and DFD 0.  It contains analogue data about the environment which may be general applying to the geographic area served by the System, or be from individual points at or near the road network.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="5eae6d7039840b71.htm" shape="rect" coords="753, 380, 833, 409"   target="_self"  title="The data flow contains analogue or digital data that can be used by functionality within the System to calculate the location of vehicles or travellers.  It consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="5eae6d7039840b95.htm" shape="rect" coords="240, 250, 304, 265"   target="_self"  title="It is sent by traffic flowing through the road network that is managed by the System.  The data flow contains indications of the presence of vehicles that can be read by sensors within the system.  It consists of the following items, each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="5eae6d7039840bad.htm" shape="rect" coords="267, 210, 343, 236"   target="_self"  title="This data appears on both the Context Diagram and DFD 0.  It contains details of the current and forecast weather conditions for the geographic area served by the system.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="5eae6ec039841122.htm" shape="rect" coords="68, 133, 163, 176"   target="_self"  title="This Terminator shall provide general area weather information and weather forecasts to the System.&nbsp;&nbsp;The information shall comprise things such as temperature, fog, rain and wind (direction and strength), whilst the forecasts shall predict changes in these conditions.&nbsp;&nbsp;It shall be possible for both types of information to be provided on a regular basis or on request from the System.&nbsp;&nbsp;"> 
+    </AREA> 
+    <AREA href="5eae6ec039841116.htm" shape="rect" coords="1, 270, 76, 300"   target="_self"  title="This Terminator shall represent a human entity that uses (or is about to use) transportation services provided by the System.&nbsp;&nbsp;These services shall comprise but not be limited to the provision of travel information and the ability to plan a trip, either before the trip has started, or as a &quot;re-planning&quot; exercise during a previously prepared trip that is now being implemented.&nbsp;&nbsp;This Terminator shall consist of the following Actors:"> 
+    </AREA> 
+    <AREA href="5eae6ec039841110.htm" shape="rect" coords="6, 345, 89, 390"   target="_self"  title="This Terminator shall represent the human entities and/or systems that are responsible for planning changes to the structure of the road transportation network managed by the System.&nbsp;&nbsp;It shall be possible for them to use information gathered by the System and to provide input and guidance to enable the System to produce strategies that can be implemented to optimise transport network use.&nbsp;&nbsp;This optimisation may be required for incident management, or to influence the demands for particular modes of road transport so that particular transport policies may be implemented."> 
+    </AREA> 
+    <AREA href="5eae6ec03984110a.htm" shape="rect" coords="30, 203, 100, 233"   target="_self"  title="This Terminator shall represent the movement of vehicles along a route.&nbsp;&nbsp;Traffic shall depict the vehicle population from which traffic surveillance information is collected and upon which traffic management measures are applied.&nbsp;&nbsp;It shall be possible for the movement of vehicles shown by this terminator to be manifest to the System in a number of forms.&nbsp;&nbsp;These shall include but not be limited to such things as video, laser or infra-red images, magnetic signature or any other way in which the presence of a vehicle can be determined.&nbsp;&nbsp;"> 
+    </AREA> 
+    <AREA href="5eae6ec0398410ce.htm" shape="rect" coords="20, 412, 110, 455"   target="_self"  title="This Terminator shall represent systems that are designed for and used by Emergency Services as part of their operations.&nbsp;&nbsp;In this context the term &#8220;Emergency Services&#8221; shall include organisations that are responsible for services such as fire, police, ambulance and vehicle recovery.&nbsp;&nbsp;The Emergency Systems shall be able to co-ordinate the activities of individual Services.&nbsp;&nbsp;They shall dispatch and control the activities of the vehicles and personnel belonging to a particular Service when they attend incidents.&nbsp;&nbsp;The Emergency Systems shall be given information by the System about emergencies that its functionality has detected.&nbsp;&nbsp;In return the Emergency Systems shall provide reports on progress in dealing with the emergency to enable traffic and travel management strategies to be updated.&nbsp;&nbsp;The Systems shall also provide details of emergency situations affecting road transportation that are reported directly to them, such as through a Mayday call from a vehicle."> 
+    </AREA> 
+    <AREA href="5eae6ec0398410ec.htm" shape="rect" coords="82, 544, 193, 588"   target="_self"  title="This terminator shall represent human entities or systems that are capable of carrying out maintenance activities.&nbsp;&nbsp;It shall consist of the following Actors:"> 
+    </AREA> 
+    <AREA href="5eae6ec039841104.htm" shape="rect" coords="385, 676, 507, 719"   target="_self"  title="This Terminator and its Actors shall represent a link to other instances of Systems that have been produced using the European ITS Framework Architecture. It shall consist of the following Actors:"> 
+    </AREA> 
+    <AREA href="5eae6ec0398410bc.htm" shape="rect" coords="559, 676, 645, 719"   target="_self"  title="This Terminator shall represent all devices in which goods can be transported with some level of protection.&nbsp;&nbsp;These devices are not road vehicles or parts of road vehicles.&nbsp;&nbsp;However it must be possible for them to be carried by road vehicles.&nbsp;&nbsp;The prime example of a device represented by this terminator is the freight container.&nbsp;&nbsp;In this case such a container will have some on-board intelligence with which the System can communicate and exchange data about the cargo being carried."> 
+    </AREA> 
+    <AREA href="5eae6ec0398410f8.htm" shape="rect" coords="753, 652, 838, 682"   target="_self"  title="This Terminator shall comprise a diverse set of human entities that can perform privileged interactions with the System, thereby contributing to the way in which it operates.&nbsp;&nbsp;It shall consist of the following Actors:"> 
+    </AREA> 
+    <AREA href="5eae6ec0398410f2.htm" shape="rect" coords="914, 544, 1011, 587"   target="_self"  title="This Terminator shall represent entities that are the links with systems that manage the transportation of Travellers and Freight by modes that are other than those that are road based.&nbsp;&nbsp;These links shall be represented by the following Actors:"> 
+    </AREA> 
+    <AREA href="5eae6ec0398410e6.htm" shape="rect" coords="920, 380, 1036, 423"   target="_self"  title="This Terminator shall represent external entities that provide data to the System from which its location can be determined.&nbsp;&nbsp;Typically this data shall be provided continuously without requests being made by any of the receiving Functions within the System.&nbsp;&nbsp;The data shall be used by these Functions in the determination of the position of Vehicles and Travellers within the road network managed by the System, e.g. when the location of a Public Transport vehicle is needed to determine if it requires priority at junctions controlled by the System.&nbsp;&nbsp;The actual identity of the source of the data is not important, but it could for example be GPS, or in the future perhaps Galileo."> 
+    </AREA> 
+    <AREA href="5eae6ec0398410e0.htm" shape="rect" coords="913, 452, 1037, 495"   target="_self"  title="This Terminator shall represent an Authority taking the necessary measures or actions to achieve compliance with laws, rules and regulations for the management of road traffic.&nbsp;&nbsp;If any violations of laws are detected by the System, the terminator shall provide sufficient data for the Authority to identify and initiate prosecution of the offenders.&nbsp;&nbsp;This data that is provided by the System shall as a minimum comprise such things as, visual image, vehicle identity, location, time, date, nature of violation."> 
+    </AREA> 
+    <AREA href="5eae6ec03984111c.htm" shape="rect" coords="946, 313, 1025, 343"   target="_self"  title="This Terminator shall represent the Vehicle in terms of any functionality that it might contain the main purpose of which is the provision of ITS services.&nbsp;&nbsp;It consists of the following Actors which represent the different types of Vehicle that can use the road network managed by the System:"> 
+    </AREA> 
+    <AREA href="5eae6ec0398410d4.htm" shape="rect" coords="902, 220, 1027, 263"   target="_self"  title="This Terminator shall represent entities that interface with the System in different ways.&nbsp;&nbsp;It shall be consist of the following Actors:"> 
+    </AREA> 
+    <AREA href="5eae6ec0398410da.htm" shape="rect" coords="869, 141, 979, 184"   target="_self"  title="This Terminator shall represent the organisation(s) that process all electronic fund transfer requests originated from the System.&nbsp;&nbsp;These organisations shall enable the transfer of funds from the user of the System (i.e. a Traveller) to the provider of a service.&nbsp;&nbsp;Typically such transfers shall occur when a Traveller pays for services, such as tolls, or parking.&nbsp;&nbsp;These transfers shall also occur if at the same time, the Traveller pays for other services, such as accommodation."> 
+    </AREA> 
+    <AREA href="5eae6ec0398410c8.htm" shape="rect" coords="833, 71, 910, 101"   target="_self"  title="This Terminator shall represent the human entity that operates a licensed vehicle anywhere on the road network.&nbsp;&nbsp;It shall consist of the following Actors, each of which shall represent the human entity that drives a particular type of Vehicle:"> 
+    </AREA> 
+    <AREA href="5eae6ec0398410c2.htm" shape="rect" coords="723, 3, 806, 46"   target="_self"  title="This Terminator shall represent human or physical entities that need freight (goods) to be transported from one place to place.&nbsp;&nbsp;It shall consist of the following two Actors:"> 
+    </AREA> 
+    <AREA href="5eae6ec0398410b0.htm" shape="rect" coords="274, 10, 369, 53"   target="_self"  title="This Terminator shall represent the operational setting in which road-related ITS services interface and operate.&nbsp;&nbsp;It shall consist of weather effects such as snow, rain, fog, pollution effects such as dust, smoke, and man-made electromagnetic effects.&nbsp;&nbsp;This terminator is a physical entity from which data can be obtained.&nbsp;&nbsp;In this case the data shall be obtained through monitoring by appropriate functionality within the System.&nbsp;&nbsp;The data provided by this functionality shall enable Travellers to be informed about adverse conditions.&nbsp;&nbsp;The monitoring shall also enable Authorities and System Operators to choose relevant management strategies to minimise any adverse effects on the use of the road network"> 
+    </AREA> 
+    <AREA href="5eae6ec0398410b6.htm" shape="rect" coords="119, 60, 232, 104"   target="_self"  title="This Terminator shall represent the entities that can detect physical conditions of bridges and tunnels.&nbsp;&nbsp;It shall consist of the following two Actors:"> 
+    </AREA> 
+    <AREA href="0b6a0bcf39900007.htm" shape="rect" coords="366, 265, 664, 452"   target="_self"  title="-"> 
+    </AREA> 
+  </MAP> 
+  <IMG CLASS="Content" SRC="../images/0b6a0bcf39900007_i.png" USEMAP="#0B6A0BD03990000D" BORDER=0> 
+  </IMG> </center>
+</div> 
+<div id="ContentTabDiag" class="ContentTabDiag">      
+
+<p><p class="DiagName"><ul><h5><li><i><b>The 1st Diagram is a DFD diagram which provides a description of the Functional Area in the ITS Environment</b></i></li><li><i><b>The 2nd Diagram is a Functional Tree which provides a hierarchical description of the Functional Area into Subfunctions&nbsp;</b></i></li></h5></ul>Functional Area Diagram (DFD0)</p><p></p></p>
+<center>
+  <MAP CLASS="Content" NAME="170F173C39900120"> 
+    <AREA href="354f62f54e200c74.htm" shape="rect" coords="695, 705, 809, 720"   target="_self"  title="-"> 
+    </AREA> 
+    <AREA href="91eabc1f4e150d26.htm" shape="rect" coords="503, 740, 584, 754"   target="_self"  title="-"> 
+    </AREA> 
+    <AREA href="44897dcf4c4412b0.htm" shape="rect" coords="1294, 87, 1380, 101"   target="_self"  title="It contains commands to equipment that is dedicated to the management of tunnels and bridges."> 
+    </AREA> 
+    <AREA href="4489652a4c44089c.htm" shape="rect" coords="1092, 42, 1170, 56"   target="_self"  title="It contains inputs about the operation of equipment that is dedicated to the management of tunnels and bridges."> 
+    </AREA> 
+    <AREA href="e287e6c34c0d03c3.htm" shape="rect" coords="495, 726, 585, 740"   target="_self"  title="It contains inputs from the atmospheric environment to functionality in the Provide Support for Host Vehicle Systems Functional Area."> 
+    </AREA> 
+    <AREA href="5c1265ec4c0d07ad.htm" shape="rect" coords="496, 710, 584, 724"   target="_self"  title="-"> 
+    </AREA> 
+    <AREA href="5c1262854c0d041b.htm" shape="rect" coords="491, 696, 585, 710"   target="_self"  title="-"> 
+    </AREA> 
+    <AREA href="bb6ac6594bd506f9.htm" shape="rect" coords="855, 563, 939, 577"   target="_self"  title="It contains analogue data that is produced by the presence of a Vehicle from which details about the Vehicle such as type can be determined."> 
+    </AREA> 
+    <AREA href="71887b434bd00e92.htm" shape="rect" coords="351, 327, 451, 355"   target="_self"  title="It contains requests for green wave routes, and routes for Vehicles carrying Hazardous Goods."> 
+    </AREA> 
+    <AREA href="718878114bd00b39.htm" shape="rect" coords="949, 366, 1028, 408"   target="_self"  title="It contains traffic and incident data that is being sent from Manage Traffic functionality to Provide Support for Cooperative Systems functionality."> 
+    </AREA> 
+    <AREA href="342e37404bd0022f.htm" shape="rect" coords="1045, 497, 1144, 511"   target="_self"  title="-"> 
+    </AREA> 
+    <AREA href="342e35214bd001a0.htm" shape="rect" coords="850, 533, 941, 547"   target="_self"  title="It contains all of the inputs from the Other Related Systems to the Provide Support for Cooperative Systems functionality."> 
+    </AREA> 
+    <AREA href="86ebb3914bcd0b96.htm" shape="rect" coords="1074, 336, 1174, 379"   target="_self"  title="It contains data from the support cooperative systems services functionality that is being sent to the manage traffic functionality."> 
+    </AREA> 
+    <AREA href="86eb91c44bcd04d5.htm" shape="rect" coords="694, 588, 777, 631"   target="_self"  title="-"> 
+    </AREA> 
+    <AREA href="5e5d7c0b4bb31411.htm" shape="rect" coords="810, 549, 942, 564"   target="_self"  title="It contains data from the Vehicle for use by the functionality that supports cooperative systems services."> 
+    </AREA> 
+    <AREA href="1216242a4bb30c59.htm" shape="rect" coords="313, 520, 414, 563"   target="_self"  title="It contains responses to previous requests for the creation of Vehicle Trip Plans, either at the request of the Driver, or because the Trip Plan that is currently being implemented needs to be modified because road conditions have changed."> 
+    </AREA> 
+    <AREA href="1216229c4bb30c21.htm" shape="rect" coords="192, 435, 305, 477"   target="_self"  title="It contains requests for the creation of Vehicle Trip Plans, either at the request of the Driver, or because the Trip Plan that is currently being implemented needs to be modified because road conditions have changed."> 
+    </AREA> 
+    <AREA href="c7a1ca5f4bb001f0.htm" shape="rect" coords="491, 609, 586, 623"   target="_self"  title="-"> 
+    </AREA> 
+    <AREA href="810bc1ee4bb018ab.htm" shape="rect" coords="695, 638, 800, 652"   target="_self"  title="-"> 
+    </AREA> 
+    <AREA href="810bb2944bb00f70.htm" shape="rect" coords="228, 82, 315, 96"   target="_self"  title="-"> 
+    </AREA> 
+    <AREA href="810bafe74bb00ec4.htm" shape="rect" coords="37, 83, 112, 97"   target="_self"  title="-"> 
+    </AREA> 
+    <AREA href="60f465ce4ba30674.htm" shape="rect" coords="228, 162, 360, 176"   target="_self"  title="It contains requests for green wave route, either for a particular emergency intervention, or to keep data about an emergency up to date."> 
+    </AREA> 
+    <AREA href="f7bf019f4ba206a9.htm" shape="rect" coords="1066, 27, 1173, 41"   target="_self"  title="It contains data about the journey times encountered in the road network by Travellers as they implement their trips."> 
+    </AREA> 
+    <AREA href="fc16169e4b9e0ad5.htm" shape="rect" coords="1092, 249, 1171, 263"   target="_self"  title="It contains data from the receiving functionality can determine its location."> 
+    </AREA> 
+    <AREA href="7b11c28f4b8f215c.htm" shape="rect" coords="31, 67, 112, 81"   target="_self"  title="It contains all of the outputs from Other Related Systems for the Privide Traveller Journey Assistance functionality."> 
+    </AREA> 
+    <AREA href="7b11c08c4b8f210d.htm" shape="rect" coords="228, 65, 322, 79"   target="_self"  title="It contains all of the outputs to Other Related Systems from the Privide Traveller Journey Assistance functionality."> 
+    </AREA> 
+    <AREA href="7b118d764b8f0a30.htm" shape="rect" coords="493, 682, 586, 696"   target="_self"  title="It contains all of the inputs from the Weather Systems for use by the Provide Advanced Driver Assistance functionality."> 
+    </AREA> 
+    <AREA href="7b118bce4b8f09da.htm" shape="rect" coords="1095, 57, 1171, 72"   target="_self"  title="It contains all of the inputs from weather systems that are for use by Manage Traffic functionality."> 
+    </AREA> 
+    <AREA href="fed740964b8d15b1.htm" shape="rect" coords="488, 550, 587, 564"   target="_self"  title="-"> 
+    </AREA> 
+    <AREA href="cc3ddd6c4b870fda.htm" shape="rect" coords="974, 304, 1170, 318"   target="_self"  title="It contains data being sent frrom Vehicles to Manage Traffic functionality, e.g. floating car data and Vehicles that have become moving incidents, i.e. they have not been involved in accidents or are broken down and are moving throught the road network either continuously, e.g. wide/long load, or from time to time, e.g. road/winter maintenance vehicles."> 
+    </AREA> 
+    <AREA href="938b98004b8204d9.htm" shape="rect" coords="533, 445, 613, 488"   target="_self"  title="It contains the final ackmowledgement for a mayday call and a stop stolen Vehicle instruction."> 
+    </AREA> 
+    <AREA href="5eae67e039840596.htm" shape="rect" coords="561, 355, 656, 383"   target="_self"  title="It contains data that is for the eventual use by the Emergency Services."> 
+    </AREA> 
+    <AREA href="91d099144b7e0670.htm" shape="rect" coords="311, 893, 406, 911"   target="_self"  title="It contains all of the outputs to the Consignor/Consignee terminator and its actors."> 
+    </AREA> 
+    <AREA href="91d097064b7e04a6.htm" shape="rect" coords="104, 985, 186, 999"   target="_self"  title="It contains all of the inputs from the Consignor/Consignee and its Actors."> 
+    </AREA> 
+    <AREA href="e609eb5a3a270146.htm" shape="rect" coords="1094, 233, 1171, 247"   target="_self"  title="It contains analogue inputs from which environmental data can be determined by processing within a Function."> 
+    </AREA> 
+    <AREA href="ced6f2b04b5e032c.htm" shape="rect" coords="1081, 928, 1238, 943"   target="_self"  title="It contains the dedicated notification of the acknowledgement of an instruction together with the vehicle ID, location and timestamp."> 
+    </AREA> 
+    <AREA href="d692eb164b4d034e.htm" shape="rect" coords="1092, 915, 1238, 930"   target="_self"  title="It contains details of a non-PT Vehicle that is incorrectly using a Bus Lane and is for use in further action by the Law Enforcement Agency."> 
+    </AREA> 
+    <AREA href="1ad622d54b4f04f9.htm" shape="rect" coords="1046, 477, 1134, 491"   target="_self"  title="-"> 
+    </AREA> 
+    <AREA href="1ad621c64b4f04a8.htm" shape="rect" coords="861, 504, 940, 518"   target="_self"  title="-"> 
+    </AREA> 
+    <AREA href="1ad61fde4b4f0455.htm" shape="rect" coords="848, 518, 940, 533"   target="_self"  title="-"> 
+    </AREA> 
+    <AREA href="1ad61cfc4b4f037c.htm" shape="rect" coords="865, 488, 940, 503"   target="_self"  title="-"> 
+    </AREA> 
+    <AREA href="6c3c82dd4b4c11e7.htm" shape="rect" coords="1030, 601, 1181, 615"   target="_self"  title="It contains all the PT data that is used to provide support for cooperative systems."> 
+    </AREA> 
+    <AREA href="2ed052074b4b1575.htm" shape="rect" coords="864, 457, 940, 474"   target="_self"  title="It contains all of the inputs from the Vehicle that support cooperative systems."> 
+    </AREA> 
+    <AREA href="2ed050bc4b4b1515.htm" shape="rect" coords="856, 473, 941, 487"   target="_self"  title="-"> 
+    </AREA> 
+    <AREA href="2ed04b3c4b4b1249.htm" shape="rect" coords="1047, 516, 1136, 531"   target="_self"  title="The Driver will be any of the types defined in the terminator description.&nbsp;&nbsp;It contains instructions for the Driver to take actions or responses to inputs from the Driver."> 
+    </AREA> 
+    <AREA href="2ed039d74b4b048b.htm" shape="rect" coords="960, 439, 1023, 579"   target="_self"  title="This Functional Area shall provide the functionality that is needed to support the implementation of some cooperative systems services that cannot be wholly assigned to parts of other Functional Areas.&nbsp;&nbsp;The particular services that shall be supported by this Functional Area include the management of priority for Other Vehicles, the use by non-Public Transport Vehicles of any spare capacity in Bus Lanes, Vehicle access to sensitive geographic areas within the road network, special routes for Hazardous Goods Vehicles and Urban Loading Zones."> 
+    </AREA> 
+    <AREA href="1a5f1f094b4b01f1.htm" shape="rect" coords="1016, 982, 1239, 996"   target="_self"  title="It contains Vehicle and Cargo characteristics plus other data that is being sent for processing by the Law Enforcement functionality."> 
+    </AREA> 
+    <AREA href="1a5f1bc64b4b0190.htm" shape="rect" coords="350, 146, 516, 160"   target="_self"  title="It contains information about emergency routes that have been created for Emergency Vehicles to speed their responses to incidents."> 
+    </AREA> 
+    <AREA href="330f54544b470f19.htm" shape="rect" coords="789, 442, 939, 456"   target="_self"  title="It contains details of a green wave route that has been created using input previously provided."> 
+    </AREA> 
+    <AREA href="f8971ea1398263af.htm" shape="rect" coords="703, 855, 834, 871"   target="_self"  title="  It provides up-to-date details for the complete fare scheme currently used for the whole set of services provide by the Public Transport operation."> 
+    </AREA> 
+    <AREA href="88ce9d424b1f07e6.htm" shape="rect" coords="31, 35, 111, 49"   target="_self"  title="It contains all of the inputs of location data needed by the Traveller either to implement trip plans or to obtain relevant travel information."> 
+    </AREA> 
+    <AREA href="d329de6f4b1c0c27.htm" shape="rect" coords="1382, 818, 1470, 832"   target="_self"  title="It contains all of the data that is sent to the Financial Clearinghouse."> 
+    </AREA> 
+    <AREA href="d329db654b1c0b82.htm" shape="rect" coords="1188, 841, 1263, 856"   target="_self"  title="It contains all of the data that is sent from the Financial Clearinghouse."> 
+    </AREA> 
+    <AREA href="cf6df64d4b180c92.htm" shape="rect" coords="1086, 641, 1268, 656"   target="_self"  title="It contains acknowledgements of alarms that have been reported to the Emergency Services."> 
+    </AREA> 
+    <AREA href="d8caf0744b1709bb.htm" shape="rect" coords="625, 295, 749, 309"   target="_self"  title="It contains inputs of alarm indications for processing by the Provide Safety and Emergenc Facilities functionality."> 
+    </AREA> 
+    <AREA href="d8cae5fb4b17073e.htm" shape="rect" coords="1194, 823, 1266, 839"   target="_self"  title="It contains all of the inputs fromt he PT Passenger for use in the Manage Public Transport Functional Area."> 
+    </AREA> 
+    <AREA href="d8cade914b17048f.htm" shape="rect" coords="1181, 805, 1266, 822"   target="_self"  title="It contains all the location data used by the functionality within the Monitor PT Fleet high-level Function."> 
+    </AREA> 
+    <AREA href="8bbfa5414b1708bf.htm" shape="rect" coords="1294, 154, 1376, 168"   target="_self"  title="It contains all of the outputs to the Traveller from the functionality in the Manage Traffic Functional Area."> 
+    </AREA> 
+    <AREA href="8bbfa36b4b17086b.htm" shape="rect" coords="1294, 136, 1378, 150"   target="_self"  title="It contains all of the outputs to the Driver from the functionality in the Manage Traffic Functional Area."> 
+    </AREA> 
+    <AREA href="e7f2f7704b140a2e.htm" shape="rect" coords="230, 115, 340, 129"   target="_self"  title="It contains all data and information sent from the Manage Traffic Functional Area to the Manage Public Transport Operations Functional Area."> 
+    </AREA> 
+    <AREA href="e7f2f2914b140846.htm" shape="rect" coords="1166, 1010, 1239, 1024"   target="_self"  title="It contains inputs from the Vehicle that are used in the detection of violators."> 
+    </AREA> 
+    <AREA href="ff3a1ba24b0315f8.htm" shape="rect" coords="703, 953, 800, 968"   target="_self"  title="It contains requests to the Financial Clearinghouse for actions that are related to payment for services provided by ITS."> 
+    </AREA> 
+    <AREA href="ff3a1a1b4b0315a7.htm" shape="rect" coords="1294, 105, 1382, 120"   target="_self"  title="It contains requests for payment to enable Drivers and other Travellers to use services provided by the Manage Traffic Functional Area."> 
+    </AREA> 
+    <AREA href="ff3a17cb4b0313e1.htm" shape="rect" coords="1098, 71, 1171, 85"   target="_self"  title="It contains responses to previous requests for payment to enable Drivers and other Travellers to use services provided by the Manage Traffic Functional Area."> 
+    </AREA> 
+    <AREA href="02db267d419a3600.htm" shape="rect" coords="643, 445, 723, 487"   target="_self"  title="It contains data about speeds and traffic regulations that are being sent to the vehicle.&nbsp;&nbsp;The data will be used to provide warnings and advice to the driver and for Intelligent Speed Adaptation."> 
+    </AREA> 
+    <AREA href="08ce2074417d0188.htm" shape="rect" coords="486, 637, 586, 651"   target="_self"  title="The External Service Provider may be one of the types defined in the terminator description.&nbsp;&nbsp;These types will be identified by the names of the individual data flows to each Area.&nbsp;&nbsp;It contains information about services that are not provided by functionality within the System.&nbsp;&nbsp;The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="40d6485e416a0559.htm" shape="rect" coords="230, 0, 324, 16"   target="_self"  title="It contains information (or requests for information) that is going to the External Service Provider from the Provide Traveller Journey Assistance Functional Area (6)."> 
+    </AREA> 
+    <AREA href="40d647c1416a047d.htm" shape="rect" coords="29, 50, 111, 67"   target="_self"  title="It contains information that coming from the External Service Provider to the Provide Traveller Journey Assistance Functional Area (6)."> 
+    </AREA> 
+    <AREA href="aebcb0033c0702c9.htm" shape="rect" coords="509, 849, 597, 863"   target="_self"  title="It contains information concerning financial transactions that is being provided by the Financial Clearinghouse.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="aebcb0033c0702c9.htm" shape="rect" coords="502, 944, 597, 959"   target="_self"  title="It contains information concerning financial transactions that is being provided by the Financial Clearinghouse.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211a39826eae.htm" shape="rect" coords="1097, 86, 1171, 100"   target="_self"  title="  In this case the Driver may be from any of the actors that make up this terminator.  The data flow consists of the following data items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f8971ea4398266f7.htm" shape="rect" coords="452, 1023, 615, 1042"   target="_self"  title="  It contains information about services that can be provided to travellers for which a charge will be made.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="42255a1d3a25048d.htm" shape="rect" coords="96, 599, 183, 642"   target="_self"  title="-"> 
+    </AREA> 
+    <AREA href="f8971ea2398264f3.htm" shape="rect" coords="1347, 922, 1472, 936"   target="_self"  title="It contains any violations that have been detected in both the inter-urban and urban areas (including car parks in the urban area), plus the guidelines for the detection of violations in both of those areas and has several components."> 
+    </AREA> 
+    <AREA href="46de4b2639bf0239.htm" shape="rect" coords="306, 757, 446, 772"   target="_self"  title="It contains all vehicle information that can be useful for FFM on-board use."> 
+    </AREA> 
+    <AREA href="f8971ea339826655.htm" shape="rect" coords="285, 626, 417, 671"   target="_self"  title="It provides data containing an acknowledgement of the incident notification and provides post-incident instructions."> 
+    </AREA> 
+    <AREA href="f8971ea139826355.htm" shape="rect" coords="34, 239, 121, 285"   target="_self"  title="  It includes all the information needed to help with making a trip by a freight vehicle.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211c39827022.htm" shape="rect" coords="1294, 167, 1396, 184"   target="_self"  title="  The Multi-Modal System will be one of the types defined in the terminator description.  It contains requests information for services that cannot provided by functionality within the System.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211b39826f14.htm" shape="rect" coords="1075, 161, 1171, 177"   target="_self"  title="  The Mullet-Modal System may be one of the types defined in the terminator description.  These types will be identified by the names of the individual data flows to each Area.  It contains information that cannot provided by functionality within the System.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f8972278398275de.htm" shape="rect" coords="388, 247, 517, 262"   target="_self"  title="  It contains location information for emergency vehicle"> 
+    </AREA> 
+    <AREA href="f897211b39826fb6.htm" shape="rect" coords="505, 895, 597, 911"   target="_self"  title="  The Vehicle will be any of the vehicle types defined in the terminator description.  It contains data from the vehicle that provides information about its characteristics.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211c39826ff2.htm" shape="rect" coords="1294, 119, 1390, 135"   target="_self"  title="  The External Service Provider will be one of the types defined in the terminator description.  These types will be identified by the names of the individual data flows from the Area.  It contains requests for information about services that are not provided by functionality within the System.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211b39826ed8.htm" shape="rect" coords="1086, 115, 1171, 131"   target="_self"  title="  The External Service Provider may be one of the types defined in the terminator description.  These types will be identified by the names of the individual data flows to each Area.  It contains information about services that are not provided by functionality within the System.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="5eae6df339840d8d.htm" shape="rect" coords="695, 671, 806, 685"   target="_self"  title="It contains information that is being sent to the same Area of another System by this System.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211c3982702e.htm" shape="rect" coords="1294, 215, 1390, 232"   target="_self"  title="  It contains information about repairs, or an indication that a previously reported fault has been cleared.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211b39826f20.htm" shape="rect" coords="1086, 190, 1170, 207"   target="_self"  title="  It contains information about road repairs, or an indication that a previously reported fault has been cleared. The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211b39826f26.htm" shape="rect" coords="489, 624, 586, 639"   target="_self"  title="  It contains information about road repairs, or an indication that a previously reported fault has been cleared.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211b39826f5c.htm" shape="rect" coords="485, 580, 587, 594"   target="_self"  title="  It contains analogue data about the condition of, or on, the pavement.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211b39826fce.htm" shape="rect" coords="695, 688, 798, 704"   target="_self"  title="  The Driver will be any of the types defined in the terminator description.  It contains instructions for the Driver to take actions or responses to inputs from the Driver.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211b39826eb4.htm" shape="rect" coords="498, 667, 586, 681"   target="_self"  title="  The Driver will be that for all the types of vehicle as defined in the terminator description.  The data flow consists of data that has been provided by the Driver, either in response to requests or as unsolicited input.  The data flow consists of the following data items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211c3982707c.htm" shape="rect" coords="626, 143, 718, 157"   target="_self"  title="  The Traveller may be one of the types defined in the terminator description.  It contains output to the Traveller that may include instructions to take actions, or responses to previous inputs from the Traveller.  This output may be provided through an audio device, a visual device, a mechanical device, or any combination of these.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211b39826f86.htm" shape="rect" coords="430, 180, 515, 196"   target="_self"  title="  The Traveller will be any of the Dynamic Traveller types as defined in the terminator description.  It contains input from the Traveller requesting access to the services provided by the System.  This input may be provided through a computer based device, an electro-mechanical device, or audio converter.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211c3982703a.htm" shape="rect" coords="1382, 793, 1471, 811"   target="_self"  title="  The Operator will be of the Public Transport type as defined in the terminator description.  It contains data that is being output to an Operator.  This output may be provided through an audio device, a visual device, a mechanical device, or any combination of these.  The data flow comprises the following items, each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211c39827040.htm" shape="rect" coords="1294, 200, 1382, 215"   target="_self"  title="  The Operator will be of the Road Network Operator type as defined in the terminator description.  It contains data that is being output to an Operator.  This output may be provided through an audio device, a visual device, a mechanical device, or any combination of these.  The data flow comprises the following items, each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211c3982704c.htm" shape="rect" coords="626, 201, 723, 216"   target="_self"  title="  The Operator will be of the Emergency Operator type as defined in the terminator description.  It contains data that is being output to an Operator.  This output may be provided through an audio device, a visual device, a mechanical device, or any combination of these.  The data flow comprises the following items, each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211c39827046.htm" shape="rect" coords="703, 886, 793, 900"   target="_self"  title="  The Operator will be of the Toll Operator type as defined in the terminator description.  It contains data that is being output to an Operator.  This output may be provided through an audio device, a visual device, a mechanical device, or any combination of these.  The data flow comprises the following items, each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211c39827052.htm" shape="rect" coords="230, 33, 313, 47"   target="_self"  title="  The Operator will be of the Travel Information Operator type as defined in the terminator description.  It contains the evaluation report following the completion of a trip by a Traveller, or management reports about the data in either the GTP or Trip File Data Stores.  This output may be provided through an audio device, a visual device, or any combination of these.  The data flow comprises the following items, each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211b39826f4a.htm" shape="rect" coords="35, 3, 111, 17"   target="_self"  title="  The Operator will be of the Travel Information Operator type as defined in the terminator description.  It contains the requests for management reports about the contents of either the GTP or Trip File Data Stores.  This input may be provided through a keyboard, some form of &quot;point and click&quot; based data collection, an electro-mechanical device, or audio converter.  The data flow comprises the following items, each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211b39826f44.htm" shape="rect" coords="430, 263, 515, 277"   target="_self"  title="  The Operator will be of the Emergency Operator type as defined in the terminator description.  It contains data that has been input by an Operator.  This input may be provided through a keyboard, some form of &quot;point and click&quot; based data collection, an electro-mechanical device, or audio converter.  The data flow comprises the following items, each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211b39826f38.htm" shape="rect" coords="1097, 146, 1172, 164"   target="_self"  title="  The Operator will be of the Road Network Operator type as defined in the terminator description.  It contains data that has been input by an Operator.  This input may be provided through a keyboard, some form of &quot;point and click&quot; based data collection, an electro-mechanical device, or audio converter.  The data flow comprises the following items, each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211b39826f32.htm" shape="rect" coords="1187, 768, 1265, 783"   target="_self"  title="  The Operator will be of the Public Transport Operator type as defined in the terminator description.  It contains data that has been input by an Operator.  This input may be provided through a keyboard, some form of &quot;point and click&quot; based data collection, an electro-mechanical device, or audio converter.  The data flow comprises the following items, each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211b39826f3e.htm" shape="rect" coords="505, 928, 597, 942"   target="_self"  title="  The Operator will be of the Toll Operator type as defined in the terminator description.  It contains data that has been input by an Operator.  This input may be provided through a keyboard, some form of &quot;point and click&quot; based data collection, an electro-mechanical device, or audio converter.  The data flow comprises the following items, each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f8971ea2398264bd.htm" shape="rect" coords="703, 820, 871, 834"   target="_self"  title="  It consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f8971ea2398264e1.htm" shape="rect" coords="623, 279, 768, 293"   target="_self"  title="  It contains information about an incident collected by facilities within the Manage Traffic Area and is being made available for processing within the Provide Safety and Emergency Facilities Area."> 
+    </AREA> 
+    <AREA href="f8971ea139826391.htm" shape="rect" coords="1257, 419, 1362, 461"   target="_self"  title="  It contains information about Public Transport services and requests for vehicle priority.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f8971ea2398263fd.htm" shape="rect" coords="1332, 515, 1426, 557"   target="_self"  title="  It contains information about incidents and requests for changes to Public Transport services.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f8971ea43982669d.htm" shape="rect" coords="1406, 980, 1505, 997"   target="_self"  title="It contains the identity of the driver that has just violated the traffic rules in either the inter-urban or urban road networks.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f8971ea339826625.htm" shape="rect" coords="704, 836, 894, 853"   target="_self"  title="  It consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f8971ea339826661.htm" shape="rect" coords="994, 263, 1171, 280"   target="_self"  title="  It consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="dbf5110f417503b7.htm" shape="rect" coords="696, 739, 860, 756"   target="_self"  title="It is used to ask for the identification of the vehicle without driver&#39;s involvement."> 
+    </AREA> 
+    <AREA href="f8971ea339826649.htm" shape="rect" coords="1076, 954, 1239, 974"   target="_self"  title="  It is used to send details of a fraud to functionality in the Law Enforcement Area where is can be processed before being sent to the Law Enforcement Agency terminator."> 
+    </AREA> 
+    <AREA href="f8971ea33982668b.htm" shape="rect" coords="319, 996, 470, 1012"   target="_self"  title="It contains the following information about a violation that is being returned to the Manage Freight and Fleet Operations functionality:"> 
+    </AREA> 
+    <AREA href="f8971ea33982661f.htm" shape="rect" coords="309, 819, 479, 837"   target="_self"  title="It contains the payment receipts provided that are being returned to the Manage Freight and Fleet Operations Area by the electronic payment system upon reception of the payment of the transaction. It is composed of several data flows: amount of the transaction, date / time, location, mode of payment, other parameters necessary to define precisely the service provider, service ID and user ID."> 
+    </AREA> 
+    <AREA href="f8971ea139826337.htm" shape="rect" coords="363, 292, 513, 311"   target="_self"  title="  It carries information that enables Freight and Fleet Management to inform the Emergency Services about an incident together with its location as well as the type of vehicle and cargo concerned."> 
+    </AREA> 
+    <AREA href="f8971ea2398263eb.htm" shape="rect" coords="230, 99, 382, 114"   target="_self"  title="  It contains information about Public Transport services that can be of use in trip planning or as part of information that is provided to travellers.  This data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f8971ea33982664f.htm" shape="rect" coords="23, 103, 112, 131"   target="_self"  title="It is used to provide the tariff associated with a service. The data flow includes the following elements:"> 
+    </AREA> 
+    <AREA href="f897211c39827016.htm" shape="rect" coords="311, 946, 418, 960"   target="_self"  title="The Multi-Modal System will be one of the types defined in the terminator description.  It contains requests for information about services that cannot provided by functionality within the System.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211c3982701c.htm" shape="rect" coords="1381, 771, 1481, 789"   target="_self"  title="  The Multi-Modal System will be one of the types defined in the terminator description.  It contains requests information for services that cannot provided by functionality within the System.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211b39826f0e.htm" shape="rect" coords="1175, 788, 1265, 803"   target="_self"  title="  The Mullet-Modal System may be one of the types defined in the terminator description.  These types will be identified by the names of the individual data flows to each Area.  It contains information that cannot provided by functionality within the System.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211b39826f08.htm" shape="rect" coords="98, 965, 186, 979"   target="_self"  title="  The Mullet-Modal System may be one of the types defined in the terminator description.  These types will be identified by the names of the individual data flows to each Area.  It contains information that cannot provided by functionality within the System.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211b39826ef6.htm" shape="rect" coords="487, 564, 587, 581"   target="_self"  title="  It contains analogue or digital data that will be used by functionality within the Area to calculate the location of vehicles.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211b39826ef0.htm" shape="rect" coords="102, 889, 186, 904"   target="_self"  title="  It contains analogue or digital data that will be used by functionality within the Area to calculate the location of vehicles or freight.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211c39827010.htm" shape="rect" coords="1347, 1019, 1444, 1033"   target="_self"  title="  It contains the data or information about fraud that has been detected by functionality within the System.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211c3982700a.htm" shape="rect" coords="312, 859, 409, 873"   target="_self"  title="  It contains the data or information about fraud that has been detected by functionality within the System.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211b39826f02.htm" shape="rect" coords="1144, 1040, 1238, 1054"   target="_self"  title="  It contains the response to data or information that has been sent to the terminator.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211b39826efc.htm" shape="rect" coords="98, 848, 186, 863"   target="_self"  title="  It contains the response to data or information that has been sent to the terminator.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211c39827094.htm" shape="rect" coords="695, 654, 798, 670"   target="_self"  title="  The Vehicle will be any of the types defined in the terminator description.  It contains data that is for use by occupants of the vehicle, or that in some way affects vehicle operation.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211c3982708e.htm" shape="rect" coords="1381, 728, 1466, 747"   target="_self"  title="  The Vehicle will be a Public Transport vehicle of the type defined in the terminator description.  It contains data that is for use by occupants of the vehicle, or that in some way affects vehicle operation.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211c39827088.htm" shape="rect" coords="311, 913, 402, 928"   target="_self"  title="  The Vehicle will be a freight vehicle of the type defined in the terminator description.  It contains data that is for use by occupants of the vehicle, or that in some way affects vehicle operation.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211b39826fb0.htm" shape="rect" coords="498, 652, 586, 667"   target="_self"  title="  The Vehicle will be any of the vehicle types defined in the terminator description.  It contains data from the vehicle that provides identification or an indication of its presence at a particular point in the road network.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211b39826faa.htm" shape="rect" coords="1102, 218, 1171, 233"   target="_self"  title="  The Vehicle will be any of the vehicle types defined in the terminator description.  It contains data from the vehicle that provides identification or an indication of its presence at a particular point in the road network.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211b39826fa4.htm" shape="rect" coords="1189, 750, 1266, 764"   target="_self"  title="  The Vehicle will be of the Public Transport Vehicle type defined in the terminator description.  It contains data from the vehicle that provides identification or an indication of its presence at a particular point in the road network.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211b39826f9e.htm" shape="rect" coords="112, 927, 186, 941"   target="_self"  title="  The Vehicle will be of the Freight Vehicle type defined in the terminator description.  It contains data from the vehicle that provides identification or an indication of its presence at a particular point in the road network.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="5eae6ded39840d87.htm" shape="rect" coords="626, 181, 734, 195"   target="_self"  title="The External Service Provider will be one of the types defined in the terminator description.  These types will be identified by the names of the individual data flows from the Area.  It contains requests for information about services that are not provided by functionality within the System.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="5eae6de739840d81.htm" shape="rect" coords="703, 937, 804, 951"   target="_self"  title="The External Service Provider will be one of the types defined in the terminator description.  These types will be identified by the names of the individual data flows from the Area.  It contains requests for information about services that are not provided by functionality within the System.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211c39826fec.htm" shape="rect" coords="311, 877, 412, 891"   target="_self"  title="  The External Service Provider will be one of the types defined in the terminator description.  These types will be identified by the names of the individual data flows from the Area.  It contains requests for information about services that are not provided by functionality within the System.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211b39826eea.htm" shape="rect" coords="430, 214, 515, 229"   target="_self"  title="  The External Service Provider may be one of the types defined in the terminator description.  These types will be identified by the names of the individual data flows to each Area.  It contains information about services that are not provided by functionality within the System.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211b39826ee4.htm" shape="rect" coords="505, 911, 597, 928"   target="_self"  title="  The External Service Provider may be one of the types defined in the terminator description.  These types will be identified by the names of the individual data flows to each Area.  It contains information about services that are not provided by functionality within the System.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211b39826ed2.htm" shape="rect" coords="1181, 677, 1266, 693"   target="_self"  title="  The External Service Provider may be one of the types defined in the terminator description.  These types will be identified by the names of the individual data flows to each Area.  It contains information about services that are not provided by functionality within the System.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211b39826ecc.htm" shape="rect" coords="99, 869, 186, 884"   target="_self"  title="  The External Service Provider may be one of the types defined in the terminator description.  These types will be identified by the names of the individual data flows to each Area.  It contains information about services that are not provided by functionality within the System.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="5eae6dfd39840d93.htm" shape="rect" coords="626, 240, 734, 255"   target="_self"  title="It contains data that is being sent to the same Area of another System by this System.  The data flow consists of the following items each of which has its own data flow definition."> 
+    </AREA> 
+    <AREA href="f897211c39827064.htm" shape="rect" coords="1294, 184, 1390, 199"   target="_self"  title="  It contains information that is being sent from a similar Area in another System to this System.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211c3982705e.htm" shape="rect" coords="1382, 707, 1477, 725"   target="_self"  title="  It contains information that is being sent from a similar Area in another System to this System.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="5eae6db639840d75.htm" shape="rect" coords="430, 197, 515, 211"   target="_self"  title="It contains data that has been sent from the same Area of another System to this System.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211b39826f62.htm" shape="rect" coords="1181, 715, 1266, 729"   target="_self"  title="  It contains information that has been sent from the same Area of another System to this System.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211b39826f68.htm" shape="rect" coords="1086, 176, 1170, 192"   target="_self"  title="  It contains information that has been sent from the same Area of another System to this System.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211c39827028.htm" shape="rect" coords="1381, 665, 1473, 684"   target="_self"  title="  It contains information about repairs, or an indication that a previously reported fault has been cleared.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211b39826f1a.htm" shape="rect" coords="1181, 660, 1266, 674"   target="_self"  title="  It contains information about vehicle repairs, or an indication that a previously reported fault has been cleared. The data flow consists of the following items each of which has its own data flow definition:-"> 
+    </AREA> 
+    <AREA href="f897211b39826f56.htm" shape="rect" coords="1094, 132, 1170, 148"   target="_self"  title="  It contains analogue data about the condition of, or conditions on, the road pavement.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211b39826fe6.htm" shape="rect" coords="230, 49, 313, 64"   target="_self"  title="  The Driver will be any of the types defined in the terminator description.  It contains instructions for the Driver to take actions or responses to inputs from the Driver.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211b39826fe0.htm" shape="rect" coords="1347, 1002, 1437, 1016"   target="_self"  title="  The Driver will be any of the types defined in the terminator description.  It contains instructions for the Driver to take actions or responses to inputs from the Driver.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211b39826fda.htm" shape="rect" coords="627, 162, 722, 176"   target="_self"  title="  The Driver will be any of the types defined in the terminator description.  It contains instructions for the Driver to take actions or responses to inputs from the Driver.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211b39826fd4.htm" shape="rect" coords="703, 920, 794, 934"   target="_self"  title="  The Driver will be any of the types defined in the terminator description.  It contains instructions for the Driver to take actions or responses to inputs from the Driver.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211b39826fc2.htm" shape="rect" coords="1381, 750, 1466, 769"   target="_self"  title="  The Driver will be of the Public Transport type as defined in the terminator description.  It contains instructions for the Driver to take actions or responses to inputs from the Driver.  These inputs will be requests for information, or actions for the Driver to take that will help to manage Public Transport Operations in an efficient manner.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211b39826fbc.htm" shape="rect" coords="311, 842, 402, 856"   target="_self"  title="  The Driver will be the Freight or Fleet type as defined in the terminator description.  It contains instructions for the Driver to take actions or responses to inputs from the Driver.  These inputs will be requests for information, or actions for the Driver to take that will help to manage Freight and Fleet Operations in an efficient manner.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211b39826ec6.htm" shape="rect" coords="1160, 1026, 1239, 1040"   target="_self"  title="  The Driver will be that for all the types of vehicle as defined in the terminator description.  The data flow consists of data that has been provided by the Driver, either in response to requests or as unsolicited input.  The data flow consists of the following data items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211b39826ec0.htm" shape="rect" coords="430, 231, 515, 245"   target="_self"  title="  The Driver will be that for all the types of vehicle as defined in the terminator description.  The data flow consists of data that has been provided by the Driver, either in response to requests or as unsolicited input.  The data flow consists of the following data items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211b39826eba.htm" shape="rect" coords="509, 865, 597, 879"   target="_self"  title="  The Driver will be that for all the types of vehicle as defined in the terminator description.  The data flow consists of data that has been provided by the Driver, either in response to requests or as unsolicited input.  The data flow consists of the following data items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211a39826ea8.htm" shape="rect" coords="1187, 697, 1265, 712"   target="_self"  title="  The Driver will be that for a Public Transport vehicle as defined in the terminator description.  The data flow consists of data that has been provided by the Driver, either in response to requests or as unsolicited input.  The data flow consists of the following data items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211a39826ea2.htm" shape="rect" coords="108, 945, 186, 959"   target="_self"  title="  The Driver will be that for a freight vehicle as defined in the terminator description.  The data flow consists of data that has been provided by the Driver, either in response to requests or as unsolicited input.  The data flow consists of the following data items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211c39827082.htm" shape="rect" coords="230, 18, 310, 32"   target="_self"  title="  The Traveller may be one of the types defined in the terminator description.  It contains output to the Traveller that may include instructions to take actions, or responses to previous inputs from the Traveller.  This output may be provided through an audio device, a visual device, a mechanical device, or any combination of these.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211c39827076.htm" shape="rect" coords="703, 903, 790, 917"   target="_self"  title="It contains outputs to the Traveller that are responses to previous inputs from the Traveller.  The Traveller may be one of the types defined in the terminator description.  This output may be provided through an audio device, a visual device, a mechanical device, or any combination of these.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211c3982706a.htm" shape="rect" coords="1381, 686, 1466, 704"   target="_self"  title="  The Traveller may be one of the types defined in the terminator description.  It contains output to the Traveller that may include instructions to take actions, or responses to previous inputs from the Traveller.  This output may be provided through an audio device, a visual device, a mechanical device, or any combination of these.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211b39826f8c.htm" shape="rect" coords="35, 18, 111, 32"   target="_self"  title="  The Traveller will be any of the Static or Dynamic Traveller types as defined in the terminator description.  It contains input from the Traveller requesting access to the services provided by the System.  This input may be provided through a computer based device, an electro-mechanical device, or audio converter.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211b39826f80.htm" shape="rect" coords="505, 879, 597, 897"   target="_self"  title="  The Traveller will be any of the Dynamic Traveller types as defined in the terminator description.  It contains input from the Traveller requesting access to the services provided by the System.  This input may be provided through a computer based device, an electro-mechanical device, or audio converter.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211b39826f7a.htm" shape="rect" coords="1101, 99, 1171, 116"   target="_self"  title="It contains input from the Traveller requesting access to the services provided by the System.&nbsp;&nbsp;This input may be provided through a computer based device, an electro-mechanical device, or audio converter.&nbsp;&nbsp;The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211b39826f74.htm" shape="rect" coords="1189, 732, 1265, 748"   target="_self"  title="  The Traveller will be of the Public Transport Passenger type as defined in the terminator description.  It contains input from the Traveller requesting access to the services provided by the System.  This input may be provided through a computer based device, an electro-mechanical device, or audio converter.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="5eae6d7139840bc5.htm" shape="rect" coords="626, 221, 756, 236"   target="_self"  title="This data flow appears on both the Context Diagram and DFD 0.  The data flow contains instructions or requests for action to be taken by the Emergency Systems.  It consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="5eae6d7139840c2b.htm" shape="rect" coords="378, 278, 515, 292"   target="_self"  title="This data flow appears on both the Context Diagram and DFD 0.  The data flow contains data about the response of the Emergency Systems to instructions or requests that were sent previously.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211b39826f98.htm" shape="rect" coords="487, 594, 587, 608"   target="_self"  title="It contains analogue data that is produced by the presence of a Vehicle from which details about the Vehicle such as type can be determined."> 
+    </AREA> 
+    <AREA href="f897211b39826f92.htm" shape="rect" coords="1089, 204, 1171, 220"   target="_self"  title="It contains analogue data that is produced by the presence of a Vehicle from which details about the Vehicle such as type can be determined."> 
+    </AREA> 
+    <AREA href="f897211c39827034.htm" shape="rect" coords="311, 929, 402, 943"   target="_self"  title="  The Operator will be of the Freight and Fleet types defined in the terminator description.  It contains data that is being output to an Operator.  This output may be provided through an audio device, a visual device, a mechanical device, or any combination of these.  The data flow comprises the following items, each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="5eae6d7039840bb3.htm" shape="rect" coords="312, 964, 423, 979"   target="_self"  title="This data flow appears on both the Context Diagram and DFD 0.  It contains data that is being sent to a device (e.g. a container) that is being used to transport goods.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="5eae6d7139840c19.htm" shape="rect" coords="55, 823, 185, 841"   target="_self"  title="This data flow  appears on both the Context Diagram and DFD 0.  It contains data from a device (e.g. a container) that is being used to transport goods.  The data flow consists of the following items each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="f897211b39826f2c.htm" shape="rect" coords="111, 908, 186, 923"   target="_self"  title="  The Operator will be of the Fleet Operator type as defined in the terminator description.  It contains data that has been input by an Operator.  This input may be provided through a keyboard, some form of &quot;point and click&quot; based data collection, an electro-mechanical device, or audio converter.  The data flow comprises the following items, each of which has its own data flow definition:"> 
+    </AREA> 
+    <AREA href="5eae6d7139840bf5.htm" shape="rect" coords="1308, 42, 1438, 59"   target="_self"  title="This data flow appears on both the Context Diagram and DFD 0.  The data flow contains either the responses to requests for information about the operation of the road network."> 
+    </AREA> 
+    <AREA href="5eae6d7039840b9b.htm" shape="rect" coords="1305, 25, 1432, 40"   target="_self"  title="This data flow  appears on both the Context Diagram and DFD 0.  The data flow contains either requests for information about the operation of the road network, or updates to data that defines how the road network is structured."> 
+    </AREA> 
+    <AREA href="f897f8ea3981003d.htm" shape="rect" coords="210, 753, 284, 1012"   target="_self"  title="This Area shall provide functionality that enables the management of Freight and Fleet Operations.  This shall control the use of freight vehicles and their transportation of goods.  The use of other modes of freight transport shall also be supported.  An interface to the Provide Safety and Emergency Facilities Area shall also be included to enable the provision of information about hazardous goods.  Route planning for this and other types of goods shall be provided through the interface to the Provide Traveller Journey Assistance Area."> 
+    </AREA> 
+    <AREA href="f897f8e239810037.htm" shape="rect" coords="1258, 913, 1326, 1059"   target="_self"  title="This Area shall provide functionality to enable the provision of an interface to Law Enforcement agencies.  This interface shall be used to provide information about frauds and violations that have been detected by functionality within other Areas.  Examples of frauds and violations shall include but not be limited to invalid or missing payment, speeding, incorrect use of lanes in the road, incorrect observance of other commands sent to drivers.  Over-weight vehicles shall be detected by functionality within the Area itself and the details passed to the Law Enforcement Agency."> 
+    </AREA> 
+    <AREA href="f897f8dc39810031.htm" shape="rect" coords="137, 0, 206, 181"   target="_self"  title="This Functional Area shall provide functionality that enables the provision of information to all types of Travellers about traffic conditions and about other modes of transport.&nbsp;&nbsp;The functionality shall also provide pre-trip journey planning, including special routes for Emergency Vehicles and Goods Vehicles.&nbsp;&nbsp;On-trip route guidance shall also be provided, together with the ability to change a trip itinerary due to Traveller input, or the occurrence of events that affect the flow of Vehicles through the road network.&nbsp;&nbsp;As part of the trip planning process, the functionality shall provide access to other services such as accommodation and to other transport modes."> 
+    </AREA> 
+    <AREA href="f897f8d63981002b.htm" shape="rect" coords="609, 534, 673, 769"   target="_self"  title="This Area shall provide functionality that enables data to be collected from the Vehicle and inputs provided for possible use by its management functionality.&nbsp;&nbsp;Functionality shall also be included in this Area to enable the output within the Vehicle of traffic and travel information provided by the Manage Traffic Area, plus warning messages to Drivers produced from a variety of sources, the exchange of data with other nearby Vehicles and the detection of objects in the vicinity of the Vehicle.&nbsp;&nbsp;This Functional Area shall provide Drivers with functionality that shall enable trip planning to be done from within the Vehicle.&nbsp;&nbsp;Data that has been collected from the Vehicle about its operation is distributed to functionality in other Functional Areas.&nbsp;&nbsp;Interfaces shall be provided to the Provide Safety and Emergency Facilities Area to provide a speedy response to e-Calls that have been received from Vehicles.&nbsp;&nbsp;Vehicle identities shall be provided by the functionality when requested by other Areas for payment collection and the identification of fraud."> 
+    </AREA> 
+    <AREA href="f897f8cf39810025.htm" shape="rect" coords="1290, 637, 1355, 876"   target="_self"  title="This Area shall provide functionality to enable the management of Public Transport.  It shall include the scheduling of services and the generation of information that can be made available to travellers.  The Area shall have links with the Manage Traffic Area to provide priority for its vehicles, and to provide data on the use of services so that an assessment can be made of demand for different modes of transport.  The Manage Traffic Area shall also provide requests for service changes to enable a move towards a better balance in the use of transport modes.  There shall also be links to other Areas to provide information about fraud and incidents that have been detected in the Public Transport network."> 
+    </AREA> 
+    <AREA href="f897f8c73981001f.htm" shape="rect" coords="1199, 12, 1265, 365"   target="_self"  title="This Area shall provide functionality enabling the management of traffic in urban and inter-urban environments.  Functionality shall be included to detect and manage the impact of incidents, produce and implement demand management strategies, monitor car park occupancies and provide road transport planning.  Links shall be provided to the Provide Safety and Emergency Facilities and Manage Public Transport Areas so that their vehicles are given priority through the road network and to enable assistance to be provided in the implementation of incident and demand management strategies.  The External Service Provider terminator shall be sent data about traffic conditions and strategies."> 
+    </AREA> 
+    <AREA href="f897f8bd39810019.htm" shape="rect" coords="537, 139, 602, 312"   target="_self"  title="This Area shall provide functionality that enables the Emergency Services to respond to incidents.  The Functions in this Area shall have links with the Manage Traffic Area to enable the reporting and detection of incidents, the management of their impacts and the granting of priority to Emergency Vehicles.  It shall be possible for priority to be provided either locally at each controlled point on the road network, or as a &quot;route&quot; through the network.  There shall be links to the Provide Traveller Journey Assistance Area to enable priority routes for Emergency Vehicles to be produced."> 
+    </AREA> 
+    <AREA href="f897f8b339810013.htm" shape="rect" coords="618, 819, 679, 968"   target="_self"  title="This Area shall provide functionality that enables the acceptance of payment for services provided by other Functional Areas within the Architecture. It shall have an interface with the Financial Clearinghouse terminator to enable actual payment transactions to be made. If payment violations are detected, any details that are available shall be passed to functionality in the Law Enforcement Area."> 
+    </AREA> 
+  </MAP> 
+  <IMG CLASS="Content" SRC="../images/pobjh0.png" USEMAP="#170F173C39900120" BORDER=0> 
+  </IMG> </center>
+</div>       
+</div>
+ <div id="ContentTab" class="ContentTab"><center><h2>Functional Area<br>System</h2></center><br><h3>Description</H3><h5></H5><h5></H5><br><h3>Component Functions</H3><H5></H5><ul><h5></h5></ul><h3>Parent</H3><ul><h5></h5></ul><ul><h5></h5></ul><h3> Input dataflows</H3><ul><h5><li>
+  <A CLASS="Content" HREF="5eae6d7139840c0d.htm" target="_self"> From Ambient Environment </A> <li>
+  <A CLASS="Content" HREF="5eae6d7139840c13.htm" target="_self"> From Bridge/Tunnel Infrastructure </A> <li>
+  <A CLASS="Content" HREF="5eae6d7139840c1f.htm" target="_self"> From Consignor/Consignee </A> <li>
+  <A CLASS="Content" HREF="5eae6d7139840c25.htm" target="_self"> From Driver </A> <li>
+  <A CLASS="Content" HREF="5eae6d7139840c2b.htm" target="_self"> From Emergency Systems </A> <li>
+  <A CLASS="Content" HREF="5eae6d7139840c31.htm" target="_self"> From External Service Provider </A> <li>
+  <A CLASS="Content" HREF="5eae6d7139840c37.htm" target="_self"> From Financial Clearinghouse </A> <li>
+  <A CLASS="Content" HREF="5eae6d7139840c19.htm" target="_self"> From Freight Equipment </A> <li>
+  <A CLASS="Content" HREF="5eae6d7039840b6b.htm" target="_self"> From Law Enforcement Agency </A> <li>
+  <A CLASS="Content" HREF="5eae6d7039840b71.htm" target="_self"> From Location Data Source </A> <li>
+  <A CLASS="Content" HREF="5eae6d7039840b77.htm" target="_self"> From Maintenance Organisation </A> <li>
+  <A CLASS="Content" HREF="5eae6d7039840b7d.htm" target="_self"> From Multi-Modal System </A> <li>
+  <A CLASS="Content" HREF="5eae6d7039840b83.htm" target="_self"> From Operator </A> <li>
+  <A CLASS="Content" HREF="5eae6d7039840b8f.htm" target="_self"> From Other Related System </A> <li>
+  <A CLASS="Content" HREF="5eae6d7039840b89.htm" target="_self"> From Road Pavement </A> <li>
+  <A CLASS="Content" HREF="5c12607e4c0d03e3.htm" target="_self"> From Roadside Equipment </A> <li>
+  <A CLASS="Content" HREF="5eae6d7039840b95.htm" target="_self"> From Traffic </A> <li>
+  <A CLASS="Content" HREF="5eae6d7039840b9b.htm" target="_self"> From Transport Planner </A> <li>
+  <A CLASS="Content" HREF="5eae6d7039840ba1.htm" target="_self"> From Traveller </A> <li>
+  <A CLASS="Content" HREF="5eae6d7039840ba7.htm" target="_self"> From Vehicle </A> <li>
+  <A CLASS="Content" HREF="fed73f204b8d1552.htm" target="_self"> From Vehicle Environment </A> <li>
+  <A CLASS="Content" HREF="5eae6d7039840bad.htm" target="_self"> From Weather Systems </A> </h5></ul><h3> Output dataflows</H3><ul><h5><li>
+  <A CLASS="Content" HREF="44897e154c4412ca.htm" target="_self"> To Bridge/Tunnel Infrastructure </A> <li>
+  <A CLASS="Content" HREF="5eae6d7039840bb9.htm" target="_self"> To Consignor/Consignee </A> <li>
+  <A CLASS="Content" HREF="5eae6d7039840bbf.htm" target="_self"> To Driver </A> <li>
+  <A CLASS="Content" HREF="5eae6d7139840bc5.htm" target="_self"> To Emergency Systems </A> <li>
+  <A CLASS="Content" HREF="5eae6d7139840bcb.htm" target="_self"> To External Service Provider </A> <li>
+  <A CLASS="Content" HREF="5eae6d7139840bd1.htm" target="_self"> To Financial Clearinghouse </A> <li>
+  <A CLASS="Content" HREF="5eae6d7039840bb3.htm" target="_self"> To Freight Equipment </A> <li>
+  <A CLASS="Content" HREF="5eae6d7139840bd7.htm" target="_self"> To Law Enforcement Agency </A> <li>
+  <A CLASS="Content" HREF="5eae6d7139840bdd.htm" target="_self"> To Maintenance Organisation </A> <li>
+  <A CLASS="Content" HREF="5eae6d7139840be3.htm" target="_self"> To Multi-Modal System </A> <li>
+  <A CLASS="Content" HREF="5eae6d7139840be9.htm" target="_self"> To Operator </A> <li>
+  <A CLASS="Content" HREF="5eae6d7139840bef.htm" target="_self"> To Other Related System </A> <li>
+  <A CLASS="Content" HREF="5eae6d7139840bf5.htm" target="_self"> To Transport Planner </A> <li>
+  <A CLASS="Content" HREF="5eae6d7139840bfb.htm" target="_self"> To Traveller </A> <li>
+  <A CLASS="Content" HREF="5eae6d7139840c01.htm" target="_self"> To Vehicle </A> <li>
+  <A CLASS="Content" HREF="5eae6d7139840c07.htm" target="_self"> To Weather Systems </A> </h5></ul><ul><h5></h5></ul></div><script language="javascript" src="../standard/ws_tabtemplate.js"></script>
+<script language="javascript" src="../standard/ws_zoomtemplate.js"></script>
+<script language="javascript" src="../standard/ws_buttontemplate.js"></script>
+<script language="javascript" src="../standard/ws_keyshortcuttemplate.js"></script>
+            <!--<img src="../standard/busp.gif"/>-->
+
+</BODY> </HTML>

@@ -1,0 +1,466 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > Org-Unit Traveller
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <div id="ObjectTitle">
+<Table id="ObjectTitleTable" class="ObjectTitleTable" cellpadding="0" cellspacing="0"  width = "100%">
+<TR>
+<TD width="5%" height ="35" align = "left">
+<img src="../standard/orgu.gif"/>
+</TD>
+<TD width="20%" height ="35" align = "left">
+<span class="ObjectTitle_Type">
+Terminator</span>
+</TD>
+<TD width="75%" height ="35" align = "left">
+<span class="ObjectTitle_Name">Traveller</span>
+</TD>
+</TR>
+ </Table>
+</div>
+<table border="0" cellpadding="0" cellspacing="0"  class="InvisibleTable">
+<tr>
+    	 
+<td id="Tab" class="Tab">	&nbsp;Diagram&nbsp;</td>
+ <td id="Tab" class="Tab">&nbsp;Definition&nbsp;</td>
+ <td class="TabFiller" width="100%">&nbsp;</td>
+<td align="center" onclick="OnFitWidthClick();"  id="ZoomButton" class="ZoomButton" title="Fit to width">
+<img src="../standard/ws_fitwidth.gif"></img></td>
+<td align="center" onclick="OnRegularClick();" id="ZoomButton" class="ZoomButton" title="Actual size">
+<img src="../standard/ws_actual.gif"></img></td>
+<td align="center" onmousedown="OnIncrStart();" onmouseup="OnIncrStop();" id="ZoomButton" class="ZoomButton" title="Zoom in">
+<img src="../standard/ws_zoomin.gif"></img></td>
+<td align="center" onmousedown="OnDecrStart();" onmouseup="OnDecrStop();" id="ZoomButton" class="ZoomButton" title="Zoom out">
+<img src="../standard/ws_zoomout.gif"></img></td>
+<td style="display:none" id="TabMemoryName">TabMemoryProcess</td>	</tr>
+</table>
+
+<div id="ContentTab" class="ContentTab">
+	<table id="TabDiagList" class="TabDiagList" border="0" cellpadding="0" cellspacing="0" width="450">
+	          <tr>
+          <td width="16">
+                    <img src="../standard/ao_r.gif"/></td>
+<td id="TabDiag"class="TabDiag">
+Traveller</td>
+</tr>
+              </Table>
+<div id="ContentTabDiag" class="ContentTabDiag">
+      <p>
+<p class="DiagName">Traveller</p><p>
+<center>
+<h5>This is a Terminator diagram which provides a description of the Terminator breakdown structure into Actors.</h5>
+  <MAP CLASS="Content" NAME="89A98FD83BC4004B"> 
+    <AREA href="231a26bb4b2a038c.htm" shape="rect" coords="614, 175, 712, 234"   target="_self"  title="This Actor within the Traveller Terminator represents a human entity that is currently using the facilities of the system to help them complete some or their entire journey an On-Demand Service Vehicle.&nbsp;&nbsp;It is one of the &quot;states&quot; that may be taken by a Traveller as part of a trip.&nbsp;&nbsp;To be in the state represented by this actor, the Traveller is assumed to be either on an On-Demand Service Vehicle, or waiting for it to arrive.&nbsp;&nbsp;The system may be in communication with more than one human entity each of which is an On-Demand Service Passenger."> 
+    </AREA> 
+    <AREA href="d8caeaec4b170857.htm" shape="rect" coords="95, 178, 189, 208"   target="_self"  title="This Actor within the Traveller Terminator represents a human entity that is using the facilities of the system for a journey but is at this moment not moving, i.e. static.&nbsp;&nbsp;For the Traveller to be in the state assumed by this actor, they shall be stationary, either waiting for their trip to start, e.g. at a bus stop, or within a transport facility, e.g. a car park or service area.&nbsp;&nbsp;The system may be in communication with more than one human entity each of which is a Static Traveller."> 
+    </AREA> 
+    <AREA href="c4e0d52340180056.htm" shape="rect" coords="277, 178, 372, 208"   target="_self"  title="This Actor within the Traveller Terminator represents a human entity that is currently using the facilities of the system to enable him or her to drive a Vehicle through the road network as part of a trip.&nbsp;&nbsp;It is included for completeness in the roles that can be taken by a Traveller during a trip.&nbsp;&nbsp;It will therefore never actually be used as a source or destination of Data Flows.&nbsp;&nbsp;These will be sent from/to the Driver Terminator, or one of its Actors."> 
+    </AREA> 
+    <AREA href="a613d2f3398e01de.htm" shape="rect" coords="360, 103, 454, 146"   target="_self"  title="This Actor within the Traveller Terminator represents a human entity that is currently using the facilities of the system to help them complete some or their entire journey by Public Transport.&nbsp;&nbsp;It is one of the &quot;states&quot; that may be taken by a Traveller as part of a trip.&nbsp;&nbsp;To be in the state represented by this actor, the Traveller is assumed to be either on a Public Transport Vehicle, waiting at a Stop, or within a Public Transport facility, e.g. a bus station.&nbsp;&nbsp;The system may be in communication with more than one human entity each of which is a Public Transport Passenger."> 
+    </AREA> 
+    <AREA href="a613d334398e01f2.htm" shape="rect" coords="443, 174, 542, 204"   target="_self"  title="This Actor within the Traveller Terminator represents a human entity that is using the facilities of the system to plan a journey.&nbsp;&nbsp;It shall be possible for the Pre-trip Traveller to specify a journey that uses more than one mode of transport, although at least one of those modes should be road based.&nbsp;&nbsp;It shall also be possible for the Pre-trip Traveller may also make any bookings necessary to carry out the planned journey.&nbsp;&nbsp;The system may be in communication with more than one human entity each of which is a Pre-trip Traveller."> 
+    </AREA> 
+    <AREA href="a613d30f398e01e8.htm" shape="rect" coords="538, 102, 632, 132"   target="_self"  title="This Actor within the Traveller Terminator represents a human entity that is currently using the facilities of the system to enable them to cross a single element that forms part of the road network.&nbsp;&nbsp;A single element shall be a single road way that may be single or dual carriageway, with road traffic flowing in one or both directions.&nbsp;&nbsp;The system may be in communication with more than one human entity each of which is a Pedestrian."> 
+    </AREA> 
+    <AREA href="a613d284398e01ca.htm" shape="rect" coords="186, 102, 280, 132"   target="_self"  title="This Actor within the Traveller Terminator shall represent a human entity that is currently using the facilities of the system to help them travel through the road network using a bicycle.&nbsp;&nbsp;The system may be in communication with more than one human entity each of which is a Cyclist."> 
+    </AREA> 
+    <AREA href="a613d25c398e01c0.htm" shape="rect" coords="0, 102, 95, 132"   target="_self"  title="This Actor within the Traveller Terminator shall represent a human entity called a Car Pooler that uses the facilities of the system to participate in a car pooling service.&nbsp;&nbsp;The system may be in communication with more than one human entity each of which is a Car Pooler."> 
+    </AREA> 
+    <AREA href="5eae6ec039841116.htm" shape="rect" coords="277, 0, 372, 30"   target="_self"  title="This Terminator shall represent a human entity that uses (or is about to use) transportation services provided by the System.&nbsp;&nbsp;These services shall comprise but not be limited to the provision of travel information and the ability to plan a trip, either before the trip has started, or as a &quot;re-planning&quot; exercise during a previously prepared trip that is now being implemented.&nbsp;&nbsp;This Terminator shall consist of the following Actors:"> 
+    </AREA> 
+  </MAP> 
+  <IMG CLASS="Content" SRC="../images/5eae6ec039841116_i.png" USEMAP="#89A98FD83BC4004B" BORDER=0> 
+  </IMG> </center>
+</div> 
+      </div>
+
+ <div id="ContentTab" class="ContentTab">
+
+<h3>Overview</H3>
+<H5><div class="Normal" style='  text-align: justify; margin-right:1pt; margin-bottom:6pt;'>This Terminator shall represent a human entity that uses (or is about to use) transportation services provided by the System.&nbsp;&nbsp;These services shall comprise but not be limited to the provision of travel information and the ability to plan a trip, either before the trip has started, or as a &quot;re-planning&quot; exercise during a previously prepared trip that is now being implemented.&nbsp;&nbsp;This Terminator shall consist of the following Actors:</div>
+<div class="Normal" style='  text-align: justify; margin-right:1pt; margin-left:18pt; margin-bottom:6pt;'>Car-Pooler</div>
+<div class="Normal" style='  text-align: justify; margin-right:1pt; margin-left:18pt; margin-bottom:6pt;'>Cyclist</div>
+<div class="Normal" style='  text-align: justify; margin-right:1pt; margin-left:18pt; margin-bottom:6pt;'>On-Demand Service Passenger</div>
+<div class="Normal" style='  text-align: justify; margin-right:1pt; margin-left:18pt; margin-bottom:6pt;'>Pedestrian</div>
+<div class="Normal" style='  text-align: justify; margin-right:1pt; margin-left:18pt; margin-bottom:6pt;'>Pre-Trip Traveller</div>
+<div class="Normal" style='  text-align: justify; margin-right:1pt; margin-left:18pt; margin-bottom:6pt;'>Public Transport Passenger</div>
+<div class="Normal" style='  text-align: justify; margin-right:1pt; margin-left:18pt; margin-bottom:6pt;'>Static Traveller</div>
+<div class="Normal" style='  text-align: justify; margin-right:1pt; margin-left:18pt; margin-bottom:6pt;'>Vehicle Driver</div>
+<div class="Normal">It shall be possible for the services to be available to these Actors through modes such as Public Transport, private car, cycling and walking.&nbsp;&nbsp;Travellers shall also be able to use other non-road based modes of transport through the interfaces provided by other terminators.&nbsp;&nbsp;Prior to a trip, the Pre-Trip Traveller Actor is used.&nbsp;&nbsp;Once Travellers embark on a trip they may become a Cyclist, a Driver, a Passenger or a Pedestrian depending on the mode(s) used between the origin and destination of the trip.&nbsp;&nbsp;When waiting at a Public Transport Stop, the Static Traveller Actor is used.</div></H5>
+<h3>Diagrams</H3> 
+<h5>The Diagram(s) is(are) the Diagram(s) where you can find the Terminator</h5>
+<ul><h5>
+
+
+
+<li>Context Diagram</li></a>
+
+
+
+<a href="5EAE6EC039841116.HTM?DiagTab=0" Target="_self">
+<li>Traveller</li></a></ul></h5>
+
+<h3>Acronym</H3>
+
+<ul><h5><li>t</ul></h5>
+
+<ul><h5></ul></h5>
+
+<h3>Component</H3>
+
+<ul><h5><li>
+  <A CLASS="Content" HREF="a613d25c398e01c0.htm" target="Content"> Car-Pooler</A> <li>
+  <A CLASS="Content" HREF="a613d284398e01ca.htm" target="Content"> Cyclist</A> <li>
+  <A CLASS="Content" HREF="231a26bb4b2a038c.htm" target="Content"> On-Demand Service Passenger</A> <li>
+  <A CLASS="Content" HREF="a613d30f398e01e8.htm" target="Content"> Pedestrian</A> <li>
+  <A CLASS="Content" HREF="a613d334398e01f2.htm" target="Content"> Pre-Trip Traveller</A> <li>
+  <A CLASS="Content" HREF="a613d2f3398e01de.htm" target="Content"> Public Transport Passenger</A> <li>
+  <A CLASS="Content" HREF="d8caeaec4b170857.htm" target="Content"> Static Traveller</A> <li>
+  <A CLASS="Content" HREF="c4e0d52340180056.htm" target="Content"> Vehicle Driver</A> </ul></h5>
+
+<h3>Input logical dataflows</H3>
+
+<ul><h5>
+
+<li>
+  <A CLASS="Content" HREF="5eae6d7139840bfb.htm" target="Content"> To Traveller </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="8bbf9fd94b1704e9.htm" target="Content"> tt-demand_management_information </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="fd121c564b210cdd.htm" target="Content"> tt-environmental_information </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f897227d39827c62.htm" target="Content"> tt-implemented_trip_plan_changes </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="fc5607d64b190dbe.htm" target="Content"> tt-monitor_PT_fleet_outputs </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f897211c3982706a.htm" target="Content"> tt-mpto_outputs </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="8bbfa5414b1708bf.htm" target="Content"> tt-mt_outputs </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f897227d39827c6e.htm" target="Content"> tt-output_GTP_data </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f897227d39827c74.htm" target="Content"> tt-pepf_account_loading_problem </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f897227d39827c7a.htm" target="Content"> tt-pepf_account_status </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f897227d39827c80.htm" target="Content"> tt-pepf_contract </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f897227d39827c86.htm" target="Content"> tt-pepf_contract_list </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f897227d39827c8c.htm" target="Content"> tt-pepf_ID_request </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="8d20a1163c4505b3.htm" target="Content"> tt-pepf_information </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f897211c39827076.htm" target="Content"> tt-pepf_outputs </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f897227d39827c92.htm" target="Content"> tt-pepf_overdraft_notification </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f897227d39827c98.htm" target="Content"> tt-pepf_payment_acceptance </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f897227d39827c9e.htm" target="Content"> tt-pepf_payment_data </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f897227d39827ca4.htm" target="Content"> tt-pepf_payment_info_guidance </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="e7e42252399c1405.htm" target="Content"> tt-pepf_payment_output </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f897227d39827cb0.htm" target="Content"> tt-pepf_payment_request </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f897227d39827cb6.htm" target="Content"> tt-pepf_service_information </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f897227d39827cbc.htm" target="Content"> tt-pepf_transaction_history </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="fc165d004b9e2793.htm" target="Content"> tt-predicted_arrival_times_for_trip_plan </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f897211c3982707c.htm" target="Content"> tt-psef_outputs </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f897211c39827082.htm" target="Content"> tt-ptja_outputs </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="a519c1664b1f0b93.htm" target="Content"> tt-requested_travel_information </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="40d64886416a0577.htm" target="Content"> tt-route_guidance_information </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="30c73b7f4d30053c.htm" target="Content"> tt-service_access_denied </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f897211c39827070.htm" target="Content"> tt-traffic_management_outputs </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="a519c22c4b1f0bbc.htm" target="Content"> tt-travel_information </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="ce7ecfca4b1f0335.htm" target="Content"> tt-travel_information_messages </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="624c649b4b9e032f.htm" target="Content"> tt-trip_information </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f897227d39827cfe.htm" target="Content"> tt-urban_traffic_commands </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="3ecd5eaf4af10651.htm" target="Content"> tt.p-urban_traffic_management_messages </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="3ecd5dbb4af1062b.htm" target="Content"> tt.p-urban_traffic_s&amp;g_commands </A> 
+
+</ul></h5>
+
+<h3>Output logical dataflows</H3>
+
+<ul><h5>
+
+<li>
+  <A CLASS="Content" HREF="5eae6d7039840ba1.htm" target="Content"> From Traveller </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f8972279398277ca.htm" target="Content"> ft-general_trip_preferences </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="d6030f2e4ba117cf.htm" target="Content"> ft-GTP_data_updates </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f8972279398277d0.htm" target="Content"> ft-incident_notification </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f897211b39826f74.htm" target="Content"> ft-mpto_inputs </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f897211b39826f7a.htm" target="Content"> ft-mt_inputs </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f8972279398277d6.htm" target="Content"> ft-pepf_account_input </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f8972279398277dc.htm" target="Content"> ft-pepf_characteristics </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f8972279398277e2.htm" target="Content"> ft-pepf_contract_data </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f8972279398277e8.htm" target="Content"> ft-pepf_contract_selection </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="2ff436f5406c07e4.htm" target="Content"> ft-pepf_contract_selection_2 </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f897211b39826f80.htm" target="Content"> ft-pepf_inputs </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f8972279398277ee.htm" target="Content"> ft-pepf_loading_parameters </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f8972279398277f4.htm" target="Content"> ft-pepf_payment </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f8972279398277fa.htm" target="Content"> ft-pepf_payment_input </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f897227939827800.htm" target="Content"> ft-pepf_selected_service </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f897227a3982780c.htm" target="Content"> ft-pepf_transaction_info_request </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f897227a39827812.htm" target="Content"> ft-pepf_user_ID </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="2ff43744406c07f6.htm" target="Content"> ft-pepf_user_ID_2 </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f897227a3982781e.htm" target="Content"> ft-post_trip_preferences </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="d329e0b84b1c0e00.htm" target="Content"> ft-provide_PT_fare_card_inputs </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f897211b39826f86.htm" target="Content"> ft-psef_inputs </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f897211b39826f8c.htm" target="Content"> ft-ptja_inputs </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="d603e7dd4ba00ac3.htm" target="Content"> ft-requested_implementing_trip_plan_change </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="45df6bc24b7d1196.htm" target="Content"> ft-request_general_trip_preferences </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="d603e2ed4ba0086b.htm" target="Content"> ft-request_trip_plan_implementation </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="a519a9d24b1f03d0.htm" target="Content"> ft-traveller_information_request </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f8972279398277b8.htm" target="Content"> ft-trip_plan_change_approval </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="d603e49c4ba00a36.htm" target="Content"> ft-trip_plan_imlpementation_commands </A> 
+
+</ul></h5><script language="javascript" src="../standard/ws_tabtemplate.js"></script>
+<script language="javascript" src="../standard/ws_zoomtemplate.js"></script>
+<script language="javascript" src="../standard/ws_buttontemplate.js"></script>
+<script language="javascript" src="../standard/ws_keyshortcuttemplate.js"></script>
+            <!--<img src="../standard/orgu.gif"/>-->
+
+</BODY> </HTML>

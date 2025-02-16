@@ -1,0 +1,16 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > Database 3.8 Inter-urban Road Static Data
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Data Store<br>3.8 Inter-urban Road Static Data</h2></center><br><h3>Description of content</H3><H5><div class="Normal">This Data Store shall be used within the Manage Traffic Area.&nbsp;&nbsp;It shall contain the static data for the inter-urban traffic road network managed by the System.&nbsp;&nbsp;The static data shall cover the actual layout and configuration of the inter-urban road network.<br><br>The data in the Store shall be structured in the following way:<br> - road type: (numbers and characters)<br> - type of data: (numbers and characters)<br> - link:<br>&nbsp;&nbsp;&nbsp;&nbsp; - ID (number)<br>&nbsp;&nbsp;&nbsp;&nbsp; - type (characters)<br>&nbsp;&nbsp;&nbsp;&nbsp; - start location (characters and/or numbers, e.g. GPS/Galileo data),<br>&nbsp;&nbsp;&nbsp;&nbsp; - end location (characters and/or numbers, e.g. GPS/Galileo data)<br>&nbsp;&nbsp;&nbsp;&nbsp; - length: (number),<br>&nbsp;&nbsp;&nbsp;&nbsp; - number of lanes/carriageways (number),<br>&nbsp;&nbsp;&nbsp;&nbsp; - lane/carriageway width(s) (number(s)),<br>&nbsp;&nbsp;&nbsp;&nbsp; - vehicle type usage restrictions (numbers and characters),<br>&nbsp;&nbsp;&nbsp;&nbsp; - vehicle parking restrictions (numbers and characters),<br>&nbsp;&nbsp;&nbsp;&nbsp; - vehicle speed limit(s) (number(s) in kph or mph),<br>&nbsp;&nbsp;&nbsp;&nbsp; -&nbsp;&nbsp;bus lane present indicator (number or character indicating YES or NO)<br>&nbsp;&nbsp;&nbsp;&nbsp; - presence of other objects, e.g. tunnels/bridges (numbers and characters)<br>&nbsp;&nbsp;&nbsp;&nbsp; - obstructions, e.g. narrow road/lanes, bridges/tunnels giving low clearance, bridges with weight restrictions (characters)<br> - date of last update (date string).<br><br>This data shall be used by a variety of Functions to enable traffic in the inter-urban network to be managed.&nbsp;&nbsp;It shall also be provided to the Manage Public Transport Area so that its service routes and schedules can be planned.&nbsp;&nbsp;It shall be possible for some data to also be provided to Vehicles to enable driver guidance and information to be provided.</div></H5><h3>Diagrams</H3><h5>The Diagram(s) below is (are) the Diagram(s) where you can find the Datastore</h5><ul><h5><li>DFD 3.1.2 Provide Inter-urban Traffic Management</li></a></ul></h5><h3>Input dataflows</H3><ul><h5><li>
+  <A CLASS="Content" HREF="f8971c593982445b.htm" target="Content"> mt_inter-urban_static_data_update </A> </h5></ul><h3>Output dataflows</H3><ul><h5><li>
+  <A CLASS="Content" HREF="f8971c5939824455.htm" target="Content"> mt_inter-urban_static_data_read </A> </h5></ul><ul><h5></h5></ul> <ul><h5></h5></ul>
+</BODY> </HTML>

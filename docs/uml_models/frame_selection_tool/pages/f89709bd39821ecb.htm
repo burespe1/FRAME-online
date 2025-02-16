@@ -1,0 +1,31 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 1.3.3 Check User&#39;s Contract
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>1.3.3 Check User&#39;s Contract</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to read the corresponding contracts, and verify the access rights, based on the user&#39;s ID.<br>(2) If there is a &quot;free ride&quot; request, the ability to cancel the rest of the transaction.<br></div></H5><h3>Functional Requirements</H3><h5>(a) receive user ID and service request<br/>(b) extract corresponding contract from the store of &quot;contract&quot; Data<br/>(c) check the access rights by asking the &quot;Access Control&quot; Function,<br/>(d) sends the contract information back to the &quot;inform and guide user&quot; Function<br/>(e) in case of reception of a &quot;free ride request&quot;, no further checks are performed<br/></H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FEA2398103D0.HTM?DiagTab=1" Target="_self">DFD 1.3   Perform Electronic Payment Transaction</a><h5><li> <a href="F897F8B339810013.HTM?DiagTab=0" Target="_self">Functional Tree of Area 1</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897fea2398103d0.htm" target="_self"> 1.3 Perform Electronic Payment Transaction</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="8076994f3a5c0d18.htm" target="_self"> mt.pepf_inter-urban_free_ride_request </A> <li>
+  <A CLASS="Content" HREF="80769c753a5c0e22.htm" target="_self"> mt.pepf_urban_free_ride_request </A> <li>
+  <A CLASS="Content" HREF="0188316c4182ab33.htm" target="_self"> pepf_contract_CUC </A> <li>
+  <A CLASS="Content" HREF="f8971c5d39824995.htm" target="_self"> pepf_user_access_rights_CUC </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="0188318c4182ab65.htm" target="_self"> pepf_contract_DPV </A> <li>
+  <A CLASS="Content" HREF="018831734182ab3d.htm" target="_self"> pepf_contract_IGU </A> <li>
+  <A CLASS="Content" HREF="b6d1b8e44188000c.htm" target="_self"> pepf_illegal_action_notification_DAV2 </A> <li>
+  <A CLASS="Content" HREF="f8971c5d3982496b.htm" target="_self"> pepf_service_ID_DPV </A> <li>
+  <A CLASS="Content" HREF="0188458f4182c479.htm" target="_self"> pepf_user_ID_DPV </A> <li>
+  <A CLASS="Content" HREF="d4d21884406c3e71.htm" target="_self"> pepf_vehicle_data_CUC </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428b39be6655.htm" target="_self"> 4.1.0.1</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to use a variety of relevant payment methods either electronic or not, including central account and post payment, central account and prepayment, on-board account etc.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428c39be66c1.htm" target="_self"> 4.1.0.2</A> </a></center></h5></td><td width="90%"><h5>The system shall manage customer data (identification, account, rights of residents, etc.).</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428d39be67d5.htm" target="_self"> 4.1.1.1</A> </a></center></h5></td><td width="90%"><h5>The system shall have a minimum impact on the traffic flow, e.g. a short transaction duration.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428d39be681d.htm" target="_self"> 4.1.1.2</A> </a></center></h5></td><td width="90%"><h5>The system shall have a minimum impact on the driving task.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428e39be684d.htm" target="_self"> 4.1.1.3</A> </a></center></h5></td><td width="90%"><h5>The system shall not do anything to reduce the safety of either the travellers in the vehicle, or the staff close to the equipment, e.g. in toll booths.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428f39be68b9.htm" target="_self"> 4.1.2.2</A> </a></center></h5></td><td width="90%"><h5>The system shall enable a single payment to be paid for services offered by different related transport systems (e.g. metro, bus, train, road and parking).</h5></td></tr></table></div>
+</BODY> </HTML>

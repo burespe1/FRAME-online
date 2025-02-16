@@ -1,0 +1,19 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 3.1.6.1 Process Road Network Static Data
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>3.1.6.1 Process Road Network Static Data</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to receive road network static data from both urban and inter-urban functionality<br>(2) The ability to process the received data so that it can be used in the road network model by the Traffic Simulation Engine functionality.<br>(3) When the data has been processed it shall be sent to the functionality that manages the store of Traffic Simulation Data from where it can be obtained by the Traffic Simulation Engine functionality.<br></div></H5><h3>Functional Requirements</H3><h5>(a) continuously monitor for the arrival of the data flows containing static data for the inter-urban and/or urban road network<br/>(b)when either of the data flows in (a) is received, process the data into a coherent set that represents the road network managed by the system, integrating the new data with any that was received previously<br/>(c) when (b) is complete, send include the data in the network data for simulation data flow and send it to the store of Manage Traffic Simulation Data.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F8ACFB9A4B0B019A.HTM?DiagTab=1" Target="_self">DFD 3.1.6 Provide Network Modelling and Traffic Simulation</a><h5><li> <a href="F897FEA2398103F4.HTM?DiagTab=1" Target="_self">Functional tree 3.1</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f8acfb9a4b0b019a.htm" target="_self"> 3.1.6 Provide Traffic Predictions</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="46d3724b4b0e0cc0.htm" target="_self"> mt_inter-urban_road_static_data_for_prediction </A> <li>
+  <A CLASS="Content" HREF="87a689e74b0e01ba.htm" target="_self"> mt_urban_road_static_data_for_prediction </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="46d3836e4b0e1110.htm" target="_self"> mt_road_network_data_for_predictions </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428739be6271.htm" target="_self"> 2.1.2.1</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to model the road network for strategic planning calculations, e.g. to make best use of the existing road infrastructure.</h5></td></tr></table></div>
+</BODY> </HTML>

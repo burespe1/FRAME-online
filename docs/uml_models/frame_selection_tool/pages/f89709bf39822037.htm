@@ -1,0 +1,23 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 3.3.5 Provide Demand Management Operator Interface
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>3.3.5 Provide Demand Management Operator Interface</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) A HMI through which the Road Network Operator can control the management of traveller demand for transport modes.<br>(2) The HMI shall enable the Road Network Operator to develop and implement demand strategies both off-line and in real time and to be informed of the effects of their implementation.<br>(3) The HMI shall provide facilities that enable reports on the use of transport modes to be produced using stored data.<br></div></H5><h3>Functional Requirements</H3><h5>(a) when the first trigger input data flow is received, the command shall be checked for syntax and consistency<br/>(b) when (a) is complete, the request shall be sent to the Function that can complete the action using the appropriate trigger output data flow selected from the first three<br/>(c) when as a result of (b) the second or third trigger input data flows are received their contents shall be sent to the Operator using the other output data flow<br/>(d) if the second trigger output was sent in (b) then arrival of subsequent third trigger input data flow shall be awaited<br/>(e) when the data flow in (d) arrives, its contents shall be output to the Operator.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FEA23981041E.HTM?DiagTab=1" Target="_self">DFD 3.3  Manage Demand</a><h5><li> <a href="F897FEA23981041E.HTM?DiagTab=1" Target="_self">Functional tree 3.3</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897fea23981041e.htm" target="_self"> 3.3 Manage Demand</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897227939827698.htm" target="_self"> fo.rno-demand_management_inputs </A> <li>
+  <A CLASS="Content" HREF="f8971c5939824377.htm" target="_self"> mt_demand_management_operator_responses </A> <li>
+  <A CLASS="Content" HREF="f8971c5939824383.htm" target="_self"> mt_demand_management_strategy_responses </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f8971c5839824371.htm" target="_self"> mt_demand_management_operator_commands </A> <li>
+  <A CLASS="Content" HREF="f8971c593982437d.htm" target="_self"> mt_demand_management_strategy_commands </A> <li>
+  <A CLASS="Content" HREF="f8971c5939824389.htm" target="_self"> mt_demand_strategy_data_update </A> <li>
+  <A CLASS="Content" HREF="f897227c39827b66.htm" target="_self"> to.rno-demand_management_outputs </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442b139be831d.htm" target="_self"> 7.3.0.2</A> </a></center></h5></td><td width="90%"><h5>The system shall receive up-to-date information on those factors that will influence the demand management strategy, e.g. traffic levels, car park usage, other modes usage, fares, tolls, etc.</h5></td></tr></table></div>
+</BODY> </HTML>

@@ -1,0 +1,39 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 8.2.2.1.2 Determine Compliant Resources
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>8.2.2.1.2 Determine Compliant Resources</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to determine what is the most appropriate Freight Vehicle to transport a particular item of freight (i.e. the cargo) and assign tasks for the Freight Vehicle Driver.<br>(2) The ability to take into account the trip details and the type of cargo in the determination of the appropriate Freight Vehicle.<br>(3)&nbsp;&nbsp;The ability to raise an alarm if no Freight Vehicle is available.<br>(4) If no suitable Freight Vehicle is available and permission is given by the Fleet Operator, the ability to get an appropriate Freight Vehicle from the Vehicle Renting Agency Actor in the External Service Provider Terminator.<br>(5) The ability to assign the appropriate Freight Vehicle Driver to carry out the trip, taking into account Driver skills, availability plus the need to comply with European and local regulations on hours of work for Drivers.<br></div></H5><h3>Functional Requirements</H3><h5>(a) wait for a request then get transport or trip conditions<br/>(b) get existing driver schedules and workload, get existing vehicle schedule<br/>(c) compare the transport conditions to the existing fleet status and determine the most appropriate resource (could be done through the use of simulation)<br/>(d) for equipment and vehicle, if the required resource is already scheduled to be in maintenance, raise a resource conflict alarm and wait for the answer. If there is no available equipment or vehicle request and wait for a proposal from Vehicle Rental Agency (part of terminator External Service Provider)<br/>(e) store the &quot;winners&quot; under the store of Resources Data with the status provisional or definitive according to the initial request and inform fleet resource management of booking<br/>(f) acknowledge the transaction end.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FF823981051F.HTM?DiagTab=1" Target="_self">DFD 8.2.2.1 Plan &amp; Prepare Fleet Operations</a><h5><li> <a href="F897FF823981050D.HTM?DiagTab=1" Target="_self">Functional tree 8.2</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897ff823981051f.htm" target="_self"> 8.2.2.1 Plan &amp; Prepare Fleet Operations</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f8972278398275b4.htm" target="_self"> fesp.vra-additional_resource_proposal </A> <li>
+  <A CLASS="Content" HREF="2ff432a4406c00a2.htm" target="_self"> fo.flo-input_data_4 </A> <li>
+  <A CLASS="Content" HREF="5eae678c39840560.htm" target="_self"> mffo_driver_conflict_booking_solution </A> <li>
+  <A CLASS="Content" HREF="737ac3fc3f3327ea.htm" target="_self"> mffo_read_resources_details_data </A> <li>
+  <A CLASS="Content" HREF="f8971c5639824089.htm" target="_self"> mffo_request_for_fleet_resources_availability </A> <li>
+  <A CLASS="Content" HREF="f8971c56398240b3.htm" target="_self"> mffo_request_for_resource_allocation </A> <li>
+  <A CLASS="Content" HREF="f8971c57398241a3.htm" target="_self"> mffo_vehicle_equipment_conflict_solution </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f8971c5539823f21.htm" target="_self"> mffo_answer_on_fleet_ressources_availability </A> <li>
+  <A CLASS="Content" HREF="f8971c5539823f51.htm" target="_self"> mffo_driver_booking_conflict </A> <li>
+  <A CLASS="Content" HREF="f8971c5539823f5d.htm" target="_self"> mffo_driver_booking_notification </A> <li>
+  <A CLASS="Content" HREF="f8971c56398240bf.htm" target="_self"> mffo_resource_allocation_confirmation </A> <li>
+  <A CLASS="Content" HREF="5eae67663984054e.htm" target="_self"> mffo_vehicle_equipment_booking_notification </A> <li>
+  <A CLASS="Content" HREF="f8971c573982419d.htm" target="_self"> mffo_vehicle_equipment_conflict </A> <li>
+  <A CLASS="Content" HREF="f897227c39827aa0.htm" target="_self"> tesp.vra-additional_resource_request </A> <li>
+  <A CLASS="Content" HREF="d4d2294d406c4e2f.htm" target="_self"> to.flo-output_data_4 </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442c039be8ef0.htm" target="_self"> 9.5.1.7</A> </a></center></h5></td><td width="90%"><h5>The system shall enable the consignee to receive information, e.g. delivery note, invoice etc. directly from the vehicle.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442c039be8f0e.htm" target="_self"> 9.5.1.8</A> </a></center></h5></td><td width="90%"><h5>The system shall enable the shipper to receive information, e.g. destination, contractual data etc. directly from the vehicle.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="0a923a0d3c02025d.htm" target="_self"> 9.5.2.11</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to communicate with other systems, e.g. workshop, customs, road operator, police, etc.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442c139be9052.htm" target="_self"> 9.5.2.2</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to assign tasks to vehicles and drivers, e.g. pick-up and delivery instructions.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442c139be907c.htm" target="_self"> 9.5.2.3</A> </a></center></h5></td><td width="90%"><h5>The system shall be to optimise the scheduling of vehicles.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442c239be90a6.htm" target="_self"> 9.5.2.4</A> </a></center></h5></td><td width="90%"><h5>The system shall be to optimise the scheduling of drivers.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442c339be90d0.htm" target="_self"> 9.5.2.5</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to optimise the assignment of loads.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="cf07d3cb417c0024.htm" target="_self"> 9.5.3.26</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to record supplementary information about events recorded by the tachograph, e.g. reason for waiting time.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="cf07d3de417c0042.htm" target="_self"> 9.5.3.31</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to provide a list of all the servicing and repair actions that have been done, and any special accessories that have been installed, for confirmation by the driver prior to departure.</h5></td></tr></table></div>
+</BODY> </HTML>

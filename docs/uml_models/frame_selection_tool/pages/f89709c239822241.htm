@@ -1,0 +1,22 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 6.7.3 Enable Operator Access to Trip Information
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>6.7.3 Enable Operator Access to Trip Information</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) A HMI that enables the Travel Information Operator to have access to the contents of the General Trip Preferences (GTP) Data Store.<br>(2) The HMI shall enable the Travel Information Operator to output reports on the performance of planned trips.<br>(3) The reports shall be produced using data that has been received from other functionality.<br></div></H5><h3>Functional Requirements</H3><h5>(a) when GTP request data flow is received from the Travel Information Operator, check its contents<br/>(b) if the command in (a) contains a request for a report on the data that is in the store of General Trip Preferences (GTP) Data, then request the data from the store using the data flow request copy of GTP data<br/>(c) when the data flow requested copy of GTP data is received in response to (b) format the data resulting from (b) into the required report format and content<br/>(d) when (c) is complete, output the data to the Travel Information Operator using the GTP responses data flow<br/>(e) when the trip evaluation report for output data flow is received, format its contents and output them to the Travel Information Operator in the performance evaluation report data flow.<br/></H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="45DF47834B7D0329.HTM?DiagTab=1" Target="_self">DFD 6.7 Manage General Trip Preferences</a><h5><li> <a href="F897F8DC39810031.HTM?DiagTab=0" Target="_self">Functional Tree of Area 6</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="45df47834b7d0329.htm" target="_self"> 6.7 Manage General Trip Preferences</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f8972279398276c8.htm" target="_self"> fo.tio-GTP_requests </A> <li>
+  <A CLASS="Content" HREF="45df5a394b7d0c01.htm" target="_self"> ptja_requested_copy_of_GTP_data </A> <li>
+  <A CLASS="Content" HREF="45df72c24b7d1285.htm" target="_self"> ptja_trip_evaluation_report_for_output </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="45df58c44b7d0bac.htm" target="_self"> ptja_request_copy_of_GTP_data </A> <li>
+  <A CLASS="Content" HREF="f897227c39827b9c.htm" target="_self"> to.tio-GTP_responses </A> <li>
+  <A CLASS="Content" HREF="f897227c39827ba2.htm" target="_self"> to.tio-trip_performance_evaluation_report </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14429739be6ef5.htm" target="_self"> 6.1.2.9</A> </a></center></h5></td><td width="90%"><h5>The  system shall provide Information Management tools for the operator.</h5></td></tr></table></div>
+</BODY> </HTML>

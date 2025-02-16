@@ -1,0 +1,34 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 3.1.4.4 Calculate Car Park Occupancy and Status
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>3.1.4.4 Calculate Car Park Occupancy and Status</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to process the data collected from the car park entrances and exists to calculate the actual and historic car park occupancies.<br>(2) The ability to translate the actual occupancy into the car park &quot;status&quot;.<br>(3) The ability for the translation to enable the functionality that outputs information about the car park occupancy to show either spaces or &quot;state&quot; according to the type of equipment that is available and/or the requirements of the Parking Operator.<br></div></H5><h3>Functional Requirements</H3><h5>(a) every time the car park entrance and exit vehicle detection data flow or the car park space occupied data flow is received update the count of the number of vehicles in the car park, re-calculate its status and update the historic car park occupancy values<br/>(b) following the completion of (a) send updates of both the current and historic car park occupancy and status to the Manage Urban Car Park Data Store function using the carpark status data flow and also to other functionality in the Manage Traffic Functional Area and to the Provide Traveller Journey Assistance Functional Area<br/>(c) following the completion of (b) send updated car park status and occupancy data to the Operator Interface function and to the Output Car Park Messages function<br/>(d) if the override car park status message is received from the Operator Interface function send an update the status of the car park to the Manage Urban Car Park Data Store function using the carpark status data flow and also to other functionality in the Manage Traffic Functional Area and to the Provide Traveller Journey Assistance Functional Area<br/>(e) if the urban parking strategy data flow is received, follow the instructions it contains making any necessary changes to the status of the car park<br/>(f) if the request car park details data flow is received from the Manage Public Transport Operations Functional Area, put the request in the carpark status data flow and continuously monitor for receipt of the data flow containing car park static data<br/>(g) when the data flow in (f) is received send the data it contains to the Manage Public Transport Functional Area using the requested car park details data flow</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="FF3A0D484B030EE7.HTM?DiagTab=1" Target="_self">DFD 3.1.4 Provide Management of Car Parks</a><h5><li> <a href="F897FEA2398103F4.HTM?DiagTab=1" Target="_self">Functional tree 3.1</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="ff3a0d484b030ee7.htm" target="_self"> 3.1.4 Provide Management of Car Parks</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="a1faa26b4b2702fc.htm" target="_self"> mpto.mt_request_car_park_details </A> <li>
+  <A CLASS="Content" HREF="94d5b0f14b0a0758.htm" target="_self"> mt_carkpark_space_occuppied </A> <li>
+  <A CLASS="Content" HREF="94d5abb04b0a067a.htm" target="_self"> mt_carpark_entrance_exit_vehicle_detection </A> <li>
+  <A CLASS="Content" HREF="94d5b23a4b0a07a9.htm" target="_self"> mt_carpark_static_data </A> <li>
+  <A CLASS="Content" HREF="94d5b7f54b0a08cf.htm" target="_self"> mt_override_carpark_status </A> <li>
+  <A CLASS="Content" HREF="f8971c5b39824677.htm" target="_self"> mt_urban_parking_strategy </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="5bc3729a4b261017.htm" target="_self"> mt.mpto_requested_car_park_details </A> <li>
+  <A CLASS="Content" HREF="f8971ea23982652f.htm" target="_self"> mt.ptja_carpark_occupancy </A> <li>
+  <A CLASS="Content" HREF="94d5aca44b0a06a5.htm" target="_self"> mt_carpark_occupancy </A> <li>
+  <A CLASS="Content" HREF="f8971c583982431d.htm" target="_self"> mt_carpark_occupancy_data </A> <li>
+  <A CLASS="Content" HREF="f8971c5839824311.htm" target="_self"> mt_carpark_occupancy_for_demand_management </A> <li>
+  <A CLASS="Content" HREF="ff3a09594b0306ee.htm" target="_self"> mt_carpark_occupancy_for_inter-urban </A> <li>
+  <A CLASS="Content" HREF="94d5ae524b0a06da.htm" target="_self"> mt_carpark_occupancy_for_output </A> <li>
+  <A CLASS="Content" HREF="94d5b30a4b0a07d4.htm" target="_self"> mt_carpark_status </A> <li>
+  <A CLASS="Content" HREF="94d5b3c94b0a07ff.htm" target="_self"> mt_carpark_status_change </A> <li>
+  <A CLASS="Content" HREF="94d5b5584b0a0849.htm" target="_self"> mt_carpark_status_for_output </A> <li>
+  <A CLASS="Content" HREF="94d5a5314b0a05f4.htm" target="_self"> mt_carpark_status_for_store </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442a539be78fd.htm" target="_self"> 7.1.11.1</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to monitor the current usage of the parking facilities.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="610e6461485a00b6.htm" target="_self"> 7.1.11.4</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to collect and store data from all car parks to provide a historical record.</h5></td></tr></table></div>
+</BODY> </HTML>

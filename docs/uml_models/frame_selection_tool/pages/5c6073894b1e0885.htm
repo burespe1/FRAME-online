@@ -1,0 +1,21 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 3.1.1.5.12 Prevent Access to Urban Zones
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>3.1.1.5.12 Prevent Access to Urban Zones</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to provide a physical barrier to prevent Vehicles from entering a part (zone) of the urban road network, to which access is controlled.<br>(2) The receipt of data about the identity of Vehicles that do not have permission to enter the part of the urban road network (zone) to which access is controlled by the Function.<br>(3) The output of a warning message to Drivers of Vehicles that do not have permission to enter the zone that a physical barrier may prevent them driving their Vehicles into the zone.<br>(4) The provision of data to functionality in the Provide Support for Law Enforcement Functional Area about un-permitted Vehicles that have entered the zone so that if necessary prosecution can take place.<br></div></H5><h3>Functional Requirements</H3><h5>(a) continuously monitor for the arrival of the vehicle identity and urban sensitive area access refused data flows<br/>(b) when either of the data flows in (a) is received, start monitoring for the vehicle entering urban zone data flow<br/>(c) when the data flow in (b) is received, send a warning of illegal entry to the driver in the entering urban zone data flow<br/>(d) if the data flow in (b) continues to show that the vehicle is entering the zone then send the vehicle entering message to the Provide Support for Law Enforcement functionality.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FEA239810400.HTM?DiagTab=1" Target="_self">DFD 3.1.1.5 Provide Urban Traffic Management Faciliti</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897fea239810400.htm" target="_self"> 3.1.1.5 Provide Urban Traffic Management Facilities</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="5c6074344b1e08cb.htm" target="_self"> ftrfc-vehicle_entering_urban_zone </A> <li>
+  <A CLASS="Content" HREF="5c6076664b1e0982.htm" target="_self"> mt_urban_zone_vehicle_identity </A> <li>
+  <A CLASS="Content" HREF="86ebaffd4bcd09ad.htm" target="_self"> pscs.mt_urban_sensitive_area_access_refused </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="5c6075464b1e0923.htm" target="_self"> mt.psle_vehicle_entering_urban_zone </A> <li>
+  <A CLASS="Content" HREF="5c6076f84b1e09c9.htm" target="_self"> td-enterring_urban_zone </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442b139be83e3.htm" target="_self"> 7.3.1.4</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to use physical barriers to control the access of vehicles into a zone.</h5></td></tr></table></div>
+</BODY> </HTML>

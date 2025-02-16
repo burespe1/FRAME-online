@@ -1,0 +1,32 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 3.1.6.5 Provide Traffic Predictions Operator Interface
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>3.1.6.5 Provide Traffic Predictions Operator Interface</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) An HMI through which the Transport Planner can perform various tasks.<br>(2) The HMI shall enable these tasks to include the management of the operation of Traffic Simulation Engine functionality and the modification of the road network model through the functionality that manages the store of Traffic Simulation Data.<br>(3) The HMI shall enable the Transport Planner to request access to view both the simulation results and the current road network data for all or any of the models plus in the case of traffic data for varying periods of time and parts of the road network.<br></div></H5><h3>Functional Requirements</H3><h5>(a) when any of the input data flows are received from the transport planner, process them and send the relevant data flow to either the Manage Traffic Simulation Data Store function or the Provide Traffic Simulation Engine function<br/>(b) when as a result of sending one of the data flows in (a) the response is received from the appropriate destination function, output the received data to the transport planner using the appropriate output data flow.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F8ACFB9A4B0B019A.HTM?DiagTab=1" Target="_self">DFD 3.1.6 Provide Network Modelling and Traffic Simulation</a><h5><li> <a href="F897FEA2398103F4.HTM?DiagTab=1" Target="_self">Functional tree 3.1</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f8acfb9a4b0b019a.htm" target="_self"> 3.1.6 Provide Traffic Predictions</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f8ac12294b0c0794.htm" target="_self"> ftp-process_traffic_prediction_results </A> <li>
+  <A CLASS="Content" HREF="f8ac143c4b0c07d7.htm" target="_self"> ftp-request_road_network_data </A> <li>
+  <A CLASS="Content" HREF="f8ac15864b0c0810.htm" target="_self"> ftp-request_traffic_prediction_results </A> <li>
+  <A CLASS="Content" HREF="f8ac167b4b0c0849.htm" target="_self"> ftp-run_traffic_prediction_creation </A> <li>
+  <A CLASS="Content" HREF="f8ac17364b0c0880.htm" target="_self"> ftp-updates_to_road_network_data </A> <li>
+  <A CLASS="Content" HREF="46d3779c4b0e0dca.htm" target="_self"> mt_operator_traffic_prediction_responses </A> <li>
+  <A CLASS="Content" HREF="46d37eb74b0e1061.htm" target="_self"> mt_requested_road_nework_data </A> <li>
+  <A CLASS="Content" HREF="46d37f4d4b0e108f.htm" target="_self"> mt_requested_traffic_prediction_results </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="46d377164b0e0da3.htm" target="_self"> mt_operator_traffic_prediction_commands </A> <li>
+  <A CLASS="Content" HREF="46d37a404b0e0e6e.htm" target="_self"> mt_request_road_nework_data </A> <li>
+  <A CLASS="Content" HREF="46d37adc4b0e0e99.htm" target="_self"> mt_request_traffic_prediction_results </A> <li>
+  <A CLASS="Content" HREF="46d384314b0e113b.htm" target="_self"> mt_send_traffic_prediction_results_for_output </A> <li>
+  <A CLASS="Content" HREF="87a6894d4b0e0192.htm" target="_self"> mt_updated_road_nework_data </A> <li>
+  <A CLASS="Content" HREF="87a68d3a4b0e023d.htm" target="_self"> ttp-requested_road_network_data </A> <li>
+  <A CLASS="Content" HREF="87a68dee4b0e0270.htm" target="_self"> ttp-requested_traffic_prediction_results </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428739be62a1.htm" target="_self"> 2.1.2.3</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to assist in the planning of (inter-modal) routes.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14429e39be7471.htm" target="_self"> 7.1.0.1</A> </a></center></h5></td><td width="90%"><h5>The system shall support the existing and new traffic management needs of authorities by providing a flexible yet comprehensive approach to determine traffic management strategies (including bridge and tunnel control).</h5></td></tr></table></div>
+</BODY> </HTML>

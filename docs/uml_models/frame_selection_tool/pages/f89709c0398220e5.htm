@@ -1,0 +1,23 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 4.4.7 Manage use of Additional Vehicles
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>4.4.7 Manage use of Additional Vehicles</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to manage and co-ordinate the use of PT Vehicles that are not currently in use.<br>(2) The ability to use these additional PT Vehicles as substitutes for faulty vehicles, or to re-enforce those on a particular service, either due to high Passenger loadings or delays.<br></div></H5><h3>Functional Requirements</H3><h5>(a) continuously monitor for the receipt of the unused PT vehicle status and the additional PT vehicle required data flows<br/>(b) when the data flow in (a) is received check the internal data to find any PT vehicles that are available<br/>(c) when an available PT vehicle is found, send the details to the PT Driver Management function in the revised driver service instructions data flow<br/>(d) also send the PT vehicle details to the Optimise PT Fleet Control function in the additional PT vehicle available data flow.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FEA239810442.HTM?DiagTab=1" Target="_self">DFD 4.4  Control PT Fleet</a><h5><li> <a href="F897F8CF39810025.HTM?DiagTab=0" Target="_self">Functional Tree of Area 4</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897fea239810442.htm" target="_self"> 4.4 Control PT Fleet</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f8971c57398241cd.htm" target="_self"> mpto_additional_PT_vehicle_required </A> <li>
+  <A CLASS="Content" HREF="29e2343b4b22051b.htm" target="_self"> mpto_current_driver_availability </A> <li>
+  <A CLASS="Content" HREF="f8971c57398241eb.htm" target="_self"> mpto_unused_PT_vehicle_status </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f8971c57398241c7.htm" target="_self"> mpto_additional_PT_vehicle_available </A> <li>
+  <A CLASS="Content" HREF="29e23aa14b220690.htm" target="_self"> mpto_revised_driver_servce_instructions </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14427e39be5cbf.htm" target="_self"> 10.1.0.1</A> </a></center></h5></td><td width="90%"><h5>The system shall provide effective and attractive PT.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428039be5d91.htm" target="_self"> 10.1.3.1</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to identify an incident and make arrangements for the care for the passengers.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428039be5daf.htm" target="_self"> 10.1.3.2</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to schedule PT operations dynamically so that incidents or unexpected events can be handled with the minimum disruption.</h5></td></tr></table></div>
+</BODY> </HTML>

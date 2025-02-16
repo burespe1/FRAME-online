@@ -1,0 +1,21 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 3.1.2.12 Monitor Inter-urban FCD/XFCD Source Vehicles
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>3.1.2.12 Monitor Inter-urban FCD/XFCD Source Vehicles</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to check that the identity of Vehicles using the inter-urban road network being provided electronically corresponds to the identity obtained from matching the Vehicles&#39; images with their registration data.<br>(2) The ability to collect the images of the Vehicles and use them in the comparison process.<br>(3) If no correspondence is found, the ability to send all of the Vehicle information to other functionality for potential prosecution.<br>(4) If no correspondence is found, the ability to send a lack of correspondence indication to the functionality responsible for collecting FCD/XFCD data from Vehicles using the urban road network, so that the data can be marked as suspect.<br></div></H5><h3>Functional Requirements</H3><h5>(a) continuously monitor for the receipt of the input data flows<br/>(b) when the vehicle data for inter-urban fcd check data flow is received in (a), store its data locally for use in the comparison process<br/>(c) when the inter-urban fcd source vehicle image data flow is received in (a), search the stored data from (b) to find a match<br/>(d) when the inter-urban fcd vehicle identity data flow is received in (a) check that the identity corresponds with that found in (b) and (c)<br/>(e) if no match is found in (c) or (d), send the inter-urban vehicle identity error data flow to the Provide Support for Law Enforcement functionality and the inter-urban fcd error data flow to the Collect Inter-urban Floating Car Data function.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FEA239810406.HTM?DiagTab=1" Target="_self">DFD 3.1.2 Provide Inter-urban Traffic Management</a><h5><li> <a href="F897FEA2398103F4.HTM?DiagTab=1" Target="_self">Functional tree 3.1</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897fea239810406.htm" target="_self"> 3.1.2 Provide Inter-urban Traffic Management</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="413947324b9f0385.htm" target="_self"> fesp.dvip-vehicle_data_for_inter-urban_fcd_check </A> <li>
+  <A CLASS="Content" HREF="413944e44b9f0330.htm" target="_self"> ftrfc-inter-urban_fcd_source_vehicle_image </A> <li>
+  <A CLASS="Content" HREF="413958a74b9f0909.htm" target="_self"> mt_inter-urban_fcd_vehicle_identity </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="41395e334b9f098c.htm" target="_self"> mt.psle_inter-urban_vehicle_identity_error </A> <li>
+  <A CLASS="Content" HREF="41395b474b9f093f.htm" target="_self"> mt_inter-urban_fcd_error </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="76a7899d4b970325.htm" target="_self"> 7.4.1.18</A> </a></center></h5></td><td width="90%"><h5><span style='font-style: italic;'>(X)FCD</span> - The system shall be able to match a visual image of a vehicle with the (un-attributable - for privacy protection) identity of a vehicle that is providing FCD and/or XFCD.</h5></td></tr></table></div>
+</BODY> </HTML>

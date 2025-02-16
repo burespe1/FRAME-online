@@ -1,0 +1,30 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 7.1.3 Get Vehicle Information
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>7.1.3 Get Vehicle Information</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to collect or measure some information about a Vehicle to check that it is complying with the rules enacted for the System.<br>(2) The ability to process the information if it has been collected by functionality in other Functional Areas, or by actuators connected to the Function.<br>(3) The ability to process the information provided to the Function even if it has not been systematically checked.<br>(4) The ability to collect information such as &quot;weigh<span style='text-decoration: line-through;'>t</span> in motion&quot;, recording the weight per axle and total weight for Freight Vehicles, and it shall ask the Vehicle&#39;s Driver to provide records, or route, speed, etc.<br>(5) The ability to receive guidelines from functionality in the Manage Traffic Functional Area about the way that rules should be applied and compliance checked.<br></div></H5><h3>Functional Requirements</H3><h5>(a) if the second trigger input data flow is received, carry out the measure of the parameter to be checked based on its contents<br/>(b) if the third or fourth trigger input data flows are received, collect the measure from the Manage Traffic Area<br/>(c) ask the Driver for the delivery of the record to be controlled using the third trigger output data flow<br/>(d) receive the record to be controlled from the Driver using the first other input data flow<br/>(e) ask the vehicle for its identification using the first trigger output data flow and wait for a response<br/>(f) receive the identification from the vehicle, if available using the second other input data flow<br/>(g) extract the useful information from the measure so that it can be analysed<br/>(h) send the measure to the Check Compliance Function using the second trigger output data flow.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FF82398104DD.HTM?DiagTab=1" Target="_self">DFD 7.1  Detect Fraud</a><h5><li> <a href="F897F8E239810037.HTM?DiagTab=0" Target="_self">Functional Tree of Area 7</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897ff82398104dd.htm" target="_self"> 7.1 Detect Fraud or Violation</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f89722783982756c.htm" target="_self"> fd-psle_record </A> <li>
+  <A CLASS="Content" HREF="f897227b39827944.htm" target="_self"> fv-psle_characteristics </A> <li>
+  <A CLASS="Content" HREF="e7f2f1844b140814.htm" target="_self"> fv-psle_vehicle_image </A> <li>
+  <A CLASS="Content" HREF="f8971ea239826505.htm" target="_self"> mt.psle_inter-urban_enforcement_guidelines_PF </A> <li>
+  <A CLASS="Content" HREF="f8971ea239826517.htm" target="_self"> mt.psle_urban_enforcement_guidelines </A> <li>
+  <A CLASS="Content" HREF="d4d2e699406b1563.htm" target="_self"> pshvs.psle_vehicle_ID </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="dbf5110f417503b7.htm" target="_self"> psle.pshvs_vehicle_ID_request </A> <li>
+  <A CLASS="Content" HREF="f8971c5e39824a6d.htm" target="_self"> psle_measure </A> <li>
+  <A CLASS="Content" HREF="f897227b39827a3a.htm" target="_self"> td-psle_record_request </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428939be64e7.htm" target="_self"> 3.1.0.1</A> </a></center></h5></td><td width="90%"><h5>The system shall enforce the traffic laws and regulations of the region automatically (where possible).</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428a39be6523.htm" target="_self"> 3.1.0.2</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to collect the evidence of a violation of the traffic laws and regulations in a manner suitable to justify the application of a legal punishment</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428a39be6553.htm" target="_self"> 3.1.0.3</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to provide support for the enforcement of safe behaviour and vehicle priorities.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428a39be657d.htm" target="_self"> 3.1.0.4</A> </a></center></h5></td><td width="90%"><h5>The system shall not obstruct or slow down traffic in any way, except when it is part of access control.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428b39be6625.htm" target="_self"> 3.1.1.3</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to measure the characteristics, e.g. length, weight etc., of a vehicle automatically, whilst the vehicle is in motion (&quot;Weigh in Motion&quot;).</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428b39be663d.htm" target="_self"> 3.1.1.4</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to identify the cargo being carried by a heavy goods vehicle automatically.</h5></td></tr></table></div>
+</BODY> </HTML>

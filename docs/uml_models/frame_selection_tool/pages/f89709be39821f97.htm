@@ -1,0 +1,44 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 3.1.1.6 Manage Urban Static Traffic Data
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>3.1.1.6 Manage Urban Static Traffic Data</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The management of the store of Urban Road Static Data for use by the urban traffic management functionality.<br>(2) The entry into the store of new and/or updated road network static data received from the Geographic Information Provider and/or the Road Network Operator via the operator interface functionality.<br>(3) The provision from the store of current and/or updated road network static data that was provided by the Geographic Information Provider to the urban traffic management and road maintenance functionalities, plus the functionality in the Provide Support for Cooperative Systems, Manage Public Transport Operations and Provide Traveller Journey Assistance Functional Areas.<br>(4) The provision of new and/or updated road network static data provided by the Road Network Operator to the functionality that will send the data to the Geographic Information Provider so that it can be used when digital map data is provided in the future.<br>(5) The collection and loading into the store of static data about traffic regulations (i.e. speeds, access restrictions for certain Vehicle types to particular urban road segments, etc.) provided by the Road Network Operator, and its subsequent distribution to the functionality in the Provide Support for Law Enforcement, Provide Electronic Payment Facilities and Provide Support for Host Vehicle Systems Functional Areas.<br></div></H5><h3>Functional Requirements</H3><h5>(a) continuously monitor for receipt of the urban static road data from the geographic information provider<br/>(b) when the data flow in (a) is received, load the data into the store of Urban Road Static Data using the urban static data update data flow, and updating the data already in the store<br/>(c) when (b) is complete, read all of the data from the store using the urban static data read data flow and send it to the functionality in the Manage Traffic and other Functional Areas using the appropriate data flows<br/>(d) when the urban static data changes data flow is received, repeat (b) and (c) and also send the data to the Provide Updated Urban data for Digital Maps function in the data flow containing urban new static data<br/>(e) when the operator urban traffic static data request data flow is received, collect all of the data from the store of Urban Road Static Data using the urban static data update data flow, and send it to the Provide Urban Traffic Operator Interface function using the operator urban road static data response data flow.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FEA2398103FA.HTM?DiagTab=1" Target="_self">DFD 3.1.1 Provide Urban Traffic Management</a><h5><li> <a href="F897FEA2398103F4.HTM?DiagTab=1" Target="_self">Functional tree 3.1</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897fea2398103fa.htm" target="_self"> 3.1.1 Provide Urban Traffic Management</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="8e52aa054ad40d30.htm" target="_self"> fesp.g-urban_static_road_data </A> <li>
+  <A CLASS="Content" HREF="f8971c5a3982453f.htm" target="_self"> mt_operator_urban_traffic_static_data_request </A> <li>
+  <A CLASS="Content" HREF="8e52a8224ad40b58.htm" target="_self"> mt_urban_static_data_changes </A> <li>
+  <A CLASS="Content" HREF="f8971c5b3982469b.htm" target="_self"> mt_urban_static_data_read </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f8971ea239826433.htm" target="_self"> mt.mpto_urban_road_data </A> <li>
+  <A CLASS="Content" HREF="042311b74b2a0574.htm" target="_self"> mt.mpto_urban_road_data_for_demand </A> <li>
+  <A CLASS="Content" HREF="5bc3751e4b261083.htm" target="_self"> mt.mpto_urban_road_network_details </A> <li>
+  <A CLASS="Content" HREF="5eae74ae398416b3.htm" target="_self"> mt.pepf_urban_access_criteria </A> <li>
+  <A CLASS="Content" HREF="80769c753a5c0e22.htm" target="_self"> mt.pepf_urban_free_ride_request </A> <li>
+  <A CLASS="Content" HREF="4c8464334b4c08a0.htm" target="_self"> mt.pscs_urban_road_network_data </A> <li>
+  <A CLASS="Content" HREF="8914ddb741737c54.htm" target="_self"> mt.pshvs_urban_traffic_regulations </A> <li>
+  <A CLASS="Content" HREF="d4d2e0d2406b0c09.htm" target="_self"> mt.psle_urban_enforcement_compliance_guidelines </A> <li>
+  <A CLASS="Content" HREF="f8971ea239826517.htm" target="_self"> mt.psle_urban_enforcement_guidelines </A> <li>
+  <A CLASS="Content" HREF="e7f2fcd54b140c5d.htm" target="_self"> mt.ptja_urban_road_network_data </A> <li>
+  <A CLASS="Content" HREF="f8971c5a39824545.htm" target="_self"> mt_operator_urban_traffic_static_data_response </A> <li>
+  <A CLASS="Content" HREF="ae19dd4b4bb10b6f.htm" target="_self"> mt_urban_equipment_information </A> <li>
+  <A CLASS="Content" HREF="abf9c2964b7b113e.htm" target="_self"> mt_urban_new_static_data </A> <li>
+  <A CLASS="Content" HREF="7b119f534b8f1482.htm" target="_self"> mt_urban_roads_legal_speeds </A> <li>
+  <A CLASS="Content" HREF="e47eeece4c3d060b.htm" target="_self"> mt_urban_road_static_data_for_de-icing </A> <li>
+  <A CLASS="Content" HREF="380b57044b160a23.htm" target="_self"> mt_urban_road_static_data_for_long_term_work </A> <li>
+  <A CLASS="Content" HREF="87a689e74b0e01ba.htm" target="_self"> mt_urban_road_static_data_for_prediction </A> <li>
+  <A CLASS="Content" HREF="ae19c8164bb10511.htm" target="_self"> mt_urban_road_static_data_for_short_term_work </A> <li>
+  <A CLASS="Content" HREF="f8971c5b39824695.htm" target="_self"> mt_urban_static_data </A> <li>
+  <A CLASS="Content" HREF="0c5522694b430608.htm" target="_self"> mt_urban_static_data_for_traffic_conditions </A> <li>
+  <A CLASS="Content" HREF="f8971c5b398246a1.htm" target="_self"> mt_urban_static_data_update </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442ac39be7f51.htm" target="_self"> 7.1.7.4</A> </a></center></h5></td><td width="90%"><h5>The system shall transmit recommended speed limits to equipped vehicles.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442ad39be7fd5.htm" target="_self"> 7.1.8.1</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to transmit information to a vehicle to update its on-board database.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="200528d84be90440.htm" target="_self"> 7.4.1.1</A> </a></center></h5></td><td width="90%"><h5><span style='font-style: italic;'>(X)FCD - </span>The system shall be able to maintain a database of the road network.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="ca51de2c4b900eea.htm" target="_self"> 7.6.2.1</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to provide data to add to, or to replace, that used to form a digital map.</h5></td></tr></table></div>
+</BODY> </HTML>

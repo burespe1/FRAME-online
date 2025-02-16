@@ -1,0 +1,23 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 1.4.2 Credit Operator&#39;s Account
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>1.4.2 Credit Operator&#39;s Account</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to credit the accounts of the Service Operators by the amount that has already been calculated.<br>(2) The ability to receive the calculated creidt amount from the functionality that distributes fees revenue.<br></div></H5><h3>Functional Requirements</H3><h5>(a) read the different elements included in the message coming from &quot;Distribute Fee Revenues&quot;.<br/>(b) sends the credit order to the financial clearinghouse, including the fee, the originating account, and the account to be credited,<br/>(c) load the transaction into the store of &quot;transactions&quot; Data.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FEA2398103D6.HTM?DiagTab=1" Target="_self">DFD 1.4  Manage Operators&#39; Revenue</a><h5><li> <a href="F897F8B339810013.HTM?DiagTab=0" Target="_self">Functional Tree of Area 1</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897fea2398103d6.htm" target="_self"> 1.4 Manage Operators&#39; Revenue</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f8971c5d39824935.htm" target="_self"> pepf_operator_revenue </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="2ff43e67406c16bb.htm" target="_self"> pepf_credit_operator_transaction_order_L </A> <li>
+  <A CLASS="Content" HREF="f897227c39827abe.htm" target="_self"> tfc-pepf_transaction </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428e39be688f.htm" target="_self"> 4.1.2.1</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to share revenues between road network operators.<br/></h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428f39be68b9.htm" target="_self"> 4.1.2.2</A> </a></center></h5></td><td width="90%"><h5>The system shall enable a single payment to be paid for services offered by different related transport systems (e.g. metro, bus, train, road and parking).</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428f39be6973.htm" target="_self"> 4.1.3.2</A> </a></center></h5></td><td width="90%"><h5>The system shall make atomic electronic financial transactions, I.e. that are never partially complete whatever the circumstances, even in degraded system modes.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14429039be69c1.htm" target="_self"> 4.1.3.3</A> </a></center></h5></td><td width="90%"><h5>The system shall have the maximum security necessary for electronic financial transactions.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14429039be6a2d.htm" target="_self"> 4.1.3.4</A> </a></center></h5></td><td width="90%"><h5>The system shall have a low number of incorrect transactions (e.g., non-effective transactions &lt; 1 in 10E-6; erroneous transactions  &lt; 1 in 10E-8)</h5></td></tr></table></div>
+</BODY> </HTML>

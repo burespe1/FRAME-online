@@ -1,0 +1,24 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 3.4.7 Provide Environment Management Operator Interface
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>3.4.7 Provide Environment Management Operator Interface</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) A HMI through which the Road Network Operator shall be able to manage the collection of environmental data, plus its analysis and use by other functionality within the System.<br>(2) The HMI shall enable the Road Network Operator to request and be provided with output of the data currently being collected, prediction of environmental conditions and historical data.<br>(3) The HMI shall enable the Road Network Operator to request an analysis of the environmental data, receive the resulting suggested actions and confirm these actions.<br>(4) The HMI shall enable the Road Network Operator to update the static data used in the prediction of environmental conditions.<br></div></H5><h3>Functional Requirements</H3><h5>(a) when the input data flows from the operator are received, check them for validity<br/>(b) if anything is found in (a) the operator shall be prompted for corrections<br/>(c) when (b) is completed, the action required shall be determined<br/>(d) if the result of (c) is that the static data used by the prediction algorithm is to be updated, the second trigger output data flow shall be sent to the Manage Environmental Conditions Data Store function so that the data can be loaded into the store<br/>(e) if the result of (c) is that the Manage Environmental Conditions Data Store function must carry out an action, send the request in the first trigger output data flow<br/>(f) as a result of (e), the arrival of the second input trigger data flow shall be awaited<br/>(g) when the data flow in (f) arrives, the response shall be sent to the operator using the other output data flow<br/>(h) if the suggest environmental actions data flow arrives, output its contents to the operator and await the arrival of confirmation or alternative actions in one of the input data flows being monitored in (a)<br/>(i) when the operator provides a response to the data output in (h) send it in the confirm environmental actions data flow to the Determine Environmental Actions function.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FEA239810424.HTM?DiagTab=1" Target="_self">DFD 3.4  Provide Environmental Information</a><h5><li> <a href="F897FEA239810424.HTM?DiagTab=1" Target="_self">Functional tree 3.4</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897fea239810424.htm" target="_self"> 3.4 Provide Environmental Information</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="fd1202414b21021f.htm" target="_self"> fo.rno-confirm_environmental_actions </A> <li>
+  <A CLASS="Content" HREF="fd1210b84b210b1a.htm" target="_self"> fo.rno-request_environmental_data_analysis </A> <li>
+  <A CLASS="Content" HREF="f8971c59398243a7.htm" target="_self"> mt_environmental_conditions_operator_responses </A> <li>
+  <A CLASS="Content" HREF="fd1215ae4b210c69.htm" target="_self"> mt_suggest_environmental_actions </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="fd1213054b210b9e.htm" target="_self"> mt_confirm_environmental_actions </A> <li>
+  <A CLASS="Content" HREF="f8971c59398243a1.htm" target="_self"> mt_environmental_conditions_operator_requests </A> <li>
+  <A CLASS="Content" HREF="f8971c59398243b3.htm" target="_self"> mt_environmental_conditions_static_data_update </A> <li>
+  <A CLASS="Content" HREF="fd12152f4b210c42.htm" target="_self"> mt_request_environmental_data_analysis </A> <li>
+  <A CLASS="Content" HREF="fd121e0d4b210d2b.htm" target="_self"> to.rno-environmental_data_analysis_results </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr></table></div>
+</BODY> </HTML>

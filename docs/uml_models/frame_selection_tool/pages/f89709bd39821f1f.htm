@@ -1,0 +1,24 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 2.1.8 Accept eCall input from outside the Vehicle
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>2.1.8 Accept eCall input from outside the Vehicle</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) Enable a Traveller to send&nbsp;&nbsp;an &quot;eCall&quot; from a location that is outside the Vehicle.<br>(2) Provide the Traveller with the acknowledgement for the &quot;eCall&quot; sent in (1).<br>(3) Enable the Driver inside the Vehicle to be provided with a copy of the acknowledgement in (2).<br>(4) Include suitable HMI&#39;s for both the Traveller outside the Vehicle and the Driver inside the Vehicle.<br></div></H5><h3>Functional Requirements</H3><h5>(a) wait for any traveller request<br/>(b) receive eCall<br/>(c) send it for process<br/>(d) wait for acknowledgement message<br/>(e) give contained information to traveller.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FEA2398103E8.HTM?DiagTab=1" Target="_self">DFD 2.1 Manage Emergencies</a><h5><li> <a href="F897F8BD39810019.HTM?DiagTab=0" Target="_self">Functional Tree of Area 2</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897fea2398103e8.htm" target="_self"> 2.1 Manage Emergencies</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897227939827776.htm" target="_self"> ft.st-eCall_message </A> <li>
+  <A CLASS="Content" HREF="f8971c5e39824a31.htm" target="_self"> psef_roadside_eCall_first_acknowledgement </A> <li>
+  <A CLASS="Content" HREF="f8971c5e39824a37.htm" target="_self"> psef_roadside_eCall_full_acknowledgement </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f8971c5e39824a25.htm" target="_self"> psef_eCall_from_outside_vehicle </A> <li>
+  <A CLASS="Content" HREF="f897227d39827c4a.htm" target="_self"> td-eCall_acknowledgement </A> <li>
+  <A CLASS="Content" HREF="82c684f44d2501a1.htm" target="_self"> tt.st-eCall_acknowledgement </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14429139be6aed.htm" target="_self"> 5.1.0.1</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to make an &#39;eCall&#39;.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="76a782074b970285.htm" target="_self"> 7.6.1.1</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to detect that the host vehicle has been involved in an indecent/accident and to call the emergency services either automatically or on command of the driver/passenger (eCall)</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="200529124be90491.htm" target="_self"> 7.6.1.2</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to send a request for assistance (eCall) message to the emergency services from a road-side device.</h5></td></tr></table></div>
+</BODY> </HTML>

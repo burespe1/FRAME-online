@@ -1,0 +1,21 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 6.5.3.12 Provide Trip Planning Operator Interface
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>6.5.3.12 Provide Trip Planning Operator Interface</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) A HMI through which the Travel Information Operator can set up, view and modify criteria used to prepare and/or modify trip plans requested by Travellers.<br>(2) It shall be possible for these criteria to ensure that all trip plans conform to travel and traffic management policies (if any) for the road network and the appropriate use of the available transport modes.<br></div></H5><h3>Functional Requirements</H3><h5>(a) continuously monitor for receipt of the input data flows from the travel information operator<br/>(b) when the update trip planning criteria data flow is received in (a) send the data to the Plan Traveller Trip Details function using the update trip planning criteria data flow<br/>(c) if the request trip planning criteria data flow is received in (a), send it to the Plan Traveller Trip Details function in the request trip planning criteria data flow<br/>(d) as a result of (c) monitor for the receipt of the requested trip planning criteria data flow<br/>(e) when the data flow in (d) arrives, output its contents to the travel information operator in the output trip planning criteria data flow.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F89709C23982222F.HTM?DiagTab=1" Target="_self">DFD 6.5.3 Trip Planning</a><h5><li> <a href="F897F8DC39810031.HTM?DiagTab=0" Target="_self">Functional Tree of Area 6</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f89709c23982222f.htm" target="_self"> 6.5.3 Trip Planning</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="45df809a4b7d14f2.htm" target="_self"> fo.tio-request_trip_planning_criteria </A> <li>
+  <A CLASS="Content" HREF="45df80d14b7d14ff.htm" target="_self"> fo.tio-update_trip_planning_criteria </A> <li>
+  <A CLASS="Content" HREF="45df81814b7d1526.htm" target="_self"> ptja_requested_trip_planning_criteria </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="45df815d4b7d1519.htm" target="_self"> ptja_request_trip_planning_criteria </A> <li>
+  <A CLASS="Content" HREF="45df81a24b7d1533.htm" target="_self"> ptja_update_trip_planning_criteria </A> <li>
+  <A CLASS="Content" HREF="45df811d4b7d150c.htm" target="_self"> to.tio-output_trip_planning_criteria </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr></table></div>
+</BODY> </HTML>

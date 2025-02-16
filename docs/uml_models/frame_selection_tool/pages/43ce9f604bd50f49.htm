@@ -1,0 +1,16 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > Database 9.4 Loading or Unloading Zone Use Data
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Data Store<br>9.4 Loading or Unloading Zone Use Data</h2></center><br><h3>Description of content</H3><H5><div class="Normal">This Data Store shall be used within the Provide Support for Cooperative Systems Area.&nbsp;&nbsp;It shall contain data about the use and characteristics of loading and unloading zones plus holding zones that are used by Freight Vehicles to pick-up and deliver goods.&nbsp;&nbsp;The data for each zone shall be split into two parts: static data and dynamic data<br><br>The static data in the Store about each zone shall be structured in the following way:<br> - zone location (characters and/or numbers, e.g. GPS/Galileo data)<br> - zone size (number)<br> - type of goods that the zone can accommodate (characters)<br> - restrictions on use of the zone (characters)<br> - type(s) of Vehicle that the zone will accommodate (characters)<br> - number(s) of Vehicles of different types that can be accommodated (number)<br> - road network in and around zone (data for a digital roadmap using a standard format, e.g. GDF)<br> - zone entry point (characters and/or numbers, e.g. GPS/Galileo data)<br> - zone exit point characters and/or numbers, e.g. GPS/Galileo data()<br><br>This static data shall be repeated for each zone of each type.<br><br>The dynamic data in the Store about each zone shall be structured in the following way:<br> - date when zone is booked (date string)<br> - time when zone is booked (numbers defining hours, minutes and seconds)<br> - number of Vehicles that have booked a place for date/time (number)<br> - the ID of each Vehicle for each booking (number)<br> - expected duration of stay for each booked Vehicle (numbers defining hours, minutes and seconds)<br> - the ID of the Vehicle currently occupying the zone (number)<br><br>It shall be possible for the dynamic data to be repeated for each booking of each type of zone and to be updated as soon as the data changes.</div></H5><h3>Diagrams</H3><h5>The Diagram(s) below is (are) the Diagram(s) where you can find the Datastore</h5><ul><h5><li>DFD 9.5 Manage Use of Loading or Unloading Zones</li></a></ul></h5><h3>Input dataflows</H3><ul><h5><li>
+  <A CLASS="Content" HREF="43ce9f8c4bd50f56.htm" target="Content"> pscs_load_zone_use_data </A> </h5></ul><h3>Output dataflows</H3><ul><h5><li>
+  <A CLASS="Content" HREF="43cea0124bd50f69.htm" target="Content"> pscs_read_zone_use_data </A> </h5></ul><ul><h5></h5></ul> <ul><h5></h5></ul>
+</BODY> </HTML>

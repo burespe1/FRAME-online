@@ -1,0 +1,21 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 9.2.4 Provide Operator Interface for Bus Lanes
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>9.2.4 Provide Operator Interface for Bus Lanes</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) A HMI through which the Road Network Operator can define and manage the use of Bus Lanes by other (non-PT) Vehicles.<br>(2) The HMI shall enable the Operator to provide and/or amend the data about the road network and in particular the allocation of Bus Lanes, including the ability to temporarily make some Bus Lane segments unavailable for by other non-PT Vehicles.<br>(3) The HMI shall also enable the Operator to obtain statistics about the use of the Bus Lanes.<br></div></H5><h3>Functional Requirements</H3><h5>(a) whenever either of the input data flows from the Operator is received, process its contents and send it to the Manage Bus Lane Data function using the most appropriate output data flow<br/>(b) when the input data flow is received from the Manage Bus Lane function, process its contents and output it to the Operator using the appropriate output data flow.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="2ED046CF4B4B0E86.HTM?DiagTab=1" Target="_self">DFD 9.2 Provide Flexible Lane Allocation</a><h5><li> <a href="2ED039D74B4B048B.HTM?DiagTab=0" Target="_self">Functional Tree of Area 9</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="2ed046cf4b4b0e86.htm" target="_self"> 9.2 Provide Access to Bus Lanes</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="6c3c8c6f4b4c14e8.htm" target="_self"> fo.rno-request_bus_lane_use_data </A> <li>
+  <A CLASS="Content" HREF="6c3c8ba64b4c14bc.htm" target="_self"> fo.rno-update_road_network_data </A> <li>
+  <A CLASS="Content" HREF="6c3c8e6e4b4c156a.htm" target="_self"> pscs_requested_bus_lane_data </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="6c3c8ded4b4c153f.htm" target="_self"> pscs_request_bus_lane_data </A> <li>
+  <A CLASS="Content" HREF="6c3c8d3b4b4c1517.htm" target="_self"> pscs_update_road_data_for_bus_lanes </A> <li>
+  <A CLASS="Content" HREF="6c3c8ef64b4c1591.htm" target="_self"> to.rno-requested_bus_lane_data </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr></table></div>
+</BODY> </HTML>

@@ -1,0 +1,24 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 3.1.5.5 Manage Inter-Urban Service Area Data Store
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>3.1.5.5 Manage Inter-Urban Service Area Data Store</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to manage the store of Inter-urban Service Area Data.<br>(2) The ability to ensure that all data sent to the store is stored in a coherent and logical manner and shall enable data to be read from the store as and when requested.<br>(3) The ability to carry out these activities in such a way that they do not interfere with one another and that the integrity of the data being stored and read is preserved.<br></div></H5><h3>Functional Requirements</H3><h5>(a) continuously monitor for receipt of the service area occupancy and service area status data flows from the Calculate Service Area Occupancy and Status function, the load service area static data from the Provide Operator Interface to Manage Service Areas function and the request data for service area data flow from the Rest Area Booking Management function<br/>(b) when any of the first three data flows is received, any data that they contain shall be loaded into the store of Inter-urban Service Area Data using the data flow called load service area data<br/>(c) if either the first, or third data flows is found to contain a request for data, it shall be extracted from the store of Inter-urban Service Area Data using the data flow called read service area data and sent to the Calculate Service Area Occupancy and Status function and the Provide Operator Interface to Manage Service Areas function in the data flows called service area static data and read service area static data respectively<br/>(d) when the fourth data flow in (a) is received, the requested data shall be extracted from the store of Inter-urban Service Area Data using the data flow called read service area data and sent to the Service Area Rest Area Bookings function in the requested data for service area data flow.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="5C7563364B0101A5.HTM?DiagTab=1" Target="_self">DFD 3.1.5 Provide Management of Service Areas</a><h5><li> <a href="F897FEA2398103F4.HTM?DiagTab=1" Target="_self">Functional tree 3.1</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="5c7563364b0101a5.htm" target="_self"> 3.1.5 Provide Management of Service Areas</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="5c758f1b4b010e75.htm" target="_self"> mt_load_service_area_static_data </A> <li>
+  <A CLASS="Content" HREF="e11a1d214bc70698.htm" target="_self"> mt_read_service_area_data </A> <li>
+  <A CLASS="Content" HREF="e11a1ee44bc706df.htm" target="_self"> mt_request_data_for_service_area </A> <li>
+  <A CLASS="Content" HREF="5c758d124b010c74.htm" target="_self"> mt_service_area_occupancy </A> <li>
+  <A CLASS="Content" HREF="5c758c534b010c49.htm" target="_self"> mt_service_area_status </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="e11a1cea4bc70687.htm" target="_self"> mt_load_service_area_data </A> <li>
+  <A CLASS="Content" HREF="5c758e5e4b010e47.htm" target="_self"> mt_read_service_area_static_data </A> <li>
+  <A CLASS="Content" HREF="281b310c4bc706cb.htm" target="_self"> mt_requested_data_for_service_area </A> <li>
+  <A CLASS="Content" HREF="5c758bab4b010c0e.htm" target="_self"> mt_service_area_static_data </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr></table></div>
+</BODY> </HTML>

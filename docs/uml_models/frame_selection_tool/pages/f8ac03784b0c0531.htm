@@ -1,0 +1,22 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 3.1.6.2 Process Road Traffic Data
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>3.1.6.2 Process Road Traffic Data</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to receive real-time traffic data from both urban and inter-urban functionality.<br>(2) The ability to process the received data so that it can be used in the road network model by the Traffic Simulation Engine functionality.<br>(3) It shall be possible for the processing to include the generation of origin/destination data for the road network and indications of unusual changes in current traffic data based on historical data.<br>(4) When the data has been processed, the ability for the data to be sent to the functionality that manages the store of Traffic Simulation Data from where it can be obtained by the Traffic Simulation Engine functionality.<br>(5) It shall be possible for road network (model) data to be provided and for historic traffic data to be provided periodically by the functionality managing the store of Traffic Simulation Data for use in the processing of the traffic data.<br></div></H5><h3>Functional Requirements</H3><h5>(a) continuously monitor for the frequent arrival of the collected traffic data traffic predictions from the inter-urban and/or the urban road network<br/>(b) continuously monitor for the occasional arrival of the data flow containing the road network static data<br/>(c) use the data from (b) to build a model of the road network into which the data from (a) can be fused, i.e. the traffic flow data can be allocated to its correct part of the road network<br/>(d) whenever either of the data flows in (a) arrives, fuse the data that they contain into the model produced by (c) when (d) has been completed, send the collected traffic data to the Manage Traffic Simulation Data Store function in the data flow for processed road traffic data.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F8ACFB9A4B0B019A.HTM?DiagTab=1" Target="_self">DFD 3.1.6 Provide Network Modelling and Traffic Simulation</a><h5><li> <a href="F897FEA2398103F4.HTM?DiagTab=1" Target="_self">Functional tree 3.1</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f8acfb9a4b0b019a.htm" target="_self"> 3.1.6 Provide Traffic Predictions</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="a368be223a3712ae.htm" target="_self"> mt_inter-urban_data_for_traffic_predictions </A> <li>
+  <A CLASS="Content" HREF="46d382d74b0e10e9.htm" target="_self"> mt_road_network_data_for_collection </A> <li>
+  <A CLASS="Content" HREF="f8971c5b39824629.htm" target="_self"> mt_urban_data_for_traffic_predictions </A> <li>
+  <A CLASS="Content" HREF="12164db54bb31fee.htm" target="_self"> pshvs.mt_vehicle_trip_plan_o-d_data </A> <li>
+  <A CLASS="Content" HREF="12165b714bb33981.htm" target="_self"> ptja.mt_trip_plan_o-d_data </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="46d378394b0e0df5.htm" target="_self"> mt_processed_road_traffic_data </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442ab39be7e9d.htm" target="_self"> 7.1.6.1</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to provide Origin/Destination computations, and route assignment estimations, for the road network.</h5></td></tr></table></div>
+</BODY> </HTML>

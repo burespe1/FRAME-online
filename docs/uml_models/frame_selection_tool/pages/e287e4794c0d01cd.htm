@@ -1,0 +1,20 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 5.15.1.5 Detect Visibility in Host Vehicle vicinity
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>5.15.1.5 Detect Visibility in Host Vehicle vicinity</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to take responsibility for processing information from sensors that detect the level of visibility in the geographic area surrounding the Host Vehicle, i.e. the Vehicle in which it is operating. <br>(2) The ability to process the sensor data to determine the level of visibility and the reason for it, e.g. fog, darkness.<br>(3) Once processing is complete, the ability to send the data in digital form to the Determine and store local Host Vehicle Conditions Function.<br></div></H5><h3>Functional Requirements</H3><h5>(a) continuously monitor the flow of input data<br/>(b) analyse the data in (a) to determine the visibility local to the host vehicle, and if not good, determine the reason, e.g. fog, rain, darkness<br/>(c) if necessary convert the results from (b) into digital data<br/>(d) whenever the visibility changes and/or at other intervals, send the results of (c) to the Determine and store local Host Vehicle conditions function in the data flow containing local visibility data.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="B2B4D2744C2D0CA2.HTM?DiagTab=1" Target="_self">DFD 5.15.1 Provide Detection for the Vehicle Surroundings</a><h5><li> <a href="F897F8D63981002B.HTM?DiagTab=0" Target="_self">Functional Tree of Area 5</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="b2b4d2744c2d0ca2.htm" target="_self"> 5.15.1 Provide Detection for the Vehicle Surroundings</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="e287e77b4c0d040e.htm" target="_self"> fae-local_vehicle_visibility_conditions </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="e287ebcc4c0d04fe.htm" target="_self"> pshvs_local_vehicle_visibility_data </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="200524304be901b2.htm" target="_self"> 7.4.1.37</A> </a></center></h5></td><td width="90%"><h5><span style='font-style: italic;'>Hazardous Location Notification</span> - The system shall be able to warn driver, via an in-vehicle device, of adverse driving conditions ahead (e.g. slippery road, low visibility, queuing traffic) and advise on the appropriate action (e.g. speed).</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="21ea44504e140664.htm" target="_self"> 7.4.1.38</A> </a></center></h5></td><td width="90%"><h5><span style='font-style: italic;'>Hazardous Location Notification</span> - The system shall be able to warn drivers, via a road-side device, of adverse driving conditions ahead (e.g. slippery road, low visibility, queuing traffic) and advise on the appropriate action (e.g. speed).</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="200528564be90395.htm" target="_self"> 7.4.1.6</A> </a></center></h5></td><td width="90%"><h5><span style='font-style: italic;'>(X)FCD</span> - The system shall be able to determine the visibility in the vicinity of the host vehicle, and classify the cause of the reduction, e.g. fog, rain, darkness.</h5></td></tr></table></div>
+</BODY> </HTML>

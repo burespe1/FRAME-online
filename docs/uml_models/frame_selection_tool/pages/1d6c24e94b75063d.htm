@@ -1,0 +1,30 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 3.1.1.9 Output Urban Traffic Data
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>3.1.1.9 Output Urban Traffic Data</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The output of data about current traffic conditions in the urban road network received from the Urban Traffic Data Management Function and data about speed limits and lane use received from the Manage Urban Traffic Speeds and Headways and Manage Urban Road Network Lanes Functions respectively.<br>(2) Both sets of outputs shall be sent as soon as new data is received to functionality in the Provide Support for Host Vehicle Systems, Provide Support for Cooperative Systems, Provide Electronic Payment Facilities and Provide Traveller Journey Assistance Functional Areas, plus the Broadcast and Traffic and Travel Information Provider.<br>(3) Both sets of outputs shall also be sent as soon as new data is received to the Broadcaster and Traffic and Travel Information Provider, or to the Broadcaster when it provides a request.<br></div></H5><h3>Functional Requirements</H3><h5>(a) continuously monitor for the receipt of the any of the input data flows<br/>(b) when the data flow urban traffic information request is received in (a), output the current traffic information to the broadcaster using the data flow containing urban traffic data<br/>(c) when the urban traffic data for output data flow is received in (a), store its contents locally updating any previously received data that has been changed<br/>(d) when (c) is complete, output the revised version of the urban traffic data to functionality in other Functional Areas, the broadcaster and the traffic and travel information provide in the appropriate output data flows<br/>(e) when either the urban lane instructions or the urban speed limit changes data flows are received in (a), repeat (c) and (d) for the data that they contain.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FEA2398103FA.HTM?DiagTab=1" Target="_self">DFD 3.1.1 Provide Urban Traffic Management</a><h5><li> <a href="F897FEA2398103F4.HTM?DiagTab=1" Target="_self">Functional tree 3.1</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897fea2398103fa.htm" target="_self"> 3.1.1 Provide Urban Traffic Management</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="1d6c327a4b750dfc.htm" target="_self"> fesp.b-urban_traffic_information_request </A> <li>
+  <A CLASS="Content" HREF="1d6c64794b751ab9.htm" target="_self"> mt_urban_lane_instructions </A> <li>
+  <A CLASS="Content" HREF="1d6c310e4b750c29.htm" target="_self"> mt_urban_speed_limit_changes </A> <li>
+  <A CLASS="Content" HREF="1d6c27964b7506a5.htm" target="_self"> mt_urban_traffic_data_for_output </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f8971ea2398264db.htm" target="_self"> mt.pepf_urban_traffic_conditions_CSF </A> <li>
+  <A CLASS="Content" HREF="d4d2dfcb406b0bc7.htm" target="_self"> mt.pepf_urban_traffic_conditions_CUR </A> <li>
+  <A CLASS="Content" HREF="4c8466ee4b4c094d.htm" target="_self"> mt.pscs_current_urban_traffic_conditions </A> <li>
+  <A CLASS="Content" HREF="ae19b7be4bb10250.htm" target="_self"> mt.pshvs_urban_network_perturbations </A> <li>
+  <A CLASS="Content" HREF="cc3df6154b871d60.htm" target="_self"> mt.pshvs_urban_queue_information </A> <li>
+  <A CLASS="Content" HREF="f8971ea33982659b.htm" target="_self"> mt.ptja_urban_network_conditions </A> <li>
+  <A CLASS="Content" HREF="5eae74ae398416e9.htm" target="_self"> mt.ptja_urban_network_perturbations </A> <li>
+  <A CLASS="Content" HREF="f897227b39827a76.htm" target="_self"> tesp.b-urban_traffic_data </A> <li>
+  <A CLASS="Content" HREF="f897227c39827a9a.htm" target="_self"> tesp.ttip-urban_traffic_data </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="ca51f33f4b90139d.htm" target="_self"> 7.4.1.33</A> </a></center></h5></td><td width="90%"><h5><span style='font-style: italic;'>Traffic Queue Detection</span> - The system shall be able to locate the tail end of a traffic queue and estimate its speed of propagation.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="777b90734bc41397.htm" target="_self"> 7.5.1.28</A> </a></center></h5></td><td width="90%"><h5>The system shall enable the TCC to inform traveller information service providers of the current traffic management strategy.</h5></td></tr></table></div>
+</BODY> </HTML>

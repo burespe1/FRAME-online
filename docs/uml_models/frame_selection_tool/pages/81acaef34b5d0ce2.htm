@@ -1,0 +1,36 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 3.1.2.9 Output Inter-urban Traffic Data
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>3.1.2.9 Output Inter-urban Traffic Data</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to periodically receive data about current traffic conditions in the inter-urban road network from the functionality that manages the store of Inter-urban Traffic Data, plus the functionality that manages lane use and maximum speeds within the inter-urban road network.<br>(2) The ability to immediately output the data which has been received to other parts of the System or to entities that are outside of the System.<br>(3) When a request is received from the Broadcaster entity, the ability to output the latest set of data that is available about inter-urban traffic conditions.<br></div></H5><h3>Functional Requirements</H3><h5>(a) continuously monitor for the receipt of the any of the input data flows<br/>(b) when the data flow inter-urban traffic information request is received in (a), output the current traffic information to the broadcaster using the data flow containing inter-urban traffic data<br/>(c) when the inter-urban traffic data for output data flow is received in (a), store its contents locally updating any previously received data that has been changed<br/>(d) when (c) is complete, output the revised version of the inter-urban traffic data to functionality in other Functional Areas, the broadcaster and the traffic and travel information provide in the appropriate output data flows<br/>(e) when either the inter-urban lane instructions or the inter-urban speed limit changes data flows are received in (a), repeat (c) and (d) for the data that they contain.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FEA239810406.HTM?DiagTab=1" Target="_self">DFD 3.1.2 Provide Inter-urban Traffic Management</a><h5><li> <a href="F897FEA2398103F4.HTM?DiagTab=1" Target="_self">Functional tree 3.1</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897fea239810406.htm" target="_self"> 3.1.2 Provide Inter-urban Traffic Management</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="480b71014b60101f.htm" target="_self"> fesp.b-inter-urban_traffic_information_request </A> <li>
+  <A CLASS="Content" HREF="480b6cb14b600e35.htm" target="_self"> mt_inter-urban_lane_instructions </A> <li>
+  <A CLASS="Content" HREF="480b4b6c4b60032b.htm" target="_self"> mt_inter-urban_speed_limit_changes </A> <li>
+  <A CLASS="Content" HREF="81acb22d4b5d0d49.htm" target="_self"> mt_inter-urban_traffic_data_for_output </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f8971ea2398264b7.htm" target="_self"> mt.pepf_inter-urban_traffic_conditions_CSF </A> <li>
+  <A CLASS="Content" HREF="d4d2df2f406b0ba5.htm" target="_self"> mt.pepf_inter-urban_traffic_conditions_CUR </A> <li>
+  <A CLASS="Content" HREF="4c8467574b4c0960.htm" target="_self"> mt.pscs_current_inter-urban_traffic_conditions </A> <li>
+  <A CLASS="Content" HREF="ae19b78e4bb10243.htm" target="_self"> mt.pshvs_inter-urban_network_perturbations </A> <li>
+  <A CLASS="Content" HREF="cc3df6bb4b871d80.htm" target="_self"> mt.pshvs_inter-urban_queue_information </A> <li>
+  <A CLASS="Content" HREF="f8971ea339826553.htm" target="_self"> mt.ptja_inter-urban_network_conditions </A> <li>
+  <A CLASS="Content" HREF="5eae74ae398416e0.htm" target="_self"> mt.ptja_inter-urban_network_perturbations </A> <li>
+  <A CLASS="Content" HREF="f897227b39827a6a.htm" target="_self"> tesp.b-inter-urban_traffic_data </A> <li>
+  <A CLASS="Content" HREF="f897227b39827a8e.htm" target="_self"> tesp.ttip-inter-urban_traffic_data </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428539be6205.htm" target="_self"> 2.1.1.1</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to produce information for travellers on the traffic and travel conditions of all relevant transport modes.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="0a922bf03c0200fe.htm" target="_self"> 6.1.2.6</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to provide road and traffic information adapted to different classes of users, e.g. travellers, radio broadcasters, service operators.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="0a922e493c02013d.htm" target="_self"> 6.2.2.9</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to adapt the information to different classes of users, e.g. travellers, radio broadcasters, service operators.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442a339be77ad.htm" target="_self"> 7.1.0.9</A> </a></center></h5></td><td width="90%"><h5>The system shall ensure that traveller information service providers are aware of the traffic management strategy, so that they can provide information that conforms to it.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="ca51f33f4b90139d.htm" target="_self"> 7.4.1.33</A> </a></center></h5></td><td width="90%"><h5><span style='font-style: italic;'>Traffic Queue Detection</span> - The system shall be able to locate the tail end of a traffic queue and estimate its speed of propagation.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="777b90734bc41397.htm" target="_self"> 7.5.1.28</A> </a></center></h5></td><td width="90%"><h5>The system shall enable the TCC to inform traveller information service providers of the current traffic management strategy.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="76a781c54b97026a.htm" target="_self"> 7.6.2.4</A> </a></center></h5></td><td width="90%"><h5>The system shall enable the traveller information service provider to receive current inter-urban traffic management, and weather, conditions and planned events.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="7daf95504bd90ddd.htm" target="_self"> 7.6.2.5</A> </a></center></h5></td><td width="90%"><h5>The system shall enable the traveller information service provider to be provided with current an predicted inter-urban traffic conditions.</h5></td></tr></table></div>
+</BODY> </HTML>

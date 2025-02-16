@@ -1,0 +1,22 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 3.4.1 Monitor Weather Conditions
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>3.4.1 Monitor Weather Conditions</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to collect data about weather conditions that are relevant to the operation of the road network managed by the System.<br>(2) The ability for some or all of the data to come from Weather Systems or to be detected using sensors within the road network.<br>(3) The ability to forward the collected data to other functionality for storage.<br></div></H5><h3>Functional Requirements</H3><h5>(a) when the first trigger data flow is received, the data that it contains shall be stored internally<br/>(b) the other input trigger data flow shall be continuously monitored for actual measured weather conditions<br/>(c) at periodic intervals the measured weather conditions shall be converted into digital data and collated with the data received in (a)<br/>(d) when (c) is complete, the data shall be sent to the Manage Environmental Conditions Data function using the trigger output data flow.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FEA239810424.HTM?DiagTab=1" Target="_self">DFD 3.4  Provide Environmental Information</a><h5><li> <a href="F897FEA239810424.HTM?DiagTab=1" Target="_self">Functional tree 3.4</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897fea239810424.htm" target="_self"> 3.4 Provide Environmental Information</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f8972277398274b2.htm" target="_self"> fae-weather_inputs </A> <li>
+  <A CLASS="Content" HREF="f897227b3982796e.htm" target="_self"> fws-weather_data </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f8971c5b39824713.htm" target="_self"> mt_weather_condition_data_inputs </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442a439be7873.htm" target="_self"> 7.1.1.6</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to monitor and record weather conditions (wind, fog, rain level, ice, etc.).</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="76a789a34b97032e.htm" target="_self"> 7.4.1.12</A> </a></center></h5></td><td width="90%"><h5><span style='font-style: italic;'>(X)FCD</span> - The system shall enable a road-side device to send weather and environmental conditions to the TCC road-side device.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="777b905c4bc4137c.htm" target="_self"> 7.5.1.3</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to monitor the current inter-urban traffic and weather/environmental conditions, identify incidents, assess their impact, make short term predictions, and select and initiate an appropriate mitigation strategy.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="9f24a1bc4bb4035a.htm" target="_self"> 7.5.1.4</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to monitor the current inter-urban traffic and weather/environmental conditions for the road network and recommend and/or set an appropriate traffic management strategy.</h5></td></tr></table></div>
+</BODY> </HTML>

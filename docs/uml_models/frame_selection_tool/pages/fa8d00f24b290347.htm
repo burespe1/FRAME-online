@@ -1,0 +1,31 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 4.7.1 Provide On- Demand Service Traveller Interface
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>4.7.1 Provide On- Demand Service Traveller Interface</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) A HMI through which Pre-Trip Travellers can request an On-Demand Service for some or their entire proposed journey.<br>(2) The HMI shall enable the Traveller to provide information about the proposed journey, such as origin, destination, required times of departure and arrival, plus any other relevant information, e.g. disabled, elderly, luggage and young children.<br>(3) Once the Traveller has accepted the proposed service, the HMI shall also enable payment to be requested and only confirm acceptance once payment has been completed.<br>(4) A separate interface through which payments can be transacted in a safe and secure way.<br></div></H5><h3>Functional Requirements</H3><h5>(a) when the request demand service data flow is received from the traveller, check that all the required input data is present and sent to the Plan Demand Service function<br/>(b) following (a) when the proposed demand service data flow is received, output the proposed service data flow to the traveller, including details of any payments that are required <br/>(c) following (b), when details of how any payment is to be made are provided by the traveller, send this information via secure link to the financial clearinghouse<br/>(d) following (d), when confirmation of successful payment is received from the financial clearinghouse, send the payment made message to the Plan Demand Service function<br/>(e) when the demand service confirmed message is received, send details of the service to the traveller.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="FA8D00824B2901AB.HTM?DiagTab=1" Target="_self">DFD 4.7 Provide On-Demand Services</a><h5><li> <a href="F897F8CF39810025.HTM?DiagTab=0" Target="_self">Functional Tree of Area 4</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="fa8d00824b2901ab.htm" target="_self"> 4.7 Provide On-demand Services</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="fa8d07e54b290520.htm" target="_self"> ffc-demand_service_payment_confirmed </A> <li>
+  <A CLASS="Content" HREF="fa8d0eb14b290721.htm" target="_self"> ft.ppt-confirm_demand_service </A> <li>
+  <A CLASS="Content" HREF="fa8d0cf54b2906a9.htm" target="_self"> ft.ppt-request_demand_service </A> <li>
+  <A CLASS="Content" HREF="50325bc04b6901d5.htm" target="_self"> ft.ptt-make_demand_service_payment </A> <li>
+  <A CLASS="Content" HREF="fa8d17574b29106f.htm" target="_self"> mpto_demand_service_confirmed </A> <li>
+  <A CLASS="Content" HREF="0423080f4b2a03e9.htm" target="_self"> mpto_proposed_demand_service </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="50325fcd4b69026f.htm" target="_self"> mpto_demand_service_payment_successful </A> <li>
+  <A CLASS="Content" HREF="fa8d17cc4b291096.htm" target="_self"> mpto_demand_service_request </A> <li>
+  <A CLASS="Content" HREF="04231fd34b2a0ea4.htm" target="_self"> tfc-demand_service_payment </A> <li>
+  <A CLASS="Content" HREF="231a2e9d4b2a04c5.htm" target="_self"> tt.ppt-demand_service </A> <li>
+  <A CLASS="Content" HREF="231a2e394b2a049e.htm" target="_self"> tt.ppt-proposed_demand_service </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428139be5e99.htm" target="_self"> 10.2.0.1</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to provide both planned and spontaneous trips.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="0a92226e3c02005d.htm" target="_self"> 10.2.0.2</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to satisfy a variety of booking types, e.g. last minute, return trip (including weeks/months ahead), being able to take advantage of late opening hours, special facilities etc.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428139be5eed.htm" target="_self"> 10.2.0.5</A> </a></center></h5></td><td width="90%"><h5>The system shall provide the traveller  with an easy to use user interface that minimises the amount of data to be provided by the traveller, and accepts payment in a variety of ways.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="0a9223363c020064.htm" target="_self"> 10.2.1.1</A> </a></center></h5></td><td width="90%"><h5>The system shall provide all the information necessary to prepare a journey.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428239be5f4d.htm" target="_self"> 10.2.1.9</A> </a></center></h5></td><td width="90%"><h5>The system shall enable the traveller to specify any special needs that he or she may have, e.g. disability, young children, etc.</h5></td></tr></table></div>
+</BODY> </HTML>

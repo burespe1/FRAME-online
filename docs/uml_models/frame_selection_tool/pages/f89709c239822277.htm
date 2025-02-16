@@ -1,0 +1,25 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 7.2.1 Analyse Image
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>7.2.1 Analyse Image</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to analyse the image received from the Process Fraud Notifications or Detect Fraud Functions.<br>(2) The ability to determine the ID of the violator vehicle, and the type of fraud (violation) involved from the received image.<br>(3) Once the image has been analysed, the ability to send the results to the Determine Violator ID Function.<br></div></H5><h3>Functional Requirements</H3><h5>(a) when the second trigger input data flow is received, get the image recorded by the other Functions<br/>(b) alternatively, if the first trigger input data flow is received, extract the relevant elements from the fraud notification<br/>(c) analyse the image received in (a)  to determine the type of fraud involved and the vehicle ID<br/>(d) as a result of (c), send the vehicle ID back to the requesting Function using the first trigger output data flow<br/>(e) also send the same data plus the fraud type to the Determine Violator Function using the first trigger input data flow and the other output data flow.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FF82398104E3.HTM?DiagTab=1" Target="_self">DFD 7.2  Identify Violator</a><h5><li> <a href="F897F8E239810037.HTM?DiagTab=0" Target="_self">Functional Tree of Area 7</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897ff82398104e3.htm" target="_self"> 7.2 Identify Violator</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f8971c5f39824a97.htm" target="_self"> psle_user_image </A> <li>
+  <A CLASS="Content" HREF="f8971c5e39824a5b.htm" target="_self"> psle_violator_data_for_image_analysis </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f8971c5f39824a9d.htm" target="_self"> psle_vehicle_ID_CC </A> <li>
+  <A CLASS="Content" HREF="d4d2096d406c3053.htm" target="_self"> psle_vehicle_ID_DV </A> <li>
+  <A CLASS="Content" HREF="d4d21a4b406c3ec8.htm" target="_self"> psle_violation_type_from_image_analysis </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428939be64e7.htm" target="_self"> 3.1.0.1</A> </a></center></h5></td><td width="90%"><h5>The system shall enforce the traffic laws and regulations of the region automatically (where possible).</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428a39be6523.htm" target="_self"> 3.1.0.2</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to collect the evidence of a violation of the traffic laws and regulations in a manner suitable to justify the application of a legal punishment</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428a39be6553.htm" target="_self"> 3.1.0.3</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to provide support for the enforcement of safe behaviour and vehicle priorities.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428a39be65c5.htm" target="_self"> 3.1.1.1</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to collect evidence on vehicles that commit traffic signal violations.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428b39be65f5.htm" target="_self"> 3.1.1.2</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to collect evidence on vehicles that exceed a local (variable) speed limit.</h5></td></tr></table></div>
+</BODY> </HTML>

@@ -1,0 +1,109 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 5.12.10 Provide V2V Communications
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>5.12.10 Provide V2V Communications</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability for inter-vehicle (V2V) communication including protocols for access the communication channel and for data integrity control.<br>(2) The ability to avoid false data generation and broadcasting shall be an integral part of the communication facility.<br>(3) The ability to manage the communications in a manner that does not overload the communications infrastructure.<br></div></H5><h3>Functional Requirements</H3><h5>(a) continuously monitor for data flows that have been sent from the other vehicle, or from other parts of the system in the host vehicle<br/>(b) when any of the data flows from other parts of the system in the host vehicle are received in (a), analyse their contents and send then to the other vehicle in the appropriate output data flow<br/>(c) when any of the data flows from the other vehicle are received in (a), analyse their contents<br/>(d) if in (c) the contents are found to contain, XFCD, local visibility, road information, local road surface state, traffic queue ahead, other vehicle location, ghost driver warning or lane departure warning data, send it to other parts of the system in the host vehicle using the appropriately named data flow<br/>(e) send all other data found in (c) in the instructions &amp; warnings from other vehicles data flow to the Manage Vehicle Communications to Driver function for processing before being output to the driver.<br/></H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="C9C6D8034174051B.HTM?DiagTab=1" Target="_self">DFD 5.12 Provide Vehicle Communications Interfaces</a><h5><li> <a href="F897F8D63981002B.HTM?DiagTab=0" Target="_self">Functional Tree of Area 5</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="c9c6d8034174051b.htm" target="_self"> 5.12 Provide Vehicle Communications Interfaces</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="8914db2941737b47.htm" target="_self"> fv.ov-collision_warning </A> <li>
+  <A CLASS="Content" HREF="f7bf40464ba21979.htm" target="_self"> fv.ov-emergency_brake_application </A> <li>
+  <A CLASS="Content" HREF="21c455c84c330fa0.htm" target="_self"> fv.ov-ghost_vehicle_detected </A> <li>
+  <A CLASS="Content" HREF="c26320f54c2a2bf0.htm" target="_self"> fv.ov-goods_being_carried </A> <li>
+  <A CLASS="Content" HREF="8914db4141737b53.htm" target="_self"> fv.ov-lane_changing_warning </A> <li>
+  <A CLASS="Content" HREF="a17dc1ba4b8303e6.htm" target="_self"> fv.ov-lane_use_commands </A> <li>
+  <A CLASS="Content" HREF="8914db1641737b3b.htm" target="_self"> fv.ov-lights_anti-glare_request </A> <li>
+  <A CLASS="Content" HREF="8914db5941737b5f.htm" target="_self"> fv.ov-other_platooning_data </A> <li>
+  <A CLASS="Content" HREF="705f76ba4e0d054f.htm" target="_self"> fv.ov-other_vehicle_attitude_for_host_service </A> <li>
+  <A CLASS="Content" HREF="d13301854c471dc0.htm" target="_self"> fv.ov-other_vehicle_location_for_host_vehicle </A> <li>
+  <A CLASS="Content" HREF="2f5258584c34095f.htm" target="_self"> fv.ov-overtaking_vehicle_warning </A> <li>
+  <A CLASS="Content" HREF="c2630f9c4c2a192f.htm" target="_self"> fv.ov-red_light_running_warning </A> <li>
+  <A CLASS="Content" HREF="8914db7041737b6b.htm" target="_self"> fv.ov-regulations </A> <li>
+  <A CLASS="Content" HREF="84b8b1d14b8b0cd7.htm" target="_self"> fv.ov-road_information </A> <li>
+  <A CLASS="Content" HREF="3500367b4c1a0495.htm" target="_self"> fv.ov-road_surface_state </A> <li>
+  <A CLASS="Content" HREF="f7bf4e554ba21ca5.htm" target="_self"> fv.ov-safety_behaviour </A> <li>
+  <A CLASS="Content" HREF="8914db8841737b77.htm" target="_self"> fv.ov-status_data </A> <li>
+  <A CLASS="Content" HREF="f57704fa4c320662.htm" target="_self"> fv.ov-traffic_queue_ahead </A> <li>
+  <A CLASS="Content" HREF="bdf9e9c44c3114d5.htm" target="_self"> fv.ov-visibility_data </A> <li>
+  <A CLASS="Content" HREF="21c44d9d4c330cdb.htm" target="_self"> pshvs_ghost_driver_warning_for_other_vehicle </A> <li>
+  <A CLASS="Content" HREF="c2631dde4c2a2a29.htm" target="_self"> pshvs_goods_being_carried_by_host_vehicle </A> <li>
+  <A CLASS="Content" HREF="e7e9e8e64e0c0193.htm" target="_self"> pshvs_host_vehicle_attitude_for_orther_vehicle </A> <li>
+  <A CLASS="Content" HREF="474853e54c2c06f7.htm" target="_self"> pshvs_host_vehicle_lane_departure_warning </A> <li>
+  <A CLASS="Content" HREF="c26314dc4c2a1c2e.htm" target="_self"> pshvs_host_vehicle_red_light_running </A> <li>
+  <A CLASS="Content" HREF="bdf9e7a34c31146d.htm" target="_self"> pshvs_host_vehicle_visibility_for_other_vehicle </A> <li>
+  <A CLASS="Content" HREF="a17dbfa44b830392.htm" target="_self"> pshvs_instructions_&amp;_warnings_for_other_vehicles </A> <li>
+  <A CLASS="Content" HREF="510e62ae4c0f0603.htm" target="_self"> pshvs_local_road_surface_state_for_other_vehicle </A> <li>
+  <A CLASS="Content" HREF="d133fed34c461d43.htm" target="_self"> pshvs_location_for_other_vehicle </A> <li>
+  <A CLASS="Content" HREF="dbf50b614175014b.htm" target="_self"> pshvs_platooning_data_to_other_vehicles </A> <li>
+  <A CLASS="Content" HREF="84b8afaa4b8b0c8f.htm" target="_self"> pshvs_road_information_for_other_vehicle </A> <li>
+  <A CLASS="Content" HREF="f7bf4c674ba21c5c.htm" target="_self"> pshvs_safety_behaviour_status_for_other_vehicle </A> <li>
+  <A CLASS="Content" HREF="dbf50b7541750156.htm" target="_self"> pshvs_status_data_to_other_vehicles </A> <li>
+  <A CLASS="Content" HREF="f577fc5c4c3104b5.htm" target="_self"> pshvs_traffic_queue_ahead_for_other_vehicle </A> <li>
+  <A CLASS="Content" HREF="2f52490c4c34051b.htm" target="_self"> pshvs_un-safe_overtaking_warning_for_other_vehicle </A> <li>
+  <A CLASS="Content" HREF="dbf50aff41750140.htm" target="_self"> pshvs_warnings_to_other_vehicles </A> <li>
+  <A CLASS="Content" HREF="b13fca534b9707f5.htm" target="_self"> pshvs_xfcd_for_other_vehicle </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="47485aac4c2c07b8.htm" target="_self"> pshvs.mt_other_vehicle_lane_departure_warning </A> <li>
+  <A CLASS="Content" HREF="21c451d74c330d7f.htm" target="_self"> pshvs_ghost_driver_warning_from_other_vehicle </A> <li>
+  <A CLASS="Content" HREF="8914d30441737947.htm" target="_self"> pshvs_instructions_&amp;_warnings_from_other_vehicles </A> <li>
+  <A CLASS="Content" HREF="510e63b84c0f0640.htm" target="_self"> pshvs_local_road_surface_state_from_other_vehicle </A> <li>
+  <A CLASS="Content" HREF="bdf9eaed4c31150d.htm" target="_self"> pshvs_local_visibility_from_other_vehicle </A> <li>
+  <A CLASS="Content" HREF="d133ff8a4c461d7e.htm" target="_self"> pshvs_location_from_other_vehicle </A> <li>
+  <A CLASS="Content" HREF="dbf50e4141750345.htm" target="_self"> pshvs_platooning_data_from_other_vehicles </A> <li>
+  <A CLASS="Content" HREF="84b8ad844b8b0c40.htm" target="_self"> pshvs_road_information_from_other_vehicle </A> <li>
+  <A CLASS="Content" HREF="dbf50e5b41750350.htm" target="_self"> pshvs_status_data_from_other_vehicles </A> <li>
+  <A CLASS="Content" HREF="f577fcb84c3104c7.htm" target="_self"> pshvs_traffic_queue_ahead_from_other_vehicle </A> <li>
+  <A CLASS="Content" HREF="dbf50e294175033a.htm" target="_self"> pshvs_warnings_from_other_vehicles </A> <li>
+  <A CLASS="Content" HREF="b13fcdb34b9708a2.htm" target="_self"> pshvs_xfcd_from_other_vehicle </A> <li>
+  <A CLASS="Content" HREF="a17dc32c4b830422.htm" target="_self"> to.ov-lane_use_commands </A> <li>
+  <A CLASS="Content" HREF="8914dc7441737be3.htm" target="_self"> tv.ov-collision_warning </A> <li>
+  <A CLASS="Content" HREF="f7bf455d4ba21a52.htm" target="_self"> tv.ov-emergency_brake_application </A> <li>
+  <A CLASS="Content" HREF="21c454d54c330f81.htm" target="_self"> tv.ov-ghost_driver_warning </A> <li>
+  <A CLASS="Content" HREF="c26322234c2a2c26.htm" target="_self"> tv.ov-goods_being_carried </A> <li>
+  <A CLASS="Content" HREF="705f76384e0d0537.htm" target="_self"> tv.ov-host_vehicle_attitude_for_other_vehicle </A> <li>
+  <A CLASS="Content" HREF="d13308964c471e0b.htm" target="_self"> tv.ov-host_vehicle_location_for_other_vehicle </A> <li>
+  <A CLASS="Content" HREF="8914dc8841737bef.htm" target="_self"> tv.ov-lane_changing_warning </A> <li>
+  <A CLASS="Content" HREF="8914dc6141737bd7.htm" target="_self"> tv.ov-lights_anti-glare_request </A> <li>
+  <A CLASS="Content" HREF="8914dc9e41737bfb.htm" target="_self"> tv.ov-other_platooning_data </A> <li>
+  <A CLASS="Content" HREF="2f52575f4c340924.htm" target="_self"> tv.ov-overtaking_vehicle_warning </A> <li>
+  <A CLASS="Content" HREF="c26312f84c2a1a71.htm" target="_self"> tv.ov-red_light_running_warning </A> <li>
+  <A CLASS="Content" HREF="8914dcaf41737c07.htm" target="_self"> tv.ov-regulations </A> <li>
+  <A CLASS="Content" HREF="84b8b2a54b8b0d0a.htm" target="_self"> tv.ov-road_information </A> <li>
+  <A CLASS="Content" HREF="350036884c1a04a2.htm" target="_self"> tv.ov-road_surface_state </A> <li>
+  <A CLASS="Content" HREF="f7bf4f4f4ba21cd9.htm" target="_self"> tv.ov-safety_behaviour </A> <li>
+  <A CLASS="Content" HREF="8914dcc041737c13.htm" target="_self"> tv.ov-status_data </A> <li>
+  <A CLASS="Content" HREF="f57704334c32062e.htm" target="_self"> tv.ov-traffic_queue_ahead </A> <li>
+  <A CLASS="Content" HREF="bdf9e8f74c3114a4.htm" target="_self"> tv.ov-visibility_data </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="200528c04be90425.htm" target="_self"> 7.4.1.29</A> </a></center></h5></td><td width="90%"><h5><span style='font-style: italic;'>Motorcycle Warning</span> - The system shall be able to detect that the host motorcycle has fallen onto the road pavement, and send this information to other vehicles.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="ca51f5534b90141e.htm" target="_self"> 7.4.1.32</A> </a></center></h5></td><td width="90%"><h5><span style='font-style: italic;'>Traffic Condition Warning</span> -The system shall be able to send to vehicles following the host vehicle information about the traffic conditions, or the traffic signs, near the host vehicle, that it may be useful to receive in advance.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="200524304be901b2.htm" target="_self"> 7.4.1.37</A> </a></center></h5></td><td width="90%"><h5><span style='font-style: italic;'>Hazardous Location Notification</span> - The system shall be able to warn driver, via an in-vehicle device, of adverse driving conditions ahead (e.g. slippery road, low visibility, queuing traffic) and advise on the appropriate action (e.g. speed).</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="2005240b4be9018e.htm" target="_self"> 7.4.1.40</A> </a></center></h5></td><td width="90%"><h5><span style='font-style: italic;'>Hazardous Location Notification</span> - The system shall be able to warn the driver, via an in-vehicle device, that the host vehicle is about to enter a section of road whose surface has less grip than normal (low &quot;mu&quot;).</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="200528774be903b9.htm" target="_self"> 7.4.1.45</A> </a></center></h5></td><td width="90%"><h5><span style='font-style: italic;'>Hazardous Location Notification</span> - The system shall be able to estimate the condition of the road surface in the vicinity of the host vehicle and send warnings to other vehicles.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="ca51f09b4b90131e.htm" target="_self"> 7.4.1.49</A> </a></center></h5></td><td width="90%"><h5><span style='font-style: italic;'>Hazardous Location Notification</span> - The system shall be able to send to following vehicles &quot;copies&quot; of the traffic signs, or information about the local traffic (e.g. sudden congestion), that it may be useful to receive in advance.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="200520d24be90069.htm" target="_self"> 7.4.2.1</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to detect that a (non-self-reporting) vehicle is travelling in the wrong direction along a &#8220;one-way&#8221; road (i.e. a ghost driver), and warn other vehicles &#8220;ahead&#8221; of that vehicle.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="200520e74be9007b.htm" target="_self"> 7.4.2.4</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to detect that a vehicle is overtaking (i.e. in the wrong lane) on a two-lane road and that there is another vehicle approaching in that lane, and provide a warning to the drivers of both vehicles via their in-vehicle devices.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="ca51edf84b901133.htm" target="_self"> 7.4.2.6</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to send to following vehicles &quot;copies&quot; of the traffic signs, or information about the local traffic (e.g. sudden congestion), that it may be useful to receive in advance.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="ca51e7f74b900fd3.htm" target="_self"> 7.4.4.18</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to send to following vehicles &quot;copies&quot; of the traffic signs, or information about the local traffic (e.g. sudden congestion), that it may be useful to receive in advance.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="200525544be9023c.htm" target="_self"> 7.4.6.10</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to compare the current trajectory of a vehicle with the road geometry and send a warning to the drivers of other vehicles that might be affected, via a road-side device, that an oncoming vehicle lane departure into their lane is imminent.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="60f484cf4ba313f7.htm" target="_self"> 7.4.6.23</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to provide a warning to the driver, via an in-vehicle display, that other drivers ahead are performing an emergency brake manoeuvre.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="60f484e14ba31400.htm" target="_self"> 7.4.6.24</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to inform vehicles behind the host vehicle that it is performing an emergency brake manoeuvre.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="60f484e94ba31409.htm" target="_self"> 7.4.6.25</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to provide a warning to the driver, via an in-vehicle display, that other vehicles behind are behaving in a dangerous manner (e.g. over speed limit, below minimum headway).</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="200522014be900e0.htm" target="_self"> 7.4.8.5</A> </a></center></h5></td><td width="90%"><h5>The system shall enable the trajectory of an emergency vehicle to be predicted and compared with the trajectories of other vehicles in the vicinity, and to warn the drivers of those other vehicles with a potential conflict, via an in-vehicle device.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="200529074be9047f.htm" target="_self"> 7.5.1.14</A> </a></center></h5></td><td width="90%"><h5>The system shall enable the host vehicle to receive information from other vehicles about the goods being carried by those vehicles.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="200528ef4be9045b.htm" target="_self"> 7.5.2.11</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to determine that the host vehicle is about to go through a red traffic signal, and to broadcast a warning to vehicles in the vicinity.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="200528f64be90464.htm" target="_self"> 7.5.2.12</A> </a></center></h5></td><td width="90%"><h5>The system shall enable the host vehicle to receive a message that another vehicle is about to go through a red traffic signal, and to provide a warning to the driver, via an in-vehicle device.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="0a9234663c0201a7.htm" target="_self"> 8.2.1.1</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to inform another vehicle when the host vehicle&nbsp;&nbsp;has detected that a collision is imminent.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442b539be857b.htm" target="_self"> 8.2.3.1</A> </a></center></h5></td><td width="90%"><h5>The system shall provide support to create a platoon of vehicles, in particular trucks (&quot;Electronic Towbar&quot; or &quot;Road Train&quot;).</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442b639be86e3.htm" target="_self"> 8.2.4.1</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to communicate with other equipped vehicles, and/or the infrastructure, to exchange data for automatic vehicle control.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="0a9235303c0201d1.htm" target="_self"> 8.3.0.1</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to provide the driver with assistance in longitudinal separation from other vehicles in, or entering, the host vehicle&#39;s lane.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442b739be881b.htm" target="_self"> 8.3.1.2</A> </a></center></h5></td><td width="90%"><h5>The system shall provide support to warn the driver when the vehicle in front is too close.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442b839be88e1.htm" target="_self"> 8.4.0.1</A> </a></center></h5></td><td width="90%"><h5>The system shall provide support to monitor for hazards involved in lane keeping, lane changing, entering and leaving high speed roads, and overtaking.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="0a9235ea3c0201f4.htm" target="_self"> 8.4.1.1</A> </a></center></h5></td><td width="90%"><h5>The system shall provide support to warn the driver if the host vehicle moves towards a volume of road space that is about to be occupied, or already occupied, by another road user.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="dbf50d62417502b1.htm" target="_self"> 8.5.5.2</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to send to following vehicles &#8220;copies&#8221; of the traffic signs, or information about the local traffic (e.g. sudden congestion), that it may be of useful to receive in advance.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="91ea9e194e150307.htm" target="_self"> 9.5.7.3</A> </a></center></h5></td><td width="90%"><h5>The system shall enable the host vehicle to receive information from other vehicles about the goods being carried by those vehicles.</h5></td></tr></table></div>
+</BODY> </HTML>

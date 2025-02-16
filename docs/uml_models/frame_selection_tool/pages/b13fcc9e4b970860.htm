@@ -1,0 +1,21 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 5.13.11 Fuse Extended Floating Car Data
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>5.13.11 Fuse Extended Floating Car Data</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to collect Extended Floating Car Data (XFCD) from the host Vehicle and the Other Vehicle plus fused data from the System that it has collected from other Vehicles.<br>(2) The ability to collate and fuse all of the data that has been collected to provide a coherent and consistent view of the road and traffic situation around the host Vehicle.<br>(3) The ability to send the data that has been collated and fused to the Driver Display Function.<br></div></H5><h3>Functional Requirements</H3><h5>(a) continuously monitor for the receipt of the input data flows<br/>(b) when any of the data flows in (a) is received, combine and fuse its contents to form a coherent and consistent set of traffic and road data for the area surrounding the host Vehicle<br/>(c) as part of (b) reject data from the Other Vehicle or from other system functionality if it is about a location, or about traffic that is travelling in a direction that is not relevant to the host Vehicle<br/>(d) store the results of the processing in (b) and (c) locally for use in (b) when either of the data flows in (a) is received again<br/>(e) send the results of (b) and (c) to the Display function.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="C9C6D80E41740528.HTM?DiagTab=1" Target="_self">DFD 5.13 Provide Vehicle Data and ISA</a><h5><li> <a href="F897F8D63981002B.HTM?DiagTab=0" Target="_self">Functional Tree of Area 5</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="c9c6d80e41740528.htm" target="_self"> 5.13 Provide Vehicle Data and ISA</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="b13fd8694b970b28.htm" target="_self"> mt.pshvs_inter-urban_fused_xfcd </A> <li>
+  <A CLASS="Content" HREF="3b793c594b9a0323.htm" target="_self"> mt.pshvs_urban_fused_xfcd </A> <li>
+  <A CLASS="Content" HREF="b13fcdb34b9708a2.htm" target="_self"> pshvs_xfcd_from_other_vehicle </A> <li>
+  <A CLASS="Content" HREF="b13fccd94b970875.htm" target="_self"> pshv_xfcd_for_fusing </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="b13fcf154b9708e3.htm" target="_self"> pshvs_fused_road_and_traffic_conditions </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="76a789764b97030f.htm" target="_self"> 7.4.1.13</A> </a></center></h5></td><td width="90%"><h5><span style='font-style: italic;'>(X)FCD</span> - The system shall be able to fuse the XFCD data from a number of vehicles with the host vehicle data to create a more accurate view of the road and traffic conditions in that area.</h5></td></tr></table></div>
+</BODY> </HTML>

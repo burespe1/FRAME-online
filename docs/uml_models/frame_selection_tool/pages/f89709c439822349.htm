@@ -1,0 +1,31 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 8.3.2.1 Monitor Driver
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>8.3.2.1 Monitor Driver</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to manage all specific Freight and Fleet Management data and processes about the Driver during the trip, typically managing data that includes Driver physical status, Driver expenses, Driving behaviour, etc. but not any data that is covered by more general Driver related functionality.<br>(2) The ability to obtain all the required data from Freight and Fleet Management process. <br></div></H5><h3>Functional Requirements</H3><h5>(a) collect specific Freight and Fleet Management data from the Vehicle and from the Driver and store them in the store of On-board Data<br/>(b) receive non-specific Freight and Fleet Management data and store it in the store of On-board Data<br/>(c) receive requests from the Fleet Manager and process them<br/>(d) if and when an incident occurs, send out information to the Fleet Manager and raise an event to trigger associated processes at task or transport order level<br/>(e) give the Driver all functionality needed to give access to the Driver data in the store of On-board Data.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FF823981053D.HTM?DiagTab=1" Target="_self">DFD 8.3.2 Monitor Resources</a><h5><li> <a href="F897FF8239810531.HTM?DiagTab=1" Target="_self">Functional tree 8.3</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897ff823981053d.htm" target="_self"> 8.3.2 Monitor Resources</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="2ff4312c406c0023.htm" target="_self"> fd.fvd-trip_input_5 </A> <li>
+  <A CLASS="Content" HREF="cda0d69639ed0133.htm" target="_self"> fv.fv-input_data </A> <li>
+  <A CLASS="Content" HREF="f8971c5639823fff.htm" target="_self"> mffo_mgm_driver_raw_data_request </A> <li>
+  <A CLASS="Content" HREF="737ac3fc3f332724.htm" target="_self"> mffo_read_on_board_monitor_driver_data </A> <li>
+  <A CLASS="Content" HREF="8914dddf41737c6d.htm" target="_self"> pshvs.mffo_driver_status </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="737acbc23f332b64.htm" target="_self"> mffo_load_on_board_monitor_driver_data </A> <li>
+  <A CLASS="Content" HREF="f8971c5739824101.htm" target="_self"> mffo_rsc_driver_event </A> <li>
+  <A CLASS="Content" HREF="f8971c5739824107.htm" target="_self"> mffo_rsc_driver_raw_operational_data </A> <li>
+  <A CLASS="Content" HREF="f8971c573982413d.htm" target="_self"> mffo_rsc_raw_driver_incident_information </A> <li>
+  <A CLASS="Content" HREF="d4d22710406c4c49.htm" target="_self"> td.fvd-trip_output_5 </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442bc39be8be4.htm" target="_self"> 9.4.0.1</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to monitor the vehicle and cargo safety status, and the behaviour of the driver (e.g. duration of driving time, excess speed).</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442bc39be8c2c.htm" target="_self"> 9.4.0.2</A> </a></center></h5></td><td width="90%"><h5>The system shall issue a warning to the driver whenever a threshold for a vehicle or cargo safety status, or driver behaviour, has been exceeded, and the relevant data shall be recorded.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="cf07d3c3417c0018.htm" target="_self"> 9.4.0.5</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to report to the home base when incorrect driver behaviour persists (e.g. driver is ill, or an unskilled driver is in control).</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442c439be9298.htm" target="_self"> 9.5.3.2</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to store all necessary commercial and statutory vehicle, driver, trip and freight information on-board the vehicle.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="cf07d3cb417c0024.htm" target="_self"> 9.5.3.26</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to record supplementary information about events recorded by the tachograph, e.g. reason for waiting time.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442c639be9418.htm" target="_self"> 9.5.3.9</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to record data, e.g. from vehicle, equipment, cargo unit sensors, and driver input etc. for later processing.</h5></td></tr></table></div>
+</BODY> </HTML>

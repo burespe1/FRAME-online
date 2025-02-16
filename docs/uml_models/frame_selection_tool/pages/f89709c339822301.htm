@@ -1,0 +1,35 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 8.2.2.2.2 Manage Incident
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>8.2.2.2.2 Manage Incident</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to manage the actions required when it has been detected that an incident has taken place during the course of a Freight Vehicle trip and involving the Freight Vehicle that is implementing the trip.<br>(2) The ability to analyse the details of the incident and if necessary send information about it to functionality in the Provide Safety and Emergency Facilities Functional Area.<br>(3) The ability to receive instructions for managing the incident from the functionality in the Provide Safety and Emergency Facilities Functional Area.<br>(4) The ability to pass on to other functionality the instructions for managing the incident.<br>(5) The ability to store information about the incident in the store of Resources Data.<br></div></H5><h3>Functional Requirements</H3><h5>(a) wait for incident notification from vehicle<br/>(b) consolidate information about the incident<br/>(c) store incident information under the store of Resources Data<br/>(d) analyse incident and its consequences and if needed inform emergency service (Provide Safety and Emergency Support Area), commercial fleet services, resource management fleet services<br/>(e) if needed wait from acknowledgement and instruction from emergency services (Provide Safety and Emergency Support Area)<br/>(f) elaborate incident management and associated instruction<br/>(g) give instructions to be sent by operation management function<br/>(h) follow incident management progress<br/>(i) give back trip control to operation management function when incident is over<br/>(j) store full description of the incident in the database.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FF8239810525.HTM?DiagTab=1" Target="_self">DFD 8.2.2.2 Control and Monitor Fleet Operations</a><h5><li> <a href="F897FF823981050D.HTM?DiagTab=1" Target="_self">Functional tree 8.2</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897ff8239810525.htm" target="_self"> 8.2.2.2 Control and Monitor Fleet Operations</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="2ff432b2406c00c3.htm" target="_self"> fo.flo-input_data_7 </A> <li>
+  <A CLASS="Content" HREF="f8971c5539823f33.htm" target="_self"> mffo_board_incident_information </A> <li>
+  <A CLASS="Content" HREF="f8971c5639823fdb.htm" target="_self"> mffo_incident_handling </A> <li>
+  <A CLASS="Content" HREF="737ac3fc3f332832.htm" target="_self"> mffo_read_resources_incident_management_data </A> <li>
+  <A CLASS="Content" HREF="f8971ea339826655.htm" target="_self"> psef.mffo_incident_notification_acknowledgment </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f8971ea139826337.htm" target="_self"> mffo.psef_incident_notification </A> <li>
+  <A CLASS="Content" HREF="f8971c5539823f45.htm" target="_self"> mffo_commercial_incident </A> <li>
+  <A CLASS="Content" HREF="f8971c5539823f69.htm" target="_self"> mffo_driver_incident </A> <li>
+  <A CLASS="Content" HREF="f8971c5539823f7b.htm" target="_self"> mffo_end_of_incident_handling </A> <li>
+  <A CLASS="Content" HREF="f8971c5639823fe1.htm" target="_self"> mffo_incident_instruction </A> <li>
+  <A CLASS="Content" HREF="f8971c57398241af.htm" target="_self"> mffo_vehicle_equipment_incident </A> <li>
+  <A CLASS="Content" HREF="d4d2296b406c4e5c.htm" target="_self"> to.flo-output_data_7 </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="0a92289b3c0200bf.htm" target="_self"> 5.3.0.2</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to provide the location of hazardous goods.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14429439be6c9d.htm" target="_self"> 5.3.1.3</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to advise the emergency services on the contents of any vehicle that has been involved in an incident.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="0a9229473c0200cd.htm" target="_self"> 5.3.1.4</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to provide relevant information to the emergency services on the type of hazardous good(s) involved in an incident.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14429439be6ccd.htm" target="_self"> 5.3.1.5</A> </a></center></h5></td><td width="90%"><h5>Systems shall exchange information on hazardous goods in a manner that is understood by all parties.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442b139be82e1.htm" target="_self"> 7.2.6.1</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to advise the emergency services on any hazardous goods that have been involved in an incident.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442bd39be8ca4.htm" target="_self"> 9.4.0.4</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to detect that the vehicle has been involved in an incident, identify its location, and initiate a &#39;May Day&#39; call to the emergency services automatically.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="cf07d3cb417c0024.htm" target="_self"> 9.5.3.26</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to record supplementary information about events recorded by the tachograph, e.g. reason for waiting time.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="b652d7f64bcd168b.htm" target="_self"> 9.5.6.8</A> </a></center></h5></td><td width="90%"><h5>The system shall enable a vehicle carrying hazardous goods to request appropriate assistance in the case of an incident or accident (eCall).</h5></td></tr></table></div>
+</BODY> </HTML>

@@ -1,0 +1,24 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 3.1.4.9 Output Car Park Information to Drivers
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>3.1.4.9 Output Car Park Information to Drivers</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to provide output of information about car parks to Vehicle Drivers, which shall be updated as soon as new data is received.<br>(2) The ability to output information about relevant service areas, if it is available from other functionality.<br>(3) The ability for the output to show either the current car park occupancy (number of spaces) or the current status depending on what is required by the Parking Operator.<br></div></H5><h3>Functional Requirements</H3><h5>(a) if either the car park status or occupancy data flows, or the service area occupancy data flow are received, output their contents to the driver<br/>(b) if the car park output settings data flow is received, change all future outputs to the settings that it contains.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="FF3A0D484B030EE7.HTM?DiagTab=1" Target="_self">DFD 3.1.4 Provide Management of Car Parks</a><h5><li> <a href="F897FEA2398103F4.HTM?DiagTab=1" Target="_self">Functional tree 3.1</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="ff3a0d484b030ee7.htm" target="_self"> 3.1.4 Provide Management of Car Parks</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="94d5ae524b0a06da.htm" target="_self"> mt_carpark_occupancy_for_output </A> <li>
+  <A CLASS="Content" HREF="31c13e124b6c054d.htm" target="_self"> mt_carpark_output_settings </A> <li>
+  <A CLASS="Content" HREF="94d5b5584b0a0849.htm" target="_self"> mt_carpark_status_for_output </A> <li>
+  <A CLASS="Content" HREF="5c75788e4b0107b1.htm" target="_self"> mt_service_area_occupancy_for_urban </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="a48bc7ff4df8122c.htm" target="_self"> mt.pshvs_carpark_information </A> <li>
+  <A CLASS="Content" HREF="94d5bc404b0a09b0.htm" target="_self"> td-carpark_occupancy </A> <li>
+  <A CLASS="Content" HREF="94d5bfd94b0a0a61.htm" target="_self"> td-carpark_status </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14429d39be7375.htm" target="_self"> 6.4.1.1</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to provide guidance to Car Parks (with parking spaces). <br/></h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442a939be7c27.htm" target="_self"> 7.1.4.4</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to provide advice to drivers as they approach car parks (on-street and off-street, as well as motorway service area parking).</h5></td></tr></table></div>
+</BODY> </HTML>

@@ -1,0 +1,21 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 4.6.4 Provide Operator Interface for Vehicle Sharing
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>4.6.4 Provide Operator Interface for Vehicle Sharing</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) A HMI through which the PT Operator may have access to the criteria being used to create travel plans for Car Poolers.<br>(2) The HMI shall enable the PT Operator to request and be provided with output showing the current criteria, and for the Operator to amend the criteria,<br>(3) The HMI shall not enable the PT Operator to see any information about Car Poolers.<br></div></H5><h3>Functional Requirements</H3><h5>(a) continuously monitor for receipt of the request travel plan criteria and updated travel plan criteria data flows from the PT operator<br/>(b) when the first data flow in (a) is received send the travel plan criteria request data flow to the Manage Vehicle Sharing Data Store function<br/>(c) as a result of (b) await the receipt of the requested travel plan criteria data flow from the Manage Vehicle Sharing Data Store function and output its contents to the PT operator in the current travel plan criteria data flow<br/>(d) when the second data flow in (a) is received, send its contents to the Manage Vehicle Sharing Data Store function in the travel plan criteria update data flow.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="5BC35FEF4B260336.HTM?DiagTab=1" Target="_self">DFD 4.6 Provide Facilities for Vehicle Sharing</a><h5><li> <a href="F897F8CF39810025.HTM?DiagTab=0" Target="_self">Functional Tree of Area 4</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="5bc35fef4b260336.htm" target="_self"> 4.6 Provide Facilities for Vehicle Sharing</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="5bc363444b2605cd.htm" target="_self"> fo.pto-request_travel_plan_criteria </A> <li>
+  <A CLASS="Content" HREF="5bc364e24b260631.htm" target="_self"> fo.pto-updated_travel_plan_criteria </A> <li>
+  <A CLASS="Content" HREF="a1faba174b270e9a.htm" target="_self"> mpto_requested_travel_plan_criteria </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="a1fab8384b270e44.htm" target="_self"> mpto_travel_plan_criteria_request </A> <li>
+  <A CLASS="Content" HREF="a1fab7b74b270e1d.htm" target="_self"> mpto_travel_plan_criteria_update </A> <li>
+  <A CLASS="Content" HREF="a1fabe594b270f14.htm" target="_self"> to.pto-current_travel_plan_criteria </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr></table></div>
+</BODY> </HTML>

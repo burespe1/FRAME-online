@@ -1,0 +1,25 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 4.5.2 Validate Fare Credit for Journey
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>4.5.2 Validate Fare Credit for Journey</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to manage the current level of fare credit in the &quot;fare card&quot; (store of Fare Card Data) to be managed so that there is always sufficient for the PT portion of the journey that the PT Passenger is about to make.<br>(2) The ability to inform the PT Passenger the amount of fare credit available and whether or not it is sufficient for the PT portion of the journey.<br>(3) If required the ability to include some form of access control mechanism for PT Passengers entering and/or leaving the PT Vehicle.<br></div></H5><h3>Functional Requirements</H3><h5>(a) continuously monitor for receipt of the request journey fare cost from the PT passenger<br/>(b) when the data flow in (a) arrives, check the cost and the fare credit balance in the function&#39;s internal store<br/>(c) if the result of (b) is that there is sufficient credit to pay for the journey output the results of (b) to the PT passenger in the journey fare cost and fare credit after journey data flows<br/>(d) if the result of (b) is that there is not sufficient credit to pay for the journey output the results of (b) to the PT passenger in the journey fare cost and no fare credit for journey data flows<br/>(e) as a result of (c) wait for receipt of the pay for journey data flow from the PT passenger<br/>(f) when the data flow in (e) is received, send the deduct fare credit for journey data flow to the store of Fare Card Data and the ok to travel message to the PT passenger<br/>(g) as a result of (f) await the receipt of the fare credit balance data flow and update the internal data store with its contents.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="31C7547A4B191676.HTM?DiagTab=1" Target="_self">DFD 4.5 Provide PT Fare Facilities</a><h5><li> <a href="F897F8CF39810025.HTM?DiagTab=0" Target="_self">Functional Tree of Area 4</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="31c7547a4b191676.htm" target="_self"> 4.5 Provide PT Fare Facilities</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f47df9e74b1c0231.htm" target="_self"> ft.ptp-pay_for_journey </A> <li>
+  <A CLASS="Content" HREF="f47df90d4b1c01fe.htm" target="_self"> ft.ptp-request_journey_fare_cost </A> <li>
+  <A CLASS="Content" HREF="d329e3144b1c0e95.htm" target="_self"> mpto_fare_credit_balance </A> <li>
+  <A CLASS="Content" HREF="d329e3ad4b1c0ec0.htm" target="_self"> mpto_fare_scheme_for_service </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f47df7594b1c01d2.htm" target="_self"> mpto_deduct_fare_credit_for_journey </A> <li>
+  <A CLASS="Content" HREF="f47df5154b1c0182.htm" target="_self"> mpto_result_of_fare_transaction </A> <li>
+  <A CLASS="Content" HREF="d329ef254b1c123a.htm" target="_self"> tt.ptp-fare_credit_after_journey </A> <li>
+  <A CLASS="Content" HREF="f47dfb374b1c0262.htm" target="_self"> tt.ptp-journey_fare_cost </A> <li>
+  <A CLASS="Content" HREF="d329f0514b1c1271.htm" target="_self"> tt.ptp-no_fare_credit_for_journey </A> <li>
+  <A CLASS="Content" HREF="d329f10b4b1c12a2.htm" target="_self"> tt.ptp-ok_to_travel </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr></table></div>
+</BODY> </HTML>

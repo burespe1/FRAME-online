@@ -1,0 +1,35 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 3.1.6.6 Process Traffic Prediction Results
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>3.1.6.6 Process Traffic Prediction Results</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to receive from the functionality managing the store of Traffic Simulation Data the results of a simulation that have been produced by the Traffic Simulation Engine functionality.<br>(2) The ability to process these results to provide coherent and comprehensive information about forecasts of traffic conditions and traffic management strategies.<br>(3) The ability to automatically send this information to the appropriate functionality in the System.<br></div></H5><h3>Functional Requirements</H3><h5>(a) monitor for the receipt of the traffic simulation results for processing data flow<br/>(b) when the data flow in (b) is received, process the data it contains to produce and send each of the output data flows<br/>(c) include in the forecast traffic conditions data sent to the traffic and travel information provider data from which a traffic model can be produced. </H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F8ACFB9A4B0B019A.HTM?DiagTab=1" Target="_self">DFD 3.1.6 Provide Network Modelling and Traffic Simulation</a><h5><li> <a href="F897FEA2398103F4.HTM?DiagTab=1" Target="_self">Functional tree 3.1</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f8acfb9a4b0b019a.htm" target="_self"> 3.1.6 Provide Traffic Predictions</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="46d386724b0e1191.htm" target="_self"> mt_traffic_prediction_results_for_processing </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="042312b94b2a05b6.htm" target="_self"> mt.mpto_predicted_road_conditions_for_demand </A> <li>
+  <A CLASS="Content" HREF="f8ac180a4b0c08b9.htm" target="_self"> mt.mpto_road_network_traffic_predictions </A> <li>
+  <A CLASS="Content" HREF="f8ac19894b0c08fc.htm" target="_self"> mt.mpto_traffic_management_strategies </A> <li>
+  <A CLASS="Content" HREF="f7ba085f4bb20cb3.htm" target="_self"> mt.pshvs_forecast_traffic_to_monitor_vehicle_trip </A> <li>
+  <A CLASS="Content" HREF="9f24b0b34bb40733.htm" target="_self"> mt.pshvs_predicted_traffic_conditions_for_driver </A> <li>
+  <A CLASS="Content" HREF="46d354184b0e03bd.htm" target="_self"> mt.ptja_forecast_traffic_to_monitor_trip </A> <li>
+  <A CLASS="Content" HREF="46d355754b0e03f7.htm" target="_self"> mt.ptja_road_network_traffic_predictions </A> <li>
+  <A CLASS="Content" HREF="f8971c5a3982457b.htm" target="_self"> mt_inter-urban_network_long-term_prediction_data </A> <li>
+  <A CLASS="Content" HREF="f8971c5939824461.htm" target="_self"> mt_inter-urban_strategies_for_long-term </A> <li>
+  <A CLASS="Content" HREF="a368be093a3712a0.htm" target="_self"> mt_inter-urban_traffic_long-term_prediction_data </A> <li>
+  <A CLASS="Content" HREF="e47ef6444c3d0b75.htm" target="_self"> mt_predicted_road_network_traffic_data </A> <li>
+  <A CLASS="Content" HREF="f8971c5a39824581.htm" target="_self"> mt_urban_network_long-term_prediction_data </A> <li>
+  <A CLASS="Content" HREF="f8971c5b398246a7.htm" target="_self"> mt_urban_strategies_for_long-term </A> <li>
+  <A CLASS="Content" HREF="f8971c5b39824701.htm" target="_self"> mt_urban_traffic_long-term_prediction_data </A> <li>
+  <A CLASS="Content" HREF="969fa48f4bd915e5.htm" target="_self"> tesp.ttip_forecast_traffic_conditions_data </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="420154d3485a059c.htm" target="_self"> 7.1.2.8</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to produce new traffic management strategies from one or more of historic, current, or predicted road traffic data.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="76a7814d4b970227.htm" target="_self"> 7.5.1.11</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to provide the driver, via an in-vehicle device, and on request, details of the (predicted) traffic situation in a defined area of interest, and for a time horizon, that has been selected by the driver.&nbsp;&nbsp;This information shall be updated at (selected) intervals.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="ca51e75a4b900fac.htm" target="_self"> 7.5.1.24</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to calculate a predicted time for a total journey made up from separate links.&nbsp;&nbsp;The predicted time shall be updated regularly as the time for each link changes.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="7daf95504bd90ddd.htm" target="_self"> 7.6.2.5</A> </a></center></h5></td><td width="90%"><h5>The system shall enable the traveller information service provider to be provided with current an predicted inter-urban traffic conditions.</h5></td></tr></table></div>
+</BODY> </HTML>

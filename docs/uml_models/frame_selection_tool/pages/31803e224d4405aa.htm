@@ -1,0 +1,31 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 8.1.2.7 Provide Setup Freight Operation Operator Interface
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>8.1.2.7 Provide Setup Freight Operation Operator Interface</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) A HMI that will enable the Freight Management Operator to manage the preparation of what is necessary for a Freight Transport Operation to take place.<br>(2) The ability to receive data about what is needed to process the necessary clearances (e.g. customs and hazardous goods) so that a Freight Transport Operation can proceed.<br>(3) The ability to use the HMI to obtain approval from the Freight Management Operator for other functionality to carry out the necessary processing, which will include the exchange of data with the Law Enforcement Agency.</div></H5><h3>Functional Requirements</H3><h5>(a) continuously monitor for receipt of the customs declaration requested, prepare freight operations data request and approve hazardous goods transport request data flows;<br/>(b) when the first data flow in (a) is received, send its contents to the Freight Management Operator in the customs declaration requested data flow;<br/>(c) as a result of (b) continuously monitor for receipt of the customs declaration request proceed data flow from the Freight Management Operator;<br/>(d) when the data flow in (c) is received, send its contents in the customs declaration submittal approved data flow;<br/>(e) when the second data flow in (a) is received, send its content to the Freight Management Operator in the freight operations data preparation request data flow;<br/>(f) as a result of (e), continuously monitor for receipt of the freight operations data preparation approved data flow from the Freight Management Operator;<br/>(g) when the data flow in (f) is received. send its contents in the prepare freight operations data approved data flow;<br/>(h) when the third data flow in (a) is received, send its contents to the Freight Management Operator in the approve hazardous goods transport request data flow;<br/>(i) as a result of (h) continuously monitor for receipt of the hazardous goods transport approved data flow from the Freight Management Operator;<br/>(j) when the data flow in (i) is received. send its contents in the hazardous goods transport request approved data flow.<br/>.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FF8239810501.HTM?DiagTab=1" Target="_self">DFD 8.1.2 Prepare Freight Operations</a><h5><li> <a href="F897F8EA3981003D.HTM?DiagTab=0" Target="_self">Functional Tree of Area 8</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897ff8239810501.htm" target="_self"> 8.1.2 Prepare Freight Operations</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="3180399c4d440549.htm" target="_self"> fo.fro-customs_declaration_request_proceed </A> <li>
+  <A CLASS="Content" HREF="465a4df24d440274.htm" target="_self"> fo.fro-freight_operation_data_preparation_approved </A> <li>
+  <A CLASS="Content" HREF="cd2fdbc54d440424.htm" target="_self"> fo.fro-hazardous_goods_transport_request_approved </A> <li>
+  <A CLASS="Content" HREF="cd2fdc474d440432.htm" target="_self"> mffo_approve_hazardous_goods_transport_request </A> <li>
+  <A CLASS="Content" HREF="31803f384d4405db.htm" target="_self"> mffo_customs_declaration_requested </A> <li>
+  <A CLASS="Content" HREF="465a49a84d4401f9.htm" target="_self"> mffo_prepare_freight_operations_data_request </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="318040404d440601.htm" target="_self"> mffo_customs_declaration_submittal_approved </A> <li>
+  <A CLASS="Content" HREF="cd2fdd074d44045c.htm" target="_self"> mffo_hazardous_goods_transport_request_approved </A> <li>
+  <A CLASS="Content" HREF="465a4a3e4d44021f.htm" target="_self"> mffo_prepare_freight_operations_data_appoved </A> <li>
+  <A CLASS="Content" HREF="cd2fdb5e4d440416.htm" target="_self"> to.fro-approve_hazardous_goods_transport_request </A> <li>
+  <A CLASS="Content" HREF="318037214d4404d8.htm" target="_self"> to.fro-customs_declaration_requested </A> <li>
+  <A CLASS="Content" HREF="318037704d4404f0.htm" target="_self"> to.fro-customs_declaration_request_response </A> <li>
+  <A CLASS="Content" HREF="465a4d9a4d44025d.htm" target="_self"> to.fro-freight_operation_data_preparation_request </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442bf39be8dca.htm" target="_self"> 9.5.1.3</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to prepare and update official documents, e.g. transport orders, customs declarations, hazardous goods declarations, notices of dispatch etc. in a controlled manner, and assist the process of checking them.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442bf39be8e2a.htm" target="_self"> 9.5.1.4</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to transfer official documents, e.g. transport orders, customs declarations, hazardous goods declarations, notices of dispatch etc. between vehicles, the fleet management centre and the relevant authorities in a controlled manner.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="0a9239d03c02024f.htm" target="_self"> 9.5.1.9</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to confirm electronic documents with electronic signatures.</h5></td></tr></table></div>
+</BODY> </HTML>

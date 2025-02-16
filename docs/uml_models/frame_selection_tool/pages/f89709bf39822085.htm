@@ -1,0 +1,31 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 4.1.5 Collect PT Vehicle Data
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>4.1.5 Collect PT Vehicle Data</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to collect and send for storage data (e.g. location, status, alarms, occupancy) in real-time from PT Vehicles through any suitable data communications links.<br>(2) When fault data is received from PT Vehicles, the ability to pass it on to maintenance functionality.<br>(3) The ability to provide PT Vehicle data, include locations that are combined with digital map data, to the PT Operator interface functionality.<br>(4) The ability to exchange with PT Drivers in PT Vehicles voice and data messages concerning unusual situations that are not included in updates provided by regularly transmitted data, including such things as emergencies, special messages to PT Drivers, etc.<br></div></H5><h3>Functional Requirements</H3><h5>(a) collect, filter and if necessary fuse all the data received from the Monitor PT Vehicles function<br/>(b) collect map data from the Geographic Map Data provider so that the PT vehicle positions can be determined on a map<br/>(c) periodically send the processed data from (a) to the stores of Historic PT Vehicle Data and Real Time PT Vehicle Status Data and to the Provide Operator Interface for Manage PT Fleet function in the historical vehicle information data flow<br/>(d) if any of the data flows in (a) indicate that there is a possible fault with the PT Vehicle then send it to the Monitor PT Infrastructure function in the possible PT Vehicle fault data flow<br/>(e) if the message from driver data flow arrives from the Monitor PT Vehicles function pass its contents to the Provide Operator Interface for Manage PT Fleet function in the communications from driver data flow<br/>(f) if the data flow communications to driver is received, send it to the Monitor PT Vehicles function in the message to driver data flow</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FEA239810430.HTM?DiagTab=1" Target="_self">DFD 4.1  Monitor PT fleet</a><h5><li> <a href="F897F8CF39810025.HTM?DiagTab=0" Target="_self">Functional Tree of Area 4</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897fea239810430.htm" target="_self"> 4.1 Monitor PT fleet</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f8972278398275a2.htm" target="_self"> fesp.g-map_data_for_PT_vehicle_position </A> <li>
+  <A CLASS="Content" HREF="d8cafb7a4b17143d.htm" target="_self"> mpto_communications_to_driver </A> <li>
+  <A CLASS="Content" HREF="cf6de31e4b18081b.htm" target="_self"> mpto_message_from_driver </A> <li>
+  <A CLASS="Content" HREF="cf6df1744b180bd5.htm" target="_self"> mpto_PT_vehicle_real_time_data </A> <li>
+  <A CLASS="Content" HREF="f8971c58398242b1.htm" target="_self"> mpto_vehicle_in_alarm </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="d8cafae64b171416.htm" target="_self"> mpto_communications_from_driver </A> <li>
+  <A CLASS="Content" HREF="f8971c57398241f7.htm" target="_self"> mpto_consolidated_vehicle_data </A> <li>
+  <A CLASS="Content" HREF="cf6de1ef4b1807ee.htm" target="_self"> mpto_historical_vehicle_information </A> <li>
+  <A CLASS="Content" HREF="cf6de3cc4b18084c.htm" target="_self"> mpto_message_to_driver </A> <li>
+  <A CLASS="Content" HREF="cf6ddcb54b1805eb.htm" target="_self"> mpto_possible_PT_vehicle_fault </A> <li>
+  <A CLASS="Content" HREF="f8971c583982425d.htm" target="_self"> mpto_real_time_vehicle_indicators </A> <li>
+  <A CLASS="Content" HREF="cf6df3724b180c0b.htm" target="_self"> mpto_real_time_vehicle_information </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14427f39be5d07.htm" target="_self"> 10.1.0.4</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to analyse records of usage and operational data, and passenger surveys, to assist in the planning process.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14427f39be5d49.htm" target="_self"> 10.1.2.1</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to receive information about the service number, identity, status, occupancy and location of all vehicles in the fleet in real time.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428039be5d61.htm" target="_self"> 10.1.2.2</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to monitor the number of travellers waiting at a pick-up point, e.g. Park and Ride site.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428539be619f.htm" target="_self"> 2.1.0.1</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to exchange traffic and travel information between adjacent TICs to enhance local information.</h5></td></tr></table></div>
+</BODY> </HTML>

@@ -1,0 +1,38 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 3.2.11 Provide Operator Interface for Incident Management
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>3.2.11 Provide Operator Interface for Incident Management</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) A HMI through which the Road Network Operator can control the management of incidents and the implementation of incident strategies.<br>(2) The HMI shall enable the Road Network Operator to confirm the implementation of incident management strategies if needed, to input and update incident data in the store of Incident Data, and to manage the development of new incident management strategies.<br>(3) The HMI shall enable the Road Network Operator to request and receive statistical reports on the occurrence of incidents and the use strategies.<br></div></H5><h3>Functional Requirements</H3><h5>(a) when the first trigger input data flow is received, the command shall be checked for syntax and consistency<br/>(b) when (a) is complete, the action needed shall be determined<br/>(c) if the result of (b) is that the action needed is to output incident data or produce a statistical report, the request for the retrieval of the data and preparation of the report shall be sent to the Manage Store of Incident Data function using the first trigger output data flow<br/>(d) when the result of (c) is received through the third trigger input data flow, the contents shall be output directly to the Operator<br/>(e) if the result of (b) is that implementation of an incident management strategy is to be confirmed, or a new strategy is being provided, the data shall be sent to the incident assessment Function using the second trigger output data flow<br/>(f) if the result of (b) is that new incident data or assessment &quot;rules&quot; are being provided then the data shall be sent to the Identification and Classification function using the third trigger output data flow<br/>(g) when the third trigger input data flow is received, the contents shall be output to the operator using the other output data flow.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FEA239810418.HTM?DiagTab=1" Target="_self">DFD 3.2  Manage Incidents</a><h5><li> <a href="F897FEA239810418.HTM?DiagTab=1" Target="_self">Functional tree 3.2</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897fea239810418.htm" target="_self"> 3.2 Manage Incidents</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="8d3fc4d24b0f104a.htm" target="_self"> fo.rno-create_incident_strategy </A> <li>
+  <A CLASS="Content" HREF="8d3fc5ba4b0f107e.htm" target="_self"> fo.rno-implement_incident_strategy </A> <li>
+  <A CLASS="Content" HREF="8d3fc6da4b0f10af.htm" target="_self"> fo.rno-request_incident_data_analysis </A> <li>
+  <A CLASS="Content" HREF="8d3fc7b74b0f10dc.htm" target="_self"> fo.rno-request_incident_statistics </A> <li>
+  <A CLASS="Content" HREF="8d3fcaf74b0f1142.htm" target="_self"> mt_confirm_incident_strategy_implementation </A> <li>
+  <A CLASS="Content" HREF="8306a6173a38044e.htm" target="_self"> mt_incident_command_response </A> <li>
+  <A CLASS="Content" HREF="8306a4f13a380408.htm" target="_self"> mt_incident_statistics_response </A> <li>
+  <A CLASS="Content" HREF="d41af6d54b0f0974.htm" target="_self"> mt_incident_strategies_removed </A> <li>
+  <A CLASS="Content" HREF="d41af3204b0f0903.htm" target="_self"> mt_incident_strategy_created </A> <li>
+  <A CLASS="Content" HREF="d41af6154b0f0949.htm" target="_self"> mt_incident_strategy_implemented </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="d41af1d44b0f08d8.htm" target="_self"> mt_implement_requested_strategy </A> <li>
+  <A CLASS="Content" HREF="8306a6003a380440.htm" target="_self"> mt_incident_command_request </A> <li>
+  <A CLASS="Content" HREF="8306a4da3a3803fa.htm" target="_self"> mt_incident_statistics_request </A> <li>
+  <A CLASS="Content" HREF="d41add8d4b0f0296.htm" target="_self"> mt_incident_strategy_implementation_confirmed </A> <li>
+  <A CLASS="Content" HREF="f8971c5a398244fd.htm" target="_self"> mt_operator_incident_data </A> <li>
+  <A CLASS="Content" HREF="d41af8824b0f099f.htm" target="_self"> mt_request_incident_strategy_creation </A> <li>
+  <A CLASS="Content" HREF="d41ae58c4b0f0400.htm" target="_self"> to.rno-confirm_incident_strategy_implementation </A> <li>
+  <A CLASS="Content" HREF="d41afa224b0f09ce.htm" target="_self"> to.rno-incident_strategies_removed </A> <li>
+  <A CLASS="Content" HREF="d41ae73d4b0f0440.htm" target="_self"> to.rno-incident_strategy_details </A> <li>
+  <A CLASS="Content" HREF="d41ae84e4b0f0471.htm" target="_self"> to.rno-requested_incident_data_analysis </A> <li>
+  <A CLASS="Content" HREF="d41ae8d54b0f049e.htm" target="_self"> to.rno-requested_incident_statistics </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="0a922b8f3c0200f0.htm" target="_self"> 6.1.2.4</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to support a database of events with links between events that occur concurrently and at the same or adjacent locations.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442b039be825d.htm" target="_self"> 7.2.3.1</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to produce incident data statistics, e.g. frequencies of occurrence, by time, type and location; identification of &quot;high risk&quot; locations on the road network; performance of the incident detection system.</h5></td></tr></table></div>
+</BODY> </HTML>

@@ -1,0 +1,33 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 4.4.8 Provide Interface to Other Modes
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>4.4.8 Provide Interface to Other Modes</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to provide links to other transport modes to enable PT services to be optimised.<br>(2) The ability to support an exchange of information with other transport modes so that the current PT services can be optimised to provide a better &quot;fit&quot; with those of the other modes.<br></div></H5><h3>Functional Requirements</H3><h5>(a) continuously monitor for the receipt of the PT service change request data flow<br/>(b) when the data flow in (a) arrives send the request to the Optimise PT Fleet Control function in the service change request from other mode data flow<br/>(c) as a result of (b) await the receipt of the service change response to other mode data flow<br/>(d) when the data flow in (c) arrives, forward the response to the other mode in the requested PT service change confirmed data flow<br/>(e) continuously monitor for the receipt of the other mode service change request data flow and when it is received, send the request change to services to the other mode<br/>(f) as a result of (e) continuously monitor for the receipt of the service change request response data flow from the other mode<br/>(g) when the data flow in (f) is received, send the data to the Optimise PT Fleet Control function in the other mode service change response data flow<br/>(h) continuously monitor for receipt of the request other mode service details data flow and when it is received, send the request current service status data flow to the other mode<br/>(i) as a result of (h), continuously monitor for the receipt of the current service status data flow and when it is received, send its contents to the Optimise PT Fleet Control function in the other mode services data flow<br/>(j) if the control parameters data flow is received from the other mode, store its data internally for local use in sending change requests to the other modes.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FEA239810442.HTM?DiagTab=1" Target="_self">DFD 4.4  Control PT Fleet</a><h5><li> <a href="F897F8CF39810025.HTM?DiagTab=0" Target="_self">Functional Tree of Area 4</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897fea239810442.htm" target="_self"> 4.4 Control PT Fleet</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897227839827632.htm" target="_self"> fmms.mms-control_parameters </A> <li>
+  <A CLASS="Content" HREF="03cc11b44b2202d8.htm" target="_self"> fmms.mms-current_service_status </A> <li>
+  <A CLASS="Content" HREF="29e22a494b2202fa.htm" target="_self"> fmms.mms-PT_service_change_request </A> <li>
+  <A CLASS="Content" HREF="29e22b594b220333.htm" target="_self"> fmms.mms-service_change_request_response </A> <li>
+  <A CLASS="Content" HREF="29e2360f4b22057e.htm" target="_self"> mpto_other_mode_service_change_request </A> <li>
+  <A CLASS="Content" HREF="29e23a024b220665.htm" target="_self"> mpto_request_other_mode_service_details </A> <li>
+  <A CLASS="Content" HREF="29e23e124b2208ef.htm" target="_self"> mpto_service_change_response_to_other_mode </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="29e234e24b220553.htm" target="_self"> mpto_other_mode_services </A> <li>
+  <A CLASS="Content" HREF="29e2382d4b2205e0.htm" target="_self"> mpto_other_mode_service_change_response </A> <li>
+  <A CLASS="Content" HREF="29e2396f4b22063e.htm" target="_self"> mpto_service_change_request_from_other_mode </A> <li>
+  <A CLASS="Content" HREF="f897227c39827af4.htm" target="_self"> tmms.mms-control_parameters </A> <li>
+  <A CLASS="Content" HREF="4af263d54b220344.htm" target="_self"> tmms.mms-requested_PT_service_change_confirmed </A> <li>
+  <A CLASS="Content" HREF="4af2627c4b2202e9.htm" target="_self"> tmms.mms-request_change_to_services </A> <li>
+  <A CLASS="Content" HREF="4af263074b220319.htm" target="_self"> tmms.mms-request_current_service_status </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14427e39be5cbf.htm" target="_self"> 10.1.0.1</A> </a></center></h5></td><td width="90%"><h5>The system shall provide effective and attractive PT.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="0a92213d3c020056.htm" target="_self"> 10.1.0.2</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to manage one or more modes of PT.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428039be5daf.htm" target="_self"> 10.1.3.2</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to schedule PT operations dynamically so that incidents or unexpected events can be handled with the minimum disruption.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428539be61e1.htm" target="_self"> 2.1.0.2</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to provide facilities to enable co-operation and decision making between all relevant authorities (e.g. Ministries, local authorities, police forces etc.) to define optimum traffic management strategies.</h5></td></tr></table></div>
+</BODY> </HTML>

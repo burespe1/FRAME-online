@@ -1,0 +1,507 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 5.12 Provide Vehicle Communications Interfaces
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <div id="ObjectTitle">
+<Table id="ObjectTitleTable" class="ObjectTitleTable" cellpadding="0" cellspacing="0"  width = "100%">
+<TR>
+<TD width="5%" height ="35" align = "left">
+<img src="../standard/busf.gif"/>
+</TD>
+<TD width="20%" height ="35" align = "left">
+<span class="ObjectTitle_Type">
+High Level Function</span>
+</TD>
+<TD width="75%" height ="35" align = "left">
+<span class="ObjectTitle_Name">5.12 Provide Vehicle Communications Interfaces</span>
+</TD>
+</TR>
+ </Table>
+</div>
+<table border="0" cellpadding="0" cellspacing="0"  class="InvisibleTable">
+<tr>
+    	 
+<td id="Tab" class="Tab">	&nbsp;Diagram&nbsp;</td>
+ <td id="Tab" class="Tab">&nbsp;Definition&nbsp;</td>
+ <td class="TabFiller" width="100%">&nbsp;</td>
+<td align="center" onclick="OnFitWidthClick();"  id="ZoomButton" class="ZoomButton" title="Fit to width">
+<img src="../standard/ws_fitwidth.gif"></img></td>
+<td align="center" onclick="OnRegularClick();" id="ZoomButton" class="ZoomButton" title="Actual size">
+<img src="../standard/ws_actual.gif"></img></td>
+<td align="center" onmousedown="OnIncrStart();" onmouseup="OnIncrStop();" id="ZoomButton" class="ZoomButton" title="Zoom in">
+<img src="../standard/ws_zoomin.gif"></img></td>
+<td align="center" onmousedown="OnDecrStart();" onmouseup="OnDecrStop();" id="ZoomButton" class="ZoomButton" title="Zoom out">
+<img src="../standard/ws_zoomout.gif"></img></td>
+<td style="display:none" id="TabMemoryName">TabMemoryProcess</td>	</tr>
+</table>
+
+<div id="ContentTab" class="ContentTab">
+	<table id="TabDiagList" class="TabDiagList" border="0" cellpadding="0" cellspacing="0" width="450">
+	          <tr>
+          <td width="16">
+                    <img src="../standard/diag.gif"/></td>
+<td id="TabDiag"class="TabDiag">
+DFD 5.12 Provide Vehicle Communications Interfaces</td>
+</tr>
+              </Table>
+<div id="ContentTabDiag" class="ContentTabDiag">
+      <p>
+<p class="DiagName">DFD 5.12 Provide Vehicle Communications Interfaces</p><p>
+<center>
+<h5>This is a DFD diagram which provides a description of the function in the ITS environment</h5>
+  <MAP CLASS="Content" NAME="6BC875EB417702F1"> 
+    <AREA href="705f76ba4e0d054f.htm" shape="rect" coords="451, 867, 675, 881"   target="_self"  title="It contains data showing the attitude of the Host Vehicle, i.e. on its wheels, on its side, upside down, etc."> 
+    </AREA> 
+    <AREA href="705f76384e0d0537.htm" shape="rect" coords="806, 780, 1036, 794"   target="_self"  title="It contains data about the current attitude of the Host Vehicle (i.e. on its wheels, on its side, upside down, etc.) for use by the Other Vehicle."> 
+    </AREA> 
+    <AREA href="e7e9e8e64e0c0193.htm" shape="rect" coords="441, 699, 675, 713"   target="_self"  title="It contains the current location of the Host Vehicle plus data about an improper attitude that it has taken up, such as lying on its side or inverted, that is for use by the Host Vehicle."> 
+    </AREA> 
+    <AREA href="2eb62fb54e0c01ab.htm" shape="rect" coords="296, 407, 537, 421"   target="_self"  title="It contains data such as speed and trajectory from the Vehicle System in the Host Vehicle that is for use in determining that the Host Vehicle is in the proper attitude, i.e. it has not fallen over, or rolled upside down."> 
+    </AREA> 
+    <AREA href="d13308964c471e0b.htm" shape="rect" coords="806, 761, 1036, 776"   target="_self"  title="It contains the location of the Host Vehicle that is being sent to the Other Vehicle."> 
+    </AREA> 
+    <AREA href="d13301854c471dc0.htm" shape="rect" coords="445, 850, 676, 864"   target="_self"  title="It contains the location of the Other Vehicle that has been received by the Host Vehicle."> 
+    </AREA> 
+    <AREA href="d133ff8a4c461d7e.htm" shape="rect" coords="806, 694, 985, 708"   target="_self"  title="It contains the current location of the Other Vehicle that has been received by the Host Vehicle."> 
+    </AREA> 
+    <AREA href="d133fed34c461d43.htm" shape="rect" coords="510, 805, 675, 819"   target="_self"  title="It contains the current location of the Host Vehicle that is to be sent to the Other Vehicle."> 
+    </AREA> 
+    <AREA href="2f5258584c34095f.htm" shape="rect" coords="509, 902, 675, 916"   target="_self"  title="It contains data from the Other Vehicle (including its identity) about an overtaking manoeuvre that it is about to make that is for use by the Host Vehicle."> 
+    </AREA> 
+    <AREA href="2f52575f4c340924.htm" shape="rect" coords="806, 819, 980, 833"   target="_self"  title="It contains data from the Host Vehicle (including its identity) about an overtaking manoeuvre that it is about to make that is for use by the Other Vehicle."> 
+    </AREA> 
+    <AREA href="2f52490c4c34051b.htm" shape="rect" coords="407, 631, 675, 645"   target="_self"  title="It contains data about an overtaking manoeuvre that is about to be made by the Host Vehicle but which will take it into the predicted forward trajectory of the Other Vehicle."> 
+    </AREA> 
+    <AREA href="21c455c84c330fa0.htm" shape="rect" coords="522, 940, 675, 955"   target="_self"  title="It contains data about a &quot;non-equipped&quot; Vehicle that has been detected travelling in the wrong direction on the carriageway being used by the Other Vehicle that may be of interest to the Host Vehicle."> 
+    </AREA> 
+    <AREA href="21c454d54c330f81.htm" shape="rect" coords="806, 933, 952, 947"   target="_self"  title="It contains data about a &quot;non-equipped&quot; Vehicle that has been detected travelling in the wrong direction on the carriageway being used by the Host Vehicle that may be of interest to the Other Vehicle."> 
+    </AREA> 
+    <AREA href="21c451d74c330d7f.htm" shape="rect" coords="805, 654, 1053, 668"   target="_self"  title="It contains data about a &quot;non-equipped&quot; Vehicle travelling the wrong way along the carriageway (host driver) that has been detected by the Other Vehicle that has been sent to the Host Vehicle for its use."> 
+    </AREA> 
+    <AREA href="21c44d9d4c330cdb.htm" shape="rect" coords="440, 682, 675, 696"   target="_self"  title="It contains data about a &quot;non-equipped&quot; Vehicle travelling the wrong way along the carriageway (host driver) that has been detected by the Host Vehicle that is to be sent to the Other Vehicle for its use."> 
+    </AREA> 
+    <AREA href="f1e0faa74c3209e7.htm" shape="rect" coords="295, 307, 415, 321"   target="_self"  title="It contains the current speed of the Host Vehicle as measured by the on-board Vehicle systems plus the identity of the Vehicle."> 
+    </AREA> 
+    <AREA href="f57704fa4c320662.htm" shape="rect" coords="539, 1006, 675, 1020"   target="_self"  title="It contains data about a traffic queue that has been detected by the Other Vehicle and is for use by the Host Vehicle."> 
+    </AREA> 
+    <AREA href="f57704334c32062e.htm" shape="rect" coords="806, 970, 947, 985"   target="_self"  title="It contains data about a traffic queue that has been detected by the Host Vehicle and is for use by the Other Vehicle."> 
+    </AREA> 
+    <AREA href="f577fcb84c3104c7.htm" shape="rect" coords="805, 633, 1047, 647"   target="_self"  title="It contains data about a traffic queue detected by the Other Vehicle that has been sent for use by the Host Vehicle."> 
+    </AREA> 
+    <AREA href="f577fc5c4c3104b5.htm" shape="rect" coords="447, 752, 675, 766"   target="_self"  title="It contains data about a traffic queue that has been detected by the Host Vehicle that is to be sent to the Other Vehicle for its use."> 
+    </AREA> 
+    <AREA href="bdf9eaed4c31150d.htm" shape="rect" coords="806, 570, 1010, 584"   target="_self"  title="It contains the local visibility detected by the Other Vehicle that has been sent for use by the Host Vehicle."> 
+    </AREA> 
+    <AREA href="bdf9e9c44c3114d5.htm" shape="rect" coords="579, 1123, 675, 1139"   target="_self"  title="It contains the level of visibility that has been detected by the Other Vehicle and is for use by the Host Vehicle."> 
+    </AREA> 
+    <AREA href="bdf9e8f74c3114a4.htm" shape="rect" coords="806, 1062, 903, 1076"   target="_self"  title="It contains the level of visibility that has been detected by the Host Vehicle and is for use by the Other Vehicle."> 
+    </AREA> 
+    <AREA href="bdf9e7a34c31146d.htm" shape="rect" coords="444, 715, 675, 729"   target="_self"  title="It contains the local visibility that has been detected by the Host Vehicle that is to be sent to the Other Vehicle for its use."> 
+    </AREA> 
+    <AREA href="474878cd4c2c1872.htm" shape="rect" coords="296, 234, 589, 248"   target="_self"  title="It contains data about the Vehicle such as identity, acceleration and braking characteristics, plus the weight when it is empty, the weight of goods being carried (if any), or the weight of any passengers (PT Vehicles only), or the weight of occupants and belongings (Private Car only), that will be used in determining the speed and headway that the Driver should use."> 
+    </AREA> 
+    <AREA href="47485aac4c2c07b8.htm" shape="rect" coords="805, 674, 1051, 688"   target="_self"  title="It contains data from which a warning can be output to Drivers that a Vehicle, whose identity is included in the data, is about to depart from the lane in the road carriageway that it is currently occupying."> 
+    </AREA> 
+    <AREA href="474853e54c2c06f7.htm" shape="rect" coords="440, 733, 675, 747"   target="_self"  title="It contains a warning that the Host Vehicle is about to depart from the lane in the road carriageway that it is currently occupying."> 
+    </AREA> 
+    <AREA href="c26322234c2a2c26.htm" shape="rect" coords="806, 953, 944, 967"   target="_self"  title="It contains data about the goods being carried by the Host Vehicle (including its identity) and is for use by the Other Vehicle."> 
+    </AREA> 
+    <AREA href="c26320f54c2a2bf0.htm" shape="rect" coords="541, 1041, 675, 1056"   target="_self"  title="It contains data about the goods being carried by the Other Vehicle as well as its identity that is for use by the Host Vehicle."> 
+    </AREA> 
+    <AREA href="dbf50b7541750156.htm" shape="rect" coords="480, 567, 675, 581"   target="_self"  title="It contains data to the Other Vehicle relating to the current status of the host Vehicle and its Driver."> 
+    </AREA> 
+    <AREA href="c2631dde4c2a2a29.htm" shape="rect" coords="447, 612, 675, 626"   target="_self"  title="It contains details of the goods being carried by the Host Vehicle that is to be sent to the Other Vehicle."> 
+    </AREA> 
+    <AREA href="c26314dc4c2a1c2e.htm" shape="rect" coords="487, 787, 675, 801"   target="_self"  title="It contains an indication that the Host Vehicle is about to run a red light that is to be sent to the Other Vehicle."> 
+    </AREA> 
+    <AREA href="c26312f84c2a1a71.htm" shape="rect" coords="806, 840, 971, 854"   target="_self"  title="It contains a warning to the Other Vehicle from the Host Vehicle that it is about to run through a set of traffic signals that will be seen as red by its Driver, i.e. red light running.&nbsp;&nbsp;The warning will include the identity of the Host Vehicle so that the Other Vehicle can determine which Vehicle is red light running if there are several Vehicles that are approaching the same traffic signals."> 
+    </AREA> 
+    <AREA href="c2630f9c4c2a192f.htm" shape="rect" coords="515, 921, 675, 936"   target="_self"  title="It contains a warning from the Other Vehicle to indicate to the Host Vehicle that the Other Vehicle is about to run through a set of traffic signals that are set to red, i.e. red light running.&nbsp;&nbsp;The warning will include the identity of the Other Vehicle so that the Host Vehicle can determine which Vehicle is red light running if there are several Vehicles that are approaching the same traffic signals."> 
+    </AREA> 
+    <AREA href="bb04bea04c2404af.htm" shape="rect" coords="295, 372, 481, 386"   target="_self"  title="It contains data provided by In-vehicle Systems of the Host Vehicle that is used to calculate the forward trajectory of the Vehicle.&nbsp;&nbsp;It therefore includes such items as the status of the power unit, driver train, front wheels, steering wheel, turn indicator and brakes, plus the Host Vehicle identity."> 
+    </AREA> 
+    <AREA href="350036884c1a04a2.htm" shape="rect" coords="806, 989, 942, 1003"   target="_self"  title="It contains data (including the Vehicle identity) about the road surface state in the local geographic area around the Host Vehicle that is being sent to the Other Vehicle."> 
+    </AREA> 
+    <AREA href="3500367b4c1a0495.htm" shape="rect" coords="543, 1057, 675, 1071"   target="_self"  title="It contains data about the road surface state in the local geographic area of the Other Vehicle (including the Vehicle identity) that is for the use by the Host Vehicle."> 
+    </AREA> 
+    <AREA href="510e63b84c0f0640.htm" shape="rect" coords="804, 744, 1070, 758"   target="_self"  title="It contains data about the road surface state in the local geographic area of the Other Vehicle that has been sent for use by the Host Vehicle."> 
+    </AREA> 
+    <AREA href="510e62ae4c0f0603.htm" shape="rect" coords="416, 665, 675, 680"   target="_self"  title="It contains data about the road surface state in the local geographic area of the Host Vehicle that is to be sent to Other Vehicle for its use."> 
+    </AREA> 
+    <AREA href="f363f5c54bdf0196.htm" shape="rect" coords="14, 257, 163, 271"   target="_self"  title="It contains data about the length of time that the Driver of the Vehicle will see a red (stop) signal at a junction and shall enable the Vehicle System to decide whether or not it wants to shut down the Vehicle&#39;s engine for this period of time."> 
+    </AREA> 
+    <AREA href="ca6cd0bc4bda021f.htm" shape="rect" coords="70, 105, 183, 133"   target="_self"  title="It contains data on the Infrastructure Support Status to allow the system responsible for interactions of automatic controls with the driver to warn and/or to release control (e.g. due to infrastructure failure)."> 
+    </AREA> 
+    <AREA href="ca6ccb9f4bda0194.htm" shape="rect" coords="151, 0, 231, 57"   target="_self"  title="This Function shall be capable of providing the following facilities:"> 
+    </AREA> 
+    <AREA href="342e53154bd00486.htm" shape="rect" coords="294, 216, 582, 230"   target="_self"  title="It contains data about the Vehicle that is carrying Hazardous Goods that is for use in the request from its Driver for a route."> 
+    </AREA> 
+    <AREA href="2344734f4bcc199c.htm" shape="rect" coords="295, 198, 534, 212"   target="_self"  title="It contains details of the Vehicle identity, type and other characteristics that are for use in managing the access of the Vehicle to &quot;sensitive areas&quot; within the road network."> 
+    </AREA> 
+    <AREA href="4de0a0cf4ba72d95.htm" shape="rect" coords="295, 389, 495, 404"   target="_self"  title="It contains data about the Host Vehicle from its Vehicle Systems.&nbsp;&nbsp;This data may include such things as Vehicle type, identity, size, weight, towing a trailer, fuel range, condition and capabilities, plus if appropriate, type of cargo and carrying capacity, data about hazardous cargo."> 
+    </AREA> 
+    <AREA href="f7bf4f4f4ba21cd9.htm" shape="rect" coords="806, 1045, 928, 1059"   target="_self"  title="It contains information about the safety behaviour of the Host Vehicle (e.g. excessive lane changing or speed, or less than the minimum suggested headway) that is being sent to the Other Vehicle.&nbsp;&nbsp;The identity of the Host Vehicle will be included in the information so that the Other Vehicle knows from which Vehicle it was sent."> 
+    </AREA> 
+    <AREA href="f7bf4e554ba21ca5.htm" shape="rect" coords="559, 1107, 675, 1121"   target="_self"  title="It contains information about the safety behaviour of the Other Vehicle (e.g. excessive lane changing or speed, or less than the minimum suggested headway) that is being sent to the Host Vehicle.&nbsp;&nbsp;The identity of the Other Vehicle will be included in the information so that the Host Vehicle knows from which Vehicle it was sent."> 
+    </AREA> 
+    <AREA href="f7bf4c674ba21c5c.htm" shape="rect" coords="411, 649, 675, 663"   target="_self"  title="It contains an indication that the Vehicle is being driven in an unsafe manner, i.e. exhibiting poor safety behaviour, and is to be sent to the Other Vehicle."> 
+    </AREA> 
+    <AREA href="f7bf455d4ba21a52.htm" shape="rect" coords="806, 800, 987, 814"   target="_self"  title="It contains data from the Host Vehicle (including its identity) to indicate to the Other Vehicle that the Host Vehicle is performing an emergency brake manoeuvre."> 
+    </AREA> 
+    <AREA href="f7bf40464ba21979.htm" shape="rect" coords="492, 884, 675, 898"   target="_self"  title="It contains data from the Other Vehicle (including its identity) to indicate to the Host Vehicle that the Other Vehicle is performing an emergency brake manoeuvre."> 
+    </AREA> 
+    <AREA href="b13fcdb34b9708a2.htm" shape="rect" coords="806, 545, 964, 560"   target="_self"  title="It contains Extended Floating Car Data (XFCD) that has been received from the Other Vehicle for collation and fusing with similar data from this Vehicle."> 
+    </AREA> 
+    <AREA href="b13fca534b9707f5.htm" shape="rect" coords="525, 823, 675, 837"   target="_self"  title="It contains Extended Floating Car Data (XFCD) that is to be sent to the Other Vehicle for collation and fusing with other similar data."> 
+    </AREA> 
+    <AREA href="84b8b2a54b8b0d0a.htm" shape="rect" coords="805, 1027, 929, 1041"   target="_self"  title="It contains information about the road geometry and layout collected by the Host Vehicle that is being sent to the Other Vehicle.&nbsp;&nbsp;The identity of the Host Vehicle will be included in the information so that the Other Vehicle knows from which Vehicle it was sent."> 
+    </AREA> 
+    <AREA href="84b8b1d14b8b0cd7.htm" shape="rect" coords="555, 1092, 675, 1106"   target="_self"  title="It contains information about the road geometry and layout that has been sent from the Other Vehicle to the Host Vehicle.&nbsp;&nbsp;The identity of the Other Vehicle will be included in the information so that the Host Vehicle knows from which Vehicle it was sent."> 
+    </AREA> 
+    <AREA href="84b8afaa4b8b0c8f.htm" shape="rect" coords="461, 770, 675, 784"   target="_self"  title="It contains information about the road geometry, layout and speed limits that is to be provided to the Other Vehicle for display to its Drivers if it considers the information to be relevant."> 
+    </AREA> 
+    <AREA href="84b8ad844b8b0c40.htm" shape="rect" coords="805, 613, 1024, 628"   target="_self"  title="It contains information about the road geometry, layout and speed limits that has been provided by the Other Vehicle for display to the Driver if considered relevant."> 
+    </AREA> 
+    <AREA href="cc3ddaec4b870e21.htm" shape="rect" coords="294, 181, 512, 196"   target="_self"  title="It contains data about a vehicle whose presence in the road network will create an incident, e.g. road/winter maintenance vehicles, long/wide loads and vehicles that need to report themselves as travelling the wrong way through the road network.&nbsp;&nbsp;This data will be used to create an &quot;incident&quot; that will be reported to the driver."> 
+    </AREA> 
+    <AREA href="a17dc32c4b830422.htm" shape="rect" coords="806, 915, 948, 929"   target="_self"  title="It contains commands for the Other Vehicle concerning lane use that the Host Vehicle has received that may be relevant to the Other Vehicle.&nbsp;&nbsp;The identity of the Host Vehicle will be included in the data so that the Other Vehicle knows from which Vehicle in the lane use commands were sent."> 
+    </AREA> 
+    <AREA href="a17dc1ba4b8303e6.htm" shape="rect" coords="543, 1024, 675, 1039"   target="_self"  title="It contains information from the Other Vehicle concerning lane use commands it has received that may be of relevance to the Host Vehicle.&nbsp;&nbsp;The identity of the Other Vehicle will be included in the commands so that the Host Vehicle knows from which Vehicle they were sent."> 
+    </AREA> 
+    <AREA href="7ca488c44b82054c.htm" shape="rect" coords="63, 806, 175, 849"   target="_self"  title="It contains an instruction that is to be passed on the Vehicle Systems for the stolen Vehicle to be stopped by being disabled."> 
+    </AREA> 
+    <AREA href="7ca483bc4b8201af.htm" shape="rect" coords="51, 444, 151, 472"   target="_self"  title="It contains an instruction to be passed on to the Vehicle System to disable the Vehicle, i.e. prevent it from being driven from its current location."> 
+    </AREA> 
+    <AREA href="480b62054b60087e.htm" shape="rect" coords="29, 224, 165, 252"   target="_self"  title="It contains the current suggested speed and headway values for the ISA functionality in the Vehicle system."> 
+    </AREA> 
+    <AREA href="ced61b824b5f0f58.htm" shape="rect" coords="295, 324, 421, 338"   target="_self"  title="It contains input from the In-vehicle system that provides data for the determination of a dead reckoning position for use when other position determining mechanisms are unavailable and/or the enhancement of positional accuracy."> 
+    </AREA> 
+    <AREA href="8914dc8841737bef.htm" shape="rect" coords="806, 878, 958, 893"   target="_self"  title="It contains data from the Host Vehicle (including its identity) indicating it is about to change lanes that is to be sent to the Other Vehicle."> 
+    </AREA> 
+    <AREA href="8914d8fd41737ab1.htm" shape="rect" coords="12, 39, 128, 57"   target="_self"  title="It contains information from the road infrastructure for use in any automatic guidance applications."> 
+    </AREA> 
+    <AREA href="f89722783982764a.htm" shape="rect" coords="0, 3, 129, 31"   target="_self"  title="It contains data that will provide guidance about the level of integrity that can be attached to the information that is available from the infrastructure to support for Vehicle guidance."> 
+    </AREA> 
+    <AREA href="f8971ea3398265ef.htm" shape="rect" coords="293, 782, 400, 825"   target="_self"  title="It contains the actual notification message from a vehicle which is currently in &quot;stolen&quot; status."> 
+    </AREA> 
+    <AREA href="8914d3a941737a07.htm" shape="rect" coords="55, 768, 175, 796"   target="_self"  title="It contains data on the current vehicle position derived from one or more means."> 
+    </AREA> 
+    <AREA href="dbf5110f417503b7.htm" shape="rect" coords="26, 999, 179, 1013"   target="_self"  title="It is used to ask for the identification of the vehicle without driver&#39;s involvement."> 
+    </AREA> 
+    <AREA href="f8971ea339826643.htm" shape="rect" coords="21, 973, 178, 994"   target="_self"  title="  It is used to ask the &quot;Provide Advanced Driving Facilities&quot; functions to send the identification of the vehicle without the driver&#39;s involvement."> 
+    </AREA> 
+    <AREA href="8914d394417379d5.htm" shape="rect" coords="188, 872, 282, 900"   target="_self"  title="It contains the vehicle ID."> 
+    </AREA> 
+    <AREA href="8914d398417379df.htm" shape="rect" coords="286, 950, 422, 969"   target="_self"  title="It contains the vehicle ID."> 
+    </AREA> 
+    <AREA href="d4d2e699406b1563.htm" shape="rect" coords="289, 991, 425, 1010"   target="_self"  title="&nbsp;&nbsp;It contains the ID of the vehicle, sent by the on-board electronics."> 
+    </AREA> 
+    <AREA href="f8971ea3398265d7.htm" shape="rect" coords="288, 969, 424, 988"   target="_self"  title="It contains the vehicle identification, sent by the electronic systems on-board the vehicle."> 
+    </AREA> 
+    <AREA href="8914dcc041737c13.htm" shape="rect" coords="806, 1080, 902, 1095"   target="_self"  title="It contains data concerning the status of the Host Vehicle (e.g. wipers active) and its Driver, as well as data about the road infrastructure where it is located and the Vehicle identity that is being sent to the Other Vehicle."> 
+    </AREA> 
+    <AREA href="8914dcaf41737c07.htm" shape="rect" coords="806, 1097, 899, 1112"   target="_self"  title="It contains traffic regulations that are available to the Host Vehicle that may be relevant to the Other Vehicle.&nbsp;&nbsp;The identity of the Host Vehicle will be included with the regulations so that the Other Vehicle knows from which Vehicle they were sent."> 
+    </AREA> 
+    <AREA href="8914dc9e41737bfb.htm" shape="rect" coords="806, 897, 950, 912"   target="_self"  title="It contains the data concerned with performing platooning with one or more Vehicles that needs to be sent from the Host Vehicle to the Other Vehicle.&nbsp;&nbsp;The identity of the Host Vehicle will be included in the data so that the Other Vehicle knows from which Vehicle in the platoon the data was sent."> 
+    </AREA> 
+    <AREA href="8914dc6141737bd7.htm" shape="rect" coords="806, 858, 960, 873"   target="_self"  title="It contains a request to be sent to the Other Vehicle that is approaching the Host Vehicle to indicate that the beams from its headlights are too high and should be dipped.&nbsp;&nbsp;The request will include the identity of the Host Vehicle so that the Other Vehicle can determine which Vehicle is suffering from glare from its headlights."> 
+    </AREA> 
+    <AREA href="8914dc7441737be3.htm" shape="rect" coords="806, 1008, 926, 1022"   target="_self"  title="It contains data to be sent to the Other Vehicle to indicate that the possibility of a collision with it has been detected the Host Vehicle, the identity of which is included in the data."> 
+    </AREA> 
+    <AREA href="dbf51392417503ff.htm" shape="rect" coords="296, 356, 447, 370"   target="_self"  title="It contains data relating to the current status of the Vehicle, and its environment, such as speed, plus use of Vehicle equipment such as windscreen wipers, fog lamps, lights, turn indicators and any failure indications, plus outside temperature."> 
+    </AREA> 
+    <AREA href="8914db8841737b77.htm" shape="rect" coords="582, 1141, 675, 1156"   target="_self"  title="It contains data from the Other Vehicle concerning the status of that Vehicle (e.g. wipers active) and its Driver, as well as data about the road infrastructure at its current location and the Vehicle identity that may be of interest to the Host Vehicle."> 
+    </AREA> 
+    <AREA href="8914db7041737b6b.htm" shape="rect" coords="582, 1158, 675, 1172"   target="_self"  title="It contains traffic regulations that are available to the Other Vehicle that may be relevant to the Host Vehicle.&nbsp;&nbsp;The identity of the Other Vehicle will be included in the regulations so that the Host Vehicle knows from which Vehicle they were sent."> 
+    </AREA> 
+    <AREA href="8914db5941737b5f.htm" shape="rect" coords="535, 990, 675, 1004"   target="_self"  title="It contains data concerned with performing platooning with one or more Vehicles that has been sent from the Other Vehicle to the Host Vehicle.&nbsp;&nbsp;The identity of the Other Vehicle will be included in the data so that the Host Vehicle knows from which Vehicle in the platoon the data was sent."> 
+    </AREA> 
+    <AREA href="8914db1641737b3b.htm" shape="rect" coords="526, 956, 675, 970"   target="_self"  title="It contains a request from the Other Vehicle that the beam from the headlights of the Host Vehicle which is approaching it should be lowered because they are too high and causing glare.&nbsp;&nbsp;The request will include the identity of the Other Vehicle so that the Host Vehicle can determine which Vehicle is suffering from glare from its headlights."> 
+    </AREA> 
+    <AREA href="8914db4141737b53.htm" shape="rect" coords="529, 973, 675, 987"   target="_self"  title="It contains information from the Other Vehicle (including its identity) to indicate to the Host Vehicle that the Other Vehicle is about to change lanes."> 
+    </AREA> 
+    <AREA href="8914db2941737b47.htm" shape="rect" coords="558, 1074, 675, 1088"   target="_self"  title="It contains data from the Other Vehicle (including its identity) to indicate that the possibility of a collision with the Host Vehicle has been detected."> 
+    </AREA> 
+    <AREA href="8914d38f417379cb.htm" shape="rect" coords="90, 954, 178, 968"   target="_self"  title="It contains the ID of the vehicle."> 
+    </AREA> 
+    <AREA href="8914d38b417379c1.htm" shape="rect" coords="295, 290, 407, 304"   target="_self"  title="It contains data on the current status of selected Vehicle parameters for storage in case they need to be read by an authorised authority."> 
+    </AREA> 
+    <AREA href="dbf50f0a41750371.htm" shape="rect" coords="296, 147, 399, 161"   target="_self"  title="It contains the data from functions in the Framework Architecture that are needed by various in-vehicle systems (e.g. ISA, and Lane Keeping)."> 
+    </AREA> 
+    <AREA href="dbf50aff41750140.htm" shape="rect" coords="499, 546, 675, 560"   target="_self"  title="It contains direct warnings to the Other Vehicle, in particular collision warning, lane-change warning, emergency brake application and a request to dip the headlights."> 
+    </AREA> 
+    <AREA href="dbf50b614175014b.htm" shape="rect" coords="471, 588, 675, 604"   target="_self"  title="It contains data to other vehicles needed to maintain a &#8220;platoon&#8221;."> 
+    </AREA> 
+    <AREA href="8914d2db41737922.htm" shape="rect" coords="180, 686, 278, 701"   target="_self"  title="It contains data that indicates that the vehicle is being used without having passed the correct checks."> 
+    </AREA> 
+    <AREA href="8914d1e5417378d5.htm" shape="rect" coords="295, 269, 487, 283"   target="_self"  title="It contains the current time from the vehicle."> 
+    </AREA> 
+    <AREA href="8914d1dd417378cb.htm" shape="rect" coords="295, 250, 527, 264"   target="_self"  title="It contains the current time from the vehicle."> 
+    </AREA> 
+    <AREA href="8914d1cd417378c1.htm" shape="rect" coords="295, 340, 433, 355"   target="_self"  title="It contains the notification that sensors have detected that the Host Vehicle has probably just been involved in an accident.&nbsp;&nbsp;This does not need to involve other Vehicle(s)."> 
+    </AREA> 
+    <AREA href="46de4b2639bf0239.htm" shape="rect" coords="294, 164, 432, 178"   target="_self"  title="It contains all vehicle information that can be useful for FFM on-board use."> 
+    </AREA> 
+    <AREA href="dbf50e294175033a.htm" shape="rect" coords="297, 448, 499, 470"   target="_self"  title="It contains direct warnings from the Other Vehicle, in particular collision warning, lane-change warning and a request to dip the headlights."> 
+    </AREA> 
+    <AREA href="dbf50e5b41750350.htm" shape="rect" coords="296, 477, 499, 491"   target="_self"  title="It contains data from the Other Vehicle relating to the current status of that Vehicle and its Driver."> 
+    </AREA> 
+    <AREA href="dbf50e4141750345.htm" shape="rect" coords="295, 428, 521, 442"   target="_self"  title="It contains data from the Other Vehicle that is needed to maintain a &#8220;platoon&#8221; of Vehicles."> 
+    </AREA> 
+    <AREA href="dbf509d441750118.htm" shape="rect" coords="41, 203, 166, 217"   target="_self"  title="It contains the data to indicate that a mayday call has been initiated so that the vehicle systems can perform an appropriate action if necessary."> 
+    </AREA> 
+    <AREA href="8914d2d441737918.htm" shape="rect" coords="182, 93, 270, 122"   target="_self"  title="It contains data, provided by the Infrastructure Support System, useful for any automatic guidance applications."> 
+    </AREA> 
+    <AREA href="f8971c5c3982476d.htm" shape="rect" coords="35, 184, 165, 199"   target="_self"  title="It contains data to indicate that the driver is impaired, e.g. for the vehicle system to take over control of vehicle automatically."> 
+    </AREA> 
+    <AREA href="8914dba441737b83.htm" shape="rect" coords="71, 165, 164, 180"   target="_self"  title="It contains the data that is being provided by the In-vehicle Systems to the System for use by its functionality.&nbsp;&nbsp;As a minimum, this data shall include such things as the status of the power unit, drive train, safety systems (air bags, seat belt tensioners, etc.), brakes (including ABS operation), lights (to indicate darkness), windscreen wipers (to indicate precipitation), turn indicators (if operating in which direction) and steering wheel (direction in which they are pointing relative to the Vehicle), plus weather data such as temperature, presence of a load (heavy goods vehicles only), towing a trailer, and static data such as Vehicle size and weight."> 
+    </AREA> 
+    <AREA href="c9c6d9e341740619.htm" shape="rect" coords="197, 765, 269, 849"   target="_self"  title="This Function shall be capable of providing the following facilities:"> 
+    </AREA> 
+    <AREA href="c9c6d9db4174060b.htm" shape="rect" coords="199, 948, 271, 1015"   target="_self"  title="This Function shall be capable of providing the following facilities:"> 
+    </AREA> 
+    <AREA href="c9c6d9c9417405e1.htm" shape="rect" coords="184, 141, 271, 499"   target="_self"  title="This Function shall be capable of providing the following facilities:"> 
+    </AREA> 
+    <AREA href="c9c6d9c3417405d3.htm" shape="rect" coords="696, 535, 787, 1174"   target="_self"  title="This Function shall be capable of providing the following facilities:"> 
+    </AREA> 
+  </MAP> 
+  <IMG CLASS="Content" SRC="../images/c9c6d8034174051b_i.png" USEMAP="#6BC875EB417702F1" BORDER=0> 
+  </IMG> </center>
+</div> 
+      </div>
+
+ <div id="ContentTab" class="ContentTab">
+
+<h3>Overview</H3>
+<H5>This High-level Function shall provide the communications interfaces between the Host Vehicle&#8217;s systems, and between the Host Vehicle and Other Vehicles, in order to support (but not to provide) advanced Driver assistance systems.&nbsp;&nbsp;It shall provide functionality to enable &#8220;copies&#8221; of the current traffic signals to be displayed to the Host Vehicle Driver, the Host Vehicle identity (ID) to other functions, and shall inform the relevant authorities when the Host Vehicle is being used illegally.</H5>
+<h3>Diagrams</H3> 
+<table border="1" width="100%">
+<tr>
+<td><h5>
+The Diagram(s) is(are) the Diagram(s) where you can find the function
+</td>
+</tr>
+<tr>
+<td width="50%">
+<ul>
+<li>The first diagram, if exists, is a DFD diagram which provides the context of the function</li>
+<li>The second Diagram, if exists, is a Functional Tree which provides a hierarchical description of the function into subfunctions</li>
+</ul>
+</h5>
+</td>
+<td width="100%">
+<h5>
+
+
+
+<li>DFD 5  Provide Advanced Driver Assistance Systems</li></a>
+<h5>
+
+<a href="F897F8D63981002B.HTM?DiagTab=1" Target="_self">
+
+
+<li>Functional Tree of Area 5</li></a></h5>
+</td>
+</tr>
+</table>
+<h3>Parent</H3>
+<ul><h5></ul>
+<ul><li>
+  <A CLASS="Content" HREF="f897f8d63981002b.htm" target="_self"> 5. Provide Support for Host Vehicle Services</A> </h5></ul>
+<h3>Component lower level functions</H3>
+<ul><h5><li>
+  <A CLASS="Content" HREF="c9c6d9c3417405d3.htm" target="_self"> 5.12.10 Provide V2V Communications</A> <li>
+  <A CLASS="Content" HREF="ca6ccb9f4bda0194.htm" target="_self"> 5.12.12 Collect Road Network Information</A> <li>
+  <A CLASS="Content" HREF="c9c6d9db4174060b.htm" target="_self"> 5.12.5 Provide Vehicle ID</A> <li>
+  <A CLASS="Content" HREF="c9c6d9e341740619.htm" target="_self"> 5.12.6 Detect Illegal Use</A> <li>
+  <A CLASS="Content" HREF="c9c6d9c9417405e1.htm" target="_self"> 5.12.7 Communicate with In-vehicle Systems</A> </h5></ul>
+<H5></H5>
+<h3>Input logical dataflows</H3>
+<ul><h5>
+
+<li>
+  <A CLASS="Content" HREF="f89722783982764a.htm" target="_self"> fmo.rmo-infrastructure_diagnostics </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="8914d8fd41737ab1.htm" target="_self"> frp-guidance_data </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="8914daf441737b2f.htm" target="_self"> fv.ov-input_data </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="8914dba441737b83.htm" target="_self"> fv.vs-input_data </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="60f494e34ba31d86.htm" target="_self"> mt.pshvs_road_condition_warnings </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f8971ea339826643.htm" target="_self"> pepf.pshvs_vehicle_ID_request </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="86eb94ce4bcd0563.htm" target="_self"> pscs.pshvs_driver_report_from_sensitive_area </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="2f524d604c3406de.htm" target="_self"> pshvs_data_from_host_vehicle_for_other_vehicle </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="84b8aaea4b8b0bfb.htm" target="_self"> pshvs_driver_impaired_and_mayday_information </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="a17dbfa44b830392.htm" target="_self"> pshvs_instructions_&amp;_warnings_for_other_vehicles </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="d133fed34c461d43.htm" target="_self"> pshvs_location_for_other_vehicle </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="84b8a7514b8b0b68.htm" target="_self"> pshvs_vehicle_and_road_information </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="dbf5110f417503b7.htm" target="_self"> psle.pshvs_vehicle_ID_request </A> 
+
+</h5></ul>
+<h3>Output logical dataflows</H3>
+<ul><h5>
+
+<li>
+  <A CLASS="Content" HREF="46de4b2639bf0239.htm" target="_self"> pshvs.mffo_vehicle_data </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="cc3ddaec4b870e21.htm" target="_self"> pshvs.mt_data_for_vehicles_as_incidents </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="47485aac4c2c07b8.htm" target="_self"> pshvs.mt_other_vehicle_lane_departure_warning </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f8971ea3398265d7.htm" target="_self"> pshvs.pepf_vehicle_ID </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="342e53154bd00486.htm" target="_self"> pshvs.pscs_hazarduous_goods_vehicle_data_for_route </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="2344734f4bcc199c.htm" target="_self"> pshvs.pscs_vehicle_data_for_sensitive_areas </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f8971ea3398265ef.htm" target="_self"> pshvs.psef_stolen_vehicle_notification </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="d4d2e699406b1563.htm" target="_self"> pshvs.psle_vehicle_ID </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="2f524f664c340740.htm" target="_self"> pshvs_data_from_other_vehicle_for_host_vehicle </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="8914d30441737947.htm" target="_self"> pshvs_instructions_&amp;_warnings_from_other_vehicles </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="d133ff8a4c461d7e.htm" target="_self"> pshvs_location_from_other_vehicle </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="474878cd4c2c1872.htm" target="_self"> pshvs_vehicle_data_for_determining_speed_&amp;_headway </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="84b8a96d4b8b0bb6.htm" target="_self"> pshvs_vehicle_data_for_driver_monitoring </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="bb04bea04c2404af.htm" target="_self"> pshvs_vehicle_data_for_trajectory </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="4de0a0cf4ba72d95.htm" target="_self"> pshvs_vehicle_data_for_trip_planning </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f1e0faa74c3209e7.htm" target="_self"> pshvs_vehicle_speed </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="189736164176b302.htm" target="_self"> tv.ov-output_data </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="dbf50f0a41750371.htm" target="_self"> tv.vs-output_data </A> 
+
+</h5></ul> 
+
+<ul><h5></h5></ul>
+
+<ul><h5></h5></ul>
+<h3>User needs</H3>
+<div align="right">
+<table border="1" width="100%">
+<tr>
+<td width="10%"><center><h4>Number</h4></center></td>
+<td width="90%"><h4>Description</h4></td>
+</tr>
+
+</table>
+</div>
+
+</div><script language="javascript" src="../standard/ws_tabtemplate.js"></script>
+<script language="javascript" src="../standard/ws_zoomtemplate.js"></script>
+<script language="javascript" src="../standard/ws_buttontemplate.js"></script>
+<script language="javascript" src="../standard/ws_keyshortcuttemplate.js"></script>
+            <!--<img src="../standard/busf.gif"/>-->
+
+</BODY> </HTML>

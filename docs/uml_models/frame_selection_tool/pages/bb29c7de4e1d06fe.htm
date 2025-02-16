@@ -1,0 +1,19 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 9.5.7 Provide Un/loading Zone Fleet Operator Interface
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>9.5.7 Provide Un/loading Zone Fleet Operator Interface</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) A HMI that enables information to be provided to the Fleet Operator.<br>(2) The ability to receive information about un/loading zone bookings made by Heavy Goods Vehicle Drivers.<br>(3) The ability to filter the information received to remove that which is not related to Heavy Goods Vehicles the identities of which have not been specified by the Fleet Operator.<br>(4) The ability to use the HMI to output information about un/loading zone bookings that have been made by the Drivers of Heavy Goods Vehicles specified by the Fleet Operator.</div></H5><h3>Functional Requirements</H3><h5>(a) continuously monitor for receipt of the un/loading zone booking for fleet manager and the hgv identity for un/loading zone booking data flows<br/>(b) when the second data flow in (a) is received, store its contents internally as the list of identities of heavy goods vehicles for which the fleet operator wants to receive information about their un/loading zone bookings<br/>(c) when the first data flow is received in (a), check the contents and filter out those which relate to un/loading zone bookings for heavy goods vehicles whose identities have  not been provided by the fleet operator<br/>(d) as a result of (c) output the remaining un/loading zone bookings for heavy goods vehicles to the fleet operator in the un/loading zone booking details data flow</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="43CE91B64BD50C23.HTM?DiagTab=1" Target="_self">DFD 9.5 Manage Use of Loading or Unloading Zones</a><h5><li> <a href="2ED039D74B4B048B.HTM?DiagTab=0" Target="_self">Functional Tree of Area 9</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="43ce91b64bd50c23.htm" target="_self"> 9.5 Manage Urban Loading Zones</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="bb29ca604e1d0752.htm" target="_self"> fo.flo-hgv_identity_for_un/loading_zone_booking </A> <li>
+  <A CLASS="Content" HREF="bb29c7214e1d06f0.htm" target="_self"> pscs_un/loading_zone_booking_for_fleet_manager </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="bb29caba4e1d076a.htm" target="_self"> to.flo-un/loading_zone_booking_details </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="9e9dc5144bd119c5.htm" target="_self"> 9.5.8.2</A> </a></center></h5></td><td width="90%"><h5>The system shall enable an un/loading zone parking allocation to be made based on the request that has been received, or to state that one is not available and/or propose an alternative booking, and to send the details to the freight vehicle driver and the fleet operator.</h5></td></tr></table></div>
+</BODY> </HTML>

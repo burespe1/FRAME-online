@@ -1,0 +1,22 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 4.4.3 Control Vehicle Driving
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>4.4.3 Control Vehicle Driving</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to convert the actions defined by the control strategies into commands to be acted upon directly by the controlled PT Vehicles or their Drivers.<br>(2) The ability to control automatically driven PT Vehicles, if applicable and available, <br></div></H5><h3>Functional Requirements</H3><h5>(a) continuously monitor for the arrival of control strategy to be implemented in the control strategy data flow<br/>(b) transforms the strategy in a co-ordinated set of commands to PT vehicles and/or PT drivers and output them using the relevant data flows<br/>(d) continuously monitor for the arrival of feedback through the control feedback data flows<br/>(e) when the data flows in (d) arrive, send the data that they contain to the Optimise PT Fleet Control function in the data flow containing PT vehicle data.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FEA239810442.HTM?DiagTab=1" Target="_self">DFD 4.4  Control PT Fleet</a><h5><li> <a href="F897F8CF39810025.HTM?DiagTab=0" Target="_self">Functional Tree of Area 4</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897fea239810442.htm" target="_self"> 4.4 Control PT Fleet</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f89722773982751e.htm" target="_self"> fd.ptd-control_feedbk </A> <li>
+  <A CLASS="Content" HREF="f897227a398278ba.htm" target="_self"> fv.ptv-control_feedbk </A> <li>
+  <A CLASS="Content" HREF="f8971c5739824203.htm" target="_self"> mpto_control_strategy </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f8971c58398242ab.htm" target="_self"> mpto_PT_vehicle_data </A> <li>
+  <A CLASS="Content" HREF="f897227b398279f8.htm" target="_self"> td.ptd-commands </A> <li>
+  <A CLASS="Content" HREF="f897227d39827d10.htm" target="_self"> tv.ptv-commands </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14427e39be5cbf.htm" target="_self"> 10.1.0.1</A> </a></center></h5></td><td width="90%"><h5>The system shall provide effective and attractive PT.</h5></td></tr></table></div>
+</BODY> </HTML>

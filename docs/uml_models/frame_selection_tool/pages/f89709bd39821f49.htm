@@ -1,0 +1,25 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 2.1.5 Provide Access and Maintain Data for Emergency
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>2.1.5 Provide Access and Maintain Data for Emergency</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The maintenance of a Data Store containing data that is used during the processing of an incident or an emergency.<br>(2) The ability to send requests for updates (refresh) of the route previously provided for an Emergency Vehicle based on new data, or input from the Emergency Operator received from the Operator Interface Function.<br>(3) The provision of data to the Emergency Operator following a specific request made through the Operator Interface Function.<br>(4) The ability to receive data about an incident or emergency from the Emergency Services.<br>(5) The ability to receive updated map data for use in the response to the incident or emergency.<br>(6) The provision of common data for use in creating emergency intervention plans and classifying emergencies that has been.<br></div></H5><h3>Functional Requirements</H3><h5>(a) load /read data in response to request for emergency progressing<br/>(b) prepare emergency route to main districts of the controlled area and upgrade them when needed<br/>(c) upgrade road network map when necessary.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FEA2398103E8.HTM?DiagTab=1" Target="_self">DFD 2.1 Manage Emergencies</a><h5><li> <a href="F897F8BD39810019.HTM?DiagTab=0" Target="_self">Functional Tree of Area 2</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897fea2398103e8.htm" target="_self"> 2.1 Manage Emergencies</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897227839827578.htm" target="_self"> fes-emergency_services_information </A> <li>
+  <A CLASS="Content" HREF="f89722783982759c.htm" target="_self"> fesp.g-map_update </A> <li>
+  <A CLASS="Content" HREF="f8971c5e39824a0d.htm" target="_self"> psef_maintain_emergency_data_operator_request </A> <li>
+  <A CLASS="Content" HREF="f8971c5e39824a19.htm" target="_self"> psef_read_common_emergency_data </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="d4d2198d406c3ea1.htm" target="_self"> psef.ptja_route_refresh_request </A> <li>
+  <A CLASS="Content" HREF="f8971c5d398249c5.htm" target="_self"> psef_common_data_for_emergency_classification </A> <li>
+  <A CLASS="Content" HREF="d4d20883406c3015.htm" target="_self"> psef_common_data_for_emergency_intervention_plans </A> <li>
+  <A CLASS="Content" HREF="f8971c5e39824a01.htm" target="_self"> psef_load_common_emergency_data </A> <li>
+  <A CLASS="Content" HREF="f8971c5e39824a13.htm" target="_self"> psef_maintain_emergency_data_response </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442af39be81a9.htm" target="_self"> 7.2.1.2</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to co-ordinate the emergency and rescue services once an incident has been detected, until all injured persons have reached a hospital.</h5></td></tr></table></div>
+</BODY> </HTML>

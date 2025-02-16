@@ -1,0 +1,27 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 3.3.8 Produce Demand Management Strategy
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>3.3.8 Produce Demand Management Strategy</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to produce new demand management strategies as a result of a request received from the functionality providing the HMI for the Transport Planner.<br>(2) The ability for the new demand management strategies that are produced to encourage a re-distribution of the use of travel modes away from the current highly used mode(s).<br>(3) The ability to use data about the current usage of different transport modes in the preparation of the new demand management strategies.<br>(4) The ability to assess the data about the current usage of different transport modes against &quot;rules&quot; for distribution provided by the Transport Planner through the functionality providing their HMI.<br>(5) The ability to send the resulting new demand management strategies to the functionality that manages the store of Demand Management Data.<br></div></H5><h3>Functional Requirements</H3><h5>(a) when the first trigger input data flow is received, the current mode use data shall be requested from the Manage Demand Management Data Store function, using the second trigger output data flow<br/>(b) when the response is received (via a second trigger input data flow) a new demand management strategy shall be produced according to the previously defined &quot;rules&quot;<br/>(c) when (b) is complete, the new demand management strategy shall be sent to the Manage Demand Management Data Store function(<br/>d) if included in the data flow received in (a), the strategy produced in (c) shall also be sent to the Demand Management Strategy Implementation function<br/>(e) if the second trigger input data flow is received, the internal data store shall be  updated with the data that it contains so that it can be used in future strategy development<br/>(f) the data provided in (d) may include &quot;rules&quot; for a re-distribution of the demand from travellers away from the current highly loaded mode(s).</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FEA23981041E.HTM?DiagTab=1" Target="_self">DFD 3.3  Manage Demand</a><h5><li> <a href="F897FEA23981041E.HTM?DiagTab=1" Target="_self">Functional tree 3.3</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897fea23981041e.htm" target="_self"> 3.3 Manage Demand</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="913493964b160218.htm" target="_self"> mt_create_new_demend_strategy </A> <li>
+  <A CLASS="Content" HREF="f8971c5a39824599.htm" target="_self"> mt_data_for_demand_strategy_development </A> <li>
+  <A CLASS="Content" HREF="f8971c5839824371.htm" target="_self"> mt_demand_management_operator_commands </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="913493fd4b160243.htm" target="_self"> mt_created_new_demand_strategy </A> <li>
+  <A CLASS="Content" HREF="f8971c5939824377.htm" target="_self"> mt_demand_management_operator_responses </A> <li>
+  <A CLASS="Content" HREF="f8971c5939824395.htm" target="_self"> mt_developed_demand_strategy </A> <li>
+  <A CLASS="Content" HREF="91349a414b16033c.htm" target="_self"> mt_new_demand_strategy_for_simulation </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428739be62c5.htm" target="_self"> 2.1.2.4</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to simulate a demand management strategy on the road network.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428739be62dd.htm" target="_self"> 2.1.2.5</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to simulate potential capacity reduction, e.g. due to road works.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428739be62f5.htm" target="_self"> 2.1.3.1</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to measure the effect of a strategy, and to modify it when necessary.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442b139be8353.htm" target="_self"> 7.3.0.4</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to simulate a demand management strategy on the road network.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442b139be836b.htm" target="_self"> 7.3.0.5</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to simulate potential capacity reduction, e.g. due to road works.</h5></td></tr></table></div>
+</BODY> </HTML>

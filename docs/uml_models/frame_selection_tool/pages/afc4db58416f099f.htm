@@ -1,0 +1,24 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 7.6 Store Violations Data
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>7.6 Store Violations Data</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to manage the store of Violations Data that contains all the fraud and violation notifications provided by functionality in the Provide Electronic Payment Facilities (1) and Manage Traffic (3) Functional Areas.<br>(2) As part of the management process, provide specified contents of the store to the Law Enforcement Agency (ies) terminator upon reception of a specific request.<br></div></H5><h3>Functional Requirements</H3><h5>(a) receive all fraud notifications and prosecution files in the second and third trigger input data flows<br/>(b) store the data received in (a) in the store of Violations Data, using the first other output data flow<br/>(c) receive fraud notification demands from the Law Enforcement Agency Terminator in the first trigger input data flow<br/>(d) extract the data from the store of Violations Data using the first other input data flow<br/>(e) put the data extracted in (d) into a prosecution file<br/>(f) send the file produced in (e) to the Law Enforcement Agency using the second trigger output data flow.<br/></H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897F8E239810037.HTM?DiagTab=0" Target="_self">DFD 7. Provide Support for Law Enforcement</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul></ul><ul><li>
+  <A CLASS="Content" HREF="f897f8e239810037.htm" target="_self"> 7. Provide Support for Law Enforcement</A> </ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897227839827608.htm" target="_self"> flea-psle_violation_data_request </A> <li>
+  <A CLASS="Content" HREF="f8971c5e39824a73.htm" target="_self"> psle_prosecution_file </A> <li>
+  <A CLASS="Content" HREF="f8971c5e39824a79.htm" target="_self"> psle_read_violations_store </A> <li>
+  <A CLASS="Content" HREF="d4d208f6406c3034.htm" target="_self"> psle_violation_notification_for_storage </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f8971c5e39824a4f.htm" target="_self"> psle_load_violations_store </A> <li>
+  <A CLASS="Content" HREF="f897227c39827aca.htm" target="_self"> tlea-psle_violation_notification </A> <li>
+  <A CLASS="Content" HREF="d70cf8f33c4b03dc.htm" target="_self"> tlea-psle_violation_prosecution_file </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428a39be6523.htm" target="_self"> 3.1.0.2</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to collect the evidence of a violation of the traffic laws and regulations in a manner suitable to justify the application of a legal punishment</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428a39be6595.htm" target="_self"> 3.1.0.5</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to communicate with Police Command and Control Systems.</h5></td></tr></table></div>
+</BODY> </HTML>

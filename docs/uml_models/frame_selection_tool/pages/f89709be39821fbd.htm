@@ -1,0 +1,32 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 3.1.5.2 Calculate Service Area Occupancy and Status
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>3.1.5.2 Calculate Service Area Occupancy and Status</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to translate service area occupancy levels into service area &quot;states&quot;.<br>(2) The ability for the translation to enable the information output functionality to show either spaces or &quot;state&quot; according to the type of equipment that is available.<br>(3) The ability for the occupancy levels to be provided by the service area occupancy monitoring functionality.<br></div></H5><h3>Functional Requirements</H3><h5>(a) when the trigger output data flow is received, the data it contains shall be translated into a service area occupancy and status<br/>(b) when (a) is completed, send all the data flows containing service area occupancy to other parts of the Manage Traffic Functional Area and to the Manage Public Transport Operations Functional Area and load the data into the store of Inter-urban Service Area Data using service area status and occupancy data flows<br/>(c) in addition to (b) send the service area occupancy information and status data flows to the Output Service Area Messages and Provide Operator Interface functions<br/>(d) if the request service area details data flow is received from the Manage Public Transport Operations Functional Area, collect the required data from the store of Inter-urban Service Area Data using the data flow for service area static data<br/>(e) if the override service area status message is received, repeat (b) and (c) with the new status being imposed by the operator.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="5C7563364B0101A5.HTM?DiagTab=1" Target="_self">DFD 3.1.5 Provide Management of Service Areas</a><h5><li> <a href="F897FEA2398103F4.HTM?DiagTab=1" Target="_self">Functional tree 3.1</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="5c7563364b0101a5.htm" target="_self"> 3.1.5 Provide Management of Service Areas</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="a1faa2fe4b27031f.htm" target="_self"> mpto.mt_request_service_area_details </A> <li>
+  <A CLASS="Content" HREF="5c7582a74b010955.htm" target="_self"> mt_override_service_area_status </A> <li>
+  <A CLASS="Content" HREF="5c7576db4b01076a.htm" target="_self"> mt_service_area_entrance_exit_vehicle_detection </A> <li>
+  <A CLASS="Content" HREF="5c758bab4b010c0e.htm" target="_self"> mt_service_area_static_data </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="5bc36e8c4b260b35.htm" target="_self"> mt.mpto_requested_service_area_details </A> <li>
+  <A CLASS="Content" HREF="5c7587874b010b40.htm" target="_self"> mt.ptja_service_area_occupancy </A> <li>
+  <A CLASS="Content" HREF="e827f9e54b6b0698.htm" target="_self"> mt_current_service_area_status_and_occupancy </A> <li>
+  <A CLASS="Content" HREF="f8971c5a398245b1.htm" target="_self"> mt_service_area_occupancies_for_demand_management </A> <li>
+  <A CLASS="Content" HREF="5c758d124b010c74.htm" target="_self"> mt_service_area_occupancy </A> <li>
+  <A CLASS="Content" HREF="f8971c5a398245a5.htm" target="_self"> mt_service_area_occupancy_for_store </A> <li>
+  <A CLASS="Content" HREF="5c75788e4b0107b1.htm" target="_self"> mt_service_area_occupancy_for_urban </A> <li>
+  <A CLASS="Content" HREF="f8971c5a398245b7.htm" target="_self"> mt_service_area_occupancy_information_for_output </A> <li>
+  <A CLASS="Content" HREF="5c758c534b010c49.htm" target="_self"> mt_service_area_status </A> <li>
+  <A CLASS="Content" HREF="5c757de54b010892.htm" target="_self"> mt_service_area_status_for_output </A> <li>
+  <A CLASS="Content" HREF="5c758a3b4b010bc8.htm" target="_self"> mt_service_area_status_for_store </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442a039be7513.htm" target="_self"> 7.1.0.11</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to manage traffic in all or part of the road network using a methodology that is appropriate for motorways, e.g. no junctions and pedestrian facilities, but with lane use management.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442a939be7c27.htm" target="_self"> 7.1.4.4</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to provide advice to drivers as they approach car parks (on-street and off-street, as well as motorway service area parking).</h5></td></tr></table></div>
+</BODY> </HTML>

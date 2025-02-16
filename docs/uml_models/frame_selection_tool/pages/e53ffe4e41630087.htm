@@ -1,0 +1,20 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > Database 6.4 PT Trip Planning Data
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Data Store<br>6.4 PT Trip Planning Data</h2></center><br><h3>Description of content</H3><H5><div class="Normal">This Data Store shall be used within the Provide Traveller Journey Assistance Area. It shall contain information about the services provided by the Public Transport operations plus the fares that will be charged and shall be for use in planning trips.<br><br>The data in the Store for each service shall be structured in the following way:<br> - ID (number)<br> - name (characters)<br> - route (data for a digital roadmap using a standard format, e.g. GDF plus characters and/or numbers, e.g. GPS/Galileo data<br> - type of PT Vehicle preferred (characters)<br> - type of PT Driver preferred (characters)<br> - type of day on which service operates (characters)<br>&nbsp;&nbsp;&nbsp;&nbsp;- timetable (time in hours and minutes)<br>&nbsp;&nbsp;&nbsp;&nbsp;- frequency (numbers defining hours and minutes)<br> - variations to the service (characters)<br></div>
+<div class="Normal" style='  text-align: justify;'>The data in the Store shall be structured in the following way:<br> &#8722; fare scheme ID (number)<br> &#8722; fare scheme name (characters)<br> &#8722; date when fare scheme expires (date string)<br> &#8722; time(s) of day when fare scheme operates (numbers defining hours and minutes)<br> &#8722; route ID(s) to which fare scheme applies (numbers)<br> - type(s) of PT Passenger to which fare scheme applies (characters)<br><br>For each type of PT Passenger, the following fare information shall be provided:<br> &#8722; range ID&#39;s of stop to which fare applies (numbers)<br> &#8722; numbers ID&#39;s of stops to which fare applies (numbers)</div>
+<div class="Normal"><br>The above data shall be provided by functionality in the Manage Public Transport Operations Area and shall be updated every time a change is made.</div></H5><h3>Diagrams</H3><h5>The Diagram(s) below is (are) the Diagram(s) where you can find the Datastore</h5><ul><h5><li>DFD 6.5.3 Trip Planning</li></a></ul></h5><h3>Input dataflows</H3><ul><h5><li>
+  <A CLASS="Content" HREF="40d64832416a04ff.htm" target="Content"> ptja_store_PT_trip_planning_data </A> </h5></ul><h3>Output dataflows</H3><ul><h5><li>
+  <A CLASS="Content" HREF="603d789a4b1f0550.htm" target="Content"> ptja_PT_trip_data_for_travel_information </A> <li>
+  <A CLASS="Content" HREF="40d647e0416a04af.htm" target="Content"> ptja_read_PT_trip_planning_data </A> <li>
+  <A CLASS="Content" HREF="40d647f8416a04d7.htm" target="Content"> ptja_retrieve_PT_trip_planning_data </A> </h5></ul><ul><h5></h5></ul> <ul><h5></h5></ul>
+</BODY> </HTML>

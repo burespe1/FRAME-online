@@ -1,0 +1,16 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > Database 7.4 Instruction Notifications Data
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Data Store<br>7.4 Instruction Notifications Data</h2></center><br><h3>Description of content</H3><H5><div class="Normal">This Data Store shall be used within the Provide Support for Law Enforcement Area. It shall contain data that shows a record of all of the instructions sent to Vehicles that were acknowledged as having been displayed to Drivers.&nbsp;&nbsp;The record of instructions will be used to determine whether or not a detected violation is genuine, or should be ignored because the Driver was only obeying instructions sent to the Vehicle.<br><br>The data in the Store shall be structured in the following way:<br> - date when record created (date string)<br> - time when record created (numbers defining hours, minutes and seconds)<br> - vehicle ID in which the instruction was displayed (number)<br> - type of instruction (characters)<br> - instruction details (characters and/or numbers)<br> - date at which instruction acknowledgement received (date string)<br> - time at which instruction acknowledgement received (numbers defining hours, minutes and seconds)<br> - ID(s) road segment(s) to which the instruction applies (numbers)<br><br>It shall be possible for this data to be updated every time a new command is displayed to Drivers and for it to be removed after a suitable time period has elapsed since it was cancelled or replaced.</div></H5><h3>Diagrams</H3><h5>The Diagram(s) below is (are) the Diagram(s) where you can find the Datastore</h5><ul><h5><li>DFD 7.3  Process Fraud Notifications</li></a></ul></h5><h3>Input dataflows</H3><ul><h5><li>
+  <A CLASS="Content" HREF="ced611204b5f07d8.htm" target="Content"> psle_instruction_notification_load </A> </h5></ul><h3>Output dataflows</H3><ul><h5><li>
+  <A CLASS="Content" HREF="ced611c94b5f0809.htm" target="Content"> psle_instruction_notification_read </A> </h5></ul><ul><h5></h5></ul> <ul><h5></h5></ul>
+</BODY> </HTML>

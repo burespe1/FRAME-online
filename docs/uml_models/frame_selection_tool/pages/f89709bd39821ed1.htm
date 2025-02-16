@@ -1,0 +1,46 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 1.3.4 Inform and Guide User
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>1.3.4 Inform and Guide User</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) A HMI through which the Traveller or Driver can be guided to provide the precise definition of the service that they want, and the way that they wish to pay for it.<br>(2) The HMI shall also enable the Traveller or Driver to select the appropriate contract, inform them about their rights to use the service, and display the associated price.<br>(3) The ability for the Function to be activated by functionality in either the Manage Public Transport Operations Area or the Provide Traveller Journey Assistance Area, or even directly for simple operations.<br>(4) The ability to ask for a credit check to be done on the Traveller or Driver and also to check to see whether an advance payment has been made.<br>(5) The ability to initiate the recovery of any advanced payment, or else initiate the computation of the fee.<br></div></H5><h3>Functional Requirements</H3><h5>(a) get the information about the service requested from the MPTO or PTJA areas, or directly from the user.<br/>(b) if these areas just ask for a tariff (and not a transaction), go to (g)<br/>(c) get user&#39;s ID<br/>(d) obtain the corresponding contracts<br/>(e) get user&#39;s choice of contract<br/>(f) check with &quot;Access&quot; and/or &quot;Credit Control&quot; and, if necessary, register a violation.<br/>(g) send the choice and contract to 1.3.6 to check if advanced payment has been made <br/> (h) send the different elements to 1.3.5 to initiate the computation of the corresponding fee<br/> (i) if payment has already been completely made, send an agreement to the &quot;Access Control&quot; system<br/>(j) if not, reduce the fee by the amount already paid, send the elements to 1.3.7 to recover fees,<br/></H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FEA2398103D0.HTM?DiagTab=1" Target="_self">DFD 1.3   Perform Electronic Payment Transaction</a><h5><li> <a href="F897F8B339810013.HTM?DiagTab=0" Target="_self">Functional Tree of Area 1</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897fea2398103d0.htm" target="_self"> 1.3 Perform Electronic Payment Transaction</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897227839827548.htm" target="_self"> fd-pepf_contract_selection </A> <li>
+  <A CLASS="Content" HREF="f89722783982755a.htm" target="_self"> fd-pepf_selected_service </A> <li>
+  <A CLASS="Content" HREF="2ff436f5406c07e4.htm" target="_self"> ft-pepf_contract_selection_2 </A> <li>
+  <A CLASS="Content" HREF="f897227939827800.htm" target="_self"> ft-pepf_selected_service </A> <li>
+  <A CLASS="Content" HREF="018831734182ab3d.htm" target="_self"> pepf_contract_IGU </A> <li>
+  <A CLASS="Content" HREF="f8971c5d39824947.htm" target="_self"> pepf_payment_status </A> <li>
+  <A CLASS="Content" HREF="d4d207a0406c2e8a.htm" target="_self"> pepf_user_access_rights_IGU </A> <li>
+  <A CLASS="Content" HREF="f8971ea4398266f1.htm" target="_self"> ptja.pepf_service_data </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f8971ea33982664f.htm" target="_self"> pepf.ptja_service_price </A> <li>
+  <A CLASS="Content" HREF="f8971c5d398248d5.htm" target="_self"> pepf_agreement_IGU </A> <li>
+  <A CLASS="Content" HREF="0188317f4182ab51.htm" target="_self"> pepf_contract_CAP </A> <li>
+  <A CLASS="Content" HREF="018831794182ab47.htm" target="_self"> pepf_contract_CSF </A> <li>
+  <A CLASS="Content" HREF="018831864182ab5b.htm" target="_self"> pepf_contract_RF </A> <li>
+  <A CLASS="Content" HREF="f8971c5d39824917.htm" target="_self"> pepf_illegal_action_notification_DAV </A> <li>
+  <A CLASS="Content" HREF="d4d2f513406b1dcc.htm" target="_self"> pepf_selected_service_data_CAP </A> <li>
+  <A CLASS="Content" HREF="f8971c5d3982494d.htm" target="_self"> pepf_selected_service_data_CSF </A> <li>
+  <A CLASS="Content" HREF="f8971c5d39824965.htm" target="_self"> pepf_service_fee_IGU </A> <li>
+  <A CLASS="Content" HREF="0188421b4182bb8e.htm" target="_self"> pepf_service_ID_CUR </A> <li>
+  <A CLASS="Content" HREF="0188491b4182c77e.htm" target="_self"> pepf_user_ID_for_guidance </A> <li>
+  <A CLASS="Content" HREF="d4d21893406c3e7c.htm" target="_self"> pepf_vehicle_data_IGU </A> <li>
+  <A CLASS="Content" HREF="f897227b39827a22.htm" target="_self"> td-pepf_payment_info_guidance </A> <li>
+  <A CLASS="Content" HREF="f897227d39827ca4.htm" target="_self"> tt-pepf_payment_info_guidance </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428b39be6655.htm" target="_self"> 4.1.0.1</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to use a variety of relevant payment methods either electronic or not, including central account and post payment, central account and prepayment, on-board account etc.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428c39be66c1.htm" target="_self"> 4.1.0.2</A> </a></center></h5></td><td width="90%"><h5>The system shall manage customer data (identification, account, rights of residents, etc.).</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428d39be6751.htm" target="_self"> 4.1.0.3</A> </a></center></h5></td><td width="90%"><h5>The system shall give exact details of any financial transaction to the traveller.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428d39be67d5.htm" target="_self"> 4.1.1.1</A> </a></center></h5></td><td width="90%"><h5>The system shall have a minimum impact on the traffic flow, e.g. a short transaction duration.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428d39be681d.htm" target="_self"> 4.1.1.2</A> </a></center></h5></td><td width="90%"><h5>The system shall have a minimum impact on the driving task.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428e39be684d.htm" target="_self"> 4.1.1.3</A> </a></center></h5></td><td width="90%"><h5>The system shall not do anything to reduce the safety of either the travellers in the vehicle, or the staff close to the equipment, e.g. in toll booths.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428f39be68b9.htm" target="_self"> 4.1.2.2</A> </a></center></h5></td><td width="90%"><h5>The system shall enable a single payment to be paid for services offered by different related transport systems (e.g. metro, bus, train, road and parking).</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14429039be69c1.htm" target="_self"> 4.1.3.3</A> </a></center></h5></td><td width="90%"><h5>The system shall have the maximum security necessary for electronic financial transactions.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="bce4c4823c04004f.htm" target="_self"> 4.1.3.5</A> </a></center></h5></td><td width="90%"><h5>The system shall provide information in the native language at the output location, and/or from a user selected choice of other appropriate foreign languages.</h5></td></tr></table></div>
+</BODY> </HTML>

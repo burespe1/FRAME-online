@@ -1,0 +1,28 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 8.1.5.3 Find Possible Transport Optimisations
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>8.1.5.3 Find Possible Transport Optimisations</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to take charge of optimising multi-modal freight transport in an inter-urban area. <br>(2) The ability to carry out the optimisation process by getting access to a database that contains current Freight Transport Operations for all transport modes that is managed outside the System.<br>(3) The ability to evaluate the current situation against the need(s) expressed by the Freight Management Operator.<br>(4) The ability to send the current road Freight Transport Operation conditions to the store of Consignment Data.<br></div></H5><h3>Functional Requirements</H3><h5>(a) wait for an optimisation request then access the external current freight transport operations database using the Multi-Modal System terminator<br/>(b) compare the current situation to the road freight operator need<br/>(c) formulate the results of the study and store the results under a store of Consignment Data<br/>(d) acknowledge the freight operator about the end of the study<br/>(e) wait for a road freight transaction storage request then inform the multi-mode facilitator about the transaction.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FF8239810507.HTM?DiagTab=1" Target="_self">DFD 8.1.5 Manage Inter-modal Transport Synchronisatio</a><h5><li> <a href="F897F8EA3981003D.HTM?DiagTab=0" Target="_self">Functional Tree of Area 8</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897ff8239810507.htm" target="_self"> 8.1.5 Manage Inter-modal Transport Synchronisation</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897227839827644.htm" target="_self"> fmms.omfs-information_from_other_mode </A> <li>
+  <A CLASS="Content" HREF="c5cbcb434d450375.htm" target="_self"> mffo_data_for_freight_optimisation </A> <li>
+  <A CLASS="Content" HREF="737ac3fb3f332694.htm" target="_self"> mffo_read_consignment_intermodal_ops_data </A> <li>
+  <A CLASS="Content" HREF="f8971c56398240a1.htm" target="_self"> mffo_request_for_freight_optimization </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f8971c5539823f27.htm" target="_self"> mffo_answer_on_freight_optimization </A> <li>
+  <A CLASS="Content" HREF="c5cbcad84d450357.htm" target="_self"> mffo_freight_transport_optimisation_results </A> <li>
+  <A CLASS="Content" HREF="737acbc13f332ad4.htm" target="_self"> mffo_load_consignment_intermodal_ops_data </A> <li>
+  <A CLASS="Content" HREF="f897227c39827b06.htm" target="_self"> tmms.omfs-information_request_to_other_mode </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442c639be9484.htm" target="_self"> 9.5.5.1</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to manage the interface between freight transport modes in an effective manner.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="0a923af53c02028e.htm" target="_self"> 9.5.5.2</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to support a combined transport interface management function for freight, etc.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="0a923ad63c020287.htm" target="_self"> 9.5.5.3</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to support a freight transport order processing function that is common to all modes of transport for freight, etc.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442c639be94a2.htm" target="_self"> 9.5.5.4</A> </a></center></h5></td><td width="90%"><h5>The system shall ensure that the information associated with a vehicle, equipment or container is available when that vehicle, equipment or container arrives at a modal interchange.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442c639be94c0.htm" target="_self"> 9.5.5.5</A> </a></center></h5></td><td width="90%"><h5>The system shall enable the matching of demand and supply of (multi-modal) freight transport resources.</h5></td></tr></table></div>
+</BODY> </HTML>

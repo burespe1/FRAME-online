@@ -1,0 +1,760 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List href="welcomebis_files/filelist.xml">
+<link rel=Edit-Time-Data href="welcomebis_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Functional Architecture</title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="place"/>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>richard.bossom</o:Author>
+  <o:Revision>1</o:Revision>
+  <o:TotalTime>10</o:TotalTime>
+  <o:Created>2011-08-30T15:23:00Z</o:Created>
+  <o:Pages>1</o:Pages>
+  <o:Words>753</o:Words>
+  <o:Characters>4294</o:Characters>
+  <o:Company>Siemens plc</o:Company>
+  <o:Lines>35</o:Lines>
+  <o:Paragraphs>10</o:Paragraphs>
+  <o:CharactersWithSpaces>5037</o:CharactersWithSpaces>
+  <o:Version>11.9999</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>0</w:Zoom>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:UseFELayout/>
+  </w:Compatibility>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<link rel=Stylesheet type="text/css" media=all
+href="file:///H:\FRAME%20Partner%20Agreement\Mega%20Tool\Mega%202005%20Repository\FRAME\EITSFA%20V4.1\Browsing%20Tool%20-%2030082011\STANDARD\ws_intranet.css">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"MS Mincho";
+	panose-1:2 2 6 9 4 2 5 8 3 4;
+	mso-font-alt:"Arial Unicode MS";
+	mso-font-charset:128;
+	mso-generic-font-family:roman;
+	mso-font-format:other;
+	mso-font-pitch:fixed;
+	mso-font-signature:1 134676480 16 0 131072 0;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:536871559 0 0 0 415 0;}
+@font-face
+	{font-family:"\@MS Mincho";
+	panose-1:0 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:128;
+	mso-generic-font-family:roman;
+	mso-font-format:other;
+	mso-font-pitch:fixed;
+	mso-font-signature:1 134676480 16 0 131072 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"MS Mincho";
+	mso-believe-normal-left:yes;}
+h1
+	{margin-top:7.5pt;
+	margin-right:0cm;
+	margin-bottom:7.5pt;
+	margin-left:0cm;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	font-size:10.5pt;
+	font-family:"Times New Roman";
+	font-weight:bold;}
+h2
+	{mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:9.0pt;
+	font-family:"Times New Roman";
+	font-weight:bold;}
+h3
+	{mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:3;
+	font-size:9.0pt;
+	font-family:"Times New Roman";
+	font-weight:bold;}
+h4
+	{mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:4;
+	font-size:9.0pt;
+	font-family:"Times New Roman";
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:#2256A4;
+	mso-text-animation:none;
+	font-weight:normal;
+	text-decoration:none;
+	text-underline:none;
+	text-decoration:none;
+	text-line-through:none;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#2256A4;
+	mso-text-animation:none;
+	font-weight:normal;
+	text-decoration:none;
+	text-underline:none;
+	text-decoration:none;
+	text-line-through:none;}
+p
+	{mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"MS Mincho";}
+p.tabdiaglist, li.tabdiaglist, div.tabdiaglist
+	{mso-style-name:tabdiaglist;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"MS Mincho";}
+p.tabdiaglistvisible, li.tabdiaglistvisible, div.tabdiaglistvisible
+	{mso-style-name:tabdiaglistvisible;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	background:white;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"MS Mincho";}
+p.contenttab, li.contenttab, div.contenttab
+	{mso-style-name:contenttab;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"MS Mincho";}
+p.contenttabvisible, li.contenttabvisible, div.contenttabvisible
+	{mso-style-name:contenttabvisible;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:8.5pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"MS Mincho";}
+p.contenttabdiag, li.contenttabdiag, div.contenttabdiag
+	{mso-style-name:contenttabdiag;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	background:white;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"MS Mincho";}
+p.contenttabdiagvisible, li.contenttabdiagvisible, div.contenttabdiagvisible
+	{mso-style-name:contenttabdiagvisible;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"MS Mincho";}
+p.expandunexpandcomment, li.expandunexpandcomment, div.expandunexpandcomment
+	{mso-style-name:expandunexpandcomment;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:7.5pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"MS Mincho";
+	font-weight:bold;}
+p.content, li.content, div.content
+	{mso-style-name:content;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	background:white;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"MS Mincho";}
+p.banner, li.banner, div.banner
+	{mso-style-name:banner;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	background:#F5F4EE;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"MS Mincho";}
+p.help, li.help, div.help
+	{mso-style-name:help;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"MS Mincho";
+	font-style:italic;}
+p.name, li.name, div.name
+	{mso-style-name:name;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"MS Mincho";}
+p.text, li.text, div.text
+	{mso-style-name:text;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"MS Mincho";}
+p.diagname, li.diagname, div.diagname
+	{mso-style-name:diagname;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	text-indent:18.75pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"MS Mincho";
+	color:#2256A4;
+	font-weight:bold;}
+p.objecttitletype, li.objecttitletype, div.objecttitletype
+	{mso-style-name:objecttitle_type;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"MS Mincho";}
+p.objecttitlename, li.objecttitlename, div.objecttitlename
+	{mso-style-name:objecttitle_name;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"MS Mincho";}
+p.objecttitletype1, li.objecttitletype1, div.objecttitletype1
+	{mso-style-name:objecttitle_type1;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"MS Mincho";}
+p.objecttitlename1, li.objecttitlename1, div.objecttitlename1
+	{mso-style-name:objecttitle_name1;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"MS Mincho";
+	font-weight:bold;}
+p.diagname1, li.diagname1, div.diagname1
+	{mso-style-name:diagname1;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	text-indent:18.75pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"MS Mincho";
+	color:#2256A4;
+	font-weight:bold;}
+p.objecttitletype2, li.objecttitletype2, div.objecttitletype2
+	{mso-style-name:objecttitle_type2;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"MS Mincho";}
+p.objecttitlename2, li.objecttitlename2, div.objecttitlename2
+	{mso-style-name:objecttitle_name2;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"MS Mincho";
+	font-weight:bold;}
+p.diagname2, li.diagname2, div.diagname2
+	{mso-style-name:diagname2;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	text-indent:18.75pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"MS Mincho";
+	color:#2256A4;
+	font-weight:bold;}
+p.objecttitletype3, li.objecttitletype3, div.objecttitletype3
+	{mso-style-name:objecttitle_type3;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"MS Mincho";}
+p.objecttitlename3, li.objecttitlename3, div.objecttitlename3
+	{mso-style-name:objecttitle_name3;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"MS Mincho";
+	font-weight:bold;}
+p.objecttitletype4, li.objecttitletype4, div.objecttitletype4
+	{mso-style-name:objecttitle_type4;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"MS Mincho";}
+p.objecttitlename4, li.objecttitlename4, div.objecttitlename4
+	{mso-style-name:objecttitle_name4;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"MS Mincho";
+	font-weight:bold;}
+p.objecttitletype5, li.objecttitletype5, div.objecttitletype5
+	{mso-style-name:objecttitle_type5;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"MS Mincho";}
+p.objecttitlename5, li.objecttitlename5, div.objecttitlename5
+	{mso-style-name:objecttitle_name5;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"MS Mincho";
+	font-weight:bold;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:69811740;
+	mso-list-template-ids:291808714;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1
+	{mso-list-id:872500306;
+	mso-list-template-ids:1091439304;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1:level2
+	{mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1:level3
+	{mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1:level4
+	{mso-level-tab-stop:144.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1:level5
+	{mso-level-tab-stop:180.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1:level6
+	{mso-level-tab-stop:216.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1:level7
+	{mso-level-tab-stop:252.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1:level8
+	{mso-level-tab-stop:288.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1:level9
+	{mso-level-tab-stop:324.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]--><![if mso 9]>
+<style>
+p.MsoNormal
+	{margin-left:1.5pt;}
+</style>
+<![endif]><!-- Developed by Angela Nigro, Mizar Automazione S.p.A.--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1026"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body bgcolor="#F5F4EE" lang=EN-GB link="#2256A4" vlink="#2256A4"
+style='tab-interval:36.0pt;margin-left:1.5pt;margin-top:1.5pt;margin-right:
+1.5pt;margin-bottom:1.5pt' leftmargin=0 topmargin=0>
+
+<div class=Section1>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width="20%"
+ style='width:20.72%;border-collapse:collapse;mso-padding-alt:0cm 0cm 0cm 0cm'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td width=138 valign=top style='width:103.5pt;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=667
+   style='width:500.25pt;border-collapse:collapse;mso-padding-alt:7.5pt 7.5pt 7.5pt 7.5pt'>
+   <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+    <td width="100%" style='width:100.0%;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+    <h1><span lang=IT style='font-family:Verdana;mso-fareast-font-family:"Times New Roman";
+    mso-ansi-language:IT;font-weight:normal'>European ITS Framework
+    Architecture (FRAME) Browsing Tool<o:p></o:p></span></h1>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+    <td width="100%" style='width:100.0%;background:white;padding:2.25pt 2.25pt 2.25pt 2.25pt'>
+    <p class=MsoNormal style='margin:0cm;margin-bottom:.0001pt'><span
+    style='font-size:10.0pt;font-family:Verdana;color:navy'>This <b>Browsing
+    Tool</b> provides access to a HTML representation of part of the European
+    ITS Framework (FRAME) Architecture. It enables the functionality in the <b>Functional
+    Viewpoint</b> and the allocation of <b style='mso-bidi-font-weight:normal'>User
+    Needs</b> to functionality to be viewed interactively using Microsoft Internet
+    Explorer. Further information about the Functional Viewpoint and the User
+    Needs can be found in materials that can be read or downloaded from the E-FRAME
+    Deliverables part of the FRAME Web Site.</span><span style='font-size:7.5pt;
+    font-family:Verdana'> <o:p></o:p></span></p>
+    <p><span style='font-size:10.0pt;font-family:Verdana;color:navy'>This new <b
+    style='mso-bidi-font-weight:normal'>Version 4.1</b> contains updated User
+    Needs and improvements to the functionality that provides support for the
+    Cooperative Systems services.<span style='mso-spacerun:yes'>  </span>In
+    addition some minor changes have been made to other parts of the
+    functionality with the aim of improving the ease of use of the FRAME Architecture
+    over the previous version (4).<span style='mso-spacerun:yes'> 
+    </span>Details of the changes are provided in Part 4 of the D15 document
+    which is also available for downloading from the E-FRAME Deliverables part
+    of the FRAME website.<b style='mso-bidi-font-weight:normal'><o:p></o:p></b></span></p>
+    <p><span style='font-size:10.0pt;font-family:Verdana;color:navy'>If you are
+    a first time or infrequent User of this Tool and/or of the Framework
+    Architecture itself, it is recommended that you also read the <a
+    href="#lstScts">last sections</a> of this Home Page and the '</span><span
+    style='font-size:7.5pt;font-family:Verdana'><a href="definition.htm"><span
+    style='font-size:10.0pt'>General Definition</span></a></span><span
+    style='font-size:10.0pt;font-family:Verdana;color:navy'>' page. Others
+    Users should directly access the Browsing Tool pages through the links in
+    the Main Indexes list below (or in the navigation window on the left).</span><span
+    style='font-size:7.5pt;font-family:Verdana'><o:p></o:p></span></p>
+    <div class=MsoNormal align=center style='margin:0cm;margin-bottom:.0001pt;
+    text-align:center'><span style='font-size:7.5pt;font-family:Verdana'>
+    <hr size=2 width="100%" align=center>
+    </span></div>
+    <h3><span style='font-family:Verdana;mso-fareast-font-family:"Times New Roman";
+    color:navy'>Main Indexes</span><span style='font-family:Verdana;mso-fareast-font-family:
+    "Times New Roman"'><o:p></o:p></span></h3>
+    <ul type=disc>
+     <li class=MsoNormal style='mso-list:l1 level1 lfo3;tab-stops:list 36.0pt'><span
+         style='font-size:7.5pt;font-family:Verdana'><a
+         href="../pages/003a0e6c39844013.htm"><span style='font-size:10.0pt'>User
+         Needs against Functions</span></a> <o:p></o:p></span></li>
+     <li class=MsoNormal style='mso-list:l1 level1 lfo3;tab-stops:list 36.0pt'><span
+         style='font-size:7.5pt;font-family:Verdana'><a
+         href="../pages/f34c3e7039c2042d.htm"><span style='font-size:10.0pt'>Terminators</span></a>
+         <o:p></o:p></span></li>
+     <li class=MsoNormal style='mso-list:l1 level1 lfo3;tab-stops:list 36.0pt'><span
+         style='font-size:7.5pt;font-family:Verdana'><a
+         href="../pages/69be79753d2d15a4.htm"><span style='font-size:10.0pt'>Functional
+         Areas</span></a> <o:p></o:p></span></li>
+     <li class=MsoNormal style='mso-list:l1 level1 lfo3;tab-stops:list 36.0pt'><span
+         style='font-size:10.0pt;font-family:Verdana'><a
+         href="../pages/f34c400f39c204c5.htm">Data Flow Diagrams (<span
+         class=SpellE>DFD's</span>)</a></span><span style='font-size:7.5pt;
+         font-family:Verdana'> <o:p></o:p></span></li>
+     <li class=MsoNormal style='mso-list:l1 level1 lfo3;tab-stops:list 36.0pt'><span
+         style='font-size:7.5pt;font-family:Verdana'><a
+         href="../pages/d99be1833a7a40a5.htm"><span style='font-size:10.0pt'>Functions</span></a>
+         <o:p></o:p></span></li>
+     <li class=MsoNormal style='mso-list:l1 level1 lfo3;tab-stops:list 36.0pt'><span
+         style='font-size:7.5pt;font-family:Verdana'><a
+         href="../pages/d99be1723a7a409f.htm"><span style='font-size:10.0pt'>Data
+         Flows</span></a> <o:p></o:p></span></li>
+     <li class=MsoNormal style='mso-list:l1 level1 lfo3;tab-stops:list 36.0pt'><span
+         style='font-size:7.5pt;font-family:Verdana'><a
+         href="../pages/7B1C7CF740F6005B.htm"><span style='font-size:10.0pt'>Data
+         Stores</span></a> <o:p></o:p></span></li>
+     <li class=MsoNormal style='mso-list:l1 level1 lfo3;tab-stops:list 36.0pt'><span
+         style='font-size:10.0pt;font-family:Verdana'><a href="acronym.htm">Acronym
+         Definitions</a></span><span style='font-size:7.5pt;font-family:Verdana'>
+         <o:p></o:p></span></li>
+     <li class=MsoNormal style='mso-list:l1 level1 lfo3;tab-stops:list 36.0pt'><span
+         style='font-size:10.0pt;font-family:Verdana'><a href="definition.htm">General
+         Definitions</a></span><span style='font-size:7.5pt;font-family:Verdana'>
+         <o:p></o:p></span></li>
+    </ul>
+    <p><span style='font-size:7.5pt;font-family:Verdana'><a href="#Top">Top</a><o:p></o:p></span></p>
+    <div class=MsoNormal align=center style='margin:0cm;margin-bottom:.0001pt;
+    text-align:center'><span style='font-size:7.5pt;font-family:Verdana'>
+    <hr size=2 width="100%" align=center>
+    </span></div>
+    <h3><span style='font-family:Verdana;mso-fareast-font-family:"Times New Roman";
+    color:navy'>Issue History</span><span style='font-family:Verdana;
+    mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></h3>
+    <p><span style='font-size:10.0pt;font-family:Verdana;color:navy'>This issue
+    of the Browsing Tool provides access to the current Version of the
+    Functional Viewpoint. Details of the changes that have been made to create
+    this Version and can be found elsewhere on the 'LIBRARY' page of the FRAME
+    Web Site.</span><span style='font-size:7.5pt;font-family:Verdana'><o:p></o:p></span></p>
+    <p><span style='font-size:7.5pt;font-family:Verdana'><a href="#Top">Top</a><o:p></o:p></span></p>
+    <div class=MsoNormal align=center style='margin:0cm;margin-bottom:.0001pt;
+    text-align:center'><span style='font-size:7.5pt;font-family:Verdana'>
+    <hr size=2 width="100%" align=center>
+    </span></div>
+    <p><a name=lstScts></a><b><span style='font-size:13.5pt;font-family:Verdana;
+    color:navy'>Notes for First Time or Infrequent Users</span></b><span
+    style='font-size:7.5pt;font-family:Verdana'><o:p></o:p></span></p>
+    <p><span style='font-size:10.0pt;font-family:Verdana;color:navy'>The HTML
+    version of the Functional Viewpoint provided by this Browsing Tool can be
+    accessed through a series of Index Pages. The <st1:place w:st="on">Main</st1:place>
+    or “top-level” Index Pages are listed above as a series of links, and these
+    are also available using the “Query” option at the top of the page. They
+    provide access to the descriptions and definitions of all the Functions,
+    Data Flows, Data Stores and Terminators included in the Functional
+    Viewpoint, plus a table showing the Functions that serve each User Need.</span><span
+    style='font-size:7.5pt;font-family:Verdana'><o:p></o:p></span></p>
+    <p><span style='font-size:10.0pt;font-family:Verdana;color:navy'>The
+    definitions of the acronyms and of other terms used in the Functional
+    Viewpoint are provided in the <a href="acronym.htm">'Acronym Definitions'</a>
+    and <a href="definition.htm">'General Definitions'</a> pages. It is
+    particularly recommended that the latter be studied before the Browsing
+    Tool is used, as they provide the key to understanding the contents of the
+    Functional Viewpoint. More detailed information about the methodology
+    behind the Functional Viewpoint is provided in the Functional Viewpoint
+    Document (D3.1).</span><span style='font-size:7.5pt;font-family:Verdana'><o:p></o:p></span></p>
+    <p><span style='font-size:7.5pt;font-family:Verdana'><a href="#Top">Top</a><o:p></o:p></span></p>
+    <div class=MsoNormal align=center style='margin:0cm;margin-bottom:.0001pt;
+    text-align:center'><span style='font-size:7.5pt;font-family:Verdana'>
+    <hr size=2 width="100%" align=center>
+    </span></div>
+    <h3><span style='font-family:Verdana;mso-fareast-font-family:"Times New Roman";
+    color:navy'>Navigation Tips</span><span style='font-family:Verdana;
+    mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></h3>
+    <p><span style='font-size:10.0pt;font-family:Verdana;color:navy'>The
+    structure of the Functional Viewpoint can be represented as tree, and this
+    tree is shown in the navigation window on the left of the screen. It can be
+    used to select whichever High-Level Function or Low Level Function is
+    desired. Note that High-Level Functions have two pages associated with
+    them, the Data Flow <em><span style='font-family:Verdana'>Diagram </span></em>and
+    its <span class=GramE><em><span style='font-family:Verdana'>Definition </span></em>.</span>
+    <o:p></o:p></span></p>
+    <p><span style='font-size:10.0pt;font-family:Verdana;color:navy'>A click on
+    the <em><span style='font-family:Verdana'>Org-Units Tree </span></em>icon (<img
+    border=0 width=16 height=16 id="_x0000_i1043"
+    src="file:///H:\FRAME%20Partner%20Agreement\Mega%20Tool\Mega%202005%20Repository\FRAME\EITSFA%20V4.1\Browsing%20Tool%20-%2030082011\STANDARD\orgu.gif">)
+    in the navigation window will select a tree of the Terminators and Actors
+    used in the Framework Architecture. Click on the <em><span
+    style='font-family:Verdana'>Business Process Tree </span></em>icon ( <img
+    border=0 width=16 height=16 id="_x0000_i1044"
+    src="file:///H:\FRAME%20Partner%20Agreement\Mega%20Tool\Mega%202005%20Repository\FRAME\EITSFA%20V4.1\Browsing%20Tool%20-%2030082011\STANDARD\busp.gif">)
+    to revert back to the tree of functions. <o:p></o:p></span></p>
+    <p><span style='font-size:10.0pt;font-family:Verdana;color:navy'>The Data
+    Flow Diagrams are “intelligent”. Leaving the cursor over the top of an
+    element for a short time will bring up its description or overview. A click
+    on that element will take you to its full definition or diagram. Many of
+    the items in the Function, Data Flow and Data Store Definition pages are
+    also “intelligent”. A click on an item will take you to its full definition
+    or diagram. <o:p></o:p></span></p>
+    <p class=MsoNormal style='margin:0cm;margin-bottom:.0001pt'><span
+    style='font-size:10.0pt;font-family:Verdana;color:navy'>When using the
+    Browsing Tool it can sometimes be difficult to know exactly how you arrived
+    at the Page that is currently being viewed. It should be possible to
+    retrace your steps back to previous pages using the normal browser <em><span
+    style='font-family:Verdana'>Back </span></em>and <em><span
+    style='font-family:Verdana'>History </span></em>commands. </span><span
+    style='font-size:7.5pt;font-family:Verdana'><o:p></o:p></span></p>
+    <p><span style='font-size:7.5pt;font-family:Verdana'><a href="#Top">Top</a><o:p></o:p></span></p>
+    </td>
+   </tr>
+  </table>
+  <p class=MsoNormal style='margin:0cm;margin-bottom:.0001pt'><span
+  style='font-size:7.5pt;font-family:Verdana'><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin:0cm;margin-bottom:.0001pt'><span
+style='color:#2256A4'><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

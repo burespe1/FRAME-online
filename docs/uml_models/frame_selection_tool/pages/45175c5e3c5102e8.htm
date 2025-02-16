@@ -1,0 +1,23 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 1.1.3 Manage Service Data
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>1.1.3 Manage Service Data</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to manage the content of the store of Service Information Data.<br>(2) The management of the store shall enable an Operator to review the contents of the store, to add, delete, or amend the contents.<br>(3) The management of the store shall also enable the contents of the store to be updated by Service Providers.<br></div></H5><h3>Functional Requirements</H3><h5>(a) when the trigger input data flow is received, check to see if a review command or data has been sent<br/>(b) if a review comment is received in (a), collect all of the current data from the store of Service Information Data using the other input data flow<br/>(c) send the data obtained in (b) to the Operator using the second other output data flow<br/>(d) if data was received in (a), send it to the store of Service Information Data using the first other output data flow, to add to, or amend the data the store currently contains<br/>(e) if a &quot;delete&quot; command was received in (a) then use the first other output data flow to send an appropriate delete command to the store of Service Information Data.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FEA2398103C4.HTM?DiagTab=1" Target="_self">DFD 1.1  Set up Contract</a><h5><li> <a href="F897F8B339810013.HTM?DiagTab=0" Target="_self">Functional Tree of Area 1</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897fea2398103c4.htm" target="_self"> 1.1 Set up Contract</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="45175e4f3c510348.htm" target="_self"> fesp-pepf_services_available </A> <li>
+  <A CLASS="Content" HREF="45175e693c510355.htm" target="_self"> fo-pepf_services_available </A> <li>
+  <A CLASS="Content" HREF="45175dfc3c510321.htm" target="_self"> pepf_current_service_information </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="45175de63c510314.htm" target="_self"> pepf_changed_service_information </A> <li>
+  <A CLASS="Content" HREF="45175e1a3c51032e.htm" target="_self"> pepf_requested_service_data </A> <li>
+  <A CLASS="Content" HREF="45175e353c51033b.htm" target="_self"> to-pepf_service_data </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428d39be6787.htm" target="_self"> 4.1.0.4</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to manage tariff policies (define fares/fees according to selected criteria, e.g. type of Traveller or traffic conditions, etc.).</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428f39be68b9.htm" target="_self"> 4.1.2.2</A> </a></center></h5></td><td width="90%"><h5>The system shall enable a single payment to be paid for services offered by different related transport systems (e.g. metro, bus, train, road and parking).</h5></td></tr></table></div>
+</BODY> </HTML>

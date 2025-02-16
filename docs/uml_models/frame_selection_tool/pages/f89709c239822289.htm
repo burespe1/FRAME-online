@@ -1,0 +1,26 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 7.3.6 Create File for use in Prosecution
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>7.3.6 Create File for use in Prosecution</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to send the file containing all the elements necessary for the prosecution of the violator to the right Law Enforcement Agency.<br>(2) As part of the process of preparing the file, the ability to check that the violation is not the result of an instruction that has been given to and acknowledged by a Driver.<br>(3) The ability to also send the resulting file, plus all the elements received, to the functionality that stores fraud notifications.<br>(4) For violations detected directly by other functionality in this Area, and concerning freight vehicles, the ability to also send a all the details of the violation to functionality in the Manage Freight and Fleet Operations Area.<br></div></H5><h3>Functional Requirements</H3><h5>(a) receive all the elements related to the fraud (violation) in the first trigger input data flow<br/>(b) select the Law Enforcement Agency(ies) concerned by the fraud (violation) from the data received in (a)<br/>(c) if necessary extract information on previous offences from the store of Violations Data, receiving the data in the first other input data flow<br/>(d) send a data flow to check that the detected violation is not the result of instructions sent to Drivers, and abandon the creation of the prosecution file at this point<br/>(e)fill the prosecution file using to the format required by the Law Enforcement Agency identified in (b)<br/>(f) send the prosecution file to the Law Enforcement Agency using the third trigger output data flow<br/>(g) send the prosecution file and all the associated elements to the Fraud Function, using the second trigger output data flow<br/>(h) if the fraud concerns freight vehicles and has been detected by the functionality in this Area, send the elements to the Manage Freight and Fleet Operations Area, using the first trigger output data flow.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FF82398104E9.HTM?DiagTab=1" Target="_self">DFD 7.3  Process Fraud Notifications</a><h5><li> <a href="F897F8E239810037.HTM?DiagTab=0" Target="_self">Functional Tree of Area 7</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897ff82398104e9.htm" target="_self"> 7.3 Process Fraud and Violation Notifications</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="ced612f14b5f085b.htm" target="_self"> psle_check_instructions_results </A> <li>
+  <A CLASS="Content" HREF="f8971c5e39824a43.htm" target="_self"> psle_fraud_characteristics </A> <li>
+  <A CLASS="Content" HREF="737a8d333f330ac2.htm" target="_self"> psle_violation_history_for_prosecution </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f8971ea33982668b.htm" target="_self"> psle.mffo_violation_notification </A> <li>
+  <A CLASS="Content" HREF="ced6125f4b5f0830.htm" target="_self"> psle_check_insructions_recieved </A> <li>
+  <A CLASS="Content" HREF="f8971c5e39824a73.htm" target="_self"> psle_prosecution_file </A> <li>
+  <A CLASS="Content" HREF="f897227c39827ad0.htm" target="_self"> tlea-psle_prosecution_file </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428a39be6595.htm" target="_self"> 3.1.0.5</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to communicate with Police Command and Control Systems.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428a39be65c5.htm" target="_self"> 3.1.1.1</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to collect evidence on vehicles that commit traffic signal violations.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428b39be65f5.htm" target="_self"> 3.1.1.2</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to collect evidence on vehicles that exceed a local (variable) speed limit.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="610e62d2485a0037.htm" target="_self"> 7.1.7.7</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to detect and identify vehicles that exceed the maximum authorised speed limit on selected carriageways.</h5></td></tr></table></div>
+</BODY> </HTML>

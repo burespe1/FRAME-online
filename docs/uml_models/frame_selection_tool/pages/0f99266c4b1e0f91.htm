@@ -1,0 +1,21 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 3.1.2.13.3 Restrict Access to Inter-urban Zones
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>3.1.2.13.3 Restrict Access to Inter-urban Zones</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to provide a physical barrier to prevent Vehicles from entering a part (zone) of the inter-urban road network, to which access is controlled.<br>(2) The ability to output (zone) a warning message to Drivers that a physical barrier will prevent them driving their Vehicles into the zone.<br>(3) If the Vehicles are detected actually entering the zone, the ability to send the Vehicle identity to the law enforcement functionality.<br></div></H5><h3>Functional Requirements</H3><h5>(a) continuously monitor for the arrival of the vehicle identity and inter-urban sensitive area access refused data flows<br/>(b) when either of the data flows in (a) is received, start monitoring for the vehicle entering inter-urban zone data flow<br/>(c) when the data flow in (b) is received, send a warning of illegal entry to the driver in the entering inter-urban zone data flow<br/>(d) if the data flow in (b) continues to show that the vehicle is entering the zone then send the vehicle entering message to the Provide Support for Law Enforcement functionality.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="42A246E04DEB019C.HTM?DiagTab=1" Target="_self">DFD 3.1.2.13 Manage Inter-urban Traffic Strategies</a><h5><li> <a href="F897FEA2398103F4.HTM?DiagTab=1" Target="_self">Functional tree 3.1</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="42a246e04deb019c.htm" target="_self"> 3.1.2.13 Manage Inter-urban Traffic Strategies</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="0f9931d64b1e11ec.htm" target="_self"> ftrfc-vehicle_entering_inter-urban_zone </A> <li>
+  <A CLASS="Content" HREF="0f99536d4b1e1a12.htm" target="_self"> mt_inter-urban_zone_vehicle_identity </A> <li>
+  <A CLASS="Content" HREF="86ebaebb4bcd0994.htm" target="_self"> pscs.mt_inter-urban_sensitive_area_access_refused </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="0f9936ca4b1e1590.htm" target="_self"> mt.psle_vehicle_entering_inter-urban_zone </A> <li>
+  <A CLASS="Content" HREF="0f9954a34b1e1a70.htm" target="_self"> td-enterring_inter-urban_zone </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442b139be83e3.htm" target="_self"> 7.3.1.4</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to use physical barriers to control the access of vehicles into a zone.</h5></td></tr></table></div>
+</BODY> </HTML>

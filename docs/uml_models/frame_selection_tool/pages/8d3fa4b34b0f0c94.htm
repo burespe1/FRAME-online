@@ -1,0 +1,37 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 3.2.9 Send Incident Details to Information Providers
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>3.2.9 Send Incident Details to Information Providers</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to manage the output of information to External Service Providers as part of an incident strategy in response to incidents that have been detected by other functionality.<br>(2) The ability for the Providers to also request a repeat of the output of the information and of incident data, where this applies to current or future events, i.e. not incidents involving the Emergency Services.<br>(3) The ability for the output of the information to begin as soon as the strategy information is received.<br>(4) The ability to keep a local store of the incident management strategies currently being implemented and delete them when their expiry time has passed, or when a strategy modification or removal indication arrives from the incident management functionality.<br></div></H5><h3>Functional Requirements</H3><h5>(a) on receipt of the first input trigger data flow all of the output data flows shall be sent<br/>(b) on receipt of any of the second to fifth input trigger data flows, the appropriate output data flows requesting strategy or incident data shall be sent<br/>(c) when the responses to (b) have been received, all of the output data flows shall be sent.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FEA239810418.HTM?DiagTab=1" Target="_self">DFD 3.2  Manage Incidents</a><h5><li> <a href="F897FEA239810418.HTM?DiagTab=1" Target="_self">Functional tree 3.2</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897fea239810418.htm" target="_self"> 3.2 Manage Incidents</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="8d3fc0594b0f0f69.htm" target="_self"> fesp.b-request_current_incident_strategies </A> <li>
+  <A CLASS="Content" HREF="8d3fc2194b0f0fb7.htm" target="_self"> fesp.b-request_incident_data </A> <li>
+  <A CLASS="Content" HREF="8d3fc2a14b0f0fde.htm" target="_self"> fesp.ttip-request_current_incident_strategies </A> <li>
+  <A CLASS="Content" HREF="8d3fc37f4b0f1019.htm" target="_self"> fesp.ttip-request_incident_data </A> <li>
+  <A CLASS="Content" HREF="8d3fccad4b0f1171.htm" target="_self"> mt_incident_strategy_for_external </A> <li>
+  <A CLASS="Content" HREF="d41ae16f4b0f0344.htm" target="_self"> mt_requested_incident_data </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="d41ae2d54b0f0375.htm" target="_self"> mt_reqeust_incident_strategies_for_external </A> <li>
+  <A CLASS="Content" HREF="d41ae10d4b0f0319.htm" target="_self"> mt_request_incident_data </A> <li>
+  <A CLASS="Content" HREF="f897227b39827a64.htm" target="_self"> tesp.b-incident_strategy_information </A> <li>
+  <A CLASS="Content" HREF="d41ae3a84b0f03a0.htm" target="_self"> tesp.b-requested_incident_data </A> <li>
+  <A CLASS="Content" HREF="cacfd3413a3000ff.htm" target="_self"> tesp.ttip-incident_strategy_information </A> <li>
+  <A CLASS="Content" HREF="d41ae47f4b0f03cf.htm" target="_self"> tesp.ttip-requested_incident_data </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442a739be7b43.htm" target="_self"> 7.1.3.6</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to implement planned control strategies for planned events (e.g. sport, cultural, etc.).</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442ae39be807d.htm" target="_self"> 7.2.0.1</A> </a></center></h5></td><td width="90%"><h5>The system shall detect and  respond to various incidents on the road network.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="610e691b485a00f2.htm" target="_self"> 7.2.0.10</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to co-ordinate the implementation of incident management strategies between associated TCCs.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442ae39be80a7.htm" target="_self"> 7.2.0.2</A> </a></center></h5></td><td width="90%"><h5>The system shall not do anything to reduce road safety.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442ae39be80bf.htm" target="_self"> 7.2.0.3</A> </a></center></h5></td><td width="90%"><h5>The system shall not do anything that might aggravate, or cause, an incident.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442b039be81eb.htm" target="_self"> 7.2.2.1</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to collect and store data on each incident, e.g. location, type, severity, number &amp; type of vehicles involved, the emergency/rescue vehicles needed etc.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442b039be8239.htm" target="_self"> 7.2.2.3</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to provide information on each incident to TICs for onward transmission to travellers.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442b039be82c9.htm" target="_self"> 7.2.5.2</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to provide local warnings on dangerous sections of the road network.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="60f488254ba314d0.htm" target="_self"> 7.4.1.36</A> </a></center></h5></td><td width="90%"><h5><span style='font-style: italic;'>Hazardous Location Notification</span> - The system shall be able to warn the driver in a timely manner, via an in-vehicle display, of adverse road surfaces and weather conditions along the planned route.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="76a781c54b97026a.htm" target="_self"> 7.6.2.4</A> </a></center></h5></td><td width="90%"><h5>The system shall enable the traveller information service provider to receive current inter-urban traffic management, and weather, conditions and planned events.</h5></td></tr></table></div>
+</BODY> </HTML>

@@ -1,0 +1,30 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 3.5.11 Evaluate Need for De-icing
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>3.5.11 Evaluate Need for De-icing</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to evaluate the need for the de-icing of roads and pavements.<br>(2) The ability to collect data about the current state of the road and pavement surfaces and evaluate these against criteria for the need to apply de-icing.<br>(3) When de-icing is found to be required, the ability to request the Maintenance Organisation to carry out the activity and send&nbsp;&nbsp;information about the activities to the Trip Planning and Incident Management functionalities.<br>(4) The ability to keep a record of the current status of the requested de-icing activities, which shall be updated using the input from the Maintenance Organisation.<br>(5) The ability to send the current de-icing activity status to the store of Maintenance Data so that it can be accessed by the Road Maintenance Operator.<br></div></H5><h3>Functional Requirements</H3><h5>(a) continuously monitor for receipt of either of the input data flows containing road static data or the predicted road network traffic data<br/>(b) when any of the data flows in (a) is received, store their contents internally for later use, if necessary replacing similar data that was stored after the previous receipt of a particular data flow<br/>(c) continuously monitor for receipt of the current conditions data flow from the road pavement and the ice formation conditions data flow from the weather systems<br/>(d) when either of the data flows in (c) is received, store their contents<br/>(e) every time (d) occurs, assess the need for de-icing activities based upon the data that has been received in the data flow in (c) and on the data received in (b)<br/>(f) put the de-icing activities proposed as a result of (e) in the proposed de-icing activities data flow and send it to the Provide Road Maintenance Operator Interface function<br/>(g) as a result of (f) continuously monitor for receipt of the confirmed de-icing activities data flow<br/>(h) when the data flow in (g) is received, put its contents in the de-icing tasks data flow and send it to the road maintenance organisation<br/>(i) as a result of (h) continuously monitor for receipt of the de-icing activity update data flow and when it is received, put its contents in the confirmed de-icing activity data flow and send it to the Provide Maintenance Data Store Management function.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FEA23981042A.HTM?DiagTab=1" Target="_self">DFD 3.5  Manage Road Maintenance</a><h5><li> <a href="F897FEA23981042A.HTM?DiagTab=1" Target="_self">Functional tree 3.5</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897fea23981042a.htm" target="_self"> 3.5 Manage Road Maintenance</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="380b4f994b1604cd.htm" target="_self"> fmo.rmo-de-icing_activity_update </A> <li>
+  <A CLASS="Content" HREF="f8972279398276e6.htm" target="_self"> frp-current_conditions </A> <li>
+  <A CLASS="Content" HREF="f897227b3982795c.htm" target="_self"> fws-ice_formation_conditions </A> <li>
+  <A CLASS="Content" HREF="e47ef9814c3d0bff.htm" target="_self"> mt-confirmed_de-icing_activities </A> <li>
+  <A CLASS="Content" HREF="e47ef2464c3d096f.htm" target="_self"> mt_inter-urban_road_static_data_for_de-icing </A> <li>
+  <A CLASS="Content" HREF="e47ef6444c3d0b75.htm" target="_self"> mt_predicted_road_network_traffic_data </A> <li>
+  <A CLASS="Content" HREF="e47eeece4c3d060b.htm" target="_self"> mt_urban_road_static_data_for_de-icing </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f7bafc954bb107aa.htm" target="_self"> mt.pshvs_de-icing_data_for_vehicle_trip_monitoring </A> <li>
+  <A CLASS="Content" HREF="f8971ea339826535.htm" target="_self"> mt.ptja_de-icing_data_for_trip_monitoring </A> <li>
+  <A CLASS="Content" HREF="f8971c5839824341.htm" target="_self"> mt_confirmed_de-icing_activity </A> <li>
+  <A CLASS="Content" HREF="f8971c59398243cb.htm" target="_self"> mt_icing_incident_data </A> <li>
+  <A CLASS="Content" HREF="e47ef93f4c3d0bf2.htm" target="_self"> mt_proposed_de-icing_activities </A> <li>
+  <A CLASS="Content" HREF="f897227c39827b12.htm" target="_self"> tmo.rmo-de-icing_tasks </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428839be6415.htm" target="_self"> 2.2.1.1</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to activate fixed de-icing equipment on parts of the road network.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="42015626485a0603.htm" target="_self"> 2.2.1.2</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to initiate activities to mitigate the effects of ice and/or snow on the road infrastructure.</h5></td></tr></table></div>
+</BODY> </HTML>

@@ -1,0 +1,279 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 8.2.1 Manage Fleet Business Transactions
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <div id="ObjectTitle">
+<Table id="ObjectTitleTable" class="ObjectTitleTable" cellpadding="0" cellspacing="0"  width = "100%">
+<TR>
+<TD width="5%" height ="35" align = "left">
+<img src="../standard/busf.gif"/>
+</TD>
+<TD width="20%" height ="35" align = "left">
+<span class="ObjectTitle_Type">
+High Level Function</span>
+</TD>
+<TD width="75%" height ="35" align = "left">
+<span class="ObjectTitle_Name">8.2.1 Manage Fleet Business Transactions</span>
+</TD>
+</TR>
+ </Table>
+</div>
+<table border="0" cellpadding="0" cellspacing="0"  class="InvisibleTable">
+<tr>
+    	 
+<td id="Tab" class="Tab">	&nbsp;Diagram&nbsp;</td>
+ <td id="Tab" class="Tab">&nbsp;Definition&nbsp;</td>
+ <td class="TabFiller" width="100%">&nbsp;</td>
+<td align="center" onclick="OnFitWidthClick();"  id="ZoomButton" class="ZoomButton" title="Fit to width">
+<img src="../standard/ws_fitwidth.gif"></img></td>
+<td align="center" onclick="OnRegularClick();" id="ZoomButton" class="ZoomButton" title="Actual size">
+<img src="../standard/ws_actual.gif"></img></td>
+<td align="center" onmousedown="OnIncrStart();" onmouseup="OnIncrStop();" id="ZoomButton" class="ZoomButton" title="Zoom in">
+<img src="../standard/ws_zoomin.gif"></img></td>
+<td align="center" onmousedown="OnDecrStart();" onmouseup="OnDecrStop();" id="ZoomButton" class="ZoomButton" title="Zoom out">
+<img src="../standard/ws_zoomout.gif"></img></td>
+<td style="display:none" id="TabMemoryName">TabMemoryProcess</td>	</tr>
+</table>
+
+<div id="ContentTab" class="ContentTab">
+	<table id="TabDiagList" class="TabDiagList" border="0" cellpadding="0" cellspacing="0" width="450">
+	          <tr>
+          <td width="16">
+                    <img src="../standard/diag.gif"/></td>
+<td id="TabDiag"class="TabDiag">
+DFD 8.2.1 Manage Fleet Business Transactions</td>
+</tr>
+              </Table>
+<div id="ContentTabDiag" class="ContentTabDiag">
+      <p>
+<p class="DiagName">DFD 8.2.1 Manage Fleet Business Transactions</p><p>
+<center>
+<h5>This is a DFD diagram which provides a description of the function in the ITS environment</h5>
+  <MAP CLASS="Content" NAME="7F469BD339AF12BD"> 
+    <AREA href="737ac3fc3f3327a2.htm" shape="rect" coords="82, 479, 350, 493"   target="_self"  title="It contains previously stored resources administration data for a vehicle fleet."> 
+    </AREA> 
+    <AREA href="737ac3fc3f332790.htm" shape="rect" coords="94, 311, 275, 325"   target="_self"  title="It contains previously stored data about requests for freight shipments by the vehicle fleet."> 
+    </AREA> 
+    <AREA href="2ff44f6c406c5577.htm" shape="rect" coords="411, 185, 644, 201"   target="_self"  title="&nbsp;&nbsp;It carries the information that a new freight operation has been contractually accepted by the freight management centre and that this operation must start its preparation process.&nbsp;&nbsp;The data flow includes the freight transaction ID."> 
+    </AREA> 
+    <AREA href="2ff43298406c008c.htm" shape="rect" coords="248, 503, 350, 518"   target="_self"  title="&nbsp;&nbsp;It contains any telematics input from the fleet operator (from keyboard or communication system)."> 
+    </AREA> 
+    <AREA href="d4d22941406c4e19.htm" shape="rect" coords="486, 498, 596, 512"   target="_self"  title="&nbsp;&nbsp;It contains any telematics output to the fleet operator (from screen or communication system)."> 
+    </AREA> 
+    <AREA href="5eae677639840554.htm" shape="rect" coords="90, 289, 274, 303"   target="_self"  title="It contains official documents such as customs and hazardous goods declarations."> 
+    </AREA> 
+    <AREA href="f897227b398279bc.htm" shape="rect" coords="411, 62, 627, 91"   target="_self"  title=" It carries characteristics about the conditions under which the freight operation will be performed.  It is the contract established between the freight shipper and fleet centre.  The data flow includes the fleet transaction ID (fleet supplier proposal ID and freight transaction ID), fleet supplier name and address, origin/destination conditions, departure/arrival dates engagement, agreed price and electronic signature."> 
+    </AREA> 
+    <AREA href="f897227b398279b6.htm" shape="rect" coords="411, 84, 636, 112"   target="_self"  title="It is a request from the fleet supplier to Freight Shipper to get information about current freight opportunity.&nbsp;&nbsp;The data flow includes Fleet Supplier name and address, plus criteria for transport opportunity selection, i.e. start time, end-time, start location, end location and cargo type."> 
+    </AREA> 
+    <AREA href="f897227b398279b0.htm" shape="rect" coords="411, 23, 555, 41"   target="_self"  title=" It carries characteristics about the conditions under which the freight operation could be performed.  The data flow includes the fleet transaction ID (fleet supplier proposal ID and freight transaction ID), fleet supplier name and address, departure/arrival dates proposal, proposed price and electronic signature."> 
+    </AREA> 
+    <AREA href="f897227b398279a4.htm" shape="rect" coords="411, 46, 631, 60"   target="_self"  title="It indicates to freight shipper that the Fleet Supplier is available to carry freight and so to study transport opportunity.   The data flow includes Fleet Supplier name and address, start time of availability, end time of availability, description of capability during availability period."> 
+    </AREA> 
+    <AREA href="f897227b3982799e.htm" shape="rect" coords="411, 110, 599, 133"   target="_self"  title="It contains all the operational information that is provided by Fleet Supplier to the Freight Shipper for the performed freight transport.&nbsp;&nbsp;The data flow includes the fleet transaction ID (fleet supplier proposal ID and freight transaction ID), fleet supplier name and address, origin/destination conditions, departure/arrival dates, intermediate time and location of the freight with freight status, delivery time with freight status."> 
+    </AREA> 
+    <AREA href="f897227b39827992.htm" shape="rect" coords="411, 0, 595, 22"   target="_self"  title="It carries all commercial information that is provided by Fleet Supplier to the Freight Shipper for the performed freight transport.  The data flow includes the fleet transaction ID (fleet supplier proposal ID and freight transaction ID), fleet supplier name and address, origin/destination conditions, departure/arrival dates, proof of delivery, delay, and penalties."> 
+    </AREA> 
+    <AREA href="f8971c5639824089.htm" shape="rect" coords="411, 331, 651, 365"   target="_self"  title="  It carries the information that an analysis must be made to determine what are the best suitable transport resources for a given road freight transport operation.  It also carries the information that a registered fleet transport operation must have its transport conditions changed.  There are two steps in the transaction: initial where the best suitable resources are looked for ; final where the final choice is made.  The data flow includes the transaction step (initial or final), transaction type (new or change), fleet transaction ID and cancelled fleet transaction ID."> 
+    </AREA> 
+    <AREA href="f8971c5639823fb1.htm" shape="rect" coords="486, 543, 722, 557"   target="_self"  title="It includes all documents relative to freight status and declaration issued from all freight contracts and needed to build trip statutory documents."> 
+    </AREA> 
+    <AREA href="f8971c5539823f4b.htm" shape="rect" coords="410, 161, 545, 175"   target="_self"  title="It contains data that is a specific request from Manage fleet business transaction. The request can be a commercial instruction or an additional information answer (i.e. a request on information that cannot be find on the resource data store). The data comprises trip ID, nature of the request and the request."> 
+    </AREA> 
+    <AREA href="f8971c5539823f21.htm" shape="rect" coords="30, 6, 274, 20"   target="_self"  title="  It carries the information that the best suitable transport resources for a given road freight transport operation have been looked for.  The action can be successful or not.  The data flow includes the fleet transaction ID, resources research result (positive or not) and analysis ID."> 
+    </AREA> 
+    <AREA href="ea6e213e39ef0828.htm" shape="rect" coords="82, 71, 274, 90"   target="_self"  title="It contains the current status of all Freight Vehicles in the Fleet and is for use in the management of the Fleet."> 
+    </AREA> 
+    <AREA href="f8971c5639824077.htm" shape="rect" coords="303, 404, 426, 434"   target="_self"  title="  It carries the information that the fleet administrative closure - invoice and payment - must start.  The data flow includes the fleet transaction ID."> 
+    </AREA> 
+    <AREA href="f8972277398274d6.htm" shape="rect" coords="189, 525, 351, 542"   target="_self"  title="It carries the acknowledgement that a payment has been placed by the Freight Operator in the bank account of the Fleet Operator.  The data flow includes the fleet transaction ID, date of payment and electronic signature."> 
+    </AREA> 
+    <AREA href="f897227b398279aa.htm" shape="rect" coords="486, 474, 635, 494"   target="_self"  title=" It is the formal invoice from the fleet supplier to the freight shipper.  The data flow includes the fleet transaction ID, price and electronic signature."> 
+    </AREA> 
+    <AREA href="f8971c5639823f99.htm" shape="rect" coords="486, 517, 635, 537"   target="_self"  title="  It is the formal invoice from the fleet supplier to the freight management centre.  The data flow includes the fleet transaction ID, price and electronic signature."> 
+    </AREA> 
+    <AREA href="f8971c5639823fd5.htm" shape="rect" coords="191, 546, 353, 562"   target="_self"  title="  It carries the acknowledgement that a payment has been placed by the freight operator on the bank account of the fleet operator.  The data flow includes the fleet transaction ID, date of payment and electronic signature."> 
+    </AREA> 
+    <AREA href="f89709c3398222e3.htm" shape="rect" coords="382, 472, 460, 568"   target="_self"  title="This Function shall be capable of providing the following facilities:"> 
+    </AREA> 
+    <AREA href="f897fc63398101a3.htm" shape="rect" coords="1, 353, 94, 395"   target="_self"  title="This Data Store shall be used within the Manage Freight and Fleet Operations Area.&nbsp;&nbsp;It shall contain all recorded information for fleet operations."> 
+    </AREA> 
+    <AREA href="f8971c5539823f45.htm" shape="rect" coords="126, 48, 275, 65"   target="_self"  title="  It informs the function Manage fleet business transactions that an unforeseen event happens that may have consequences on freight management so that function can take all necessary decisions. It contents the trip ID with a brief description of the incident and of  foreseen consequences on trip and load."> 
+    </AREA> 
+    <AREA href="f8971c5539823f3f.htm" shape="rect" coords="146, 24, 274, 44"   target="_self"  title="It contains data that informs Manage Fleet Business transaction function that a foreseen event happens on a trip that may need processing at commercial level. It contains trip ID, event (among a pre-defined list of relevant events)."> 
+    </AREA> 
+    <AREA href="f897227c39827b36.htm" shape="rect" coords="411, 137, 509, 151"   target="_self"  title="  It contains any telematics output to the fleet operator (from screen or communication system)."> 
+    </AREA> 
+    <AREA href="f897227839827662.htm" shape="rect" coords="184, 218, 274, 232"   target="_self"  title="  It contains any telematics input from the fleet operator (from keyboard or communication system)."> 
+    </AREA> 
+    <AREA href="f8971c5639823fa5.htm" shape="rect" coords="411, 296, 634, 310"   target="_self"  title="&nbsp;&nbsp;It is a request from the fleet supplier to freight system to get information about current freight opportunity.&nbsp;&nbsp;The data flow includes fleet supplier name and address, criteria for transport opportunity selection: start time, end-time, start location, end location, cargo type."> 
+    </AREA> 
+    <AREA href="f8971c5639823f8d.htm" shape="rect" coords="411, 274, 597, 289"   target="_self"  title="It carries all operational information that is provided by fleet supplier to the freight shipper for the performed freight transport. The data flow includes the fleet transaction ID (fleet supplier proposal ID and freight transaction ID), fleet supplier name and address, origin/destination conditions, departure/arrival dates, current operation (pick-up, conveying, delivering), position, intermediate time and location of the freight with freight status, delivery time with freight status, with or without incident and incident description"> 
+    </AREA> 
+    <AREA href="f8971c5539823f81.htm" shape="rect" coords="411, 253, 597, 268"   target="_self"  title="It carries all commercial information that is provided by fleet supplier to the freight shipper for the performed freight transport. The data flow includes the fleet transaction ID (fleet supplier proposal ID and freight transaction ID), fleet supplier name and address, origin/destination conditions, departure/arrival dates, proof of delivery, delay and penalties."> 
+    </AREA> 
+    <AREA href="f8971c5639823fab.htm" shape="rect" coords="411, 209, 628, 224"   target="_self"  title="  It carries characteristics about the conditions under which the freight operation will be performed.  It is the contract established between the freight and fleet centres.  The data flow includes the fleet transaction ID (fleet supplier proposal ID and freight transaction ID), fleet supplier name and address, origin/destination conditions, departure/arrival dates engagement, agreed price and electronic signature."> 
+    </AREA> 
+    <AREA href="f8971c5639823f9f.htm" shape="rect" coords="412, 319, 559, 334"   target="_self"  title="  It carries characteristics about the conditions under which the freight operation could be performed.  The data flow includes the fleet transaction ID (fleet supplier proposal ID and freight transaction ID), fleet supplier name and address, departure/arrival dates proposal, proposed price and electronic signature."> 
+    </AREA> 
+    <AREA href="f8971c5639823f93.htm" shape="rect" coords="411, 232, 634, 246"   target="_self"  title="It indicates to freight shipper that the fleet supplier is available to carry freight and so to study transport opportunity.&nbsp;&nbsp;The data flow includes fleet supplier name and address, start time of availability, end time of availability, description of capability during availability period."> 
+    </AREA> 
+    <AREA href="f8971c5639823fbd.htm" shape="rect" coords="112, 263, 274, 283"   target="_self"  title="  It carries the information that the status of a fleet operation is requested.  The data flow includes the fleet transaction ID."> 
+    </AREA> 
+    <AREA href="f8971c5639823fcf.htm" shape="rect" coords="112, 239, 274, 259"   target="_self"  title="  It carries characteristics about the freight operation that will be performed.  The data flow includes the fleet transaction ID (freight transaction ID and fleet supplier ID), freight shipper name and address, fleet supplier name and address, origin/destination conditions, departure/arrival dates conditions, cargo/freight characteristics, agreed price and electronic signature."> 
+    </AREA> 
+    <AREA href="f8971c5639823fc9.htm" shape="rect" coords="94, 95, 275, 115"   target="_self"  title="  It carries characteristics about the freight operation that needs to be performed.  The data flow includes the freight shipper name and address, freight transaction ID,  fleet supplier name and address, origin/destination conditions, departure/arrival dates conditions, cargo/freight characteristics."> 
+    </AREA> 
+    <AREA href="f8972277398274be.htm" shape="rect" coords="126, 192, 274, 212"   target="_self"  title="It carries the information that the status of a fleet operation is requested.  The data flow includes the fleet transaction ID."> 
+    </AREA> 
+    <AREA href="f8972277398274c4.htm" shape="rect" coords="105, 173, 274, 188"   target="_self"  title=" It contains official documents such as customs and hazardous goods declarations."> 
+    </AREA> 
+    <AREA href="f8972277398274d0.htm" shape="rect" coords="126, 149, 274, 163"   target="_self"  title="It carries characteristics about the freight operation that will be performed.  The data flow includes the fleet transaction ID (freight transaction ID and fleet supplier ID), freight shipper name and address, fleet supplier name and address, origin/destination conditions, departure/arrival dates conditions, cargo/freight characteristics, agreed price and electronic signature."> 
+    </AREA> 
+    <AREA href="f8972277398274ca.htm" shape="rect" coords="94, 121, 275, 141"   target="_self"  title="It carries characteristics about the freight operation that needs to be performed.&nbsp;&nbsp;The data flow includes the freight shipper name and address, freight transaction identity (ID), fleet supplier name and address, origin/destination conditions, departure/arrival dates conditions and cargo/freight characteristics."> 
+    </AREA> 
+    <AREA href="f89709c3398222dd.htm" shape="rect" coords="302, 2, 389, 362"   target="_self"  title="This Function shall be capable of providing the following facilities:"> 
+    </AREA> 
+  </MAP> 
+  <IMG CLASS="Content" SRC="../images/f897ff8239810513_i.png" USEMAP="#7F469BD339AF12BD" BORDER=0> 
+  </IMG> </center>
+</div> 
+      </div>
+
+ <div id="ContentTab" class="ContentTab">
+
+<h3>Overview</H3>
+<H5>This High-level Function shall cover activities related to the management of fleet transactions between a freight center and a fleet center for a given road freight transport opportunity.&nbsp;&nbsp;The Function shall consist of the following lower level Functions:</H5>
+<h3>Diagrams</H3> 
+<table border="1" width="100%">
+<tr>
+<td><h5>
+The Diagram(s) is(are) the Diagram(s) where you can find the function
+</td>
+</tr>
+<tr>
+<td width="50%">
+<ul>
+<li>The first diagram, if exists, is a DFD diagram which provides the context of the function</li>
+<li>The second Diagram, if exists, is a Functional Tree which provides a hierarchical description of the function into subfunctions</li>
+</ul>
+</h5>
+</td>
+<td width="100%">
+<h5>
+
+
+
+<li>DFD 8.2 Manage Commercial Fleet</li></a>
+<h5>
+
+
+
+<a href="F897FF823981050D.HTM?DiagTab=1" Target="_self">
+<li>Functional tree 8.2</li></a></h5>
+</td>
+</tr>
+</table>
+<h3>Parent</H3>
+<ul><h5><li>
+  <A CLASS="Content" HREF="f897ff823981050d.htm" target="_self"> 8. Manage Freight and Fleet Operations::8.2 Manage Commercial Fleet</A> </ul>
+<ul></h5></ul>
+<h3>Component lower level functions</H3>
+<ul><h5><li>
+  <A CLASS="Content" HREF="f89709c3398222dd.htm" target="_self"> 8.2.1.1 Negotiate Freight Operator Requests</A> <li>
+  <A CLASS="Content" HREF="f89709c3398222e3.htm" target="_self"> 8.2.1.2 Administrate Fleet Transactions</A> </h5></ul>
+<H5>These Functions are responsible for the management of business transactions that are needed to enable the freight fleet to transport the consignment of goods.  They directly communicate with each other using a single Data Flow, and have a some communications with other functionality in the Area and with the Fleet Operator terminator.  The Functions and Data Flows are contained in the DFD for Function 8.2.1 - DFD 8.2.1.      <br/></H5>
+<h3>Input logical dataflows</H3>
+<ul><h5>
+
+<li>
+  <A CLASS="Content" HREF="5eae6d9e39840d63.htm" target="_self"> fcc.fs-freight_data </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f897227839827662.htm" target="_self"> fo.flo-input_data </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="2ff43298406c008c.htm" target="_self"> fo.flo-input_data_2 </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="ea6e213e39ef0828.htm" target="_self"> mffo_fleet_global_availability_status </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f8971c5639823fb7.htm" target="_self"> mffo_freight_data </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="ea6e230439ef0860.htm" target="_self"> mffo_operations_response </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="737ac3fc3f33277e.htm" target="_self"> mffo_read_resources_transaction_management_data </A> 
+
+</h5></ul>
+<h3>Output logical dataflows</H3>
+<ul><h5>
+
+<li>
+  <A CLASS="Content" HREF="f8971c5539823f87.htm" target="_self"> mffo_fleet_data </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="ea6e220c39ef0839.htm" target="_self"> mffo_operations_request </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f897227b39827998.htm" target="_self"> tcc.fs-fleet_data </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f897227c39827b36.htm" target="_self"> to.flo-output_data </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="d4d22941406c4e19.htm" target="_self"> to.flo-output_data_2 </A> 
+
+</h5></ul> 
+
+<ul><h5></h5></ul>
+
+<ul><h5></h5></ul>
+<h3>User needs</H3>
+<div align="right">
+<table border="1" width="100%">
+<tr>
+<td width="10%"><center><h4>Number</h4></center></td>
+<td width="90%"><h4>Description</h4></td>
+</tr>
+
+</table>
+</div>
+
+</div><script language="javascript" src="../standard/ws_tabtemplate.js"></script>
+<script language="javascript" src="../standard/ws_zoomtemplate.js"></script>
+<script language="javascript" src="../standard/ws_buttontemplate.js"></script>
+<script language="javascript" src="../standard/ws_keyshortcuttemplate.js"></script>
+            <!--<img src="../standard/busf.gif"/>-->
+
+</BODY> </HTML>

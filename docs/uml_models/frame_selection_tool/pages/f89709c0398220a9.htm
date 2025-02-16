@@ -1,0 +1,29 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 4.2.5 Prepare Fare Schemes
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>4.2.5 Prepare Fare Schemes</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to prepare fares for the current PT services according to the current fare policy whenever the schedules are changed.<br>(2) Once they have been created, the ability to provide details of the new fare schemes directly to other functionality in the Manage PT and Provide Traveller Journey Assistance Functional Areas.<br>(3) Also once they have been created, the ability to provide details of the new fare schemes to the functionality that manages the fare scheme store of data and provides the PT Operator interface.<br></div></H5><h3>Functional Requirements</H3><h5>(a) when the fare scheme planning strategies data flow is received, extract the fare strategies for the newly created or modified services that it contains and store internally<br/>(b) when the fare strategies data flow arrives, extract the overall fare strategies that it contains (e.g. card products, seasonal tickets, sales policy, child fares, fares for elderly people, bicycles, guide dogs, etc.) and store internally<br/>(c) following the receipt of the data flows in either (a) or (b), re-calculate the fares for the services using the fare strategies that they have provided, plus the service details obtained using the data flow in (b)<br/>(d) send the results of (c) to the Manage Fare Schemes Data Store function using the updated fare scheme data flow and to the Provide PT Operator Interface to PT Schedule Plans function using the revised fare scheme for operator data flow<br/>(e) output the new fares produced as a result of (c) to the Provide Electronic Payment Facilities and Provide Traveller Journey Assistance Areas using the appropriate output data flows<br/>(f) when the third trigger input data flow arrives, send the requested fares back to the Manage Traffic Area using the first trigger output data flow.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FEA239810436.HTM?DiagTab=1" Target="_self">DFD 4.2  Plan PT Service</a><h5><li> <a href="F897F8CF39810025.HTM?DiagTab=0" Target="_self">Functional Tree of Area 4</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897fea239810436.htm" target="_self"> 4.2 Plan PT Service</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="31c751344b19142e.htm" target="_self"> mpto_current_fare_scheme </A> <li>
+  <A CLASS="Content" HREF="31c73cdb4b1906f3.htm" target="_self"> mpto_fare_scheme_planning_strategies </A> <li>
+  <A CLASS="Content" HREF="f8971c5739824215.htm" target="_self"> mpto_fare_strategies </A> <li>
+  <A CLASS="Content" HREF="f8971c583982424b.htm" target="_self"> mpto_pt_services </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f8971ea1398263af.htm" target="_self"> mpto.pepf_fare_schemes </A> <li>
+  <A CLASS="Content" HREF="f8971ea2398263df.htm" target="_self"> mpto.ptja_current_fares </A> <li>
+  <A CLASS="Content" HREF="cf6dd07c4b180194.htm" target="_self"> mpto_fare_schemes_for_stops </A> <li>
+  <A CLASS="Content" HREF="cf6dd65e4b1804ee.htm" target="_self"> mpto_fare_schemes_for_travellers </A> <li>
+  <A CLASS="Content" HREF="0423096f4b2a0449.htm" target="_self"> mpto_PT_fares_for_demand_services </A> <li>
+  <A CLASS="Content" HREF="74f67fc44b2704e0.htm" target="_self"> mpto_PT_fares_for_vehicle_sharing </A> <li>
+  <A CLASS="Content" HREF="31c73f3a4b190770.htm" target="_self"> mpto_revised_fare_schemes_for_operators </A> <li>
+  <A CLASS="Content" HREF="31c753924b1914c8.htm" target="_self"> mpto_updated_fare_scheme </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428d39be6787.htm" target="_self"> 4.1.0.4</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to manage tariff policies (define fares/fees according to selected criteria, e.g. type of Traveller or traffic conditions, etc.).</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442b239be845b.htm" target="_self"> 7.3.2.4</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to adjust public transport fares according to a given pricing strategy.</h5></td></tr></table></div>
+</BODY> </HTML>

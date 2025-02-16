@@ -1,0 +1,32 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 3.2.7 Provide Incident Mitigations to Traffic Management
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>3.2.7 Provide Incident Mitigations to Traffic Management</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to manage the output of instructions from an incident strategy to other functionality in the System in response to incidents that have been detected and classified by other functionality.<br>(2) The ability for the instructions included in the incident management strategies to be output to require the replacement of, or changes to, any traffic management strategies that are currently in operation.<br>(3) The ability for the output of the incident management strategies to begin as soon as the strategy information is received.<br>(4) The ability to keep a local store of the strategies currently being implemented and delete them when their expiry time has passed, or when a strategy modification or removal indication arrives from the incident management functionality.<br></div></H5><h3>Functional Requirements</H3><h5>(a) on receipt of the input trigger data flow all of the output data flows shall be sent.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FEA239810418.HTM?DiagTab=1" Target="_self">DFD 3.2  Manage Incidents</a><h5><li> <a href="F897FEA239810418.HTM?DiagTab=1" Target="_self">Functional tree 3.2</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897fea239810418.htm" target="_self"> 3.2 Manage Incidents</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="d41adade4b0f0236.htm" target="_self"> mt_incident_strategy_for_internal </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f8971c593982440d.htm" target="_self"> mt_inter-urban_incident_strategy_request </A> <li>
+  <A CLASS="Content" HREF="f8971c5939824413.htm" target="_self"> mt_inter-urban_incident_warning_c&amp;i_commands </A> <li>
+  <A CLASS="Content" HREF="af07c58b4ad50254.htm" target="_self"> mt_inter-urban_incident_warning_l&amp;s_commands </A> <li>
+  <A CLASS="Content" HREF="f8971c5b3982464d.htm" target="_self"> mt_urban_incident_strategy_request </A> <li>
+  <A CLASS="Content" HREF="3ecd49954af103bf.htm" target="_self"> mt_urban_incident_warning_messages </A> <li>
+  <A CLASS="Content" HREF="f8971c5b39824653.htm" target="_self"> mt_urban_incident_warning_s&amp;g_commands </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442a739be7b43.htm" target="_self"> 7.1.3.6</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to implement planned control strategies for planned events (e.g. sport, cultural, etc.).</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442ae39be807d.htm" target="_self"> 7.2.0.1</A> </a></center></h5></td><td width="90%"><h5>The system shall detect and  respond to various incidents on the road network.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442ae39be80a7.htm" target="_self"> 7.2.0.2</A> </a></center></h5></td><td width="90%"><h5>The system shall not do anything to reduce road safety.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442ae39be80bf.htm" target="_self"> 7.2.0.3</A> </a></center></h5></td><td width="90%"><h5>The system shall not do anything that might aggravate, or cause, an incident.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442b039be8239.htm" target="_self"> 7.2.2.3</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to provide information on each incident to TICs for onward transmission to travellers.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442b039be82c9.htm" target="_self"> 7.2.5.2</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to provide local warnings on dangerous sections of the road network.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="ca51f60c4b901449.htm" target="_self"> 7.4.1.35</A> </a></center></h5></td><td width="90%"><h5><span style='font-style: italic;'>Hazardous Location Notification</span> - The system shall be able to warn drivers in a timely manner of incidents ahead (e.g. road works, accident, traffic queue) via an in-vehicle display.&nbsp;&nbsp;Where available and relevant this information shall include lane(s)/road section(s) affected and expected delay.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="60f4882d4ba314d9.htm" target="_self"> 7.4.3.7</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to advise a driver, via an in-vehicle device, which lane to use when passing an incident/accident.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="60f488364ba314e2.htm" target="_self"> 7.4.3.8</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to advise a driver, via an in-vehicle device, where to stop safely (e.g. an appropriate exit lane, hard shoulder).</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="76a781e24b970273.htm" target="_self"> 7.4.5.1</A> </a></center></h5></td><td width="90%"><h5>The system shall enable the TCC to calculate recommended headways for the current traffic and environment conditions.</h5></td></tr></table></div>
+</BODY> </HTML>
