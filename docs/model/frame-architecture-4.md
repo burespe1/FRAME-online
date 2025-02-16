@@ -1,6 +1,6 @@
 ---
 version: 4.1
-repository_url: ../uml_models/frame_repository_v4/index.html
+repository_url: ../uml_models/frame_repository_v4/index.htm
 ---
 
 # FRAME Architecture version 4
