@@ -1,0 +1,32 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 4.2.9 Provide PT Operator Interface to PT Schedule Plans
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>4.2.9 Provide PT Operator Interface to PT Schedule Plans</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) A HMI through which the PT Operator can manage the creation of new PT service plans and fare schemes.<br>(2) This HMI shall enable the preparation of new PT service plans and hence new fare schemes to be initiated and managed by the PT Operator.<br>(3) It shall be possible for the same HMI to be used to output the contents of the new PT service plans and fare schemes, as well as to load and amend data in the store of PT Route Static Data and output the data that the store contains.<br></div></H5><h3>Functional Requirements</H3><h5>(a) continuously monitor for the receipt of any of the input data flows from the PT operator<br/>(b) when any of the data flows in (a) are received, process their contents<br/>(c) if the result of (b) is that updates to the static data have been provided, send the data to the Manage PT Route Data Store function using the route static data updates data flow<br/>(d) if the result of (b) is that service planning strategies have been provided send them to the Plan New Service Schedule function using the service planning strategies data flow<br/>(e) if the result of (b) is that fare planning strategies have been provided send them to the Plan Fare Schemes function using the fare scheme planning strategies data flow<br/>(f) if either of the revised services and schedules or revised fare schemes for operator data flows is received then output their contents to the PT operator using the appropriate data flow<br/>(g) if the result of (b) is that the PT operator has made a request for the current static data, then send the request to the Manage PT Route Data Store function using the data flow containing the request current static data<br/>(h) when the route static data for reports data flow is received in response to (g) output its contents to the PT operator using the appropriate data flow.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FEA239810436.HTM?DiagTab=1" Target="_self">DFD 4.2  Plan PT Service</a><h5><li> <a href="F897F8CF39810025.HTM?DiagTab=0" Target="_self">Functional Tree of Area 4</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897fea239810436.htm" target="_self"> 4.2 Plan PT Service</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897227839827674.htm" target="_self"> fo.pto-fare_strategies </A> <li>
+  <A CLASS="Content" HREF="f89722783982768c.htm" target="_self"> fo.pto-planning_strategies </A> <li>
+  <A CLASS="Content" HREF="b027c6de39bf06cf.htm" target="_self"> fo.pto-requests_and_updates </A> <li>
+  <A CLASS="Content" HREF="31c738554b190685.htm" target="_self"> fo.pto-request_route_static_data </A> <li>
+  <A CLASS="Content" HREF="31c739c64b1906ba.htm" target="_self"> fo.pto-route_static_data_update </A> <li>
+  <A CLASS="Content" HREF="31c73f3a4b190770.htm" target="_self"> mpto_revised_fare_schemes_for_operators </A> <li>
+  <A CLASS="Content" HREF="31c7403d4b19079b.htm" target="_self"> mpto_revised_services_and_schedules </A> <li>
+  <A CLASS="Content" HREF="31c741ae4b1907d5.htm" target="_self"> mpto_route_static_data_for_reports </A> <li>
+  <A CLASS="Content" HREF="f8971c583982428d.htm" target="_self"> mpto_service_data_for_reports </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="31c73cdb4b1906f3.htm" target="_self"> mpto_fare_scheme_planning_strategies </A> <li>
+  <A CLASS="Content" HREF="31c73e8e4b190745.htm" target="_self"> mpto_request_current_static_data </A> <li>
+  <A CLASS="Content" HREF="31c7429c4b190800.htm" target="_self"> mpto_route_static_data_updates </A> <li>
+  <A CLASS="Content" HREF="31c73da54b19071e.htm" target="_self"> mpto_service_planning_strategies </A> <li>
+  <A CLASS="Content" HREF="31c743664b19082b.htm" target="_self"> to.pto-requested_route_static_data </A> <li>
+  <A CLASS="Content" HREF="31c748954b190d28.htm" target="_self"> to.pto-revised_fare_schemes </A> <li>
+  <A CLASS="Content" HREF="31c7491c4b190d4f.htm" target="_self"> to.pto-revised_services </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14427f39be5ce9.htm" target="_self"> 10.1.0.3</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to assist PT operators in planning for the optimum use of existing resources to meet the demand.</h5></td></tr></table></div>
+</BODY> </HTML>

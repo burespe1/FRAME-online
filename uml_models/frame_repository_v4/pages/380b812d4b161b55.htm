@@ -1,0 +1,25 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 3.3.11 Simulate Demand Management Strategy
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>3.3.11 Simulate Demand Management Strategy</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to simulate the imposition of a demand management strategy.<br>(2) The ability to carry out its simulations at the request of the Transport Planner who must specify the existing strategy that is to be simulated.<br>(3) The ability to send the results of the simulation to the functionality providing the HMI for the Transport Planner.<br></div></H5><h3>Functional Requirements</H3><h5>(a) when the run demand strategy simulation data flow is received, send the request for data and strategies for simulation data flow tot he Manage Demand Management Data Store function<br/>(b) when the data and strategy for simulation data flows have been received, run the simulation to show what is expected to happen when the strategy is implemented<br/>(c) when (b) is completed, send the results in the demand strategy simulation results data flow to the Provide Transport Planner Interface function<br/>(d) if the new demand strategy for simulation data flow is received, send the request for data for simulation data flow tot he Manage Demand Management Data Store function<br/>(e) repeat (b) and (c).</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FEA23981041E.HTM?DiagTab=1" Target="_self">DFD 3.3  Manage Demand</a><h5><li> <a href="F897FEA23981041E.HTM?DiagTab=1" Target="_self">Functional tree 3.3</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897fea23981041e.htm" target="_self"> 3.3 Manage Demand</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="913498e44b1602ea.htm" target="_self"> mt_current_demand_strategy_for_simulation </A> <li>
+  <A CLASS="Content" HREF="913499794b160311.htm" target="_self"> mt_network_use_data_for_simulation </A> <li>
+  <A CLASS="Content" HREF="91349a414b16033c.htm" target="_self"> mt_new_demand_strategy_for_simulation </A> <li>
+  <A CLASS="Content" HREF="9134a5de4b1605b4.htm" target="_self"> mt_run_demand_strategy_simulation </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="913494934b16026a.htm" target="_self"> mt_demand_strategy_simulation_results </A> <li>
+  <A CLASS="Content" HREF="521d86c94b7111f0.htm" target="_self"> mt_request_data_&amp;_strategies_for_simulation </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428739be62c5.htm" target="_self"> 2.1.2.4</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to simulate a demand management strategy on the road network.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428739be62dd.htm" target="_self"> 2.1.2.5</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to simulate potential capacity reduction, e.g. due to road works.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442b139be8353.htm" target="_self"> 7.3.0.4</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to simulate a demand management strategy on the road network.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442b139be836b.htm" target="_self"> 7.3.0.5</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to simulate potential capacity reduction, e.g. due to road works.</h5></td></tr></table></div>
+</BODY> </HTML>

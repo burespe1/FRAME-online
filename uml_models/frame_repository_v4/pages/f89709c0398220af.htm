@@ -1,0 +1,29 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 4.2.7 Manage PT Route Data Store
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>4.2.7 Manage PT Route Data Store</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to manage the store of PT Route Static Data, loading it with data provided by other functionality comprising data about the road network served by the PT operation and strategies that have been devised for its management. <br>(2) The ability to provide data from the store for use in PT service schedule preparation, plus for use at PT stops, by Travellers preparing trip plans and in reports produced by other functionality at the request of the PT Operator.<br></div></H5><h3>Functional Requirements</H3><h5>(a) when either of the data flows containing urban road data or inter-urban road data is received, the data that it contains shall be loaded into the store of PT Route Static Data<br/>(b) when the route static data updates data flow is received, the data that it contains shall also be loaded into the store of PT Route Static Data<br/>(c) if the data flow containing a request for the current static data is received, the required data shall be obtained from the store of PT Route Static Data<br/>(d) when all the data in (c) has been obtained, it shall be sent to the Provide PT Operator Interface to PT Schedule Plans function in the route static data for reports data flow<br/>(e) every time the data flows in (a) or (b) are received, the data that they contain shall be sent to the Plan New Service Schedule function in the route data for planning data flow.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FEA239810436.HTM?DiagTab=1" Target="_self">DFD 4.2  Plan PT Service</a><h5><li> <a href="F897F8CF39810025.HTM?DiagTab=0" Target="_self">Functional Tree of Area 4</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897fea239810436.htm" target="_self"> 4.2 Plan PT Service</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f8971c5839824275.htm" target="_self"> mpto_read_static_data </A> <li>
+  <A CLASS="Content" HREF="31c73e8e4b190745.htm" target="_self"> mpto_request_current_static_data </A> <li>
+  <A CLASS="Content" HREF="31c7429c4b190800.htm" target="_self"> mpto_route_static_data_updates </A> <li>
+  <A CLASS="Content" HREF="f8971ea239826409.htm" target="_self"> mt.mpto_inter-urban_road_data </A> <li>
+  <A CLASS="Content" HREF="f8971ea239826433.htm" target="_self"> mt.mpto_urban_road_data </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f8971c583982427b.htm" target="_self"> mpto_load_static_data </A> <li>
+  <A CLASS="Content" HREF="f8971c583982426f.htm" target="_self"> mpto_route_data_for_planning </A> <li>
+  <A CLASS="Content" HREF="31c741ae4b1907d5.htm" target="_self"> mpto_route_static_data_for_reports </A> <li>
+  <A CLASS="Content" HREF="cf6deef24b180b83.htm" target="_self"> mpto_route_static_data_for_stops </A> <li>
+  <A CLASS="Content" HREF="cf6deb004b180b22.htm" target="_self"> mpto_route_static_data_for_travellers </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14427f39be5d07.htm" target="_self"> 10.1.0.4</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to analyse records of usage and operational data, and passenger surveys, to assist in the planning process.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428039be5e39.htm" target="_self"> 10.1.4.4</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to provide information that is relevant to travellers with special needs, e.g. obstacles, manually operated doors, manual payment systems, restrictions for guide dogs, etc.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428339be608b.htm" target="_self"> 10.4.0.1</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to inform travellers about  all PT operations (including bus, rail, metro, air, taxi, car pooling etc.).</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428439be611b.htm" target="_self"> 10.4.2.1</A> </a></center></h5></td><td width="90%"><h5>The system shall provide information which is legible, understandable and capable of being assimilated very quickly by all travellers.</h5></td></tr></table></div>
+</BODY> </HTML>

@@ -1,0 +1,29 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 5.14.5 Provide Driver Trip Guidance Interface
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>5.14.5 Provide Driver Trip Guidance Interface</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) A HMI through which driving instructions and Estimated Time of Arrival (ETA) are output to the Driver.<br>(2) The HMI shall be able to output both sets of information continuously, updating the output immediately fresh data is received.<br>(3) If no data is received from which to generate the output, the HMI shall be able to output a warning message to the Driver to indicate that there is nothing to display.<br></div></H5><h3>Functional Requirements</H3><h5>(a) continuously monitor for the receipt of the input data flows<br/>(b) when any of the data flows in (a) is received, display its contents immediately<br/>(c) if no input is received after a set time interval, display a warning message to say that no data is available.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="4DE089FC4BA7252D.HTM?DiagTab=1" Target="_self">DFD 5.14 Provide In-vehicle Trip Planning &amp; Implementation</a><h5><li> <a href="F897F8D63981002B.HTM?DiagTab=0" Target="_self">Functional Tree of Area 5</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="4de089fc4ba7252d.htm" target="_self"> 5.14 Provide In-vehicle Trip Planning &amp; Implementation</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="9f24bf084bb411ae.htm" target="_self"> pshvs_vehicle_departed_from_route </A> <li>
+  <A CLASS="Content" HREF="12162b894bb314c0.htm" target="_self"> pshvs_vehicle_eta_for_driver </A> <li>
+  <A CLASS="Content" HREF="9f24c3664bb41235.htm" target="_self"> pshvs_vehicle_trip_plan_change_data_for_driver </A> <li>
+  <A CLASS="Content" HREF="12162a534bb3130e.htm" target="_self"> pshvs_vehicle_trip_plan_guidance_instructions </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="12162d454bb3151e.htm" target="_self"> td-expected_time_of_arrival </A> <li>
+  <A CLASS="Content" HREF="12162c8e4bb314f1.htm" target="_self"> td-route_guidance_instructions </A> <li>
+  <A CLASS="Content" HREF="9f24c0224bb411ee.htm" target="_self"> td-vehicle_departed_from_route </A> <li>
+  <A CLASS="Content" HREF="9f24c5fd4bb4127e.htm" target="_self"> td-vehicle_trip_chanage_reason </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14429d39be729d.htm" target="_self"> 6.2.3.5</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to provide customised on-trip information to hand-held and in-vehicle devices.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14429d39be7375.htm" target="_self"> 6.4.1.1</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to provide guidance to Car Parks (with parking spaces). <br/></h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14429e39be7411.htm" target="_self"> 6.4.1.5</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to provide guidance to &quot;Points of Interest&quot;.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="777b81a74bc405f2.htm" target="_self"> 7.5.1.18</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to inform the driver, via an in-vehicle device, that an incident has been detected ahead on the selected route and provide a revised route.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="777b81994bc405e9.htm" target="_self"> 7.5.1.23</A> </a></center></h5></td><td width="90%"><h5>The system shall inform the driver via an in-vehicle device that the vehicle has departed from the selected route and a revised route has been requested.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="76a789fd4b970391.htm" target="_self"> 7.6.2.9</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to provide the driver, via an in-vehicle device, with an estimated time of arrival which is updated at regular intervals.</h5></td></tr></table></div>
+</BODY> </HTML>

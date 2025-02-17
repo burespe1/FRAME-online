@@ -1,0 +1,27 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 4.3.2 Provide PT Maintenance Co-ordination
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>4.3.2 Provide PT Maintenance Co-ordination</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to optimise maintenance schedules based on relevant criteria.<br>(2) The ability to include optimisation criteria such as faults reported for the PT infrastructure and Vehicles, as well as the current PT service plans and the maintenance plans of other PT operations.<br></div></H5><h3>Functional Requirements</H3><h5>(a) continuously monitor for the receipt of the faulty equipment data flow<br/>(b) collect the details of the current planned services and the current maintenance plans of other systems in the relevant data flows<br/>(c) prepare a plan for maintenance intervention co-ordinated with other maintenance activities<br/>(d) communicate the plans to other functions and to the maintenance organisation<br/>(e) when notification is received that the repairs have been completed, send the appropriate data flow.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FEA23981043C.HTM?DiagTab=1" Target="_self">DFD 4.3  Provide PT Management</a><h5><li> <a href="F897F8CF39810025.HTM?DiagTab=0" Target="_self">Functional Tree of Area 4</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897fea23981043c.htm" target="_self"> 4.3 Provide PT Management</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897227839827650.htm" target="_self"> fmo.ptmo-plans </A> <li>
+  <A CLASS="Content" HREF="f89722793982773a.htm" target="_self"> fors.ptms-plans </A> <li>
+  <A CLASS="Content" HREF="57b0640739be0189.htm" target="_self"> mpto_alarm_description </A> <li>
+  <A CLASS="Content" HREF="f8971c57398241f1.htm" target="_self"> mpto_complete_scheduling </A> <li>
+  <A CLASS="Content" HREF="f8971c583982421b.htm" target="_self"> mpto_faulty_equipment </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="1a461bec4b29031f.htm" target="_self"> mpto_demand_vehicle_repaired </A> <li>
+  <A CLASS="Content" HREF="f8971c583982422d.htm" target="_self"> mpto_maintenance_plans </A> <li>
+  <A CLASS="Content" HREF="5eae768f39841dc7.htm" target="_self"> tmo.ptmo-plans </A> <li>
+  <A CLASS="Content" HREF="f897227c39827bea.htm" target="_self"> tors.ptms-plans </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428839be638b.htm" target="_self"> 2.2.0.1</A> </a></center></h5></td><td width="90%"><h5>The system shall provide support for road maintenance and infrastructure management.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428839be63af.htm" target="_self"> 2.2.0.3</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to recommend maintenance work schedules such that they cause the minimum disruption to traffic.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428839be63d3.htm" target="_self"> 2.2.0.5</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to transmit current and future maintenance schedules to TCCs.</h5></td></tr></table></div>
+</BODY> </HTML>

@@ -1,0 +1,25 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 6.8.1 Manage Store of Trip Plan Data
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>6.8.1 Manage Store of Trip Plan Data</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to manage the store of Private Trip Plan Data.<br>(2) The store shall contain descriptions of all of the trip plans produced by each Traveller.<br>(3) The ability to update the store contents whenever a Traveller prepares and finally accepts a new trip plan.<br>(4) The ability to retrieve a prepared trip plan whenever the Traveller decides to implement a trip.<br>(5) When a trip plan is retrieved for implementation, its description shall be sent to the Implement Trip Plan and Track Traveller Function and to the Monitor Trip Plan Implementation for Traveller Function.<br></div></H5><h3>Functional Requirements</H3><h5>(a) continuously monitor for receipt of the trip plan ready for implementation, implement trip plan, trip plan update from traveller and trip plan data request data flows<br/>(b) when the implement trip plan data flow is received in (a), use the data flows load trip plan data and read trip plan data to obtain the description of the requested trip plan from the store of Private Trip Plan Data<br/>(c) at the completion of (b), put the complete trip plan description in the trip plan for Implementation and trip plan for monitoring data flows and send them to the Implement Trip Plan and Track Traveller and Monitor Trip Plan Implementation functions respectively<br/>(d) when the trip plan ready for implementation data flow is received in (a), load the trip plan it contains into the store of Private Trip Plan Data using the data flow load trip plan data<br/>(e) when the trip plan update from traveller data flow is received in (a), again load the trip plan it contains into the store of Private Trip Plan Data using the data flow load trip plan data<br/>(f) when the trip plan data request data flow is received in (a), use the data flows load trip plan data and read trip plan data to obtain the description of the requested trip plan from the store of Private Trip Plan Data.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="976FB4784BA00F93.HTM?DiagTab=1" Target="_self">DFD 6.8 Manage Trip Plan Store</a><h5><li> <a href="F897F8DC39810031.HTM?DiagTab=0" Target="_self">Functional Tree of Area 6</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="976fb4784ba00f93.htm" target="_self"> 6.8 Manage Trip Plans</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="d60309e74ba10fe0.htm" target="_self"> ptja_implement_trip_plan </A> <li>
+  <A CLASS="Content" HREF="976fcbc64ba017cd.htm" target="_self"> ptja_read_trip_plan_data </A> <li>
+  <A CLASS="Content" HREF="f8971c5f39824b0f.htm" target="_self"> ptja_revised_trip_plan_after_traveller_approval </A> <li>
+  <A CLASS="Content" HREF="f8971c5f39824af1.htm" target="_self"> ptja_trip_plan_data_request </A> <li>
+  <A CLASS="Content" HREF="976fbc9a4ba012a4.htm" target="_self"> ptja_trip_plan_ready_for_implementation </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="976fcb784ba017ba.htm" target="_self"> ptja_load_trip_plan_data </A> <li>
+  <A CLASS="Content" HREF="f8971c5f39824af7.htm" target="_self"> ptja_trip_plan_data_output </A> <li>
+  <A CLASS="Content" HREF="fc164bcb4b9e1e5c.htm" target="_self"> ptja_trip_plan_for_implementation </A> <li>
+  <A CLASS="Content" HREF="fc164c8c4b9e1e79.htm" target="_self"> ptja_trip_plan_for_monitoring </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="7daf95584bd90de6.htm" target="_self"> 7.6.2.3</A> </a></center></h5></td><td width="90%"><h5>The system shall enable a traveller to request and receive personalised journey plans in advance, assess different plans according to certain criteria (e.g. vehicle type, travel time, cost, expected traffic density, planned events, facilities en route, parking), and to save one for future use.</h5></td></tr></table></div>
+</BODY> </HTML>

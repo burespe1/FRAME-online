@@ -1,0 +1,21 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 6.7.2 Evaluate Trip After Completion
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>6.7.2 Evaluate Trip After Completion</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to evaluate the success of the trip planning and implementation.<br>(2) The evaluation shall be based on data provided by the Support Trip functionality and optional input from the Traveller collected after the trip has been completed.<br>(3) The ability to collect any required input as comments on the trip and on the support given using the Define Traveller&#39;s General Trip Preferences functionality. <br>(4) The ability to send the results of the analysis of the trip performance for output to the Travel Information Operator through the Enable Operator Access to General Trip Preferences functionality.<br></div></H5><h3>Functional Requirements</H3><h5>(a) when the trip completion report for evaluation data flow is received, send the request post trip preferences data flow to the Define Traveller&#39;s General Trip Preferences function<br/>(b) if and when the post trip preferences data flow is received, analyse its contents for inclusion in the trip evaluation<br/>(c) the evaluation of the trip performance shall be carried out using the input from (a) and (b)<br/>(d) if necessary the evaluation in (c) shall be carried out without any input from the traveller in (b)<br/>(e) the results of (d) shall show how well the trip was performed, looking at parameters such as the journey time performance, relevance and timeliness of information provided to the Traveller during the trip, and the success with which connections between different modes of transport were made<br/>(f) the output from (e) shall be sent to the Enable Operator Access to General Trip Preferences in the trip evaluation report for output data flow.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="45DF47834B7D0329.HTM?DiagTab=1" Target="_self">DFD 6.7 Manage General Trip Preferences</a><h5><li> <a href="F897F8DC39810031.HTM?DiagTab=0" Target="_self">Functional Tree of Area 6</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="45df47834b7d0329.htm" target="_self"> 6.7 Manage General Trip Preferences</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="45df75884b7d12c0.htm" target="_self"> ptja_post_trip_preferences </A> <li>
+  <A CLASS="Content" HREF="d60314bb4ba11d18.htm" target="_self"> ptja_trip_completion_report_for_evaluation </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="45df71ce4b7d125a.htm" target="_self"> ptja_request_post_trip_preferences </A> <li>
+  <A CLASS="Content" HREF="45df72c24b7d1285.htm" target="_self"> ptja_trip_evaluation_report_for_output </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14429539be6d39.htm" target="_self"> 6.1.0.5</A> </a></center></h5></td><td width="90%"><h5>The system shall enable travellers to plan their trip using their own travel criteria (modes of transport, time of departure/arrival, road selection criteria, etc.).</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14429e39be7435.htm" target="_self"> 6.4.1.7</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to provide reports on the effectiveness of the navigation instructions that have been provided.</h5></td></tr></table></div>
+</BODY> </HTML>

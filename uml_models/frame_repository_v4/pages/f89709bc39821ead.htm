@@ -1,0 +1,34 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 1.2.1 Load User&#39;s Account
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>1.2.1 Load User&#39;s Account</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) A HMI that provides the Traveller with the ability to credit their Electronic Payment account.<br>(2) The HMI shall also include the ability to display to the Traveller the different contracts available to that person, read the information related to the desired transaction.<br>(3) In addition to the HMI, the ability to check the credit rating of the source account and if credit worthy, credit the Electronic Payment account, plus notify this to the Financial Clearinghouse terminator, and to the store of Transaction Data.<br>(4) The ability to also check the amount that is being credited to an account previously included in the black list, and if the new balance is sufficient, send a message to the &#8220;Credit Control&#8221; Function to remove this account from the black-list.<br></div></H5><h3>Functional Requirements</H3><h5>(a) read traveller&#39;s ID<br/>(b) extract from the store of Contract Data the contracts that have already been established for that person<br/>(c) present the traveller with this list of contracts<br/>(d) read the traveller&#39;s selection and the loading parameters<br/>(e) check the balance of the &quot;source&quot; account at the financial clearing-house<br/>(f) if source account does not have sufficient funds, display an error message to the traveller,<br/>(g) else, record loading transaction in the store of &quot;transaction&quot; Data, load the Electronic Payment account, and send the notification message to the financial clearing-house<br/></H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FEA2398103CA.HTM?DiagTab=1" Target="_self">DFD 1.2  Manage User&#39;s Account</a><h5><li> <a href="F897F8B339810013.HTM?DiagTab=0" Target="_self">Functional Tree of Area 1</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897fea2398103ca.htm" target="_self"> 1.2 Manage User&#39;s Account</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f8972278398275d2.htm" target="_self"> ffc-pepf_account_status </A> <li>
+  <A CLASS="Content" HREF="f8972279398277e8.htm" target="_self"> ft-pepf_contract_selection </A> <li>
+  <A CLASS="Content" HREF="f8972279398277ee.htm" target="_self"> ft-pepf_loading_parameters </A> <li>
+  <A CLASS="Content" HREF="f897227a39827812.htm" target="_self"> ft-pepf_user_ID </A> <li>
+  <A CLASS="Content" HREF="018831654182ab29.htm" target="_self"> pepf_contract_LUA </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="737a8c313f330942.htm" target="_self"> pepf-load_account_order_transactions </A> <li>
+  <A CLASS="Content" HREF="737a8bcd3f330915.htm" target="_self"> pepf_load_account_order_for_user </A> <li>
+  <A CLASS="Content" HREF="f8971c5d39824977.htm" target="_self"> pepf_supplied_account </A> <li>
+  <A CLASS="Content" HREF="f897227c39827ab2.htm" target="_self"> tfc-pepf_account_status_request </A> <li>
+  <A CLASS="Content" HREF="f897227c39827ab8.htm" target="_self"> tfc-pepf_load_account_order </A> <li>
+  <A CLASS="Content" HREF="f897227d39827c74.htm" target="_self"> tt-pepf_account_loading_problem </A> <li>
+  <A CLASS="Content" HREF="f897227d39827c86.htm" target="_self"> tt-pepf_contract_list </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428b39be6655.htm" target="_self"> 4.1.0.1</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to use a variety of relevant payment methods either electronic or not, including central account and post payment, central account and prepayment, on-board account etc.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428d39be6751.htm" target="_self"> 4.1.0.3</A> </a></center></h5></td><td width="90%"><h5>The system shall give exact details of any financial transaction to the traveller.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428f39be68b9.htm" target="_self"> 4.1.2.2</A> </a></center></h5></td><td width="90%"><h5>The system shall enable a single payment to be paid for services offered by different related transport systems (e.g. metro, bus, train, road and parking).</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428f39be6973.htm" target="_self"> 4.1.3.2</A> </a></center></h5></td><td width="90%"><h5>The system shall make atomic electronic financial transactions, I.e. that are never partially complete whatever the circumstances, even in degraded system modes.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14429039be69c1.htm" target="_self"> 4.1.3.3</A> </a></center></h5></td><td width="90%"><h5>The system shall have the maximum security necessary for electronic financial transactions.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14429039be6a2d.htm" target="_self"> 4.1.3.4</A> </a></center></h5></td><td width="90%"><h5>The system shall have a low number of incorrect transactions (e.g., non-effective transactions &lt; 1 in 10E-6; erroneous transactions  &lt; 1 in 10E-8)</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="bce4c4823c04004f.htm" target="_self"> 4.1.3.5</A> </a></center></h5></td><td width="90%"><h5>The system shall provide information in the native language at the output location, and/or from a user selected choice of other appropriate foreign languages.</h5></td></tr></table></div>
+</BODY> </HTML>

@@ -1,0 +1,21 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 4.4.6 Request Vehicle Priority
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>4.4.6 Request Vehicle Priority</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to send requests for PT Vehicle priority to the Manage Traffic functionality as a result of requests being received from the Optimise PT Fleet Control function for priority to be given to particular PT Vehicles and/or PT services.<br>(2) The ability to generate the priority request based on the expected arrival time of the target PT Vehicle.<br></div></H5><h3>Functional Requirements</H3><h5>(a) continuously monitor for the receipt of the service number for priority, priority PT vehicle identity and PT vehicle arrival data flows<br/>(b) when the first of the data flows in (a) is received, use the third data flow to work out which PT vehicles are affected and when they will be approaching signalised road junctions<br/>(c) send the vehicle priority request to functionality in the Manage Traffic Functional Area as and when priority is needed<br/>(d) when the second of the data flows in (a) is received, use the third data flow to work out when the PT vehicle will be approaching signalised road junctions and send the vehicle priority request data flow as in (c) above.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FEA239810442.HTM?DiagTab=1" Target="_self">DFD 4.4  Control PT Fleet</a><h5><li> <a href="F897F8CF39810025.HTM?DiagTab=0" Target="_self">Functional Tree of Area 4</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897fea239810442.htm" target="_self"> 4.4 Control PT Fleet</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f8971c583982423f.htm" target="_self"> mpto_priority_PT_vehicle_identity </A> <li>
+  <A CLASS="Content" HREF="f8971c5839824251.htm" target="_self"> mpto_PT_vehicle_arrival </A> <li>
+  <A CLASS="Content" HREF="29e23ea34b220918.htm" target="_self"> mpto_service_number_for_priority </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f8971ea1398263a9.htm" target="_self"> mpto.mt_vehicle_priority_request </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14427e39be5cbf.htm" target="_self"> 10.1.0.1</A> </a></center></h5></td><td width="90%"><h5>The system shall provide effective and attractive PT.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428139be5e81.htm" target="_self"> 10.1.6.1</A> </a></center></h5></td><td width="90%"><h5>The system shall  be able to select those vehicles that need to be given priority and communicate the requests to the TCC.</h5></td></tr></table></div>
+</BODY> </HTML>

@@ -1,0 +1,19 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 3.4.4 Predict Environmental Conditions
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>3.4.4 Predict Environmental Conditions</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to use data collected and stored by other functionality to predict the environmental conditions that will occur in and around the road network managed by the System.<br>(2) The ability to use this collected and stored data with one or more algorithms and static data provided by the Road Network Operator to predict the environmental conditions that will be experienced by Travellers and/or Drivers.<br>(3) The ability to send the data providing the predicted environmental conditions for storage by other functionality in the System.<br></div></H5><h3>Functional Requirements</H3><h5>(a) when the first trigger input data flow is received, the data shall be stored internally<br/>(b) when (a) is complete the prediction algorithm shall be run using the received data<br/>(c) the prediction algorithm must take account of such things as current and forecast weather conditions and the effects of the local terrain<br/>(d) the predictions resulting from (c) shall be sent to the Manage Environmental Conditions Data Store function in the output trigger data flow<br/>(e) when the second trigger flow is received, the static data stored internally within the Function and used by the prediction algorithm shall be updated.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FEA239810424.HTM?DiagTab=1" Target="_self">DFD 3.4  Provide Environmental Information</a><h5><li> <a href="F897FEA239810424.HTM?DiagTab=1" Target="_self">Functional tree 3.4</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897fea239810424.htm" target="_self"> 3.4 Provide Environmental Information</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f8971c593982439b.htm" target="_self"> mt_environmental_conditions_data_for_predictions </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f8971c59398243ad.htm" target="_self"> mt_environmental_conditions_prediction_store_data </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442a639be7a05.htm" target="_self"> 7.1.2.5</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to predict weather conditions, in particular the formation of fog and/or ice.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442a639be7a1d.htm" target="_self"> 7.1.2.6</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to predict short, medium and long-term road travel produced environmental (atmospheric and noise) pollution conditions based on traffic and weather conditions.</h5></td></tr></table></div>
+</BODY> </HTML>

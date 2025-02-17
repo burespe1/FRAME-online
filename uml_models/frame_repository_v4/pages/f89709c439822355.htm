@@ -1,0 +1,35 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 8.3.2.3 Monitor Cargo
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>8.3.2.3 Monitor Cargo</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to manage all data and processes that are concerned with the Cargo during the trip that it makes. <br>(2) The ability to provide data about the current state of the Cargo in response to requests received from other functionality.<br>(3) The ability to provide raw operational and data about the Cargo when an incident occurs.<br></div></H5><h3>Functional Requirements</H3><h5>(a) collect data (description, status, etc.) from the Cargo and store it in the store of On-board Data<br/>(b) receive requests from the Fleet Manager and process them<br/>(c) if and when an incident occurs, send an event to the Driver and/or the Fleet Manager and trigger associated task or transport order process<br/>(d) give the Driver all functionality needed to access to cargo data in the store of On-board Data<br/>(e) give any required information about the Cargo to other in-vehicle system non specific to FFM (emergency services, payment services, etc.)<br/>(f) send the Cargo status to the Consignor/Consignee.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FF823981053D.HTM?DiagTab=1" Target="_self">DFD 8.3.2 Monitor Resources</a><h5><li> <a href="F897FF8239810531.HTM?DiagTab=1" Target="_self">Functional tree 8.3</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897ff823981053d.htm" target="_self"> 8.3.2 Monitor Resources</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="2ff4313e406c003f.htm" target="_self"> fd.fvd-trip_input_7 </A> <li>
+  <A CLASS="Content" HREF="f8971c5639823ff3.htm" target="_self"> mffo_mgm_cargo_raw_data_request </A> <li>
+  <A CLASS="Content" HREF="737ac3fc3f332748.htm" target="_self"> mffo_read_on_board_monitor_cargo_data </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="737acbc23f332b88.htm" target="_self"> mffo_load_on_board_monitor_cargo_data </A> <li>
+  <A CLASS="Content" HREF="f8971c57398240e9.htm" target="_self"> mffo_rsc_cargo_event </A> <li>
+  <A CLASS="Content" HREF="f8971c57398240ef.htm" target="_self"> mffo_rsc_cargo_raw_operational_data </A> <li>
+  <A CLASS="Content" HREF="f8971c5739824137.htm" target="_self"> mffo_rsc_raw_cargo_incident_information </A> <li>
+  <A CLASS="Content" HREF="d4d2221b406c4bed.htm" target="_self"> tcc.p-cargo_status_2 </A> <li>
+  <A CLASS="Content" HREF="d4d227e8406c4dcc.htm" target="_self"> td.fvd-trip_output_7 </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442bc39be8be4.htm" target="_self"> 9.4.0.1</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to monitor the vehicle and cargo safety status, and the behaviour of the driver (e.g. duration of driving time, excess speed).</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442bc39be8c2c.htm" target="_self"> 9.4.0.2</A> </a></center></h5></td><td width="90%"><h5>The system shall issue a warning to the driver whenever a threshold for a vehicle or cargo safety status, or driver behaviour, has been exceeded, and the relevant data shall be recorded.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442bd39be8c74.htm" target="_self"> 9.4.0.3</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to identify the vehicle&#39;s location, and make a &#39;May Day&#39; call to the emergency services on the command of a vehicle occupant.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442c139be8f98.htm" target="_self"> 9.5.2.13</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to locate, identify and monitor the status of a vehicle, equipment or cargo at any time.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442c439be9238.htm" target="_self"> 9.5.3.16</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to detect when the status of the cargo (e.g. changes in temperature or humidity) exceeds a given limit during the transport cycle, and trigger an alarm.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442c439be9256.htm" target="_self"> 9.5.3.17</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to adjust the temperature and humidity of a freight unit remotely, during the transport cycle.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442c439be9298.htm" target="_self"> 9.5.3.2</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to store all necessary commercial and statutory vehicle, driver, trip and freight information on-board the vehicle.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442c539be934c.htm" target="_self"> 9.5.3.24</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to monitor the weight of the cargo, check conformance with the documentation and report any variations.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="cf07d3cb417c0024.htm" target="_self"> 9.5.3.26</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to record supplementary information about events recorded by the tachograph, e.g. reason for waiting time.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="cf07d3e1417c0048.htm" target="_self"> 9.5.3.32</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to identify cargo, e.g. during loading and unloading, compare it for compliance with a manifest, and issue a warning in case of non-compliance.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442c639be9418.htm" target="_self"> 9.5.3.9</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to record data, e.g. from vehicle, equipment, cargo unit sensors, and driver input etc. for later processing.</h5></td></tr></table></div>
+</BODY> </HTML>

@@ -1,0 +1,31 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 8.1.1.7 Provide Freight Contract Set-up Operator Interface
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>8.1.1.7 Provide Freight Contract Set-up Operator Interface</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) A HMI for the Freight Management Operator through which it shall be possible to manage the negotiation and payment for a contract to transport freight, as requested by the Principal actor in the Consignee / Consignor terminator.<br>(2) The HMI shall enable the Freight Operator to manage the selection of the most appropriate Fleet Operator to transport the freight.<br>(3) The HMI shall also enable the Freight Operator to request the Principal to make payment (carried out external to the system boundary) for the requested transport of the freight.</div></H5><h3>Functional Requirements</H3><h5>(a) continuously monitor for the receipt of the fleet operator data for freight operator and administrative data for operator data flows;<br/>(b) when the first data flow in (a) is received, send its contents in the data flow fleet operator data to the Freight Management Operator;<br/>(c) as a result of (b) continuously monitor for receipt of the data for fleet operator selection data flow from the Freight Management Operator;<br/>(d) when the data flow in (c) is received, send its contents to the Administer Transactions for Freight Shipment function in the fleet operator data from freight operator data flow;<br/>(e) when the second data flow in (a) is received, send its contents in the data flow containing freight transport management data to the Freight Management Operator;<br/>(f) as a result of (e) continuously monitor for receipt of the data flow freight transport management data from the Freight Management Operator;<br/>(d) when the data flow in (f) is received, send its contents to the Administer Transactions for Freght Shipment function in the administrative data from operator data flow.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FF82398104FB.HTM?DiagTab=1" Target="_self">DFD 8.1.1 Manage Freight Business Transactions</a><h5><li> <a href="F897F8EA3981003D.HTM?DiagTab=0" Target="_self">Functional Tree of Area 8</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897ff82398104fb.htm" target="_self"> 8.1.1 Manage Freight Business Transactions</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="48ec722f4d450864.htm" target="_self"> fo.fro-data_for_fleet_operator_selection </A> <li>
+  <A CLASS="Content" HREF="48ec62224d450738.htm" target="_self"> fo.fro-freight_transport_management_data </A> <li>
+  <A CLASS="Content" HREF="f897227839827668.htm" target="_self"> fo.fro-input_data </A> <li>
+  <A CLASS="Content" HREF="48ec64004d4507c3.htm" target="_self"> mffo_administrative_data_for_operator </A> <li>
+  <A CLASS="Content" HREF="48ec74174d4508db.htm" target="_self"> mffo_fleet_operator_data_for_freight_operator </A> <li>
+  <A CLASS="Content" HREF="48ec82d04d45096a.htm" target="_self"> mffo_negotiation_data_for_freight_operator </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="48ec64764d4507df.htm" target="_self"> mffo_administrative_data_from_operator </A> <li>
+  <A CLASS="Content" HREF="48ec74704d4508fb.htm" target="_self"> mffo_fleet_operator_data_from_freight_operator </A> <li>
+  <A CLASS="Content" HREF="48ec833c4d450986.htm" target="_self"> mffo_negotiation_data_from_freight_operator </A> <li>
+  <A CLASS="Content" HREF="48ec71b24d450852.htm" target="_self"> to.fro-fleet_operator_data </A> <li>
+  <A CLASS="Content" HREF="48ec615f4d45071c.htm" target="_self"> to.fro-freight_transport_management_data </A> <li>
+  <A CLASS="Content" HREF="f897227c39827b3c.htm" target="_self"> to.fro-output_data </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="0a9239a53c020248.htm" target="_self"> 9.5.0.1</A> </a></center></h5></td><td width="90%"><h5>The system shall support fleet and freight operations for all sizes of operator, including single vehicle companies.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442bd39be8d0a.htm" target="_self"> 9.5.1.1</A> </a></center></h5></td><td width="90%"><h5>The system shall enable the exchange of information, e.g. market enquiries, offer and supplier evaluation data, contracts, invoices, payments etc. between customers and suppliers.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442bf39be8dca.htm" target="_self"> 9.5.1.3</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to prepare and update official documents, e.g. transport orders, customs declarations, hazardous goods declarations, notices of dispatch etc. in a controlled manner, and assist the process of checking them.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442bf39be8e2a.htm" target="_self"> 9.5.1.4</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to transfer official documents, e.g. transport orders, customs declarations, hazardous goods declarations, notices of dispatch etc. between vehicles, the fleet management centre and the relevant authorities in a controlled manner.</h5></td></tr></table></div>
+</BODY> </HTML>

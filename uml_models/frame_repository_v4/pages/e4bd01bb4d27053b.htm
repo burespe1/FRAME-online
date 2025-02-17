@@ -1,0 +1,20 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 4.3.9 Provide PT Driver interface for management
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>4.3.9 Provide PT Driver interface for management</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) A HMI through which the PT Vehicle Driver can be provided with information about the duties they are to perform.<br>(2) The ability for the PT Vehicle Driver to update the details of their current status through the HMI.<br></div></H5><h3>Functional Requirements</H3><h5>(a) continuously monitor for receipt of the new driver schedule data flow<br/>(b) when the data flow in (a) is received, output its contents in the scheduling data flow to the PT Driver;<br/>(c) as a result of (b) continuously monitor for receipt of the driver status data flow<br/>(d) when the data flow in (c) is received, send its contents to the Provide PT Driver Management function in the updated driver status data flow.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FEA23981043C.HTM?DiagTab=1" Target="_self">DFD 4.3  Provide PT Management</a><h5><li> <a href="F897F8CF39810025.HTM?DiagTab=0" Target="_self">Functional Tree of Area 4</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897fea23981043c.htm" target="_self"> 4.3 Provide PT Management</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="044b27454b420d49.htm" target="_self"> fd.ptd-driver_status </A> <li>
+  <A CLASS="Content" HREF="e4bd03ec4d270599.htm" target="_self"> mpto_new_driver_schedule </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="e4bd04694d2705b2.htm" target="_self"> mpto_updated_driver_status </A> <li>
+  <A CLASS="Content" HREF="f897227b39827a04.htm" target="_self"> td.ptd-scheduling </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14427f39be5ce9.htm" target="_self"> 10.1.0.3</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to assist PT operators in planning for the optimum use of existing resources to meet the demand.</h5></td></tr></table></div>
+</BODY> </HTML>

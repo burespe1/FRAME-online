@@ -1,0 +1,34 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 4.7.5 Provide On-Demand Service Operator Interface
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>4.7.5 Provide On-Demand Service Operator Interface</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) A HMI through which the On-Demand Service Operator can manage the provision of On-Demand Services to Travellers.<br>(2) The HMI shall enable the Operator to set up the criteria used to plan the Services, manage the use of Drives and Vehicles and gain access to reports about the delivery of Services.<br></div></H5><h3>Functional Requirements</H3><h5>(a) continuously monitor for the arrival of all data flows from the on-demand service operator<br/>(b) when any of them are received, put the data they contain into the appropriate data flow and send it to either the Plan On-Demand Services or Implement On-Demand Service functions<br/>(c) when responses are received to any of the data flows in (b) output their contents to the operator using which ever is appropriate of the output messages<br/>(d) continuously monitor for the arrive of the message from driver to operator data flow<br/>(e) when the data flow in (d) arrives immediately output its contents to the operator using the message from driver data flow, overriding any other messages that are being output at the time.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="FA8D00824B2901AB.HTM?DiagTab=1" Target="_self">DFD 4.7 Provide On-Demand Services</a><h5><li> <a href="F897F8CF39810025.HTM?DiagTab=0" Target="_self">Functional Tree of Area 4</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="fa8d00824b2901ab.htm" target="_self"> 4.7 Provide On-demand Services</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="9ea8a41a4b2f0207.htm" target="_self"> fo.odso-provide_message_for_driver </A> <li>
+  <A CLASS="Content" HREF="9ea8a3114b2f01d6.htm" target="_self"> fo.odso-provide_road_network_data </A> <li>
+  <A CLASS="Content" HREF="fa8d09f34b2905bb.htm" target="_self"> fo.odso-request_current_service_criteria </A> <li>
+  <A CLASS="Content" HREF="fa8d0c884b290682.htm" target="_self"> fo.odso-request_service_performance </A> <li>
+  <A CLASS="Content" HREF="fa8d0c344b290657.htm" target="_self"> fo.odso-update_current_service_criteria </A> <li>
+  <A CLASS="Content" HREF="231a33834b2a055e.htm" target="_self"> mpto_current_demand_criteria </A> <li>
+  <A CLASS="Content" HREF="231a34b04b2a0589.htm" target="_self"> mpto_demand_service_perfornace </A> <li>
+  <A CLASS="Content" HREF="9ea8a7bb4b2f0267.htm" target="_self"> mpto_message_from_driver_to_operator </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="9ea8a85e4b2f0292.htm" target="_self"> mpto_message_from_operator_to_driver </A> <li>
+  <A CLASS="Content" HREF="231a325f4b2a050c.htm" target="_self"> mpto_request_demand_criteria </A> <li>
+  <A CLASS="Content" HREF="231a35574b2a05b4.htm" target="_self"> mpto_request_demand_service_performance </A> <li>
+  <A CLASS="Content" HREF="231a32e64b2a0537.htm" target="_self"> mpto_update_demand_criteria </A> <li>
+  <A CLASS="Content" HREF="9ea8a5554b2f0238.htm" target="_self"> mpto_update_road_network_data </A> <li>
+  <A CLASS="Content" HREF="9ea8a0b84b2f0198.htm" target="_self"> to.odso-demamd_service_criteria_output </A> <li>
+  <A CLASS="Content" HREF="9ea8aa744b2f02c1.htm" target="_self"> to.odso-message_from_driver </A> <li>
+  <A CLASS="Content" HREF="231a24534b2a02fa.htm" target="_self"> to.odso-service_performance_output </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428139be5e99.htm" target="_self"> 10.2.0.1</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to provide both planned and spontaneous trips.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428339be5fa1.htm" target="_self"> 10.2.4.1</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to provide statistics of usage</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428339be5fb3.htm" target="_self"> 10.2.4.2</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to provide statistics on how well it actually satisfies its customers, e.g. response times, for reporting to its users.</h5></td></tr></table></div>
+</BODY> </HTML>

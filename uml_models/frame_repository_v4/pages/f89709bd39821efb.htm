@@ -1,0 +1,31 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 1.5.1 Check User&#39;s rights
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>1.5.1 Check User&#39;s rights</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to determine the access rights of users (Travellers and Drivers) to the service(s) that they have requested.<br>(2) The ability to use the ID of the user, or the characteristics of the Vehicle they are using, and traffic conditions in comparison with the access criteria obtained from the store of Access Rights Data to determine the users&#39; access rights.<br>(3) The ability to send the result of the access rights determination to the inform and guide user and/or the check user&#39;s&nbsp;&nbsp;rights functionality, depending on the origin of the request.<br></div></H5><h3>Functional Requirements</H3><h5>(a) get the user ID or vehicle&#39;s characteristics and the requested service<br/>(b) extract from the &quot;access rights&quot; database the corresponding access criteria<br/>(c) determine the access rights, taking into account actual traffic conditions<br/>(d) send the answer to the functions that need it.<br/></H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FEA2398103DC.HTM?DiagTab=1" Target="_self">DFD 1.5  Control Fraud</a><h5><li> <a href="F897F8B339810013.HTM?DiagTab=0" Target="_self">Functional Tree of Area 1</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897fea2398103dc.htm" target="_self"> 1.5 Access and Credit Control</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="d4d2df2f406b0ba5.htm" target="_self"> mt.pepf_inter-urban_traffic_conditions_CUR </A> <li>
+  <A CLASS="Content" HREF="d4d2dfcb406b0bc7.htm" target="_self"> mt.pepf_urban_traffic_conditions_CUR </A> <li>
+  <A CLASS="Content" HREF="2ff440b8406c20a8.htm" target="_self"> pepf_access_criteria_R </A> <li>
+  <A CLASS="Content" HREF="f8971c5d3982496b.htm" target="_self"> pepf_service_ID_DPV </A> <li>
+  <A CLASS="Content" HREF="f8971c5d398249a7.htm" target="_self"> pepf_user_ID_CUR </A> <li>
+  <A CLASS="Content" HREF="d4d21884406c3e71.htm" target="_self"> pepf_vehicle_data_CUC </A> <li>
+  <A CLASS="Content" HREF="d4d21893406c3e7c.htm" target="_self"> pepf_vehicle_data_IGU </A> <li>
+  <A CLASS="Content" HREF="f8971c5d398249b9.htm" target="_self"> pepf_vehicle_data_IU </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f8971c5d39824995.htm" target="_self"> pepf_user_access_rights_CUC </A> <li>
+  <A CLASS="Content" HREF="d4d207a0406c2e8a.htm" target="_self"> pepf_user_access_rights_IGU </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428c39be66c1.htm" target="_self"> 4.1.0.2</A> </a></center></h5></td><td width="90%"><h5>The system shall manage customer data (identification, account, rights of residents, etc.).</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428d39be6787.htm" target="_self"> 4.1.0.4</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to manage tariff policies (define fares/fees according to selected criteria, e.g. type of Traveller or traffic conditions, etc.).</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428d39be67d5.htm" target="_self"> 4.1.1.1</A> </a></center></h5></td><td width="90%"><h5>The system shall have a minimum impact on the traffic flow, e.g. a short transaction duration.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428d39be681d.htm" target="_self"> 4.1.1.2</A> </a></center></h5></td><td width="90%"><h5>The system shall have a minimum impact on the driving task.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428e39be684d.htm" target="_self"> 4.1.1.3</A> </a></center></h5></td><td width="90%"><h5>The system shall not do anything to reduce the safety of either the travellers in the vehicle, or the staff close to the equipment, e.g. in toll booths.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="bce4c4283c040039.htm" target="_self"> 4.1.4.2</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to collect evidence of unauthorised access when payment has not been received.</h5></td></tr></table></div>
+</BODY> </HTML>

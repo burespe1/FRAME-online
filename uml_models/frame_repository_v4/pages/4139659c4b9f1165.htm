@@ -1,0 +1,21 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 3.1.1.12 Monitor Urban FCD/XFCD Source Vehicles
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>3.1.1.12 Monitor Urban FCD/XFCD Source Vehicles</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The collection of the images of Vehicles using the urban road network.<br>(2) Checking that the identity provided electronically from Vehicles using the urban road network exactly corresponds to the identity obtained from matching the Vehicles&#39; images with their registration data.<br>(3) The provision of data about Vehicles where no match is found to functionality in the Provide Support for Law Enforcement Functional Area for use in potential prosecutions.<br>(4) The provision of a suspect data indication for the Vehicle for which no match is found to the Collect Urban Data from Vehicles Function.<br></div></H5><h3>Functional Requirements</H3><h5>(a) continuously monitor for the receipt of the input data flows<br/>(b) when the vehicle data for urban fcd check data flow is received in (a), store its data locally for use in the comparison process<br/>(c) when the urban fcd source vehicle image data flow is received in (a), search the stored data from (b) to find a match<br/>(d) when the urban fcd vehicle identity data flow is received in (a) check that the identity corresponds with that found in (b) and (c)<br/>(e) if no match is found in (c) or (d), send the urban vehicle identity error data flow to the Provide Support for Law Enforcement functionality and the urban fcd error data flow to the Collect Inter-urban Floating Car Data function.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FEA2398103FA.HTM?DiagTab=1" Target="_self">DFD 3.1.1 Provide Urban Traffic Management</a><h5><li> <a href="F897FEA2398103F4.HTM?DiagTab=1" Target="_self">Functional tree 3.1</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897fea2398103fa.htm" target="_self"> 3.1.1 Provide Urban Traffic Management</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="413968eb4b9f1278.htm" target="_self"> fesp.dvip-vehicle_data_for_urban_fcd_check </A> <li>
+  <A CLASS="Content" HREF="413967e34b9f122b.htm" target="_self"> ftrfc-urban_fcd_source_vehicle_image </A> <li>
+  <A CLASS="Content" HREF="4139667b4b9f11b2.htm" target="_self"> mt_urban_fcd_vehicle_identity </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="41396a6c4b9f1300.htm" target="_self"> mt.psle_urban_vehicle_identity_error </A> <li>
+  <A CLASS="Content" HREF="4139670f4b9f11e0.htm" target="_self"> mt_urban_fcd_error </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="76a7899d4b970325.htm" target="_self"> 7.4.1.18</A> </a></center></h5></td><td width="90%"><h5><span style='font-style: italic;'>(X)FCD</span> - The system shall be able to match a visual image of a vehicle with the (un-attributable - for privacy protection) identity of a vehicle that is providing FCD and/or XFCD.</h5></td></tr></table></div>
+</BODY> </HTML>

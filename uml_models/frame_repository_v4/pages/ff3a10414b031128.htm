@@ -1,0 +1,32 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 3.1.4.7 Provide Operator interface for Car Park Management
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>3.1.4.7 Provide Operator interface for Car Park Management</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) A HMI through which the Parking Operator can manage one or a number of car parks.<br>(2) The HMI shall enable the Parking Operator to set up data about car parks that is loaded into the store of Car Park Data, to provide output of the current static data and to provide output of the current car park data (occupancy and/or number of spaces).<br>(3) The HMI shall also enable the Parking Operator to override the current status so that for example, a car park can be set to &quot;CLOSED&quot; regardless of how many of its spaces are not being used.<br></div></H5><h3>Functional Requirements</H3><h5>(a) when any of the input data flows are received from the Operator, process them and send the appropriate output data flows to either obtain the requested data or take the requested action<br/>(b) when any of the data flows containing the responses to the output data flows in (a) are received, output the data they contain using the Operator output data flows.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="FF3A0D484B030EE7.HTM?DiagTab=1" Target="_self">DFD 3.1.4 Provide Management of Car Parks</a><h5><li> <a href="F897FEA2398103F4.HTM?DiagTab=1" Target="_self">Functional tree 3.1</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="ff3a0d484b030ee7.htm" target="_self"> 3.1.4 Provide Management of Car Parks</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="7743890a4b060795.htm" target="_self"> fo.po-carpark_current_data_request </A> <li>
+  <A CLASS="Content" HREF="31c13f514b6c0578.htm" target="_self"> fo.po-carpark_output_settings </A> <li>
+  <A CLASS="Content" HREF="f913feee4b0a0182.htm" target="_self"> fo.po-carpark_payment_record_request </A> <li>
+  <A CLASS="Content" HREF="65e968d94b0604bf.htm" target="_self"> fo.po-carpark_static_data_inputs </A> <li>
+  <A CLASS="Content" HREF="77438a5e4b0607e5.htm" target="_self"> fo.po-carpark_static_data_request </A> <li>
+  <A CLASS="Content" HREF="77438b4d4b06081e.htm" target="_self"> fo.po-carpark_status_override </A> <li>
+  <A CLASS="Content" HREF="94d5b3c94b0a07ff.htm" target="_self"> mt_carpark_status_change </A> <li>
+  <A CLASS="Content" HREF="94d5b8e84b0a0908.htm" target="_self"> mt_read_carpark_static_data </A> <li>
+  <A CLASS="Content" HREF="94d5bace4b0a095e.htm" target="_self"> mt_requested_carpark_payment_records </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="31c13e124b6c054d.htm" target="_self"> mt_carpark_output_settings </A> <li>
+  <A CLASS="Content" HREF="94d5b6434b0a0877.htm" target="_self"> mt_load_carpark_static_data </A> <li>
+  <A CLASS="Content" HREF="94d5b7f54b0a08cf.htm" target="_self"> mt_override_carpark_status </A> <li>
+  <A CLASS="Content" HREF="94d5ba164b0a0933.htm" target="_self"> mt_request_carpark_payment_records </A> <li>
+  <A CLASS="Content" HREF="774385f44b0605ba.htm" target="_self"> to.po-carpark_current_data </A> <li>
+  <A CLASS="Content" HREF="f91300704b0b01bf.htm" target="_self"> to.po-carpark_payment_records </A> <li>
+  <A CLASS="Content" HREF="774384794b060581.htm" target="_self"> to.po-carpark_static_data </A> <li>
+  <A CLASS="Content" HREF="774382c74b06053e.htm" target="_self"> to.po-carpark_status_overrride_response </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr></table></div>
+</BODY> </HTML>

@@ -1,0 +1,26 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 6.5.3.7 Enable Operator Access to Tip Planning Data
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>6.5.3.7 Enable Operator Access to Tip Planning Data</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) A HMI that enables the Travel Information Operator to have access to the contents of the stores of Road Trip Planning Data and PT Trip Planning Data.<br>(2) The ability for the Operator to review and update the data in the stores including the provision of static data for the urban and inter-urban road networks car parks and service areas, where this is not available from the Manage Traffic Functional Area.<br>(3) The ability for the Operator to obtain reports on the current contents of the stores, including in particular details of any active events or incidents that are affecting Travellers trip plans.<br>(4) The HMI shall not enable the Operator to have access to the personal data about Travellers who either have made, or are in the process of planning trips.<br>(5) However the HMI shall enable the Operator to change any stored criteria used to plan trips, e.g. preferences for particular transport modes.</div></H5><h3>Functional Requirements</H3><h5>(a) when the trigger input data flow is received, check its contents<br/>(b) if it contains new data for either of the stores of Road Trip Planning Data or PT Trip Planning Data, then update the appropriate store<br/>(c) if the command in (a) contains a request for a report on the data that is in either of the stores in (b), then retrieve the data from the appropriate store<br/>(d) format the data from (c) into the required report format and content<br/>(e) when (d) is complete, output the data to the Travel Information Operator using the trigger output data flow.<br/></H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F89709C23982222F.HTM?DiagTab=1" Target="_self">DFD 6.5.3 Trip Planning</a><h5><li> <a href="F897F8DC39810031.HTM?DiagTab=0" Target="_self">Functional Tree of Area 6</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f89709c23982222f.htm" target="_self"> 6.5.3 Trip Planning</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="a450a5c04b1301ae.htm" target="_self"> fo.tio-inter-urban_road_network_data_update </A> <li>
+  <A CLASS="Content" HREF="40d647c6416a0487.htm" target="_self"> fo.tio-trip_planning_data_requests </A> <li>
+  <A CLASS="Content" HREF="a450aa9c4b130542.htm" target="_self"> fo.tio-urban_road_network_data_update </A> <li>
+  <A CLASS="Content" HREF="40d647e0416a04af.htm" target="_self"> ptja_read_PT_trip_planning_data </A> <li>
+  <A CLASS="Content" HREF="40d647e4416a04b9.htm" target="_self"> ptja_read_road_trip_planning_data </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="40d64847416a0527.htm" target="_self"> ptja_update_PT_trip_planning_data </A> <li>
+  <A CLASS="Content" HREF="40d6484d416a0531.htm" target="_self"> ptja_update_road_trip_planning_data </A> <li>
+  <A CLASS="Content" HREF="40d64866416a0563.htm" target="_self"> to.tio-trip_planning_data_responses </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14429739be6ef5.htm" target="_self"> 6.1.2.9</A> </a></center></h5></td><td width="90%"><h5>The  system shall provide Information Management tools for the operator.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="0a922ea93c02014b.htm" target="_self"> 6.2.2.11</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to provide operators with an overall view of all active events in an area.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="0a922ed33c020152.htm" target="_self"> 6.2.2.12</A> </a></center></h5></td><td width="90%"><h5>The  system shall provide Information Management tools for the operator.</h5></td></tr></table></div>
+</BODY> </HTML>

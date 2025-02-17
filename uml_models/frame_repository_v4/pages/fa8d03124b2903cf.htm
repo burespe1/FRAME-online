@@ -1,0 +1,33 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 4.7.4 Monitor On-Demand Service Vehicle
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>4.7.4 Monitor On-Demand Service Vehicle</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to monitor the status of the Vehicle that is providing the On-Demand Service.<br>(2) A HMI through which the Driver can exchange messages (voice and data) with the implementation functionality.<br>(3) The ability to include a separate interface through which information can be provided to Passengers including updates on the arrival times at their drop-off points.<br>(4) The ability to provide information about the status of the Vehicle and the number of Passengers to the implementation functionality and to maintain a record of how the Services have been delivered by the Vehicle.<br></div></H5><h3>Functional Requirements</H3><h5>(a) when the message for the demand driver data flow is received, output its contents to the On-Demand Service driver using the driver information data flow<br/>(b) when the service instructions for demand driver data flow is received, output it to the On-Demand Service driver using the driver instructions data flow<br/>(c) when the demand service arrival prediction data flow is received, output its contents to the passengers using the arrival prediction data flow<br/>(d) when the message from vehicle data flow is received from the driver send its contents to the Implement On-Demand Service function using the message from demand driver data flow<br/>(e) use the data flow the vehicle location data flow to determine its location and tag all messages to the Implement On-Demand Service function with this information<br/>(f) continuously monitor for arrival of the passenger numbers and vehicle status data flows<br/>(g) when either of the data flows in (f) arrives, send their contents to the Implement On-Demand Service function using the demand vehicle status data flow.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="FA8D00824B2901AB.HTM?DiagTab=1" Target="_self">DFD 4.7 Provide On-Demand Services</a><h5><li> <a href="F897F8CF39810025.HTM?DiagTab=0" Target="_self">Functional Tree of Area 4</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="fa8d00824b2901ab.htm" target="_self"> 4.7 Provide On-demand Services</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="fa8d05504b29043d.htm" target="_self"> fd.odsd-message_from_vehicle </A> <li>
+  <A CLASS="Content" HREF="fa8d07474b2904ed.htm" target="_self"> flds-on-demand_service_vehicle_location </A> <li>
+  <A CLASS="Content" HREF="fa8d0f0a4b290748.htm" target="_self"> fv.odsv-passenger_numbers </A> <li>
+  <A CLASS="Content" HREF="fa8d11774b290814.htm" target="_self"> fv.odsv-status </A> <li>
+  <A CLASS="Content" HREF="a9bab6df4b6a08ee.htm" target="_self"> mpto_demand_service_arrival_prediction </A> <li>
+  <A CLASS="Content" HREF="042306ab4b2a0397.htm" target="_self"> mpto_message_for_demand_driver </A> <li>
+  <A CLASS="Content" HREF="a9bab7c84b6a0915.htm" target="_self"> mpto_service_instructions_for_demand_driver </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="042304794b2a030f.htm" target="_self"> mpto_demand_vehicle_status </A> <li>
+  <A CLASS="Content" HREF="042307494b2a03be.htm" target="_self"> mpto_message_from_demand_driver </A> <li>
+  <A CLASS="Content" HREF="04231de34b2a0e1b.htm" target="_self"> td.odsd-driver_instructions </A> <li>
+  <A CLASS="Content" HREF="04231e694b2a0e48.htm" target="_self"> td.odsd-information_for_driver </A> <li>
+  <A CLASS="Content" HREF="231a264e4b2a0362.htm" target="_self"> tt.odsp-arrival_prediction </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428239be5f05.htm" target="_self"> 10.2.1.6</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to locate and identify the Demand Responsive PT vehicles.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428239be5f5f.htm" target="_self"> 10.2.2.1</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to provide two-way data communications between the Demand Responsive PT vehicles and a control centre.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428239be5f77.htm" target="_self"> 10.2.2.2</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to provide two-way voice communications between the Demand Responsive PT vehicles and a control centre for non-routine use.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428239be5f8f.htm" target="_self"> 10.2.3.1</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to inform the driver about the optimum route, according to specified criteria, that he or she should take for one or more trips.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428339be5fa1.htm" target="_self"> 10.2.4.1</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to provide statistics of usage</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428339be5fb3.htm" target="_self"> 10.2.4.2</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to provide statistics on how well it actually satisfies its customers, e.g. response times, for reporting to its users.</h5></td></tr></table></div>
+</BODY> </HTML>

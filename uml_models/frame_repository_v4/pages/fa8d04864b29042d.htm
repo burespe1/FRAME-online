@@ -1,0 +1,16 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > Database 4.9 On-Demand Service Performance Data
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Data Store<br>4.9 On-Demand Service Performance Data</h2></center><br><h3>Description of content</H3><H5><div class="Normal" style='  text-align: justify;'>This Data Store shall be used within the Manage Public Transport Operations Area.&nbsp;&nbsp;It shall contain data that provides a record of the delivery of On-Demand Services.&nbsp;&nbsp;As a minimum the data be divided into two parts: about the Vehicles used to provide the On-Demand Services and a record of previous Services.<br><br>The data about the Vehicles used to provide the On-Demand Services in the Store shall be structured in the following way:<br> - time (numbers defining hours, minutes and seconds)<br> - date (date string)<br> - vehicle ID (number)<br> - vehicle type (characters)<br> - current status (characters)<br> - current location (characters and/or numbers, e.g. GPS/Galileo data)<br> - ID of Service currently being delivered (number)<br><br>The data provides a record of previous Services in the Store shall be structured in the following way:<br> - Service ID (number)<br> - origin (characters and/or numbers, e.g. GPS/Galileo data)<br> - destination (characters and/or numbers, e.g. GPS/Galileo data)<br> - route (data for a digital roadmap using a standard format, e.g. GDF, plus characters and/or numbers, e.g. GPS/Galileo data)<br> - date of delivery (date string)<br> - time of delivery (numbers defining hours and minutes)<br> - performance, e.g. stops at which on-time, early or late. (text/numbers)<br><br>It shall be possible for the Vehicle data to be accumulated for each Vehicle to provide a historic record of its use.&nbsp;&nbsp;Also it shall be possible for the record of previous Services data to be maintained in perpetuity to provide a source of information for the On-demand Service Operator.</div></H5><h3>Diagrams</H3><h5>The Diagram(s) below is (are) the Diagram(s) where you can find the Datastore</h5><ul><h5><li>DFD 4.7 Provide On-Demand Services</li></a></ul></h5><h3>Input dataflows</H3><ul><h5><li>
+  <A CLASS="Content" HREF="042305ac4b2a036c.htm" target="Content"> mpto_load_demand_service_performance </A> </h5></ul><h3>Output dataflows</H3><ul><h5><li>
+  <A CLASS="Content" HREF="04230da64b2a04c2.htm" target="Content"> mpto_read_demand_service_performance </A> </h5></ul><ul><h5></h5></ul> <ul><h5></h5></ul>
+</BODY> </HTML>

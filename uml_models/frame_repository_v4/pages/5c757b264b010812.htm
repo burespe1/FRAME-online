@@ -1,0 +1,33 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 3.1.5.4 Provide Operator interface to manage Service Areas
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>3.1.5.4 Provide Operator interface to manage Service Areas</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) A HMI through which the Parking Operator can manage the use of one or a number of service areas.<br>(2) The HMI shall have the ability to enable the Parking Operator to set up data about service areas that is loaded into the store of Service Area Data, to provide output of the current static data and to provide output of the current service area data (occupancy and/or number of spaces). <br>(3) The HMI shall have the ability to enable the Operator to override the current status so that for example, a service area can be set to &quot;CLOSED&quot; regardless of how many of its spaces are not being used and to manage the use of the rest area part of the service area by Freight Vehicles.<br></div></H5><h3>Functional Requirements</H3><h5>(a) when any of the data flows containing inputs from the parking operator are received, process their contents and send the appropriate data flow to other functions<br/>(b) when the responses are received to (a) display their contents to the parking operator using the appropriate output data flow<br/>(c) when the current service area status and occupancy data flow is received, store its contents locally until its output is requested by one of the input data flows in (a)<br/>(d) when the confirm rest area request data flow is received, output its contents to the parking operator in the confirm rest area booking data flow<br/>(e) as a result of (d), continuously monitor for the receipt of the rest area booking response data flow from the parking operator<br/>(f) when the data flow in (e) is received, send the result to the Manage Service Area Rest Area Bookings function in the rest area request confirmation response data flow.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="5C7563364B0101A5.HTM?DiagTab=1" Target="_self">DFD 3.1.5 Provide Management of Service Areas</a><h5><li> <a href="F897FEA2398103F4.HTM?DiagTab=1" Target="_self">Functional tree 3.1</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="5c7563364b0101a5.htm" target="_self"> 3.1.5 Provide Management of Service Areas</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="281b36404bc7079c.htm" target="_self"> fo.po-rest_area_booking_response </A> <li>
+  <A CLASS="Content" HREF="6cb871aa4b020372.htm" target="_self"> fo.po-service_area_current_data_request </A> <li>
+  <A CLASS="Content" HREF="ff3a049b4b030382.htm" target="_self"> fo.po-service_area_driver_output_settings </A> <li>
+  <A CLASS="Content" HREF="6cb86eb74b020199.htm" target="_self"> fo.po-service_area_static_data_inputs </A> <li>
+  <A CLASS="Content" HREF="bb50bc224b020180.htm" target="_self"> fo.po-service_area_static_data_request </A> <li>
+  <A CLASS="Content" HREF="c3e2c7194b020347.htm" target="_self"> fo.po-service_area_status_override </A> <li>
+  <A CLASS="Content" HREF="281b32554bc70708.htm" target="_self"> mt_confirm_rest_area_request </A> <li>
+  <A CLASS="Content" HREF="e827f9e54b6b0698.htm" target="_self"> mt_current_service_area_status_and_occupancy </A> <li>
+  <A CLASS="Content" HREF="5c758e5e4b010e47.htm" target="_self"> mt_read_service_area_static_data </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="5c758f1b4b010e75.htm" target="_self"> mt_load_service_area_static_data </A> <li>
+  <A CLASS="Content" HREF="5c7582a74b010955.htm" target="_self"> mt_override_service_area_status </A> <li>
+  <A CLASS="Content" HREF="281b33494bc70733.htm" target="_self"> mt_rest_area_request_confirmation_response </A> <li>
+  <A CLASS="Content" HREF="5c75909c4b010ea6.htm" target="_self"> mt_service_area_output_settings </A> <li>
+  <A CLASS="Content" HREF="281b352a4bc70765.htm" target="_self"> to.po-confirm_rest_area_booking </A> <li>
+  <A CLASS="Content" HREF="c3e2cea14b0203a4.htm" target="_self"> to.po-service_area_current_data </A> <li>
+  <A CLASS="Content" HREF="ff3a002e4b030182.htm" target="_self"> to.po-service_area_static_data </A> <li>
+  <A CLASS="Content" HREF="ff3a014b4b030341.htm" target="_self"> to.po-service_area_status_overrride_response </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="e11ae1ae4bc60021.htm" target="_self"> 9.5.7.5</A> </a></center></h5></td><td width="90%"><h5>The system shall enable a rest area parking reservation to be made based on the request that has been received, or to state that one is not available and/or propose and alternative booking, and to send the details to the freight vehicle driver and the fleet operator.</h5></td></tr></table></div>
+</BODY> </HTML>

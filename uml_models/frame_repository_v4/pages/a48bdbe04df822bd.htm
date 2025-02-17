@@ -1,0 +1,20 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 3.1.2.15 Predict Short &amp; Medium Term Inter-urban Conditions
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>3.1.2.15 Predict Short &amp; Medium Term Inter-urban Conditions</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to create short and medium term predictions of inter-urban traffic data.<br>(2) The ability to create the predictions of short and medium term inter-urban traffic data using algorithms that may be different in content and scope.<br>(3) The ability to request and use current inter-urban traffic data as the starting point for the predictions of short and medium term inter-urban traffic data.<br>(4) The ability to repeat the creation of the predicted short and medium term inter-urban traffic data at (frequent?) periodic intervals.</div></H5><h3>Functional Requirements</H3><h5>(a) at (frequent?) periodic intervals send the data flow containing the request iner-urban traffic data to the Manage Inter-urban Traffic Data function<br/>(b) as a result of (a) continuously monitor for the receipt of the data flow containing the requested inter-urban traffic data<br/>(c) when the data flow in (b) is received, create the predictions of short and medium term inter-urban traffic data using appropriate algorithms that may be different in content and scope<br/>(d) when (c) is complete, put the results in the short &amp; medium predicted inter-urban traffic data flow and send it to the Manage Inter-urban Traffic Data function.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FEA239810406.HTM?DiagTab=1" Target="_self">DFD 3.1.2 Provide Inter-urban Traffic Management</a><h5><li> <a href="F897FEA2398103F4.HTM?DiagTab=1" Target="_self">Functional tree 3.1</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897fea239810406.htm" target="_self"> 3.1.2 Provide Inter-urban Traffic Management</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="a48bdcd04df822f2.htm" target="_self"> mt_requested_current_inter-urban_traffic_data </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="a48bdc514df822d4.htm" target="_self"> mt_request_current_inter-urban_traffic_data </A> <li>
+  <A CLASS="Content" HREF="a48bdd5d4df82308.htm" target="_self"> mt_short_&amp;_medium_predicted_inter-urban_traffic </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442a639be799f.htm" target="_self"> 7.1.2.2</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to predict short, medium, and long-term traffic conditions.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="777b905c4bc4137c.htm" target="_self"> 7.5.1.3</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to monitor the current inter-urban traffic and weather/environmental conditions, identify incidents, assess their impact, make short term predictions, and select and initiate an appropriate mitigation strategy.</h5></td></tr></table></div>
+</BODY> </HTML>

@@ -1,0 +1,226 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > Org-Unit Location Data Source
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <div id="ObjectTitle">
+<Table id="ObjectTitleTable" class="ObjectTitleTable" cellpadding="0" cellspacing="0"  width = "100%">
+<TR>
+<TD width="5%" height ="35" align = "left">
+<img src="../standard/orgu.gif"/>
+</TD>
+<TD width="20%" height ="35" align = "left">
+<span class="ObjectTitle_Type">
+Terminator</span>
+</TD>
+<TD width="75%" height ="35" align = "left">
+<span class="ObjectTitle_Name">Location Data Source</span>
+</TD>
+</TR>
+ </Table>
+</div>
+<table border="0" cellpadding="0" cellspacing="0"  class="InvisibleTable">
+<tr>
+    	 
+<td id="Tab" class="Tab">	&nbsp;Diagram&nbsp;</td>
+ <td id="Tab" class="Tab">&nbsp;Definition&nbsp;</td>
+ <td class="TabFiller" width="100%">&nbsp;</td>
+<td align="center" onclick="OnFitWidthClick();"  id="ZoomButton" class="ZoomButton" title="Fit to width">
+<img src="../standard/ws_fitwidth.gif"></img></td>
+<td align="center" onclick="OnRegularClick();" id="ZoomButton" class="ZoomButton" title="Actual size">
+<img src="../standard/ws_actual.gif"></img></td>
+<td align="center" onmousedown="OnIncrStart();" onmouseup="OnIncrStop();" id="ZoomButton" class="ZoomButton" title="Zoom in">
+<img src="../standard/ws_zoomin.gif"></img></td>
+<td align="center" onmousedown="OnDecrStart();" onmouseup="OnDecrStop();" id="ZoomButton" class="ZoomButton" title="Zoom out">
+<img src="../standard/ws_zoomout.gif"></img></td>
+<td style="display:none" id="TabMemoryName">TabMemoryProcess</td>	</tr>
+</table>
+
+<div id="ContentTab" class="ContentTab">
+	<table id="TabDiagList" class="TabDiagList" border="0" cellpadding="0" cellspacing="0" width="450">
+	                        </Table>
+      </div>
+
+ <div id="ContentTab" class="ContentTab">
+
+<h3>Overview</H3>
+<H5>This Terminator shall represent external entities that provide data to the System from which its location can be determined.&nbsp;&nbsp;Typically this data shall be provided continuously without requests being made by any of the receiving Functions within the System.&nbsp;&nbsp;The data shall be used by these Functions in the determination of the position of Vehicles and Travellers within the road network managed by the System, e.g. when the location of a Public Transport vehicle is needed to determine if it requires priority at junctions controlled by the System.&nbsp;&nbsp;The actual identity of the source of the data is not important, but it could for example be GPS, or in the future perhaps Galileo.</H5>
+<h3>Diagrams</H3> 
+<h5>The Diagram(s) is(are) the Diagram(s) where you can find the Terminator</h5>
+<ul><h5>
+
+
+
+<li>Context Diagram</li></a></ul></h5>
+
+<h3>Acronym</H3>
+
+<ul><h5><li>lds</ul></h5>
+
+<ul><h5></ul></h5>
+
+<ul><h5></ul></h5>
+
+<ul><h5></ul></h5>
+
+<h3>Output logical dataflows</H3>
+
+<ul><h5>
+
+<li>
+  <A CLASS="Content" HREF="5bc361084b260535.htm" target="Content"> flds-car_pooler_location </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f8972278398275d8.htm" target="Content"> flds-freight_vehicle_position_information </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="04b420ea4bd0063d.htm" target="Content"> flds-hazardous_goods_vehicle_location </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="4c845d404b4c07df.htm" target="Content"> flds-location_data_for_bus_lane_use </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="fed7047c4b8d0394.htm" target="Content"> flds-location_data_for_command_&amp;_warning_outputs </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="fc160f044b9e078d.htm" target="Content"> flds-location_data_for_incident_warnings </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="44134b864c0e01f6.htm" target="Content"> flds-location_data_for_vehicle_sensor_data </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="e38f0e8f4b460c16.htm" target="Content"> flds-location_for_priority </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f897211b39826ef0.htm" target="Content"> flds-mffo_inputs </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="5bc366044b260662.htm" target="Content"> flds-monitor_PT_fleet_inputs </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="d8cade914b17048f.htm" target="Content"> flds-mpto_inputs </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="bee0bf754b170185.htm" target="Content"> flds-mpto_passenger_location </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="d8cae2344b170512.htm" target="Content"> flds-mpto_traveller_location </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="d8cae3024b17054b.htm" target="Content"> flds-mpto_vehicle_position </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="fc16169e4b9e0ad5.htm" target="Content"> flds-mt_inputs </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="fa8d07474b2904ed.htm" target="Content"> flds-on-demand_service_vehicle_location </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="2ed050bc4b4b1515.htm" target="Content"> flds-pscs_inputs </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f8972278398275de.htm" target="Content"> flds-psef_location_data </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f897211b39826ef6.htm" target="Content"> flds-pshvs_inputs </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="88ce9d424b1f07e6.htm" target="Content"> flds-ptja_inputs </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="88ce9c9d4b1f0641.htm" target="Content"> flds-ptja_location_for_information </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f8972278398275e4.htm" target="Content"> flds-ptja_traveller_location </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="2eb62f094e0c0194.htm" target="Content"> flds-vehicle_location_for_attitude </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f8972278398275ea.htm" target="Content"> flds-vehicle_location_for_road_information </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f7ba1e1e4bb21cfe.htm" target="Content"> flds-vehicle_location_for_trip_monitoring </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="4de0a1164ba72da2.htm" target="Content"> flds-vehicle_location_for_trip_planning </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="3f5d503739a6044e.htm" target="Content"> flds-vehicle_position_for_eCall </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="234443b44bcc140b.htm" target="Content"> flds_vehicle_location_for_sensitive_area_access </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="5eae6d7039840b71.htm" target="Content"> From Location Data Source </A> 
+
+</ul></h5><script language="javascript" src="../standard/ws_tabtemplate.js"></script>
+<script language="javascript" src="../standard/ws_zoomtemplate.js"></script>
+<script language="javascript" src="../standard/ws_buttontemplate.js"></script>
+<script language="javascript" src="../standard/ws_keyshortcuttemplate.js"></script>
+            <!--<img src="../standard/orgu.gif"/>-->
+
+</BODY> </HTML>

@@ -1,0 +1,24 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 4.1.9 Output Arrival Information to Passengers
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>4.1.9 Output Arrival Information to Passengers</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to receive information about predicted PT Vehicle arrival times from the prediction functionality.<br>(2) The ability to use a suitable HMI to display to Travellers on PT Vehicles information about their arrival times at the next PT stops.<br>(3) The ability to filter information that is received so that only information which is relevant to the service that the PT Vehicle is operating and its current location is displayed.<br>(4) The ability to output information to those with disabilities, e.g. deafness and blindness.<br>(5) The ability to continuously monitor its operation and when a problem is detected, send a message to the Monitor PT infrastructure functionality.<br></div></H5><h3>Functional Requirements</H3><h5>(a) continuously monitor for the arrive of the service information for passengers and the service information for vehicles data flows<br/>(b) continuously collect the location data and determine the current location of the PT vehicle<br/>(c) when the either of the data flows in (a) is received process the data to filter out anything that is not relevant to the current and predicted location of the function<br/>(d) when (c) is complete output the result to the PT passenger in the predicted PT information data flow<br/>(e) if there are problems with completing (a) to (d) send the details in the faulty PT vehicle display data flow to the Monitor PT Infrastructure function.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FEA239810430.HTM?DiagTab=1" Target="_self">DFD 4.1  Monitor PT fleet</a><h5><li> <a href="F897F8CF39810025.HTM?DiagTab=0" Target="_self">Functional Tree of Area 4</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897fea239810430.htm" target="_self"> 4.1 Monitor PT fleet</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="bee0bf754b170185.htm" target="_self"> flds-mpto_passenger_location </A> <li>
+  <A CLASS="Content" HREF="29e23d154b2208b9.htm" target="_self"> mpto_service_change_information_for_vehicles </A> <li>
+  <A CLASS="Content" HREF="cf6dea044b180af7.htm" target="_self"> mpto_service_information_for_passengers </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="cf6ddc0e4b1805c0.htm" target="_self"> mpto_faulty_PT_vehicle_display </A> <li>
+  <A CLASS="Content" HREF="f897227d39827c38.htm" target="_self"> tt.ptp-predicted_PT_information </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428039be5df1.htm" target="_self"> 10.1.4.2</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to provide information about a PT service to the travellers before and during the journey.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428339be60bb.htm" target="_self"> 10.4.1.1</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to provide in-vehicle general (dynamic) PT information, as well as the arrival time at, and name of, the next stop for this vehicle.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428439be611b.htm" target="_self"> 10.4.2.1</A> </a></center></h5></td><td width="90%"><h5>The system shall provide information which is legible, understandable and capable of being assimilated very quickly by all travellers.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428439be6139.htm" target="_self"> 10.4.2.2</A> </a></center></h5></td><td width="90%"><h5>The system shall provide information in the native language at the output location, and/or from a user selected choice of other appropriate foreign languages, when applicable.</h5></td></tr></table></div>
+</BODY> </HTML>

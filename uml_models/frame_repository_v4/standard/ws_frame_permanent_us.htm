@@ -1,0 +1,95 @@
+<html>
+	<head>
+		<title>EITSFA Website</title>
+		<LINK REL="STYLESHEET" TYPE="text/css" HREF="ws_intranet.css">
+	</head>
+	<body>
+		<script>					
+			function Minimize()
+			{										
+				parent.frames("InformationFrame").InformationFrame.cols="0, *";
+				window.Button[0].style.display="none";
+				window.Button[1].style.display="inline";				
+			}
+			function Maximize()
+			{
+				parent.frames("InformationFrame").InformationFrame.cols="240, *";
+				window.Button[0].style.display="inline";
+				window.Button[1].style.display="none";
+			}					
+		</script>
+		<table class = "InvisibleTable" width="100%" cellpadding="0" cellspacing="0" height="100%" border="0" ID="Table1">
+			<tr valign="top">
+				<td class = "InvisibleTable" width="*">
+					<table border="0" cellpadding="0" cellspacing="0" width="150" class"InvisibleTable" ID="Table2">
+						<tr>
+							<td id="Menu" class="Menu" width="50" height="20">
+								GENERAL
+							</td>
+							<td id="Menu" class="Menu" width="50" height="20">
+								QUERY
+							</td>							
+						</tr>
+					</table>
+					<table border="0" cellpadding="0" cellspacing="0" width="*" id="ContentMenu" class="ContentMenu">
+						<tr>
+							<td id="SubMenu" class="SubMenu" width="70" align="center">
+								<A HREF="welcomebis.htm" target="Content">Home Page </A>
+							</td>							
+							<td id="SubMenu" class="SubMenu" width="70" align="center">
+								<A HREF="acronym.htm" target="Content">Acronym Definitions</a>
+							</td>
+							<td id="SubMenu" class="SubMenu" width="70" align="center">
+								<A HREF="definition.htm" target="Content">General Definitions</a>
+							</td>
+						</tr>
+					</table>
+					<table border="0" cellpadding="0" cellspacing="0" width="*" id="ContentMenu" class="ContentMenu">
+						<tr>
+							<td id="SubMenu" class="SubMenu" width="70" align="center">
+								<A HREF="../pages/d99be1723a7a409f.htm" target="Content">Data Flows</a>
+							</td>
+							<td id="SubMenu" class="SubMenu" width="70" align="center">
+								<A HREF="../pages/7B1C7CF740F6005B.htm" target="Content">Data Store</a>
+							</td>							
+							<td id="SubMenu" class="SubMenu" width="100" align="center">
+								<A HREF="../pages/f34c400f39c204c5.htm" target="Content">Data Flow Diagrams (DFDs)</a>
+							</td>
+							<td id="SubMenu" class="SubMenu" width="70" align="center">
+								<A HREF="../pages/d99be1833a7a40a5.htm" target="Content">Functions</a>
+							</td>								
+							<td id="SubMenu" class="SubMenu" width="70" align="center">
+								<A HREF="../pages/69be79753d2d15a4.htm" target="Content">Functional Area</a>
+							</td>	
+							<td id="SubMenu" class="SubMenu" width="70" align="center">
+								<A HREF="../pages/f34c3e7039c2042d.htm" target="Content">Terminator</a>
+							</td>														
+							<td id="SubMenu" class="SubMenu" width="70" align="center">
+								<A HREF="../pages/003a0e6c39844013.htm" target="Content">User Needs</a>
+							</td>
+			
+						</tr>
+					</table>										
+					<table class = "InvisibleTable" ID="Table5">
+						<tr valign="bottom">
+							<td onClick="Minimize();" style="cursor:hand" id="Button" class="Button" width="16" align="left" title="Close Navigator">
+								<img src="ws_treemin.gif">
+							</td>
+							<td onClick="Maximize();" style="cursor:hand" id="Button" class="Button" style="display : none" width="16" align="left" title="Open Navigator">
+								<img src="ws_treemax.gif">
+							</td>
+							<td width="64" class = "InvisibleTable">
+							</td>
+						</tr>
+					</table>
+				</td>
+				<td width="70" class = "InvisibleTable">					
+					<IMG width="70" src="frame.jpg" align="left">					
+				</td>
+			</tr>
+		</table>		
+		<script language="javascript" src="../standard/ws_menutemplate.js"></script>
+		<script language="javascript" src="../standard/ws_buttontemplate.js"></script>
+		<script language="javascript" src="../standard/ws_keyshortcuttemplate.js"></script>
+	</body>
+</html>

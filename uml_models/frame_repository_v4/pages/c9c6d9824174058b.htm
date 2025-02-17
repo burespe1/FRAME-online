@@ -1,0 +1,29 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 5.11.11 Monitor Status of Driver
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>5.11.11 Monitor Status of Driver</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to continuously monitor the status of the Driver.<br>(2) The ability to use data collected about the Driver to determine whether or not there is any impairment of the Driver due to any reason, which shall include, but not be limited to, fatigue, alcohol/drug abuse, sudden health problems, prolonged inattention, etc.<br>(3) The ability to report the results of its determinations about the status of the Driver to other functionality in the System.<br></div></H5><h3>Functional Requirements</H3><h5>(a) continuously monitor for the receipt of the driver status data flow<br/>(b) use the data flow in (a) to determine the current status of the driver<br/>(c) send the data in (b) to the Record Data for Operations function for storage in the store of Operational Data<br/>(d) continuously obtain the data previously stored in (c) from the store of Operational Data<br/>(e) compare the current data from (b) with the data in (d), and against some internal &quot;norm&quot; in order to identify any impairment;<br/>(f) if an impairment is detected in (e) then determine if the driver has failed or not<br/>(g) if in (f) the driver has failed, send the driver failed data flow to the Provide In-vehicle eCall Facilities<br/>(h) if in (f) it is just the driver&#39;s performance that has deteriorated, send the driver status data flow to the Alert Driver to Status function, to the Communicate with In-vehicle Systems function in the driver impaired data flow, to the Monitor Driver function in the Manage Freight and Fleet Functional Area in the driver status data flow and to the Classify Host Vehicle Driver Behaviour in the driver status for behaviour classification data flow.<br/></H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="C9C6D7FA4174050E.HTM?DiagTab=1" Target="_self">DFD 5.11 Provide Driver Monitoring and eCall</a><h5><li> <a href="F897F8D63981002B.HTM?DiagTab=0" Target="_self">Functional Tree of Area 5</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="c9c6d7fa4174050e.htm" target="_self"> 5.11 Provide Driver Monitoring and eCall</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="8914d9f641737ad1.htm" target="_self"> fd-driver_status </A> <li>
+  <A CLASS="Content" HREF="f8971c5c39824845.htm" target="_self"> pshvs_driver_stored_data </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="8914dddf41737c6d.htm" target="_self"> pshvs.mffo_driver_status </A> <li>
+  <A CLASS="Content" HREF="8914d1f7417378f3.htm" target="_self"> pshvs_driver_failed </A> <li>
+  <A CLASS="Content" HREF="f8971c5c3982476d.htm" target="_self"> pshvs_driver_impaired </A> <li>
+  <A CLASS="Content" HREF="f8971c5c39824773.htm" target="_self"> pshvs_driver_status </A> <li>
+  <A CLASS="Content" HREF="bb04c3064c24069f.htm" target="_self"> pshvs_driver_status_for_behaviour_classification </A> <li>
+  <A CLASS="Content" HREF="8914d2a04173790e.htm" target="_self"> pshvs_driver_status_for_store </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="76a789d44b97035b.htm" target="_self"> 7.4.1.22</A> </a></center></h5></td><td width="90%"><h5><span style='font-style: italic;'>Hazard Detection</span> - The system shall enable the host vehicle to send information about its own safety behaviour (i.e. whether or not the vehicle was being driven in an unsafe manner, e.g. excessive speeding, swapping of lanes, overtaking, driver inattention) to a road-side device.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="0a9236cf3c020225.htm" target="_self"> 8.5.0.1</A> </a></center></h5></td><td width="90%"><h5>The system shall minimise the risk of an accident due to the impaired alertness of the driver.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442b939be897d.htm" target="_self"> 8.5.0.2</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to detect impairment of the driver, e.g. alcohol/drug abuse, drowsiness, sudden health problems, prolonged inattention, etc.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442b939be8995.htm" target="_self"> 8.5.0.3</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to warn the driver when a lack of alertness is detected.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442ba39be89ad.htm" target="_self"> 8.5.0.4</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to warn surrounding drivers that this driver has a problem.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="dbf50a6341750132.htm" target="_self"> 8.5.1.4</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to detect that the driver is impared, identify its position, and initiate an &#39;eCall&#39; automatically.</h5></td></tr></table></div>
+</BODY> </HTML>

@@ -1,0 +1,34 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 2.1.2.4 Process Emergency Progress Reports
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>2.1.2.4 Process Emergency Progress Reports</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to provide the full acknowledgement of the response to incidents to the originators.<br>(2) The ability to prepare reports about the current progress with the response to incidents, i.e. how the emergency plan is being implemented.<br>(3) The ability to provide updates to the functionality that provides the management of road traffic in the geographic area where the incident occurred.<br></div></H5><h3>Functional Requirements</H3><h5>(a) wait for an emergency to process<br/>(b) load all information on emergency<br/>(c) send fully informed acknowledgement to traveller and authorities<br/>(d) receive progress reports from emergency services<br/>(e) analyse them in order to verify that process is OK<br/>(f) collect them to send a global progress report to emergency services and relevant authorities<br/>(g) in case of any problem request for e-classification or re-planning<br/>(h) store all information on process.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FEA2398103EE.HTM?DiagTab=1" Target="_self">DFD 2.1.2 Manage Emergency Intervention</a><h5><li> <a href="F897F8BD39810019.HTM?DiagTab=0" Target="_self">Functional Tree of Area 2</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897fea2398103ee.htm" target="_self"> 2.1.2 Manage Emergency Intervention</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897227839827572.htm" target="_self"> fes-emergency_progress_report </A> <li>
+  <A CLASS="Content" HREF="02db2ebd419a40f2.htm" target="_self"> psef_control_progress_report_processing </A> <li>
+  <A CLASS="Content" HREF="f8971c5d398249d7.htm" target="_self"> psef_emergency_description_PEPR </A> <li>
+  <A CLASS="Content" HREF="f8971c5d398249e3.htm" target="_self"> psef_emergency_id_for_processing </A> <li>
+  <A CLASS="Content" HREF="fd14618439bedd75.htm" target="_self"> psef_individual_emergency_progress_report </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f8971ea339826655.htm" target="_self"> psef.mffo_incident_notification_acknowledgment </A> <li>
+  <A CLASS="Content" HREF="5eae74ae3984174c.htm" target="_self"> psef.mt_incident_data_update </A> <li>
+  <A CLASS="Content" HREF="dbf50990417500ff.htm" target="_self"> psef.pshvs_eCall_final_acknowledgement </A> <li>
+  <A CLASS="Content" HREF="02db2ec7419a4110.htm" target="_self"> psef_control_progress_report_processing_response </A> <li>
+  <A CLASS="Content" HREF="f8971c5d398249e9.htm" target="_self"> psef_emergency_id_for_re-classification </A> <li>
+  <A CLASS="Content" HREF="f8971c5d398249ef.htm" target="_self"> psef_emergency_id_for_re-planning </A> <li>
+  <A CLASS="Content" HREF="f8971c5d398249f5.htm" target="_self"> psef_emergency_processing_information </A> <li>
+  <A CLASS="Content" HREF="fd14636239bedda9.htm" target="_self"> psef_global_emergency_progress_report </A> <li>
+  <A CLASS="Content" HREF="f8971c5e39824a37.htm" target="_self"> psef_roadside_eCall_full_acknowledgement </A> <li>
+  <A CLASS="Content" HREF="f897227b39827a4c.htm" target="_self"> tes-global_progress_report </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14429239be6b59.htm" target="_self"> 5.1.0.4</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to give the driver an immediate acknowledgement to his/her emergency call.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442af39be81a9.htm" target="_self"> 7.2.1.2</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to co-ordinate the emergency and rescue services once an incident has been detected, until all injured persons have reached a hospital.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442b039be81d3.htm" target="_self"> 7.2.1.3</A> </a></center></h5></td><td width="90%"><h5>The system shall provide communications between the emergency services, hospitals and TCCs for the provision of incident information.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="76a782074b970285.htm" target="_self"> 7.6.1.1</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to detect that the host vehicle has been involved in an indecent/accident and to call the emergency services either automatically or on command of the driver/passenger (eCall)</h5></td></tr></table></div>
+</BODY> </HTML>

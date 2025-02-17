@@ -1,0 +1,42 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 8.2.2.1.1 Elaborate and Store Operational trip and load plan
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>8.2.2.1.1 Elaborate and Store Operational trip and load plan</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to manage the creation of the actual details of the Freight Vehicle trip, including details of the load, once confirmation of the freight transport order has been received. <br>(2) The ability to ensure that the trip is created taking into account such things as the origin/destination, departure/arrival times, special requests about traffic, weather and pollution plus the nature of the freight cargo, e.g. hazardous goods or not.<br>(3) The ability to request any other appropriate resources for each Freight Vehicle trip.<br>(4) The ability to load details of the created trip into the store of Resources Data and to then request the preparation of the appropriate information about the cargo and trip in the correct form.<br><br></div></H5><h3>Functional Requirements</H3><h5>(a) wait for a fleet preparation requests<br/>(b) build from all confirmed transport orders the actual trips with associated load and store it in the store of Resources Data<br/>(c) for each trip request for allocation of all needed resources<br/>(d) elaborate the route request to the information provider by:<br/>     (d1) providing the freight transport conditions (origin/destination, and departure/arrival time),<br/>     (d2) formulating special requests about traffic, weather, pollution,<br/>     (d3) indicating whether or not the freight if of hazardous type<br/>(e) wait for the answer then store it under the store of Resources Data<br/>(f) request for documents preparation.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FF823981051F.HTM?DiagTab=1" Target="_self">DFD 8.2.2.1 Plan &amp; Prepare Fleet Operations</a><h5><li> <a href="F897FF823981050D.HTM?DiagTab=1" Target="_self">Functional tree 8.2</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897ff823981051f.htm" target="_self"> 8.2.2.1 Plan &amp; Prepare Fleet Operations</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="2ff4329e406c0097.htm" target="_self"> fo.flo-input_data_3 </A> <li>
+  <A CLASS="Content" HREF="737ac3fc3f3327d8.htm" target="_self"> mffo_read_resources_trip_and_load_plan_data </A> <li>
+  <A CLASS="Content" HREF="2ff44f6c406c5577.htm" target="_self"> mffo_request_for_freight_preparation_NFOR </A> <li>
+  <A CLASS="Content" HREF="f8971c56398240bf.htm" target="_self"> mffo_resource_allocation_confirmation </A> <li>
+  <A CLASS="Content" HREF="f8971ea4398266a9.htm" target="_self"> ptja.mffo_answer_on_pollution_situation </A> <li>
+  <A CLASS="Content" HREF="f8971ea4398266af.htm" target="_self"> ptja.mffo_answer_on_traffic_situation </A> <li>
+  <A CLASS="Content" HREF="5eae74af3984179a.htm" target="_self"> ptja.mffo_answer_on_weather_situation </A> <li>
+  <A CLASS="Content" HREF="f8971ea4398266c7.htm" target="_self"> ptja.mffo_route </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f8971ea13982634f.htm" target="_self"> mffo.ptja_freight_and_hazardous_goods_information </A> <li>
+  <A CLASS="Content" HREF="f8971ea139826367.htm" target="_self"> mffo.ptja_request_on_pollution_situation </A> <li>
+  <A CLASS="Content" HREF="f8971ea13982636d.htm" target="_self"> mffo.ptja_request_on_traffic_situation </A> <li>
+  <A CLASS="Content" HREF="5eae74ae39841674.htm" target="_self"> mffo.ptja_request_on_weather_situation </A> <li>
+  <A CLASS="Content" HREF="f8971ea139826379.htm" target="_self"> mffo.ptja_route_optimisation_request </A> <li>
+  <A CLASS="Content" HREF="f8971c5639824071.htm" target="_self"> mffo_request_for_document_preparation </A> <li>
+  <A CLASS="Content" HREF="f8971c56398240b3.htm" target="_self"> mffo_request_for_resource_allocation </A> <li>
+  <A CLASS="Content" HREF="d4d22947406c4e24.htm" target="_self"> to.flo-output_data_3 </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442c039be8ea8.htm" target="_self"> 9.5.1.5</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to transfer any necessary information about an operation, e.g. route, (hazardous or oversize) cargo, etc. to the relevant authorities, e.g. TCCs, TICs etc.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442c039be8ef0.htm" target="_self"> 9.5.1.7</A> </a></center></h5></td><td width="90%"><h5>The system shall enable the consignee to receive information, e.g. delivery note, invoice etc. directly from the vehicle.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442c039be8f0e.htm" target="_self"> 9.5.1.8</A> </a></center></h5></td><td width="90%"><h5>The system shall enable the shipper to receive information, e.g. destination, contractual data etc. directly from the vehicle.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442c039be8f2c.htm" target="_self"> 9.5.2.10</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to predict a time of arrival.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442c339be9136.htm" target="_self"> 9.5.2.8</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to provide an optimal route for each &#39;normal&#39; vehicle.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442c339be9148.htm" target="_self"> 9.5.2.9</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to provide suitable routes for &#39;abnormal&#39; vehicles, e.g. oversized, overweight, hazardous cargo etc.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="cf07d3eb417c005a.htm" target="_self"> 9.5.3.35</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to record the location of operational points, e.g. pick up, delivery, home base.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="cf07d3f6417c006c.htm" target="_self"> 9.5.3.38</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to report automatically the receipt and/or reading of incoming messages to the sender.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="cf07d402417c007e.htm" target="_self"> 9.5.3.41</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to assist the process of confirming that the driver is suitable qualified to take a given cargo, e.g. dangerous goods.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="0a923a8b3c020279.htm" target="_self"> 9.5.4.2</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to manage freight and fleets in such a way that the distribution of goods in an urban area will be made in the most efficient manner.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="0a923aa73c020280.htm" target="_self"> 9.5.4.3</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to manage the use of (un-)loading zones to aid the distribution of goods in an urban area.</h5></td></tr></table></div>
+</BODY> </HTML>

@@ -1,0 +1,25 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 8.1.5.4 Reserve Storage Places
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>8.1.5.4 Reserve Storage Places</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to take charge of facilitating the booking of storage area for use during the transfer between the transport modes being used for a Freight Transport Operation.<br>(2) The ability to achieve the booking through communication with the Freight Reservation Agency actor in the External Service Provider terminator.<br></div></H5><h3>Functional Requirements</H3><h5>(a) wait for a storage request then request externally for a storage facility<br/>(b) on booking information request and after answer of Storage Area Manager, store the results under a store of Consignment Data and acknowledge the Freight Operator about the storage booking action that can be positive or not<br/>(c) on request of an actual booking request manage all operations with Storage Area Manager: negotiation of condition, contract, invoice reception and payment.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FF8239810507.HTM?DiagTab=1" Target="_self">DFD 8.1.5 Manage Inter-modal Transport Synchronisatio</a><h5><li> <a href="F897F8EA3981003D.HTM?DiagTab=0" Target="_self">Functional Tree of Area 8</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897ff8239810507.htm" target="_self"> 8.1.5 Manage Inter-modal Transport Synchronisation</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f89722783982758a.htm" target="_self"> fesp.fsra-storage_answer </A> <li>
+  <A CLASS="Content" HREF="737ac3fb3f3326a6.htm" target="_self"> mffo_read_consignment_intermodal_storage_data </A> <li>
+  <A CLASS="Content" HREF="f8971c563982405f.htm" target="_self"> mffo_request_for_area_booking </A> <li>
+  <A CLASS="Content" HREF="c5cbd0be4d450488.htm" target="_self"> mffo_storage_area_request_data </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f8971c5539823f0f.htm" target="_self"> mffo_ack_on_area_booking </A> <li>
+  <A CLASS="Content" HREF="737acbc13f332ae6.htm" target="_self"> mffo_load_consignment_intermodal_storage_data </A> <li>
+  <A CLASS="Content" HREF="c5cbd04b4d450468.htm" target="_self"> mffo_storage_area_request_results </A> <li>
+  <A CLASS="Content" HREF="f897227b39827a7c.htm" target="_self"> tesp.fsra-storage_request </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442c639be9448.htm" target="_self"> 9.5.4.4</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to book places in an equipment/container storage area.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442c639be9466.htm" target="_self"> 9.5.4.5</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to forecast the use of an equipment/container storage area</h5></td></tr></table></div>
+</BODY> </HTML>

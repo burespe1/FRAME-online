@@ -1,0 +1,23 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 8.1.6 Freight Operations Performance Evaluation
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>8.1.6 Freight Operations Performance Evaluation</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to evaluate the performance of the Freight Transport Operation at the request of the Freight Management Operator, using data obtained from the store of consignment data.<br>(2) In particular the ability to evaluate the cost of any delays in the completion of the Freight Transport Operation.<br>(3) A HMI through which the Freight Management Operator can request and receive output of the results from the evaluation of the performance of the Freight Transport Operation.<br>(4) The HMI shall have the ability to send requests to the Freight Management Operator to provide data required to complete the evaluation, but which is missing from that available from the store of consignment data and to collect the data provided by the Operator so that it can be used in the evaluation process.<br></div></H5><h3>Functional Requirements</H3><h5>(a) when the request performance evaluation data flow is received, the command that it contains shall be decoded and the scope of the required evaluation determined<br/>(b) the Function shall read the data needed for the report from the store of Consignment Data<br/>(c) if during the course of (b) the required data is not found, this shall be reported to the Freight Management Operator using the additional data needed for evaluation data flow<br/>(d) the valid data that is retrieved as a result of (b) shall be used to produced the requested evaluation report, highlighting the cost of any delays to the delivery of the freight<br/>(e) when (d) is complete, the evaluation report shall be output to the Freight Operator using the performance evaluation result data flow<br/>(f) if the data flow in (a) in not received within a configurable length of time (typically hours, days or weeks), the Function shall perform steps (b) to (e) above for all information about freight shipments that is currently held in the store of Consignment Data.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FF82398104F5.HTM?DiagTab=1" Target="_self">DFD 8.1 Manage Logistics and Freight</a><h5><li> <a href="F897F8EA3981003D.HTM?DiagTab=0" Target="_self">Functional Tree of Area 8</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897ff82398104f5.htm" target="_self"> 8.1 Manage Logistics and Freight</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="73b076ec4d3004d6.htm" target="_self"> fo.fro-additional_evaluation_data </A> <li>
+  <A CLASS="Content" HREF="73b074ea4d30049b.htm" target="_self"> fo.fro-request_performance_evaluation </A> <li>
+  <A CLASS="Content" HREF="737ac3fb3f332670.htm" target="_self"> mffo_read_consignment_evaluation_data </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="737acbc13f332ab0.htm" target="_self"> mffo_load_consignment_evaluation_data </A> <li>
+  <A CLASS="Content" HREF="73b078224d300534.htm" target="_self"> to.fro-additional_data_needed_for_evaluation </A> <li>
+  <A CLASS="Content" HREF="73b077bf4d300510.htm" target="_self"> to.fro-performance_evaluation_result </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442bf39be8d52.htm" target="_self"> 9.5.1.10</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to reconstitute the route taken by any item, and the contracts that have been fulfilled (tracing function).</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442bf39be8d7c.htm" target="_self"> 9.5.1.11</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to analyse the costs and performance of the FFM operations.</h5></td></tr></table></div>
+</BODY> </HTML>

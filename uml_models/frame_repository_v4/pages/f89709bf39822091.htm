@@ -1,0 +1,23 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 4.1.8 Calculate PT Service Performance
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>4.1.8 Calculate PT Service Performance</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to calculate predefined performance for the operation of the PT Vehicles.<br>(2) The ability for the performance calculations to be based on continuously observed real time data collected from the operating PT Vehicles by other functionality.<br>(3) The ability for the performance calculations to be initiated by the PT Operator through the PT Operator Interface Function, to which the results shall be automatically sent. <br>(4) The ability to send the results of the performance calculations to the Optimise Control Action Function.<br></div></H5><h3>Functional Requirements</H3><h5>(a) continuously monitor for the receipt of the calculate service performance data flow<br/>(b) when it is received, obtain the data from the store of Real Time PT Vehicle Status Data using the real time vehicle progressing data flow<br/>(c) calculate the resulting current PT vehicle performances modifying it according to any criteria contained in the data flow in (a)<br/>(d) when (c) is complete send the result to the Provide Operator Interface to Mange PT Fleet function using the calculated vehicle performance data flow.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FEA239810430.HTM?DiagTab=1" Target="_self">DFD 4.1  Monitor PT fleet</a><h5><li> <a href="F897F8CF39810025.HTM?DiagTab=0" Target="_self">Functional Tree of Area 4</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897fea239810430.htm" target="_self"> 4.1 Monitor PT fleet</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="d8caf8b14b1713ba.htm" target="_self"> mpto_calculate_service_performance </A> <li>
+  <A CLASS="Content" HREF="f8971c5839824263.htm" target="_self"> mpto_real_time_vehicle_progressing </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="d8cafa124b1713e5.htm" target="_self"> mpto_calculated_service_performance </A> <li>
+  <A CLASS="Content" HREF="f8971c5839824233.htm" target="_self"> mpto_observed_performance_figures </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14427f39be5d07.htm" target="_self"> 10.1.0.4</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to analyse records of usage and operational data, and passenger surveys, to assist in the planning process.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428039be5e21.htm" target="_self"> 10.1.4.3</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to provide an update of arrival/departure information in real-time and present it to travellers of that mode before and during the journey.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428339be5fa1.htm" target="_self"> 10.2.4.1</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to provide statistics of usage</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428339be5fb3.htm" target="_self"> 10.2.4.2</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to provide statistics on how well it actually satisfies its customers, e.g. response times, for reporting to its users.</h5></td></tr></table></div>
+</BODY> </HTML>

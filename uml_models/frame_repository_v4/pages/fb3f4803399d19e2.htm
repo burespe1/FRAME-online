@@ -1,0 +1,183 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 2.2 Manage Stolen Vehicle Notification
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <div id="ObjectTitle">
+<Table id="ObjectTitleTable" class="ObjectTitleTable" cellpadding="0" cellspacing="0"  width = "100%">
+<TR>
+<TD width="5%" height ="35" align = "left">
+<img src="../standard/busf.gif"/>
+</TD>
+<TD width="20%" height ="35" align = "left">
+<span class="ObjectTitle_Type">
+High Level Function</span>
+</TD>
+<TD width="75%" height ="35" align = "left">
+<span class="ObjectTitle_Name">2.2 Manage Stolen Vehicle Notification</span>
+</TD>
+</TR>
+ </Table>
+</div>
+<table border="0" cellpadding="0" cellspacing="0"  class="InvisibleTable">
+<tr>
+    	 
+<td id="Tab" class="Tab">	&nbsp;Diagram&nbsp;</td>
+ <td id="Tab" class="Tab">&nbsp;Definition&nbsp;</td>
+ <td class="TabFiller" width="100%">&nbsp;</td>
+<td align="center" onclick="OnFitWidthClick();"  id="ZoomButton" class="ZoomButton" title="Fit to width">
+<img src="../standard/ws_fitwidth.gif"></img></td>
+<td align="center" onclick="OnRegularClick();" id="ZoomButton" class="ZoomButton" title="Actual size">
+<img src="../standard/ws_actual.gif"></img></td>
+<td align="center" onmousedown="OnIncrStart();" onmouseup="OnIncrStop();" id="ZoomButton" class="ZoomButton" title="Zoom in">
+<img src="../standard/ws_zoomin.gif"></img></td>
+<td align="center" onmousedown="OnDecrStart();" onmouseup="OnDecrStop();" id="ZoomButton" class="ZoomButton" title="Zoom out">
+<img src="../standard/ws_zoomout.gif"></img></td>
+<td style="display:none" id="TabMemoryName">TabMemoryProcess</td>	</tr>
+</table>
+
+<div id="ContentTab" class="ContentTab">
+	<table id="TabDiagList" class="TabDiagList" border="0" cellpadding="0" cellspacing="0" width="450">
+	          <tr>
+          <td width="16">
+                    <img src="../standard/diag.gif"/></td>
+<td id="TabDiag"class="TabDiag">
+DFD 2.2 Manage Stolen Vehicle Reporting</td>
+</tr>
+              </Table>
+<div id="ContentTabDiag" class="ContentTabDiag">
+      <p>
+<p class="DiagName">DFD 2.2 Manage Stolen Vehicle Reporting</p><p>
+<center>
+<h5>This is a DFD diagram which provides a description of the function in the ITS environment</h5>
+  <MAP CLASS="Content" NAME="A74BAE384B7E053F"> 
+    <AREA href="7ca489ae4b82057e.htm" shape="rect" coords="302, 189, 427, 217"   target="_self"  title="It contains an instruction that has been received from the Emergency Operator to stop a stolen Vehicle."> 
+    </AREA> 
+    <AREA href="7ca488c44b82054c.htm" shape="rect" coords="343, 121, 565, 135"   target="_self"  title="It contains an instruction that is to be passed on the Vehicle Systems for the stolen Vehicle to be stopped by being disabled."> 
+    </AREA> 
+    <AREA href="7ca486c24b82037d.htm" shape="rect" coords="245, 333, 376, 349"   target="_self"  title="It contains input from the Emergency Operator requesting that the stolen vehicle is stopped through it being disabled by the Vehicle Systems."> 
+    </AREA> 
+    <AREA href="a74bb0d24b7e076d.htm" shape="rect" coords="242, 282, 380, 313"   target="_self"  title="It contains data about a stolen Vehicle that has been formatted for sending to the Emergency Operator."> 
+    </AREA> 
+    <AREA href="a74bb09b4b7e0759.htm" shape="rect" coords="263, 29, 401, 66"   target="_self"  title="It contains data about a stolen Vehicle that has been formatted for sending to the Emergency Services."> 
+    </AREA> 
+    <AREA href="fd144ff839bedb58.htm" shape="rect" coords="546, 37, 709, 51"   target="_self"  title="It contains information about a stolen vehicle that has been notified to the system and is for use in its recovery."> 
+    </AREA> 
+    <AREA href="fd144ed739bedb25.htm" shape="rect" coords="522, 302, 695, 317"   target="_self"  title="It contains information about a stolen vehicle that has been notified to the system and is for use by the Emergency Operator in its recovery."> 
+    </AREA> 
+    <AREA href="f8971ea3398265ef.htm" shape="rect" coords="0, 123, 196, 137"   target="_self"  title="It contains the actual notification message from a vehicle which is currently in &quot;stolen&quot; status."> 
+    </AREA> 
+    <AREA href="a74badc54b7e0510.htm" shape="rect" coords="414, 261, 485, 360"   target="_self"  title="This Function shall be capable of providing the following facilities:"> 
+    </AREA> 
+    <AREA href="a74bada84b7e04fc.htm" shape="rect" coords="441, 0, 512, 97"   target="_self"  title="This Function shall be capable of providing the following facilities:"> 
+    </AREA> 
+    <AREA href="a74bae154b7e052b.htm" shape="rect" coords="231, 103, 315, 157"   target="_self"  title="This Function shall be capable of providing the following facilities:"> 
+    </AREA> 
+  </MAP> 
+  <IMG CLASS="Content" SRC="../images/fb3f4803399d19e2_i.png" USEMAP="#A74BAE384B7E053F" BORDER=0> 
+  </IMG> </center>
+</div> 
+      </div>
+
+ <div id="ContentTab" class="ContentTab">
+
+<h3>Overview</H3>
+<H5>This High-level Function shall manage the notification that a Vehicle has been stolen.&nbsp;&nbsp;It shall take the data sent to it by the actual stolen vehicle and forward it to both the Emergency Operator and Emergency System terminators.&nbsp;&nbsp;As part of the forwarding process, any re-formatting that is need to enable the data to be sent to either terminator shall be performed.&nbsp;&nbsp;Some form of alarm indication shall be provided by the Function to highlight the fact that a Vehicle has been stolen.&nbsp;&nbsp;Similar action shall be taken when the vehicle stolen notification is cancelled by data received from the vehicle.</H5>
+<h3>Diagrams</H3> 
+<table border="1" width="100%">
+<tr>
+<td><h5>
+The Diagram(s) is(are) the Diagram(s) where you can find the function
+</td>
+</tr>
+<tr>
+<td width="50%">
+<ul>
+<li>The first diagram, if exists, is a DFD diagram which provides the context of the function</li>
+<li>The second Diagram, if exists, is a Functional Tree which provides a hierarchical description of the function into subfunctions</li>
+</ul>
+</h5>
+</td>
+<td width="100%">
+<h5>
+
+
+
+<li>DFD 2  Provide Safety and Emergency Facilities</li></a>
+<h5>
+
+<a href="F897F8BD39810019.HTM?DiagTab=1" Target="_self">
+
+
+<li>Functional Tree of Area 2</li></a></h5>
+</td>
+</tr>
+</table>
+<h3>Parent</H3>
+<ul><h5></ul>
+<ul><li>
+  <A CLASS="Content" HREF="f897f8bd39810019.htm" target="_self"> 2. Provide Safety and Emergency Facilities</A> </h5></ul>
+<h3>Component lower level functions</H3>
+<ul><h5><li>
+  <A CLASS="Content" HREF="a74bae154b7e052b.htm" target="_self"> 2.2.1 Manage Stolen Vehicle Actions</A> <li>
+  <A CLASS="Content" HREF="a74bada84b7e04fc.htm" target="_self"> 2.2.2 Manage Stolen Vehicle Emergency Services Interface</A> <li>
+  <A CLASS="Content" HREF="a74badc54b7e0510.htm" target="_self"> 2.2.3 Manage Stolen Vehicle Emergency Operator Interface</A> </h5></ul>
+<H5></H5>
+<h3>Input logical dataflows</H3>
+<ul><h5>
+
+<li>
+  <A CLASS="Content" HREF="7ca486c24b82037d.htm" target="_self"> fo.eo-stop_stolen_vehicle </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f8971ea3398265ef.htm" target="_self"> pshvs.psef_stolen_vehicle_notification </A> 
+
+</h5></ul>
+<h3>Output logical dataflows</H3>
+<ul><h5>
+
+<li>
+  <A CLASS="Content" HREF="7ca488c44b82054c.htm" target="_self"> psef.pshvs_stolen_vehicle_stop_message </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="fd144ff839bedb58.htm" target="_self"> tes-stolen_vehicle_information </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="fd144ed739bedb25.htm" target="_self"> to.eo-stolen_vehicles_information </A> 
+
+</h5></ul> 
+
+<ul><h5></h5></ul>
+
+<ul><h5></h5></ul>
+<h3>User needs</H3>
+<div align="right">
+<table border="1" width="100%">
+<tr>
+<td width="10%"><center><h4>Number</h4></center></td>
+<td width="90%"><h4>Description</h4></td>
+</tr>
+
+</table>
+</div>
+
+</div><script language="javascript" src="../standard/ws_tabtemplate.js"></script>
+<script language="javascript" src="../standard/ws_zoomtemplate.js"></script>
+<script language="javascript" src="../standard/ws_buttontemplate.js"></script>
+<script language="javascript" src="../standard/ws_keyshortcuttemplate.js"></script>
+            <!--<img src="../standard/busf.gif"/>-->
+
+</BODY> </HTML>

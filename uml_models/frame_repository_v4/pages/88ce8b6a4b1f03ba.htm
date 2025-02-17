@@ -1,0 +1,18 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > Database 6.5 Travel Information Data
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Data Store<br>6.5 Travel Information Data</h2></center><br><h3>Description of content</H3><H5><div class="Normal" style='  text-align: justify;'>This Data Store shall be used within the Provide Traveller Journey Assistance Area. It shall contain travel information that has been produced from data collected by trip planning and other functionality.<br><br>The data in the Store shall be structured in the following way:<br> - Points of Interest (POI):<br>&nbsp;&nbsp;&nbsp;&nbsp;- location (characters and/or numbers, e.g. GPS/Galileo data)<br>&nbsp;&nbsp;&nbsp;&nbsp;- information (characters)<br> - Personal Services (PS):<br>&nbsp;&nbsp;&nbsp;&nbsp;- location (characters and/or numbers, e.g. GPS/Galileo data)<br>&nbsp;&nbsp;&nbsp;&nbsp;- information (characters)<br> - Other Modes:<br>&nbsp;&nbsp;&nbsp;&nbsp;- departure location (characters and/or numbers, e.g. GPS/Galileo data)<br>&nbsp;&nbsp;&nbsp;&nbsp;- arrival location characters and/or numbers, e.g. GPS/Galileo data()<br>&nbsp;&nbsp;&nbsp;&nbsp;- service details including schedules and costs (characters and numbers, some in currency)<br> - Toll Information:<br>&nbsp;&nbsp;&nbsp;&nbsp;- link ID (number)<br>&nbsp;&nbsp;&nbsp;&nbsp;- type of link, e.g. toll road, tunnel, bridge (characters)<br>&nbsp;&nbsp;&nbsp;&nbsp;- details of charges (characters and numbers some in currency others showing time in minutes and hours)<br> - PT service information (see store of PT Trip Planning Data)<br> - link:</div>
+<div class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;- ID (number)<br>&nbsp;&nbsp;&nbsp;&nbsp;- current traffic flow (number in vehicles per hour)<br>&nbsp;&nbsp;&nbsp;&nbsp;- current average traffic speed (number in kph or mph)<br>&nbsp;&nbsp;&nbsp;&nbsp;- current average traffic headway (number in seconds)<br>&nbsp;&nbsp;&nbsp;&nbsp;- date for current traffic data (date string)<br>&nbsp;&nbsp;&nbsp;&nbsp;- time for current traffic data (numbers defining hours, minutes and seconds)<br>&nbsp;&nbsp;&nbsp;&nbsp;- predicted traffic flow (number in vehicles per hour)<br>&nbsp;&nbsp;&nbsp;&nbsp;- predicted average traffic speed (number in kph or mph)<br>&nbsp;&nbsp;&nbsp;&nbsp;- predicted average traffic headway (number in seconds)<br>&nbsp;&nbsp;&nbsp;&nbsp;- prediction date (date string)</div>
+<div class="Normal" style='  text-align: justify;'>&nbsp;&nbsp;&nbsp;&nbsp;- prediction time (numbers defining hours, minutes and seconds) <br><br>It shall be possible for this data to be updated as and when it changes and for it to be used to provide information to Travellers, either on request or at the command of the Travel Information Operator.</div></H5><h3>Diagrams</H3><h5>The Diagram(s) below is (are) the Diagram(s) where you can find the Datastore</h5><ul><h5><li>DFD 6.6 Provide Traveller Information</li></a></ul></h5><h3>Input dataflows</H3><ul><h5><li>
+  <A CLASS="Content" HREF="a519acec4b1f0469.htm" target="Content"> ptja_load_travel_information </A> </h5></ul><h3>Output dataflows</H3><ul><h5><li>
+  <A CLASS="Content" HREF="a519bc874b1f0aa2.htm" target="Content"> ptja_read_travel_information </A> </h5></ul><ul><h5></h5></ul> <ul><h5></h5></ul>
+</BODY> </HTML>

@@ -1,0 +1,26 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 6.6.2 Produce Travel Information
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>6.6.2 Produce Travel Information</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to produce travel information using inputs it receives from other Functional Areas.<br>(2) The ability to modify the inputs according to filters set by the Travel Information Operator to reflect policy and other factors, so that for example information about certain types of services, travel modes, Personal Services, or Points of Interest are not included in what is sent for output to the Traveller.<br>(3)&nbsp;&nbsp;When the information is ready, the ability to respond to an Operator request that it is sent to a particular Output Travel Information Function, which may be at a specific location.<br>(4) The ability for the Operator to request that the information is sent to the store of Travel Information Data for use by the Provide Traveller Information Interface Function when the Traveller requests travel information.<br></div></H5><h3>Functional Requirements</H3><h5>(a) continuously monitor for the receipt of the input data flows that contain information that might be requested by the traveller<br/>(b) when any of the data flows in (a) is received, process its contents applying the filters (if any) that have been defined by the travel information operator<br/>(c) when (b) is complete, send the information to the Manage Travel Information Data Store function using the updated travel information data flow<br/>(d) if the request travel information filters data flow is received, respond to the Provide Travel Information Operator Interface function with the a copy of the current filters using the requested travel information filters data flow<br/>(e) if the updated travel information filters data flow is received, store the new filters internally for use in the generation of future travel information.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="88CE896C4B1F018C.HTM?DiagTab=1" Target="_self">DFD 6.6 Provide Traveller Information</a><h5><li> <a href="F897F8DC39810031.HTM?DiagTab=0" Target="_self">Functional Tree of Area 6</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="88ce896c4b1f018c.htm" target="_self"> 6.6 Provide Traveller Information</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="a519b4854b1f067d.htm" target="_self"> ptja_other_mode_data_for_travel_information </A> <li>
+  <A CLASS="Content" HREF="603d7bd04b1f05fc.htm" target="_self"> ptja_pos/pi_data_for_travel_information </A> <li>
+  <A CLASS="Content" HREF="603d79e84b1f059c.htm" target="_self"> ptja_PT_information </A> <li>
+  <A CLASS="Content" HREF="a519c60f4b1f0c49.htm" target="_self"> ptja_request_travel_information_filters </A> <li>
+  <A CLASS="Content" HREF="603d7aa64b1f05cc.htm" target="_self"> ptja_road_information </A> <li>
+  <A CLASS="Content" HREF="a519b63c4b1f06ba.htm" target="_self"> ptja_toll_data_for_travel_information </A> <li>
+  <A CLASS="Content" HREF="205f2b084b74056f.htm" target="_self"> ptja_updated_travel_information_filters </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="a519c63f4b1f0c59.htm" target="_self"> ptja_requested_travel_information_filters </A> <li>
+  <A CLASS="Content" HREF="205f26544b740520.htm" target="_self"> ptja_updated_travel_information </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="53f269f0416200c4.htm" target="_self"> 6.1.2.13</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to provide information to travellers so as to influence their choice of destination and/or mode of travel, e.g. to protect the environment of a &quot;Point of Interest&quot;, or geographic area.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14429739be6e71.htm" target="_self"> 6.1.2.2</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to provide information on the cancellation of departures from an inter-modal interchange (e.g. railway station, an airport , a port or a coach station) due to the weather; strikes or other reasons.</h5></td></tr></table></div>
+</BODY> </HTML>

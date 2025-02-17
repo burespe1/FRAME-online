@@ -1,0 +1,32 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 9.2.3 Manage Bus Lane Use Data
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>9.2.3 Manage Bus Lane Use Data</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to manage the data about the availability and use of Bus Lanes by other Vehicles.<br>(2) The ability to receive data about the road network and the location of Bus Lanes within it, load that data into the store of Bus Lane Data and enable that data to be updated through input from the Road Network Operator.<br>(3) The ability to also receive data about traffic using the road network from the Manage Traffic functionality, plus data from the Manage Public Transport functionality about the PT service schedules and predicted arrival times at stops, all of which shall be loaded into the store of Bus Lane Data as historic data for traffic conditions and predicted arrival times.<br>(4) The ability to retain the most recent traffic flow and PT Vehicle arrival time prediction data as the current data for each Bus Lane and its associated road link and send it to the Manage Bus Lane use functionality whenever there is a change.<br>(5) When a request is received from the Road Network Operator, the ability to create statistical reports from the contents of the store of Bus Lane Data and send it to the Operator Interface function for output.<br></div></H5><h3>Functional Requirements</H3><h5>(a) continually collect, fuse and store data provided by the input trigger data flows from the Manage Traffic and Manage Public Transport functionality in the store of Bus Lane Data<br/>(b) periodically, or when changes occur use the output trigger data flow to provide data about the current use of bus lanes<br/>(c) when details of a new or updated bus lane licence are received, load them into the store of Bus Lane Data<br/>(d) when the data flow is received containing new data from the Operator, update the relevant part of the store of Bus Lane Data<br/>(e) when the data flow is received from the Operator, requesting data from the store of Bus Lane Data, retrieve the requested data and send it to the Operator interface function<br/>(f) when the data flow containing details of an incorrect (illegal) use of a bus lane is received, load that data in the store of Bus Lane Data to provide a record<br/></H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="2ED046CF4B4B0E86.HTM?DiagTab=1" Target="_self">DFD 9.2 Provide Flexible Lane Allocation</a><h5><li> <a href="2ED039D74B4B048B.HTM?DiagTab=0" Target="_self">Functional Tree of Area 9</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="2ed046cf4b4b0e86.htm" target="_self"> 9.2 Provide Access to Bus Lanes</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="4c8465434b4c08d8.htm" target="_self"> mpto.pscs_predicted_PT_vehicle_arrival_times </A> <li>
+  <A CLASS="Content" HREF="4c8465d14b4c0900.htm" target="_self"> mpto.pscs_PT_services_and_schedules </A> <li>
+  <A CLASS="Content" HREF="4c8467574b4c0960.htm" target="_self"> mt.pscs_current_inter-urban_traffic_conditions </A> <li>
+  <A CLASS="Content" HREF="4c8466ee4b4c094d.htm" target="_self"> mt.pscs_current_urban_traffic_conditions </A> <li>
+  <A CLASS="Content" HREF="4c8463184b4c085c.htm" target="_self"> mt.pscs_inter-urban_road_network_data </A> <li>
+  <A CLASS="Content" HREF="4c8464334b4c08a0.htm" target="_self"> mt.pscs_urban_road_network_data </A> <li>
+  <A CLASS="Content" HREF="6c3c97e64b4c169d.htm" target="_self"> pscs_bus_lane_use_licence_details </A> <li>
+  <A CLASS="Content" HREF="d692e4394b4d028f.htm" target="_self"> pscs_incorrect_bus_lane_use_data </A> <li>
+  <A CLASS="Content" HREF="6c3c90594b4c15f8.htm" target="_self"> pscs_read_bus_lane_data </A> <li>
+  <A CLASS="Content" HREF="6c3c8ded4b4c153f.htm" target="_self"> pscs_request_bus_lane_data </A> <li>
+  <A CLASS="Content" HREF="6c3c8d3b4b4c1517.htm" target="_self"> pscs_update_road_data_for_bus_lanes </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="6c3c9a464b4c16fb.htm" target="_self"> pscs_current_data_about_bus_lanes </A> <li>
+  <A CLASS="Content" HREF="6c3c8faf4b4c15c9.htm" target="_self"> pscs_load_bus_lane_data </A> <li>
+  <A CLASS="Content" HREF="6c3c8e6e4b4c156a.htm" target="_self"> pscs_requested_bus_lane_data </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="4de05aa44ba7053c.htm" target="_self"> 7.5.3.11</A> </a></center></h5></td><td width="90%"><h5>The system shall collect traffic information (e.g. number of vehicles, speeds, queue lengths, violation details) on the roads covered by flexible bus lane allocation for statistical purposes, and to improve the algorithms used to decide when non-PT vehicles can use the bus lane.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="4de05a394ba704eb.htm" target="_self"> 7.5.3.2</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to predict the usage of a particular section of a bus lane for a short time into the future (e.g.15 minutes).</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="4de05a644ba70506.htm" target="_self"> 7.5.3.5</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to determine whether there is congestion on the normal road and, if so, whether a temporary licence should be given to the approved vehicle that is making a request to use a corresponding section of a bus lane without causing delays to scheduled PT vehicles.</h5></td></tr></table></div>
+</BODY> </HTML>

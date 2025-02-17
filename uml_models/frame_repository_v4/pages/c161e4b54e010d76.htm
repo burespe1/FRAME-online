@@ -1,0 +1,20 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 3.1.2.14.6 Send Messages to Approaching Inter-urban Vehicles
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>3.1.2.14.6 Send Messages to Approaching Inter-urban Vehicles</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to receive and store data for information and warning messages plus commands that have been output to Drivers of preceding Vehicles using the inter-urban road network.<br>(2) Use internal sensors to detect that a Vehicle is approaching.<br>(3) When an approaching Vehicle is detected, the ability to output to it the data for information and warning messages plus commands relevant to the management of traffic using the inter-urban road network.<br>(4) The ability to continue with the output to approaching Vehicles, changing the data every time it is changed, and stopping output if there is no data to transmit.</div></H5><h3>Functional Requirements</H3><h5>(a) continuously monitor for receipt of the urban data for approaching vehicles data flow from the Ouput Messages &amp; Commands to Inter-urban Roads function<br/>(b) using internal sensors to detect the presence of approaching vehicles, putting the data in the inter-urban vehicle presence for messages data flow from the traffic entity<br/>(c) when the data flow is received in (a) store its contents<br/>(d) an approach vehicle is detected in (b), output the data stored in (c) in the data flow containing approaching vehicles inter-urban messages<br/>(e) repeat (c) for every approaching vehicle, unless there is no data to output<br/>(f) if the data flow received in (b) contains no data, clear the stored message data.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="42A247014DEB01B2.HTM?DiagTab=1" Target="_self">DFD 3.1.2.14 Implement Inter-urban Management Traffic Strategy</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="42a247014deb01b2.htm" target="_self"> 3.1.2.14 Implement Inter-urban Management Traffic Strategy</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="c161e7974e010de7.htm" target="_self"> ftrfc-inter-urban_vehicle_presence_for_messages </A> <li>
+  <A CLASS="Content" HREF="c161e5394e010d8d.htm" target="_self"> mt_inter-urban_data_for_approaching_vehicles </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="c161ea4f4e011005.htm" target="_self"> mt.pshvs_approaching_vehicles_inter-urban_messages </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="21ea48204e1406dc.htm" target="_self"> 7.4.1.42</A> </a></center></h5></td><td width="90%"><h5><span style='font-style: italic;'>Hazardous Location Notification</span> - The system shall be able to inform drivers, via road-side devices, of obstacles in the carriageway and advise on the appropriate action (e.g. speed and lane).</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="21ea4a5f4e140755.htm" target="_self"> 7.4.1.46</A> </a></center></h5></td><td width="90%"><h5><span style='font-style: italic;'>Hazardous Location Notification</span> - The system shall be able to estimate the condition of the road surface in the vicinity of the host vehicle and send warnings to a road-side device.</h5></td></tr></table></div>
+</BODY> </HTML>

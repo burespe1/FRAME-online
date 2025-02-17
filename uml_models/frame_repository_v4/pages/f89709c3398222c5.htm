@@ -1,0 +1,26 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 8.1.3 Control Freight/Cargo Operations
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>8.1.3 Control Freight/Cargo Operations</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to take responsibility for the control of the Freight Transport Operation.<br>(2) The ability to get information about the status of the cargo and send it on request to the Freight Management Operator.<br>(3) The ability to control whether or not the Freight Transport Operation is completed and when necessary activate the closure request.<br></div></H5><h3>Functional Requirements</H3><h5>(a) when received save all operation information in the store of Consignment Data<br/>(b) check for the operation completion and then request for the operation closure<br/>(c) continuously monitor for receipt of the cargo status request data flow from the Freight Management Operator<br/>(d) when the data flow in (c) has been received, get the cargo status information from the store of Consignment Data<br/>(e) send the information obtained in (d) to the Freight Management Operator in the requested cargo status data flow<br/>(f) when the status request data flow is received from the Principal Consignor/Consignee, collect the data from the store of Consignment Data<br/>(g) when (f) is complete, send the result to the Principal Consignor/Consignee in the cargo status data flow.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FF82398104F5.HTM?DiagTab=1" Target="_self">DFD 8.1 Manage Logistics and Freight</a><h5><li> <a href="F897F8EA3981003D.HTM?DiagTab=0" Target="_self">Functional Tree of Area 8</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897ff82398104f5.htm" target="_self"> 8.1 Manage Logistics and Freight</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f8972277398274f4.htm" target="_self"> fcc.p-status_request </A> <li>
+  <A CLASS="Content" HREF="73b081224d30078f.htm" target="_self"> fo.fro-cargo_status_request </A> <li>
+  <A CLASS="Content" HREF="f8971c5639823f8d.htm" target="_self"> mffo_fleet_operational_information </A> <li>
+  <A CLASS="Content" HREF="737ac3fb3f33265e.htm" target="_self"> mffo_read_consignment_freight-cargo_data </A> <li>
+  <A CLASS="Content" HREF="f8971c563982409b.htm" target="_self"> mffo_request_for_freight_control </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f8971c5639823fbd.htm" target="_self"> mffo_freight_status_request </A> <li>
+  <A CLASS="Content" HREF="737acbc13f332a9e.htm" target="_self"> mffo_load_consignment_freight-cargo_data </A> <li>
+  <A CLASS="Content" HREF="f8971c5639824095.htm" target="_self"> mffo_request_for_freight_closure </A> <li>
+  <A CLASS="Content" HREF="f897227b398279c2.htm" target="_self"> tcc.p-cargo_status </A> <li>
+  <A CLASS="Content" HREF="73b081ec4d3007bf.htm" target="_self"> to.fro-requested_cargo_status </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442c039be8eba.htm" target="_self"> 9.5.1.6</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to track the physical and administrative status of a cargo throughout its journey.</h5></td></tr></table></div>
+</BODY> </HTML>

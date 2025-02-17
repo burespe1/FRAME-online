@@ -1,0 +1,30 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 4.1.6 Predict Vehicle Timings
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>4.1.6 Predict Vehicle Timings</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to provide predictions of PT vehicle and fleet parameters (e.g. arrival time of a PT vehicle at a given point), for any required time horizon.<br>(2) The ability for these predictions to be based on the knowledge of the current situation and historical data.<br>(3) The ability for predicted information about PT vehicles to be delivered to other functionality from which it can be output directly to the Traveller and Passengers<br>(4)&nbsp;&nbsp;The ability for predicted information about PT vehicles to be delivered to other functionality for use in managing the use of Bus Lanes.<br></div></H5><h3>Functional Requirements</H3><h5>(a) collect real time and historical PT vehicle data from the stores of Historical PT Vehicle Data and Real Time PT Vehicle Status Data<br/>(b) collect additional information about environmental conditions if available<br/>(c) calculate predictions of the arrival times for PT vehicles for several future time horizons<br/>(d) send results from (c) to the functionality that provides outputs to the PT operators, travellers, and passengers.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FEA239810430.HTM?DiagTab=1" Target="_self">DFD 4.1  Monitor PT fleet</a><h5><li> <a href="F897F8CF39810025.HTM?DiagTab=0" Target="_self">Functional Tree of Area 4</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897fea239810430.htm" target="_self"> 4.1 Monitor PT fleet</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f8972278398275ba.htm" target="_self"> fesp-environment_data_for_PT </A> <li>
+  <A CLASS="Content" HREF="f8971c5839824227.htm" target="_self"> mpto_historical_vehicle_data </A> <li>
+  <A CLASS="Content" HREF="f8971c5839824257.htm" target="_self"> mpto_real_time_vehicle_data </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="4c8465434b4c08d8.htm" target="_self"> mpto.pscs_predicted_PT_vehicle_arrival_times </A> <li>
+  <A CLASS="Content" HREF="f8971ea2398263e5.htm" target="_self"> mpto.ptja_pt_journey_time_prediction </A> <li>
+  <A CLASS="Content" HREF="cf6de68a4b180a4f.htm" target="_self"> mpto_predicted_PT_vehicle_data </A> <li>
+  <A CLASS="Content" HREF="f8971c5839824251.htm" target="_self"> mpto_PT_vehicle_arrival </A> <li>
+  <A CLASS="Content" HREF="cf6dea044b180af7.htm" target="_self"> mpto_service_information_for_passengers </A> <li>
+  <A CLASS="Content" HREF="cf6de95f4b180ad0.htm" target="_self"> mpto_service_information_for_stops </A> <li>
+  <A CLASS="Content" HREF="cf6de8c14b180aa5.htm" target="_self"> mpto_service_information_for_travellers </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428039be5df1.htm" target="_self"> 10.1.4.2</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to provide information about a PT service to the travellers before and during the journey.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428039be5e21.htm" target="_self"> 10.1.4.3</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to provide an update of arrival/departure information in real-time and present it to travellers of that mode before and during the journey.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428339be60bb.htm" target="_self"> 10.4.1.1</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to provide in-vehicle general (dynamic) PT information, as well as the arrival time at, and name of, the next stop for this vehicle.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428439be60df.htm" target="_self"> 10.4.1.2</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to provide general (dynamic) PT information, personal safety information, as well as the arrival times of next vehicles, delays, etc. at mode interchanges, e.g. bus stops, in  metro, railway or bus stations.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428539be619f.htm" target="_self"> 2.1.0.1</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to exchange traffic and travel information between adjacent TICs to enhance local information.</h5></td></tr></table></div>
+</BODY> </HTML>

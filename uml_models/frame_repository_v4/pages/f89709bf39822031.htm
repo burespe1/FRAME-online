@@ -1,0 +1,33 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 3.3.9 Manage Demand Management Data Store
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>3.3.9 Manage Demand Management Data Store</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to manage the store of Demand Management Data.<br>(2) The ability for the data about the use of transport modes that is received to be loaded directly into the store of Demand Management Data.<br>(3) The ability for the received data to be sent to the functionality responsible for reviewing demand management strategies.<br>(4) The ability to extract data from the Demand Management Data and send it to the appropriate functionality for use in the development of new demand management strategies.<br></div></H5><h3>Functional Requirements</H3><h5>(a) continuously monitor for the arrival of the data flow containing the updated demand data<br/>(b) when the data flow in (a) arrives, load the data into the store of Demand Data<br/>(c) send all of the data to the Analyse Data function and wait for it to respond with strategy criteria in the request demand strategy data flow<br/>(d) when the data flow in (c) is received search through the available strategies in the store of Demand Data<br/>(e) if a suitable strategy is found in (d) send it to the Demand Management Strategy Implementation function<br/>(f) if no suitable strategy is found in (d) send the data for demand strategy development to the Produce Demand Management Strategy function<br/>(g) when as a result of (f) the developed demand strategy data flow is received, load it into the store of Demand Data and also send it to the Demand Management Strategy Implementation function<br/>(h) when any of data flows containing other the requests for data and/or strategies is received, respond by sending what was requested to the function that sent the data flow<br/>(i) when the request for the implementation of a particular strategy is received from the Provide Operator Interface function, implement (e) for that strategy.<br/></H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FEA23981041E.HTM?DiagTab=1" Target="_self">DFD 3.3  Manage Demand</a><h5><li> <a href="F897FEA23981041E.HTM?DiagTab=1" Target="_self">Functional tree 3.3</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897fea23981041e.htm" target="_self"> 3.3 Manage Demand</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f8971c5839824365.htm" target="_self"> mt_demand_data_read </A> <li>
+  <A CLASS="Content" HREF="f8971c593982437d.htm" target="_self"> mt_demand_management_strategy_commands </A> <li>
+  <A CLASS="Content" HREF="f8971c5939824389.htm" target="_self"> mt_demand_strategy_data_update </A> <li>
+  <A CLASS="Content" HREF="f8971c5939824395.htm" target="_self"> mt_developed_demand_strategy </A> <li>
+  <A CLASS="Content" HREF="521d86c94b7111f0.htm" target="_self"> mt_request_data_&amp;_strategies_for_simulation </A> <li>
+  <A CLASS="Content" HREF="91349b474b16038e.htm" target="_self"> mt_request_demand_data_for_analysis </A> <li>
+  <A CLASS="Content" HREF="91349ad04b160367.htm" target="_self"> mt_request_demand_strategies </A> <li>
+  <A CLASS="Content" HREF="f8971c5a39824593.htm" target="_self"> mt_request_demand_strategy </A> <li>
+  <A CLASS="Content" HREF="f8971c5b3982460b.htm" target="_self"> mt_updated_demand_data </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="913498e44b1602ea.htm" target="_self"> mt_current_demand_strategy_for_simulation </A> <li>
+  <A CLASS="Content" HREF="f8971c5a39824599.htm" target="_self"> mt_data_for_demand_strategy_development </A> <li>
+  <A CLASS="Content" HREF="f8971c5a3982459f.htm" target="_self"> mt_demand_data_for_checking </A> <li>
+  <A CLASS="Content" HREF="f8971c583982435f.htm" target="_self"> mt_demand_data_load </A> <li>
+  <A CLASS="Content" HREF="913495d14b160295.htm" target="_self"> mt_demand_strataegy_for_implementation </A> <li>
+  <A CLASS="Content" HREF="913499794b160311.htm" target="_self"> mt_network_use_data_for_simulation </A> <li>
+  <A CLASS="Content" HREF="91349bc14b1603b5.htm" target="_self"> mt_requested_demand_data_for_analysis </A> <li>
+  <A CLASS="Content" HREF="91349c4f4b1603e0.htm" target="_self"> mt_response_to_demand_strategy_request </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428739be635b.htm" target="_self"> 2.1.4.2</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to archive (a summary of) historical data on transport demand and transport supply for all transport modes.</h5></td></tr></table></div>
+</BODY> </HTML>

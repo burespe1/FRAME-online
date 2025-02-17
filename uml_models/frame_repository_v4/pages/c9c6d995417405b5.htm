@@ -1,0 +1,23 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 5.11.8 Record Data for Operations
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>5.11.8 Record Data for Operations</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to record data that is related to Vehicle safety and/or for understanding accidents.<br>(2) The data shall include but not be limited to Driver status/behaviour and on vehicle status/dynamic performance from other functionality.<br>(3) The ability to receive Driver identity data from other functionality.<br>(4) The ability to collect traffic data through its own sensors.<br></div></H5><h3>Functional Requirements</H3><h5>a) At the beginning of a trip the identification of the driver, together with any pre-existing medical data, shall be input.<br/>b) At regular intervals information about the current status of the traffic and the vehicle shall be passed to the store of Operational Data with a time stamp.<br/>c) The data in the store of Operational Data shall only remain there for a given period of time, after which it will be overwritten.<br/></H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="C9C6D7FA4174050E.HTM?DiagTab=1" Target="_self">DFD 5.11 Provide Driver Monitoring and eCall</a><h5><li> <a href="F897F8D63981002B.HTM?DiagTab=0" Target="_self">Functional Tree of Area 5</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="c9c6d7fa4174050e.htm" target="_self"> 5.11 Provide Driver Monitoring and eCall</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897227a3982786c.htm" target="_self"> ftrfc-traffic_data </A> <li>
+  <A CLASS="Content" HREF="8914d1dd417378cb.htm" target="_self"> pshvs_current_vehicle_time_for_operations </A> <li>
+  <A CLASS="Content" HREF="e38f01434b4608b1.htm" target="_self"> pshvs_driver_details_for_operations </A> <li>
+  <A CLASS="Content" HREF="8914d2a04173790e.htm" target="_self"> pshvs_driver_status_for_store </A> <li>
+  <A CLASS="Content" HREF="8914d38b417379c1.htm" target="_self"> pshvs_vehicle_data </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f8971c5c39824869.htm" target="_self"> pshvs_tvd_scenario </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="0a9237573c020241.htm" target="_self"> 8.5.4.1</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to record data about an accident and the journey immediately before (black box).</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="dbf504c8417500ea.htm" target="_self"> 8.5.4.2</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to provide data about an accident or a journey to an authorised person, e.g. the police.</h5></td></tr></table></div>
+</BODY> </HTML>

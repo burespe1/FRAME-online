@@ -1,0 +1,26 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 8.3.1.2 Create New Transport Unit
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>8.3.1.2 Create New Transport Unit</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to allow a Driver to accept a proposed new transport load unit (logistic unit), which shall be either in addition to those listed in the transport order or for a back haul from a Consignee, when the transport contract is said &#8220;open&#8221; and on a time basis. <br>(2) The ability for the Driver to allocate an identifier to the unit if the Freight Shipper actor in the Consignor terminator is not supposed or able to do so.<br>(3) As an alternative, the ability for the Diver to ask for an identifier from the Fleet Manager, or to create a bar-coded label and a transport order, or to modify the existing one through exchanges with the Fleet Manager, Forwarder, or Principal.<br></div></H5><h3>Functional Requirements</H3><h5>(a) wait for function initialisation by the Driver<br/>(b) if needed, get the Fleet Manager instructions from the store of On-board Data<br/>(c) allocate a new ID through bar coding if possible and relevant<br/>(d) provide assistance to the Driver to prepare a new transport order<br/>(e) store the new transport order current description given by Driver in the store of On-board Data<br/>(f) inform monitor transport order Function about the transport order creation.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FF8239810537.HTM?DiagTab=1" Target="_self">DFD 8.3.1  Manage Task and Transport Order</a><h5><li> <a href="F897FF8239810531.HTM?DiagTab=1" Target="_self">Functional tree 8.3</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897ff8239810537.htm" target="_self"> 8.3.1  Manage Task and Transport Order</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="2ff4311e406c0002.htm" target="_self"> fd.fvd-trip_input_2 </A> <li>
+  <A CLASS="Content" HREF="737ac3fb3f3326dc.htm" target="_self"> mffo_read_on_board_new_transport_unit_data </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="737acbc23f332b1c.htm" target="_self"> mffo_load_on_board_new_transport_unit_data </A> <li>
+  <A CLASS="Content" HREF="f8971c5639824041.htm" target="_self"> mffo_new_transport_order </A> <li>
+  <A CLASS="Content" HREF="d4d226fd406c4c28.htm" target="_self"> td.fvd-trip_output_2 </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442c039be8ef0.htm" target="_self"> 9.5.1.7</A> </a></center></h5></td><td width="90%"><h5>The system shall enable the consignee to receive information, e.g. delivery note, invoice etc. directly from the vehicle.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442c039be8f0e.htm" target="_self"> 9.5.1.8</A> </a></center></h5></td><td width="90%"><h5>The system shall enable the shipper to receive information, e.g. destination, contractual data etc. directly from the vehicle.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442c339be915a.htm" target="_self"> 9.5.3.1</A> </a></center></h5></td><td width="90%"><h5>The system shall support the activities associated with the management of individual vehicles.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="cf07d3cb417c0024.htm" target="_self"> 9.5.3.26</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to record supplementary information about events recorded by the tachograph, e.g. reason for waiting time.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="cf07d3da417c003c.htm" target="_self"> 9.5.3.30</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to produce a message about a new collection of cargo that has been made.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="cf07d3e1417c0048.htm" target="_self"> 9.5.3.32</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to identify cargo, e.g. during loading and unloading, compare it for compliance with a manifest, and issue a warning in case of non-compliance.</h5></td></tr></table></div>
+</BODY> </HTML>

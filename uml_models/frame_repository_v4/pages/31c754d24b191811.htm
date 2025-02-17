@@ -1,0 +1,21 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 4.5.1 Provide PT Drivers access to Fares
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>4.5.1 Provide PT Drivers access to Fares</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) A HMI to enable the PT Vehicle Driver to provide information about the date, time and route that the PT Vehicle is operating so that any fare information that is obtained is relevant.<br>(2) The HMI shall also enable through which the PT Vehicle Driver can be provided with a display of the fares that are applicable to the current route being operated by the PT Vehicle.<br>(3) The ability to obtain the most up to date fare information from the store of Fare Schemes Data through the Manage Fare Schemes Data Store function whenever the Driver makes a request.<br></div></H5><h3>Functional Requirements</H3><h5>(a) continuously monitor for the receipt of the request fares data flow from the PT driver and the results of fare transaction from the Vehicle Fare Credit for Journey function<br/>(b) when the first data flow in (a) is received, send the PT driver request for fare scheme data flow to the Manage Fare Scheme Data Store function<br/>(c) as a result of (b) monitor for receipt of the fare scheme for PT driver data flow<br/>(d) when the data flow in (c) arrives, output its contents to the PT driver in the display fares data flow<br/>(e) when the second data flow in (a) is received, output its contents to the PT driver in the fare transaction result data flow.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="31C7547A4B191676.HTM?DiagTab=1" Target="_self">DFD 4.5 Provide PT Fare Facilities</a><h5><li> <a href="F897F8CF39810025.HTM?DiagTab=0" Target="_self">Functional Tree of Area 4</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="31c7547a4b191676.htm" target="_self"> 4.5 Provide PT Fare Facilities</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="d329d8174b1c095f.htm" target="_self"> fd.ptv-request_fares </A> <li>
+  <A CLASS="Content" HREF="d329e5cd4b1c0f14.htm" target="_self"> mpto_fare_scheme_for_PT_driver </A> <li>
+  <A CLASS="Content" HREF="f47df5154b1c0182.htm" target="_self"> mpto_result_of_fare_transaction </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f47dfc954b1c0299.htm" target="_self"> mpto_PT_driver_request_for_fare_scheme </A> <li>
+  <A CLASS="Content" HREF="d329e7994b1c0f82.htm" target="_self"> td.ptd-display_fares </A> <li>
+  <A CLASS="Content" HREF="7febe32d4b72155c.htm" target="_self"> td.ptd-fare_transaction_result </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr></table></div>
+</BODY> </HTML>

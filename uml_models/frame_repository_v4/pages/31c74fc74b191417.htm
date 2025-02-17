@@ -1,0 +1,17 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > Database 4.5 PT Fare Schemes Data
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Data Store<br>4.5 PT Fare Schemes Data</h2></center><br><h3>Description of content</H3><H5><div class="Normal" style='  text-align: justify;'>This Data Store shall be used within the Manage Public Transport Operations Area.&nbsp;&nbsp;It shall contain details of the fare schemes currently being operated for PT Journeys.<br><br>The data in the Store shall be structured in the following way:<br> &#8722; fare scheme ID (number)<br> &#8722; fare scheme name (characters)<br> &#8722; date when fare scheme expires (date string)<br> &#8722; time(s) of day when fare scheme operates (numbers defining hours and minutes)<br> &#8722; route ID(s) to which fare scheme applies (numbers)<br> - type(s) of PT Passenger to which fare scheme applies (characters)<br><br>For each type of PT Passenger, the following fare information shall be provided:<br> &#8722; range ID&#39;s of stop to which fare applies (numbers)<br> &#8722; numbers ID&#39;s of stops to which fare applies (numbers)<br><br>There shall be one set of the above data for each fare scheme, which shall have a unique ID.&nbsp;&nbsp;It shall be possible for there to be several fare schemes for the same route to cover different times of day, days of the week, months, years, etc.</div>
+<div class="Normal"></div></H5><h3>Diagrams</H3><h5>The Diagram(s) below is (are) the Diagram(s) where you can find the Datastore</h5><ul><h5><li>DFD 4.2  Plan PT Service</li></a></ul></h5><h3>Input dataflows</H3><ul><h5><li>
+  <A CLASS="Content" HREF="31c7528d4b191474.htm" target="Content"> mpto_load_fare_scheme </A> </h5></ul><h3>Output dataflows</H3><ul><h5><li>
+  <A CLASS="Content" HREF="31c7530d4b1914a1.htm" target="Content"> mpto_read_fare_scheme </A> </h5></ul><ul><h5></h5></ul> <ul><h5></h5></ul>
+</BODY> </HTML>

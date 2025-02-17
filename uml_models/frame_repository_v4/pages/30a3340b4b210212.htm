@@ -1,0 +1,30 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 4.4.10 Provide PT Operator Fleet Control Interface
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>4.4.10 Provide PT Operator Fleet Control Interface</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) A HMI through which the PT Operator can manage the operation of the PT Fleet.<br>(2) The HMI shall enable the PT Operator to set the criteria which is used to decide if and when PT Vehicle or service priority is requested and to request the introduction of additional PT Vehicles.<br>(3) The HMI shall enable the PT Operator to confirm additional PT Vehicles requested by other modes and to request report on the PT Control actions that have been taken.<br>(4) The HMI shall enable the PT Operator to provide data about each PT Vehicle in the fleet so that real-time and historic data can be properly associated with each Vehicle.<br></div></H5><h3>Functional Requirements</H3><h5>(a) continuously monitor for the receipt of the change service delivery criteria, request actions report data flows and PT vehicle static data from the PT operator<br/>(b) when the first data flow in (a) is received send the changed criteria to the Optimise PT Fleet Control function in the updated service delivery criteria data flow<br/>(c) when the second data flow in (a) is received send the request actions report data flow to the Optimise PT Fleet Control function<br/>(d) as a result of (c) continuously monitor for the receipt of the requested action report data flow<br/>(e) when the data flow in (d) is received, send its contents to the PT operator in the actions report data flow<br/>(f) continuously monitor for the receipt of the confirm PT service change data flow and when it is received send the request for service change data flow to the PT operator<br/>(g) when as a result of (f) the service change response data flow is received from the PT operator, out the result in the confirmed PT service change data flow to the Optimise PT Fleet Control function<br/>(h) when the third data flow in (a) is received, send the data that it contains to the store of Real Time PT Vehicle Status and the store of Historical PT Vehicle Data in the mpto_PT_vehicle_static_data_for_real_time_use and mpto_PT_vehicle_static_data_for_historic_use data flows respectively.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FEA239810442.HTM?DiagTab=1" Target="_self">DFD 4.4  Control PT Fleet</a><h5><li> <a href="F897F8CF39810025.HTM?DiagTab=0" Target="_self">Functional Tree of Area 4</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897fea239810442.htm" target="_self"> 4.4 Control PT Fleet</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f89722783982767a.htm" target="_self"> fo.pto-change_service_delivery_criteria </A> <li>
+  <A CLASS="Content" HREF="11b82aea4dde0a30.htm" target="_self"> fo.pto-PT_vehicle_static_data </A> <li>
+  <A CLASS="Content" HREF="29e230974b220412.htm" target="_self"> fo.pto-request_actions_report </A> <li>
+  <A CLASS="Content" HREF="29e22fc04b2203dc.htm" target="_self"> fo.pto-service_change_response </A> <li>
+  <A CLASS="Content" HREF="29e233b04b2204f4.htm" target="_self"> mpto_confirm_PT_service_change </A> <li>
+  <A CLASS="Content" HREF="29e239074b220613.htm" target="_self"> mpto_requested_action_report </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="29e233264b2204c9.htm" target="_self"> mpto_actions_report_request </A> <li>
+  <A CLASS="Content" HREF="4af25f364b22027d.htm" target="_self"> mpto_confirmed_PT_service_change </A> <li>
+  <A CLASS="Content" HREF="11b830094dde0ac7.htm" target="_self"> mpto_PT_vehicle_static_data_for_historic_use </A> <li>
+  <A CLASS="Content" HREF="11b82cf64dde0a57.htm" target="_self"> mpto_PT_vehicle_static_data_for_real_time_use </A> <li>
+  <A CLASS="Content" HREF="29e23b334b2206c2.htm" target="_self"> mpto_updated_service_delivery_criteria </A> <li>
+  <A CLASS="Content" HREF="4af26d674b2205ca.htm" target="_self"> to.pto-actions_report </A> <li>
+  <A CLASS="Content" HREF="4af26c684b220599.htm" target="_self"> to.pto-request_for_service_change </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="0a92213d3c020056.htm" target="_self"> 10.1.0.2</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to manage one or more modes of PT.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428039be5daf.htm" target="_self"> 10.1.3.2</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to schedule PT operations dynamically so that incidents or unexpected events can be handled with the minimum disruption.</h5></td></tr></table></div>
+</BODY> </HTML>

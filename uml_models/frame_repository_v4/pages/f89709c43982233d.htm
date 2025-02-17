@@ -1,0 +1,42 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 8.3.1.3 Monitor Transport Order
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>8.3.1.3 Monitor Transport Order</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to support the monitoring of a transport order all along its life cycle.<br>(2) At the phase of the execution, after achievement of all necessary operations during the preparation phase the ability to store transport order in the data store of On-board Data.<br>(3) During an on going mission, the ability to also support any modification required or felt necessary, associated to events and locations.<br>(4) The ability to indicate, program and trigger the types of monitoring of transport order progress required from the On-board Application and/or the Driver.<br>(5) The ability to automatically trigger reports (electronic signature of the road waybill or consignment note) or require the Driver to add relevant information.<br>(6) The ability to send reports on Driver initiative, pick up report and proof of delivery (or a delivery difficulty, or even refusal, etc.).<br></div></H5><h3>Functional Requirements</H3><h5>(a) receive transport order description from the create new transport order Function<br/>(b) receive transport order description, modification or information from the Fleet Manager, inform the Driver and store this data  in the store of On-board Data<br/>(c) store transport order information in the store of On-board Data<br/>(d) receive event from the task management Function about the transport order<br/>(e) receive event generated from trip resources the Function<br/>(f) for each received event  inform the Driver, process required operations on required transport order and store result in the store of On-board Data:<br/>     (f1) require validity check for a new or modified transport order,<br/>     (f2) get necessary signatures at pick up, and, most, at delivery (POD),<br/>     (f3) close transport order and generate reports<br/>(g) maintain a queue of transport orders under execution for Driver consultation<br/>(h) process information requests about transport order from Fleet Manager<br/>(i) receive payment receipts, associate them to transport order and store them on the store of On-board Data.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FF8239810537.HTM?DiagTab=1" Target="_self">DFD 8.3.1  Manage Task and Transport Order</a><h5><li> <a href="F897FF8239810531.HTM?DiagTab=1" Target="_self">Functional tree 8.3</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897ff8239810537.htm" target="_self"> 8.3.1  Manage Task and Transport Order</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="2ff43124406c000d.htm" target="_self"> fd.fvd-trip_input_3 </A> <li>
+  <A CLASS="Content" HREF="f8971c5639823ff9.htm" target="_self"> mffo_mgm_commercial_information </A> <li>
+  <A CLASS="Content" HREF="f8971c563982400b.htm" target="_self"> mffo_mgm_incident_information_MTO </A> <li>
+  <A CLASS="Content" HREF="f8971c5639824029.htm" target="_self"> mffo_mgm_statutory_information_MTO </A> <li>
+  <A CLASS="Content" HREF="f8971c5639824035.htm" target="_self"> mffo_mgm_transport_order_status_request </A> <li>
+  <A CLASS="Content" HREF="f8971c5639824041.htm" target="_self"> mffo_new_transport_order </A> <li>
+  <A CLASS="Content" HREF="737ac3fb3f3326ee.htm" target="_self"> mffo_read_on_board_monitor_order_data </A> <li>
+  <A CLASS="Content" HREF="f8971c573982417f.htm" target="_self"> mffo_task_event </A> <li>
+  <A CLASS="Content" HREF="f8971c573982418b.htm" target="_self"> mffo_transport_order_status </A> <li>
+  <A CLASS="Content" HREF="f8971ea33982661f.htm" target="_self"> pepf.mffo_payment_receipt_MTO </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="737acbc23f332b2e.htm" target="_self"> mffo_load_on_board_monitor_order_data </A> <li>
+  <A CLASS="Content" HREF="cda0e68b39ed0171.htm" target="_self"> mffo_rsc_commercial_incident_information </A> <li>
+  <A CLASS="Content" HREF="f8971c57398240fb.htm" target="_self"> mffo_rsc_commercial_information </A> <li>
+  <A CLASS="Content" HREF="f8971c5739824155.htm" target="_self"> mffo_rsc_statutory_information_MTO </A> <li>
+  <A CLASS="Content" HREF="f8971c5739824185.htm" target="_self"> mffo_transport_order_event </A> <li>
+  <A CLASS="Content" HREF="f8971c5739824191.htm" target="_self"> mffo_transport_order_TBC </A> <li>
+  <A CLASS="Content" HREF="d4d22706406c4c33.htm" target="_self"> td.fvd-trip_output_3 </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442bb39be8b30.htm" target="_self"> 9.2.0.1</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to store all necessary statutory information on-board the vehicle.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442bf39be8da6.htm" target="_self"> 9.5.1.2</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to provide information about a cargo, e.g. loading status, contents, delays, delivery status, disputes etc. to the fleet management centre in real time.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442bf39be8e2a.htm" target="_self"> 9.5.1.4</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to transfer official documents, e.g. transport orders, customs declarations, hazardous goods declarations, notices of dispatch etc. between vehicles, the fleet management centre and the relevant authorities in a controlled manner.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442c039be8ef0.htm" target="_self"> 9.5.1.7</A> </a></center></h5></td><td width="90%"><h5>The system shall enable the consignee to receive information, e.g. delivery note, invoice etc. directly from the vehicle.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442c039be8f0e.htm" target="_self"> 9.5.1.8</A> </a></center></h5></td><td width="90%"><h5>The system shall enable the shipper to receive information, e.g. destination, contractual data etc. directly from the vehicle.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="0a9239d03c02024f.htm" target="_self"> 9.5.1.9</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to confirm electronic documents with electronic signatures.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442c439be9298.htm" target="_self"> 9.5.3.2</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to store all necessary commercial and statutory vehicle, driver, trip and freight information on-board the vehicle.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="cf07d3cb417c0024.htm" target="_self"> 9.5.3.26</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to record supplementary information about events recorded by the tachograph, e.g. reason for waiting time.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="cf07d3d7417c0036.htm" target="_self"> 9.5.3.29</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to time-stamp data recorded during a trip, e.g. current location</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442c539be9394.htm" target="_self"> 9.5.3.4</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to transfer official documents, e.g. transport orders, customs declarations, hazardous goods declarations, notices of dispatch etc. between vehicles and relevant parties in a controlled manner.</h5></td></tr></table></div>
+</BODY> </HTML>

@@ -1,0 +1,563 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>European ITS Framework Architecture</title>
+<LINK 
+href="ws_intranet.css" type=text/css rel=stylesheet></head>
+
+<body>
+<table border="0" cellspacing="1" width="100%" height="100%">
+  <tr>
+    
+
+
+
+    <td width="85%">
+       <DIV CLASS="Title">
+            <H1>Acronyms definition</H1>
+		</DIV>
+
+<h2>Functional Areas Acronyms</h2>
+<table border="0" cellPadding="0" cellSpacing="0" " width="574">
+  <tbody>
+    <tr >
+      <td>
+        <p align="left"><b><span style="COLOR: blue">pepf</span></p>
+      </td>
+      <td>1.
+        Provide Electronic Payment Facilities</td>
+    </tr>
+    <tr >
+      <td>
+        <p align="left"><b><span style="COLOR: blue">psef</span></p>
+      </td>
+      <td>2.
+        Provide Safety and Emergency Facilities</td>
+    </tr>
+    <tr >
+      <td>
+        <p align="left"><b><span style="COLOR: blue">mt</span></p>
+      </td>
+      <td>3.
+        Manage Traffic</td>
+    </tr>
+    <tr >
+      <td>
+        <p align="left"><b><span style="COLOR: blue">mpto</span></p>
+      </td>
+      <td>4.
+        Manage Public Transport Operations</td>
+    </tr>
+    <tr >
+      <td>
+        <p align="left"><b><span style="COLOR: blue">padas</span></p>
+      </td>
+      <td>5.
+        Provide Advanced Driver Assistance Systems</td>
+    </tr>
+    <tr >
+      <td>
+        <p align="left"><b><span style="COLOR: blue">ptja</span></p>
+      </td>
+      <td>6.
+        Provide Traveler Journey Assistance</td>
+    </tr>
+    <tr >
+      <td>
+        <p align="left"><b><span style="COLOR: blue">psle</span></p>
+      </td>
+      <td>7.
+        Provide Support for Law Enforcement</td>
+    </tr>
+    <tr >
+      <td>
+        <p align="left"><b><span style="COLOR: blue">mffo</span></p>
+      </td>
+      <td>8.
+        Manage Freight and Fleet Operations</td>
+    </tr>
+    <tr >
+      <td>
+        <p align="left"><b><span style="COLOR: blue">pa</span></p>
+      </td>
+      <td>9.
+        Provide Archive</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Terminators Acronyms</h2>
+<table border="0" cellPadding="0" cellSpacing="0" " width="574">
+  <tbody>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">acs</p>
+      </td>
+      <td>Atmospheric
+        Conditions Systems</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">ae</p>
+      </td>
+      <td>Ambient
+        Environment</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">au</p>
+      </td>
+      <td>Archive
+        User</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">bti</p>
+      </td>
+      <td>Bridge/Tunnel
+        Infrastructure</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">cc</p>
+      </td>
+      <td>Consignor/Consignee,
+        Principal and Freight Forwarder</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">cc.c</p>
+      </td>
+      <td>Consignee</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">cc.fs</p>
+      </td>
+      <td>Consignor
+        Freight Shipper</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">cc.p</p>
+      </td>
+      <td>Principal</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">d</p>
+      </td>
+      <td>Driver</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">d.e</p>
+      </td>
+      <td>Emergency
+        Vehicle Driver</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">d.fvd</p>
+      </td>
+      <td>Freight
+        Vehicle Driver</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">d.hfvd</p>
+      </td>
+      <td>Hazardous
+        Freight Vehicle Driver</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">d.pr</p>
+      </td>
+      <td>Private
+        Driver</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">d.ptd</p>
+      </td>
+      <td>Public
+        Transport Driver</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">dt</p>
+      </td>
+      <td>Dynamic
+        Traveller</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">es</p>
+      </td>
+      <td>Emergency
+        Systems</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">esp</p>
+      </td>
+      <td>External
+        Service Provider</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">esp.b</p>
+      </td>
+      <td>Broadcaster</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">esp.bsp</p>
+      </td>
+      <td>Bookable
+        Service Provider</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">esp.fsra</p>
+      </td>
+      <td>Freight
+        Storage Renting Agency</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">esp.g</p>
+      </td>
+      <td>Geographic
+        Information Provider</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">esp.gip</p>
+      </td>
+      <td>General
+        Information Provider</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">esp.lp</p>
+      </td>
+      <td>Locator
+        Provider</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">esp.mmtip</p>
+      </td>
+      <td>Multi-Modal
+        Travel Information Provider</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">esp.peo</p>
+      </td>
+      <td>Planned
+        Event Organiser</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">esp.ttip</p>
+      </td>
+      <td>Traffic
+        and Travel Information Provider</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">esp.vra</p>
+      </td>
+      <td>Vehicle
+        Renting Agency</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">fc</p>
+      </td>
+      <td>Financial
+        Clearinghouse</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">feq</p>
+      </td>
+      <td>Freight
+        Equipment</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">ff</p>
+      </td>
+      <td>Freight
+        Forwarder</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">lds</p>
+      </td>
+      <td>Location
+        Data Source</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">lea</p>
+      </td>
+      <td>Law
+        Enforcement Agency</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">mms</p>
+      </td>
+      <td>Multi-Modal
+        System</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">mms.fms</p>
+      </td>
+      <td>Freight
+        Management System</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">mms.mmc</p>
+      </td>
+      <td>Multi-Modal
+        Crossing</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">mms.omfs</p>
+      </td>
+      <td>Other
+        Mode Freight System</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">mo</p>
+      </td>
+      <td>Maintenance
+        Organisation</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">o</p>
+      </td>
+      <td>Operator</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">o.eo</p>
+      </td>
+      <td>Emergency
+        Operator</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">o.flm</p>
+      </td>
+      <td>Fleet
+        Manager</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">o.fro</p>
+      </td>
+      <td>Freight
+        Operator</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">o.po</p>
+      </td>
+      <td>Parking
+        Operator</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">o.pto</p>
+      </td>
+      <td>Public
+        Transport Operator</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">o.rno</p>
+      </td>
+      <td>Road
+        Network Operator</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">o.tio</p>
+      </td>
+      <td>Traveler
+        Information Operator</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">o.to</p>
+      </td>
+      <td>Toll
+        Operator</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">oa</p>
+      </td>
+      <td>Other
+        Archives</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">rp</p>
+      </td>
+      <td>Road
+        Pavement</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">rrs</p>
+      </td>
+      <td>Related
+        Road System</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">t</p>
+      </td>
+      <td>Traveler</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">t.cp</p>
+      </td>
+      <td>Car-Pooler</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">t.cy</p>
+      </td>
+      <td>Cyclist</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">t.p</p>
+      </td>
+      <td>Pedestrian</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">t.ptp</p>
+      </td>
+      <td>Public
+        Transport Passenger</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">t.st</p>
+      </td>
+      <td>Static
+        Traveller</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">tp</p>
+      </td>
+      <td>Transport
+        Authorities</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">tra</p>
+      </td>
+      <td>Transport
+        Planner</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">trfc</p>
+      </td>
+      <td>Traffic</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">v</p>
+      </td>
+      <td>Vehicle</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">v.ev</p>
+      </td>
+      <td>Emergency
+        Vehicle</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">v.fv</p>
+      </td>
+      <td>Freight
+        Vehicle</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">v.hfv</p>
+      </td>
+      <td>Hazardous
+        Freight Vehicle</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">v.hmi</p>
+      </td>
+      <td>Human Machine Interface</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">v.ov</p>
+      </td>
+      <td>Other Vehicle</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">v.p</p>
+      </td>
+      <td>Private
+        Vehicle</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">v.ptv</p>
+      </td>
+      <td>Public
+        Transport Vehicle</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">v.vs</p>
+      </td>
+      <td>Vehicle Systems</td>
+    </tr>
+    <tr>
+      <td>
+        <p align="left"><b><span style="COLOR: blue">ws</p>
+      </td>
+      <td>Weather Systems</td>
+    </tr>
+  </tbody>
+</table>	
+	
+	</td>
+
+</tr>
+</table>
+</body>
+</html>

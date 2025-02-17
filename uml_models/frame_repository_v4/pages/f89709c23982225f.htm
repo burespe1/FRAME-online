@@ -1,0 +1,20 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 6.8.2 Provide Trip Plan Management Operator Interface
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>6.8.2 Provide Trip Plan Management Operator Interface</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) A HMI for the Travel Information Operator.<br>(2) The HMI shall enable the Operator to collect data from the store of Private Trip Plan Data about the content of the trip plans that are being produced.<br>(3) The HMI shall have the ability to format and present the collected data to the Operator as a management report, with the identities and other personal details about the Travellers removed.<br></div></H5><h3>Functional Requirements</H3><h5>(a) continuously monitor for receipt of the trip plan management report request data flow from the travel information operator<br/>(b) when the data flow in (a) is received, put the request into the trip plan data request data flow and send it to the Manage Store of Trip Plan Data function<br/>(c) as a result of (b) continuously monitor for receipt of the trip plan data output data flow<br/>(d) when the data flow in (c) is received, produce a report about the requested trip plans, making sure that the identities of the travellers who created and use the trip plans are not included<br/>(e) output the result of (d) tot he travel information operator in the trip plan management report data flow.<br/></H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="976FB4784BA00F93.HTM?DiagTab=1" Target="_self">DFD 6.8 Manage Trip Plan Store</a><h5><li> <a href="F897F8DC39810031.HTM?DiagTab=0" Target="_self">Functional Tree of Area 6</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="976fb4784ba00f93.htm" target="_self"> 6.8 Manage Trip Plans</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f8972279398276ce.htm" target="_self"> fo.tio-trip_plan_management_report_request </A> <li>
+  <A CLASS="Content" HREF="f8971c5f39824af7.htm" target="_self"> ptja_trip_plan_data_output </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f8971c5f39824af1.htm" target="_self"> ptja_trip_plan_data_request </A> <li>
+  <A CLASS="Content" HREF="f897227c39827ba8.htm" target="_self"> to.tio-trip_plan_management_report </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14429739be6ef5.htm" target="_self"> 6.1.2.9</A> </a></center></h5></td><td width="90%"><h5>The  system shall provide Information Management tools for the operator.</h5></td></tr></table></div>
+</BODY> </HTML>

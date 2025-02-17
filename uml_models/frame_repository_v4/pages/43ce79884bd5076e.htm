@@ -1,0 +1,24 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 3.1.4.8 Mange Urban Parking Data Store
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>3.1.4.8 Mange Urban Parking Data Store</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to manage the use of the store of Urban Car Park Data.<br>(2) The ability to load the store both static and real-time data and to extract (read) this data from the store when requested by other functionality.<br></div></H5><h3>Functional Requirements</H3><h5>(a) continuously monitor for receipt of any of the input data flows<br/>(b) when any of the data flows with actual static or real-time data is received in (a) load it into the store of Urban Car Park Data using the data flow load car park data<br/>(c) if any of the data flows received in (a) contain a request for previously stored car park data, extract it from the store of Urban Car Park Data using the data flow, read car park data and send it to the function that requested the data.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="FF3A0D484B030EE7.HTM?DiagTab=1" Target="_self">DFD 3.1.4 Provide Management of Car Parks</a><h5><li> <a href="F897FEA2398103F4.HTM?DiagTab=1" Target="_self">Functional tree 3.1</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="ff3a0d484b030ee7.htm" target="_self"> 3.1.4 Provide Management of Car Parks</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="94d5aca44b0a06a5.htm" target="_self"> mt_carpark_occupancy </A> <li>
+  <A CLASS="Content" HREF="94d5b30a4b0a07d4.htm" target="_self"> mt_carpark_status </A> <li>
+  <A CLASS="Content" HREF="94d5b6434b0a0877.htm" target="_self"> mt_load_carpark_static_data </A> <li>
+  <A CLASS="Content" HREF="43ce889e4bd509ac.htm" target="_self"> mt_read_car_park_data </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="94d5aff34b0a0731.htm" target="_self"> mt_carpark_space_time_costs </A> <li>
+  <A CLASS="Content" HREF="94d5b23a4b0a07a9.htm" target="_self"> mt_carpark_static_data </A> <li>
+  <A CLASS="Content" HREF="43ce88194bd50999.htm" target="_self"> mt_load_car_park_data </A> <li>
+  <A CLASS="Content" HREF="94d5b8e84b0a0908.htm" target="_self"> mt_read_carpark_static_data </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="610e6461485a00b6.htm" target="_self"> 7.1.11.4</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to collect and store data from all car parks to provide a historical record.</h5></td></tr></table></div>
+</BODY> </HTML>

@@ -1,0 +1,29 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 6.5.3.11 Provide Green Wave Routes
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>6.5.3.11 Provide Green Wave Routes</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to produce routes for Emergency Service and Other Vehicles as a result of specific requests.<br>(2) For Emergency Vehicles, the ability to produce routes that enable them to reach the scene of an incident in the shortest possible time.<br>(3) The purposes of the routes for Other Vehicles will be varied but must enable them to get from their current location to the specified destination in the shortest possible time.<br>(4)&nbsp;&nbsp;Routes for both types of Vehicles shall take account of the current and predicted traffic conditions and the times of the relevant green phases at all the signalised road junctions along the route.<br>(5) Data about the routes shall include the identities of all the junctions and include the required average speed for each segment.<br>(6) In some cases, the route may only contain one signalised road junction, in which case the objective of the route shall be achieved using local priority at the junction.<br></div></H5><h3>Functional Requirements</H3><h5>(a) the Function shall that uses the most appropriate part of the road network for the Emergency Vehicle, including but not limited to motorway networks, the secondary road network and so forth<br/>(b) the Function shall include information about the existing conditions on the route(s) presented<br/>(c) (d) the Function shall be able to assist Emergency Vehicles to achieve the shortest journey time to their destination<br/>(e) the Function shall provide safety recommendations.<br/></H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F89709C23982222F.HTM?DiagTab=1" Target="_self">DFD 6.5.3 Trip Planning</a><h5><li> <a href="F897F8DC39810031.HTM?DiagTab=0" Target="_self">Functional Tree of Area 6</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f89709c23982222f.htm" target="_self"> 6.5.3 Trip Planning</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="e7e4fea1399b07c1.htm" target="_self"> psef.ptja_emergency_intervention_route_request </A> <li>
+  <A CLASS="Content" HREF="d4d2198d406c3ea1.htm" target="_self"> psef.ptja_route_refresh_request </A> <li>
+  <A CLASS="Content" HREF="330f52544b470eca.htm" target="_self"> pshvs.ptja_green_wave_route_request </A> <li>
+  <A CLASS="Content" HREF="40d647ef416a04cd.htm" target="_self"> ptja_retrieve_psef_route_planning_data </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="330f54544b470f19.htm" target="_self"> ptja.pscs_green_wave_route </A> <li>
+  <A CLASS="Content" HREF="e7e4ff89399b07de.htm" target="_self"> ptja.psef_emergency_route_plan </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="0a922d913c02012f.htm" target="_self"> 6.2.0.3</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to be activated automatically by another system, e.g. traffic management.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14429b39be7117.htm" target="_self"> 6.2.2.5</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to provide information to all drivers including route restrictions, travel times, etc.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14429b39be7165.htm" target="_self"> 6.2.3.1</A> </a></center></h5></td><td width="90%"><h5>The system within the vehicle, or in the centre, shall support various types of presentation to the user.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14429b39be71b3.htm" target="_self"> 6.2.3.2</A> </a></center></h5></td><td width="90%"><h5>The system shall normally provide messages from a finite set of well defined messages.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14429b39be7201.htm" target="_self"> 6.2.3.3</A> </a></center></h5></td><td width="90%"><h5>The system shall provide information in the native language at the output location, and/or from a user selected choice of other appropriate foreign languages, when applicable.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14429c39be724f.htm" target="_self"> 6.2.3.4</A> </a></center></h5></td><td width="90%"><h5>The system shall provide information using &quot;open&quot; standard communication protocols. <br/></h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14429d39be729d.htm" target="_self"> 6.2.3.5</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to provide customised on-trip information to hand-held and in-vehicle devices.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14429e39be73bd.htm" target="_self"> 6.4.1.3</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to compute the total predicted journey time over the route selected.</h5></td></tr></table></div>
+</BODY> </HTML>

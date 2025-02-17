@@ -1,0 +1,76 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 8.2.2.2.1 Prepare/Process information to/from board
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>8.2.2.2.1 Prepare/Process information to/from board</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to take responsibility for the management and control of the freight transport operation.<br>(2) The ability to obtain information on the status of the cargo, current transport conditions and safety evaluation including a check of whether or not there is an incident.<br>(3) The ability to transmit the status information to other functionality if needed,<br>(4) The ability to control whether or not the transport operation is completed and activates closure request when required.<br>(5) The ability to provide up to date information on the status of hazardous freight transport to the more general trip planning functionality so that other Vehicles and Travellers are not put at risk by the presence of the hazardous goods.<br></div></H5><h3>Functional Requirements</H3><h5>(a) wait for a control request for a trip<br/>(b) activate resource management function on all  resources needed for the trip<br/>(c) initiate, manage and close exchange of information with all running trips<br/>(d) upon reception of any trip information, save it  in the store of Resources Data, analyse it and dispatch it to the right fleet management service<br/>(e) if the trip concerns hazardous goods, send the information to the Provide Traveller Journey Assistance Area<br/>(f) detect incident and give trip control  to incident management<br/>(g) upon reception of a fleet management service request, store it then send it to the relevant trip<br/>(h) request for transport condition evaluation<br/>(i) request for safety status evaluation.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FF8239810525.HTM?DiagTab=1" Target="_self">DFD 8.2.2.2 Control and Monitor Fleet Operations</a><h5><li> <a href="F897FF823981050D.HTM?DiagTab=1" Target="_self">Functional tree 8.2</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897ff8239810525.htm" target="_self"> 8.2.2.2 Control and Monitor Fleet Operations</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="2ff432ae406c00b8.htm" target="_self"> fo.flo-input_data_6 </A> <li>
+  <A CLASS="Content" HREF="f8971c5539823f4b.htm" target="_self"> mffo_commercial_request </A> <li>
+  <A CLASS="Content" HREF="f8971c5539823f6f.htm" target="_self"> mffo_driver_request </A> <li>
+  <A CLASS="Content" HREF="f8971c5539823f7b.htm" target="_self"> mffo_end_of_incident_handling </A> <li>
+  <A CLASS="Content" HREF="f8971c5639823fe1.htm" target="_self"> mffo_incident_instruction </A> <li>
+  <A CLASS="Content" HREF="737ac3fc3f332820.htm" target="_self"> mffo_read_resources_info_from_on_board_data </A> <li>
+  <A CLASS="Content" HREF="f8971c5639824083.htm" target="_self"> mffo_request_for_fleet_control </A> <li>
+  <A CLASS="Content" HREF="f8971c57398240ef.htm" target="_self"> mffo_rsc_cargo_raw_operational_data </A> <li>
+  <A CLASS="Content" HREF="cda0e68b39ed0171.htm" target="_self"> mffo_rsc_commercial_incident_information </A> <li>
+  <A CLASS="Content" HREF="f8971c57398240fb.htm" target="_self"> mffo_rsc_commercial_information </A> <li>
+  <A CLASS="Content" HREF="f8971c5739824107.htm" target="_self"> mffo_rsc_driver_raw_operational_data </A> <li>
+  <A CLASS="Content" HREF="f8971c5739824119.htm" target="_self"> mffo_rsc_equipment_raw_operational_data </A> <li>
+  <A CLASS="Content" HREF="f8971c573982412b.htm" target="_self"> mffo_rsc_operational_incident_information </A> <li>
+  <A CLASS="Content" HREF="f8971c5739824137.htm" target="_self"> mffo_rsc_raw_cargo_incident_information </A> <li>
+  <A CLASS="Content" HREF="f8971c573982413d.htm" target="_self"> mffo_rsc_raw_driver_incident_information </A> <li>
+  <A CLASS="Content" HREF="5eae679f3984056c.htm" target="_self"> mffo_rsc_raw_equipment_incident_information </A> <li>
+  <A CLASS="Content" HREF="f8971c573982414f.htm" target="_self"> mffo_rsc_raw_vehicle_incident_information </A> <li>
+  <A CLASS="Content" HREF="cda0f03739ed0201.htm" target="_self"> mffo_rsc_regulation_data </A> <li>
+  <A CLASS="Content" HREF="cda0f05239ed020f.htm" target="_self"> mffo_rsc_regulation_incident_information </A> <li>
+  <A CLASS="Content" HREF="d4d20ce5406c3340.htm" target="_self"> mffo_rsc_statutory_information_MOT </A> <li>
+  <A CLASS="Content" HREF="f8971c5739824155.htm" target="_self"> mffo_rsc_statutory_information_MTO </A> <li>
+  <A CLASS="Content" HREF="f8971c573982415b.htm" target="_self"> mffo_rsc_task_status </A> <li>
+  <A CLASS="Content" HREF="f8971c5739824167.htm" target="_self"> mffo_rsc_vehicle_raw_operational_data </A> <li>
+  <A CLASS="Content" HREF="f8971c573982416d.htm" target="_self"> mffo_safety_problem_PP </A> <li>
+  <A CLASS="Content" HREF="f8971c5739824179.htm" target="_self"> mffo_statutory_transport_documents </A> <li>
+  <A CLASS="Content" HREF="f8971c5739824197.htm" target="_self"> mffo_trip_problem </A> <li>
+  <A CLASS="Content" HREF="5eae679639840566.htm" target="_self"> mffo_vehicle_equipment_request </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="9e9db5a64bd10ef4.htm" target="_self"> mffo.pscs_hazardous_goods_information </A> <li>
+  <A CLASS="Content" HREF="f8971ea13982635b.htm" target="_self"> mffo.ptja_hazardous_goods_monitoring_information </A> <li>
+  <A CLASS="Content" HREF="f8971c5539823f33.htm" target="_self"> mffo_board_incident_information </A> <li>
+  <A CLASS="Content" HREF="f8971c5539823f3f.htm" target="_self"> mffo_commercial_event </A> <li>
+  <A CLASS="Content" HREF="f8971c5539823f63.htm" target="_self"> mffo_driver_event </A> <li>
+  <A CLASS="Content" HREF="f8971c5639823fdb.htm" target="_self"> mffo_incident_handling </A> <li>
+  <A CLASS="Content" HREF="f8971c5639823ff3.htm" target="_self"> mffo_mgm_cargo_raw_data_request </A> <li>
+  <A CLASS="Content" HREF="f8971c5639823ff9.htm" target="_self"> mffo_mgm_commercial_information </A> <li>
+  <A CLASS="Content" HREF="f8971c5639823fff.htm" target="_self"> mffo_mgm_driver_raw_data_request </A> <li>
+  <A CLASS="Content" HREF="f8971c5639824005.htm" target="_self"> mffo_mgm_equipment_raw_data_request </A> <li>
+  <A CLASS="Content" HREF="d4d2d578406b0019.htm" target="_self"> mffo_mgm_incident_information_MOT </A> <li>
+  <A CLASS="Content" HREF="f8971c563982400b.htm" target="_self"> mffo_mgm_incident_information_MTO </A> <li>
+  <A CLASS="Content" HREF="f8971c5639824017.htm" target="_self"> mffo_mgm_operational_information </A> <li>
+  <A CLASS="Content" HREF="d4d2d7b4406b0727.htm" target="_self"> mffo_mgm_statutory_information_MOT </A> <li>
+  <A CLASS="Content" HREF="f8971c5639824029.htm" target="_self"> mffo_mgm_statutory_information_MTO </A> <li>
+  <A CLASS="Content" HREF="f8971c563982402f.htm" target="_self"> mffo_mgm_task_status_request </A> <li>
+  <A CLASS="Content" HREF="f8971c5639824035.htm" target="_self"> mffo_mgm_transport_order_status_request </A> <li>
+  <A CLASS="Content" HREF="f8971c563982403b.htm" target="_self"> mffo_mgm_vehicle_raw_data_request </A> <li>
+  <A CLASS="Content" HREF="f8971c5639824065.htm" target="_self"> mffo_request_for_conditions_evaluation </A> <li>
+  <A CLASS="Content" HREF="f8971c56398240b9.htm" target="_self"> mffo_request_for_safety_evaluation </A> <li>
+  <A CLASS="Content" HREF="f8971c57398241a9.htm" target="_self"> mffo_vehicle_equipment_event </A> <li>
+  <A CLASS="Content" HREF="d4d22955406c4e45.htm" target="_self"> to.flo-output_data_6 </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="0a92289b3c0200bf.htm" target="_self"> 5.3.0.2</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to provide the location of hazardous goods.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14429439be6c9d.htm" target="_self"> 5.3.1.3</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to advise the emergency services on the contents of any vehicle that has been involved in an incident.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="0a9229473c0200cd.htm" target="_self"> 5.3.1.4</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to provide relevant information to the emergency services on the type of hazardous good(s) involved in an incident.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442b139be82e1.htm" target="_self"> 7.2.6.1</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to advise the emergency services on any hazardous goods that have been involved in an incident.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442bb39be8acd.htm" target="_self"> 9.1.0.2</A> </a></center></h5></td><td width="90%"><h5>The system shall enable all information stored on-board the vehicle to be interrogated whenever required.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442c039be8eba.htm" target="_self"> 9.5.1.6</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to track the physical and administrative status of a cargo throughout its journey.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="0a9239d03c02024f.htm" target="_self"> 9.5.1.9</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to confirm electronic documents with electronic signatures.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442c039be8f2c.htm" target="_self"> 9.5.2.10</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to predict a time of arrival.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442c139be8f98.htm" target="_self"> 9.5.2.13</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to locate, identify and monitor the status of a vehicle, equipment or cargo at any time.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442c439be91c6.htm" target="_self"> 9.5.3.12</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to record the actual route taken.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="cf07d3cb417c0024.htm" target="_self"> 9.5.3.26</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to record supplementary information about events recorded by the tachograph, e.g. reason for waiting time.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="b652d7f64bcd168b.htm" target="_self"> 9.5.6.8</A> </a></center></h5></td><td width="90%"><h5>The system shall enable a vehicle carrying hazardous goods to request appropriate assistance in the case of an incident or accident (eCall).</h5></td></tr></table></div>
+</BODY> </HTML>

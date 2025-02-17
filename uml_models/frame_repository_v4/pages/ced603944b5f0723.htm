@@ -1,0 +1,20 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 7.3.7 Maintain Instruction Notifications Data Store
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>7.3.7 Maintain Instruction Notifications Data Store</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to collect instruction acknowledgements from the Vehicle provided by other functionality, principally for managing traffic, which can instruct Drivers as to which lane to use and the maximum speed at which their Vehicles may be driven.<br>(2) The ability to load the collect instruction acknowledgements into the store of Instruction Notifications Data and to manage the contents of that store.<br>(3) When requested by other functionality, the ability to provide evidence from the store of Instruction Notifications Data about if, when (time and date) and where (location) a Driver was issued with particular instructions.<br></div></H5><h3>Functional Requirements</H3><h5>(a) continuously monitor for the receipt of the service acknowledgement data flow<br/>(b) when the data flow in (a) is received, load its contents into the store of Instruction Notifications Data<br/>(c) when the check instructions received data flow is received, check the store of Instruction Notifications Data to see if the vehicle was instructed to do something (lane use or speed) that would have caused a violation to be detected<br/>(d) if the result of (c) is positive (an instruction was issued and is still valid) then return a positive indication in the check instructions results data flow to the Create File for use in Prosecution function.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FF82398104E9.HTM?DiagTab=1" Target="_self">DFD 7.3  Process Fraud Notifications</a><h5><li> <a href="F897F8E239810037.HTM?DiagTab=0" Target="_self">Functional Tree of Area 7</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897ff82398104e9.htm" target="_self"> 7.3 Process Fraud and Violation Notifications</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="ced6f2b04b5e032c.htm" target="_self"> pshvs.psle_service_notification </A> <li>
+  <A CLASS="Content" HREF="ced6125f4b5f0830.htm" target="_self"> psle_check_insructions_recieved </A> <li>
+  <A CLASS="Content" HREF="ced611c94b5f0809.htm" target="_self"> psle_instruction_notification_read </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="ced612f14b5f085b.htm" target="_self"> psle_check_instructions_results </A> <li>
+  <A CLASS="Content" HREF="ced611204b5f07d8.htm" target="_self"> psle_instruction_notification_load </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr></table></div>
+</BODY> </HTML>

@@ -1,0 +1,26 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 4.3.10 Provide PT Driver Management
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>4.3.10 Provide PT Driver Management</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to create mid and short term assignments for PT Drivers to the PT services that are currently being provided when either the Driver data or PT service schedules change.<br>(2) The ability to assign PT Drivers to PT services based on information about them provided by the PT Operator and on their current availability, taking account of the number of hours that the Driver has worked and must comply with the applicable legal requirements for Driver hours.<br>(3) The ability to collect data about PT Drivers that has been sent by other functionality. <br></div></H5><h3>Functional Requirements</H3><h5>(a) continuously monitor for receipt of the available services, revised driver service instructions  and updated driver details data flows;<br/>(b) when any of the data flows in (a) is received, calculate the new driver schedules taking into account such things as age, experience, availability, driver working time regulations, PT service schedules, etc.<br/>(c) if (b) is successful, output the results to the Orivude PT Driver interface for management function in the new driver schedule data flow;<br/>(d) if (b) fails, send the driver scheduling failed message to the Provide PT Driver management PT Operator interface function in the driver scheduling failed data flow;<br/>(e) as a result of (c), continuously monitor for receipt of the updated driver status data flow;<br/>(f) when the data flow in (f) is received, update the internal store of driver details;<br/>(g) continuously monitor for receipt of the driver statistics request data flow;<br/>(h) when the data flow in (g) is received, create a report of the details and current status for the PT Driver ideintified in the request and send it to the Provide PT Driver management PT Operator interface function in the current driver statistics data flow.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FEA23981043C.HTM?DiagTab=1" Target="_self">DFD 4.3  Provide PT Management</a><h5><li> <a href="F897F8CF39810025.HTM?DiagTab=0" Target="_self">Functional Tree of Area 4</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897fea23981043c.htm" target="_self"> 4.3 Provide PT Management</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f8971c57398241d3.htm" target="_self"> mpto_available_services </A> <li>
+  <A CLASS="Content" HREF="e4bd05624d2705d0.htm" target="_self"> mpto_driver_statistics_request </A> <li>
+  <A CLASS="Content" HREF="29e23aa14b220690.htm" target="_self"> mpto_revised_driver_servce_instructions </A> <li>
+  <A CLASS="Content" HREF="e4bd052e4d2705c1.htm" target="_self"> mpto_updated_driver_details </A> <li>
+  <A CLASS="Content" HREF="e4bd04694d2705b2.htm" target="_self"> mpto_updated_driver_status </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="29e2343b4b22051b.htm" target="_self"> mpto_current_driver_availability </A> <li>
+  <A CLASS="Content" HREF="e4bd06334d2705eb.htm" target="_self"> mpto_current_driver_statistics </A> <li>
+  <A CLASS="Content" HREF="e4bd069f4d2705fa.htm" target="_self"> mpto_driver_scheduling_failed </A> <li>
+  <A CLASS="Content" HREF="e4bd03ec4d270599.htm" target="_self"> mpto_new_driver_schedule </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14427f39be5ce9.htm" target="_self"> 10.1.0.3</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to assist PT operators in planning for the optimum use of existing resources to meet the demand.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14427f39be5d31.htm" target="_self"> 10.1.1.2</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to produce optimum driver schedules.</h5></td></tr></table></div>
+</BODY> </HTML>

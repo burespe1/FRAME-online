@@ -1,0 +1,31 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 5.13.6 Determine Vehicle Position
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>5.13.6 Determine Vehicle Position</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to enable the Vehicle to determine its position.<br>(2) The ability to determine the Vehicle position with the accuracy required by other functionality to provide their specific services to the Vehicle but as a minimum shall enable the Vehicle to determine its position relative to lanes in the road carriageway.<br>(3) The ability to use data from the Location Data Source, In-vehicle system and its own sensors to determine a &quot;dead reckoning&quot; position and for generally improving positioning accuracy and reliability.<br>(4) The ability to use map data to provide &quot;map matching&quot; so that the actual identity of the part of the road network in which the Vehicle is currently positioned can be determined.<br>(5) The ability to provide updated position information to other functionality as soon as a change occurs.<br></div></H5><h3>Functional Requirements</H3><h5>(a) continuously monitor for the receipt of all the input data flows<br/>(b) whenever any of the input data flows changes, determine the new host vehicle position using the vehicle location for road information data flow<br/>(c) if the data in (b) is not available, use the data from the location from other vehicle and other vehicle relative position data flows to determine the location of the host vehicle<br/>(d) if no data is available in (b) or (c) use the contents of the dead reckoning data flow to determine the location of the host vehicle<br/>(e) use the data flow from the geographic information provider plus the results of (b), or (c) or (d) to determine the location of the vehicle within the road network, i.e. the identity of the road segment<br/>(f) when (b) to (e) are complete, send each of the output data flows to their respective functions.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="C9C6D80E41740528.HTM?DiagTab=1" Target="_self">DFD 5.13 Provide Vehicle Data and ISA</a><h5><li> <a href="F897F8D63981002B.HTM?DiagTab=0" Target="_self">Functional Tree of Area 5</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="c9c6d80e41740528.htm" target="_self"> 5.13 Provide Vehicle Data and ISA</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="5eae768f39841d88.htm" target="_self"> fesp.g-data_for_road_information </A> <li>
+  <A CLASS="Content" HREF="f8972278398275ea.htm" target="_self"> flds-vehicle_location_for_road_information </A> <li>
+  <A CLASS="Content" HREF="f8972279398276f8.htm" target="_self"> frp-location_data </A> <li>
+  <A CLASS="Content" HREF="ced61b824b5f0f58.htm" target="_self"> pshvs_dead_reckoning </A> <li>
+  <A CLASS="Content" HREF="d133ff8a4c461d7e.htm" target="_self"> pshvs_location_from_other_vehicle </A> <li>
+  <A CLASS="Content" HREF="d1330ee84c4722ef.htm" target="_self"> pshvs_other_vehicle_relative_position </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f8971ea3398265dd.htm" target="_self"> pshvs.pepf_vehicle_position </A> <li>
+  <A CLASS="Content" HREF="d133fed34c461d43.htm" target="_self"> pshvs_location_for_other_vehicle </A> <li>
+  <A CLASS="Content" HREF="4139959d4b9f2000.htm" target="_self"> pshvs_vehicle_location_for_safety_behaviour </A> <li>
+  <A CLASS="Content" HREF="8914d39b417379e9.htm" target="_self"> pshvs_vehicle_position_for_fcd </A> <li>
+  <A CLASS="Content" HREF="8914d3a941737a07.htm" target="_self"> pshvs_vehicle_position_for_illegal_use </A> <li>
+  <A CLASS="Content" HREF="8914d39f417379f3.htm" target="_self"> pshvs_vehicle_position_for_ISA </A> <li>
+  <A CLASS="Content" HREF="81acd00b4b5d1186.htm" target="_self"> pshvs_vehicle_position_for_road_information </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="2005282e4be9035b.htm" target="_self"> 7.4.1.20</A> </a></center></h5></td><td width="90%"><h5><span style='font-style: italic;'>Hazard Detection</span> - The system shall be able to determine that the host vehicle is partially occupying an adjacent lane for a short time, e.g. due to manoeuvre round a sharp bend, or lane width reductions.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="200528274be90352.htm" target="_self"> 7.4.1.3</A> </a></center></h5></td><td width="90%"><h5><span style='font-style: italic;'>(X)FCD - </span>The system shall be able to determine the relative position of the host vehicle on a road (e.g. lane, distance from a datum point) at all times (urban, inter-urban, tunnels etc.).</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="2005283b4be90371.htm" target="_self"> 7.4.1.9</A> </a></center></h5></td><td width="90%"><h5><span style='font-style: italic;'>(X)FCD</span> - The system shall be able to send XFCD from the host vehicle to a road-side device.</h5></td></tr></table></div>
+</BODY> </HTML>

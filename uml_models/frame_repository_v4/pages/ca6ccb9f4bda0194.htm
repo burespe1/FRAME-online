@@ -1,0 +1,23 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 5.12.12 Collect Road Network Information
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>5.12.12 Collect Road Network Information</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to collect data from the road network in the form of guidance signals.<br>(2) The data shall be collected from the road pavement, together with an indication of their integrity, and passed on to the relevant in-Vehicle systems.<br></div></H5><h3>Functional Requirements</H3><h5>(a) continuously monitor for receipt of guidance data from the road pavement and the road pavement diagnostics from the maintenance organisation<br/>(b) when the first data flow in (a) is received, it shall be stored locally until the second data flow in (a)  is received<br/>(c) the second data flow in (a) shall be used to establish the integrity of the first data flow in (a)<br/>(d) if the data from the first data flow in (a) passes the integrity test, the data from both shall be sent to the Communicate with In-vehicle Systems function in the guidance data and road network diagnostics data flows.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="C9C6D8034174051B.HTM?DiagTab=1" Target="_self">DFD 5.12 Provide Vehicle Communications Interfaces</a><h5><li> <a href="F897F8D63981002B.HTM?DiagTab=0" Target="_self">Functional Tree of Area 5</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="c9c6d8034174051b.htm" target="_self"> 5.12 Provide Vehicle Communications Interfaces</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f89722783982764a.htm" target="_self"> fmo.rmo-infrastructure_diagnostics </A> <li>
+  <A CLASS="Content" HREF="8914d8fd41737ab1.htm" target="_self"> frp-guidance_data </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="8914d2d441737918.htm" target="_self"> pshvs_guidance_data </A> <li>
+  <A CLASS="Content" HREF="ca6cd0bc4bda021f.htm" target="_self"> pshvs_road_network_diagnostics </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442b439be853f.htm" target="_self"> 8.2.2.1</A> </a></center></h5></td><td width="90%"><h5>The system shall provide support to control the lateral dynamic behaviour of the vehicle automatically, and keep the vehicle within its current lane of the carriageway.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442b839be88e1.htm" target="_self"> 8.4.0.1</A> </a></center></h5></td><td width="90%"><h5>The system shall provide support to monitor for hazards involved in lane keeping, lane changing, entering and leaving high speed roads, and overtaking.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="0a92362f3c020202.htm" target="_self"> 8.4.1.3</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to provide support to determine a safe vehicle trajectory relative to the lane/road boundaries.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="0a92366d3c020210.htm" target="_self"> 8.4.2.1</A> </a></center></h5></td><td width="90%"><h5>The system shall provide support to detect the position of the vehicle relative to lane boundaries and/or roadway shoulders.</h5></td></tr></table></div>
+</BODY> </HTML>

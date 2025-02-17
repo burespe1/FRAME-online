@@ -1,0 +1,24 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 1.4.3 Inform Operators on Transactions
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>1.4.3 Inform Operators on Transactions</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) An interface that enables for the Operators, and Service Providers to view all the transactions concerning the services that they provide.<br>(2) The ability for the interface to only provide information to Operators and External Service Providers on request.<br>(3) The interface shall only have the ability to provide information to External Service Providers that is relevant to them and not information that is relevant to other Service Providers.<br></div></H5><h3>Functional Requirements</H3><h5>(a) get the request from the Operator or Service Provider, including its ID, services of interest, period, ...;<br/>(b) extract the corresponding transactions from the store of &quot;transactions&quot; Data, restricting retrieval to only these transactions are those concerning directly the requesting Operator or Service Provider, or those that resulted in some revenue for them;<br/>(c) process them to obtain the desired information;<br/>(d) present the results to the Operator or Service Provider.<br/></H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FEA2398103D6.HTM?DiagTab=1" Target="_self">DFD 1.4  Manage Operators&#39; Revenue</a><h5><li> <a href="F897F8B339810013.HTM?DiagTab=0" Target="_self">Functional Tree of Area 1</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897fea2398103d6.htm" target="_self"> 1.4 Manage Operators&#39; Revenue</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f8972278398275cc.htm" target="_self"> fesp-pepf_trans_info_request </A> <li>
+  <A CLASS="Content" HREF="f8972279398276e0.htm" target="_self"> fo-pepf_trans_info_request </A> <li>
+  <A CLASS="Content" HREF="f8971c5d39824929.htm" target="_self"> pepf_op_transaction_history </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897227c39827aac.htm" target="_self"> tesp-pepf_transaction_analysis </A> <li>
+  <A CLASS="Content" HREF="f897227c39827bb4.htm" target="_self"> to-pepf_transaction_analysis </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428b39be6655.htm" target="_self"> 4.1.0.1</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to use a variety of relevant payment methods either electronic or not, including central account and post payment, central account and prepayment, on-board account etc.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428c39be66c1.htm" target="_self"> 4.1.0.2</A> </a></center></h5></td><td width="90%"><h5>The system shall manage customer data (identification, account, rights of residents, etc.).</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="bce4c4e73c040071.htm" target="_self"> 4.1.0.6</A> </a></center></h5></td><td width="90%"><h5>The System shall provide management information to the recipients of tariffs.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428e39be688f.htm" target="_self"> 4.1.2.1</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to share revenues between road network operators.<br/></h5></td></tr></table></div>
+</BODY> </HTML>

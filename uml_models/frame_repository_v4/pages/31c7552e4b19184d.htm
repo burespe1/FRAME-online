@@ -1,0 +1,25 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 4.5.3 Provide PT Passenger access to Fare Credit
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>4.5.3 Provide PT Passenger access to Fare Credit</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) A HMI through which PT Passengers shall be able to see the amount of credit that they have on their &quot;fare card&quot; (store of Fare Card Data).<br>(2) A (possibly) separate interface through which the PT Passenger can if necessary increase the amount of credit that they have on their &quot;fare card&quot;.<br>(3) An interface through which the Function can exchange of data with the Financial Clearinghouse to validate the purchase of additional credit for the &quot;fare card&quot;.<br></div></H5><h3>Functional Requirements</H3><h5>(a) continuously monitor for the receipt of the current far credit request data flow from the PT passenger<br/>(b) when the data flow in (a) is received send a request for the current fare credit to the store of Fare Card Data in the update fare credit data flow<br/>(c) as a result of (b) continuously monitor for receipt of the current fare credit data flow and when it is received, output the result tot he PT passenger using the display current fare credit data flow<br/>(d) continuously monitor for receipt of the fare credit update data flow<br/>(e) when the data flow in (d) is received, send the request fare card update data flow to the financial clearinghouse<br/>(f) as a result of (e) monitor for receipt of the confirmed fare payment data flow from the financial clearinghouse<br/>(g) if the result in (f) is positive, send the update fare credit data flow to the store of Fare Card Data and output the confirm fare credit update to the PT passenger<br/>(h) if the result in (f) is negative (the requested payment has failed) send a failure message to the PT passenger in the confirm fare credit update data flow.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="31C7547A4B191676.HTM?DiagTab=1" Target="_self">DFD 4.5 Provide PT Fare Facilities</a><h5><li> <a href="F897F8CF39810025.HTM?DiagTab=0" Target="_self">Functional Tree of Area 4</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="31c7547a4b191676.htm" target="_self"> 4.5 Provide PT Fare Facilities</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="d329d9e34b1c09c6.htm" target="_self"> ffc-confirmed_fare_payment </A> <li>
+  <A CLASS="Content" HREF="d329dc9f4b1c0bc3.htm" target="_self"> ft.ptp-current_fare_credit_request </A> <li>
+  <A CLASS="Content" HREF="d329e1b04b1c0e3b.htm" target="_self"> ft.ptp-request_fare_credit_update </A> <li>
+  <A CLASS="Content" HREF="d329e2694b1c0e68.htm" target="_self"> mpto_current_fare_credit </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="d329e6ed4b1c0f5d.htm" target="_self"> mpto_update_fare_credit </A> <li>
+  <A CLASS="Content" HREF="d329ddbb4b1c0bf3.htm" target="_self"> tfc-request_fare_card_update </A> <li>
+  <A CLASS="Content" HREF="d329e9b24b1c115d.htm" target="_self"> tt.ptp-confirm_fare_credit_update </A> <li>
+  <A CLASS="Content" HREF="d329eab64b1c1196.htm" target="_self"> tt.ptp-display_current_fare_credit </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428039be5dcd.htm" target="_self"> 10.1.4.1</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to inform travellers about PT operations for a mode of transport, e.g. travel times, delays, fares etc.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428039be5e39.htm" target="_self"> 10.1.4.4</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to provide information that is relevant to travellers with special needs, e.g. obstacles, manually operated doors, manual payment systems, restrictions for guide dogs, etc.</h5></td></tr></table></div>
+</BODY> </HTML>

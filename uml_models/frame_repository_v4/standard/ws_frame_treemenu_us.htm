@@ -1,0 +1,94 @@
+<html>
+  <head>
+    <title>MEGA_Process_600_Tree</title>
+    <LINK REL="STYLESHEET" TYPE="text/css" HREF="ws_intranet.css">
+  </head>
+  <body topmargin="16" marginheight="16">
+    <script>
+			function CleanInfoSync()
+			{			
+				if(window.SyncInfoNotFound)
+				{
+					SyncInfoNotFound.style.display="none";	
+				}					
+			}					
+			function SynchronizeFromContent()
+			{				
+				CleanInfoSync();
+				
+				if(window.SyncInfoWait)
+				{			
+					SyncInfoWait.style.display="inline";	
+				}									
+				
+				var bFound;							
+				bFound=parent.frames("TreeControl").SynchronizeFromContent();
+						
+				if(!bFound && window.SyncInfoNotFound)
+				{
+					SyncInfoNotFound.style.display="inline";					
+					setTimeout("CleanInfoSync()", 2000);
+				}				
+				if(window.SyncInfoWait)
+				{				
+					SyncInfoWait.style.display="none";	
+				}	
+			}			
+			function BusinessProcessTreeLoad()
+			{
+				parent.frames("TreeControl").location="../PAGES/WS_MP_BusinessProcessTreeDefinition.htm"
+			}
+			
+			function OrgUnitTreeLoad()
+			{
+				parent.frames("TreeControl").location="../PAGES/WS_MP_OrgUnitTreeDefinition.htm"
+			}	
+				
+			////////////////////////////////////////////////////////////////////////
+			function onKeyDown()
+			{
+				if(window.parent.parent.Content.Tab)
+				{
+					window.parent.parent.Content.KeyDownEventProcess(event);						
+				}
+				event.returnValue = false;
+			}				
+    </script>
+    <table cellpadding="0" cellspacing="0" width="100%" class="InvisibleTable" ID="Table1">
+      <tr>
+        <td id="Button" class="Button" width="10%" title="Business Processes Tree">
+          <img src="busp.gif" onclick="BusinessProcessTreeLoad();">
+        </td>
+        <td id="Button" class="Button" width="10%" title="Org-Units Tree">
+          <img src="orgu.gif" onclick="OrgUnitTreeLoad();">
+        </td>
+        <td width="*" colspan="5" class="InvisibleTable">
+        </td>
+        <td id="SyncInfoWait" class="SyncInfo" width="10%">
+          <img src="ws_waitbb.gif" align="right">
+        </td>
+        <td id="SyncInfoNotFound" class="SyncInfo" width="10%">
+          <img src="ws_syncnotfound.gif" align="right">
+        </td>
+        <td id="Button" class="Button" align="right" width="10%" title="Find current object in tree">
+          <img src="ws_contenttotree.gif" onClick="SynchronizeFromContent();" style="cursor:hand;" align="right">
+        </td>
+      </tr>
+    </table>
+    <table style="display:none" id="TabMemory">
+      <tr>
+        <td id="TabMemoryBusinessProcess">0</td>
+        <td id="TabMemoryProcedure">0</td>
+        <td id="TabMemoryBusiness">0</td>
+        <td id="TabMemoryService">0</td>
+        <td id="TabMemoryProcess">0</td>
+        <td id="TabMemoryOrgUnit">0</td>
+        <td id="TabMemoryApplication">0</td>
+        <td id="TabMemoryActivity">0</td>
+        <td id="TabMemoryContent">0</td>
+      </tr>
+    </table>
+    <script language="javascript" src="../standard/ws_buttontemplate.js"></script>
+    <script language="javascript" src="../standard/ws_keyshortcuttemplate.js"></script>
+  </body>
+</html>

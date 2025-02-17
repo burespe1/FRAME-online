@@ -1,0 +1,29 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 7.1.2 Check Compliance
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>7.1.2 Check Compliance</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to check the compliance of the recorded images with the established rules both in real-time and/or off-line.<br>(2) For Vehicles that can be identified, the ability to extract from the store of User&#39;s Registration Data the information needed to check that the user is allowed to behave as in the recorded image.<br>(3) For Vehicles that cannot be identified, the ability to request it from the Identify Violator Function, sending it an image of the violator extracted from the response.<br>(4) The ability to use information sent by functionality in the Manage Freight and Fleet Operations Area.<br>(5) The ability to apply the rules more or less strictly according to guidelines sent by functionality in the Manage Traffic Function Area.<br>(6) Upon detection of a fraud, the ability to send the associated elements to the Process Fraud Notifications Function.<br></div></H5><h3>Functional Requirements</H3><h5>(a) when the first trigger input data flow is received, analyse the measure to detect obvious frauds, using the guidelines received in the third and fourth other input data flows<br/>(b) if the vehicle ID is available, extract from the store of User Registration Data the clearance of the vehicle using the fifth other input data flow<br/>(c) when the data has been received in (b) receive the characteristics of the vehicle and its cargo from the Manage Freight and Fleet Operations Area, using the first and second other input data flows<br/>(d) if the vehicle ID cannot be determined in (b), use the first trigger output data flow to send the relevant image to the Identify Violator Function to get the ID<br/>(e) wait for the return of the vehicle ID in the second trigger input data flow<br/>(f) extract from the store of Rules Data the corresponding authorised values for the measured parameter, using the fifth other input data flow<br/>(g) compare the values, and if discrepancy less than that allowed by the guidelines take no further action<br/>(h) if discrepancy greater than that allowed by the guidelines, send the violator ID and other fraud elements to the Process Fraud Notification Function using the second and third trigger output data flows.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FF82398104DD.HTM?DiagTab=1" Target="_self">DFD 7.1  Detect Fraud</a><h5><li> <a href="F897F8E239810037.HTM?DiagTab=0" Target="_self">Functional Tree of Area 7</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897ff82398104dd.htm" target="_self"> 7.1 Detect Fraud or Violation</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f8971ea13982633d.htm" target="_self"> mffo.psle_cargo_characteristics </A> <li>
+  <A CLASS="Content" HREF="f8971ea139826349.htm" target="_self"> mffo.psle_freight_vehicle_characteristics </A> <li>
+  <A CLASS="Content" HREF="d4d2e052406b0be7.htm" target="_self"> mt.psle_inter-urban_enforcement_guidelines_CC </A> <li>
+  <A CLASS="Content" HREF="d4d2e0d2406b0c09.htm" target="_self"> mt.psle_urban_enforcement_compliance_guidelines </A> <li>
+  <A CLASS="Content" HREF="f8971c5e39824a6d.htm" target="_self"> psle_measure </A> <li>
+  <A CLASS="Content" HREF="2ff44959406c3cd9.htm" target="_self"> psle_rules_read </A> <li>
+  <A CLASS="Content" HREF="2ff44aac406c4551.htm" target="_self"> psle_user_clearance_read </A> <li>
+  <A CLASS="Content" HREF="f8971c5f39824a9d.htm" target="_self"> psle_vehicle_ID_CC </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f8971c5f39824a97.htm" target="_self"> psle_user_image </A> <li>
+  <A CLASS="Content" HREF="f8971c5e39824a67.htm" target="_self"> psle_violation_type_from_compliance_check </A> <li>
+  <A CLASS="Content" HREF="f8971c5f39824aa3.htm" target="_self"> psle_violator_ID </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428939be64e7.htm" target="_self"> 3.1.0.1</A> </a></center></h5></td><td width="90%"><h5>The system shall enforce the traffic laws and regulations of the region automatically (where possible).</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428a39be6523.htm" target="_self"> 3.1.0.2</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to collect the evidence of a violation of the traffic laws and regulations in a manner suitable to justify the application of a legal punishment</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428a39be6553.htm" target="_self"> 3.1.0.3</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to provide support for the enforcement of safe behaviour and vehicle priorities.</h5></td></tr></table></div>
+</BODY> </HTML>

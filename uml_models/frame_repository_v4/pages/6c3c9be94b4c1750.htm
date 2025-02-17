@@ -1,0 +1,23 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 9.2.6 Monitor Bus Lane Use
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>9.2.6 Monitor Bus Lane Use</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to monitor the Vehicles using Bus Lane and collect images and Vehicle data and compare the latter with a list of those non-PT Vehicles that have been granted licences.<br>(2) Where a non-PT Vehicle is found not to have a valid licence, the ability to send a warning message to the Vehicle Management functionality.<br>(3) If the Vehicle continues to use the Bus Lane without a licence, the ability to send details of the Vehicle and the Bus Lane it is incorrectly using to the Law Enforcement functionality.<br>(4) The ability to send data showing that Vehicles were incorrectly using a Bus Lane to the Manage Bus Lane functionality for recording in the store of Bus Lane Data.<br></div></H5><h3>Functional Requirements</H3><h5>(a) continuously monitor the use of the bus lane using the input data flow from image sensing<br/>(b) continuously collect data from vehicle systems about vehicles using bus lanes<br/>(c) compare the data about any non-Public Transport vehicles in the bus lane with those to whom bus lane use licences have been granted<br/>(d) if a non-Public Transport Vehicle is found to be using a bus lane then send a warning to the Manage Vehicle function<br/>(e) if the use of the bus lane identified in (d) continues, send the data to the Provide Support for Law Enforcement function to that prosecution can be initiated<br/>(f) following (e), re-send the warning tot he Manage Vehicle function with an indication of intending prosecution<br/>(g) also send details of the incorrect (illegal) use of the bus lane to the Manage Bus Lane Data function to be recorded<br/><br/></H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="2ED046CF4B4B0E86.HTM?DiagTab=1" Target="_self">DFD 9.2 Provide Flexible Lane Allocation</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="2ed046cf4b4b0e86.htm" target="_self"> 9.2 Provide Access to Bus Lanes</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="6c3cb1ef4b4c1e26.htm" target="_self"> fv-vehicle_image_for_bus_lane </A> <li>
+  <A CLASS="Content" HREF="6c3cb2524b4c1e33.htm" target="_self"> fv.vs-vehicle_identity_for_bus_lane </A> <li>
+  <A CLASS="Content" HREF="6c3cad1b4b4c17c6.htm" target="_self"> pscs_licence_details_for_vehicle_identification </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="d692eb164b4d034e.htm" target="_self"> pscs.psle_bus_lane_violation </A> <li>
+  <A CLASS="Content" HREF="d692e4394b4d028f.htm" target="_self"> pscs_incorrect_bus_lane_use_data </A> <li>
+  <A CLASS="Content" HREF="d692e5f44b4d02bd.htm" target="_self"> pscs_warnings_for_driver </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="4de05a964ba70533.htm" target="_self"> 7.5.3.10</A> </a></center></h5></td><td width="90%"><h5>The system shall monitor the usage of the bus lanes and record the identification, time and location of any vehicle that does not have permission to use it, for further processing by an enforcement agency.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="4de05a774ba70518.htm" target="_self"> 7.5.3.7</A> </a></center></h5></td><td width="90%"><h5>The system shall monitor the approved vehicles on the bus lanes and, if its licence has expired, that vehicle will be ordered to leave the bus lane at the end of that section.</h5></td></tr></table></div>
+</BODY> </HTML>

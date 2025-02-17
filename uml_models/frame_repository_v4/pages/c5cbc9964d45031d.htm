@@ -1,0 +1,30 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 8.1.5.5 Provide Transport Operation Operator Interface
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>8.1.5.5 Provide Transport Operation Operator Interface</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) A HMI for use by the Freight Management Operator.<br>(2) The ability of the Freight Management Operator to use the HMI to manage both the optimisation of the use of transport modes and the use of storage areas.<br></div></H5><h3>Functional Requirements</H3><h5>(a) continuously monitor for the receipt of the data flows containing request storage area use and freight transport optimisation data from the Freight Management Operator;<br/>(b) when the first data flow in (a) is received, send its contents in the data flow storage area request data to the Book Storage Area function<br/>(c) as a result of (b), continuously monitor for the receipt of the storage area request results data flow;<br/>(d) when the data flow in (c) is received, output its contents to the Freight Management Operator in storage area request results data flow;<br/>(e) when the second data flow in (a) is received, send its contents in the data for freight optimisation data flow to the Identify Possible Transport Optimisations function;<br/>(f) as a result of (e), continuously monitor for the receipt of the freight transport optimisation results data flow;<br/>(d) when the data flow in (c) is received, output its contents to the Freight Management Operator in freight transport optimisation results data flow.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FF8239810507.HTM?DiagTab=1" Target="_self">DFD 8.1.5 Manage Inter-modal Transport Synchronisatio</a><h5><li> <a href="F897F8EA3981003D.HTM?DiagTab=0" Target="_self">Functional Tree of Area 8</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897ff8239810507.htm" target="_self"> 8.1.5 Manage Inter-modal Transport Synchronisation</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="c5cbca804d450347.htm" target="_self"> fo.fro-freight_transport_optimiation_data </A> <li>
+  <A CLASS="Content" HREF="c5cbcfb74d450449.htm" target="_self"> fo.fro-request_storage_area_use </A> <li>
+  <A CLASS="Content" HREF="c5cbcad84d450357.htm" target="_self"> mffo_freight_transport_optimisation_results </A> <li>
+  <A CLASS="Content" HREF="c5cbd04b4d450468.htm" target="_self"> mffo_storage_area_request_results </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="c5cbcb434d450375.htm" target="_self"> mffo_data_for_freight_optimisation </A> <li>
+  <A CLASS="Content" HREF="c5cbd0be4d450488.htm" target="_self"> mffo_storage_area_request_data </A> <li>
+  <A CLASS="Content" HREF="c5cbca044d450335.htm" target="_self"> to.fro-freight_transport_optimisation_results </A> <li>
+  <A CLASS="Content" HREF="c5cbd00a4d45045a.htm" target="_self"> to.fro-storage_area_request_results </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442c639be9448.htm" target="_self"> 9.5.4.4</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to book places in an equipment/container storage area.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442c639be9466.htm" target="_self"> 9.5.4.5</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to forecast the use of an equipment/container storage area</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442c639be9484.htm" target="_self"> 9.5.5.1</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to manage the interface between freight transport modes in an effective manner.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="0a923af53c02028e.htm" target="_self"> 9.5.5.2</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to support a combined transport interface management function for freight, etc.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="0a923ad63c020287.htm" target="_self"> 9.5.5.3</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to support a freight transport order processing function that is common to all modes of transport for freight, etc.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442c639be94a2.htm" target="_self"> 9.5.5.4</A> </a></center></h5></td><td width="90%"><h5>The system shall ensure that the information associated with a vehicle, equipment or container is available when that vehicle, equipment or container arrives at a modal interchange.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442c639be94c0.htm" target="_self"> 9.5.5.5</A> </a></center></h5></td><td width="90%"><h5>The system shall enable the matching of demand and supply of (multi-modal) freight transport resources.</h5></td></tr></table></div>
+</BODY> </HTML>

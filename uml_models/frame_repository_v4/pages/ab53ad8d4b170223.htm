@@ -1,0 +1,37 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 4.1.13 Provide Operator Interface for Manage PT Fleet
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>4.1.13 Provide Operator Interface for Manage PT Fleet</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The provision of a suitable HMI through which the PT Operator can monitor and manage the operation of the PT Vehicle fleet.<br>(2) The ability to request and display through the HMI real-time information about PT Vehicles, including the current locations and predicted arrival times, using digital map data as a background.<br>(3) The ability to request and display through the HMI data about the performance of the PT Vehicle fleet in the delivery of its services.<br>(4) The ability to display through the HMI details of alarms raised by PT Passengers at PT Stops.<br>(5) The ability to display and write, using a suitable HMI, messages that are exchanged with PT Drivers in PT Vehicles.<br></div></H5><h3>Functional Requirements</H3><h5>(a) continuously monitor for the arrive of the input data flows from the PT operator<br/>(b) output any requests for data that has been collected and locally stored by the function using the appropriate output data flows<br/>(c) if the communications data flow arrives in (a) send its contents to the Collect PT Vehicle Data function in the communications to driver data flow<br/>(d) if the communications from driver data flow arrives from the Collect PT Vehicle Data function, immediately output its contents to the driver in the communications data flow<br/>(e) if any of the data flows containing historical or real time vehicle information, plus predicted PT vehicle data is received, store the data that they contain locally to await an output request from the PT operator in one of the data flows being continuously monitored in (a)<br/>(f) if the alarm at stop data flow is received, immediately output its contents to the PT operator in the alarms raised data flow<br/>(g) if the performance criteria data flow is received from the PT operator, send the calculate service performance data flow to the Calculate PT Service Performance function and await a response<br/>(h) when the calculated service performance data flow is received as a result of (g), output its contents to the PT operator in the performance figures data flow.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FEA239810430.HTM?DiagTab=1" Target="_self">DFD 4.1  Monitor PT fleet</a><h5><li> <a href="F897F8CF39810025.HTM?DiagTab=0" Target="_self">Functional Tree of Area 4</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897fea239810430.htm" target="_self"> 4.1 Monitor PT fleet</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f89722783982766e.htm" target="_self"> fo.pto-communications </A> <li>
+  <A CLASS="Content" HREF="7feb8dbb4b7202c3.htm" target="_self"> fo.pto-output_historic_information </A> <li>
+  <A CLASS="Content" HREF="7feb8a614b720244.htm" target="_self"> fo.pto-output_predicted_PT_data </A> <li>
+  <A CLASS="Content" HREF="7feb897f4b72020b.htm" target="_self"> fo.pto-output_real_time_information </A> <li>
+  <A CLASS="Content" HREF="f28d715a39a1224b.htm" target="_self"> fo.pto-performance_criteria </A> <li>
+  <A CLASS="Content" HREF="d8caf8294b17138f.htm" target="_self"> mpto_alarm_at_stop </A> <li>
+  <A CLASS="Content" HREF="d8cafa124b1713e5.htm" target="_self"> mpto_calculated_service_performance </A> <li>
+  <A CLASS="Content" HREF="d8cafae64b171416.htm" target="_self"> mpto_communications_from_driver </A> <li>
+  <A CLASS="Content" HREF="cf6de1ef4b1807ee.htm" target="_self"> mpto_historical_vehicle_information </A> <li>
+  <A CLASS="Content" HREF="cf6de68a4b180a4f.htm" target="_self"> mpto_predicted_PT_vehicle_data </A> <li>
+  <A CLASS="Content" HREF="cf6df3724b180c0b.htm" target="_self"> mpto_real_time_vehicle_information </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="d8caf8b14b1713ba.htm" target="_self"> mpto_calculate_service_performance </A> <li>
+  <A CLASS="Content" HREF="d8cafb7a4b17143d.htm" target="_self"> mpto_communications_to_driver </A> <li>
+  <A CLASS="Content" HREF="fc56097c4b190e13.htm" target="_self"> to.pto-alarms_raised </A> <li>
+  <A CLASS="Content" HREF="f897227c39827b42.htm" target="_self"> to.pto-communications </A> <li>
+  <A CLASS="Content" HREF="f897227c39827b48.htm" target="_self"> to.pto-historic_information </A> <li>
+  <A CLASS="Content" HREF="f897227c39827b4e.htm" target="_self"> to.pto-performance_figures </A> <li>
+  <A CLASS="Content" HREF="f897227c39827b54.htm" target="_self"> to.pto-predicted_PT_data </A> <li>
+  <A CLASS="Content" HREF="f897227c39827b5a.htm" target="_self"> to.pto-real_time_information </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14427f39be5d07.htm" target="_self"> 10.1.0.4</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to analyse records of usage and operational data, and passenger surveys, to assist in the planning process.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428339be5fa1.htm" target="_self"> 10.2.4.1</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to provide statistics of usage</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428339be5fb3.htm" target="_self"> 10.2.4.2</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to provide statistics on how well it actually satisfies its customers, e.g. response times, for reporting to its users.</h5></td></tr></table></div>
+</BODY> </HTML>

@@ -1,0 +1,20 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 4.1.14 Provide PT Passnger Vehicle Alarm Facility
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>4.1.14 Provide PT Passnger Vehicle Alarm Facility</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to monitor for the receipt of alarms raised by PT Passengers on- board the PT Vehicle.<br>(2) The ability to forward details of the alarms to the Monitor PT Vehicle functionality,<br>(3) A suitable HMI through which the responses to alarms can be displayed to PT Passengers on- board the PT Vehicle.</div></H5><h3>Functional Requirements</H3><h5>(a) continuously monirot for receipt of the passenger emergency data flow<br/>(b) when the data flow in (a) is received, check for authenticity and if OK, output the details to the Monitor PT Vehicle Status function using the passenger alarm raised data flow;<br/>(c) as a result of (b), continuously monitor for receipt of the passenger alarm acknoledgement data flow;<br/>(d) when the data flow in (c) is received, output its contents to the PT Passengers in the passenger emergency response data flow.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FEA239810430.HTM?DiagTab=1" Target="_self">DFD 4.1  Monitor PT fleet</a><h5><li> <a href="F897F8CF39810025.HTM?DiagTab=0" Target="_self">Functional Tree of Area 4</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897fea239810430.htm" target="_self"> 4.1 Monitor PT fleet</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="d8cae89b4b1707d8.htm" target="_self"> ft.ptp-passenger_emergency </A> <li>
+  <A CLASS="Content" HREF="c432cfdb4d250284.htm" target="_self"> mpto_passenger_alarm_acknowledgement </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="c432ce3b4d250252.htm" target="_self"> mpto_passenger_alarm_raised </A> <li>
+  <A CLASS="Content" HREF="c432d1754d2502b1.htm" target="_self"> tt.ptp-passenger_emergency_response </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428539be6151.htm" target="_self"> 10.5.0.1</A> </a></center></h5></td><td width="90%"><h5>The system shall monitor for, and collect evidence on, illegal activities in car parks, PT facilities,  PT vehicles, etc.</h5></td></tr></table></div>
+</BODY> </HTML>

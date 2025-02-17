@@ -1,0 +1,111 @@
+<HTML><HEAD><TITLE>Functional Architecture</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<META content="MSHTML 6.00.2800.1106" name=GENERATOR>
+<META content=FrontPage.Editor.Document name=ProgId><LINK 
+href="ws_intranet.css" type=text/css rel=stylesheet>
+</HEAD>
+<BODY vLink=#808080 leftMargin=0 topMargin=0>
+<A NAME="TOP">
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top width=120><A name=inizio></A>
+      <TABLE class=tabellamenu height="100%" cellSpacing=0 cellPadding=0 
+      width="100%" border=0>
+        <TBODY>
+        <TR>
+          
+            
+
+
+
+            <P>&nbsp;</P>
+            <P>&nbsp; </CENTER></P></TD></TR></TBODY></TABLE></TD>
+    <TD vAlign=top width="100%">
+      <TABLE cellSpacing=0 cellPadding=10 width="100%" border=1>
+        <TBODY>
+        <TR>
+          <TD width="100%">
+            <H1 align=center>General Definitions</H1></TD></TR>
+        <TR>
+          <TD width="100%" bgColor=#ffffff>
+		    <FONT color=#000080 size=2>Definitions are given below for the parts of the Functional Viewpoint accessible through the Indexes on the HOME Page of the Browsing Tool, or on the <em>Query </em>window at the top of the screen. </FONT>
+            <p><FONT color=#000080 size=2>More detailed definitions can be found in the Framework Architecture documents D3.1 (Functional Viewpoint) and D2.2 (User Needs), which can be viewed or downloaded from the '<a href="http://www.frame-online.net/library.htm">LIBRARY</a>' page of the FRAME Web Site. </FONT></p>
+            <HR align=center>
+
+            <H3><FONT color=#000080>User Needs</FONT></H3>
+            <P><FONT color=#000080 size=2>User Needs provide a formalised description of the Services that will be provided through the deployment of the results from the creation of an ITS Architecture. What the Stakeholders themselves want should be expressed in their own words in the Stakeholder Aspirations. The Aspirations are “mapped” to the User Needs so that a particular ITS Architecture can be created from the Framework Architecture. The resulting ITS Architecture is then used to plan the deployment of what is needed to deliver the Services identified by the Stakeholders. </FONT></P>
+            <p><FONT color=#000080 size=2>The User Needs are divided up according to the area in which the Services operate. Hence there are User Needs for: traffic management, freight movement, fleet operation, and public transport, plus facilities for electronic payment, law enforcement, security and incident response, links between vehicle and roadside, and traveller assistance. </FONT></p>
+            <p><FONT color=#000080 size=2>Most User Needs are served by one or more Functions. The relationship between User Needs and Functions is shown in the Trace Tab les which indicate: a) the Functions that serve each User Need and b) the User Needs that are served by each Function. The first form of the Trace Tab les will be found in the ' <a href="../pages/003a0e6c39844013.htm">User Needs against Functions </a>' page. User Needs that have no Functions listed in the Trace Tab les relate to physical or communications requirements connected with the provision of the services. The User Needs that are served by each Low-level Function are listed at the end of their descriptions. </FONT></p>
+            <P><A 
+            href=#Top>Top</A></P>
+            <HR align=center>
+
+            <H3><FONT color=#000080>Terminators</FONT></H3>
+            <P><FONT color=#000080 size=2>A Terminator is an entity that represents a part of the outside world with which the Framework Architecture interacts through an interface. It may be a person, or a system with which data can be exchanged, or a physical entity from which data can be obtained, such as the atmosphere, or road surface. Terminators provide the definitions of what the Architecture expects the outside World to do so that data can be exchanged. Persons can be End Users such as Travellers, or they may be part of organisations or public authorities that contribute in some way to the provision of ITS services. Systems may also be part of these organisations, or can be another instance of an ITS deployment. A rigorous definition for each Terminator can be accessed using its name in the list in the ' <a href="../pages/f34c3e7039c2042d.htm">Terminators </a>' page, or from the ‘ <em>Org-Units Tree' </em>in the navigation window. </font></P>
+            <P><A 
+            href=#Top>Top</A></P>
+            <HR align=center>
+
+            <H3><FONT color=#000080>Functional Areas</FONT></H3>
+            <P><FONT color=#000080 size=2>At its highest level, the Functional Viewpoint consists of a number of Functional Areas, each of which contains the functionality that is responsible for a specific area of operations. This functionality is provided by a set of Functions and their related Data Stores. Each Functional Area has been given a specific number and a name identifying the area of responsibility involved. Thus the Area called “Manage Public Transport Operations” contains all the functionality required for that purpose. </font></P>
+            <p><FONT color=#000080 size=2>The description of each Area can be accessed by selecting its name from the ' <a href="../pages/69be79753d2d15a4.htm">Functional Areas </a>' page, or from its entry in the navigation window. The Functions and Data Stores in each Area are linked by Data Flows. The interface between Functional Areas is provided through Data Flows that appear in the ' <a href="../pages/0B6A0BCF39900007.HTM">Functional Area Diagram (DFD0) </a>'. There are separate Index Pages for ' <a href="../pages/d99be1833a7a40a5.htm">Functions </a>', ' <a href="../pages/d99be1723a7a409f.htm">Data Flows </a>' and ' <a href="../pages/7B1C7CF740F6005B.htm">Data Stores </a>' – see below. </font></p>
+            <P><A 
+            href=#Top>Top</A></P>
+            <HR align=center>
+
+            <H3><FONT color=#000080>Functions</FONT></H3>
+            <P><FONT color=#000080 size=2>The functionality in each Functional Area is decomposed into several Functions that form a hierarchical set of High-level and Low-level Functions. </font></P>
+            <p><FONT color=#000080 size=2>Low-level Functions contain simple (un-complex) functionality which is easy to describe, and thus contain the lowest level of functionality in each Functional Area. Their descriptions consist of an Overview, lists of input and output Data Flows, detailed Functional Requirements and a list of User Needs served by that Function. The Functional Requirements provide details of what the Functions actually do with the data that they receive in order to produce the data that they send out. </font></p>
+            <p><FONT color=#000080 size=2>High-level Functions are groups of Low-level Functions. They are used to represent these Low-level Functions at higher levels in the hierarchy in order to make it easier to understand the overall functionality within a Functional Area. Each High-level Function description contains an Overview plus a list of its constituent Functions. </font></p>
+            <p></p><FONT color=#000080 size=2>Each Function has a number and name. The numbers are used to identify the position of each Function in the hierarchy within each Functional Area, whilst the names are a simplified expression of what the Function does. A description of each Function can be found in a number of ways, e.g. by selecting its number and name from the list in the ' <a href="../pages/d99be1833a7a40a5.htm">Functions </a>' page, or Functional Area description, or by selecting it from the navigation window to the left of this page, or from its representation in a Data Flow Diagram (DFD) – see below.</font></p>
+<P>
+<A href=#Top>Top</A></P>
+            <HR align=center>
+
+            <H3><FONT color=#000080>Data Flows</FONT></H3>
+            <P><FONT color=#000080 size=2>The Data Flows link the Functions to each other, to Terminators and Data Stores. They enable data to be moved around within the Architecture and are of the following three types. </font></P>
+            <ul>
+              <li><FONT color=#000080 size=2>Functional Data Flows – carry data from one Function to another, or to/from the Data Stores. </font></li>
+              <li><FONT color=#000080 size=2>Terminator Data Flows – carry data to/from Terminators. </font></li>
+              <li><FONT color=#000080 size=2>Inter-Functional Area Data Flows – carry data from Functions in one Functional Area to those in another Functional Area. </font></li>
+            </ul>
+            <p><FONT color=#000080 size=2>All Data Flows have names that start with letter codes that define either the Functional Area in which they reside, the Terminator with which they are associated, or the Functional Areas that they link. A summary of these codes can be found in the ‘Acronym Definition' page (see also below), and a detailed explanation of this naming convention can be found in the Functional Viewpoint document (D3.1). </font></p>
+            <p><FONT color=#000080 size=2>The description of each Data Flow can be found in a number of ways, e.g. by selecting its name from the list in the ' <a href="../pages/d99be1723a7a409f.htm">Data Flows </a>' page, or in a Function description, or from its representation in a Data Flow Diagram (DFD) – see below. </font></p>
+            <P><A 
+            href=#Top>Top</A></P>
+            <HR align=center>
+
+            <H3><FONT color=#000080>Data Stores</FONT></H3>
+            <P><FONT color=#000080 size=2>The Data Stores are used to hold data that is used by two or more Functions within a Functional Area. Each has its own unique number and name. The first digit of the number is the Functional Area in which the Data Store resides. The name indicates the type of data that the Store contains. </font></P>
+            <p><FONT color=#000080 size=2>The description of each Data Store contains details of what data is held in the Store. It is not intended to imply the use of any particular physical design or storage methodology. Taken together, the Data Store descriptions provide the Information Viewpoint representation of the Framework Architecture. </font></p>
+            <p><FONT color=#000080 size=2>The description of each Data Store can be found in a number of ways, e.g. by selecting its number and name from the list in the ' <a href="../pages/7B1C7CF740F6005B.htm">Data Stores </a>' page, or in a Function description, or from its representation in a Data Flow Diagram (DFD) – see below. </font></p>
+            <P><A 
+            href=#Top>Top</A></P>
+            <HR align=center>
+            <H3><FONT color=#000080>Data Flow Diagrams (DFDs)</FONT></H3>
+            <P><FONT color=#000080 size=2>Data Flow Diagrams (DFDs) illustrate the way that the functionality within each Functional Area is organised into a hierarchy of High-level and Low-level Functions. They also show how the Functions are linked to each other, and to the Terminators and Data Stores through Data Flows. There is one DFD for each Functional Area, and within them, one DFD for each High-level Function. Each DFD is numbered and named. The first digit of the number identifies the Functional Area. Any second and subsequent digits correspond to the High-level Function that the DFD represents. The name of each DFD is either that of the Functional Area or High-level Function that each DFD represents </font></P>
+            <p><FONT color=#000080 size=2>The DFDs contain rectangular shapes, representing the Functions, and (sometimes) cylindrical shapes representing Data Stores. Data Flows are represented by lines with an arrow indicating the direction of the flow of data. The name of the Data Flow is written within the line. The sizes of the rectang les and cylindrical shapes vary from one DFD to another and have no special significance. In each DFD all shapes (rectang les , cylinders and lines) are “active” and can be used as links to the page containing the description of the particular item. </font></p>
+            <p><FONT color=#000080 size=2>The description of each DFD can be found in a number of ways, e.g. by selecting its number and name from the list in the ' <a href="../pages/f34c400f39c204c5.htm">Data Flow Diagrams </a>' page, or from the navigation window. The DFD in which each Function, Data Store and Data Flow appears is also identified in the pages containing their descriptions and can be selected from that page. </font></p>
+            <P><A 
+            href=#Top>Top</A></P>
+            <HR align=center>
+            <H3><FONT color=#000080>Acronyms</FONT></H3>
+            <P><FONT color=#000080 size=2>The Acronyms provide a concise way of identifying a Terminator or Functional Area and are used in the Data Flow naming convention. They utilise the initial letter, or letters, of the name of the Terminator or Functional Area concerned. Acronyms have also been created for the Actors that are associated with some of the Terminators. These are in two parts, the first being the acronym of the relevant Terminator and the second the initial letters of the Actor's name. The objective is to provide consistency in the use of names across all Data Flow Diagrams (DFDs) and in the descriptions for Functions, Data Flows and Data Stores. </font></P>
+            <p><FONT color=#000080 size=2>A list of Acronyms and their definitions is provided in the ' <a href="acronym.htm">Acronym Definitions </a>' page. </font></p>
+            <P><A 
+            href=#Top>Top</A></P>            
+            <HR align=center>
+            <H3><FONT color=#000080>Selection Tool</FONT></H3>
+            <P><FONT color=#000080 size=2>The Browsing Tool is intended to provide a convenient way of navigating around the Framework Architecture and of viewing its contents. When the Framework Architecture is to be used as the basis for creating a particular ITS Architecture then it is necessary to select some (or possibly all) of the contents of the Framework Architecture. A Selection Tool has been created to facilitate the tasks that need to be done, and it can be downloaded from the FRAME web site. </font></P>
+            <P><A 
+            href=#Top>Top</A></P>            <P>&nbsp;</P></TD></TR></TBODY></TABLE>
+      <P>&nbsp;</P></TD></TR>
+  <TR>
+    <TD vAlign=top width=120></TD>
+    <TD vAlign=top width="100%">
+      <P><FONT color=#330099 size=1>Neither the European Commission, nor any 
+      person acting on behalf of the Commission is responsible for the use which 
+      might be made of the information provided in this site. The views 
+      expressed are those of the authors and do not necessarily reflect 
+      Commission policy.</FONT></P></TD></TR></TBODY></TABLE></BODY></HTML>

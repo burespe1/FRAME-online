@@ -1,0 +1,26 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 1.5.5 Block Access to Service
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>1.5.5 Block Access to Service</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to control the access of a user (Traveller or Driver) to the requested service.<br>(2) Upon detection of a violation, the ability to send a message to the access violations detection functionality.<br>(3) If an accident has been detected, the ability to send a warning to functionality in the Manage Traffic Functional Area.<br>(4) The ability to let the user proceed upon receipt of an agreement message from the violation detection functionality.<br>(5) A HMI through which the user can be informed about whether or not access to the requested service has been granted.<br></div></H5><h3>Functional Requirements</H3><h5>(a) upon reception of a message indicating a violation, prevent the user from using a service <br/>(b) upon reception of a &quot;free&quot; command, allow the user to proceed<br/>(d) send a warning message to the manage traffic area<br/></H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FEA2398103DC.HTM?DiagTab=1" Target="_self">DFD 1.5  Control Fraud</a><h5><li> <a href="F897F8B339810013.HTM?DiagTab=0" Target="_self">Functional Tree of Area 1</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897fea2398103dc.htm" target="_self"> 1.5 Access and Credit Control</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="d4d2165b406c3b4b.htm" target="_self"> pepf_block_free_command_DAV </A> <li>
+  <A CLASS="Content" HREF="f8971c5d398248ed.htm" target="_self"> pepf_block_free_command_DPV </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="5eae74ae39841731.htm" target="_self"> pepf.mt_accident_warning </A> <li>
+  <A CLASS="Content" HREF="f8971c5d3982498f.htm" target="_self"> pepf_trespas_fraud_detection </A> <li>
+  <A CLASS="Content" HREF="f897227b39827a34.htm" target="_self"> td-pepf_stop_command </A> <li>
+  <A CLASS="Content" HREF="30c73b7f4d30053c.htm" target="_self"> tt-service_access_denied </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428d39be67d5.htm" target="_self"> 4.1.1.1</A> </a></center></h5></td><td width="90%"><h5>The system shall have a minimum impact on the traffic flow, e.g. a short transaction duration.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428e39be684d.htm" target="_self"> 4.1.1.3</A> </a></center></h5></td><td width="90%"><h5>The system shall not do anything to reduce the safety of either the travellers in the vehicle, or the staff close to the equipment, e.g. in toll booths.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428f39be6931.htm" target="_self"> 4.1.3.1</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to exchange financial information between roadside equipment (e.g. toll collection unit) and a moving traveller (e.g. a vehicle).</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14429139be6aab.htm" target="_self"> 4.1.4.1</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to be able to collect evidence on the non-payment of tolls, and other illegal financial transactions.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="bce4c4283c040039.htm" target="_self"> 4.1.4.2</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to collect evidence of unauthorised access when payment has not been received.</h5></td></tr></table></div>
+</BODY> </HTML>

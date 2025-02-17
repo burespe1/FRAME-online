@@ -1,0 +1,18 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > Database 5.1 Operational Data
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Data Store<br>5.1 Operational Data</h2></center><br><h3>Description of content</H3><H5><div class="Normal">This Data Store shall be used within the Provide Advanced Driver Assistance Area.&nbsp;&nbsp;It shall contain data that is divided into three parts covering the Vehicle, the Driver and the traffic conditions.<br><br>The part of the data in the Store about the Vehicle shall be structured in the following way:<br> - ID (number)<br> - type (characters)<br> - date (date string)<br> - time (numbers defining hours, minutes and seconds)<br> - location (characters and/or numbers, e.g. GPS/Galileo data)<br> - speed (number in kph or mph)<br> - acceleration (number)<br> - brakes applied (number or character indicating YES or NO)<br> - windscreen wipers on (number or character indicating YES or NO)<br> - lights on (number or character indicating YES or NO)<br> - outside temperature (number or character indicating YES or NO)<br> - ABS operating (number or character indicating YES or NO)<br> - ESP operating (number or character indicating YES or NO)<br> - driver command (character)<br> - date driver command input (date string)<br> - time driver command input (numbers defining hours, minutes and seconds as a minimum)<br><br>The part of the data in the Store about the Vehicle shall be structured in the following way:<br> - current status (characters)<br> - alcohol detected (number or character indicating YES or NO)<br><br>The part of the data in the Store about the Vehicle shall be structured in the following way:<br> - area in which Vehicle is operating (characters, e.g. nation, region, city, state, area names(s))<br> - road network data (data for a digital roadmap using a standard format, e.g. GDF)<br> - traffic conditions:<br>&nbsp;&nbsp;&nbsp;&nbsp;- flow (number in vehicles per hour)<br>&nbsp;&nbsp;&nbsp;&nbsp;- speed (number in kph or mph)<br>&nbsp;&nbsp;&nbsp;&nbsp;- headway (number in seconds)<br><br>It shall be possible for the above data to be updated in real-time as the Vehicle moves through the road network.</div></H5><h3>Diagrams</H3><h5>The Diagram(s) below is (are) the Diagram(s) where you can find the Datastore</h5><ul><h5><li>DFD 5.11 Provide Driver Monitoring and eCall</li></a></ul></h5><h3>Input dataflows</H3><ul><h5><li>
+  <A CLASS="Content" HREF="f8971c5c39824869.htm" target="Content"> pshvs_tvd_scenario </A> </h5></ul><h3>Output dataflows</H3><ul><h5><li>
+  <A CLASS="Content" HREF="8914d1f2417378e9.htm" target="Content"> pshvs_driver_condition </A> <li>
+  <A CLASS="Content" HREF="f8971c5c39824845.htm" target="Content"> pshvs_driver_stored_data </A> <li>
+  <A CLASS="Content" HREF="8914d387417379b7.htm" target="Content"> pshvs_tvd_incident_data </A> </h5></ul><ul><h5></h5></ul> <ul><h5></h5></ul>
+</BODY> </HTML>

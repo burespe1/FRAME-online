@@ -1,0 +1,43 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 7.3.5 Sort Fraud and Violation Notifications
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>7.3.5 Sort Fraud and Violation Notifications</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to carry out the classification of the fraud notifications received from the functionality in other Areas or directly from the Detect Fraud Function.<br>(2) If the violator&#39;s identity is not included in the notification, the ability to send the data that is available to the Identify Violator Function for it to be retrieved.<br>(3) The ability to carry out the classification according to different criteria: level of seriousness, field (road, financial, commercial...) and repeat offence.<br>(4) Once the classification has been completed, the ability to send it together with all the other information about the violation to the Establish Prosecution File Function.<br></div></H5><h3>Functional Requirements</H3><h5>(a) continuously monitor for the receipt of any fraud (violation) notification sent by the other functionality<br/>(b) when any of the data flows in (a) is received, process it and extract the violator ID<br/>(b) if the violator ID is not in the notification received in (b), extract any elements useful for this identification, and send them to the Identify Violator Function, using the first other output data flow<br/>(c) await receipt of the data resulting from (b) which will arrive in the fifth trigger input data flow<br/>(d) note that the data flow in (c) will be accompanied by the fourth other input data flow<br/>(e) extract from the store of Violations Data the seriousness of the fraud, receiving the data in the third other input data flow<br/>(f) also search in the store of Violations Data to see if the violator has already committed other similar offences before, receiving the data in the second other input data flow<br/>(g) dispatch the notifications according to the format of the fraud in the first trigger output data flow to the Establish Prosecution File Function<br/>(h) send all the data about the fraud (violation) to the Fraud Function, using the second trigger output data flow<br/>(i) where the driver and/or vehicle ID is known, send the data to the Manage Traffic Area, using the appropriate of the first and second trigger output data flows, depending on whether the fraud (violation) was committed in the inter-urban or urban road network.<br/></H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FF82398104E9.HTM?DiagTab=1" Target="_self">DFD 7.3  Process Fraud Notifications</a><h5><li> <a href="F897F8E239810037.HTM?DiagTab=0" Target="_self">Functional Tree of Area 7</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897ff82398104e9.htm" target="_self"> 7.3 Process Fraud and Violation Notifications</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f8971ea139826343.htm" target="_self"> mffo.psle_violation_notification </A> <li>
+  <A CLASS="Content" HREF="f8971ea2398264e7.htm" target="_self"> mt.psle_illegal_carpark_space_occupancy </A> <li>
+  <A CLASS="Content" HREF="41395e334b9f098c.htm" target="_self"> mt.psle_inter-urban_vehicle_identity_error </A> <li>
+  <A CLASS="Content" HREF="0f994c0a4b1e17da.htm" target="_self"> mt.psle_inter-urban_violating_vehicle_identity </A> <li>
+  <A CLASS="Content" HREF="41396a6c4b9f1300.htm" target="_self"> mt.psle_urban_vehicle_identity_error </A> <li>
+  <A CLASS="Content" HREF="7a0780284b1e0181.htm" target="_self"> mt.psle_urban_violating_vehicle_identity </A> <li>
+  <A CLASS="Content" HREF="0f9936ca4b1e1590.htm" target="_self"> mt.psle_vehicle_entering_inter-urban_zone </A> <li>
+  <A CLASS="Content" HREF="5c6075464b1e0923.htm" target="_self"> mt.psle_vehicle_entering_urban_zone </A> <li>
+  <A CLASS="Content" HREF="d4d21550406c3b0a.htm" target="_self"> pepf.psle_fraud_notification_DAV </A> <li>
+  <A CLASS="Content" HREF="f8971ea339826649.htm" target="_self"> pepf.psle_fraud_notification_DPV </A> <li>
+  <A CLASS="Content" HREF="d692eb164b4d034e.htm" target="_self"> pscs.psle_bus_lane_violation </A> <li>
+  <A CLASS="Content" HREF="f8971c5e39824a49.htm" target="_self"> psle_classification_of_fraud_or_violation </A> <li>
+  <A CLASS="Content" HREF="737a8ce53f330aa2.htm" target="_self"> psle_violation_history_for_notification </A> <li>
+  <A CLASS="Content" HREF="f8971c5e39824a61.htm" target="_self"> psle_violation_seriousness </A> <li>
+  <A CLASS="Content" HREF="f8971c5e39824a67.htm" target="_self"> psle_violation_type_from_compliance_check </A> <li>
+  <A CLASS="Content" HREF="d4d21a4b406c3ec8.htm" target="_self"> psle_violation_type_from_image_analysis </A> <li>
+  <A CLASS="Content" HREF="d4d21a61406c3ed3.htm" target="_self"> psle_violation_type_from_violator_determination </A> <li>
+  <A CLASS="Content" HREF="f8971c5f39824aa3.htm" target="_self"> psle_violator_ID </A> <li>
+  <A CLASS="Content" HREF="d4d21e05406c489c.htm" target="_self"> psle_violator_ID_from_violator_determination </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f8971c5e39824a43.htm" target="_self"> psle_fraud_characteristics </A> <li>
+  <A CLASS="Content" HREF="f8971ea439826691.htm" target="_self"> psle_inter-urban_violator_ID </A> <li>
+  <A CLASS="Content" HREF="f8971ea439826697.htm" target="_self"> psle_urban_violator_ID </A> <li>
+  <A CLASS="Content" HREF="d4d208f6406c3034.htm" target="_self"> psle_violation_notification_for_storage </A> <li>
+  <A CLASS="Content" HREF="f8971c5e39824a5b.htm" target="_self"> psle_violator_data_for_image_analysis </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428a39be65c5.htm" target="_self"> 3.1.1.1</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to collect evidence on vehicles that commit traffic signal violations.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428b39be65f5.htm" target="_self"> 3.1.1.2</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to collect evidence on vehicles that exceed a local (variable) speed limit.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="610e62d2485a0037.htm" target="_self"> 7.1.7.7</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to detect and identify vehicles that exceed the maximum authorised speed limit on selected carriageways.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="76a7899d4b970325.htm" target="_self"> 7.4.1.18</A> </a></center></h5></td><td width="90%"><h5><span style='font-style: italic;'>(X)FCD</span> - The system shall be able to match a visual image of a vehicle with the (un-attributable - for privacy protection) identity of a vehicle that is providing FCD and/or XFCD.</h5></td></tr></table></div>
+</BODY> </HTML>

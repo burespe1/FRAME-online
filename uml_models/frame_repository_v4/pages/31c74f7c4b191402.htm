@@ -1,0 +1,26 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 4.2.6 Manage Fare Schemes Data Store
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>4.2.6 Manage Fare Schemes Data Store</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to manage the store of PT Fare Schemes, updating its contents every time a new set of fare schemes is received.<br>(2) The ability to provide details of the current fare scheme whenever requests are received from other functionality.<br></div></H5><h3>Functional Requirements</H3><h5>(a) continuously monitor for the arrival of the updated fare scheme data flow<br/>(b) when the data flow in (a) arrives update the store of PT Fare Schemes Data with its contents using the load fare scheme data flow<br/>(c) also output the new fare scheme in the fare scheme for service data flow<br/>(d) when any of the PT driver request for fare scheme, request fares or request fares for vehicles data flows arrive, extract the requested data from the store of PT Fare Schemes Data and return it to the requesting function in the relevant data flow<br/>(e) if the updated fare scheme data flow contains a request from the Prepare Fare Schemes function for the current fare data respond with the requested data using the current fare scheme data flow.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FEA239810436.HTM?DiagTab=1" Target="_self">DFD 4.2  Plan PT Service</a><h5><li> <a href="F897F8CF39810025.HTM?DiagTab=0" Target="_self">Functional Tree of Area 4</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897fea239810436.htm" target="_self"> 4.2 Plan PT Service</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f47dfc954b1c0299.htm" target="_self"> mpto_PT_driver_request_for_fare_scheme </A> <li>
+  <A CLASS="Content" HREF="31c7530d4b1914a1.htm" target="_self"> mpto_read_fare_scheme </A> <li>
+  <A CLASS="Content" HREF="7febcb1b4b720e9b.htm" target="_self"> mpto_request_fares_for_vehicle </A> <li>
+  <A CLASS="Content" HREF="31c753924b1914c8.htm" target="_self"> mpto_updated_fare_scheme </A> <li>
+  <A CLASS="Content" HREF="f8971ea239826421.htm" target="_self"> mt.mpto_request_fares </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f8971ea13982637f.htm" target="_self"> mpto.mt_current_fares </A> <li>
+  <A CLASS="Content" HREF="31c751344b19142e.htm" target="_self"> mpto_current_fare_scheme </A> <li>
+  <A CLASS="Content" HREF="d329e5cd4b1c0f14.htm" target="_self"> mpto_fare_scheme_for_PT_driver </A> <li>
+  <A CLASS="Content" HREF="d329e3ad4b1c0ec0.htm" target="_self"> mpto_fare_scheme_for_service </A> <li>
+  <A CLASS="Content" HREF="31c7528d4b191474.htm" target="_self"> mpto_load_fare_scheme </A> <li>
+  <A CLASS="Content" HREF="7febd18b4b721281.htm" target="_self"> mpto_requested_fares_for_vehicle </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr></table></div>
+</BODY> </HTML>

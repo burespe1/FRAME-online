@@ -1,0 +1,198 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 6.8 Manage Trip Plans
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <div id="ObjectTitle">
+<Table id="ObjectTitleTable" class="ObjectTitleTable" cellpadding="0" cellspacing="0"  width = "100%">
+<TR>
+<TD width="5%" height ="35" align = "left">
+<img src="../standard/busf.gif"/>
+</TD>
+<TD width="20%" height ="35" align = "left">
+<span class="ObjectTitle_Type">
+High Level Function</span>
+</TD>
+<TD width="75%" height ="35" align = "left">
+<span class="ObjectTitle_Name">6.8 Manage Trip Plans</span>
+</TD>
+</TR>
+ </Table>
+</div>
+<table border="0" cellpadding="0" cellspacing="0"  class="InvisibleTable">
+<tr>
+    	 
+<td id="Tab" class="Tab">	&nbsp;Diagram&nbsp;</td>
+ <td id="Tab" class="Tab">&nbsp;Definition&nbsp;</td>
+ <td class="TabFiller" width="100%">&nbsp;</td>
+<td align="center" onclick="OnFitWidthClick();"  id="ZoomButton" class="ZoomButton" title="Fit to width">
+<img src="../standard/ws_fitwidth.gif"></img></td>
+<td align="center" onclick="OnRegularClick();" id="ZoomButton" class="ZoomButton" title="Actual size">
+<img src="../standard/ws_actual.gif"></img></td>
+<td align="center" onmousedown="OnIncrStart();" onmouseup="OnIncrStop();" id="ZoomButton" class="ZoomButton" title="Zoom in">
+<img src="../standard/ws_zoomin.gif"></img></td>
+<td align="center" onmousedown="OnDecrStart();" onmouseup="OnDecrStop();" id="ZoomButton" class="ZoomButton" title="Zoom out">
+<img src="../standard/ws_zoomout.gif"></img></td>
+<td style="display:none" id="TabMemoryName">TabMemoryProcess</td>	</tr>
+</table>
+
+<div id="ContentTab" class="ContentTab">
+	<table id="TabDiagList" class="TabDiagList" border="0" cellpadding="0" cellspacing="0" width="450">
+	          <tr>
+          <td width="16">
+                    <img src="../standard/diag.gif"/></td>
+<td id="TabDiag"class="TabDiag">
+DFD 6.8 Manage Trip Plan Store</td>
+</tr>
+              </Table>
+<div id="ContentTabDiag" class="ContentTabDiag">
+      <p>
+<p class="DiagName">DFD 6.8 Manage Trip Plan Store</p><p>
+<center>
+<h5>This is a DFD diagram which provides a description of the function in the ITS environment</h5>
+  <MAP CLASS="Content" NAME="976FB4954BA00FA7"> 
+    <AREA href="d60309e74ba10fe0.htm" shape="rect" coords="44, 36, 122, 64"   target="_self"  title="It contains an instruction from the Traveller to implement a particular trip plan."> 
+    </AREA> 
+    <AREA href="976fb4b34ba0112f.htm" shape="rect" coords="148, 1, 228, 104"   target="_self"  title="This Function shall be capable of providing the following facilities:"> 
+    </AREA> 
+    <AREA href="f89709c23982225f.htm" shape="rect" coords="153, 332, 248, 397"   target="_self"  title="This Function shall be capable of providing the following facilities:"> 
+    </AREA> 
+    <AREA href="976fcbc64ba017cd.htm" shape="rect" coords="129, 146, 181, 188"   target="_self"  title="It contains data that describes trip plans that is being read from the Trip Plan Data Store."> 
+    </AREA> 
+    <AREA href="976fcb784ba017ba.htm" shape="rect" coords="205, 170, 257, 212"   target="_self"  title="It contains data that describes trip plans that is to be loaded into the Trip Plan Data Store."> 
+    </AREA> 
+    <AREA href="976fbc9a4ba012a4.htm" shape="rect" coords="15, 3, 122, 32"   target="_self"  title="It contains the description of a planned trip that has received final approval from the Traveller and is now ready for implementation when requested by the Traveller."> 
+    </AREA> 
+    <AREA href="fc164c8c4b9e1e79.htm" shape="rect" coords="260, 59, 351, 88"   target="_self"  title="It contains all the data that describes the trip, e.g. origin, destination, way points, and the preferences of the Traveller, and is used to monitor the trip to see if any changes are necessary.&nbsp;&nbsp;The trip can be multi-modal, can use multiple intermediate destinations (way points) and can be for a private person or a larger group of people.&nbsp;&nbsp;For a further description refer to the Private Trip File Description."> 
+    </AREA> 
+    <AREA href="fc164bcb4b9e1e5c.htm" shape="rect" coords="259, 19, 351, 48"   target="_self"  title="It contains all the data that describes the trip, e.g. origin, destination, way points, and the preferences of the Traveller, and is used to implement the trip.&nbsp;&nbsp;It can be multi-modal, can use multiple intermediate destinations (way points) and can be for a private person or a larger group of people.&nbsp;&nbsp;For a further description refer to the Private Trip File Description."> 
+    </AREA> 
+    <AREA href="f897227c39827ba8.htm" shape="rect" coords="271, 341, 387, 383"   target="_self"  title="  It contains a report about the contents of the Trip File Data Store."> 
+    </AREA> 
+    <AREA href="f8972279398276ce.htm" shape="rect" coords="14, 341, 131, 384"   target="_self"  title="It contains a request for the output of a report about the contents of the Trip File Data Store."> 
+    </AREA> 
+    <AREA href="f8971c5f39824b0f.htm" shape="rect" coords="1, 72, 118, 108"   target="_self"  title="It contains changes to the trip plan data following approval by the Traveller that is implementing the trip.&nbsp;&nbsp;The changes may reflect updates to the time schedule, route, transport mode, costs, bookings, but may also result in a premature end of the journey covered by the trip plan.&nbsp;&nbsp;The data will only be generated if during the trip the Support Trip functionality has detected a deviation from the situation under which the trip was defined and the Traveller has agreed to the proposed change."> 
+    </AREA> 
+    <AREA href="f8971c5f39824af7.htm" shape="rect" coords="267, 256, 340, 285"   target="_self"  title="It contains data that has been extracted from the Trip File Data Store.&nbsp;&nbsp;The data flow may be sent periodically, or following a request from the Travel Information Operator."> 
+    </AREA> 
+    <AREA href="f8971c5f39824af1.htm" shape="rect" coords="32, 183, 106, 218"   target="_self"  title="It contains a request from the Travel Information Operator for output of the contents of the Trip File Data Store."> 
+    </AREA> 
+    <AREA href="f897fc633981018b.htm" shape="rect" coords="150, 234, 243, 289"   target="_self"  title="This Data Store shall be used within the Provide Traveller Journey Assistance Area.&nbsp;&nbsp;It shall contain data that is the result of the trip planning process.&nbsp;&nbsp;This data is retained for the prime purpose of supporting the Traveller during the trip. The most notable requirement is to react to the consequences of perturbations in the situation(s) existing during trip planning.&nbsp;&nbsp;All the considerations that resulted in production of the trip itinerary are included in this Data Store."> 
+    </AREA> 
+  </MAP> 
+  <IMG CLASS="Content" SRC="../images/976fb4784ba00f93_i.png" USEMAP="#976FB4954BA00FA7" BORDER=0> 
+  </IMG> </center>
+</div> 
+      </div>
+
+ <div id="ContentTab" class="ContentTab">
+
+<h3>Overview</H3>
+<H5>This High-level Function shall provide facilities for the management of the Private Trip Plan Data Store.&nbsp;&nbsp;It shall be able to accept data from of functionality to enable the trip plan created by the Traveller to be stored.&nbsp;&nbsp;When the Traveller requests that a previously prepared trip plan is implemented, this Function shall ensure that it is correctly provided to the trip plan implementation and monitoring functionality.</H5>
+<h3>Diagrams</H3> 
+<table border="1" width="100%">
+<tr>
+<td><h5>
+The Diagram(s) is(are) the Diagram(s) where you can find the function
+</td>
+</tr>
+<tr>
+<td width="50%">
+<ul>
+<li>The first diagram, if exists, is a DFD diagram which provides the context of the function</li>
+<li>The second Diagram, if exists, is a Functional Tree which provides a hierarchical description of the function into subfunctions</li>
+</ul>
+</h5>
+</td>
+<td width="100%">
+<h5>
+
+
+
+<li>DFD 6. Provide Traveller Journey Assistance</li></a>
+<h5>
+
+<a href="F897F8DC39810031.HTM?DiagTab=1" Target="_self">
+
+
+<li>Functional Tree of Area 6</li></a></h5>
+</td>
+</tr>
+</table>
+<h3>Parent</H3>
+<ul><h5></ul>
+<ul><li>
+  <A CLASS="Content" HREF="f897f8dc39810031.htm" target="_self"> 6. Provide Traveller Journey Assistance</A> </h5></ul>
+<h3>Component lower level functions</H3>
+<ul><h5><li>
+  <A CLASS="Content" HREF="976fb4b34ba0112f.htm" target="_self"> 6.8.1 Manage Store of Trip Plan Data</A> <li>
+  <A CLASS="Content" HREF="f89709c23982225f.htm" target="_self"> 6.8.2 Provide Trip Plan Management Operator Interface</A> </h5></ul>
+<H5></H5>
+<h3>Input logical dataflows</H3>
+<ul><h5>
+
+<li>
+  <A CLASS="Content" HREF="f8972279398276ce.htm" target="_self"> fo.tio-trip_plan_management_report_request </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="d60309e74ba10fe0.htm" target="_self"> ptja_implement_trip_plan </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f8971c5f39824b0f.htm" target="_self"> ptja_revised_trip_plan_after_traveller_approval </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="976fbc9a4ba012a4.htm" target="_self"> ptja_trip_plan_ready_for_implementation </A> 
+
+</h5></ul>
+<h3>Output logical dataflows</H3>
+<ul><h5>
+
+<li>
+  <A CLASS="Content" HREF="fc164bcb4b9e1e5c.htm" target="_self"> ptja_trip_plan_for_implementation </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="fc164c8c4b9e1e79.htm" target="_self"> ptja_trip_plan_for_monitoring </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f897227c39827ba8.htm" target="_self"> to.tio-trip_plan_management_report </A> 
+
+</h5></ul> 
+
+<ul><h5></h5></ul>
+
+<ul><h5></h5></ul>
+<h3>User needs</H3>
+<div align="right">
+<table border="1" width="100%">
+<tr>
+<td width="10%"><center><h4>Number</h4></center></td>
+<td width="90%"><h4>Description</h4></td>
+</tr>
+
+</table>
+</div>
+
+</div><script language="javascript" src="../standard/ws_tabtemplate.js"></script>
+<script language="javascript" src="../standard/ws_zoomtemplate.js"></script>
+<script language="javascript" src="../standard/ws_buttontemplate.js"></script>
+<script language="javascript" src="../standard/ws_keyshortcuttemplate.js"></script>
+            <!--<img src="../standard/busf.gif"/>-->
+
+</BODY> </HTML>

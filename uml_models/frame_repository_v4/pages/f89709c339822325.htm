@@ -1,0 +1,32 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 8.2.2.3.3 Manage Driver Employment
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>8.2.2.3.3 Manage Driver Employment</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to take responsibility for the management of Freight Vehicle Drivers.<br>(2) The ability to obtain information about new Drivers and load it into the store of Resources Data.<br>(3) When a booking for a Freight Transport Operation is received, send the information about it, together with any statutory information to the appropriate Driver.<br>(4) The ability to resolve conflicts in the allocation of Drivers to Freight Transport Operations.<br>(5) The ability to monitor the progress of the Freight Transport Operation, requesting any additional information as needed and analysing and loading in the store of Resources Data details of all the events as they happen, taking note of any law violations, etc.<br>(6) When an incident occurs involving the Freight Vehicle or Equipment, process the received data, requesting any additional data as required, and providing the Driver with any useful information and/or instructions.<br>(7) The ability to manage holidays, training and medical check-ups for Drivers, based on their performance on assigned tasks.<br></div></H5><h3>Functional Requirements</H3><h5>(a) get all needed information for all new drivers and store in the store of Resources Data<br/>(b) manage all drivers: holiday, training session and medical check-up<br/>(c) wait for booking notification<br/>(d) when the notification is received, in case of a resource conflict try to resolve it and to propose a solution<br/>(e) if it&#39;s OK send appropriate information to the Driver and, if needed, send driver statutory document<br/>(f) for each trip, wait for Driver event, store them and as needed process them (analyse of law violation and associated consequences...)<br/>(g) as part of (f) request for any additional (and available) information as needed<br/>(h) for any trip,  in case of incident to the Driver, request all additional (and available) needed information and if useful send some instruction/information to the Driver and inform the Driver&#39;s family<br/>(i) load into the store of Resources Data a record of the events surrounding the incident<br/>(j) realise all needed Driver performance analysis and plan training session in consequence.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FF823981052B.HTM?DiagTab=1" Target="_self">DFD 8.2.2.3 Manage Fleet Resources</a><h5><li> <a href="F897FF823981050D.HTM?DiagTab=1" Target="_self">Functional tree 8.2</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897ff823981052b.htm" target="_self"> 8.2.2.3 Manage Fleet Resources</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897227739827518.htm" target="_self"> fd.fvd-statutory_information </A> <li>
+  <A CLASS="Content" HREF="f897227839827602.htm" target="_self"> flea-law_violation_consequence </A> <li>
+  <A CLASS="Content" HREF="2ff432d5406c0105.htm" target="_self"> fo.flo-input_data_13 </A> <li>
+  <A CLASS="Content" HREF="f8971c5539823f51.htm" target="_self"> mffo_driver_booking_conflict </A> <li>
+  <A CLASS="Content" HREF="f8971c5539823f5d.htm" target="_self"> mffo_driver_booking_notification </A> <li>
+  <A CLASS="Content" HREF="f8971c5539823f63.htm" target="_self"> mffo_driver_event </A> <li>
+  <A CLASS="Content" HREF="f8971c5539823f69.htm" target="_self"> mffo_driver_incident </A> <li>
+  <A CLASS="Content" HREF="737ac3fd3f33289e.htm" target="_self"> mffo_read_resources_driver_employment_data </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="5eae678c39840560.htm" target="_self"> mffo_driver_conflict_booking_solution </A> <li>
+  <A CLASS="Content" HREF="f8971c5539823f6f.htm" target="_self"> mffo_driver_request </A> <li>
+  <A CLASS="Content" HREF="f8971c5539823f75.htm" target="_self"> mffo_driver_statutory_document </A> <li>
+  <A CLASS="Content" HREF="f897227b398279f2.htm" target="_self"> td.fvd-work_information </A> <li>
+  <A CLASS="Content" HREF="d4d2298c406c4e9e.htm" target="_self"> to.flo-output_data_13 </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442c339be9178.htm" target="_self"> 9.5.3.10</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to record driver&#39;s hours, and report on available hours, deviations and disturbances.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442c339be91a2.htm" target="_self"> 9.5.3.11</A> </a></center></h5></td><td width="90%"><h5>The system shall enable the driver to receive a change to the route, task, etc. at any time.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442c439be9298.htm" target="_self"> 9.5.3.2</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to store all necessary commercial and statutory vehicle, driver, trip and freight information on-board the vehicle.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="cf07d3cb417c0024.htm" target="_self"> 9.5.3.26</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to record supplementary information about events recorded by the tachograph, e.g. reason for waiting time.</h5></td></tr></table></div>
+</BODY> </HTML>

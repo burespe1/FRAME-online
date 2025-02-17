@@ -1,0 +1,38 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 3.5.12 Evaluate Need for Equipment Maintenance
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>3.5.12 Evaluate Need for Equipment Maintenance</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to evaluate the need for maintenance of roadside and other equipment and request any needed repair activities.<br>(2) The ability to collect information about equipment faults provided by other functionality in the System and to compare these with information about the activities needed to fix them.<br>(3) The ability to maintain a record of preventative maintenance activities that may be required from time to time by the equipment.<br>(4) From this comparison faults with recommended activities and the list of preventative maintenance, the ability to produce a list of actual maintenance work that needs to be carried out.<br>(5) If the application of these activities is confirmed by the Road Maintenance Operator, the ability to request the Maintenance Organisation to carry out the work.<br>(6) The ability to keep a list of the status of all outstanding roadside equipment faults and make this list available to the Road Maintenance Operator on request through the store of Maintenance Data.<br>(7) The ability to update the list of all outstanding roadside equipment faults with information that it receives from the Maintenance Organisation.<br></div></H5><h3>Functional Requirements</H3><h5>(a) continuously monitor for receipt of the various status and fault data flows from inter-urban and urban equipment<br/>(b) when any of the data flows in (a) is received, determine from its contents the nature of any fault<br/>(c) use the data from the inter-urban and urban equipment information data flows to determine where the faulty equipment is located and the organisation responsible for its maintenance and store this information locally<br/>(d) as a result of (c) send the confirm equipment maintenance data flow to the Provide Road Maintenance Operator Interface function<br/>(e) as a result of (d) continuously monitor for receipt of the equipment maintenance confirmed data flow<br/>(f) when the data flow in (e) is received, send instructions for the maintenance work to be carried out to the appropriate maintenance organisation in the equipment tasks data flow and send information about the work to the Provide Maintenance Data Store Management function in the confirmed equipment maintenance activity data flow<br/>(g) as a result of (f) continuously monitor for receipt of the equipment maintenance activity update data flow from the maintenance organisation(s)<br/>(h) when the data flow in (g) is received, update the data in the store of Maintenance Data by sending the confirmed equipment maintenance activity data flow with the updated information<br/>(i) repeat (g) and (h) until all equipment maintenance tasks have been completed<br/>(j) continuously monitor for receipt of either of the equipment information data flows<br/>(k) when either of the data flows in (j) is received, store the information it contains locally for use in (c) above<br/>(l) continuously monitor for receipt of the request current roadside equipment faults data flow<br/>(m) when the data flow in (l) is received, extract the required data from that stored locally in (c) above and send it to the Provide Road Maintenance Operator function in the current roadside equipment faults data flow.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FEA23981042A.HTM?DiagTab=1" Target="_self">DFD 3.5  Manage Road Maintenance</a><h5><li> <a href="F897FEA23981042A.HTM?DiagTab=1" Target="_self">Functional tree 3.5</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897fea23981042a.htm" target="_self"> 3.5 Manage Road Maintenance</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897227939827794.htm" target="_self"> fbti-current_status </A> <li>
+  <A CLASS="Content" HREF="f897227839827656.htm" target="_self"> fmo.rmo-equipment_maintenance_activity_update </A> <li>
+  <A CLASS="Content" HREF="f8971c58398242db.htm" target="_self"> mt_bridge_equipment_status </A> <li>
+  <A CLASS="Content" HREF="f8971c59398243bf.htm" target="_self"> mt_equipment_maintenance_confirmed </A> <li>
+  <A CLASS="Content" HREF="ae19dd174bb10b62.htm" target="_self"> mt_inter-urban_equipment_information </A> <li>
+  <A CLASS="Content" HREF="f8971c59398243fb.htm" target="_self"> mt_inter-urban_equipment_status_c&amp;i </A> <li>
+  <A CLASS="Content" HREF="af07d3f94ad50607.htm" target="_self"> mt_inter-urban_equipment_status_l&amp;s </A> <li>
+  <A CLASS="Content" HREF="fed71fcd4b8d0bdb.htm" target="_self"> mt_inter-urban_response_fault </A> <li>
+  <A CLASS="Content" HREF="56fa8bac4df71c85.htm" target="_self"> mt_inter-urban_strategy_command_output_failure </A> <li>
+  <A CLASS="Content" HREF="380b5de84b160cfa.htm" target="_self"> mt_request_current_roadside_equipment_faults </A> <li>
+  <A CLASS="Content" HREF="f8971c5a398245e7.htm" target="_self"> mt_tunnel_equipment_status </A> <li>
+  <A CLASS="Content" HREF="380b62114b160ed8.htm" target="_self"> mt_urban_c&amp;i_equipment_fault </A> <li>
+  <A CLASS="Content" HREF="ae19dd4b4bb10b6f.htm" target="_self"> mt_urban_equipment_information </A> <li>
+  <A CLASS="Content" HREF="405a533b3a370416.htm" target="_self"> mt_urban_response_fault </A> <li>
+  <A CLASS="Content" HREF="380b62aa4b160f0c.htm" target="_self"> mt_urban_s&amp;g_equipment_fault </A> <li>
+  <A CLASS="Content" HREF="3ecd779c4af10abb.htm" target="_self"> psle.mt_inter-urban_enforcement_device_status </A> <li>
+  <A CLASS="Content" HREF="3ecd54d84af1053a.htm" target="_self"> psle.mt_urban_enforcement_device_status </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f8971c583982434d.htm" target="_self"> mt_confirmed_equipment_maintenance_activity </A> <li>
+  <A CLASS="Content" HREF="f8971c583982432f.htm" target="_self"> mt_confirm_equipment_maintenance </A> <li>
+  <A CLASS="Content" HREF="380b5d174b160ccf.htm" target="_self"> mt_current_roadside_equipment_faults </A> <li>
+  <A CLASS="Content" HREF="f897227c39827b18.htm" target="_self"> tmo.rmo-equipment_tasks </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428839be642d.htm" target="_self"> 2.2.2.1</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to receive infrastructure equipment status data remotely.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428939be6451.htm" target="_self"> 2.2.2.2</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to monitor the structural integrity of  roads, bridges, tunnels, gantries, etc.</h5></td></tr></table></div>
+</BODY> </HTML>

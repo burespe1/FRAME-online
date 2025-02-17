@@ -1,0 +1,22 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 9.4.1 Provide Manage Hazardous Goods Operator Interface
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>9.4.1 Provide Manage Hazardous Goods Operator Interface</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) A HMI through which the Road Network Operator can have access to the criteria used to determine routes for Vehicles that are carrying Hazardous Goods.<br>(2) The ability for the Operator to use the HMI to either be provided with an output of the current criteria, or to update the current criteria.<br></div></H5><h3>Functional Requirements</H3><h5>(a) continuously monitor for receipt of the hazardous goods vehicle criteria request or hazardous good criteria update data flows<br/>(b) when the first data flow in (a) is received, the contents shall be send to the Manage and Monitor Hazardous Goods Vehicle Routes function in the hazardous goods vehicle route criteria input data flow<br/>(c) as a result of (b) continuously monitor for receipt of the hazardous goods vehicle criteria output data flow<br/>(d) when the data flow in (c) is received, its contents shall be output to the Road Network Operator in the hazardous goods vehicle criteria output data flow<br/>(e) when the second data flow in (a) is received, the contents shall be sent to the Manage and Monitor Hazardous Goods Vehicle Routes function in the hazardous goods vehicle route criteria input data flow.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="0AD40BCD4BCF0194.HTM?DiagTab=1" Target="_self">DFD 9.4 Provide Hazardous Goods Management</a><h5><li> <a href="2ED039D74B4B048B.HTM?DiagTab=0" Target="_self">Functional Tree of Area 9</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="0ad40bcd4bcf0194.htm" target="_self"> 9.4 Provide Hazardous Goods Management</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="04b40aa84bd00380.htm" target="_self"> fo.rno-hazardous_goods_vehicle_criteria_request </A> <li>
+  <A CLASS="Content" HREF="04b407c04bd00342.htm" target="_self"> fo.rno-hazardous_goods_vehilce_criteria_update </A> <li>
+  <A CLASS="Content" HREF="04b414eb4bd00500.htm" target="_self"> pscs_hazardous_goods_vehicle_route_criteria_output </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="04b40e864bd00450.htm" target="_self"> pscs_hazardous_goods_vehicle_route_criteria_input </A> <li>
+  <A CLASS="Content" HREF="04b40cc94bd003f2.htm" target="_self"> to.rno-hazardous_goods_vehicle_criteria_output </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="0a9228e23c0200c6.htm" target="_self"> 5.3.0.3</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to receive data on the status, character and quantity of hazardous cargo on vehicles within a pre-defined area of interest, and inform the relevant authorities of any non-compliance.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="76a7819d4b970258.htm" target="_self"> 9.5.6.1</A> </a></center></h5></td><td width="90%"><h5>The system shall enable the relevant authority to plan and manage routes that are suitable for use by vehicles carrying hazards goods.</h5></td></tr></table></div>
+</BODY> </HTML>

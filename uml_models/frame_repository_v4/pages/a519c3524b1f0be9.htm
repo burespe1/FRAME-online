@@ -1,0 +1,28 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 6.6.5 Provide Travel Information Operator Interface
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>6.6.5 Provide Travel Information Operator Interface</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) A HMI through which the Travel Information Operator can monitor the provision of information to Travellers.<br>(2) The HMI shall enable the Operator to update the information, amend the criteria used to filter the information that is to be provided, to obtain a copy of the current information and to direct that some of the information be directly output to Travellers.<br></div></H5><h3>Functional Requirements</H3><h5>(a) continuously monitor for the receipt of any of the input data flows from the operator<br/>(b) when any of the data flows in (a) is received, determine its contents and send the appropriate data flow to either the Produce Travel Information or Manage Travel Information Data Store functions<br/>(c) if either of the two data flows is received from the Produce Travel Information or Manage Travel Information Data Store functions, output the data they contain to the operator using the appropriate output data flow.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="88CE896C4B1F018C.HTM?DiagTab=1" Target="_self">DFD 6.6 Provide Traveller Information</a><h5><li> <a href="F897F8DC39810031.HTM?DiagTab=0" Target="_self">Functional Tree of Area 6</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="88ce896c4b1f018c.htm" target="_self"> 6.6 Provide Traveller Information</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="ce7edf624b1f04fd.htm" target="_self"> fo.tio-current_travel_information_request </A> <li>
+  <A CLASS="Content" HREF="ce7ee01e4b1f052a.htm" target="_self"> fo.tio-output_travel_information_request </A> <li>
+  <A CLASS="Content" HREF="a519a6324b1f0182.htm" target="_self"> fo.tio-travel_information_filter_request </A> <li>
+  <A CLASS="Content" HREF="a519a6e74b1f01b8.htm" target="_self"> fo.tio-travel_information_filter_updates </A> <li>
+  <A CLASS="Content" HREF="ce7edb304b1f049f.htm" target="_self"> ptja_requested_current_travel_information </A> <li>
+  <A CLASS="Content" HREF="a519c63f4b1f0c59.htm" target="_self"> ptja_requested_travel_information_filters </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="ce7edd6b4b1f04ce.htm" target="_self"> ptja_output_travel_information </A> <li>
+  <A CLASS="Content" HREF="ce7eda184b1f0474.htm" target="_self"> ptja_request_current_travel_information </A> <li>
+  <A CLASS="Content" HREF="a519c60f4b1f0c49.htm" target="_self"> ptja_request_travel_information_filters </A> <li>
+  <A CLASS="Content" HREF="205f2b084b74056f.htm" target="_self"> ptja_updated_travel_information_filters </A> <li>
+  <A CLASS="Content" HREF="ce7ed6804b1f03e6.htm" target="_self"> ptja_update_other_travel_data </A> <li>
+  <A CLASS="Content" HREF="ce7ee12b4b1f055b.htm" target="_self"> to.tio-current_travel_information </A> <li>
+  <A CLASS="Content" HREF="a519bfc24b1f0b3d.htm" target="_self"> to.tio-travel_information_filters </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr></table></div>
+</BODY> </HTML>

@@ -1,0 +1,46 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 4.2.8 Plan New Service Schedule
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>4.2.8 Plan New Service Schedule</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to prepare new schedules for PT services at the request of the PT Operator, taking account of constraints such as, the geographic area to be served, quality of service parameters (e.g. frequency of Vehicles, required routes), timetables, synchronisation, PT Driver duty scheduling, co-ordination with other modes of transport, etc.<br>(2) The ability to also prepare new schedules that are variations in the normal service provision when input is received about such things as special events, unusual traffic conditions, changes in the services provided by other PT operations, the occurrence of incidents that affect the flow of traffic in the road network and requests resulting from the implementation of a demand management strategy. <br>(3) The ability to send the newly prepared schedules to the store of PT Service Plan Data for use by other PT functionality and to other Functional Areas, such Provide Traveller Journey Assistance, where it will be used to plan Travellers&#39; trips.<br>(4) The ability to also send newly prepared schedules to other instances of this functionality such as different PT service providers and the operators of other transport modes.<br></div></H5><h3>Functional Requirements</H3><h5>(a) collect planning strategies, plans for road works, other (Multi-Modal and similar, i.e. Road Related) services planning, plans for special events, predicted traffic conditions, historic journey times and specific service requests using the relevant input data flows<br/>(b) obtain the current operational service data, road network data and current plans from the store of PT Service Plan Data using the PT scheduling data flow<br/>(c) enable the operator to combine the above information and requirements and initiate the definition of a new service planning including fares strategies, using the service planning strategies data flow<br/>(d) make the selected new plan for services and fares available to other functions in the Manage PT and Manage Traffic Functional Areas using the relevant output data flows<br/>(e) also make the data available to other (Multi-Modal and similar, i.e. Road Related) systems using the planning output data flows<br/>(f) store the new services and schedules for future use in the store of PT Service Plans Data using the updated scheduling data flow<br/>(g) send the new services and schedules to the Provide PT Operator Interface to PT Schedule Plans function using the revised services and schedules data flow.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FEA239810436.HTM?DiagTab=1" Target="_self">DFD 4.2  Plan PT Service</a><h5><li> <a href="F897F8CF39810025.HTM?DiagTab=0" Target="_self">Functional Tree of Area 4</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897fea239810436.htm" target="_self"> 4.2 Plan PT Service</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f8972278398275ae.htm" target="_self"> fesp.peo-planned_events </A> <li>
+  <A CLASS="Content" HREF="f897227839827638.htm" target="_self"> fmms.mms-plannings </A> <li>
+  <A CLASS="Content" HREF="f897227939827734.htm" target="_self"> fors.ptms-pt_planning </A> <li>
+  <A CLASS="Content" HREF="f8971c583982422d.htm" target="_self"> mpto_maintenance_plans </A> <li>
+  <A CLASS="Content" HREF="f8971c5839824245.htm" target="_self"> mpto_PT_scheduling </A> <li>
+  <A CLASS="Content" HREF="7febca9b4b720e84.htm" target="_self"> mpto_request_schedule_for_vehicle </A> <li>
+  <A CLASS="Content" HREF="f8971c583982426f.htm" target="_self"> mpto_route_data_for_planning </A> <li>
+  <A CLASS="Content" HREF="31c73da54b19071e.htm" target="_self"> mpto_service_planning_strategies </A> <li>
+  <A CLASS="Content" HREF="f8971c583982429f.htm" target="_self"> mpto_typical_travel_times </A> <li>
+  <A CLASS="Content" HREF="f8971ea23982641b.htm" target="_self"> mt.mpto_request_demand_service_change </A> <li>
+  <A CLASS="Content" HREF="f8971ea239826427.htm" target="_self"> mt.mpto_request_incident_service_change </A> <li>
+  <A CLASS="Content" HREF="f8ac180a4b0c08b9.htm" target="_self"> mt.mpto_road_network_traffic_predictions </A> <li>
+  <A CLASS="Content" HREF="f8ac19894b0c08fc.htm" target="_self"> mt.mpto_traffic_management_strategies </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f8971ea139826385.htm" target="_self"> mpto.mt_current_services </A> <li>
+  <A CLASS="Content" HREF="4c8465d14b4c0900.htm" target="_self"> mpto.pscs_PT_services_and_schedules </A> <li>
+  <A CLASS="Content" HREF="019c0c34417964fd.htm" target="_self"> mpto.ptja_available_pt_services </A> <li>
+  <A CLASS="Content" HREF="d4d2de35406b0b83.htm" target="_self"> mpto.ptja_pt_services_for_trip_monitoring </A> <li>
+  <A CLASS="Content" HREF="f8971c5739824215.htm" target="_self"> mpto_fare_strategies </A> <li>
+  <A CLASS="Content" HREF="042308c54b2a0410.htm" target="_self"> mpto_PT_schdeules_for_demand_services </A> <li>
+  <A CLASS="Content" HREF="74f680294b270501.htm" target="_self"> mpto_PT_schedules_for_vehicle_sharing </A> <li>
+  <A CLASS="Content" HREF="7febd1424b72126e.htm" target="_self"> mpto_requested_schedule_for_vehicle </A> <li>
+  <A CLASS="Content" HREF="31c7403d4b19079b.htm" target="_self"> mpto_revised_services_and_schedules </A> <li>
+  <A CLASS="Content" HREF="f8971c58398242a5.htm" target="_self"> mpto_up_dated_scheduling </A> <li>
+  <A CLASS="Content" HREF="f897227c39827afa.htm" target="_self"> tmms.mms-plannings </A> <li>
+  <A CLASS="Content" HREF="f897227c39827bf6.htm" target="_self"> tors.ptms-pt_planning </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14427e39be5cbf.htm" target="_self"> 10.1.0.1</A> </a></center></h5></td><td width="90%"><h5>The system shall provide effective and attractive PT.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14427f39be5ce9.htm" target="_self"> 10.1.0.3</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to assist PT operators in planning for the optimum use of existing resources to meet the demand.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14427f39be5d07.htm" target="_self"> 10.1.0.4</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to analyse records of usage and operational data, and passenger surveys, to assist in the planning process.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14427f39be5d1f.htm" target="_self"> 10.1.1.1</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to produce optimum vehicle schedules that include links, points, day types, vehicle types, demand types, time bands, limits based on demand etc.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="86c28ae8485a0146.htm" target="_self"> 10.1.1.3</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to produce PT schedules that reflect the needs of the travellers.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428539be619f.htm" target="_self"> 2.1.0.1</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to exchange traffic and travel information between adjacent TICs to enhance local information.</h5></td></tr></table></div>
+</BODY> </HTML>

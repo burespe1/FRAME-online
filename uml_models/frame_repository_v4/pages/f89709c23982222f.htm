@@ -1,0 +1,555 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 6.5.3 Trip Planning
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <div id="ObjectTitle">
+<Table id="ObjectTitleTable" class="ObjectTitleTable" cellpadding="0" cellspacing="0"  width = "100%">
+<TR>
+<TD width="5%" height ="35" align = "left">
+<img src="../standard/busf.gif"/>
+</TD>
+<TD width="20%" height ="35" align = "left">
+<span class="ObjectTitle_Type">
+High Level Function</span>
+</TD>
+<TD width="75%" height ="35" align = "left">
+<span class="ObjectTitle_Name">6.5.3 Trip Planning</span>
+</TD>
+</TR>
+ </Table>
+</div>
+<table border="0" cellpadding="0" cellspacing="0"  class="InvisibleTable">
+<tr>
+    	 
+<td id="Tab" class="Tab">	&nbsp;Diagram&nbsp;</td>
+ <td id="Tab" class="Tab">&nbsp;Definition&nbsp;</td>
+ <td class="TabFiller" width="100%">&nbsp;</td>
+<td align="center" onclick="OnFitWidthClick();"  id="ZoomButton" class="ZoomButton" title="Fit to width">
+<img src="../standard/ws_fitwidth.gif"></img></td>
+<td align="center" onclick="OnRegularClick();" id="ZoomButton" class="ZoomButton" title="Actual size">
+<img src="../standard/ws_actual.gif"></img></td>
+<td align="center" onmousedown="OnIncrStart();" onmouseup="OnIncrStop();" id="ZoomButton" class="ZoomButton" title="Zoom in">
+<img src="../standard/ws_zoomin.gif"></img></td>
+<td align="center" onmousedown="OnDecrStart();" onmouseup="OnDecrStop();" id="ZoomButton" class="ZoomButton" title="Zoom out">
+<img src="../standard/ws_zoomout.gif"></img></td>
+<td style="display:none" id="TabMemoryName">TabMemoryProcess</td>	</tr>
+</table>
+
+<div id="ContentTab" class="ContentTab">
+	<table id="TabDiagList" class="TabDiagList" border="0" cellpadding="0" cellspacing="0" width="450">
+	          <tr>
+          <td width="16">
+                    <img src="../standard/diag.gif"/></td>
+<td id="TabDiag"class="TabDiag">
+DFD 6.5.3 Trip Planning</td>
+</tr>
+              </Table>
+<div id="ContentTabDiag" class="ContentTabDiag">
+      <p>
+<p class="DiagName">DFD 6.5.3 Trip Planning</p><p>
+<center>
+<h5>This is a DFD diagram which provides a description of the function in the ITS environment</h5>
+  <MAP CLASS="Content" NAME="3D678F9B416E8B9B"> 
+    <AREA href="0ad42f244bcf03d0.htm" shape="rect" coords="8, 1086, 260, 1100"   target="_self"  title="It contains the request for a route to be produced for a hazardous goods vehicle from its current location to a specified destination, using a set of specific criteria."> 
+    </AREA> 
+    <AREA href="04b417424bd00532.htm" shape="rect" coords="387, 1082, 658, 1096"   target="_self"  title="It contains the response to a previous request for a route to be produced for a hazardous goods vehicle from its current location to a specified destination, using a set of specific criteria."> 
+    </AREA> 
+    <AREA href="777b86384bc4081d.htm" shape="rect" coords="475, 173, 702, 187"   target="_self"  title="It contains suggested changes to the criteria used to create Vehicle Trip Plans.&nbsp;&nbsp;These changes are based on the experiences gained from implementing already prepared Trip Plans and will be used in future Trip Plan preparation."> 
+    </AREA> 
+    <AREA href="12161ade4bb3080c.htm" shape="rect" coords="443, 154, 702, 168"   target="_self"  title="It contains revised data about the way in which the Vehicle Trip Plan that a Driver is currently using is to be modified.&nbsp;&nbsp;It is sent when it is necessary for the Trip Plan to be changed, either because the Driver has requested it, or because the road conditions have changed such that the trip plan needs to be improved."> 
+    </AREA> 
+    <AREA href="12161cbe4bb30866.htm" shape="rect" coords="809, 101, 1066, 116"   target="_self"  title="It contains the results from a request for changes to a Vehicle Trip Plan that was previously prepared for the Driver and is now being implemented.&nbsp;&nbsp;The request was initiated because either the Driver wants to change this Trip Plan during its implementation, or the road conditions make a change advisable.&nbsp;&nbsp;In both cases the revised Trip Plan will be presented to the Driver for acceptance before it is implemented."> 
+    </AREA> 
+    <AREA href="810b82684bb001a8.htm" shape="rect" coords="809, 118, 1008, 132"   target="_self"  title="It contains the description of a Vehicle Trip Plan that has been produced as a result of a previous request, resulting from input from the Driver."> 
+    </AREA> 
+    <AREA href="66ff6d014bac02ad.htm" shape="rect" coords="512, 134, 702, 148"   target="_self"  title="It contains data from which a Vehicle Trip Plan is to be prepared.&nbsp;&nbsp;Most of the data will have been provided by the Driver, either directly for this trip, or from data provided for previous trips.&nbsp;&nbsp;Other data may be provided by Vehicle Systems."> 
+    </AREA> 
+    <AREA href="7b11c7fb4b8f2209.htm" shape="rect" coords="514, 115, 702, 129"   target="_self"  title="It contains routes through the urban road network that are being recommended by the TCC, either as a result of Operator input, or as part of a traffic management strategy.&nbsp;&nbsp;The recommended routes may apply to all Vehicles or to specific type(s) of Vehicle."> 
+    </AREA> 
+    <AREA href="7b11c74f4b8f21e8.htm" shape="rect" coords="491, 95, 702, 109"   target="_self"  title="It contains routes through the inter-urban road network that are being recommended by the TCC, either as a result of Operator input, or as part of a traffic management strategy.&nbsp;&nbsp;The recommended routes may apply to all Vehicles or to specific type(s) of Vehicle."> 
+    </AREA> 
+    <AREA href="7b11c31b4b8f2191.htm" shape="rect" coords="103, 21, 208, 35"   target="_self"  title="It contains current and predicted travel times for each segment in the road network that have been received from another navigation device."> 
+    </AREA> 
+    <AREA href="7b11b7e74b8f1ba3.htm" shape="rect" coords="329, 23, 436, 42"   target="_self"  title="It contains current and predicted travel times for each segment in the road network that are being sent to another navigation device."> 
+    </AREA> 
+    <AREA href="45df81a24b7d1533.htm" shape="rect" coords="822, 345, 905, 380"   target="_self"  title="It contains an update to the current criteria that are used in the planning of trips in order to comply with trip planning and/or travel management policies."> 
+    </AREA> 
+    <AREA href="45df81814b7d1526.htm" shape="rect" coords="894, 402, 997, 430"   target="_self"  title="It contains the requested current criteria that are used in the planning of trips in order to comply with trip planning and/or travel management policies for output to the Travel Information Operator."> 
+    </AREA> 
+    <AREA href="45df815d4b7d1519.htm" shape="rect" coords="718, 358, 805, 386"   target="_self"  title="It contains a request for the current criteria that are used in the planning of trips in order to comply with trip planning and/or travel management policies for output to the Travel Information Operator."> 
+    </AREA> 
+    <AREA href="45df811d4b7d150c.htm" shape="rect" coords="952, 482, 1055, 525"   target="_self"  title="It contains the current criteria that are used in the planning of trips in order to comply with trip planning and/or travel management policies."> 
+    </AREA> 
+    <AREA href="45df80d14b7d14ff.htm" shape="rect" coords="699, 516, 807, 558"   target="_self"  title="It contains an update to the current criteria that the Travel Information Operator requires to be used in the planning of trips in order to comply with trip planning and/or travel management policies."> 
+    </AREA> 
+    <AREA href="45df809a4b7d14f2.htm" shape="rect" coords="697, 465, 808, 508"   target="_self"  title="It contains a request for the current criteria that are used in the planning of trips in order to comply with trip planning and/or travel management policies."> 
+    </AREA> 
+    <AREA href="45df80014b7d14d9.htm" shape="rect" coords="838, 470, 922, 553"   target="_self"  title="This Function shall be capable of providing the following facilities:"> 
+    </AREA> 
+    <AREA href="330f54544b470f19.htm" shape="rect" coords="891, 964, 1049, 988"   target="_self"  title="It contains details of a green wave route that has been created using input previously provided."> 
+    </AREA> 
+    <AREA href="330f52544b470eca.htm" shape="rect" coords="586, 981, 780, 999"   target="_self"  title="It contains details of the origin, destination and any compulsory &quot;way points&quot; so that a green wave route can be created."> 
+    </AREA> 
+    <AREA href="a519b63c4b1f06ba.htm" shape="rect" coords="809, 144, 995, 158"   target="_self"  title="It contains data about toll for bridges and tunnels and other parts of the road network that has been obtained for use in Traveller Trip Plans and is now being made available for use in travel information."> 
+    </AREA> 
+    <AREA href="a519b4854b1f067d.htm" shape="rect" coords="809, 164, 1038, 179"   target="_self"  title="It contains data about the services provided by other transport modes that has been obtained for use in Traveller Trip Plans and is now being made available for use in travel information."> 
+    </AREA> 
+    <AREA href="603d7bd04b1f05fc.htm" shape="rect" coords="809, 184, 1009, 198"   target="_self"  title="It contains data about Point of Interest (POI) and Personal Services (PS) that has been obtained for use in Traveller Trip Plans and is now being made available for use in travel information."> 
+    </AREA> 
+    <AREA href="603d7aa64b1f05cc.htm" shape="rect" coords="481, 382, 586, 396"   target="_self"  title="It contains information about road and traffic conditions that is used for trip planning but is being made available for use in travel information."> 
+    </AREA> 
+    <AREA href="603d79e84b1f059c.htm" shape="rect" coords="481, 400, 576, 425"   target="_self"  title="It contains information about PT services that is used for trip planning but is being made available for use in travel information."> 
+    </AREA> 
+    <AREA href="603d789a4b1f0550.htm" shape="rect" coords="430, 461, 539, 490"   target="_self"  title="It contains data from the PT Trip Planning Data Store that may be used to provide travel information to Travellers."> 
+    </AREA> 
+    <AREA href="603d78414b1f053b.htm" shape="rect" coords="312, 461, 411, 489"   target="_self"  title="It contains data from the Road Trip Planning Data Store that may be used to provide travel information to Travellers."> 
+    </AREA> 
+    <AREA href="603d75aa4b1f050e.htm" shape="rect" coords="382, 370, 459, 437"   target="_self"  title="This Function shall be capable of providing the following facilities:"> 
+    </AREA> 
+    <AREA href="e7f2feac4b140e07.htm" shape="rect" coords="12, 233, 209, 247"   target="_self"  title="It contains static data about the inter-urban road network for use in trip plan preparation."> 
+    </AREA> 
+    <AREA href="e7f2fcd54b140c5d.htm" shape="rect" coords="36, 215, 209, 230"   target="_self"  title="It contains static data about the urban road network for use in trip plan preparation."> 
+    </AREA> 
+    <AREA href="a450aa9c4b130542.htm" shape="rect" coords="505, 839, 703, 853"   target="_self"  title="It contains static data about the urban road network that is being added the Trip Planning Data Store by the Travel Information Operator for use in trip plans.&nbsp;&nbsp;This data may be a sub-set of the static data needed for Traffic Management."> 
+    </AREA> 
+    <AREA href="a450a5c04b1301ae.htm" shape="rect" coords="481, 816, 703, 831"   target="_self"  title="It contains static data about the inter-urban road network that is being added the Trip Planning Data Store by the Travel Information Operator for use in trip plans.&nbsp;&nbsp;This data may be a sub-set of the static data needed for Traffic Management."> 
+    </AREA> 
+    <AREA href="46d355754b0e03f7.htm" shape="rect" coords="0, 154, 208, 168"   target="_self"  title="It contains predictions of the future traffic conditions within the total road network based on the results from traffic simulations."> 
+    </AREA> 
+    <AREA href="5c7587874b010b40.htm" shape="rect" coords="46, 95, 208, 110"   target="_self"  title="It contains details of the occupancy of the service area for different types of vehicles.&nbsp;&nbsp;These are heavy goods vehicles, coaches/buses and cars."> 
+    </AREA> 
+    <AREA href="b3d7b8ee417c0007.htm" shape="rect" coords="809, 220, 994, 240"   target="_self"  title="It contains the results from a request for changes to a trip plan that was previously prepared for the Traveller and is now being implemented.&nbsp;&nbsp;The request was initiated because either the Traveller wanted to change this trip plan during its implementation, or the travel conditions make a change advisable.&nbsp;&nbsp;In both cases, the revised trip plan will be presented to the Traveller for acceptance before it is implemented."> 
+    </AREA> 
+    <AREA href="f8971ea4398266eb.htm" shape="rect" coords="809, 64, 966, 79"   target="_self"  title="  It contains all the information necessary to define the different types of contract that a user can place with an operator. The data flow includes the following elements :"> 
+    </AREA> 
+    <AREA href="f8971ea139826361.htm" shape="rect" coords="28, 970, 261, 988"   target="_self"  title="It contains all information and requests that can be useful for on-board use.  Details of the contents of this Data Flow will be provided in the Documents produced by the COMETA Project."> 
+    </AREA> 
+    <AREA href="019c0c34417964fd.htm" shape="rect" coords="505, 684, 662, 699"   target="_self"  title="It provides up-to-date details of the services currently being offered to travellers by the Public Transport providers that can be of use in trip planning or as part of information that is provided to Travellers."> 
+    </AREA> 
+    <AREA href="40d64866416a0563.htm" shape="rect" coords="828, 810, 923, 852"   target="_self"  title="It contains a request from the Traveller Information Operator for information about trip-planning data."> 
+    </AREA> 
+    <AREA href="40d64847416a0527.htm" shape="rect" coords="316, 527, 417, 556"   target="_self"  title="It contains previously requested information about a journey involving the use of transport modes other than the private car, or a road-based freight vehicle."> 
+    </AREA> 
+    <AREA href="40d647e4416a04b9.htm" shape="rect" coords="519, 792, 703, 812"   target="_self"  title="It contains data that is being read from the Road Trip Planning Data Store and is for use by the Traveller Information Operator."> 
+    </AREA> 
+    <AREA href="40d647e0416a04af.htm" shape="rect" coords="780, 691, 875, 719"   target="_self"  title="It contains data about Public Transport services that is being read from the PT Trip Planning Data Store and is for use by the Traveller Information Operator."> 
+    </AREA> 
+    <AREA href="40d647c6416a0487.htm" shape="rect" coords="532, 859, 703, 874"   target="_self"  title="It contains responses to previous requests from the Traveller Information Operator for information about trip-planning data."> 
+    </AREA> 
+    <AREA href="e7e4ff89399b07de.htm" shape="rect" coords="893, 936, 1052, 958"   target="_self"  title="It contains a route for use by vehicle(s) belonging to one of the Emergency Services, for which a route request has previously been made."> 
+    </AREA> 
+    <AREA href="e7e4fea1399b07c1.htm" shape="rect" coords="538, 945, 782, 959"   target="_self"  title="It contains the request for a route to be planned for use by vehicle(s) belonging to one of the Emergency Services.&nbsp;&nbsp;The route will enable them to get to the current incident with the minimum of delay."> 
+    </AREA> 
+    <AREA href="d4d2198d406c3ea1.htm" shape="rect" coords="621, 964, 784, 979"   target="_self"  title="It contains the request for an update or revision to the previously requested route for use by Vehicle(s) belonging to one of the Emergency Services."> 
+    </AREA> 
+    <AREA href="40d64807416a04f5.htm" shape="rect" coords="186, 650, 265, 707"   target="_self"  title="It contains information about hazardous goods and its use of the road network that is being stored in the Road Trip Planning Data Store for use in subsequent trip planning activities."> 
+    </AREA> 
+    <AREA href="f8971ea4398266c7.htm" shape="rect" coords="388, 1006, 469, 1022"   target="_self"  title=" No route could be provided in case of unauthorised hazardous goods transport.  It may be received either by the ground or by the on-board part of the functional Area."> 
+    </AREA> 
+    <AREA href="5eae74af3984179a.htm" shape="rect" coords="387, 1043, 593, 1059"   target="_self"  title=" It contains the response to a previous request for information about the current weather situation.  It may be received either by the ground or by the on-board part of the functional Area."> 
+    </AREA> 
+    <AREA href="f8971ea4398266af.htm" shape="rect" coords="387, 1062, 579, 1078"   target="_self"  title=" It contains the response to a previous request for information about the current traffic situation.  It may be received either by the ground or by the on-board part of the functional Area."> 
+    </AREA> 
+    <AREA href="f8971ea4398266a9.htm" shape="rect" coords="387, 1025, 587, 1040"   target="_self"  title="It contains the response to a previous request for information about the current pollution situation.  It may be received either by the ground or by the on-board part of the functional Area."> 
+    </AREA> 
+    <AREA href="40d647fd416a04e1.htm" shape="rect" coords="158, 865, 257, 894"   target="_self"  title="It contains data about the road network and its forecast conditions that is being retrieved from the Road Trip Planning Data Store for use in providing information for Freight and Fleet Management."> 
+    </AREA> 
+    <AREA href="40d647e9416a04c3.htm" shape="rect" coords="184, 806, 306, 844"   target="_self"  title="It contains data about the road network and its forecast conditions that is being retrieved from the Road Trip Planning Data Store for use in planning a route for a freight vehicle."> 
+    </AREA> 
+    <AREA href="f8971ea139826379.htm" shape="rect" coords="74, 1043, 260, 1057"   target="_self"  title="It contains all criteria that are useful for route optimisation for a trip. It includes start time and location, end time and location, intermediate location(s) and time(s), cargo description, vehicle description, location time, etc."> 
+    </AREA> 
+    <AREA href="5eae74ae39841674.htm" shape="rect" coords="64, 1065, 260, 1079"   target="_self"  title="It contains a request for information about the current weather situation.  The data flow may be sent either from the ground or from the on-board part of the Manage Freight and Fleet Operations Area."> 
+    </AREA> 
+    <AREA href="f8971ea13982636d.htm" shape="rect" coords="74, 1019, 260, 1033"   target="_self"  title="  It contains information about the current traffic situation.  The data flow may be sent either from the ground or from the on-board part of the Manage Freight and Fleet Operations Area."> 
+    </AREA> 
+    <AREA href="f8971ea139826367.htm" shape="rect" coords="66, 995, 261, 1013"   target="_self"  title="  It contains a request for information about the current pollution situation.  The data flow may be sent either from the ground or from the on-board part of the Manage Freight and Fleet Operations Area."> 
+    </AREA> 
+    <AREA href="f8971ea13982634f.htm" shape="rect" coords="4, 949, 261, 963"   target="_self"  title="It contains the origin/destination points, departure/arrival time constraints and in case of hazardous good transport the vehicle and cargo characteristics - all information - required to determine the route.  It may be sent either from the ground or from the on-board part of the functional Area. It is composed of several different bits of information: departure/arrival time constraints, origin/destination points, plus vehicle and cargo characteristics."> 
+    </AREA> 
+    <AREA href="40d64832416a04ff.htm" shape="rect" coords="586, 608, 683, 636"   target="_self"  title="It contains information about Public Transport services that is being stored in the PT Trip Planning Data Store for use in subsequent trip planning activities."> 
+    </AREA> 
+    <AREA href="f8971ea2398263df.htm" shape="rect" coords="544, 702, 662, 716"   target="_self"  title="It contains information about fares for Public Transport services that can be of use in trip planning or as part of information that is provided to Travellers."> 
+    </AREA> 
+    <AREA href="40d647ef416a04cd.htm" shape="rect" coords="588, 928, 780, 942"   target="_self"  title="It contains data about the road network and its forecast conditions that is being retrieved from the Road Trip Planning Data Store for use in planning a route for an Emergency Vehicle."> 
+    </AREA> 
+    <AREA href="e53ff55c41630046.htm" shape="rect" coords="802, 923, 872, 1000"   target="_self"  title="This Function shall be capable of providing the following facilities:"> 
+    </AREA> 
+    <AREA href="40d6484d416a0531.htm" shape="rect" coords="300, 584, 392, 613"   target="_self"  title="It contains new and/or revised data about road network that is being stored in the Road Trip Planning Data Store having been provided by the Traveller Information Operator."> 
+    </AREA> 
+    <AREA href="40d64838416a0509.htm" shape="rect" coords="171, 419, 279, 448"   target="_self"  title="It contains information about the road network and its current state that is being stored in the Road Trip Planning Data Store for use in subsequent trip planning activities."> 
+    </AREA> 
+    <AREA href="f8971ea3398265ad.htm" shape="rect" coords="32, 197, 208, 211"   target="_self"  title="  It contains general weather information to produce an appropriate route."> 
+    </AREA> 
+    <AREA href="f8971ea3398265a7.htm" shape="rect" coords="32, 174, 208, 188"   target="_self"  title="  It contains data that can be used to create information promoting walking and cycling that is to be made available to travellers.  This data will be issued as part of a demand management strategy that is designed to promote the use of these modes of travel."> 
+    </AREA> 
+    <AREA href="f8971ea33982659b.htm" shape="rect" coords="32, 133, 208, 147"   target="_self"  title="&nbsp;&nbsp;It contains data about current traffic conditions within the urban road network. These conditions will include actual traffic flows and journey times for each segment of the urban road network."> 
+    </AREA> 
+    <AREA href="f8971ea339826571.htm" shape="rect" coords="114, 114, 208, 130"   target="_self"  title="  It contains ambient conditions information about air pollution levels in a certain areas to support freight route planning.  In case of severe pollution some kinds of transport may be forbidden.  So such an area has to be circumvented."> 
+    </AREA> 
+    <AREA href="f8971ea339826553.htm" shape="rect" coords="2, 77, 208, 91"   target="_self"  title="It contains data about current traffic conditions within the inter-urban road network. These conditions will include actual traffic flows and journey times for each segment of the inter-urban road network."> 
+    </AREA> 
+    <AREA href="f8971ea33982653b.htm" shape="rect" coords="32, 57, 209, 71"   target="_self"  title="  It contains information about an incident that has been detected by the Manage Traffic functions about which information needs to be sent to travellers."> 
+    </AREA> 
+    <AREA href="f8971ea23982652f.htm" shape="rect" coords="68, 39, 209, 54"   target="_self"  title="  It contains the current car park occupancies, necessary for trip planning."> 
+    </AREA> 
+    <AREA href="40d64841416a051d.htm" shape="rect" coords="551, 218, 702, 235"   target="_self"  title="It contains the description of a trip that a Traveller is planning, including origin, destination, places to be included in the trip, modes for each part of the trip, plus details of required PT services and those provided by other modes and information from the GTP Data Store."> 
+    </AREA> 
+    <AREA href="8f209db2416b0022.htm" shape="rect" coords="522, 236, 702, 252"   target="_self"  title="It contains revised data about the way in which the trip plan that a Traveller is currently using is to be modified.&nbsp;&nbsp;It is sent when it is necessary for the trip plan to be changed, either because the Traveller has requested it, or because the travel conditions have changed such that the trip plan needs to be improved."> 
+    </AREA> 
+    <AREA href="40d64801416a04eb.htm" shape="rect" coords="510, 306, 606, 335"   target="_self"  title="It contains data about the road network and its forecast conditions that is being retrieved from the Road Trip Planning Data Store for use in planning a Traveller&#8217;s trip."> 
+    </AREA> 
+    <AREA href="40d647f8416a04d7.htm" shape="rect" coords="582, 348, 687, 377"   target="_self"  title="It contains data about Public Transport services that is being retrieved from the PT Trip Planning Data Store for use in planning a Traveller&#8217;s trip."> 
+    </AREA> 
+    <AREA href="86f29089416f017e.htm" shape="rect" coords="518, 198, 702, 212"   target="_self"  title="It contains revised data about a Traveller&#8217;s intended trip plan.&nbsp;&nbsp;It is sent when a Traveller wishes to revise the data because the trip plan that has been produced is not to their satisfaction."> 
+    </AREA> 
+    <AREA href="40d647bb416a0473.htm" shape="rect" coords="466, 24, 702, 38"   target="_self"  title="It contains previously requested information about a journey involving the use of transport modes other than the private car, or a road-based freight vehicle."> 
+    </AREA> 
+    <AREA href="40d647a8416a0469.htm" shape="rect" coords="582, 64, 702, 78"   target="_self"  title="It contains information such as location, opening times, services that are provided, prices, etc. about &quot;Personal Services&quot; (e.g. doctor, chemist, etc.,) in a specific locality.&nbsp;&nbsp;The arrival of the Data Flow may be as a result of a previous request, or it may be unsolicited."> 
+    </AREA> 
+    <AREA href="fa5635ff4165006f.htm" shape="rect" coords="579, 45, 702, 59"   target="_self"  title="It contains information, such as their location, opening times, price of service, nearest transport service points, access information, etc. about &quot;Points of Interest&quot; (e.g. monuments, museums, parks, gardens, etc.) in a specific locality.&nbsp;&nbsp;The arrival of the Data Flow may be as a result of a previous request, or it may be unsolicited."> 
+    </AREA> 
+    <AREA href="f8971ea33982664f.htm" shape="rect" coords="576, 5, 702, 19"   target="_self"  title="It is used to provide the tariff associated with a service. The data flow includes the following elements:"> 
+    </AREA> 
+    <AREA href="40d6485a416a054f.htm" shape="rect" coords="809, 3, 1001, 17"   target="_self"  title="It contains a request for information about a journey involving the use of transport modes other than the private car, or a road-based freight vehicle."> 
+    </AREA> 
+    <AREA href="40d64855416a0545.htm" shape="rect" coords="809, 38, 971, 52"   target="_self"  title="It contains a request for information, such as location, opening times, services available, prices, etc., about &quot;Points of Interest&quot;, e.g. doctors, chemists, etc. in a specific locality."> 
+    </AREA> 
+    <AREA href="40d64851416a053b.htm" shape="rect" coords="809, 20, 977, 34"   target="_self"  title="It contains a request for information, such as location, opening times, price of service, nearest transport service points about &quot; Points of Interest&quot;, e.g. monuments, museums, parks, gardens. etc. in a specific locality"> 
+    </AREA> 
+    <AREA href="40d6483c416a0513.htm" shape="rect" coords="809, 202, 957, 216"   target="_self"  title="It contains the description of a trip that has been produced in response to a request from a Traveller.&nbsp;&nbsp;Details such as the origin, destination, other places to be passed through during the trip, modes being used for each part of the trip, plus details of the required PT services and those provided by other modes.&nbsp;&nbsp;Any changes from the trip as originally proposed by the Traveller will be highlighted."> 
+    </AREA> 
+    <AREA href="f8971ea4398266f1.htm" shape="rect" coords="809, 83, 926, 97"   target="_self"  title="  It contains information about the different services available to the user and answers a request made by the user. The data flow may include the following elements, depending on the request :"> 
+    </AREA> 
+    <AREA href="e53ffe4e41630087.htm" shape="rect" coords="556, 532, 650, 586"   target="_self"  title="This Data Store shall be used within the Provide Traveller Journey Assistance Area. It shall contain information about the services provided by the Public Transport operations plus the fares that will be charged and shall be for use in planning trips."> 
+    </AREA> 
+    <AREA href="e53ffcc44163007f.htm" shape="rect" coords="180, 481, 274, 568"   target="_self"  title="This Data Store shall be used within the Provide Traveller Journey Assistance Area. It shall contain information about the road network and the traffic conditions within it for use in planning trips."> 
+    </AREA> 
+    <AREA href="e53ffa3c4163005f.htm" shape="rect" coords="728, 787, 809, 877"   target="_self"  title="This Function shall be capable of providing the following facilities:"> 
+    </AREA> 
+    <AREA href="e53ff22341630030.htm" shape="rect" coords="285, 935, 362, 1101"   target="_self"  title="This Function shall be capable of providing the following facilities:"> 
+    </AREA> 
+    <AREA href="e53fee314163001a.htm" shape="rect" coords="687, 675, 750, 727"   target="_self"  title="This Function shall be capable of providing the following facilities:"> 
+    </AREA> 
+    <AREA href="d291d5074163001e.htm" shape="rect" coords="231, 17, 307, 253"   target="_self"  title="This Function shall be capable of providing the following facilities:"> 
+    </AREA> 
+    <AREA href="671767da41610002.htm" shape="rect" coords="723, 0, 787, 257"   target="_self"  title="This Function shall be capable of providing the following facilities:"> 
+    </AREA> 
+  </MAP> 
+  <IMG CLASS="Content" SRC="../images/f89709c23982222f_i.png" USEMAP="#3D678F9B416E8B9B" BORDER=0> 
+  </IMG> </center>
+</div> 
+      </div>
+
+ <div id="ContentTab" class="ContentTab">
+
+<h3>Overview</H3>
+<H5>This High-level Function shall plan the road based portions of trips.&nbsp;&nbsp;It shall use road network and regular traffic information, plus weather and traffic perturbation information. If the trip is for HGV or freight vehicles the Function shall take into account route restrictions.&nbsp;&nbsp;Any restrictions dictated by the cargo type (tunnels, residential areas, etc.) shall also be considered.&nbsp;&nbsp;For emergency vehicles a detailed route and schedule shall be produced in the form of a &#39;green wave&#39;.&nbsp;&nbsp;Road trips for cyclists and pedestrians shall be produced by the Function using the road network data and related perturbations, but disregarding traffic incident information.</H5>
+<h3>Diagrams</H3> 
+<table border="1" width="100%">
+<tr>
+<td><h5>
+The Diagram(s) is(are) the Diagram(s) where you can find the function
+</td>
+</tr>
+<tr>
+<td width="50%">
+<ul>
+<li>The first diagram, if exists, is a DFD diagram which provides the context of the function</li>
+<li>The second Diagram, if exists, is a Functional Tree which provides a hierarchical description of the function into subfunctions</li>
+</ul>
+</h5>
+</td>
+<td width="100%">
+<h5>
+
+
+
+<li>DFD 6.5 Prepare Trip Plan</li></a>
+<h5>
+
+<a href="F897F8DC39810031.HTM?DiagTab=1" Target="_self">
+
+
+<li>Functional Tree of Area 6</li></a></h5>
+</td>
+</tr>
+</table>
+<h3>Parent</H3>
+<ul><h5><li>
+  <A CLASS="Content" HREF="f897fea239810472.htm" target="_self"> 6. Provide Traveller Journey Assistance::6.5 Prepare Trip Plan</A> </ul>
+<ul></h5></ul>
+<h3>Component lower level functions</H3>
+<ul><h5><li>
+  <A CLASS="Content" HREF="603d75aa4b1f050e.htm" target="_self"> 6.5.3.10 Obtain Data for Traveller Information</A> <li>
+  <A CLASS="Content" HREF="e53ff55c41630046.htm" target="_self"> 6.5.3.11 Provide Green Wave Routes</A> <li>
+  <A CLASS="Content" HREF="45df80014b7d14d9.htm" target="_self"> 6.5.3.12 Provide Trip Planning Operator Interface</A> <li>
+  <A CLASS="Content" HREF="e53ff22341630030.htm" target="_self"> 6.5.3.13 Provide Data &amp; Routes to Fleet Operators &amp; Drivers</A> <li>
+  <A CLASS="Content" HREF="e53fee314163001a.htm" target="_self"> 6.5.3.3 Collect PT Data</A> <li>
+  <A CLASS="Content" HREF="e53ffa3c4163005f.htm" target="_self"> 6.5.3.7 Enable Operator Access to Tip Planning Data</A> <li>
+  <A CLASS="Content" HREF="d291d5074163001e.htm" target="_self"> 6.5.3.8 Collect Data About Road Traffic</A> <li>
+  <A CLASS="Content" HREF="671767da41610002.htm" target="_self"> 6.5.3.9 Plan Trip Details</A> </h5></ul>
+<H5></H5>
+<h3>Input logical dataflows</H3>
+<ul><h5>
+
+<li>
+  <A CLASS="Content" HREF="fa5635ff4165006f.htm" target="_self"> fesp.gip-poi_information </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="40d647a8416a0469.htm" target="_self"> fesp.gip-ps_information </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="40d647bb416a0473.htm" target="_self"> fesp.mmtip-requested_travel_information </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="a450a87c4b13035d.htm" target="_self"> fo.tio-trip_planning_data_inputs </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="40d647c6416a0487.htm" target="_self"> fo.tio-trip_planning_data_requests </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="7b11c31b4b8f2191.htm" target="_self"> fors.ond-traffic_data </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f8971ea139826367.htm" target="_self"> mffo.ptja_request_on_pollution_situation </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f8971ea13982636d.htm" target="_self"> mffo.ptja_request_on_traffic_situation </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="5eae74ae39841674.htm" target="_self"> mffo.ptja_request_on_weather_situation </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f8971ea139826379.htm" target="_self"> mffo.ptja_route_optimisation_request </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="019c0c34417964fd.htm" target="_self"> mpto.ptja_available_pt_services </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="976fac634ba00b84.htm" target="_self"> mpto.ptja_service_information_for_trip_planning </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f8971ea23982652f.htm" target="_self"> mt.ptja_carpark_occupancy </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="fd120a164b210613.htm" target="_self"> mt.ptja_environmental_inputs_for_trip_planning </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f8971ea33982653b.htm" target="_self"> mt.ptja_incident_information_PRT </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f8971ea339826547.htm" target="_self"> mt.ptja_inter-urban_network_data </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="46d355754b0e03f7.htm" target="_self"> mt.ptja_road_network_traffic_predictions </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="5c7587874b010b40.htm" target="_self"> mt.ptja_service_area_occupancy </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f8971ea33982658f.htm" target="_self"> mt.ptja_urban_network_data </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f8971ea3398265a7.htm" target="_self"> mt.ptja_walking_and_cycling_info </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="71887b434bd00e92.htm" target="_self"> pscs.ptja_route_requests </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="60f465ce4ba30674.htm" target="_self"> psef.ptja_route_requests </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="1216229c4bb30c21.htm" target="_self"> pshvs.ptja_vehicle_trip_plan_data </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="86f29089416f017e.htm" target="_self"> ptja_modified_trip_plan_requirements </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="8f209db2416b0022.htm" target="_self"> ptja_revised_trip_plan_requirements </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="40d64841416a051d.htm" target="_self"> ptja_traveller_trip_requirement </A> 
+
+</h5></ul>
+<h3>Output logical dataflows</H3>
+<ul><h5>
+
+<li>
+  <A CLASS="Content" HREF="f8971ea4398266a9.htm" target="_self"> ptja.mffo_answer_on_pollution_situation </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f8971ea4398266af.htm" target="_self"> ptja.mffo_answer_on_traffic_situation </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="5eae74af3984179a.htm" target="_self"> ptja.mffo_answer_on_weather_situation </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f8971ea4398266bb.htm" target="_self"> ptja.mffo_ground_route_and other_informations </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f8971ea4398266c7.htm" target="_self"> ptja.mffo_route </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f8971ea4398266eb.htm" target="_self"> ptja.pepf_service_contract_info </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="330f54544b470f19.htm" target="_self"> ptja.pscs_green_wave_route </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="e7e4ff89399b07de.htm" target="_self"> ptja.psef_emergency_route_plan </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="1216242a4bb30c59.htm" target="_self"> ptja.pshvs_vehicle_trip_plan_responses </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="a519b7a94b1f086c.htm" target="_self"> ptja_extra_data_for_travel_information </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="603d79e84b1f059c.htm" target="_self"> ptja_PT_information </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="b3d7b8ee417c0007.htm" target="_self"> ptja_revised_trip_plan_for_approval </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="603d7aa64b1f05cc.htm" target="_self"> ptja_road_information </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="40d6483c416a0513.htm" target="_self"> ptja_traveller_trip_description </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="40d64851416a053b.htm" target="_self"> tesp.gip-request_poi_information </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="40d64855416a0545.htm" target="_self"> tesp.gip-request_ps_information </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="40d6485a416a054f.htm" target="_self"> tesp.mmtip-request_travel_information </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="40d64866416a0563.htm" target="_self"> to.tio-trip_planning_data_responses </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="620d83554b7e040d.htm" target="_self"> to.tio-trip_planning_outputs </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="7b11b7e74b8f1ba3.htm" target="_self"> tors.ond-traffic_data </A> 
+
+</h5></ul> 
+
+<ul><h5></h5></ul>
+
+<ul><h5></h5></ul>
+<h3>User needs</H3>
+<div align="right">
+<table border="1" width="100%">
+<tr>
+<td width="10%"><center><h4>Number</h4></center></td>
+<td width="90%"><h4>Description</h4></td>
+</tr>
+
+</table>
+</div>
+
+</div><script language="javascript" src="../standard/ws_tabtemplate.js"></script>
+<script language="javascript" src="../standard/ws_zoomtemplate.js"></script>
+<script language="javascript" src="../standard/ws_buttontemplate.js"></script>
+<script language="javascript" src="../standard/ws_keyshortcuttemplate.js"></script>
+            <!--<img src="../standard/busf.gif"/>-->
+
+</BODY> </HTML>

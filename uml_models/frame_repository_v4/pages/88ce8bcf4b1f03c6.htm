@@ -1,0 +1,25 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 6.6.4 Manage Travel Information Data Store
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>6.6.4 Manage Travel Information Data Store</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to take responsibility for maintaining the store of Travel Information Data.<br>(2) The ability to update the store contents with data that is received from the Produce Travel Information Function and the Travel Information Operator through the Provide Travel Information Operator Interface Function.<br>(3) The ability to output travel information to Travellers when a request is received through the Provide Traveller Information Interface Function.<br>(4) The ability to output travel information to the Output Travel Information Function at the request of the Travel Information Operator.<br>(5) The ability to provide data from the store to the Provide Travel Information Operator Interface Function as a result of a request from the Travel Information Operator.<br></div></H5><h3>Functional Requirements</H3><h5>(a) continuously monitor for the receipt of the updated travel information and request travel information data flows<br/>(b) when the first of the data flows in (a) is received, load the new information into the store of Travel Information Data in the load travel information data flow, deleting any information that it replaces<br/>(c) when the second of the data flows in (a) is received, get the required travel information from the store of Travel Information Data using the read travel information data flow and send it to the Provide Travel Information Interface function in the travel information response data flow<br/>(d) when the output travel information data flow is received, get the requested information from the store of Travel Information Data using the read travel information data flow and send it to the Output Travel Information function in the travel information for output data flow<br/>(e) when the request current travel information data flow is received, get all of the current information from the store of Travel Information Data using the read travel information data flow and send it to the Provide Travel Information Operator Interface function in the requested current travel information data flow.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="88CE896C4B1F018C.HTM?DiagTab=1" Target="_self">DFD 6.6 Provide Traveller Information</a><h5><li> <a href="F897F8DC39810031.HTM?DiagTab=0" Target="_self">Functional Tree of Area 6</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="88ce896c4b1f018c.htm" target="_self"> 6.6 Provide Traveller Information</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="ce7edd6b4b1f04ce.htm" target="_self"> ptja_output_travel_information </A> <li>
+  <A CLASS="Content" HREF="a519bc874b1f0aa2.htm" target="_self"> ptja_read_travel_information </A> <li>
+  <A CLASS="Content" HREF="ce7eda184b1f0474.htm" target="_self"> ptja_request_current_travel_information </A> <li>
+  <A CLASS="Content" HREF="a519bd4d4b1f0acd.htm" target="_self"> ptja_request_travel_information </A> <li>
+  <A CLASS="Content" HREF="205f26544b740520.htm" target="_self"> ptja_updated_travel_information </A> <li>
+  <A CLASS="Content" HREF="ce7ed6804b1f03e6.htm" target="_self"> ptja_update_other_travel_data </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="a519acec4b1f0469.htm" target="_self"> ptja_load_travel_information </A> <li>
+  <A CLASS="Content" HREF="ce7edb304b1f049f.htm" target="_self"> ptja_requested_current_travel_information </A> <li>
+  <A CLASS="Content" HREF="a519bec84b1f0b12.htm" target="_self"> ptja_travel_information_for_output </A> <li>
+  <A CLASS="Content" HREF="d25b17814b740f28.htm" target="_self"> ptja_travel_information_response </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr></table></div>
+</BODY> </HTML>

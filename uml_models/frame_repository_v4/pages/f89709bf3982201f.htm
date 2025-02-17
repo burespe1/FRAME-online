@@ -1,0 +1,31 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 3.3.1 Receive Information on Travel Factors
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>3.3.1 Receive Information on Travel Factors</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to receive data about the use of transport modes by Travellers in the geographic area served by the System from other functionality in the System, and/or external entities such as the Weather Service and Multi-Modal Systems.<br>(2) The ability to check the received data for consistency before being sent to another part of the System functionality for storage.<br></div></H5><h3>Functional Requirements</H3><h5>(a) when any of the trigger flows is received, the data shall be collected and checked for consistency<br/>(b) the time and date stamps shall be added if found to be missing<br/>(c) similarly the source identity shall be added if it is not found in the data, using the origin Function of the data flow<br/>(d) if the location is not included in the data, it shall be marked as &quot;unknown&quot;<br/>(e) when (b) through to (d) are complete the data shall be sent for storage using the trigger output data flow.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FEA23981041E.HTM?DiagTab=1" Target="_self">DFD 3.3  Manage Demand</a><h5><li> <a href="F897FEA23981041E.HTM?DiagTab=1" Target="_self">Functional tree 3.3</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897fea23981041e.htm" target="_self"> 3.3 Manage Demand</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="8306b3aa3a38058b.htm" target="_self"> fmms.mms-ferry_service_information </A> <li>
+  <A CLASS="Content" HREF="8306b3523a38057d.htm" target="_self"> fmms.mms-rail_service_information </A> <li>
+  <A CLASS="Content" HREF="f897227b39827986.htm" target="_self"> fws-weather_information </A> <li>
+  <A CLASS="Content" HREF="f8971ea13982637f.htm" target="_self"> mpto.mt_current_fares </A> <li>
+  <A CLASS="Content" HREF="f8971ea139826385.htm" target="_self"> mpto.mt_current_services </A> <li>
+  <A CLASS="Content" HREF="f8971ea13982639d.htm" target="_self"> mpto.mt_PT_service_variations </A> <li>
+  <A CLASS="Content" HREF="f8971c5839824311.htm" target="_self"> mt_carpark_occupancy_for_demand_management </A> <li>
+  <A CLASS="Content" HREF="f8971c583982436b.htm" target="_self"> mt_demand_management_environmental_data </A> <li>
+  <A CLASS="Content" HREF="f8971c59398243e9.htm" target="_self"> mt_inter-urban_current_traffic_data_for_demand </A> <li>
+  <A CLASS="Content" HREF="f8971c5939824485.htm" target="_self"> mt_inter-urban_traffic_data_for_demand </A> <li>
+  <A CLASS="Content" HREF="f8971c5a398245b1.htm" target="_self"> mt_service_area_occupancies_for_demand_management </A> <li>
+  <A CLASS="Content" HREF="f8971c5b39824623.htm" target="_self"> mt_urban_current_traffic_data_for_demand </A> <li>
+  <A CLASS="Content" HREF="f8971c5b398246cb.htm" target="_self"> mt_urban_traffic_data_for_demand </A> <li>
+  <A CLASS="Content" HREF="f8971ea33982662b.htm" target="_self"> pepf.mt_infra_usage_info </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f8971c5b3982460b.htm" target="_self"> mt_updated_demand_data </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442b139be831d.htm" target="_self"> 7.3.0.2</A> </a></center></h5></td><td width="90%"><h5>The system shall receive up-to-date information on those factors that will influence the demand management strategy, e.g. traffic levels, car park usage, other modes usage, fares, tolls, etc.</h5></td></tr></table></div>
+</BODY> </HTML>

@@ -1,0 +1,51 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 8.2.1.1 Negotiate Freight Operator Requests
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>8.2.1.1 Negotiate Freight Operator Requests</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to take responsibility for the commercial interface between Freight Management and Fleet Management.<br>(2) The ability to handle the Freight Centre orders and contracts.<br>(3) The ability to delegate finding of the best appropriate vehicle in order to optimise the fleet resources to the appropriate functionality.<br>(4) Once the commercial negotiation is achieved, the ability to hand over further activity to the functionality in charge of performing the fleet transport operation, including closure of the order from an administrative point of view, plus invoicing and payments.<br>(5) The ability to manage the fleet occupancy rate and when needed, send transport capacity availability advice or a transport opportunity request.<br></div></H5><h3>Functional Requirements</H3><h5>(a) keep watching over global fleet occupancy rate<br/>(b) if there is a low level occupancy rate, start correlative actions, sending of transport capacity availability advice notes, request to customer for transport opportunity<br/>(c) receive a need from the freight centre<br/>(d) request for a vehicle availability in-line with the existing resources<br/>(e) send a proposal to the freight centre<br/>(f) receive an order from the freight centre<br/>(g) send a contract to the freight centre<br/>(h) save all operation information in the store of Resources Data<br/>(i) request for the operation preparation<br/>(j) receive customer request, process them and if needed send request for additional information to fleet operational management<br/>(k) receive trip incident notification and manage consequences on freight transaction<br/>(l) receive information on the different steps of all trips and start correlative action on associated freight contract.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FF8239810513.HTM?DiagTab=1" Target="_self">DFD 8.2.1 Manage Fleet Business Transactions</a><h5><li> <a href="F897FF823981050D.HTM?DiagTab=1" Target="_self">Functional tree 8.2</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897ff8239810513.htm" target="_self"> 8.2.1 Manage Fleet Business Transactions</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f8972277398274be.htm" target="_self"> fcc.fs-freight_status_request </A> <li>
+  <A CLASS="Content" HREF="f8972277398274c4.htm" target="_self"> fcc.fs-freight_statutory_document </A> <li>
+  <A CLASS="Content" HREF="f8972277398274ca.htm" target="_self"> fcc.fs-freight_transport_opportunity </A> <li>
+  <A CLASS="Content" HREF="f8972277398274d0.htm" target="_self"> fcc.fs-freight_transport_order </A> <li>
+  <A CLASS="Content" HREF="f897227839827662.htm" target="_self"> fo.flo-input_data </A> <li>
+  <A CLASS="Content" HREF="f8971c5539823f21.htm" target="_self"> mffo_answer_on_fleet_ressources_availability </A> <li>
+  <A CLASS="Content" HREF="f8971c5539823f3f.htm" target="_self"> mffo_commercial_event </A> <li>
+  <A CLASS="Content" HREF="f8971c5539823f45.htm" target="_self"> mffo_commercial_incident </A> <li>
+  <A CLASS="Content" HREF="ea6e213e39ef0828.htm" target="_self"> mffo_fleet_global_availability_status </A> <li>
+  <A CLASS="Content" HREF="f8971c5639823fbd.htm" target="_self"> mffo_freight_status_request </A> <li>
+  <A CLASS="Content" HREF="5eae677639840554.htm" target="_self"> mffo_freight_statutory_document </A> <li>
+  <A CLASS="Content" HREF="f8971c5639823fc9.htm" target="_self"> mffo_freight_transport_opportunity </A> <li>
+  <A CLASS="Content" HREF="f8971c5639823fcf.htm" target="_self"> mffo_freight_transport_order </A> <li>
+  <A CLASS="Content" HREF="737ac3fc3f332790.htm" target="_self"> mffo_read_resources_request_data </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f8971c5539823f4b.htm" target="_self"> mffo_commercial_request </A> <li>
+  <A CLASS="Content" HREF="f8971c5539823f81.htm" target="_self"> mffo_fleet_commercial_information </A> <li>
+  <A CLASS="Content" HREF="f8971c5639823f8d.htm" target="_self"> mffo_fleet_operational_information </A> <li>
+  <A CLASS="Content" HREF="f8971c5639823f93.htm" target="_self"> mffo_fleet_transport_capacity_availability </A> <li>
+  <A CLASS="Content" HREF="f8971c5639823f9f.htm" target="_self"> mffo_fleet_transport_offer </A> <li>
+  <A CLASS="Content" HREF="f8971c5639823fa5.htm" target="_self"> mffo_fleet_transport_opportunity_request </A> <li>
+  <A CLASS="Content" HREF="f8971c5639823fab.htm" target="_self"> mffo_fleet_transport_order_confirmation </A> <li>
+  <A CLASS="Content" HREF="f8971c5639824077.htm" target="_self"> mffo_request_for_fleet_administrative_closure </A> <li>
+  <A CLASS="Content" HREF="f8971c5639824089.htm" target="_self"> mffo_request_for_fleet_resources_availability </A> <li>
+  <A CLASS="Content" HREF="2ff44f6c406c5577.htm" target="_self"> mffo_request_for_freight_preparation_NFOR </A> <li>
+  <A CLASS="Content" HREF="f897227b39827992.htm" target="_self"> tcc.fs-fleet_commercial_information </A> <li>
+  <A CLASS="Content" HREF="f897227b3982799e.htm" target="_self"> tcc.fs-fleet_operational_information </A> <li>
+  <A CLASS="Content" HREF="f897227b398279a4.htm" target="_self"> tcc.fs-fleet_transport_capacity_availability </A> <li>
+  <A CLASS="Content" HREF="f897227b398279b0.htm" target="_self"> tcc.fs-fleet_transport_offer </A> <li>
+  <A CLASS="Content" HREF="f897227b398279b6.htm" target="_self"> tcc.fs-fleet_transport_opportunity_request </A> <li>
+  <A CLASS="Content" HREF="f897227b398279bc.htm" target="_self"> tcc.fs-fleet_transport_order_confirmation </A> <li>
+  <A CLASS="Content" HREF="f897227c39827b36.htm" target="_self"> to.flo-output_data </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442bd39be8d0a.htm" target="_self"> 9.5.1.1</A> </a></center></h5></td><td width="90%"><h5>The system shall enable the exchange of information, e.g. market enquiries, offer and supplier evaluation data, contracts, invoices, payments etc. between customers and suppliers.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442bf39be8dca.htm" target="_self"> 9.5.1.3</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to prepare and update official documents, e.g. transport orders, customs declarations, hazardous goods declarations, notices of dispatch etc. in a controlled manner, and assist the process of checking them.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442bf39be8e2a.htm" target="_self"> 9.5.1.4</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to transfer official documents, e.g. transport orders, customs declarations, hazardous goods declarations, notices of dispatch etc. between vehicles, the fleet management centre and the relevant authorities in a controlled manner.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd1442c039be8f2c.htm" target="_self"> 9.5.2.10</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to predict a time of arrival.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="cf07d3f6417c006c.htm" target="_self"> 9.5.3.38</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to report automatically the receipt and/or reading of incoming messages to the sender.</h5></td></tr></table></div>
+</BODY> </HTML>

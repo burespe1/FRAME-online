@@ -1,0 +1,31 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 3.5.8 Provide  Maintenance Data Store Management
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>3.5.8 Provide  Maintenance Data Store Management</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to take responsibility for the management of the store of Maintenance Data.<br>(2) The ability for the store of Maintenance Data to contain databases of maintenance operations, plus the road network, infrastructure and road-side equipment.<br>(3) The ability for other maintenance functionality to obtain data from the store of Maintenance Data and for its contents to be changed through the operator interface functionality and HMI<br>(4) The ability to update the data about maintenance activities using provided by other functionality and by the Maintenance Organisation.<br></div></H5><h3>Functional Requirements</H3><h5>(a) continuously monitor for the receipt of the two long term and two short term maintenance activity data flows plus the equipment maintenance activity data flow<br/>(b) when any of the data flows in (a) is received, update the contents of the store of Maintenance Data with their contents and determine the extent of any roadworks that will be required to complete the maintenance activities<br/>(c) as a result of (b) send information about the roadworks to other functionality that is responsible for incident management, trip planning and the management of the vehicle, in the roadworks data flows<br/>(d) continuously monitor for receipt of the maintenance data updates data flow<br/>(e) when the data flow in (d) is received, update the contents of the store of Maintenance Data, or if it contains a request, send the contents of the Store to the Provide Maintenance Operator Interface function<br/>(f) continuously monitor for receipt of the confirmed de-icing activity data flow<br/>(g) when the data flow in (f) is received, update the store of Maintenance Data with its contents.<br/></H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FEA23981042A.HTM?DiagTab=1" Target="_self">DFD 3.5  Manage Road Maintenance</a><h5><li> <a href="F897FEA23981042A.HTM?DiagTab=1" Target="_self">Functional tree 3.5</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897fea23981042a.htm" target="_self"> 3.5 Manage Road Maintenance</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f8971c5839824341.htm" target="_self"> mt_confirmed_de-icing_activity </A> <li>
+  <A CLASS="Content" HREF="f8971c583982434d.htm" target="_self"> mt_confirmed_equipment_maintenance_activity </A> <li>
+  <A CLASS="Content" HREF="f8971c5839824347.htm" target="_self"> mt_confirmed_long_term_maintenance_activity </A> <li>
+  <A CLASS="Content" HREF="f8971c5839824353.htm" target="_self"> mt_confirmed_short_term_maintenance_activity </A> <li>
+  <A CLASS="Content" HREF="f8971c5a398244df.htm" target="_self"> mt_maintenance_data_updates </A> <li>
+  <A CLASS="Content" HREF="f8971c5a3982458d.htm" target="_self"> mt_read_maintenance_data </A> <li>
+  <A CLASS="Content" HREF="ae19ba4a4bb103fa.htm" target="_self"> mt_update_long_term_maintenance_activity </A> <li>
+  <A CLASS="Content" HREF="ae19c2664bb104af.htm" target="_self"> mt_update_short_term_maintenance_activity </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f7bafb114bb1048b.htm" target="_self"> mt.pshvs_roadworks_data_to_monitor_vehicle_trips </A> <li>
+  <A CLASS="Content" HREF="ae19e6d24bb10df2.htm" target="_self"> mt.ptja_roadworks_information_for_trip_monitoring </A> <li>
+  <A CLASS="Content" HREF="f8971c5a398244cd.htm" target="_self"> mt_load_maintenance_data </A> <li>
+  <A CLASS="Content" HREF="f8971c5a398244eb.htm" target="_self"> mt_maintenance_updates_response </A> <li>
+  <A CLASS="Content" HREF="ae19e4da4bb10c1a.htm" target="_self"> mt_roadworks_information_for_incident_management </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="0a92258c3c02009c.htm" target="_self"> 2.2.0.4</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to support a database of maintenance operations.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428839be63f7.htm" target="_self"> 2.2.0.6</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to maintain statistics on road usage to evaluate the need for possible maintenance.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428939be6475.htm" target="_self"> 2.2.2.3</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to support a database of the road network, infrastructure and road-side equipment.</h5></td></tr></table></div>
+</BODY> </HTML>

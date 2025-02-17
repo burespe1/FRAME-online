@@ -1,0 +1,31 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 1.2.2 Debit User&#39;s Account
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>1.2.2 Debit User&#39;s Account</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) The ability to debit the Traveller&#39;s Electronic Payment account as the result of the recently performed transaction.<br>(2) If the Traveller&#39;s account becomes overdrawn the ability to send a message highlighting this situation to the &#8220;Credit Control&#8221; function.<br></div></H5><h3>Functional Requirements</H3><h5>(a) read the transaction message, and extract the user&#39;s ID, account ID, corresponding fee<br/>(b) get the balance of the EP account<br/>(c) debit the balance by the amount of the transaction, and record the operation in the stores of &quot;transactions&quot; Data and &quot;user&#39;s account&quot; Data<br/>(d) if the &quot;user&#39;s account&quot; is now overdrawn, send an overdraft message to the traveller and to &quot;Credit Control&quot;.<br/></H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F897FEA2398103CA.HTM?DiagTab=1" Target="_self">DFD 1.2  Manage User&#39;s Account</a><h5><li> <a href="F897F8B339810013.HTM?DiagTab=0" Target="_self">Functional Tree of Area 1</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f897fea2398103ca.htm" target="_self"> 1.2 Manage User&#39;s Account</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="737a81ef3f3304fa.htm" target="_self"> pepf_account_status_for_debiting </A> <li>
+  <A CLASS="Content" HREF="2ff44533406c3172.htm" target="_self"> pepf_transaction_information_R2 </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="737a8ae23f33079e.htm" target="_self"> pepf_debit_account_order_for_user </A> <li>
+  <A CLASS="Content" HREF="737a8b523f3307cc.htm" target="_self"> pepf_debit_account_order_transactions </A> <li>
+  <A CLASS="Content" HREF="f8971c5d3982493b.htm" target="_self"> pepf_overdraft_notification </A> <li>
+  <A CLASS="Content" HREF="f897227d39827c92.htm" target="_self"> tt-pepf_overdraft_notification </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428b39be6655.htm" target="_self"> 4.1.0.1</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to use a variety of relevant payment methods either electronic or not, including central account and post payment, central account and prepayment, on-board account etc.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428c39be66c1.htm" target="_self"> 4.1.0.2</A> </a></center></h5></td><td width="90%"><h5>The system shall manage customer data (identification, account, rights of residents, etc.).</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428d39be6751.htm" target="_self"> 4.1.0.3</A> </a></center></h5></td><td width="90%"><h5>The system shall give exact details of any financial transaction to the traveller.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428d39be67ab.htm" target="_self"> 4.1.0.5</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to use a variety of payment or receipt means, including contactless &quot;smart cards&quot;.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428f39be68b9.htm" target="_self"> 4.1.2.2</A> </a></center></h5></td><td width="90%"><h5>The system shall enable a single payment to be paid for services offered by different related transport systems (e.g. metro, bus, train, road and parking).</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14428f39be6973.htm" target="_self"> 4.1.3.2</A> </a></center></h5></td><td width="90%"><h5>The system shall make atomic electronic financial transactions, I.e. that are never partially complete whatever the circumstances, even in degraded system modes.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14429039be69c1.htm" target="_self"> 4.1.3.3</A> </a></center></h5></td><td width="90%"><h5>The system shall have the maximum security necessary for electronic financial transactions.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14429039be6a2d.htm" target="_self"> 4.1.3.4</A> </a></center></h5></td><td width="90%"><h5>The system shall have a low number of incorrect transactions (e.g., non-effective transactions &lt; 1 in 10E-6; erroneous transactions  &lt; 1 in 10E-8)</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="bce4c4823c04004f.htm" target="_self"> 4.1.3.5</A> </a></center></h5></td><td width="90%"><h5>The system shall provide information in the native language at the output location, and/or from a user selected choice of other appropriate foreign languages.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="fd14429139be6aab.htm" target="_self"> 4.1.4.1</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to be able to collect evidence on the non-payment of tolls, and other illegal financial transactions.</h5></td></tr></table></div>
+</BODY> </HTML>

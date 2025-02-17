@@ -1,0 +1,497 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 5.14 Provide In-vehicle Trip Planning &amp; Implementation
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <div id="ObjectTitle">
+<Table id="ObjectTitleTable" class="ObjectTitleTable" cellpadding="0" cellspacing="0"  width = "100%">
+<TR>
+<TD width="5%" height ="35" align = "left">
+<img src="../standard/busf.gif"/>
+</TD>
+<TD width="20%" height ="35" align = "left">
+<span class="ObjectTitle_Type">
+High Level Function</span>
+</TD>
+<TD width="75%" height ="35" align = "left">
+<span class="ObjectTitle_Name">5.14 Provide In-vehicle Trip Planning &amp; Implementation</span>
+</TD>
+</TR>
+ </Table>
+</div>
+<table border="0" cellpadding="0" cellspacing="0"  class="InvisibleTable">
+<tr>
+    	 
+<td id="Tab" class="Tab">	&nbsp;Diagram&nbsp;</td>
+ <td id="Tab" class="Tab">&nbsp;Definition&nbsp;</td>
+ <td class="TabFiller" width="100%">&nbsp;</td>
+<td align="center" onclick="OnFitWidthClick();"  id="ZoomButton" class="ZoomButton" title="Fit to width">
+<img src="../standard/ws_fitwidth.gif"></img></td>
+<td align="center" onclick="OnRegularClick();" id="ZoomButton" class="ZoomButton" title="Actual size">
+<img src="../standard/ws_actual.gif"></img></td>
+<td align="center" onmousedown="OnIncrStart();" onmouseup="OnIncrStop();" id="ZoomButton" class="ZoomButton" title="Zoom in">
+<img src="../standard/ws_zoomin.gif"></img></td>
+<td align="center" onmousedown="OnDecrStart();" onmouseup="OnDecrStop();" id="ZoomButton" class="ZoomButton" title="Zoom out">
+<img src="../standard/ws_zoomout.gif"></img></td>
+<td style="display:none" id="TabMemoryName">TabMemoryProcess</td>	</tr>
+</table>
+
+<div id="ContentTab" class="ContentTab">
+	<table id="TabDiagList" class="TabDiagList" border="0" cellpadding="0" cellspacing="0" width="450">
+	          <tr>
+          <td width="16">
+                    <img src="../standard/diag.gif"/></td>
+<td id="TabDiag"class="TabDiag">
+DFD 5.14 Provide In-vehicle Trip Planning &amp; Implementation</td>
+</tr>
+              </Table>
+<div id="ContentTabDiag" class="ContentTabDiag">
+      <p>
+<p class="DiagName">DFD 5.14 Provide In-vehicle Trip Planning &amp; Implementation</p><p>
+<center>
+<h5>This is a DFD diagram which provides a description of the function in the ITS environment</h5>
+  <MAP CLASS="Content" NAME="4DE08FD24BA72562"> 
+    <AREA href="bb29c25a4e1d04f3.htm" shape="rect" coords="819, 696, 1065, 710"   target="_self"  title="It contains details of a booking for the use of an un/loading zone that has been made by the Driver to whom the information is being displayed."> 
+    </AREA> 
+    <AREA href="bb29c0584e1d04bd.htm" shape="rect" coords="508, 555, 703, 569"   target="_self"  title="It contains details of the un/loading zone bookings that have been made or amended by the Driver of a Heavy Goods Vehicle."> 
+    </AREA> 
+    <AREA href="91eab3384e150aeb.htm" shape="rect" coords="847, 367, 1060, 381"   target="_self"  title="It contains details of a rest area booking that has been made and passed to the Fleet Operator and which are now being sent to the Freight Vehicle Driver."> 
+    </AREA> 
+    <AREA href="91eab2704e150ac0.htm" shape="rect" coords="567, 370, 733, 384"   target="_self"  title="It contains details of a rest area booking that has been made and passed to the Fleet Operator so that it can be given to the Freight Vehicle Driver."> 
+    </AREA> 
+    <AREA href="bd83c8d84c0807e9.htm" shape="rect" coords="436, 1174, 664, 1188"   target="_self"  title="It contains the route for the latest Vehicle Trip Plan that is being used to guide the Driver."> 
+    </AREA> 
+    <AREA href="bd83c8754c0807dc.htm" shape="rect" coords="437, 1155, 686, 1169"   target="_self"  title="It contains the route for the latest Vehicle Trip Plan that is being used to guide the Driver."> 
+    </AREA> 
+    <AREA href="6c0071004bd9034d.htm" shape="rect" coords="437, 1089, 690, 1104"   target="_self"  title="In contains confirmation that the Freight Vehicle has left the loading or unloading zone.&nbsp;&nbsp;This confirmation is obtained from processing the data produced by monitoring the current implementation of the Vehicle Trip Plan for the Freight Vehicle."> 
+    </AREA> 
+    <AREA href="0b71663a4bd81470.htm" shape="rect" coords="819, 675, 1053, 689"   target="_self"  title="It contains an indication to the Freight Vehicle Driver that the originally booked holding zone is no longer available because the Estimated Time of Arrival (ETA) of the Freight Vehicle has changed.&nbsp;&nbsp;Details of alternative times when a suitable parking space will be available are included plus details of another holding area that can be used until the requested zone becomes available."> 
+    </AREA> 
+    <AREA href="0b7165834bd81433.htm" shape="rect" coords="819, 657, 1023, 671"   target="_self"  title="It contains detailed instructions of how to find the holding zone and how to park the Freight Vehicle in it, e.g. drive in, or reverse in."> 
+    </AREA> 
+    <AREA href="0b7164c54bd813f9.htm" shape="rect" coords="462, 626, 702, 640"   target="_self"  title="It contains information about the last bit of the route that the Freight Vehicle Driver has to follow to reach the parking space that has been booked in a holding zone and provides confirmation that the original booking is still acceptable."> 
+    </AREA> 
+    <AREA href="0b7164184bd813c1.htm" shape="rect" coords="445, 659, 702, 673"   target="_self"  title="It contains a rejection of the previous booking for a parking space in a holding zone because the Expected Time of Arrival (ETA) of the Freight Vehicle for which the booking was made has changed.&nbsp;&nbsp;Details are included of alternative times when a suitable parking space will be available and/or the availability of another holding area where the Vehicle can wait for a space in the requested loading or unloading zone to become available."> 
+    </AREA> 
+    <AREA href="0b715ff94bd81368.htm" shape="rect" coords="437, 1132, 592, 1147"   target="_self"  title="It contains the Expected Time of Arrival (ETA) of the Freight Vehicle at the previously booked holding zone.&nbsp;&nbsp;The update has been made using data produced from monitoring progress with the Vehicle Trip Plan for the Freight Vehicle that is currently being implemented."> 
+    </AREA> 
+    <AREA href="0b71414d4bd80bae.htm" shape="rect" coords="449, 642, 702, 656"   target="_self"  title="It contains information about the last bit of the route that the Freight Vehicle Driver has to follow to reach the parking space that has been booked in a loading or unloading zone and provides confirmation that the original booking is still acceptable."> 
+    </AREA> 
+    <AREA href="0b7135a74bd809b6.htm" shape="rect" coords="432, 677, 703, 691"   target="_self"  title="It contains a rejection of the previous booking for a parking space in a loading or unloading zone because the Expected Time of Arrival (ETA) of the Freight Vehicle for which the booking was made has changed.&nbsp;&nbsp;Details of alternative times when a suitable parking space will be available and/or the availability of a holding area where the Vehicle can wait for a space in the requested zone to become available are included."> 
+    </AREA> 
+    <AREA href="0b7120974bd80615.htm" shape="rect" coords="387, 700, 637, 714"   target="_self"  title="It contains confirmation that the required advanced payments have been successfully made for a Vehicle Trip Plan that has been accepted by the Driver for a Trip involving a Freight Vehicle for which parking at rest and/or loading and unloading zones has been booked."> 
+    </AREA> 
+    <AREA href="0b711f714bd805e8.htm" shape="rect" coords="819, 637, 1017, 652"   target="_self"  title="It contains details of all the loading or unloading zone parking needs that have been identified by the Vehicle Trip Plan creation functionality based on digitised map and other data."> 
+    </AREA> 
+    <AREA href="0b7115484bd803d5.htm" shape="rect" coords="847, 347, 1020, 361"   target="_self"  title="It contains a request for the Freight Vehicle Driver to confirm details of the rest zone parking that will be needed during the implementation of the Vehicle Trip Plan."> 
+    </AREA> 
+    <AREA href="b95de23b4bd60f2e.htm" shape="rect" coords="819, 618, 1066, 632"   target="_self"  title="It contains an indication to the Freight Vehicle Driver that the originally booked loading or unloading zone is no longer available because the Estimated Time of Arrival (ETA) of the Freight Vehicle has changed.&nbsp;&nbsp;Details of alternative times when a suitable parking space will be available are included plus details of the holding area that can be used until the requested zone becomes available."> 
+    </AREA> 
+    <AREA href="b95de1d94bd60f21.htm" shape="rect" coords="819, 598, 1037, 613"   target="_self"  title="It contains detailed instructions of how to find the loading or unloading area and how to park the Freight Vehicle in it, e.g. drive in, or reverse in."> 
+    </AREA> 
+    <AREA href="b95de1954bd60f14.htm" shape="rect" coords="819, 579, 1019, 593"   target="_self"  title="It contains the response to the previous request made by the Freight Vehicle Driver for the use of a loading or unloading area.&nbsp;&nbsp;It may contain either acceptance of the previously requested booking, or a rejection.&nbsp;&nbsp;The rejection will be accompanied by details of alternative times when a space is available at the requested area or another suitable area, or details of a holding area that the Driver should use because the requested area is not available at the specified time."> 
+    </AREA> 
+    <AREA href="b95de14d4bd60f07.htm" shape="rect" coords="819, 560, 1055, 574"   target="_self"  title="It contains the confirmation that the proposed loading or unloading area booking has been accepted by the Freight Vehicle Driver."> 
+    </AREA> 
+    <AREA href="b95dda6d4bd60e4a.htm" shape="rect" coords="470, 589, 702, 603"   target="_self"  title="It contains either acceptance of the previously requested booking for the use of a un/loading zone, or the suggested alternatives, or a holding are if there was no space available in the specified zone at the originally requested time."> 
+    </AREA> 
+    <AREA href="b95dda184bd60e39.htm" shape="rect" coords="476, 571, 702, 586"   target="_self"  title="It contains a revised request for the reservation for the use of a un/loading zone.&nbsp;&nbsp;This request will have been generated either because the original request was rejected, or the Estimated Time of Arrival (ETA) of the Freight Vehicle has changed."> 
+    </AREA> 
+    <AREA href="b95dd99f4bd60e2c.htm" shape="rect" coords="510, 539, 703, 553"   target="_self"  title="It contains a request for the reservation for the use of a un/loading zone.&nbsp;&nbsp;Details of planned route to the zone, the Estimated Time of Arrival (ETA) and Vehicle type will be provided from the Vehicle Trip Plan information.&nbsp;&nbsp;The Driver will provide the other information needed for the booking such as the required duration, potential flexibility and any hazardous goods that will be carried by the Freight Vehicle."> 
+    </AREA> 
+    <AREA href="b95dcc714bd608f5.htm" shape="rect" coords="437, 1110, 610, 1124"   target="_self"  title="It contains the Expected Time of Arrival (ETA) of the Freight Vehicle at the previously booked loading or unloading zone.&nbsp;&nbsp;The update has been made using data produced from monitoring progress with the Vehicle Trip Plan for the Freight Vehicle that is currently being implemented."> 
+    </AREA> 
+    <AREA href="43cea8064bd50fd9.htm" shape="rect" coords="472, 608, 702, 622"   target="_self"  title="It contains the response to a previous request from the Freight Vehicle Driver via part of the Vehicle Trip Planning Interface for the use of a loading or unloading zone.&nbsp;&nbsp;Included is either acceptance, or alternative dates/times when the requested zone is available, or details of alternative zones that can be booked."> 
+    </AREA> 
+    <AREA href="43ce9a9c4bd50e65.htm" shape="rect" coords="819, 541, 1035, 555"   target="_self"  title="It contains a request from the Freight Vehicle Driver via part of the Vehicle Trip Planning Interface for the use of a loading or unloading zone.&nbsp;&nbsp;Included is the desired location, date/time, duration for which the zone is expected to be occupied, Vehicle type and type of goods, including type of Hazardous Goods if relevant."> 
+    </AREA> 
+    <AREA href="43ce73464bd5070f.htm" shape="rect" coords="707, 483, 831, 512"   target="_self"  title="It contains confirmation that the required advanced payments have been successfully made for a Vehicle Trip Plan that has been accepted by the Driver but that one or more urban parking places need(s) to be requested as the Trip is for a Freight Vehicle."> 
+    </AREA> 
+    <AREA href="43ce71f64bd506f8.htm" shape="rect" coords="725, 536, 799, 720"   target="_self"  title="This Function shall be capable of providing the following facilities:"> 
+    </AREA> 
+    <AREA href="15c8493d4bc81584.htm" shape="rect" coords="846, 327, 1066, 341"   target="_self"  title="It contains an indication to the Freight Vehicle Driver that the originally booked parking space is no longer available because the Estimated Time of Arrival (ETA) of the Freight Vehicle has changed.&nbsp;&nbsp;Details of alternative times when a suitable parking space will be available are included."> 
+    </AREA> 
+    <AREA href="15c847d94bc81548.htm" shape="rect" coords="519, 301, 734, 316"   target="_self"  title="It contains a revised request for the reservation of a parking place at a rest zone, which is assumed to be part of a service area.&nbsp;&nbsp;This request will have been generated either because the original request was rejected, or the Estimated Time of Arrival (ETA) of the Freight Vehicle has changed."> 
+    </AREA> 
+    <AREA href="15c845824bc81378.htm" shape="rect" coords="501, 267, 733, 281"   target="_self"  title="It contains a rejection of the previous booking for a parking space in the rest area of a service area because the Expected Time of Arrival (ETA) of the Freight Vehicle for which the booking was made has changed.&nbsp;&nbsp;Details of alternative times when a suitable parking space will be available are included."> 
+    </AREA> 
+    <AREA href="281b41b04bc70c1d.htm" shape="rect" coords="845, 308, 1050, 322"   target="_self"  title="It contains details of how to find the parking space in the rest zone of a service area that has been booked for the Freight Vehicle that the Freight Vehicle Driver is currently driving."> 
+    </AREA> 
+    <AREA href="281b40a14bc70bf2.htm" shape="rect" coords="847, 289, 1040, 303"   target="_self"  title="It contains information about the services that are available for the Freight Vehicle Driver to use in the rest zone and other parts of the service area, where a parking place has been booked for the Freight Vehicle that they are currently driving."> 
+    </AREA> 
+    <AREA href="281b3de64bc70b8d.htm" shape="rect" coords="549, 336, 732, 350"   target="_self"  title="It contains details of how the Freight Vehicle Driver can find the parking space that has been booked in a rest area for the Freight Vehicle that they are driving."> 
+    </AREA> 
+    <AREA href="281b3cc84bc70b52.htm" shape="rect" coords="481, 227, 733, 256"   target="_self"  title="It contains confirmation or rejection that the previously booked parking space in the rest area is still available following receipt of the Expected Time of Arrival (ETA) from the Freight Vehicle for which the booking was made."> 
+    </AREA> 
+    <AREA href="281b39c34bc70b19.htm" shape="rect" coords="437, 1069, 647, 1084"   target="_self"  title="In contains confirmation that the Freight Vehicle has left the rest zone.&nbsp;&nbsp;This confirmation is obtained from processing the data produced by monitoring the current implementation of the Vehicle Trip Plan for the Freight Vehicle."> 
+    </AREA> 
+    <AREA href="281b379b4bc70965.htm" shape="rect" coords="437, 1049, 573, 1063"   target="_self"  title="It contains the Expected Time of Arrival (ETA) of the Freight Vehicle at the previously booked parking space in the rest zone that is part of a service area.&nbsp;&nbsp;The update has been made using data produced from monitoring progress with the Vehicle Trip Plan for the Freight Vehicle that is currently being implemented."> 
+    </AREA> 
+    <AREA href="e11a01194bc7040d.htm" shape="rect" coords="751, 224, 824, 388"   target="_self"  title="This Function shall be capable of providing the following facilities:"> 
+    </AREA> 
+    <AREA href="e11a0e364bc705cc.htm" shape="rect" coords="711, 170, 848, 200"   target="_self"  title="It contains confirmation that the required advanced payments have been successfully made for a Vehicle Trip Plan that has been accepted by the Driver but that parking at rest zones needs to be requested as the Trip is for a Freight Vehicle."> 
+    </AREA> 
+    <AREA href="e11a0cf94bc70592.htm" shape="rect" coords="508, 471, 635, 499"   target="_self"  title="It contains confirmation that the required advanced payments have been successfully made for a Vehicle Trip Plan that has been accepted by the Driver for a Trip involving a Freight Vehicle for which parking at rest areas has been booked."> 
+    </AREA> 
+    <AREA href="e11a0bd74bc7055f.htm" shape="rect" coords="847, 249, 1060, 263"   target="_self"  title="It contains the confirmation that the proposed rest zone booking has been accepted by the Freight Vehicle Driver."> 
+    </AREA> 
+    <AREA href="e11a0afc4bc70534.htm" shape="rect" coords="509, 285, 733, 299"   target="_self"  title="It contains either acceptance of the previously requested booking of a parking space at a rest zone in a service area, or suggested alternatives if there was no space available at the originally requested time."> 
+    </AREA> 
+    <AREA href="e11a0a174bc70500.htm" shape="rect" coords="847, 268, 1034, 282"   target="_self"  title="It contains the response to the previous request made by the Freight Vehicle Driver for a parking space at a rest zone that forms part of a service area.&nbsp;&nbsp;It may contain either acceptance of the previously requested booking, or details of alternative times when a parking space is available, because it is not available at the requested time."> 
+    </AREA> 
+    <AREA href="e11a091d4bc704d2.htm" shape="rect" coords="532, 319, 733, 333"   target="_self"  title="It contains, either acceptance of the previously requested booking, or details of alternative times when a parking space is available in a rest area, because it is not available at the requested time."> 
+    </AREA> 
+    <AREA href="e11a06e04bc7047c.htm" shape="rect" coords="846, 230, 1041, 244"   target="_self"  title="It contains a request for a parking place in a rest zone for a Heavy Goods Vehicle (HGV) so that its Driver can comply with the European Working Time Directive.&nbsp;&nbsp;Included in this data flow are details of the planned route, estimated time, required duration, potential flexibility, possible hazardous goods and vehicle type."> 
+    </AREA> 
+    <AREA href="e11a02cb4bc7043b.htm" shape="rect" coords="561, 353, 732, 367"   target="_self"  title="It contains a request for the reservation of a parking place at a rest area, which is assumed to be part of a service area.&nbsp;&nbsp;Details of planned route, Estimated Time of Arrival (ETA) and Vehicle type will be provided from the Vehicle Trip Plan information.&nbsp;&nbsp;The Driver will provide the other information needed for the booking such as the required duration, potential flexibility and any hazardous goods that will be carried by the Freight Vehicle."> 
+    </AREA> 
+    <AREA href="777b86384bc4081d.htm" shape="rect" coords="437, 1028, 673, 1042"   target="_self"  title="It contains suggested changes to the criteria used to create Vehicle Trip Plans.&nbsp;&nbsp;These changes are based on the experiences gained from implementing already prepared Trip Plans and will be used in future Trip Plan preparation."> 
+    </AREA> 
+    <AREA href="777b7c584bc404f8.htm" shape="rect" coords="436, 1006, 618, 1024"   target="_self"  title="It contains data about the route that is being followed by the Driver of the Vehicle, including the identity and location of way points for use in extended floating car data (XFCD)."> 
+    </AREA> 
+    <AREA href="9f24c5fd4bb4127e.htm" shape="rect" coords="948, 1341, 1059, 1384"   target="_self"  title="It contains the reason(s) that a change is about to be proposed to the current Vehicle Trip Plan that is being implemented in order to provide a more comfortable and/or quicker trip for the Driver."> 
+    </AREA> 
+    <AREA href="9f24c3664bb41235.htm" shape="rect" coords="910, 1247, 1008, 1289"   target="_self"  title="It contains the reason (e.g. congestion or incident) that a change to the current Vehicle Trip Plan has been requested and is for output to the Driver."> 
+    </AREA> 
+    <AREA href="9f24c0224bb411ee.htm" shape="rect" coords="954, 1397, 1045, 1440"   target="_self"  title="It contains a warning for the Driver that the Vehicle has departed from the route in the Trip Plan and that a new route is being determined."> 
+    </AREA> 
+    <AREA href="9f24bf084bb411ae.htm" shape="rect" coords="820, 1252, 898, 1295"   target="_self"  title="It contains a warning that the Vehicle has departed from the route in the Vehicle Trip Plan and that a revised route is being determined from the current location of the Vehicle to the original destination in the Trip Plan."> 
+    </AREA> 
+    <AREA href="5e5d77bd4bb30f09.htm" shape="rect" coords="380, 1383, 605, 1397"   target="_self"  title="It contains the destination of the Vehicle according to the Vehicle Trip Plan that it is using."> 
+    </AREA> 
+    <AREA href="5e5d6f044bb30510.htm" shape="rect" coords="0, 1386, 256, 1400"   target="_self"  title="It contains digital map data for use in the implementation of a Vehicle Trip Plan by a Driver."> 
+    </AREA> 
+    <AREA href="12164db54bb31fee.htm" shape="rect" coords="437, 988, 628, 1002"   target="_self"  title="It contains origin - destination (O-D) data and actual journey time for the complete Vehicle Trip Plan that has just been implemented."> 
+    </AREA> 
+    <AREA href="12164ba64bb31fae.htm" shape="rect" coords="437, 968, 653, 982"   target="_self"  title="It contains actual journey times from the parts of a Vehicle Trip Plan that have used segments of the urban road network."> 
+    </AREA> 
+    <AREA href="12164b084bb31f75.htm" shape="rect" coords="437, 947, 679, 961"   target="_self"  title="It contains actual journey times from the parts of a Vehicle Trip Plan that have used segments of the inter-urban road network."> 
+    </AREA> 
+    <AREA href="12162d454bb3151e.htm" shape="rect" coords="886, 1459, 1023, 1473"   target="_self"  title="It contains output of the expected time of arrival at the next way point or the destination of the Vehicle Trip Plan to the Driver in the Vehicle."> 
+    </AREA> 
+    <AREA href="12162c8e4bb314f1.htm" shape="rect" coords="911, 1312, 1061, 1328"   target="_self"  title="It contains the output of the Vehicle Trip Plan route guidance instructions to the Driver in the Vehicle."> 
+    </AREA> 
+    <AREA href="12162b894bb314c0.htm" shape="rect" coords="753, 1294, 832, 1322"   target="_self"  title="It contains the Estimated Time of Arrival (ETA) at the next way point or destination in the Vehicle Trip Plan and is updated at regular intervals."> 
+    </AREA> 
+    <AREA href="12162a534bb3130e.htm" shape="rect" coords="551, 1364, 787, 1378"   target="_self"  title="It contains the step by step driving instructions that the Driver has to follow in order to implement the requested Vehicle Trip Plan."> 
+    </AREA> 
+    <AREA href="12161cbe4bb30866.htm" shape="rect" coords="59, 806, 248, 848"   target="_self"  title="It contains the results from a request for changes to a Vehicle Trip Plan that was previously prepared for the Driver and is now being implemented.&nbsp;&nbsp;The request was initiated because either the Driver wants to change this Trip Plan during its implementation, or the road conditions make a change advisable.&nbsp;&nbsp;In both cases the revised Trip Plan will be presented to the Driver for acceptance before it is implemented."> 
+    </AREA> 
+    <AREA href="12161ade4bb3080c.htm" shape="rect" coords="371, 767, 621, 786"   target="_self"  title="It contains revised data about the way in which the Vehicle Trip Plan that a Driver is currently using is to be modified.&nbsp;&nbsp;It is sent when it is necessary for the Trip Plan to be changed, either because the Driver has requested it, or because the road conditions have changed such that the trip plan needs to be improved."> 
+    </AREA> 
+    <AREA href="f7ba286b4bb22344.htm" shape="rect" coords="324, 407, 402, 450"   target="_self"  title="It contains the acceptance of the modified Vehicle Trip Plan by the Driver."> 
+    </AREA> 
+    <AREA href="f7ba26974bb222cb.htm" shape="rect" coords="249, 55, 337, 98"   target="_self"  title="It contains the description of the modifications to the current Vehicle Trip Plan that have been generated, either because the road network conditions have changed, or because the Driver has requested a change."> 
+    </AREA> 
+    <AREA href="f7ba26314bb222b6.htm" shape="rect" coords="39, 248, 120, 291"   target="_self"  title="It contains a request from the Driver to modify the Vehicle Trip Plan that is currently being implemented, even though it has not yet been completed."> 
+    </AREA> 
+    <AREA href="f7ba25224bb2228d.htm" shape="rect" coords="42, 195, 124, 238"   target="_self"  title="It contains the acceptance from the Driver of the modified Vehicle Trip Plan, details of which have previously been provided."> 
+    </AREA> 
+    <AREA href="f7ba22984bb220cf.htm" shape="rect" coords="39, 423, 159, 452"   target="_self"  title="It contains details for the Driver of the changes to a Vehicle Trip Plan that have been created by changes to the travel conditions during the course of the trip, plus details of the consequent expected arrival times at the trip destination and any way points."> 
+    </AREA> 
+    <AREA href="f7ba20924bb220a4.htm" shape="rect" coords="259, 870, 371, 898"   target="_self"  title="It contains a request for a change to the Vehicle Trip Plan that is currently being implemented as a result of the monitoring of the progress of the Vehicle.&nbsp;&nbsp;It includes all of the data about the current Trip Plan."> 
+    </AREA> 
+    <AREA href="f7ba1f4f4bb21ed8.htm" shape="rect" coords="189, 1121, 309, 1149"   target="_self"  title="It contains the current location of the Driver during the course of the implementation of a Vehicle Trip Plan and is used to monitor the progress of the Driver."> 
+    </AREA> 
+    <AREA href="f7ba1e1e4bb21cfe.htm" shape="rect" coords="44, 1362, 254, 1376"   target="_self"  title="It contains analogue or digital data from which functionality can determine the current location of a Driver for implementing a Vehicle Trip Plan."> 
+    </AREA> 
+    <AREA href="f7ba085f4bb20cb3.htm" shape="rect" coords="64, 1065, 311, 1089"   target="_self"  title="It contains data about predicted unusual traffic conditions within the total road network predicted by the results from traffic simulations and is for use in the monitoring of a trip being implemented by a Driver using an In-vehicle device. The causes of these conditions may include such things as expected road works and road blocks. In both cases the predicted travel times may exceed normal times."> 
+    </AREA> 
+    <AREA href="f7bafc954bb107aa.htm" shape="rect" coords="56, 1093, 313, 1107"   target="_self"  title="It contains information about de-icing and/or snow clearing work that is taking place on the urban and/or inter-urban parts of the road network and is used for Driver trip monitoring, i.e. monitoring a trip being made by a Driver using an In-vehicle device for trip implementation."> 
+    </AREA> 
+    <AREA href="f7bafb114bb1048b.htm" shape="rect" coords="52, 1045, 312, 1060"   target="_self"  title="It contains data about roadworks that is for use in monitoring the progress of Vehicle Trip Plans that are being implemented through an In-vehicle device by the Driver."> 
+    </AREA> 
+    <AREA href="ae19b8e94bb1026e.htm" shape="rect" coords="50, 1022, 313, 1037"   target="_self"  title="It contains general weather information that is used to monitor the implementation of a Vehicle Trip Plan by a Driver using an In-vehicle device."> 
+    </AREA> 
+    <AREA href="ae19b8604bb1025d.htm" shape="rect" coords="58, 999, 312, 1013"   target="_self"  title="It contains information about the strategy that is being implemented in response to an incident that has been detected by the Manage Traffic functions and which may affect the Vehicle Trip Plan being implemented by a Driver using an In-vehicle device."> 
+    </AREA> 
+    <AREA href="ae19b7be4bb10250.htm" shape="rect" coords="114, 976, 312, 991"   target="_self"  title="It contains data about unusual traffic conditions within the urban road network that are for use in monitoring a trip being implemented by a Driver using an In-vehicle device.&nbsp;&nbsp;The causes of these conditions may include such things as road works and road blocks.&nbsp;&nbsp;In both cases the current travel times may exceed normal times."> 
+    </AREA> 
+    <AREA href="ae19b78e4bb10243.htm" shape="rect" coords="80, 957, 312, 971"   target="_self"  title="It contains data about unusual traffic conditions within the inter-urban road network that are for use in monitoring a trip being implemented by a Driver using an In-vehicle device.&nbsp;&nbsp;The causes of these conditions may include such things as road works and road blocks.&nbsp;&nbsp;In both cases the current travel times may exceed normal times."> 
+    </AREA> 
+    <AREA href="ae19b38a4bb101f9.htm" shape="rect" coords="437, 1190, 638, 1205"   target="_self"  title="It contains the description of the Vehicle Trip Plan that the Driver has requested for implementation that will be used to monitor the progress of the Driver and to decide whether or not to recommend changes to the Plan in order to achieve a better trip experience.&nbsp;&nbsp;(Note that the description contains all that is needed to implement the Vehicle Trip Plan.)"> 
+    </AREA> 
+    <AREA href="ae19b0774bb101c5.htm" shape="rect" coords="385, 1344, 604, 1358"   target="_self"  title="It contains the description of the Vehicle Trip Plan that the Driver has requested for implementation.&nbsp;&nbsp;(Note that the description contains all that is needed to implement the Vehicle Trip Plan.)"> 
+    </AREA> 
+    <AREA href="ae19af1e4bb10194.htm" shape="rect" coords="789, 958, 931, 986"   target="_self"  title="It contains a request for a specific Vehicle Trip Plan to be provided from the Store and used by the Driver for their journey."> 
+    </AREA> 
+    <AREA href="c7a1da294bb00a9c.htm" shape="rect" coords="29, 143, 124, 185"   target="_self"  title="It contains a request from the Driver to implement a specified previously prepared Vehicle Trip Plan."> 
+    </AREA> 
+    <AREA href="c7a1d81f4bb00a3d.htm" shape="rect" coords="159, 1326, 251, 1354"   target="_self"  title="It contains a request from the Driver to implement the specified previously prepared Vehicle Trip Plan."> 
+    </AREA> 
+    <AREA href="c7a1d6b74bb00a0e.htm" shape="rect" coords="749, 805, 933, 819"   target="_self"  title="It contains the description of a Vehicle Trip Plan that has been accepted by the Driver, for which all advanced payments have been made, so that it is now ready for implementation at the request of the Driver.&nbsp;&nbsp;(Note that the description contains all that is needed to implement the Vehicle Trip Plan.)"> 
+    </AREA> 
+    <AREA href="c7a1d5824bb009b9.htm" shape="rect" coords="409, 822, 685, 836"   target="_self"  title="It contains the response to a previous request for details of the specified stored Vehicle Trip Plans for use as part of the data for a new Vehicle Trip Plan request."> 
+    </AREA> 
+    <AREA href="c7a1d42f4bb00976.htm" shape="rect" coords="852, 902, 928, 930"   target="_self"  title="It contains Vehicle Trip Plan data that is being read into the Vehicle Trip Plans Data store."> 
+    </AREA> 
+    <AREA href="c7a1d3e14bb00963.htm" shape="rect" coords="819, 853, 896, 881"   target="_self"  title="It contains Vehicle Trip Plan data that is being loaded into the Vehicle Trip Plans Data store."> 
+    </AREA> 
+    <AREA href="c7a1d3304bb00943.htm" shape="rect" coords="657, 787, 919, 801"   target="_self"  title="It contains a request for details of the specified stored Vehicle Trip Plans for use as part of the data for a new Vehicle Trip Plan request."> 
+    </AREA> 
+    <AREA href="c7a1d27f4bb00936.htm" shape="rect" coords="691, 863, 785, 922"   target="_self"  title="This Data Store shall be used within the Provide In-vehicle Trip Planning High-level Function.&nbsp;&nbsp;It shall contain data that is the result of the process to create a Vehicle Trip Plan."> 
+    </AREA> 
+    <AREA href="c7a1d23d4bb00918.htm" shape="rect" coords="954, 782, 1036, 1004"   target="_self"  title="This Function shall be capable of providing the following facilities:"> 
+    </AREA> 
+    <AREA href="810bc69c4bb01a18.htm" shape="rect" coords="415, 97, 681, 111"   target="_self"  title="It contains the response to a previous request to the Financial Clearinghouse for payment to be made for advanced bookings that are needed as part of a Vehicle Trip Plan."> 
+    </AREA> 
+    <AREA href="810bc62e4bb019ef.htm" shape="rect" coords="442, 73, 683, 89"   target="_self"  title="It contains the response from the Financial Clearinghouse to a previous request for payment to be made for Vehicle Trip Planning services."> 
+    </AREA> 
+    <AREA href="810bc59c4bb019bb.htm" shape="rect" coords="427, 52, 681, 66"   target="_self"  title="It contains revisions that the Driver is making to previously made choices for advanced payments needed as part of a trip plan.&nbsp;&nbsp;These revisions are usually needed because payment for the previous choices has failed."> 
+    </AREA> 
+    <AREA href="810bc43b4bb01953.htm" shape="rect" coords="490, 30, 680, 45"   target="_self"  title="It contains details of how the payment that the Driver is making for the use of trip planning services is to be made."> 
+    </AREA> 
+    <AREA href="810bc3c24bb0191e.htm" shape="rect" coords="471, 9, 680, 23"   target="_self"  title="It contains confirmation from the Driver that bookings are to be made for other services needed as part of a trip and includes details of how the payments are to be made."> 
+    </AREA> 
+    <AREA href="810bc0aa4bb01881.htm" shape="rect" coords="801, 99, 1063, 114"   target="_self"  title="It contains a request to the Financial Clearinghouse for payment to be made for advanced bookings that are needed as part of a Vehicle Trip Plan."> 
+    </AREA> 
+    <AREA href="810bc0214bb01855.htm" shape="rect" coords="801, 74, 1039, 88"   target="_self"  title="It contains a request to the Financial Clearinghouse for payment to be made for trip planning services being made available to the Driver, according to the details contained in the data flow."> 
+    </AREA> 
+    <AREA href="810bbdf94bb01664.htm" shape="rect" coords="801, 49, 1023, 65"   target="_self"  title="It contains a report for the Driver of details about the failure of payment for either the trip planning service or for bookings that are part of the trip plan and for which advanced payment is required."> 
+    </AREA> 
+    <AREA href="810ba7a24bb00c4f.htm" shape="rect" coords="801, 5, 1043, 20"   target="_self"  title="It contains a request to the Driver for payment for those services included in a trip plan that has been accepted by the Driver, for which advanced payment and/or booking is required."> 
+    </AREA> 
+    <AREA href="810ba4bf4bb00bef.htm" shape="rect" coords="801, 27, 1034, 41"   target="_self"  title="It contains a request to the Driver for payment for the use of the trip planning services, without which the trip plan will not become available for use.&nbsp;&nbsp;(Note: the use of this and the corresponding &quot;payment&quot; data flow is optional and depends on what the trip planning service provider wants to do in a particular ITS implementation.)"> 
+    </AREA> 
+    <AREA href="810b82684bb001a8.htm" shape="rect" coords="55, 784, 247, 798"   target="_self"  title="It contains the description of a Vehicle Trip Plan that has been produced as a result of a previous request, resulting from input from the Driver."> 
+    </AREA> 
+    <AREA href="66ff6d014bac02ad.htm" shape="rect" coords="372, 748, 561, 764"   target="_self"  title="It contains data from which a Vehicle Trip Plan is to be prepared.&nbsp;&nbsp;Most of the data will have been provided by the Driver, either directly for this trip, or from data provided for previous trips.&nbsp;&nbsp;Other data may be provided by Vehicle Systems."> 
+    </AREA> 
+    <AREA href="66ff6c144bac0282.htm" shape="rect" coords="437, 412, 528, 454"   target="_self"  title="It contains confirmation that the required advanced payments have been successfully made for a Vehicle Trip Plan that has been accepted by the Driver for any Vehicle that is not a Heavy Goods Vehicle (HGV), or if it is, parking at rest zones is not required."> 
+    </AREA> 
+    <AREA href="66ff6b554bac0257.htm" shape="rect" coords="492, 117, 681, 131"   target="_self"  title="It contains data about a Vehicle Trip Plan that has been accepted by the Driver, but for which advanced payment for bookings is required."> 
+    </AREA> 
+    <AREA href="66ff6a8a4bac022c.htm" shape="rect" coords="242, 480, 344, 508"   target="_self"  title="It contains data indicating that the Driver has accepted the Vehicle Trip Plan that has just been prepared."> 
+    </AREA> 
+    <AREA href="66ff691d4bac01f1.htm" shape="rect" coords="123, 483, 200, 511"   target="_self"  title="It contains the description of a Vehicle Trip Plan that has just been prepared using data provided by the Driver, and is for acceptance by the Driver.&nbsp;&nbsp;As well as details of the route from the trip origin to the trip destination, the description also contains information about any payments that will have to be made either during the trip or in advance, e.g. road tolls, bridge/tunnel tolls, parking."> 
+    </AREA> 
+    <AREA href="66ff68804bac01ca.htm" shape="rect" coords="187, 576, 264, 604"   target="_self"  title="It contains parameters provided by the Driver from which a Vehicle Trip Plan will be prepared.&nbsp;&nbsp;The parameters may be original, or modifications of those previously provided that have produced a trip that has not been accepted by the Driver."> 
+    </AREA> 
+    <AREA href="91e399d54ba80348.htm" shape="rect" coords="247, 12, 359, 40"   target="_self"  title="It contains a description of the draft trip plan that has just been produced using the parameters that have been provided by the Driver.&nbsp;&nbsp;To become available for use, the Driver has to accept the trip plan and pay for any advanced bookings that need to be made."> 
+    </AREA> 
+    <AREA href="91e398b64ba802fd.htm" shape="rect" coords="33, 92, 123, 134"   target="_self"  title="It contains the acceptance of the trip plan that has been produced using the parameters that have been provided by the Driver."> 
+    </AREA> 
+    <AREA href="91e3980f4ba802e8.htm" shape="rect" coords="15, 42, 124, 85"   target="_self"  title="It contains some modifications to the original parameters that the Driver provided for a trip.&nbsp;&nbsp;These modifications are being input because the original parameters did not produce a trip plan that was acceptable to the Driver."> 
+    </AREA> 
+    <AREA href="4de0a1164ba72da2.htm" shape="rect" coords="59, 767, 248, 781"   target="_self"  title="It contains data from which the location of the Vehicle can be determined for in-Vehicle trip planning purposes."> 
+    </AREA> 
+    <AREA href="4de0a0cf4ba72d95.htm" shape="rect" coords="57, 749, 247, 763"   target="_self"  title="It contains data about the Host Vehicle from its Vehicle Systems.&nbsp;&nbsp;This data may include such things as Vehicle type, identity, size, weight, towing a trailer, fuel range, condition and capabilities, plus if appropriate, type of cargo and carrying capacity, data about hazardous cargo."> 
+    </AREA> 
+    <AREA href="4de09fee4ba72d7c.htm" shape="rect" coords="264, 742, 351, 840"   target="_self"  title="This Function shall be capable of providing the following facilities:"> 
+    </AREA> 
+    <AREA href="4de09d144ba72cda.htm" shape="rect" coords="12, 8, 123, 36"   target="_self"  title="It contains the parameters needed to plan a trip and as a minimum shall include the destination plus the desired arrival or departure times.&nbsp;&nbsp;The identity of a predefined set of parameters that are frequently used may also be included, e.g. home, school, pick-up point, drop of point, and place of work."> 
+    </AREA> 
+    <AREA href="4de090fc4ba728cb.htm" shape="rect" coords="333, 944, 419, 1253"   target="_self"  title="This Function shall be capable of providing the following facilities:"> 
+    </AREA> 
+    <AREA href="4de090994ba72729.htm" shape="rect" coords="812, 1355, 892, 1434"   target="_self"  title="This Function shall be capable of providing the following facilities:"> 
+    </AREA> 
+    <AREA href="4de0906f4ba72714.htm" shape="rect" coords="278, 1324, 358, 1403"   target="_self"  title="This Function shall be capable of providing the following facilities:"> 
+    </AREA> 
+    <AREA href="4de090394ba726ff.htm" shape="rect" coords="706, 0, 777, 134"   target="_self"  title="This Function shall be capable of providing the following facilities:"> 
+    </AREA> 
+    <AREA href="4de090044ba726ea.htm" shape="rect" coords="148, 6, 222, 299"   target="_self"  title="This Function shall be capable of providing the following facilities:"> 
+    </AREA> 
+  </MAP> 
+  <IMG CLASS="Content" SRC="../images/4de089fc4ba7252d_i.png" USEMAP="#4DE08FD24BA72562" BORDER=0> 
+  </IMG> </center>
+</div> 
+      </div>
+
+ <div id="ContentTab" class="ContentTab">
+
+<h3>Overview</H3>
+<H5>This High-level Function shall enable a Driver to plan and implement a trip from the Vehicle.&nbsp;&nbsp;It shall only be available in the Vehicle and shall not support the panning and/or implementation of trips that involve the use of other transport modes.&nbsp;&nbsp;As part of its trip implementation facilities the Function shall enable trips to be revised and re-planned to accommodate changes in traffic conditions, including incidents that were not present when the trip was planned.</H5>
+<h3>Diagrams</H3> 
+<table border="1" width="100%">
+<tr>
+<td><h5>
+The Diagram(s) is(are) the Diagram(s) where you can find the function
+</td>
+</tr>
+<tr>
+<td width="50%">
+<ul>
+<li>The first diagram, if exists, is a DFD diagram which provides the context of the function</li>
+<li>The second Diagram, if exists, is a Functional Tree which provides a hierarchical description of the function into subfunctions</li>
+</ul>
+</h5>
+</td>
+<td width="100%">
+<h5>
+
+
+
+<li>DFD 5  Provide Advanced Driver Assistance Systems</li></a>
+<h5>
+
+<a href="F897F8D63981002B.HTM?DiagTab=1" Target="_self">
+
+
+<li>Functional Tree of Area 5</li></a></h5>
+</td>
+</tr>
+</table>
+<h3>Parent</H3>
+<ul><h5></ul>
+<ul><li>
+  <A CLASS="Content" HREF="f897f8d63981002b.htm" target="_self"> 5. Provide Support for Host Vehicle Services</A> </h5></ul>
+<h3>Component lower level functions</H3>
+<ul><h5><li>
+  <A CLASS="Content" HREF="4de090044ba726ea.htm" target="_self"> 5.14.1 Provide Driver Interface for Trip Planning</A> <li>
+  <A CLASS="Content" HREF="e11a01194bc7040d.htm" target="_self"> 5.14.10 Freight Vehicle Rest Area Use Management</A> <li>
+  <A CLASS="Content" HREF="43ce71f64bd506f8.htm" target="_self"> 5.14.11 Freight Vehicle Un/loading Zone Use Management</A> <li>
+  <A CLASS="Content" HREF="4de09fee4ba72d7c.htm" target="_self"> 5.14.2 Create and Revise Vehicle Trip Plan</A> <li>
+  <A CLASS="Content" HREF="4de090394ba726ff.htm" target="_self"> 5.14.3 Enable Driver to Make Payments</A> <li>
+  <A CLASS="Content" HREF="4de0906f4ba72714.htm" target="_self"> 5.14.4 Implement Vehicle Trip Plan and Track Vehicle</A> <li>
+  <A CLASS="Content" HREF="4de090994ba72729.htm" target="_self"> 5.14.5 Provide Driver Trip Guidance Interface</A> <li>
+  <A CLASS="Content" HREF="4de090fc4ba728cb.htm" target="_self"> 5.14.6 Monitor Vehicle Trip Plan Implementation</A> <li>
+  <A CLASS="Content" HREF="c7a1d23d4bb00918.htm" target="_self"> 5.14.7 Manage Store of Vehicle Trip Plans</A> </h5></ul>
+<H5></H5>
+<h3>Input logical dataflows</H3>
+<ul><h5>
+
+<li>
+  <A CLASS="Content" HREF="281b437d4bc70c83.htm" target="_self"> fd.fvd-trip_inputs </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="91e397244ba802ab.htm" target="_self"> fd.tpd-trip_inputs </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="5e5d6f044bb30510.htm" target="_self"> fesp.g-vehicle_trip_plan_implementation_map_data </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="c7a1ca3a4bb001de.htm" target="_self"> ffc-vehicle_trip_planning_payments </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f7ba1e1e4bb21cfe.htm" target="_self"> flds-vehicle_location_for_trip_monitoring </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="4de0a1164ba72da2.htm" target="_self"> flds-vehicle_location_for_trip_planning </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="91eab2704e150ac0.htm" target="_self"> fo.flo-rest_area_booking_details </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="bb29c0584e1d04bd.htm" target="_self"> fo.flo-un/loading_zone_booking_details </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="15c82e0b4bc80a3c.htm" target="_self"> mt.pshvs_data_for_rest_area_use </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="f7ba0aa24bb20ff1.htm" target="_self"> mt.pshvs_data_for_vehicle_trip_monitoring </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="7daf8be14bd9084f.htm" target="_self"> pscs.pshvs_un/loading_zone_data_outputs </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="4de0a0cf4ba72d95.htm" target="_self"> pshvs_vehicle_data_for_trip_planning </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="1216242a4bb30c59.htm" target="_self"> ptja.pshvs_vehicle_trip_plan_responses </A> 
+
+</h5></ul>
+<h3>Output logical dataflows</H3>
+<ul><h5>
+
+<li>
+  <A CLASS="Content" HREF="15c818ec4bc8033a.htm" target="_self"> pshvs.mt_rest_zone_use_data </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="12164ff64bb321ca.htm" target="_self"> pshvs.mt_road_use_data_from_trip </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="5e5d77bd4bb30f09.htm" target="_self"> pshvs.pscs_destination_for_bus_lane_use </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="7daf8abb4bd90800.htm" target="_self"> pshvs.pscs_un/loading_zone_data_inputs </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="1216229c4bb30c21.htm" target="_self"> pshvs.ptja_vehicle_trip_plan_data </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="777b7c584bc404f8.htm" target="_self"> pshvs_route_information_for_xfcd </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="121634404bb31a16.htm" target="_self"> td-vehicle_trip_plan_outputs </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="281b42754bc70c4b.htm" target="_self"> td.fvd-trip_outputs </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="91e39a864ba80367.htm" target="_self"> td.tpd-trip_outputs </A> 
+
+
+
+<li>
+  <A CLASS="Content" HREF="810bc1c44bb0189a.htm" target="_self"> tfc-vehicle_trip_planning_payments </A> 
+
+</h5></ul> 
+
+<ul><h5></h5></ul>
+
+<ul><h5></h5></ul>
+<h3>User needs</H3>
+<div align="right">
+<table border="1" width="100%">
+<tr>
+<td width="10%"><center><h4>Number</h4></center></td>
+<td width="90%"><h4>Description</h4></td>
+</tr>
+
+</table>
+</div>
+
+</div><script language="javascript" src="../standard/ws_tabtemplate.js"></script>
+<script language="javascript" src="../standard/ws_zoomtemplate.js"></script>
+<script language="javascript" src="../standard/ws_buttontemplate.js"></script>
+<script language="javascript" src="../standard/ws_keyshortcuttemplate.js"></script>
+            <!--<img src="../standard/busf.gif"/>-->
+
+</BODY> </HTML>

@@ -1,0 +1,24 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 5.16.3 Assess Dynamic Command &amp; Warning Indications
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>5.16.3 Assess Dynamic Command &amp; Warning Indications</h2></center><h3>Overview</H3><H5>This Function shall use its own sensors to obtain details of the commands and warnings that are being output Drivers from the roadside.&nbsp;&nbsp;It shall compare these with the commands and warnings that are being output to Drivers from within the Vehicle.&nbsp;&nbsp;If the assessment shows that there is a difference, the Function shall report this to the Provide Commands and dynamic Warnings Function so that a suitable output can be made to the Driver.</H5><h3>Functional Requirements</H3><h5>(a) continuously monitor for receipt of the two input data flows<br/>(b) when the output commands and warnings data flow is received in (a) store its contents internally<br/>(c) when the roadside output details data flow is received compare its contents with the data received in (b)<br/>(d) if there a difference is found in (c) then output the possible roadside command &amp; warning data flow to the Output Commands and Dynamic Warnings function<br/>(e) only output the data flow in (d) if relevant data has been provided by both of the data flows in (b) and (c) so that failure of one form of output does not provide a difference<br/>(f) once the difference in (d) disappears then send the possible roadside command &amp; warning data flow with no (null) contents.</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="F21E10214E200E14.HTM?DiagTab=1" Target="_self">DFD 5.16 Provide Outputs to Host Vehicle Drivers</a><h5><li> <a href="F897F8D63981002B.HTM?DiagTab=0" Target="_self">Functional Tree of Area 5</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="f21e10214e200e14.htm" target="_self"> 5.16 Provide Outputs to Host Vehicle Drivers</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="fed737484b8d138a.htm" target="_self"> fre-dynamic_commands_&amp;_warnings_details </A> <li>
+  <A CLASS="Content" HREF="fed732284b8d1157.htm" target="_self"> pshvs_output_commands_&amp;_warnings </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="fed735494b8d1336.htm" target="_self"> pshvs.mt_inter-urban_c&amp;i_display_error </A> <li>
+  <A CLASS="Content" HREF="fed735084b8d1329.htm" target="_self"> pshvs.mt_inter-urban_l&amp;s_display_error </A> <li>
+  <A CLASS="Content" HREF="fed735ac4b8d1358.htm" target="_self"> pshvs.mt_urban_c&amp;i_display_error </A> <li>
+  <A CLASS="Content" HREF="fed735844b8d134b.htm" target="_self"> pshvs.mt_urban_l&amp;s_display_error </A> <li>
+  <A CLASS="Content" HREF="3b034bda4b8e0d08.htm" target="_self"> pshvs_possible_dynamic_command_&amp;_warning_error </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="ca51ec9c4b9010ee.htm" target="_self"> 7.4.3.2</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to provide lane restriction information (e.g. HGV, HOV) from outside the vehicle and to confirm that it is consistent with the information that has been sent directly to that vehice.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="ca51e8be4b900ffd.htm" target="_self"> 7.4.4.8</A> </a></center></h5></td><td width="90%"><h5>The system shall be able provide recommended speed limits from outside the vehicle, and to confirm that they are consistent with the limits that have been sent directly to that vehicle.</h5></td></tr></table></div>
+</BODY> </HTML>

@@ -1,0 +1,24 @@
+<HTML>
+<HEAD > 
+  <META NAME="Generator" CONTENT="Mega by MEGA International" URL="http://www.mega.com/"> 
+  </META> 
+  <META NAME="Company name" CONTENT="Siemens Traffic Controls"> 
+  </META> 
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> 
+  </META> 
+  <TITLE > 9.1.1 Provide Driver Interface for Vehicle Priority
+  </TITLE> 
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="../standard/ws_intranet.css">
+</HEAD> 
+<BODY CLASS="Content"> <center><h2>Low Level Function<br>9.1.1 Provide Driver Interface for Vehicle Priority</h2></center><h3>Overview</H3><H5><div class="Normal">This Function shall be capable of providing the following facilities:<br><br>(1) A HMI through which the Drivers can request priority for their Vehicle through the urban road network and receive the responses to these requests.<br>(2) The HMI must require the Driver to indicate the destination and any mandatory &quot;way points&quot; so that a green wave route can be created.<br>(3) The ability to send the data provided by the Driver through the HMI to the Priority Request functionality. <br>(4) The HMI mist output the data from the Priority Request functionality as soon as it is received, superseding for the duration of its relevance any other outputs that the Driver may be receiving from other functionality.<br></div></H5><h3>Functional Requirements</H3><h5>(a) when the vehicle priority request data flow is received, immediately send the request to the Process Priority Request function<br/>(b) when the input data flow containing the response to (a) is received, output the response data flow to the driver<br/>(c) when the other vehicle receiving priority data flow is received, output the green wave operating data flow tot he driver</H5><h3>Diagrams</H3><table border="1" width="100%"><tr><td><h5>The Diagram(s) is (are) the diagram(s) where you can find the function :</h5></td></tr><tr><td width="100%"><h5><li> <a href="2ED046BB4B4B0E73.HTM?DiagTab=1" Target="_self">DFD 9.1 Enable Other Vehicle Priority</a><h5><li> <a href="2ED039D74B4B048B.HTM?DiagTab=0" Target="_self">Functional Tree of Area 9</a></li></h5></td></tr></table><h3>Parent Higher Level Function</H3><h5><ul><li>
+  <A CLASS="Content" HREF="2ed046bb4b4b0e73.htm" target="_self"> 9.1 Enable Other Vehicle Priority Selection</A> </ul><ul></ul></h5><h5><ul></ul></h5><h3>Input logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="e38ff7fc4b450737.htm" target="_self"> fd-driver_priority_request </A> <li>
+  <A CLASS="Content" HREF="e38f03364b46090f.htm" target="_self"> pshvs_driver_priority_response </A> <li>
+  <A CLASS="Content" HREF="f9f20d794b4b0951.htm" target="_self"> pshvs_other_vehicle_receiving_priority </A> </ul></h5><h3>Output logical dataflows</H3><h5><ul><li>
+  <A CLASS="Content" HREF="e38f02374b4608dc.htm" target="_self"> pscs_driver_priority_request </A> <li>
+  <A CLASS="Content" HREF="f9f20bd64b4b0795.htm" target="_self"> td-green_wave_operating </A> <li>
+  <A CLASS="Content" HREF="e38f04274b46093a.htm" target="_self"> td-priority_request_result </A> </ul> </h5><ul></ul><ul></ul><h3>User needs</H3><div align="right"><table border="1" width="100%"><tr><td width="10%"><center><h4>Number</h4></center></td><td width="90%"><h4>Description</h4></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="4de052f64ba703bb.htm" target="_self"> 7.5.2.10</A> </a></center></h5></td><td width="90%"><h5>The system shall be able to warn other vehicles that a green wave is in operation.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="76a7822d4b9702a0.htm" target="_self"> 7.5.2.2</A> </a></center></h5></td><td width="90%"><h5>The system shall enable the driver of a host vehicle to request a series of green phases from traffic signals (i.e. a green wave) for the route that is about to be taken.</h5></td></tr><tr><td width="10%"><center><h5>
+  <A CLASS="Content" HREF="4de052ce4ba70397.htm" target="_self"> 7.5.2.6</A> </a></center></h5></td><td width="90%"><h5>The system shall enable the traffic signal controller to inform the driver, via an in-vehicle display, that a green phase will be available when the host vehicle arrives at that junction; this includes the ability to warn that a green phase is not possible.</h5></td></tr></table></div>
+</BODY> </HTML>
