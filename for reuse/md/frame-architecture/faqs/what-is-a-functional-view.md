@@ -1,0 +1,3 @@
+A Functional View (sometimes called a Logical View, or even a Logical Architecture by others) shows the functionality that will be required to fulfil the User Needs, and hence the Stakeholder Aspirations. When using the FRAME Architecture the Functional View is shown as a Data Flow Diagram that contains Functions, Data Stores and Terminators, and the Data Flows between them.
+
+Example Functional View

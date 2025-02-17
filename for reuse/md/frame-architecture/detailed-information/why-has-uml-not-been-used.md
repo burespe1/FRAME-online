@@ -1,0 +1,11 @@
+1. UML, or the Universal Modelling Language, describes notations that should be used for many different types of model, including Data Flow Models which are used by FRAME. Thus UML has been used!
+2. Suitability – UML is usually associated with Object Oriented (OO) modelling, which is particularly suitable for describing systems that are Data driven (rather than Function driven). The level of abstraction used by FRAME tends to be Function driven.
+3. Comprehension – “Object models developed during requirements analysis certainly simplify the transition to object-oriented design and programming. However, I have found that end-users of a system often find object models unnatural and difficult to understand. They often prefer to adopt a more functional, data-processing view.” [1]. Indeed, although ITS Architectures have been developed using OO techniques, they have not been understood by others, and thus not used.
+4. Framework – The FRAME Architecture is a Framework Architecture from which self-consistent sub-sets can be extracted. It is not clear how this could be done easily, and in general, using OO techniques.
+5. Level of Abstraction – the output from a FRAME Architecture sub-set is often a high-level System Description as part of a Call for Tender (see Planning Integrated Deployments). This will then be used by the company that is to supply the system, which could use UML in its development process.
+
+The methodology used by the FRAME Architecture is based on that proposed by Hatley and Pirbhai[2] and uses Data Flow Diagrams to define the Functional View. Although, for ease of their management the Data Flow Diagrams are described in an hierarchical manner, the FRAME Architecture, and thus the Data Base used by the Selection Tool, is defined at the lowest level.
+
+[1] Sommerville I, “Software Engineering” (6th Ed), Addison Wesley, 2001. ISBN 0-201-39815-X
+
+[2] Hatley D J and Pirbhai I A, “Strategies for Real-Time Systems Specification”, Dorset House, 1987, ISBN 0-932633-11-0

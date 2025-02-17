@@ -1,0 +1,3 @@
+An important part of the Functional View is the Context Diagram. This shows the ITS as a single item and the links needed by the functionality within it to communicate with the entities outside it (i.e. Terminators). It is useful for two reasons. Firstly it enables the system boundary to be defined showing what is inside the ITS implementation and what is not. Secondly it enables definitions to be produced of the way in which the functionality inside the ITS expects the outside entities to behave. The same Context Diagram is also part of the Physical View.
+
+The Diagram below is the Context Diagram for the FRAME Architecture.

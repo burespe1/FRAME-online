@@ -1,0 +1,3 @@
+A Communications View contains descriptions of the Physical Data Flows that pass between Sub-systems (and Modules) in the Physical View. See also “What is a Physical View?“.
+
+A Communications View will contain statements, or examples, of the data that flows between Sub-systems (and Modules) and from which communications specifications can be written. Some links may require the use of existing communications standards, others may require a new communication standard to be written. In the latter situation the corresponding part of the Communications View can used as a starting point.

@@ -1,0 +1,3 @@
+The Data Stores are used to hold data that is used by two or more Functions within a Functional Area. Each has its own unique number and name. The first digit of the number is the Functional Area in which the Data Store resides. The name indicates the type of data that the Store contains. Their existance does not imply the use of any particular physical design or storage methodology.
+
+The description of each Data Store contains details of what data is held in the Store. Taken together, the Data Store descriptions provide the Information View representation of the Framework Architecture.

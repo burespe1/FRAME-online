@@ -1,0 +1,1 @@
+An Actor is a specifc sub-set of a Terminator – see “What is a Terminator?“

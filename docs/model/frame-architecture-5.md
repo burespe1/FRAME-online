@@ -31,7 +31,7 @@ Following section contain versions of the FRAME Tool for download. The Tool is a
 
 #### Full tool downloads
 
- - download [**full FRAME tool** in eapx format](../assets/models/FRAME_Architecture_Tool_V5.1.1.eapx.zip),  (enterprise architect <16), [quea format](../assets/models/FRAME_Architecture_Tool_V5.1.1.qea.zip) (enterprise architect >16) or in [xmi format](../assets/models/FRAME_Architecture_Tool_V5.1.1.xmi.zip) (exchange)
+ - download [**full FRAME tool** in eapx format](../assets/tools/FRAME_Architecture_Tool_V5.1.1.eapx.zip),  (enterprise architect <16), [quea format](../assets/tools/FRAME_Architecture_Tool_V5.1.1.qea.zip) (enterprise architect >16) or in [xmi format](../assets/tools/FRAME_Architecture_Tool_V5.1.1.xmi.zip) (exchange)
  
 #### Partial downloads
  
@@ -60,5 +60,5 @@ The Toolbox is an Enterprise Architect Model, allowing modelling with FRAME spec
 
 #### Toolbox downloads
 
- - download [**FRAME toolbox** in xml format](../assets/models/FRAME Toolbox_V1.0.zip)
+ - download [**FRAME toolbox** in xml format](../assets/tools/FRAME Toolbox_V1.0.zip)
  

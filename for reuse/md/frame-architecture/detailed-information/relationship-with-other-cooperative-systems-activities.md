@@ -1,0 +1,7 @@
+During FP6 a number of projects, in particular SAFESPOT, CVIS and COOPERS, and co-funded by the EC, developed a number of “proof of concept” Cooperative Systems. These have been analysed by the E-FRAME project, and a corresponding set of about 230 FRAME User Needs have been written, and for which the corresponding additional functionality has been added to the FRAME Architecture.
+
+Meanwhile aspects associated with the communications needed for Cooperative Systems has been studied by the COMeSafety and PRE-DRIVE C2X projects. Many of the results of this work are being developed into Standards by either CEN or ETSI in accordance with Mandate 453.
+
+The following diagram show how the results of these two processes can be used.
+
+The box “Create ITS Architecture” represents the process described in Creating an ITS Architecture using FRAME, and once a Physical View has been created for the local situation, the corresponding Communications Requirements can be identified. It is at this point that the work of the COMeSafety and PRE-DRIVE-C2X projects, and/or the corresponding Standards produced by CEN and ETSI as a result on Mandate 453, can be consulted to define the communications links fully.

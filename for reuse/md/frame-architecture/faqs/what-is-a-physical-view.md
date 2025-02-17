@@ -1,0 +1,9 @@
+Once the Functional View is complete, the architecture team allocates each function and data store to be located, either within a sub-system (see figure below), or within a module that is part of a sub-system. Once this has been completed the component (sub-system or module) specifications can be created from the definitions of the functions and data stores within them.
+
+Example Functional and Physical Views
+
+As can be seen from the figure above, a consequence of allocating functions and data stores to sub-systems (and modules), is that it is immediately clear which Functional Data Flows lie within a sub-system (or module), and which Functional Data Flows pass between one sub-system and another, or between one module and another. Those that pass between sub-systems or modules make up the Physical Data Flows, and represent a communication channel between sub-systems, and/or between modules.
+
+Since sub-systems are, by definition, located in different places (e.g. in a traffic management centre, at the road side, in a vehicle) it is possible to produce communications specifications by analysing the contents of each Physical Data Flow. This analysis may elicit that an existing Standard may be used for the communications. Alternatively the analysis can be used as the basis for defining a new Standard if the need for it can be agreed.
+
+Analysis of the Physical Data Flows that pass between the ITS and the Terminators can also lead to “standard” interfaces for end users, which can play an important part in making sure that the ITS implementation can be used in the same way, everywhere that it is deployed.
